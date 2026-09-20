@@ -1,0 +1,148 @@
+{
+  "phases": [
+    {
+      "name": "default_goal",
+      "duration": 60.00714869098738,
+      "latest": {
+        "status": "STALE_MAP",
+        "guard": "STALE_MAP",
+        "enabled": true,
+        "error": null,
+        "plans": 4,
+        "plan_ms": 4596.915097965393,
+        "minimum_clearance": null,
+        "optimize_ms": 4113.086965982802,
+        "admission_ms": 483.8286539888941,
+        "accepted_commands": 0,
+        "guard_rejections": 0,
+        "command_source": "hold",
+        "map_sequence": 8,
+        "map_epoch": 1789733756043701379,
+        "last_plan_map": 8,
+        "map_age_sim": 7.075000000000003,
+        "goal": [
+          0.19933190938662368,
+          0.11912825078863445,
+          0.8529719494001974
+        ],
+        "ee": [
+          0.21933175013164005,
+          0.14912823541280887,
+          0.852971995951069
+        ],
+        "goal_error": 0.03605541162265223
+      }
+    },
+    {
+      "name": "second_goal",
+      "duration": 1.515667762956582,
+      "latest": {
+        "status": "GOAL_REACHED",
+        "guard": "clear",
+        "enabled": true,
+        "error": null,
+        "plans": 4,
+        "plan_ms": 4596.915097965393,
+        "minimum_clearance": 0.03590877040624618,
+        "optimize_ms": 4113.086965982802,
+        "admission_ms": 483.8286539888941,
+        "accepted_commands": 41,
+        "guard_rejections": 0,
+        "command_source": "hold",
+        "map_sequence": 12,
+        "map_epoch": 1789733756043701379,
+        "last_plan_map": 8,
+        "map_age_sim": 0.28600000000000847,
+        "goal": [
+          0.22,
+          0.15,
+          0.86
+        ],
+        "ee": [
+          0.21932836770394837,
+          0.1491276281970817,
+          0.8529637773360359
+        ],
+        "goal_error": 0.007121836271672383
+      }
+    },
+    {
+      "name": "inside_wall_goal",
+      "duration": 20.008517599024344,
+      "latest": {
+        "status": "BLOCKED",
+        "guard": "clear",
+        "enabled": true,
+        "error": null,
+        "plans": 208,
+        "plan_ms": 21.15001098718494,
+        "minimum_clearance": 0.025751010775566102,
+        "optimize_ms": 19.735718029551208,
+        "admission_ms": 1.4143680455163121,
+        "accepted_commands": 992,
+        "guard_rejections": 0,
+        "command_source": "blocked_hold",
+        "map_sequence": 63,
+        "map_epoch": 1789733756043701379,
+        "last_plan_map": 63,
+        "map_age_sim": 0.2880000000000109,
+        "goal": [
+          0.4,
+          0.2,
+          0.3
+        ],
+        "ee": [
+          0.22312427048736305,
+          0.14830077914695264,
+          0.8153871239972684
+        ],
+        "goal_error": 0.5473405893131036
+      }
+    },
+    {
+      "name": "return_goal",
+      "duration": 2.7868434640113264,
+      "latest": {
+        "status": "GOAL_REACHED",
+        "guard": "clear",
+        "enabled": true,
+        "error": null,
+        "plans": 232,
+        "plan_ms": 29.13469698978588,
+        "minimum_clearance": 0.035929497921466824,
+        "optimize_ms": 24.94024101179093,
+        "admission_ms": 4.194320004899055,
+        "accepted_commands": 1139,
+        "guard_rejections": 0,
+        "command_source": "checked_cartesian_refinement",
+        "map_sequence": 72,
+        "map_epoch": 1789733756043701379,
+        "last_plan_map": 69,
+        "map_age_sim": 0.1880000000000024,
+        "goal": [
+          0.22,
+          0.15,
+          0.86
+        ],
+        "ee": [
+          0.22278108225929535,
+          0.14994649111196112,
+          0.8492252549658348
+        ],
+        "goal_error": 0.011128001270908183
+      }
+    }
+  ],
+  "faults": {
+    "map_pause_status": "STALE_MAP",
+    "map_pause_joint_motion": 4.443699451961436e-06,
+    "map_resumed": true,
+    "reset_epoch_changed": true,
+    "post_reset_status": "GOAL_REACHED"
+  },
+  "map_rate_wall": 1.1550439926749558,
+  "map_interval_p95": 0.6711712050018832,
+  "min_ground_truth_clearance": 0.0879,
+  "max_fk_tf_error": 6.431871827503859e-16,
+  "joint_motion_l2": 0.17788553105796678
+}

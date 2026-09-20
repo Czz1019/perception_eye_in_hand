@@ -1,0 +1,79 @@
+{
+  "result": "PASS",
+  "messages": 33,
+  "wall_hz": 3.0860138952280125,
+  "simulation_hz": 3.0864197530864197,
+  "known_cells_min": 2907,
+  "known_cells_max": 2907,
+  "tf_poses_checked": 32,
+  "max_pose_matrix_error": 2.2442862568361477e-08,
+  "stats": {
+    "rates_hz": {
+      "depth_received": 8.001376740964702,
+      "depth_outside_clock_window": 0.0,
+      "depth_overwritten": 0.0,
+      "map_initialized": 0.0,
+      "stale_depth": 0.0,
+      "depth_integrated": 9.00154883358529,
+      "esdf_updated": 4.000688370482351,
+      "esdf_published": 4.000688370482351
+    },
+    "totals": {
+      "depth_received": 160,
+      "depth_outside_clock_window": 1,
+      "depth_overwritten": 10,
+      "map_initialized": 1,
+      "stale_depth": 1,
+      "depth_integrated": 148,
+      "esdf_updated": 69,
+      "esdf_published": 69
+    },
+    "latency": {
+      "tf_lookup": {
+        "mean_ms": 14.020644655121465,
+        "p50_ms": 20.235606003552675,
+        "p95_ms": 40.41447140625678,
+        "max_ms": 47.443590010516346
+      },
+      "backend_initialization": {
+        "mean_ms": 2239.9757409875747,
+        "p50_ms": 2239.9757409875747,
+        "p95_ms": 2239.9757409875747,
+        "max_ms": 2239.9757409875747
+      },
+      "fusion_and_esdf": {
+        "mean_ms": 3.485653942545363,
+        "p50_ms": 1.8607740057632327,
+        "p95_ms": 4.938335012411698,
+        "max_ms": 73.97267399937846
+      }
+    },
+    "world_frame": "base_link",
+    "python_executable": "/home/wqj/miniconda3/envs/whole_control/bin/python",
+    "error": null,
+    "latest": {
+      "input_stamp_ns": 287452000000,
+      "known_cells": 2907,
+      "total_cells": 52111,
+      "map_epoch": 0,
+      "unknown_distance_m": 100.0,
+      "depth_encoding": "16UC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        1280,
+        720
+      ],
+      "integration_size": [
+        640,
+        360
+      ],
+      "camera_position_base": [
+        0.5670208930969238,
+        0.1508692502975464,
+        0.7234312891960144
+      ],
+      "ros_clock_minus_image_sec": -0.052,
+      "receive_to_result_ms": 2.8646290011238307
+    }
+  }
+}

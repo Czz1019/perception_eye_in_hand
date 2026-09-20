@@ -1,0 +1,87 @@
+{
+  "result": "PASS",
+  "mesh_messages": 5,
+  "mesh_wall_hz": 0.22322640188779,
+  "triangles_min": 34050,
+  "triangles_max": 34050,
+  "surface_points": 22459,
+  "tf_poses_checked": 2,
+  "max_pose_matrix_error": 2.444122203903998e-06,
+  "stats": {
+    "rates_hz": {
+      "depth_received": 3.920627811276481,
+      "timestamp_rejected": 0.0,
+      "moving_frames_skipped": 0.0,
+      "depth_overwritten": 0.0,
+      "map_initialized": 0.0,
+      "stale_depth": 0.0,
+      "color_integrated": 0.0,
+      "depth_integrated": 0.0,
+      "mesh_extracted": 0.0,
+      "mesh_skipped": 0.0,
+      "mesh_published": 0.0,
+      "integration_paused": 0.0,
+      "tf_missing": 1.9603139056382406,
+      "reset_requested": 0.0
+    },
+    "totals": {
+      "depth_received": 4239,
+      "timestamp_rejected": 1,
+      "moving_frames_skipped": 1,
+      "depth_overwritten": 1000,
+      "map_initialized": 2,
+      "stale_depth": 30,
+      "color_integrated": 1614,
+      "depth_integrated": 1614,
+      "mesh_extracted": 322,
+      "mesh_skipped": 5,
+      "mesh_published": 314,
+      "integration_paused": 1002,
+      "tf_missing": 574,
+      "reset_requested": 1
+    },
+    "latency": {
+      "initialization": {
+        "mean_ms": 1783.8612255000044,
+        "p50_ms": 1783.8612255000044,
+        "p95_ms": 2770.2492163458373,
+        "max_ms": 2879.8478819953743
+      },
+      "depth_integrate_cpu": {
+        "mean_ms": 48.45051023050928,
+        "p50_ms": 4.186310499790125,
+        "p95_ms": 260.40876224724343,
+        "max_ms": 669.3281680054497
+      },
+      "mesh_extract": {
+        "mean_ms": 170.19783831613648,
+        "p50_ms": 25.601573986932635,
+        "p95_ms": 652.6955528010149,
+        "max_ms": 1147.567022999283
+      },
+      "mesh_pack_publish": {
+        "mean_ms": 1338.7158132834097,
+        "p50_ms": 305.1502280140994,
+        "p95_ms": 4542.2612141948775,
+        "max_ms": 5032.092090987135
+      }
+    },
+    "world_frame": "base_link",
+    "python_executable": "/home/wqj/miniconda3/envs/whole_control/bin/python",
+    "esdf_enabled": false,
+    "color_enabled": true,
+    "integration_enabled": true,
+    "error": null,
+    "latest": {
+      "map_epoch": 1,
+      "input_stamp_ns": 2708512000000,
+      "vertices": 22459,
+      "triangles": 34050,
+      "camera_position_base": [
+        0.29999467730522156,
+        0.15999901294708252,
+        0.8299869894981384
+      ]
+    }
+  }
+}

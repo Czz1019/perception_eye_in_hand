@@ -1,0 +1,263 @@
+[0.000000] (-) TimerEvent: {}
+[0.000797] (-) JobUnselected: {'identifier': 'ur7e_d435_gazebo'}
+[0.002986] (realtime_nvblox) JobQueued: {'identifier': 'realtime_nvblox', 'dependencies': OrderedDict()}
+[0.003301] (ur7e_nvblox) JobQueued: {'identifier': 'ur7e_nvblox', 'dependencies': OrderedDict([('realtime_nvblox', '/home/wqj/realtime_nvblox_ws/install/realtime_nvblox')])}
+[0.003440] (ur7e_reconstruction) JobQueued: {'identifier': 'ur7e_reconstruction', 'dependencies': OrderedDict([('realtime_nvblox', '/home/wqj/realtime_nvblox_ws/install/realtime_nvblox'), ('ur7e_d435_gazebo', '/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo'), ('ur7e_nvblox', '/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox')])}
+[0.008412] (realtime_nvblox) JobStarted: {'identifier': 'realtime_nvblox'}
+[0.098108] (-) TimerEvent: {}
+[0.198862] (-) TimerEvent: {}
+[0.299656] (-) TimerEvent: {}
+[0.400310] (-) TimerEvent: {}
+[0.500884] (-) TimerEvent: {}
+[0.601567] (-) TimerEvent: {}
+[0.702270] (-) TimerEvent: {}
+[0.802982] (-) TimerEvent: {}
+[0.903755] (-) TimerEvent: {}
+[1.004449] (-) TimerEvent: {}
+[1.105260] (-) TimerEvent: {}
+[1.205957] (-) TimerEvent: {}
+[1.306736] (-) TimerEvent: {}
+[1.407482] (-) TimerEvent: {}
+[1.508276] (-) TimerEvent: {}
+[1.609021] (-) TimerEvent: {}
+[1.709840] (-) TimerEvent: {}
+[1.810701] (-) TimerEvent: {}
+[1.911456] (-) TimerEvent: {}
+[2.012157] (-) TimerEvent: {}
+[2.112904] (-) TimerEvent: {}
+[2.213660] (-) TimerEvent: {}
+[2.314502] (-) TimerEvent: {}
+[2.415318] (-) TimerEvent: {}
+[2.516074] (-) TimerEvent: {}
+[2.616971] (-) TimerEvent: {}
+[2.717840] (-) TimerEvent: {}
+[2.818707] (-) TimerEvent: {}
+[2.919512] (-) TimerEvent: {}
+[3.020334] (-) TimerEvent: {}
+[3.121105] (-) TimerEvent: {}
+[3.221959] (-) TimerEvent: {}
+[3.322841] (-) TimerEvent: {}
+[3.423627] (-) TimerEvent: {}
+[3.524474] (-) TimerEvent: {}
+[3.625528] (-) TimerEvent: {}
+[3.726367] (-) TimerEvent: {}
+[3.792880] (realtime_nvblox) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/realtime_nvblox', 'build', '--build-base', '/home/wqj/realtime_nvblox_ws/build/realtime_nvblox/build', 'install', '--record', '/home/wqj/realtime_nvblox_ws/build/realtime_nvblox/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/wqj/realtime_nvblox_ws/src/realtime_nvblox', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(whole_control)', 'CODEX_CI': '1', 'LANGUAGE': 'zh_CN:zh', 'USER': 'wqj', 'XDG_SESSION_TYPE': 'x11', 'ISAACSIM_PATH': '/home/wqj/isaac-sim/isaac-sim-standalone-5.1.0-linux-x86_64', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/wqj', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/wqj/realtime_nvblox_ws', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2110', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '2395', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', '_CONDA_ROOT': '/home/wqj/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6969', 'CODEX_PERMISSION_PROFILE': ':danger-full-access', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'wqj', 'PYTHONDONTWRITEBYTECODE': '1', 'JOURNAL_STREAM': '8:4891', '_': '/usr/bin/python3', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wqj', 'ANTHROPIC_BASE_URL': 'https://jp.duckcoding.com', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/wqj/.local/bin:/home/wqj/.codex/tmp/arg0/codex-arg0eO60I7:/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/wqj/miniconda3/envs/whole_control/bin:/opt/ros/humble/bin:/home/wqj/miniconda3/condabin:/usr/local/cuda-12.8/bin:/home/wqj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/wqj:@/tmp/.ICE-unix/2364,unix/wqj:/tmp/.ICE-unix/2364', 'CODEX_SESSION_ID': '01a0a4fd-e566-7482-a175-42a53be197d3', 'INVOCATION_ID': 'f57df87d65de46b6ba720874854d32c8', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/wqj/miniconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:43510221-f943-47e3-9630-64633075b957', 'ANTHROPIC_AUTH_TOKEN': 'sk-AK93QgdSS4ZKAU1vKORj24QZj8Kn6IN2qu8HqAJ1d4DB5VKm', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'whole_control', 'CODEX_THREAD_ID': '01a0a4fd-e566-7482-a175-42a53be197d3', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/wqj/miniconda3/bin/conda', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wqj/realtime_nvblox_ws/build/realtime_nvblox', 'LC_ALL': 'C.UTF-8', 'CODEX_MANAGED_PACKAGE_ROOT': '/usr/lib/node_modules/@openai/codex', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/wqj/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wqj/realtime_nvblox_ws/build/realtime_nvblox/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/wqj/miniconda3/envs/whole_control', 'COLCON': '1', 'CODEX_MANAGED_BY_NPM': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.826658] (-) TimerEvent: {}
+[3.927363] (-) TimerEvent: {}
+[4.028159] (-) TimerEvent: {}
+[4.128871] (-) TimerEvent: {}
+[4.229546] (-) TimerEvent: {}
+[4.330142] (-) TimerEvent: {}
+[4.431117] (-) TimerEvent: {}
+[4.533163] (-) TimerEvent: {}
+[4.633990] (-) TimerEvent: {}
+[4.734768] (-) TimerEvent: {}
+[4.835583] (-) TimerEvent: {}
+[4.936683] (-) TimerEvent: {}
+[5.037508] (-) TimerEvent: {}
+[5.138164] (-) TimerEvent: {}
+[5.217876] (realtime_nvblox) StdoutLine: {'line': b'running egg_info\n'}
+[5.222559] (realtime_nvblox) StdoutLine: {'line': b'writing ../../build/realtime_nvblox/realtime_nvblox.egg-info/PKG-INFO\n'}
+[5.224851] (realtime_nvblox) StdoutLine: {'line': b'writing dependency_links to ../../build/realtime_nvblox/realtime_nvblox.egg-info/dependency_links.txt\n'}
+[5.225687] (realtime_nvblox) StdoutLine: {'line': b'writing entry points to ../../build/realtime_nvblox/realtime_nvblox.egg-info/entry_points.txt\n'}
+[5.226244] (realtime_nvblox) StdoutLine: {'line': b'writing requirements to ../../build/realtime_nvblox/realtime_nvblox.egg-info/requires.txt\n'}
+[5.226786] (realtime_nvblox) StdoutLine: {'line': b'writing top-level names to ../../build/realtime_nvblox/realtime_nvblox.egg-info/top_level.txt\n'}
+[5.236632] (realtime_nvblox) StdoutLine: {'line': b"reading manifest file '../../build/realtime_nvblox/realtime_nvblox.egg-info/SOURCES.txt'\n"}
+[5.238635] (realtime_nvblox) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[5.239394] (-) TimerEvent: {}
+[5.244619] (realtime_nvblox) StdoutLine: {'line': b"writing manifest file '../../build/realtime_nvblox/realtime_nvblox.egg-info/SOURCES.txt'\n"}
+[5.246061] (realtime_nvblox) StdoutLine: {'line': b'running build\n'}
+[5.246455] (realtime_nvblox) StdoutLine: {'line': b'running build_py\n'}
+[5.252133] (realtime_nvblox) StderrLine: {'line': b'warning: build_py: byte-compiling is disabled, skipping.\n'}
+[5.253088] (realtime_nvblox) StderrLine: {'line': b'\n'}
+[5.253515] (realtime_nvblox) StdoutLine: {'line': b'running install\n'}
+[5.254826] (realtime_nvblox) StdoutLine: {'line': b'running install_lib\n'}
+[5.261851] (realtime_nvblox) StderrLine: {'line': b'warning: install_lib: byte-compiling is disabled, skipping.\n'}
+[5.262729] (realtime_nvblox) StderrLine: {'line': b'\n'}
+[5.263076] (realtime_nvblox) StdoutLine: {'line': b'running install_data\n'}
+[5.264801] (realtime_nvblox) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.276383] (realtime_nvblox) StdoutLine: {'line': b"removing '/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox-1.2.0-py3.10.egg-info' (and everything under it)\n"}
+[5.278472] (realtime_nvblox) StdoutLine: {'line': b'Copying ../../build/realtime_nvblox/realtime_nvblox.egg-info to /home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox-1.2.0-py3.10.egg-info\n'}
+[5.281453] (realtime_nvblox) StdoutLine: {'line': b'running install_scripts\n'}
+[5.339881] (-) TimerEvent: {}
+[5.417026] (realtime_nvblox) StdoutLine: {'line': b'Installing check_environment script to /home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/realtime_nvblox\n'}
+[5.417944] (realtime_nvblox) StdoutLine: {'line': b'Installing ros_mapper script to /home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/realtime_nvblox\n'}
+[5.418412] (realtime_nvblox) StdoutLine: {'line': b'Installing standalone_mapper script to /home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/realtime_nvblox\n'}
+[5.420821] (realtime_nvblox) StdoutLine: {'line': b"writing list of installed files to '/home/wqj/realtime_nvblox_ws/build/realtime_nvblox/install.log'\n"}
+[5.440302] (-) TimerEvent: {}
+[5.541002] (-) TimerEvent: {}
+[5.551499] (realtime_nvblox) CommandEnded: {'returncode': 0}
+[5.609646] (realtime_nvblox) JobEnded: {'identifier': 'realtime_nvblox', 'rc': 0}
+[5.617151] (ur7e_nvblox) JobStarted: {'identifier': 'ur7e_nvblox'}
+[5.641635] (-) TimerEvent: {}
+[5.742307] (-) TimerEvent: {}
+[5.842990] (-) TimerEvent: {}
+[5.943674] (-) TimerEvent: {}
+[6.044425] (-) TimerEvent: {}
+[6.145161] (-) TimerEvent: {}
+[6.246002] (-) TimerEvent: {}
+[6.346721] (-) TimerEvent: {}
+[6.447494] (-) TimerEvent: {}
+[6.548090] (-) TimerEvent: {}
+[6.648838] (-) TimerEvent: {}
+[6.749470] (-) TimerEvent: {}
+[6.850112] (-) TimerEvent: {}
+[6.950819] (-) TimerEvent: {}
+[7.051603] (-) TimerEvent: {}
+[7.152351] (-) TimerEvent: {}
+[7.255418] (-) TimerEvent: {}
+[7.356029] (-) TimerEvent: {}
+[7.456717] (-) TimerEvent: {}
+[7.557455] (-) TimerEvent: {}
+[7.658290] (-) TimerEvent: {}
+[7.759025] (-) TimerEvent: {}
+[7.859866] (-) TimerEvent: {}
+[7.960722] (-) TimerEvent: {}
+[8.061475] (-) TimerEvent: {}
+[8.162320] (-) TimerEvent: {}
+[8.263133] (-) TimerEvent: {}
+[8.363972] (-) TimerEvent: {}
+[8.464754] (-) TimerEvent: {}
+[8.565499] (-) TimerEvent: {}
+[8.666329] (-) TimerEvent: {}
+[8.767099] (-) TimerEvent: {}
+[8.867884] (-) TimerEvent: {}
+[8.968891] (-) TimerEvent: {}
+[9.069607] (-) TimerEvent: {}
+[9.170360] (-) TimerEvent: {}
+[9.270973] (-) TimerEvent: {}
+[9.320314] (ur7e_nvblox) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ur7e_nvblox', 'build', '--build-base', '/home/wqj/realtime_nvblox_ws/build/ur7e_nvblox/build', 'install', '--record', '/home/wqj/realtime_nvblox_ws/build/ur7e_nvblox/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/wqj/realtime_nvblox_ws/src/ur7e_nvblox', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(whole_control)', 'CODEX_CI': '1', 'LANGUAGE': 'zh_CN:zh', 'USER': 'wqj', 'XDG_SESSION_TYPE': 'x11', 'ISAACSIM_PATH': '/home/wqj/isaac-sim/isaac-sim-standalone-5.1.0-linux-x86_64', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/wqj', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/wqj/realtime_nvblox_ws', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2110', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '2395', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', '_CONDA_ROOT': '/home/wqj/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6969', 'CODEX_PERMISSION_PROFILE': ':danger-full-access', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'wqj', 'PYTHONDONTWRITEBYTECODE': '1', 'JOURNAL_STREAM': '8:4891', '_': '/usr/bin/python3', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wqj', 'ANTHROPIC_BASE_URL': 'https://jp.duckcoding.com', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/wqj/.local/bin:/home/wqj/.codex/tmp/arg0/codex-arg0eO60I7:/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/wqj/miniconda3/envs/whole_control/bin:/opt/ros/humble/bin:/home/wqj/miniconda3/condabin:/usr/local/cuda-12.8/bin:/home/wqj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/wqj:@/tmp/.ICE-unix/2364,unix/wqj:/tmp/.ICE-unix/2364', 'CODEX_SESSION_ID': '01a0a4fd-e566-7482-a175-42a53be197d3', 'INVOCATION_ID': 'f57df87d65de46b6ba720874854d32c8', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/wqj/realtime_nvblox_ws/install/realtime_nvblox:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/wqj/miniconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:43510221-f943-47e3-9630-64633075b957', 'ANTHROPIC_AUTH_TOKEN': 'sk-AK93QgdSS4ZKAU1vKORj24QZj8Kn6IN2qu8HqAJ1d4DB5VKm', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'whole_control', 'CODEX_THREAD_ID': '01a0a4fd-e566-7482-a175-42a53be197d3', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/wqj/miniconda3/bin/conda', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wqj/realtime_nvblox_ws/build/ur7e_nvblox', 'LC_ALL': 'C.UTF-8', 'CODEX_MANAGED_PACKAGE_ROOT': '/usr/lib/node_modules/@openai/codex', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/wqj/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wqj/realtime_nvblox_ws/build/ur7e_nvblox/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/wqj/miniconda3/envs/whole_control', 'COLCON': '1', 'CODEX_MANAGED_BY_NPM': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[9.371478] (-) TimerEvent: {}
+[9.472294] (-) TimerEvent: {}
+[9.573011] (-) TimerEvent: {}
+[9.673785] (-) TimerEvent: {}
+[9.774566] (-) TimerEvent: {}
+[9.875316] (-) TimerEvent: {}
+[9.976025] (-) TimerEvent: {}
+[10.076781] (-) TimerEvent: {}
+[10.177520] (-) TimerEvent: {}
+[10.278355] (-) TimerEvent: {}
+[10.379049] (-) TimerEvent: {}
+[10.479838] (-) TimerEvent: {}
+[10.580594] (-) TimerEvent: {}
+[10.681363] (-) TimerEvent: {}
+[10.740062] (ur7e_nvblox) StdoutLine: {'line': b'running egg_info\n'}
+[10.744508] (ur7e_nvblox) StdoutLine: {'line': b'writing ../../build/ur7e_nvblox/ur7e_nvblox.egg-info/PKG-INFO\n'}
+[10.746904] (ur7e_nvblox) StdoutLine: {'line': b'writing dependency_links to ../../build/ur7e_nvblox/ur7e_nvblox.egg-info/dependency_links.txt\n'}
+[10.747750] (ur7e_nvblox) StdoutLine: {'line': b'writing entry points to ../../build/ur7e_nvblox/ur7e_nvblox.egg-info/entry_points.txt\n'}
+[10.748084] (ur7e_nvblox) StdoutLine: {'line': b'writing requirements to ../../build/ur7e_nvblox/ur7e_nvblox.egg-info/requires.txt\n'}
+[10.748494] (ur7e_nvblox) StdoutLine: {'line': b'writing top-level names to ../../build/ur7e_nvblox/ur7e_nvblox.egg-info/top_level.txt\n'}
+[10.757141] (ur7e_nvblox) StdoutLine: {'line': b"reading manifest file '../../build/ur7e_nvblox/ur7e_nvblox.egg-info/SOURCES.txt'\n"}
+[10.762694] (ur7e_nvblox) StdoutLine: {'line': b"writing manifest file '../../build/ur7e_nvblox/ur7e_nvblox.egg-info/SOURCES.txt'\n"}
+[10.763631] (ur7e_nvblox) StdoutLine: {'line': b'running build\n'}
+[10.763981] (ur7e_nvblox) StdoutLine: {'line': b'running build_py\n'}
+[10.765454] (ur7e_nvblox) StderrLine: {'line': b'warning: build_py: byte-compiling is disabled, skipping.\n'}
+[10.766720] (ur7e_nvblox) StderrLine: {'line': b'\n'}
+[10.767135] (ur7e_nvblox) StdoutLine: {'line': b'running install\n'}
+[10.768447] (ur7e_nvblox) StdoutLine: {'line': b'running install_lib\n'}
+[10.771972] (ur7e_nvblox) StderrLine: {'line': b'warning: install_lib: byte-compiling is disabled, skipping.\n'}
+[10.773812] (ur7e_nvblox) StderrLine: {'line': b'\n'}
+[10.774580] (ur7e_nvblox) StdoutLine: {'line': b'running install_data\n'}
+[10.774908] (ur7e_nvblox) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.781607] (-) TimerEvent: {}
+[10.784794] (ur7e_nvblox) StdoutLine: {'line': b"removing '/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[10.786781] (ur7e_nvblox) StdoutLine: {'line': b'Copying ../../build/ur7e_nvblox/ur7e_nvblox.egg-info to /home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox-0.1.0-py3.10.egg-info\n'}
+[10.789835] (ur7e_nvblox) StdoutLine: {'line': b'running install_scripts\n'}
+[10.882043] (-) TimerEvent: {}
+[10.921444] (ur7e_nvblox) StdoutLine: {'line': b'Installing tf_mapper script to /home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/ur7e_nvblox\n'}
+[10.923928] (ur7e_nvblox) StdoutLine: {'line': b'Installing verify_esdf script to /home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/ur7e_nvblox\n'}
+[10.924853] (ur7e_nvblox) StdoutLine: {'line': b"writing list of installed files to '/home/wqj/realtime_nvblox_ws/build/ur7e_nvblox/install.log'\n"}
+[10.982379] (-) TimerEvent: {}
+[11.057342] (ur7e_nvblox) CommandEnded: {'returncode': 0}
+[11.083338] (-) TimerEvent: {}
+[11.096046] (ur7e_nvblox) JobEnded: {'identifier': 'ur7e_nvblox', 'rc': 0}
+[11.102778] (ur7e_reconstruction) JobStarted: {'identifier': 'ur7e_reconstruction'}
+[11.183752] (-) TimerEvent: {}
+[11.284496] (-) TimerEvent: {}
+[11.385278] (-) TimerEvent: {}
+[11.486001] (-) TimerEvent: {}
+[11.587003] (-) TimerEvent: {}
+[11.687889] (-) TimerEvent: {}
+[11.788521] (-) TimerEvent: {}
+[11.889289] (-) TimerEvent: {}
+[11.989987] (-) TimerEvent: {}
+[12.090889] (-) TimerEvent: {}
+[12.191670] (-) TimerEvent: {}
+[12.292289] (-) TimerEvent: {}
+[12.392904] (-) TimerEvent: {}
+[12.493926] (-) TimerEvent: {}
+[12.594617] (-) TimerEvent: {}
+[12.695390] (-) TimerEvent: {}
+[12.796113] (-) TimerEvent: {}
+[12.897109] (-) TimerEvent: {}
+[12.997920] (-) TimerEvent: {}
+[13.098658] (-) TimerEvent: {}
+[13.199378] (-) TimerEvent: {}
+[13.300227] (-) TimerEvent: {}
+[13.400873] (-) TimerEvent: {}
+[13.501482] (-) TimerEvent: {}
+[13.602120] (-) TimerEvent: {}
+[13.702775] (-) TimerEvent: {}
+[13.803433] (-) TimerEvent: {}
+[13.904118] (-) TimerEvent: {}
+[14.004880] (-) TimerEvent: {}
+[14.105563] (-) TimerEvent: {}
+[14.206575] (-) TimerEvent: {}
+[14.307344] (-) TimerEvent: {}
+[14.408053] (-) TimerEvent: {}
+[14.508869] (-) TimerEvent: {}
+[14.609722] (-) TimerEvent: {}
+[14.710452] (-) TimerEvent: {}
+[14.811162] (-) TimerEvent: {}
+[14.912062] (-) TimerEvent: {}
+[14.931748] (ur7e_reconstruction) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ur7e_reconstruction', 'build', '--build-base', '/home/wqj/realtime_nvblox_ws/build/ur7e_reconstruction/build', 'install', '--record', '/home/wqj/realtime_nvblox_ws/build/ur7e_reconstruction/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/wqj/realtime_nvblox_ws/src/ur7e_reconstruction', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(whole_control)', 'CODEX_CI': '1', 'LANGUAGE': 'zh_CN:zh', 'USER': 'wqj', 'XDG_SESSION_TYPE': 'x11', 'ISAACSIM_PATH': '/home/wqj/isaac-sim/isaac-sim-standalone-5.1.0-linux-x86_64', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/wqj', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/wqj/realtime_nvblox_ws', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2110', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '2395', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', '_CONDA_ROOT': '/home/wqj/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6969', 'CODEX_PERMISSION_PROFILE': ':danger-full-access', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'wqj', 'PYTHONDONTWRITEBYTECODE': '1', 'JOURNAL_STREAM': '8:4891', '_': '/usr/bin/python3', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wqj', 'ANTHROPIC_BASE_URL': 'https://jp.duckcoding.com', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/wqj/.local/bin:/home/wqj/.codex/tmp/arg0/codex-arg0eO60I7:/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/wqj/miniconda3/envs/whole_control/bin:/opt/ros/humble/bin:/home/wqj/miniconda3/condabin:/usr/local/cuda-12.8/bin:/home/wqj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/wqj:@/tmp/.ICE-unix/2364,unix/wqj:/tmp/.ICE-unix/2364', 'CODEX_SESSION_ID': '01a0a4fd-e566-7482-a175-42a53be197d3', 'INVOCATION_ID': 'f57df87d65de46b6ba720874854d32c8', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox:/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/wqj/miniconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:43510221-f943-47e3-9630-64633075b957', 'ANTHROPIC_AUTH_TOKEN': 'sk-AK93QgdSS4ZKAU1vKORj24QZj8Kn6IN2qu8HqAJ1d4DB5VKm', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'whole_control', 'CODEX_THREAD_ID': '01a0a4fd-e566-7482-a175-42a53be197d3', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/wqj/miniconda3/bin/conda', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wqj/realtime_nvblox_ws/build/ur7e_reconstruction', 'LC_ALL': 'C.UTF-8', 'CODEX_MANAGED_PACKAGE_ROOT': '/usr/lib/node_modules/@openai/codex', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/wqj/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wqj/realtime_nvblox_ws/build/ur7e_reconstruction/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/python3.10/site-packages:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/wqj/miniconda3/envs/whole_control', 'COLCON': '1', 'CODEX_MANAGED_BY_NPM': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo'}, 'shell': False}
+[15.012451] (-) TimerEvent: {}
+[15.113086] (-) TimerEvent: {}
+[15.213749] (-) TimerEvent: {}
+[15.314570] (-) TimerEvent: {}
+[15.415342] (-) TimerEvent: {}
+[15.516031] (-) TimerEvent: {}
+[15.616710] (-) TimerEvent: {}
+[15.717427] (-) TimerEvent: {}
+[15.818094] (-) TimerEvent: {}
+[15.919089] (-) TimerEvent: {}
+[16.019997] (-) TimerEvent: {}
+[16.120686] (-) TimerEvent: {}
+[16.221342] (-) TimerEvent: {}
+[16.321895] (-) TimerEvent: {}
+[16.394718] (ur7e_reconstruction) StdoutLine: {'line': b'running egg_info\n'}
+[16.399309] (ur7e_reconstruction) StdoutLine: {'line': b'writing ../../build/ur7e_reconstruction/ur7e_reconstruction.egg-info/PKG-INFO\n'}
+[16.400986] (ur7e_reconstruction) StdoutLine: {'line': b'writing dependency_links to ../../build/ur7e_reconstruction/ur7e_reconstruction.egg-info/dependency_links.txt\n'}
+[16.402428] (ur7e_reconstruction) StdoutLine: {'line': b'writing entry points to ../../build/ur7e_reconstruction/ur7e_reconstruction.egg-info/entry_points.txt\n'}
+[16.402827] (ur7e_reconstruction) StdoutLine: {'line': b'writing requirements to ../../build/ur7e_reconstruction/ur7e_reconstruction.egg-info/requires.txt\n'}
+[16.403118] (ur7e_reconstruction) StdoutLine: {'line': b'writing top-level names to ../../build/ur7e_reconstruction/ur7e_reconstruction.egg-info/top_level.txt\n'}
+[16.413408] (ur7e_reconstruction) StdoutLine: {'line': b"reading manifest file '../../build/ur7e_reconstruction/ur7e_reconstruction.egg-info/SOURCES.txt'\n"}
+[16.421115] (ur7e_reconstruction) StdoutLine: {'line': b"writing manifest file '../../build/ur7e_reconstruction/ur7e_reconstruction.egg-info/SOURCES.txt'\n"}
+[16.421933] (-) TimerEvent: {}
+[16.422077] (ur7e_reconstruction) StdoutLine: {'line': b'running build\n'}
+[16.422636] (ur7e_reconstruction) StdoutLine: {'line': b'running build_py\n'}
+[16.423731] (ur7e_reconstruction) StdoutLine: {'line': b'copying ur7e_reconstruction/check_scan.py -> /home/wqj/realtime_nvblox_ws/build/ur7e_reconstruction/build/lib/ur7e_reconstruction\n'}
+[16.425923] (ur7e_reconstruction) StderrLine: {'line': b'warning: build_py: byte-compiling is disabled, skipping.\n'}
+[16.426764] (ur7e_reconstruction) StderrLine: {'line': b'\n'}
+[16.427203] (ur7e_reconstruction) StdoutLine: {'line': b'running install\n'}
+[16.428211] (ur7e_reconstruction) StdoutLine: {'line': b'running install_lib\n'}
+[16.433405] (ur7e_reconstruction) StdoutLine: {'line': b'copying /home/wqj/realtime_nvblox_ws/build/ur7e_reconstruction/build/lib/ur7e_reconstruction/check_scan.py -> /home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/python3.10/site-packages/ur7e_reconstruction\n'}
+[16.435682] (ur7e_reconstruction) StderrLine: {'line': b'warning: install_lib: byte-compiling is disabled, skipping.\n'}
+[16.436570] (ur7e_reconstruction) StderrLine: {'line': b'\n'}
+[16.438054] (ur7e_reconstruction) StdoutLine: {'line': b'running install_data\n'}
+[16.438685] (ur7e_reconstruction) StdoutLine: {'line': b'copying config/scan_views.yaml -> /home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/share/ur7e_reconstruction/config\n'}
+[16.439042] (ur7e_reconstruction) StdoutLine: {'line': b'running install_egg_info\n'}
+[16.448377] (ur7e_reconstruction) StdoutLine: {'line': b"removing '/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/python3.10/site-packages/ur7e_reconstruction-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[16.450354] (ur7e_reconstruction) StdoutLine: {'line': b'Copying ../../build/ur7e_reconstruction/ur7e_reconstruction.egg-info to /home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/python3.10/site-packages/ur7e_reconstruction-0.1.0-py3.10.egg-info\n'}
+[16.453774] (ur7e_reconstruction) StdoutLine: {'line': b'running install_scripts\n'}
+[16.522465] (-) TimerEvent: {}
+[16.583474] (ur7e_reconstruction) StdoutLine: {'line': b'Installing evaluate_scene script to /home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/ur7e_reconstruction\n'}
+[16.584613] (ur7e_reconstruction) StdoutLine: {'line': b'Installing reconstruct script to /home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/ur7e_reconstruction\n'}
+[16.585276] (ur7e_reconstruction) StdoutLine: {'line': b'Installing scan_scene script to /home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/ur7e_reconstruction\n'}
+[16.585913] (ur7e_reconstruction) StdoutLine: {'line': b'Installing verify_reconstruction script to /home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/ur7e_reconstruction\n'}
+[16.587663] (ur7e_reconstruction) StdoutLine: {'line': b"writing list of installed files to '/home/wqj/realtime_nvblox_ws/build/ur7e_reconstruction/install.log'\n"}
+[16.622699] (-) TimerEvent: {}
+[16.722313] (ur7e_reconstruction) CommandEnded: {'returncode': 0}
+[16.726716] (-) TimerEvent: {}
+[16.770335] (ur7e_reconstruction) JobEnded: {'identifier': 'ur7e_reconstruction', 'rc': 0}
+[16.775047] (-) EventReactorShutdown: {}

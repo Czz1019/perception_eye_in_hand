@@ -1,0 +1,63 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: base_link
+    Background Color: 35; 35; 35
+    Frame Rate: 30
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Base Grid
+      Enabled: true
+      Cell Size: 0.1
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Observed ESDF
+      Enabled: true
+      Topic:
+        Value: /ur7e_nvblox/esdf_observed
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Position Transformer: XYZ
+      Color Transformer: RGB8
+      Style: Points
+      Size (Pixels): 3
+      Decay Time: 0
+    - Class: rviz_default_plugins/Pose
+      Name: Depth Camera Pose
+      Enabled: false
+      Topic:
+        Value: /ur7e_nvblox/camera_pose
+        Reliability Policy: Best Effort
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: false
+    - Class: rviz_default_plugins/RobotModel
+      Name: UR7e
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+        Durability Policy: Transient Local
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Collision and Goal
+      Enabled: true
+      Topic:
+        Value: /perception_planning/markers
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 2.5
+      Focal Point: {X: 0.3, Y: 0.0, Z: 0.3}
+      Pitch: 0.6
+      Yaw: 0.8
+Window Geometry:
+  Width: 1200
+  Height: 800

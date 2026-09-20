@@ -1,0 +1,40 @@
+use_cuda: true
+cuda_device_num: 0
+sim_params:
+  sim_urdf: /home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner/share/ur7e_sage_planner/assets/urdf/ur7e/ur7e.urdf
+  robot_pose:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  init_state:
+  - 0.0
+  - -1.57
+  - 1.57
+  - -1.57
+  - -1.57
+  - 0.0
+  control_mode: position
+  gazebo:
+    joint_state_topic: /joint_states
+    position_cmd_topic: /forward_position_controller/commands
+    joint_names:
+    - shoulder_pan_joint
+    - shoulder_lift_joint
+    - elbow_joint
+    - wrist_1_joint
+    - wrist_2_joint
+    - wrist_3_joint
+  asset_options:
+    fix_base_link: true
+    flip_visual_attachments: false
+    armature: 0.001
+    disable_gravity: true
+    collapse_fixed_joints: true
+  camera:
+    label_map:
+      robot: 2
+      ground: 0

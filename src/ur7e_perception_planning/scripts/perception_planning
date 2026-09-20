@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -eo pipefail
+PP_ENV="${SAGE_CONDA_PREFIX:-$HOME/miniconda3/envs/whole_control}"
+export CONDA_PREFIX="$PP_ENV"
+export PATH="$PP_ENV/bin:$PATH"
+export PYTHONDONTWRITEBYTECODE=1
+export PYTHONUNBUFFERED=1
+export OPENBLAS_NUM_THREADS=1
+export OMP_NUM_THREADS=2
+export MKL_NUM_THREADS=2
+exec "$PP_ENV/bin/python" -B -m ur7e_perception_planning_core.entrypoint "$@"

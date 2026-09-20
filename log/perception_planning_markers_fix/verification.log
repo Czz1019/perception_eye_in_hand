@@ -1,0 +1,63 @@
+{
+  "checks": {
+    "reliable_received": true,
+    "best_effort_received": true,
+    "publisher_reliable": true,
+    "rviz_reliable": true,
+    "robot_spheres": true,
+    "planner_no_error": true
+  },
+  "passed": true,
+  "counts": {
+    "reliable": 6,
+    "best_effort": 6
+  },
+  "goal_messages": {
+    "reliable": 3,
+    "best_effort": 3
+  },
+  "subscribers": [
+    {
+      "node": "verify_marker_delivery",
+      "reliability": "ReliabilityPolicy.RELIABLE"
+    },
+    {
+      "node": "verify_marker_delivery",
+      "reliability": "ReliabilityPolicy.BEST_EFFORT"
+    },
+    {
+      "node": "rviz",
+      "reliability": "ReliabilityPolicy.RELIABLE"
+    }
+  ],
+  "latest_status": {
+    "status": "PLANNING",
+    "guard": "clear",
+    "enabled": true,
+    "error": null,
+    "plans": 23,
+    "sage_optimizations": 11,
+    "plan_ms": 14.425978006329387,
+    "minimum_clearance": 0.0359147755742073,
+    "optimize_ms": 0.0,
+    "admission_ms": 1.247890992090106,
+    "accepted_commands": 2578,
+    "guard_rejections": 0,
+    "command_source": "sage",
+    "map_sequence": 177,
+    "map_epoch": 1789886188634069483,
+    "last_plan_map": 176,
+    "map_age_sim": -0.05700000000000216,
+    "goal": [
+      0.5,
+      0.5,
+      0.45
+    ],
+    "ee": [
+      0.2074890080322614,
+      0.12922136265161982,
+      0.8423926396686884
+    ],
+    "goal_error": 0.6140125910777671
+  }
+}

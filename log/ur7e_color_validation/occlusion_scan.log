@@ -1,0 +1,16 @@
+[INFO] [1789619235.103808457] [reconstruction_scan]: Moving to overview
+[INFO] [1789619260.026370758] [reconstruction_scan]: {"name": "overview", "integrated_frames": 16, "joint_error_rad": 3.5121797518078424e-05, "latest": {"map_epoch": 0, "input_stamp_ns": 462973000000, "vertices": 20623, "triangles": 31557, "camera_position_base": [0.29999619722366333, 0.15999913215637207, 0.8299863338470459]}}
+[INFO] [1789619260.029068911] [reconstruction_scan]: Moving to east
+[INFO] [1789619283.024012115] [reconstruction_scan]: {"name": "east", "integrated_frames": 15, "joint_error_rad": 2.4492760287153637e-05, "latest": {"map_epoch": 0, "input_stamp_ns": 480812000000, "vertices": 20632, "triangles": 31496, "camera_position_base": [0.6138662099838257, 0.05466657876968384, 0.5737249255180359]}}
+[INFO] [1789619283.025860045] [reconstruction_scan]: Moving to sphere_southeast4
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_reconstruction/ur7e_reconstruction/scan.py", line 106, in main
+    node.run()
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_reconstruction/ur7e_reconstruction/scan.py", line 81, in run
+    self.move(target)
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_reconstruction/ur7e_reconstruction/scan.py", line 73, in move
+    self.wait_until(lambda: np.max(np.abs(self.q-target)) < .008, 20, f'joint target {target.tolist()}')
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_reconstruction/ur7e_reconstruction/scan.py", line 53, in wait_until
+    raise RuntimeError('Timeout: ' + description)
+RuntimeError: Timeout: joint target [-0.10617553144186913, -0.6759648487364834, 0.5967144155630055, -0.3496979473466006, -0.9710038329368644, 0.48634118655569514]

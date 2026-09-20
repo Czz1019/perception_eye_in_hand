@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -eo pipefail
+SAGE_ENV_PREFIX="${SAGE_CONDA_PREFIX:-$HOME/miniconda3/envs/whole_control}"
+if [[ ! -x "$SAGE_ENV_PREFIX/bin/python" ]]; then
+    echo "whole_control Python not found; set SAGE_CONDA_PREFIX to its conda prefix." >&2
+    exit 1
+fi
+export PYTHONDONTWRITEBYTECODE=1
+export PYTHONUNBUFFERED=1
+export CONDA_PREFIX="$SAGE_ENV_PREFIX"
+export PATH="$SAGE_ENV_PREFIX/bin:$PATH"
+exec "$SAGE_ENV_PREFIX/bin/python" -B -m ur7e_sage_planner.entrypoint "$@"

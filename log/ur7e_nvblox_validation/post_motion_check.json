@@ -1,0 +1,83 @@
+{
+  "result": "PASS",
+  "messages": 10,
+  "wall_hz": 0.867168988681002,
+  "simulation_hz": 0.9185548071034905,
+  "known_cells_min": 2908,
+  "known_cells_max": 2908,
+  "tf_poses_checked": 8,
+  "max_pose_matrix_error": 1.669409899207608e-08,
+  "stats": {
+    "rates_hz": {
+      "depth_received": 5.996303956202674,
+      "depth_outside_clock_window": 0.0,
+      "depth_overwritten": 5.996303956202674,
+      "map_initialized": 0.0,
+      "stale_depth": 0.0,
+      "depth_integrated": 2.998151978101337,
+      "esdf_updated": 1.9987679854008913,
+      "esdf_published": 0.9993839927004456,
+      "stale_output": 0.9993839927004456,
+      "map_reset_requested": 0.0
+    },
+    "totals": {
+      "depth_received": 703,
+      "depth_outside_clock_window": 1,
+      "depth_overwritten": 345,
+      "map_initialized": 2,
+      "stale_depth": 1,
+      "depth_integrated": 355,
+      "esdf_updated": 199,
+      "esdf_published": 133,
+      "stale_output": 33,
+      "map_reset_requested": 1
+    },
+    "latency": {
+      "tf_lookup": {
+        "mean_ms": 8.533243939713563,
+        "p50_ms": 0.8826960111036897,
+        "p95_ms": 38.16181698930448,
+        "max_ms": 48.16541098989546
+      },
+      "backend_initialization": {
+        "mean_ms": 1275.2127364801709,
+        "p50_ms": 1275.2127364801709,
+        "p95_ms": 2143.4994405368343,
+        "max_ms": 2239.9757409875747
+      },
+      "fusion_and_esdf": {
+        "mean_ms": 143.1437000837329,
+        "p50_ms": 68.75724697601981,
+        "p95_ms": 368.1247414991958,
+        "max_ms": 442.98428698675707
+      }
+    },
+    "world_frame": "base_link",
+    "python_executable": "/home/wqj/miniconda3/envs/whole_control/bin/python",
+    "error": null,
+    "latest": {
+      "input_stamp_ns": 336187000000,
+      "known_cells": 2908,
+      "total_cells": 52111,
+      "map_epoch": 1,
+      "unknown_distance_m": 100.0,
+      "depth_encoding": "16UC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        1280,
+        720
+      ],
+      "integration_size": [
+        640,
+        360
+      ],
+      "camera_position_base": [
+        0.567024827003479,
+        0.15086576342582703,
+        0.7234211564064026
+      ],
+      "ros_clock_minus_image_sec": 0.413,
+      "receive_to_result_ms": 522.5852250005119
+    }
+  }
+}
