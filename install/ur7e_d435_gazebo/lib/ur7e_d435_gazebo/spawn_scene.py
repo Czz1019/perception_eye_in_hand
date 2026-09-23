@@ -1,1 +1,1 @@
-/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo/scripts/spawn_scene.py
+/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo/scripts/spawn_scene.py

@@ -8,7 +8,7 @@ import subprocess
 import time
 import xml.etree.ElementTree as ET
 
-from ament_index_python.packages import get_package_share_directory
+from ament_index_python.packages import get_package_prefix, get_package_share_directory
 from controller_manager_msgs.srv import ListControllers
 from rcl_interfaces.srv import GetParameters
 import rclpy
@@ -16,15 +16,18 @@ from rclpy.qos import DurabilityPolicy, QoSProfile, qos_profile_sensor_data
 from sensor_msgs.msg import Image, JointState, PointCloud2
 from tf2_msgs.msg import TFMessage
 import yaml
+from mount_geometry import check_mount_geometry
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path)
     parser.add_argument("--timeout", type=float, default=60.0)
+    parser.add_argument("--calibration", type=Path, help="Same YAML passed to scene.launch.py")
     args = parser.parse_args()
     share = Path(get_package_share_directory("ur7e_d435_gazebo"))
-    calibration = yaml.safe_load((share / "config/ur7e_d435_side_sim_mount.yaml").read_text())["transform"]
+    calibration_file = args.calibration or share / "config/ur7e_d435_handeye_20260907.yaml"
+    calibration = yaml.safe_load(calibration_file.read_text())["transform"]
     initial = yaml.safe_load((share / "config/initial_positions.yaml").read_text())
     rclpy.init()
     node = rclpy.create_node("verify_ur7e_d435_scene")
@@ -75,6 +78,8 @@ def main():
         assert all(abs(getattr(tr, axis) - calibration["translation"][axis]) < 1e-9 for axis in "xyz")
         q = [getattr(rot, axis) for axis in "xyzw"]
         wanted = [calibration["rotation"][axis] for axis in "xyzw"]
+        norm = math.sqrt(sum(value*value for value in wanted))
+        wanted = [value/norm for value in wanted]
         assert min(sum((a - b)**2 for a, b in zip(q, wanted)), sum((a + b)**2 for a, b in zip(q, wanted))) < 1e-12
         for topic, (_, frame) in topics.items():
             msg = messages[topic]
@@ -87,7 +92,8 @@ def main():
         assert all(math.isfinite(joints[j]) and abs(joints[j] - initial[j]) < 0.02 for j in initial), joints
         xml = parameter_future.result().values[0].string_value
         robot = ET.fromstring(xml)
-        assert robot.find("link[@name='d435_mount_link']") is not None
+        assert robot.find("joint[@name='tool0_camera_color_optical_joint']") is not None
+        assert robot.find("link[@name='camera_bottom_screw_frame']") is not None
         for mesh in robot.findall(".//mesh"):
             filename = mesh.get("filename")
             assert filename.startswith("file://" + str(share) + "/meshes/"), filename
@@ -96,7 +102,11 @@ def main():
         for name in models:
             result = subprocess.run(["gz", "model", "-m", name, "-i"], text=True, capture_output=True, timeout=15, check=True)
             assert f'name: "{name}"' in result.stdout, (name, result.stdout, result.stderr)
-        report = {"result": "PASS", "package_share": str(share), "models": models,
+        geometry = check_mount_geometry(xml, joints,
+            Path(get_package_prefix("ur7e_d435_gazebo")) / "lib/ur7e_d435_gazebo/check_mount_meshes")
+        report = {"result": "FAIL_GEOMETRY" if geometry["collision"] else "PASS",
+            "runtime_result": "PASS", "geometry": geometry,
+            "calibration_file": str(calibration_file), "package_share": str(share), "models": models,
             "active_controllers": sorted(active), "transform": calibration,
             "joint_positions": joints, "topics": {t: {"frame": messages[t].header.frame_id,
                 "distinct_timestamps": len(stamps[t])} for t in topics},
@@ -105,10 +115,11 @@ def main():
             args.output.parent.mkdir(parents=True, exist_ok=True)
             args.output.write_text(json.dumps(report, indent=2) + "\n")
         print(json.dumps(report, indent=2))
+        return 1 if geometry["collision"] else 0
     finally:
         node.destroy_node()
         rclpy.shutdown()
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

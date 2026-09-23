@@ -1,8 +1,8 @@
-# Install script for directory: /home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo
+# Install script for directory: /home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo")
+  set(CMAKE_INSTALL_PREFIX "/home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

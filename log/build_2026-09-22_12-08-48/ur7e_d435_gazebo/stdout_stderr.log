@@ -1,0 +1,150 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+CMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (gazebo).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+  CMakeLists.txt:4 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Searching for dependencies of ignition-math6
+-- Looking for OGRE...
+-- Found Ogre Ghadamon (1.9.0)
+-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+-- Looking for OGRE_Paging...
+-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+-- Looking for OGRE_Terrain...
+-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+-- Looking for OGRE_Property...
+-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+-- Looking for OGRE_RTShaderSystem...
+-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+-- Looking for OGRE_Volume...
+-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+-- Looking for OGRE_Overlay...
+-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Looking for ignition-transport8 -- found version 8.2.1
+-- Searching for dependencies of ignition-transport8
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+-- Config-file not installed for ZeroMQ -- checking for pkg-config
+-- Checking for module 'libzmq >= 4'
+--   Found libzmq , version 4.3.4
+-- Checking for module 'uuid'
+--   Found uuid, version 2.37.2
+-- Looking for ignition-msgs5 -- found version 5.8.1
+-- Searching for dependencies of ignition-msgs5
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 9.0.0
+-- Looking for ignition-msgs5 -- found version 5.8.1
+-- Looking for ignition-common3 -- found version 3.14.0
+-- Searching for dependencies of ignition-common3
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Searching for <ignition-common3> component [graphics]
+-- Looking for ignition-common3-graphics -- found version 3.14.0
+-- Searching for dependencies of ignition-common3-graphics
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Looking for ignition-fuel_tools4 -- found version 4.4.0
+-- Searching for dependencies of ignition-fuel_tools4
+-- Checking for module 'jsoncpp'
+--   Found jsoncpp, version 1.9.5
+-- Checking for module 'libzip'
+--   Found libzip, version 1.7.3
+-- Looking for ignition-common3 -- found version 3.14.0
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Looking for ignition-msgs5 -- found version 5.8.1
+-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Gazebo version: 11.10
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+-- Found point_cloud_transport: 1.0.21 (/opt/ros/humble/share/point_cloud_transport/cmake)
+-- Found camera_info_manager: 3.1.12 (/opt/ros/humble/share/camera_info_manager/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo
+Consolidate compiler generated dependencies of target check_mount_meshes
+[ 40%] Built target check_mount_meshes
+Consolidate compiler generated dependencies of target realsense_gazebo_plugin
+[100%] Built target realsense_gazebo_plugin
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/check_mount_meshes
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/librealsense_gazebo_plugin.so
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/collision_world_gazebo_tall.yml
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/controllers.yaml
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/d435_side_mount_validation.json
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/initial_positions.yaml
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/ur7e_d435_side_sim_mount.yaml
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/ur7e_d435_sim_clearance.yaml
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/d435_handeye_mount.urdf.xacro
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/d435_side_mount.urdf.xacro
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/realsense/_d435.urdf.xacro
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/realsense/_materials.urdf.xacro
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/realsense/_usb_plug.urdf.xacro
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/ur7e_base.urdf.xacro
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/ur7e_d435.urdf.xacro
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/realsense/d435.dae
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/realsense/plug.stl
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/realsense/plug_collision.stl
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/base.stl
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/forearm.stl
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/shoulder.stl
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/upperarm.stl
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/wrist1.stl
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/wrist2.stl
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/wrist3.stl
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/base.dae
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/forearm.dae
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/shoulder.dae
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/upperarm.dae
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/wrist1.dae
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/wrist2.dae
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/wrist3.dae
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/launch/calibration_marker.launch.py
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/launch/scene.launch.py
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/licenses/RealSense-Apache-2.0.txt
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/licenses/UR-Description-LICENSE
+-- Symlinking: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/docs/HANDEYE_DIAGNOSIS.md
+-- Symlinking: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/docs/measured_mount_geometry.json
+-- Symlinking: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/docs/measured_mount_runtime.json
+-- Symlinking: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/docs/simulation_mount_geometry.json
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/README.md
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/THIRD_PARTY.md
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/spawn_scene.py
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/verify_scene.py
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/rectify_calibration_image.py
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/evaluate_handeye.py
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/gazebo_obstacle_utils.py
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/mount_geometry.py
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ament_index/resource_index/package_run_dependencies/ur7e_d435_gazebo
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ament_index/resource_index/parent_prefix_path/ur7e_d435_gazebo
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/environment/path.sh
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/environment/path.dsv
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/local_setup.bash
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/local_setup.sh
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/local_setup.zsh
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/local_setup.dsv
+-- Symlinking: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/package.dsv
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ament_index/resource_index/packages/ur7e_d435_gazebo
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/cmake/ur7e_d435_gazeboConfig.cmake
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/cmake/ur7e_d435_gazeboConfig-version.cmake
+-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/package.xml

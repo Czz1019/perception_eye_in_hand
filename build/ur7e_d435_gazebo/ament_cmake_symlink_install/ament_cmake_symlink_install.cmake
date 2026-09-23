@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo/${destination}")
+      set(destination "/home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,59 +310,62 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "realsense_gazebo_plugin" "LIBRARY_DESTINATION" "lib")
-include("/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install("TARGETS" "check_mount_meshes" "DESTINATION" "lib/ur7e_d435_gazebo")
+include("/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(DIRECTORY "config" "urdf" "meshes" "launch" "licenses" "DESTINATION" "share/ur7e_d435_gazebo")
-ament_cmake_symlink_install_directory("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" DIRECTORY "config" "urdf" "meshes" "launch" "licenses" "DESTINATION" "share/ur7e_d435_gazebo")
+# install("TARGETS" "realsense_gazebo_plugin" "LIBRARY_DESTINATION" "lib")
+include("/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "config" "urdf" "meshes" "launch" "licenses" "docs" "DESTINATION" "share/ur7e_d435_gazebo")
+ament_cmake_symlink_install_directory("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" DIRECTORY "config" "urdf" "meshes" "launch" "licenses" "docs" "DESTINATION" "share/ur7e_d435_gazebo")
 
 # install(FILES "README.md" "THIRD_PARTY.md" "DESTINATION" "share/ur7e_d435_gazebo")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "README.md" "THIRD_PARTY.md" "DESTINATION" "share/ur7e_d435_gazebo")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "README.md" "THIRD_PARTY.md" "DESTINATION" "share/ur7e_d435_gazebo")
 
-# install(PROGRAMS "scripts/spawn_scene.py" "scripts/verify_scene.py" "DESTINATION" "lib/ur7e_d435_gazebo")
-ament_cmake_symlink_install_programs("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" PROGRAMS "scripts/spawn_scene.py" "scripts/verify_scene.py" "DESTINATION" "lib/ur7e_d435_gazebo")
+# install(PROGRAMS "scripts/spawn_scene.py" "scripts/verify_scene.py" "scripts/rectify_calibration_image.py" "scripts/evaluate_handeye.py" "scripts/import_handeye_20260907.py" "DESTINATION" "lib/ur7e_d435_gazebo")
+ament_cmake_symlink_install_programs("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" PROGRAMS "scripts/spawn_scene.py" "scripts/verify_scene.py" "scripts/rectify_calibration_image.py" "scripts/evaluate_handeye.py" "scripts/import_handeye_20260907.py" "DESTINATION" "lib/ur7e_d435_gazebo")
 
-# install(FILES "scripts/gazebo_obstacle_utils.py" "DESTINATION" "lib/ur7e_d435_gazebo")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "scripts/gazebo_obstacle_utils.py" "DESTINATION" "lib/ur7e_d435_gazebo")
+# install(FILES "scripts/gazebo_obstacle_utils.py" "scripts/mount_geometry.py" "DESTINATION" "lib/ur7e_d435_gazebo")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "scripts/gazebo_obstacle_utils.py" "scripts/mount_geometry.py" "DESTINATION" "lib/ur7e_d435_gazebo")
 
-# install(FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ur7e_d435_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ur7e_d435_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ur7e_d435_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ur7e_d435_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ur7e_d435_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ur7e_d435_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ur7e_d435_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ur7e_d435_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ur7e_d435_gazebo/environment")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ur7e_d435_gazebo/environment")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ur7e_d435_gazebo/environment")
 
-# install(FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ur7e_d435_gazebo/environment")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ur7e_d435_gazebo/environment")
+# install(FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ur7e_d435_gazebo/environment")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ur7e_d435_gazebo/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ur7e_d435_gazebo/environment")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ur7e_d435_gazebo/environment")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ur7e_d435_gazebo/environment")
 
-# install(FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ur7e_d435_gazebo/environment")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ur7e_d435_gazebo/environment")
+# install(FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ur7e_d435_gazebo/environment")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ur7e_d435_gazebo/environment")
 
-# install(FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ur7e_d435_gazebo")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ur7e_d435_gazebo")
+# install(FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ur7e_d435_gazebo")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ur7e_d435_gazebo")
 
-# install(FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ur7e_d435_gazebo")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ur7e_d435_gazebo")
+# install(FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ur7e_d435_gazebo")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ur7e_d435_gazebo")
 
-# install(FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ur7e_d435_gazebo")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ur7e_d435_gazebo")
+# install(FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ur7e_d435_gazebo")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ur7e_d435_gazebo")
 
-# install(FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ur7e_d435_gazebo")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ur7e_d435_gazebo")
+# install(FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ur7e_d435_gazebo")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ur7e_d435_gazebo")
 
-# install(FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ur7e_d435_gazebo")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ur7e_d435_gazebo")
+# install(FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ur7e_d435_gazebo")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ur7e_d435_gazebo")
 
-# install(FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/ur7e_d435_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/ur7e_d435_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/ur7e_d435_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/ur7e_d435_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_core/ur7e_d435_gazeboConfig.cmake" "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_core/ur7e_d435_gazeboConfig-version.cmake" "DESTINATION" "share/ur7e_d435_gazebo/cmake")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_core/ur7e_d435_gazeboConfig.cmake" "/home/wqj/realtime_nvblox_ws/build/ur7e_d435_gazebo/ament_cmake_core/ur7e_d435_gazeboConfig-version.cmake" "DESTINATION" "share/ur7e_d435_gazebo/cmake")
+# install(FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_core/ur7e_d435_gazeboConfig.cmake" "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_core/ur7e_d435_gazeboConfig-version.cmake" "DESTINATION" "share/ur7e_d435_gazebo/cmake")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_core/ur7e_d435_gazeboConfig.cmake" "/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo/ament_cmake_core/ur7e_d435_gazeboConfig-version.cmake" "DESTINATION" "share/ur7e_d435_gazebo/cmake")
 
-# install(FILES "/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo/package.xml" "DESTINATION" "share/ur7e_d435_gazebo")
-ament_cmake_symlink_install_files("/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo" FILES "/home/wqj/realtime_nvblox_ws/src/ur7e_d435_gazebo/package.xml" "DESTINATION" "share/ur7e_d435_gazebo")
+# install(FILES "/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo/package.xml" "DESTINATION" "share/ur7e_d435_gazebo")
+ament_cmake_symlink_install_files("/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo" FILES "/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo/package.xml" "DESTINATION" "share/ur7e_d435_gazebo")

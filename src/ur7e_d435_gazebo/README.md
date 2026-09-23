@@ -1,17 +1,25 @@
 # UR7e + D435 外侧眼在手上 Gazebo 场景
 
-ROS 2 Humble / Gazebo Classic 11 功能包。直接启动 UR7e、D435 外形和传感器、外侧支架、
-两面墙和一个球。沿用上一版初始关节姿态、模型名、话题、相机位置和控制接口。
+ROS 2 Humble / Gazebo Classic 11 功能包。启动 UR7e、按实测外参放置的 D435 外形和传感器、
+两面墙和一个球。默认保留实测外参，并在启动时检查相机与机械臂的几何相交。
+
+当前默认使用 2026-09-07 ChArUco 实测标定，初始姿态相机与机械臂无相交，最小间隙约 12.14 mm。
+导入说明、单位转换及验证见 [HANDEYE_20260907_IMPORT.md](docs/HANDEYE_20260907_IMPORT.md)。
+旧外参嵌入问题的历史分析见 [HANDEYE_DIAGNOSIS.md](docs/HANDEYE_DIAGNOSIS.md)。
 
 ## 构建与启动
 
 ```bash
-cd /home/wqj/realtime_nvblox_ws
+cd /home/czz/perception_eye_in_hand
 ./build_ur7e_d435_scene.sh
 ./run_ur7e_d435_scene.sh
 ```
 
 可追加 `gazebo_gui:=false`。先关闭其他使用同一 ROS 域和 Gazebo 端口的仿真实例。
+启动会检查 `GAZEBO_MASTER_URI`（默认端口 11345）；占用时会直接报错，不会打开一个无法生成模型的空场景。
+只关 Gazebo 窗口可能留下 `gzserver`，应在原启动终端按 Ctrl+C 退出整个场景。
+可用 `ss -ltnp 'sport = :11345'` 查占用进程；确认是残留仿真实例后再用 `kill -INT <PID>` 正常停止。
+如果服务器启动后异常退出，启动器会同时停止其他场景节点，并输出 Gazebo 详细日志。
 两个脚本只加载系统 ROS 和当前工作空间，不需要 source 旧机械臂、相机、STORM 工作空间，
 也不需要 `source_realtime_nvblox.sh` 的 Torch/cuVSLAM 环境。
 
@@ -19,7 +27,7 @@ cd /home/wqj/realtime_nvblox_ws
 
 ```bash
 source /opt/ros/humble/setup.bash
-source /home/wqj/realtime_nvblox_ws/install/local_setup.bash
+source /home/czz/perception_eye_in_hand/install/local_setup.bash
 ros2 launch ur7e_d435_gazebo scene.launch.py
 ```
 
@@ -32,7 +40,7 @@ ros2 launch ur7e_d435_gazebo scene.launch.py
 ROS/Gazebo 系统依赖完整声明在 `package.xml`；新机器安装依赖可运行：
 
 ```bash
-cd /home/wqj/realtime_nvblox_ws
+cd /home/czz/perception_eye_in_hand
 rosdep install --from-paths src/ur7e_d435_gazebo --ignore-src --rosdistro humble -r -y
 ```
 
@@ -41,9 +49,12 @@ rosdep install --from-paths src/ur7e_d435_gazebo --ignore-src --rosdistro humble
 
 ## 配置与输出
 
-- `config/ur7e_d435_side_sim_mount.yaml`：直接 `tool0 → camera_color_optical_frame`，
-  平移 `[-0.0325, -0.075, 0.0357]` m，旋转 xyzw `[0, 0, 0, 1]`。这是仿真设计值。
-- `urdf/d435_side_mount.urdf.xacro`：外侧支架，中央工具轴留空。
+- `config/ur7e_d435_handeye_20260907.yaml`：默认 `tool0 → camera_color_optical_frame`，
+  平移 `[-0.029901376, -0.069185919, -0.012263443]` m，旋转由原始标定矩阵转换。
+  启动时检查标定类型及父子坐标系名称；这些名称必须与原始标定配置一致，不能仅改名称而不转换外参。
+- `config/ur7e_d435_side_sim_mount.yaml`：保留此前配置，可通过 `calibration_file:=...` 显式对照。
+- `urdf/d435_handeye_mount.urdf.xacro`：从彩色光学中心反推相机安装孔和外壳位置。
+  当前不加载旧的仿真外侧支架；真实支架的间隙需要由正确的标定坐标系和外参体现。
 - `config/initial_positions.yaml`：六关节初始位置。
 - `config/collision_world_gazebo_tall.yml`：两面墙和球；生成时沿用 `sage_clean_*` 模型名。
 - `config/controllers.yaml`：100 Hz 的 controller_manager、关节状态和位置控制器。
@@ -62,9 +73,13 @@ ros2 run ur7e_d435_gazebo verify_scene.py --output /tmp/ur7e_d435_scene_check.js
 ```
 
 检查实际图像/点云的连续时间戳、TF、六关节初始状态、两个 active 控制器、三个障碍物和机械臂，
-以及所有网格引用都位于当前功能包。该检查应在启动 MPPI 或发出关节运动命令之前运行。
+以及所有网格引用都位于当前功能包，并检查相机显示网格和碰撞盒与机械臂几何的距离/相交。
+该检查应在启动 MPPI 或发出关节运动命令之前运行。
+当前默认 ChArUco 外参的初始安装几何检查通过；旧的相交外参仍会返回 `result=FAIL_GEOMETRY` 和退出码 1。
+若启动时指定了 `calibration_file:=...`，验证时也应使用 `--calibration ...`。
 
-2026-09-15 已在当前工作空间完成实际构建和 GUI 启动，上述检查通过。
+以下为 2026-09-15 旧仿真安装配置的历史记录，不代表当前实测外参通过几何验证。
+当时已完成实际构建和 GUI 启动，运行检查通过。
 Gazebo 加载的是本包构建的相机插件；新旧完整展开 URDF 在归一化资源路径后相同，
 25 个 link、24 个 joint 和 15 处网格引用一致，网格内容 SHA256 一致。
 初始姿态、相机外参和障碍物配置也与原场景逐字节一致。

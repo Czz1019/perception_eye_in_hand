@@ -12,7 +12,9 @@ require the source workspaces below at runtime.
   License: `licenses/UR-Description-LICENSE`.
 - `urdf/realsense` and `meshes/realsense`: Intel RealSense ROS description installed
   in `/opt/ros/humble/share/realsense2_description`. The source copyright notices
-  are retained. Only package asset/include paths were changed. Apache-2.0.
+  are retained. Package asset/include paths were changed; the collision/non-mesh
+  box center was subsequently aligned with the D435 visual mesh (see
+  `docs/HANDEYE_DIAGNOSIS.md`). Apache-2.0.
 - `third_party/realsense_gazebo_plugin`: unchanged C++ sources and headers from
   `/home/wqj/perception_D435i/src/realsense_gazebo_plugin` (package version 3.2.0).
   Built here as `librealsense_gazebo_plugin.so`, using current ROS Humble dependency

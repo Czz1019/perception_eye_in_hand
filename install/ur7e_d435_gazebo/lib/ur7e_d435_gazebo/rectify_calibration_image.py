@@ -1,0 +1,1 @@
+/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo/scripts/rectify_calibration_image.py
