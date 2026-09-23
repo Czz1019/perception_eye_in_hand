@@ -1,0 +1,159 @@
+{
+  "upstream_main": "6bf63cc2f75d18751470231e0f912e6ff546da04",
+  "changes": [
+    {
+      "path": "src/realtime_nvblox/config/gazebo_robot.yaml",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/config/robot_eye_in_hand.yaml",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/examples/verify_gazebo_mapping.py",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/examples/verify_gazebo_rejection.py",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/launch/gazebo_mapping.launch.py",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/package.xml",
+      "kind": "modified"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/ROBOT_MAPPING.md",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/cli.py",
+      "kind": "modified"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/config/default.yaml",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/config/esdf_benchmark.yaml",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/config/esdf_final.yaml",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/default.yaml",
+      "kind": "modified"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/gazebo_depth.py",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/gazebo_ros_node.py",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/nvblox_backend.py",
+      "kind": "modified"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/pose_buffer.py",
+      "kind": "modified"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/rate_limiter.py",
+      "kind": "modified"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/realsense_source.py",
+      "kind": "modified"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/robot_eye_in_hand.yaml",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/robot_pose.py",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/ros_node.py",
+      "kind": "modified"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/runtime.py",
+      "kind": "modified"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/tests/test_gpu_esdf.py",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/tests/test_robot_esdf.py",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/tests/test_ros_robot_pose.py",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/realtime_nvblox/types.py",
+      "kind": "modified"
+    },
+    {
+      "path": "src/realtime_nvblox/rviz/gazebo_esdf.rviz",
+      "kind": "added"
+    },
+    {
+      "path": "src/realtime_nvblox/setup.py",
+      "kind": "modified"
+    },
+    {
+      "path": "src/realtime_nvblox/test/test_gazebo_depth.py",
+      "kind": "added"
+    }
+  ],
+  "shared_core_checks": {
+    "nvblox_backend.py": {
+      "matches_upstream": true,
+      "sha256": "d41bbaa1ff0c9a2e4c3e26361074e851ddb6b55acdaf565e4b34f2829690950f"
+    },
+    "runtime.py": {
+      "matches_upstream": true,
+      "sha256": "9d854f06ea057cbffbc6e13caa7ceda941bdc4821fc36190d294d1d100fc3af0"
+    },
+    "ros_node.py": {
+      "matches_upstream": true,
+      "sha256": "5e194b7b66f6fee3e66737419ead2a5c86010ba01abdc25dba44ba0f6951325a"
+    },
+    "robot_pose.py": {
+      "matches_upstream": true,
+      "sha256": "301f80889f297b121f096af739a7e2f19087576bdac7609ac96dc4d8d956cdbf"
+    },
+    "types.py": {
+      "matches_upstream": true,
+      "sha256": "7c20d8ced31f3561ceb974cca72117f15841d37fe3a82bd33b91730cdd1d5121"
+    },
+    "ros_publishers.py": {
+      "matches_upstream": true,
+      "sha256": "94c8928634a080406e5545bd59a0c2ea840ee703d86d7d2d4966175f3b69434f"
+    },
+    "latest_slot.py": {
+      "matches_upstream": true,
+      "sha256": "3bf7a4717766b3acb60d70278973f3fdc0e76e903d94cf1c660d6516a22d06ba"
+    },
+    "realsense_source.py": {
+      "matches_upstream": true,
+      "sha256": "223b5bd161e32c84a0d8887b87784dfc84c72cda4d26a55e8fc06c220acb8370"
+    },
+    "cuvslam_backend.py": {
+      "matches_upstream": true,
+      "sha256": "b1c585b5ac515ea36ad9c507f7d97b93e7e61ca125ccca8ce8b527d54071942a"
+    }
+  }
+}

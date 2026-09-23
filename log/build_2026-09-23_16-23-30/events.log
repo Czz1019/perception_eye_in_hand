@@ -1,0 +1,414 @@
+[0.000000] (-) TimerEvent: {}
+[0.000141] (realtime_nvblox) JobQueued: {'identifier': 'realtime_nvblox', 'dependencies': OrderedDict()}
+[0.000308] (ur7e_d435_gazebo) JobQueued: {'identifier': 'ur7e_d435_gazebo', 'dependencies': OrderedDict()}
+[0.000468] (realtime_nvblox) JobStarted: {'identifier': 'realtime_nvblox'}
+[0.007929] (ur7e_d435_gazebo) JobStarted: {'identifier': 'ur7e_d435_gazebo'}
+[0.099773] (-) TimerEvent: {}
+[0.199984] (-) TimerEvent: {}
+[0.206272] (ur7e_d435_gazebo) JobProgress: {'identifier': 'ur7e_d435_gazebo', 'progress': 'cmake'}
+[0.206751] (ur7e_d435_gazebo) JobProgress: {'identifier': 'ur7e_d435_gazebo', 'progress': 'build'}
+[0.207795] (ur7e_d435_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo', '--', '-j20', '-l20'], 'cwd': '/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'czz'), ('TRT_INC_PATH', '/usr/include/x86_64-linux-gnu'), ('LC_TIME', 'en_US.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/czz'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('CONDA_SHLVL', '0'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('NVM_BIN', '/home/czz/.nvm/versions/node/v22.23.2/bin'), ('NVM_INC', '/home/czz/.nvm/versions/node/v22.23.2/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'en_US.UTF-8'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/89cf1fdf-c797-44dd-9f1c-602c85971d35.sock'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2507'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/czz/miniconda3'), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('NVM_DIR', '/home/czz/.nvm'), ('https_proxy', 'http://127.0.0.1:7897/'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'czz'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'czz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/czz/workspaces/isaac_ros-dev/'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/czz/.local/bin:/home/czz/.codex/tmp/arg0/codex-arg0jjBijA:/home/czz/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/czz/.local/bin:/usr/local/cuda/bin:/home/czz/.nvm/versions/node/v22.23.2/bin:/home/czz/miniconda3/condabin:/usr/local/cuda/bin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/bin:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/bin:/opt/ros/humble/bin:/home/czz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvidia/tao:/opt/nvidia/tao:/home/czz/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources:/opt/nvidia/tao'), ('SESSION_MANAGER', 'local/czz-Legion-Y7000P-IRH8:@/tmp/.ICE-unix/2480,unix/czz-Legion-Y7000P-IRH8:/tmp/.ICE-unix/2480'), ('CODEX_VERSION', '0.155.0-alpha.9.2'), ('CODEX_SESSION_ID', '01a0c735-38b7-74b0-895d-df6712b92df7'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cbf0fd70_5ff3_490d_98d6_763b528a5884'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/czz/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/home/czz/ros_pack/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('CODEX_THREAD_ID', '01a0c735-38b7-74b0-895d-df6712b92df7'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('_CONDA_EXE', '/home/czz/miniconda3/bin/conda'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/czz/miniconda3/bin/conda'), ('ZSH_TMUX_AUTOSTART', 'false'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/czz/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('TRT_LIB_PATH', '/usr/lib/x86_64-linux-gnu'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.268699] (ur7e_d435_gazebo) StdoutLine: {'line': b'[ 40%] Built target check_mount_meshes\n'}
+[0.284946] (ur7e_d435_gazebo) StdoutLine: {'line': b'[100%] Built target realsense_gazebo_plugin\n'}
+[0.293088] (ur7e_d435_gazebo) CommandEnded: {'returncode': 0}
+[0.293745] (ur7e_d435_gazebo) JobProgress: {'identifier': 'ur7e_d435_gazebo', 'progress': 'install'}
+[0.299718] (ur7e_d435_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo'], 'cwd': '/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'czz'), ('TRT_INC_PATH', '/usr/include/x86_64-linux-gnu'), ('LC_TIME', 'en_US.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/czz'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('CONDA_SHLVL', '0'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('NVM_BIN', '/home/czz/.nvm/versions/node/v22.23.2/bin'), ('NVM_INC', '/home/czz/.nvm/versions/node/v22.23.2/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'en_US.UTF-8'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/89cf1fdf-c797-44dd-9f1c-602c85971d35.sock'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2507'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/czz/miniconda3'), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('NVM_DIR', '/home/czz/.nvm'), ('https_proxy', 'http://127.0.0.1:7897/'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'czz'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'czz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/czz/workspaces/isaac_ros-dev/'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/czz/.local/bin:/home/czz/.codex/tmp/arg0/codex-arg0jjBijA:/home/czz/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/czz/.local/bin:/usr/local/cuda/bin:/home/czz/.nvm/versions/node/v22.23.2/bin:/home/czz/miniconda3/condabin:/usr/local/cuda/bin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/bin:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/bin:/opt/ros/humble/bin:/home/czz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvidia/tao:/opt/nvidia/tao:/home/czz/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources:/opt/nvidia/tao'), ('SESSION_MANAGER', 'local/czz-Legion-Y7000P-IRH8:@/tmp/.ICE-unix/2480,unix/czz-Legion-Y7000P-IRH8:/tmp/.ICE-unix/2480'), ('CODEX_VERSION', '0.155.0-alpha.9.2'), ('CODEX_SESSION_ID', '01a0c735-38b7-74b0-895d-df6712b92df7'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cbf0fd70_5ff3_490d_98d6_763b528a5884'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/czz/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/home/czz/ros_pack/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('CODEX_THREAD_ID', '01a0c735-38b7-74b0-895d-df6712b92df7'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('_CONDA_EXE', '/home/czz/miniconda3/bin/conda'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/czz/perception_eye_in_hand/build/ur7e_d435_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/czz/miniconda3/bin/conda'), ('ZSH_TMUX_AUTOSTART', 'false'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/czz/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('TRT_LIB_PATH', '/usr/lib/x86_64-linux-gnu'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.300674] (-) TimerEvent: {}
+[0.305531] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.306143] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.306566] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/check_mount_meshes\n'}
+[0.306902] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/librealsense_gazebo_plugin.so\n'}
+[0.307317] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/collision_world_gazebo_tall.yml\n'}
+[0.307466] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/controllers.yaml\n'}
+[0.307635] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/d435_side_mount_validation.json\n'}
+[0.307834] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/handeye_20260907/calibration_20260907.json\n'}
+[0.308124] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/handeye_20260907/legacy_calibration.yaml\n'}
+[0.308193] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/initial_positions.yaml\n'}
+[0.308304] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/ur7e_d435_handeye_20260907.yaml\n'}
+[0.308368] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/ur7e_d435_side_sim_mount.yaml\n'}
+[0.308487] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/ur7e_d435_sim_clearance.yaml\n'}
+[0.308625] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/d435_handeye_mount.urdf.xacro\n'}
+[0.308830] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/d435_side_mount.urdf.xacro\n'}
+[0.309044] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/realsense/_d435.urdf.xacro\n'}
+[0.309110] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/realsense/_materials.urdf.xacro\n'}
+[0.309703] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/realsense/_usb_plug.urdf.xacro\n'}
+[0.309788] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/ur7e_base.urdf.xacro\n'}
+[0.309990] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/urdf/ur7e_d435.urdf.xacro\n'}
+[0.310116] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/realsense/d435.dae\n'}
+[0.310190] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/realsense/plug.stl\n'}
+[0.310297] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/realsense/plug_collision.stl\n'}
+[0.310411] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/base.stl\n'}
+[0.310490] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/forearm.stl\n'}
+[0.310594] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/shoulder.stl\n'}
+[0.310661] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/upperarm.stl\n'}
+[0.310724] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/wrist1.stl\n'}
+[0.310831] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/wrist2.stl\n'}
+[0.310895] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/collision/wrist3.stl\n'}
+[0.310957] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/base.dae\n'}
+[0.311019] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/forearm.dae\n'}
+[0.311130] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/shoulder.dae\n'}
+[0.311192] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/upperarm.dae\n'}
+[0.311294] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/wrist1.dae\n'}
+[0.311356] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/wrist2.dae\n'}
+[0.311447] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/meshes/ur/visual/wrist3.dae\n'}
+[0.311551] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/launch/__pycache__/scene.launch.cpython-310.pyc\n'}
+[0.311584] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/launch/calibration_marker.launch.py\n'}
+[0.311612] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/launch/scene.launch.py\n'}
+[0.311639] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/licenses/RealSense-Apache-2.0.txt\n'}
+[0.311666] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/licenses/UR-Description-LICENSE\n'}
+[0.311693] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/docs/HANDEYE_20260907_IMPORT.md\n'}
+[0.311720] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/docs/HANDEYE_DIAGNOSIS.md\n'}
+[0.311747] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/docs/handeye_20260907_geometry.json\n'}
+[0.311824] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/docs/handeye_20260907_runtime.json\n'}
+[0.311899] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/docs/measured_mount_geometry.json\n'}
+[0.312057] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/docs/measured_mount_runtime.json\n'}
+[0.312164] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/docs/simulation_mount_geometry.json\n'}
+[0.312407] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/README.md\n'}
+[0.312609] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/THIRD_PARTY.md\n'}
+[0.312861] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/spawn_scene.py\n'}
+[0.313109] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/verify_scene.py\n'}
+[0.313229] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/rectify_calibration_image.py\n'}
+[0.313335] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/evaluate_handeye.py\n'}
+[0.313554] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/import_handeye_20260907.py\n'}
+[0.313748] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/gazebo_obstacle_utils.py\n'}
+[0.313933] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/lib/ur7e_d435_gazebo/mount_geometry.py\n'}
+[0.314084] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ament_index/resource_index/package_run_dependencies/ur7e_d435_gazebo\n'}
+[0.314222] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ament_index/resource_index/parent_prefix_path/ur7e_d435_gazebo\n'}
+[0.314506] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/environment/ament_prefix_path.sh\n'}
+[0.314683] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/environment/ament_prefix_path.dsv\n'}
+[0.314785] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/environment/path.sh\n'}
+[0.314856] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/environment/path.dsv\n'}
+[0.314952] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/local_setup.bash\n'}
+[0.315090] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/local_setup.sh\n'}
+[0.315177] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/local_setup.zsh\n'}
+[0.315266] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/local_setup.dsv\n'}
+[0.315349] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/package.dsv\n'}
+[0.323596] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ament_index/resource_index/packages/ur7e_d435_gazebo\n'}
+[0.323762] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/cmake/ur7e_d435_gazeboConfig.cmake\n'}
+[0.323929] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/cmake/ur7e_d435_gazeboConfig-version.cmake\n'}
+[0.324022] (ur7e_d435_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/perception_eye_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/package.xml\n'}
+[0.397696] (ur7e_d435_gazebo) CommandEnded: {'returncode': 0}
+[0.400869] (-) TimerEvent: {}
+[0.412321] (ur7e_d435_gazebo) JobEnded: {'identifier': 'ur7e_d435_gazebo', 'rc': 0}
+[0.500981] (-) TimerEvent: {}
+[0.601148] (-) TimerEvent: {}
+[0.701308] (-) TimerEvent: {}
+[0.759238] (realtime_nvblox) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/czz/perception_eye_in_hand/build/realtime_nvblox/build', '--no-deps', 'symlink_data'], 'cwd': '/home/czz/perception_eye_in_hand/build/realtime_nvblox', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE': '1', 'HTTPS_PROXY': 'http://127.0.0.1:7897/', 'CODEX_CI': '1', 'no_proxy': 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1', 'LANGUAGE': 'zh_CN:en', 'USER': 'czz', 'TRT_INC_PATH': '/usr/include/x86_64-linux-gnu', 'LC_TIME': 'en_US.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'Codex Desktop', 'CODEX_SHELL': '1', 'all_proxy': 'socks://127.0.0.1:7897/', 'XDG_SESSION_TYPE': 'x11', 'LOG_FORMAT': 'json', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/czz', 'CHROME_DESKTOP': 'chatgpt.desktop', 'CONDA_SHLVL': '0', 'DISABLE_AUTO_UPDATE': 'true', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1', 'NVM_BIN': '/home/czz/.nvm/versions/node/v22.23.2/bin', 'NVM_INC': '/home/czz/.nvm/versions/node/v22.23.2/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'en_US.UTF-8', 'CODEX_APP_TOOLS_PIPE_PATH': '/tmp/codex-browser-use/89cf1fdf-c797-44dd-9f1c-602c85971d35.sock', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '2507', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', '_CONDA_ROOT': '/home/czz/miniconda3', 'CODEX_MCP_NODE_PATH': '/usr/lib/chatgpt/resources/cua_node/bin/node', 'NVM_DIR': '/home/czz/.nvm', 'https_proxy': 'http://127.0.0.1:7897/', 'CODEX_PERMISSION_PROFILE': ':workspace', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'ZSH_TMUX_AUTOSTARTED': 'true', 'LOGNAME': 'czz', 'ALL_PROXY': 'socks://127.0.0.1:7897/', 'http_proxy': 'http://127.0.0.1:7897/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'czz', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ISAAC_ROS_WS': '/home/czz/workspaces/isaac_ros-dev/', '_CE_CONDA': '', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/czz/.local/bin:/home/czz/.codex/tmp/arg0/codex-arg0jjBijA:/home/czz/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/czz/.local/bin:/usr/local/cuda/bin:/home/czz/.nvm/versions/node/v22.23.2/bin:/home/czz/miniconda3/condabin:/usr/local/cuda/bin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/bin:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/bin:/opt/ros/humble/bin:/home/czz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvidia/tao:/opt/nvidia/tao:/home/czz/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources:/opt/nvidia/tao', 'SESSION_MANAGER': 'local/czz-Legion-Y7000P-IRH8:@/tmp/.ICE-unix/2480,unix/czz-Legion-Y7000P-IRH8:/tmp/.ICE-unix/2480', 'CODEX_VERSION': '0.155.0-alpha.9.2', 'CODEX_SESSION_ID': '01a0c735-38b7-74b0-895d-df6712b92df7', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cbf0fd70_5ff3_490d_98d6_763b528a5884', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.161', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/czz/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CMAKE_MODULE_PATH': '/home/czz/ros_pack/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake', 'CODEX_THREAD_ID': '01a0c735-38b7-74b0-895d-df6712b92df7', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', '_CONDA_EXE': '/home/czz/miniconda3/bin/conda', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/czz/perception_eye_in_hand/build/realtime_nvblox', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/czz/miniconda3/bin/conda', 'ZSH_TMUX_AUTOSTART': 'false', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/czz/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/czz/perception_eye_in_hand/build/realtime_nvblox/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/czz/perception_eye_in_hand/install/realtime_nvblox/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'HTTP_PROXY': 'http://127.0.0.1:7897/', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'TRT_LIB_PATH': '/usr/lib/x86_64-linux-gnu'}, 'shell': False}
+[0.801397] (-) TimerEvent: {}
+[0.901567] (-) TimerEvent: {}
+[1.001744] (-) TimerEvent: {}
+[1.062749] (realtime_nvblox) StdoutLine: {'line': b'running develop\n'}
+[1.101845] (-) TimerEvent: {}
+[1.202013] (realtime_nvblox) StdoutLine: {'line': b'running egg_info\n'}
+[1.202225] (-) TimerEvent: {}
+[1.212309] (realtime_nvblox) StdoutLine: {'line': b'writing realtime_nvblox.egg-info/PKG-INFO\n'}
+[1.212548] (realtime_nvblox) StdoutLine: {'line': b'writing dependency_links to realtime_nvblox.egg-info/dependency_links.txt\n'}
+[1.212677] (realtime_nvblox) StdoutLine: {'line': b'writing entry points to realtime_nvblox.egg-info/entry_points.txt\n'}
+[1.212787] (realtime_nvblox) StdoutLine: {'line': b'writing requirements to realtime_nvblox.egg-info/requires.txt\n'}
+[1.212883] (realtime_nvblox) StdoutLine: {'line': b'writing top-level names to realtime_nvblox.egg-info/top_level.txt\n'}
+[1.302331] (-) TimerEvent: {}
+[1.402519] (-) TimerEvent: {}
+[1.502697] (-) TimerEvent: {}
+[1.531036] (realtime_nvblox) StdoutLine: {'line': b"reading manifest file 'realtime_nvblox.egg-info/SOURCES.txt'\n"}
+[1.531370] (realtime_nvblox) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.532084] (realtime_nvblox) StdoutLine: {'line': b"writing manifest file 'realtime_nvblox.egg-info/SOURCES.txt'\n"}
+[1.543282] (realtime_nvblox) StdoutLine: {'line': b'running build_ext\n'}
+[1.543969] (realtime_nvblox) StdoutLine: {'line': b'Creating /home/czz/perception_eye_in_hand/install/realtime_nvblox/lib/python3.10/site-packages/realtime-nvblox.egg-link (link to .)\n'}
+[1.544486] (realtime_nvblox) StdoutLine: {'line': b'Installing check_environment script to /home/czz/perception_eye_in_hand/install/realtime_nvblox/lib/realtime_nvblox\n'}
+[1.544852] (realtime_nvblox) StdoutLine: {'line': b'Installing gazebo_ros_mapper script to /home/czz/perception_eye_in_hand/install/realtime_nvblox/lib/realtime_nvblox\n'}
+[1.544954] (realtime_nvblox) StdoutLine: {'line': b'Installing ros_mapper script to /home/czz/perception_eye_in_hand/install/realtime_nvblox/lib/realtime_nvblox\n'}
+[1.545037] (realtime_nvblox) StdoutLine: {'line': b'Installing standalone_mapper script to /home/czz/perception_eye_in_hand/install/realtime_nvblox/lib/realtime_nvblox\n'}
+[1.545116] (realtime_nvblox) StdoutLine: {'line': b'\n'}
+[1.545194] (realtime_nvblox) StdoutLine: {'line': b'Installed /home/czz/perception_eye_in_hand/build/realtime_nvblox\n'}
+[1.545268] (realtime_nvblox) StdoutLine: {'line': b'running symlink_data\n'}
+[1.602826] (-) TimerEvent: {}
+[1.703020] (-) TimerEvent: {}
+[1.803185] (-) TimerEvent: {}
+[1.903349] (-) TimerEvent: {}
+[2.003536] (-) TimerEvent: {}
+[2.103688] (-) TimerEvent: {}
+[2.203883] (-) TimerEvent: {}
+[2.304109] (-) TimerEvent: {}
+[2.404282] (-) TimerEvent: {}
+[2.504477] (-) TimerEvent: {}
+[2.604665] (-) TimerEvent: {}
+[2.704843] (-) TimerEvent: {}
+[2.805031] (-) TimerEvent: {}
+[2.905209] (-) TimerEvent: {}
+[3.005394] (-) TimerEvent: {}
+[3.105618] (-) TimerEvent: {}
+[3.205819] (-) TimerEvent: {}
+[3.306022] (-) TimerEvent: {}
+[3.406242] (-) TimerEvent: {}
+[3.506450] (-) TimerEvent: {}
+[3.606642] (-) TimerEvent: {}
+[3.706837] (-) TimerEvent: {}
+[3.807004] (-) TimerEvent: {}
+[3.907192] (-) TimerEvent: {}
+[4.007431] (-) TimerEvent: {}
+[4.107624] (-) TimerEvent: {}
+[4.207791] (-) TimerEvent: {}
+[4.307972] (-) TimerEvent: {}
+[4.408194] (-) TimerEvent: {}
+[4.508358] (-) TimerEvent: {}
+[4.608531] (-) TimerEvent: {}
+[4.708724] (-) TimerEvent: {}
+[4.808902] (-) TimerEvent: {}
+[4.909073] (-) TimerEvent: {}
+[5.009362] (-) TimerEvent: {}
+[5.109530] (-) TimerEvent: {}
+[5.209726] (-) TimerEvent: {}
+[5.309909] (-) TimerEvent: {}
+[5.410080] (-) TimerEvent: {}
+[5.510409] (-) TimerEvent: {}
+[5.610572] (-) TimerEvent: {}
+[5.710771] (-) TimerEvent: {}
+[5.810935] (-) TimerEvent: {}
+[5.911180] (-) TimerEvent: {}
+[6.011503] (-) TimerEvent: {}
+[6.111669] (-) TimerEvent: {}
+[6.211829] (-) TimerEvent: {}
+[6.311994] (-) TimerEvent: {}
+[6.412170] (-) TimerEvent: {}
+[6.512380] (-) TimerEvent: {}
+[6.612566] (-) TimerEvent: {}
+[6.712737] (-) TimerEvent: {}
+[6.812906] (-) TimerEvent: {}
+[6.913080] (-) TimerEvent: {}
+[7.013295] (-) TimerEvent: {}
+[7.113507] (-) TimerEvent: {}
+[7.213676] (-) TimerEvent: {}
+[7.313853] (-) TimerEvent: {}
+[7.414018] (-) TimerEvent: {}
+[7.514219] (-) TimerEvent: {}
+[7.614407] (-) TimerEvent: {}
+[7.714575] (-) TimerEvent: {}
+[7.814766] (-) TimerEvent: {}
+[7.914939] (-) TimerEvent: {}
+[8.015123] (-) TimerEvent: {}
+[8.115298] (-) TimerEvent: {}
+[8.215515] (-) TimerEvent: {}
+[8.315747] (-) TimerEvent: {}
+[8.415929] (-) TimerEvent: {}
+[8.516114] (-) TimerEvent: {}
+[8.616376] (-) TimerEvent: {}
+[8.716582] (-) TimerEvent: {}
+[8.816726] (-) TimerEvent: {}
+[8.916889] (-) TimerEvent: {}
+[9.017075] (-) TimerEvent: {}
+[9.117227] (-) TimerEvent: {}
+[9.217420] (-) TimerEvent: {}
+[9.317616] (-) TimerEvent: {}
+[9.417799] (-) TimerEvent: {}
+[9.517954] (-) TimerEvent: {}
+[9.618142] (-) TimerEvent: {}
+[9.718356] (-) TimerEvent: {}
+[9.818519] (-) TimerEvent: {}
+[9.918670] (-) TimerEvent: {}
+[10.018860] (-) TimerEvent: {}
+[10.119000] (-) TimerEvent: {}
+[10.219141] (-) TimerEvent: {}
+[10.319303] (-) TimerEvent: {}
+[10.419490] (-) TimerEvent: {}
+[10.519658] (-) TimerEvent: {}
+[10.619845] (-) TimerEvent: {}
+[10.720023] (-) TimerEvent: {}
+[10.820246] (-) TimerEvent: {}
+[10.920504] (-) TimerEvent: {}
+[11.020676] (-) TimerEvent: {}
+[11.120843] (-) TimerEvent: {}
+[11.221014] (-) TimerEvent: {}
+[11.321186] (-) TimerEvent: {}
+[11.421354] (-) TimerEvent: {}
+[11.521535] (-) TimerEvent: {}
+[11.621709] (-) TimerEvent: {}
+[11.721895] (-) TimerEvent: {}
+[11.822079] (-) TimerEvent: {}
+[11.922257] (-) TimerEvent: {}
+[12.022450] (-) TimerEvent: {}
+[12.122620] (-) TimerEvent: {}
+[12.222840] (-) TimerEvent: {}
+[12.323044] (-) TimerEvent: {}
+[12.423209] (-) TimerEvent: {}
+[12.523376] (-) TimerEvent: {}
+[12.623689] (-) TimerEvent: {}
+[12.723837] (-) TimerEvent: {}
+[12.823977] (-) TimerEvent: {}
+[12.924198] (-) TimerEvent: {}
+[13.024385] (-) TimerEvent: {}
+[13.124599] (-) TimerEvent: {}
+[13.224775] (-) TimerEvent: {}
+[13.325018] (-) TimerEvent: {}
+[13.425272] (-) TimerEvent: {}
+[13.525429] (-) TimerEvent: {}
+[13.625588] (-) TimerEvent: {}
+[13.725790] (-) TimerEvent: {}
+[13.825949] (-) TimerEvent: {}
+[13.926154] (-) TimerEvent: {}
+[14.026345] (-) TimerEvent: {}
+[14.126516] (-) TimerEvent: {}
+[14.226731] (-) TimerEvent: {}
+[14.326908] (-) TimerEvent: {}
+[14.427083] (-) TimerEvent: {}
+[14.527291] (-) TimerEvent: {}
+[14.627458] (-) TimerEvent: {}
+[14.727624] (-) TimerEvent: {}
+[14.827793] (-) TimerEvent: {}
+[14.927957] (-) TimerEvent: {}
+[15.028125] (-) TimerEvent: {}
+[15.128302] (-) TimerEvent: {}
+[15.228457] (-) TimerEvent: {}
+[15.328624] (-) TimerEvent: {}
+[15.428797] (-) TimerEvent: {}
+[15.528972] (-) TimerEvent: {}
+[15.629139] (-) TimerEvent: {}
+[15.729420] (-) TimerEvent: {}
+[15.829590] (-) TimerEvent: {}
+[15.929765] (-) TimerEvent: {}
+[16.029936] (-) TimerEvent: {}
+[16.130109] (-) TimerEvent: {}
+[16.230308] (-) TimerEvent: {}
+[16.330453] (-) TimerEvent: {}
+[16.430639] (-) TimerEvent: {}
+[16.530812] (-) TimerEvent: {}
+[16.630982] (-) TimerEvent: {}
+[16.731166] (-) TimerEvent: {}
+[16.831339] (-) TimerEvent: {}
+[16.931512] (-) TimerEvent: {}
+[17.031685] (-) TimerEvent: {}
+[17.131846] (-) TimerEvent: {}
+[17.232051] (-) TimerEvent: {}
+[17.332237] (-) TimerEvent: {}
+[17.432430] (-) TimerEvent: {}
+[17.532613] (-) TimerEvent: {}
+[17.632753] (-) TimerEvent: {}
+[17.732969] (-) TimerEvent: {}
+[17.833153] (-) TimerEvent: {}
+[17.933339] (-) TimerEvent: {}
+[18.033443] (-) TimerEvent: {}
+[18.133596] (-) TimerEvent: {}
+[18.233739] (-) TimerEvent: {}
+[18.333888] (-) TimerEvent: {}
+[18.434042] (-) TimerEvent: {}
+[18.534197] (-) TimerEvent: {}
+[18.634391] (-) TimerEvent: {}
+[18.734565] (-) TimerEvent: {}
+[18.834720] (-) TimerEvent: {}
+[18.934900] (-) TimerEvent: {}
+[19.035059] (-) TimerEvent: {}
+[19.135273] (-) TimerEvent: {}
+[19.235454] (-) TimerEvent: {}
+[19.335649] (-) TimerEvent: {}
+[19.435841] (-) TimerEvent: {}
+[19.536006] (-) TimerEvent: {}
+[19.636177] (-) TimerEvent: {}
+[19.736345] (-) TimerEvent: {}
+[19.836529] (-) TimerEvent: {}
+[19.936720] (-) TimerEvent: {}
+[20.036898] (-) TimerEvent: {}
+[20.137068] (-) TimerEvent: {}
+[20.237228] (-) TimerEvent: {}
+[20.337391] (-) TimerEvent: {}
+[20.437560] (-) TimerEvent: {}
+[20.537728] (-) TimerEvent: {}
+[20.637893] (-) TimerEvent: {}
+[20.738058] (-) TimerEvent: {}
+[20.838223] (-) TimerEvent: {}
+[20.938395] (-) TimerEvent: {}
+[21.038571] (-) TimerEvent: {}
+[21.138738] (-) TimerEvent: {}
+[21.238905] (-) TimerEvent: {}
+[21.339073] (-) TimerEvent: {}
+[21.439234] (-) TimerEvent: {}
+[21.539418] (-) TimerEvent: {}
+[21.639601] (-) TimerEvent: {}
+[21.739768] (-) TimerEvent: {}
+[21.839929] (-) TimerEvent: {}
+[21.940101] (-) TimerEvent: {}
+[22.040262] (-) TimerEvent: {}
+[22.140442] (-) TimerEvent: {}
+[22.240587] (-) TimerEvent: {}
+[22.340724] (-) TimerEvent: {}
+[22.440860] (-) TimerEvent: {}
+[22.541038] (-) TimerEvent: {}
+[22.641293] (-) TimerEvent: {}
+[22.741615] (-) TimerEvent: {}
+[22.841779] (-) TimerEvent: {}
+[22.941955] (-) TimerEvent: {}
+[23.042089] (-) TimerEvent: {}
+[23.142260] (-) TimerEvent: {}
+[23.242549] (-) TimerEvent: {}
+[23.342689] (-) TimerEvent: {}
+[23.442826] (-) TimerEvent: {}
+[23.543088] (-) TimerEvent: {}
+[23.643292] (-) TimerEvent: {}
+[23.743576] (-) TimerEvent: {}
+[23.843758] (-) TimerEvent: {}
+[23.943937] (-) TimerEvent: {}
+[24.044133] (-) TimerEvent: {}
+[24.144302] (-) TimerEvent: {}
+[24.244490] (-) TimerEvent: {}
+[24.344653] (-) TimerEvent: {}
+[24.444818] (-) TimerEvent: {}
+[24.544983] (-) TimerEvent: {}
+[24.645152] (-) TimerEvent: {}
+[24.745368] (-) TimerEvent: {}
+[24.845543] (-) TimerEvent: {}
+[24.945709] (-) TimerEvent: {}
+[25.045921] (-) TimerEvent: {}
+[25.146092] (-) TimerEvent: {}
+[25.246260] (-) TimerEvent: {}
+[25.346440] (-) TimerEvent: {}
+[25.446621] (-) TimerEvent: {}
+[25.546784] (-) TimerEvent: {}
+[25.646949] (-) TimerEvent: {}
+[25.747141] (-) TimerEvent: {}
+[25.847328] (-) TimerEvent: {}
+[25.947538] (-) TimerEvent: {}
+[26.047706] (-) TimerEvent: {}
+[26.147882] (-) TimerEvent: {}
+[26.248050] (-) TimerEvent: {}
+[26.348254] (-) TimerEvent: {}
+[26.448473] (-) TimerEvent: {}
+[26.548644] (-) TimerEvent: {}
+[26.648805] (-) TimerEvent: {}
+[26.748970] (-) TimerEvent: {}
+[26.849133] (-) TimerEvent: {}
+[26.949329] (-) TimerEvent: {}
+[27.049460] (-) TimerEvent: {}
+[27.149626] (-) TimerEvent: {}
+[27.249828] (-) TimerEvent: {}
+[27.349997] (-) TimerEvent: {}
+[27.450166] (-) TimerEvent: {}
+[27.550379] (-) TimerEvent: {}
+[27.650553] (-) TimerEvent: {}
+[27.750763] (-) TimerEvent: {}
+[27.850976] (-) TimerEvent: {}
+[27.951163] (-) TimerEvent: {}
+[28.051345] (-) TimerEvent: {}
+[28.151504] (-) TimerEvent: {}
+[28.251656] (-) TimerEvent: {}
+[28.351855] (-) TimerEvent: {}
+[28.452030] (-) TimerEvent: {}
+[28.552308] (-) TimerEvent: {}
+[28.652460] (-) TimerEvent: {}
+[28.752643] (-) TimerEvent: {}
+[28.852833] (-) TimerEvent: {}
+[28.953015] (-) TimerEvent: {}
+[29.053204] (-) TimerEvent: {}
+[29.153375] (-) TimerEvent: {}
+[29.253553] (-) TimerEvent: {}
+[29.353733] (-) TimerEvent: {}
+[29.453885] (-) TimerEvent: {}
+[29.554048] (-) TimerEvent: {}
+[29.654220] (-) TimerEvent: {}
+[29.754393] (-) TimerEvent: {}
+[29.854569] (-) TimerEvent: {}
+[29.954740] (-) TimerEvent: {}
+[30.054947] (-) TimerEvent: {}
+[30.155156] (-) TimerEvent: {}
+[30.255321] (-) TimerEvent: {}
+[30.355463] (-) TimerEvent: {}
+[30.441916] (realtime_nvblox) CommandEnded: {'returncode': 0}
+[30.450434] (realtime_nvblox) JobEnded: {'identifier': 'realtime_nvblox', 'rc': 0}
+[30.450917] (-) EventReactorShutdown: {}

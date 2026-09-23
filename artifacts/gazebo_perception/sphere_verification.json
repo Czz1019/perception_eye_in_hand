@@ -1,0 +1,181 @@
+{
+  "view_joint_positions_rad": [
+    1.0,
+    -1.57,
+    1.1,
+    -0.90879335,
+    -3.21580312,
+    -0.69520875
+  ],
+  "view_reset": "Map reset requested; epoch=3",
+  "stationary": {
+    "wall_seconds": 15.000413697998738,
+    "simulation_seconds": 14.9,
+    "real_time_factor": 0.9933059380880852,
+    "wall_hz": {
+      "depth_received": 11.533015254311325,
+      "depth_integrated": 9.933059380880852,
+      "esdf_published": 4.533208308053006
+    },
+    "latency": {
+      "integrate_submit": {
+        "mean_ms": 1.5946634003896065,
+        "p50_ms": 0.8946714997364325,
+        "p95_ms": 4.605489149980713,
+        "max_ms": 29.496799999833456
+      },
+      "mapping_with_gpu_readback": {
+        "mean_ms": 2.3885622988970567,
+        "p50_ms": 1.977167999939411,
+        "p95_ms": 5.233921249873673,
+        "max_ms": 9.52633999986574
+      },
+      "receive_to_result": {
+        "mean_ms": 107.80320383009823,
+        "p50_ms": 107.35005750029813,
+        "p95_ms": 145.39187150003272,
+        "max_ms": 189.22459600071306
+      }
+    }
+  },
+  "grid_cells": 52111,
+  "observed_cells": 2665,
+  "unknown_cells": 49446,
+  "moving": {
+    "wall_seconds": 17.000188257001355,
+    "simulation_seconds": 17.0,
+    "real_time_factor": 0.9999889261813747,
+    "wall_hz": {
+      "depth_received": 9.7057748717604,
+      "depth_integrated": 8.47049443353635,
+      "esdf_published": 4.352892972789514
+    },
+    "latency": {
+      "integrate_submit": {
+        "mean_ms": 1.5720429179495454,
+        "p50_ms": 0.8541175002392265,
+        "p95_ms": 4.4836503498117946,
+        "max_ms": 29.496799999833456
+      },
+      "mapping_with_gpu_readback": {
+        "mean_ms": 2.318197998086191,
+        "p50_ms": 1.9666155003505992,
+        "p95_ms": 5.132628149749507,
+        "max_ms": 9.52633999986574
+      },
+      "receive_to_result": {
+        "mean_ms": 108.16738228126965,
+        "p50_ms": 107.38436700012244,
+        "p95_ms": 143.89707554964843,
+        "max_ms": 189.22459600071306
+      }
+    }
+  },
+  "camera_motion_extent_m": 0.07286021290216653,
+  "static_surface_consistency": {
+    "common_cells": 2091,
+    "mean_change_m": 0.0015055775875225663,
+    "p95_change_m": 0.012426404282450676,
+    "max_change_m": 0.07757359743118286
+  },
+  "static_regions": {
+    "ground": {
+      "common_cells": 322,
+      "p95_change_m": 0.0
+    },
+    "wall_positive_y": {
+      "common_cells": 115,
+      "p95_change_m": 0.013923048973083496
+    },
+    "wall_negative_y": {
+      "common_cells": 50,
+      "p95_change_m": 0.002245752513408649
+    },
+    "sphere": {
+      "common_cells": 89,
+      "p95_change_m": 0.007455842569470335
+    }
+  },
+  "saved_map": "/home/czz/perception_eye_in_hand/artifacts/gazebo_perception/base_link_map.nvblox",
+  "saved_map_bytes": 1859584,
+  "reset_map_response": "Map reset requested; epoch=4",
+  "reset_service_epoch": 4,
+  "pose_tf_samples": 186,
+  "max_pose_tf_errors": [
+    1.2412670766236366e-16,
+    2.4873781269328544e-16
+  ],
+  "final_stats": {
+    "rates_hz": {
+      "depth_received": 7.002057218419575,
+      "depth_integrated": 6.001763330073921,
+      "depth_overwritten": 1.0002938883456534,
+      "tf_missing": 0.0,
+      "stale_depth": 0.0,
+      "esdf_updated": 3.0008816650369603,
+      "esdf_published": 4.001175553382613,
+      "invalid_stamp": 0.0,
+      "future_depth": 0.0,
+      "out_of_order": 0.0,
+      "map_resets": 1.0002938883456534
+    },
+    "totals": {
+      "depth_received": 2017,
+      "depth_integrated": 1735,
+      "depth_overwritten": 279,
+      "tf_missing": 0,
+      "stale_depth": 1,
+      "esdf_updated": 897,
+      "esdf_published": 897,
+      "invalid_stamp": 0,
+      "future_depth": 0,
+      "out_of_order": 0,
+      "map_resets": 4
+    },
+    "latency": {
+      "integrate_submit": {
+        "mean_ms": 1.5706185839725606,
+        "p50_ms": 0.8541175002392265,
+        "p95_ms": 4.4836503498117946,
+        "max_ms": 29.496799999833456
+      },
+      "mapping_with_gpu_readback": {
+        "mean_ms": 2.315007742229369,
+        "p50_ms": 1.9666155003505992,
+        "p95_ms": 5.132628149749507,
+        "max_ms": 9.52633999986574
+      },
+      "receive_to_result": {
+        "mean_ms": 108.10203213087277,
+        "p50_ms": 107.36311649998243,
+        "p95_ms": 143.89707554964843,
+        "max_ms": 189.22459600071306
+      }
+    },
+    "input_stamp_ns": 204422000000,
+    "camera_position_base": [
+      0.2110245571084245,
+      0.40492416100185447,
+      0.6816223313507426
+    ],
+    "receive_to_result_ms": 135.75598100032948,
+    "known_cells": 2666,
+    "total_cells": 52111,
+    "error": "",
+    "pose_source": "image_timestamp_tf",
+    "map_epoch": 4,
+    "sim_time_ns": 204600000000,
+    "depth_received": 2017,
+    "depth_integrated": 1735,
+    "depth_overwritten": 279,
+    "tf_missing": 0,
+    "stale_depth": 1,
+    "esdf_updated": 897,
+    "esdf_published": 897,
+    "invalid_stamp": 0,
+    "future_depth": 0,
+    "out_of_order": 0,
+    "map_resets": 4
+  },
+  "passed": true
+}

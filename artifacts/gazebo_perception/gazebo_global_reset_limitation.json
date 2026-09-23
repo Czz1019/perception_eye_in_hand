@@ -1,0 +1,87 @@
+{
+  "view_joint_positions_rad": [
+    0.0,
+    -1.57,
+    1.1,
+    -0.90879335,
+    -3.21580312,
+    -0.69520875
+  ],
+  "view_reset": "Map reset requested; epoch=1",
+  "stationary": {
+    "wall_seconds": 20.025569994999387,
+    "simulation_seconds": 20.0,
+    "real_time_factor": 0.9987231327245231,
+    "wall_hz": {
+      "depth_received": 22.770887426119128,
+      "depth_integrated": 18.17676101558632,
+      "esdf_published": 7.889912748523733
+    },
+    "latency": {
+      "integrate_submit": {
+        "mean_ms": 0.9276255956720547,
+        "p50_ms": 0.8283944989670999,
+        "p95_ms": 1.5146337505029803,
+        "max_ms": 12.48429899897019
+      },
+      "mapping_with_gpu_readback": {
+        "mean_ms": 1.921480578058521,
+        "p50_ms": 1.7856759995993343,
+        "p95_ms": 3.0307012001685507,
+        "max_ms": 14.297378000264871
+      },
+      "receive_to_result": {
+        "mean_ms": 108.67642460152993,
+        "p50_ms": 106.1563829998704,
+        "p95_ms": 147.25893424974856,
+        "max_ms": 222.3217909995583
+      }
+    }
+  },
+  "grid_cells": 52111,
+  "observed_cells": 2590,
+  "unknown_cells": 49520,
+  "moving": {
+    "wall_seconds": 22.96896610099975,
+    "simulation_seconds": 23.0,
+    "real_time_factor": 1.001351123026774,
+    "wall_hz": {
+      "depth_received": 20.593003530072348,
+      "depth_integrated": 16.805284064710204,
+      "esdf_published": 7.575438930724289
+    },
+    "latency": {
+      "integrate_submit": {
+        "mean_ms": 0.8426301991626417,
+        "p50_ms": 0.7874120001361007,
+        "p95_ms": 1.3222525491983106,
+        "max_ms": 2.650985999935074
+      },
+      "mapping_with_gpu_readback": {
+        "mean_ms": 1.9711130487749529,
+        "p50_ms": 1.8212515005870955,
+        "p95_ms": 3.134307399068347,
+        "max_ms": 14.297378000264871
+      },
+      "receive_to_result": {
+        "mean_ms": 109.90627252147078,
+        "p50_ms": 107.48713500015583,
+        "p95_ms": 148.2473961506912,
+        "max_ms": 222.3217909995583
+      }
+    }
+  },
+  "camera_motion_extent_m": 0.07297049961516576,
+  "static_surface_consistency": {
+    "common_cells": 1932,
+    "mean_change_m": 0.0008558820118196309,
+    "p95_change_m": 0.004868336021900177,
+    "max_change_m": 0.04183345288038254
+  },
+  "saved_map": "/home/czz/perception_eye_in_hand/artifacts/gazebo_perception/base_link_map.nvblox",
+  "saved_map_bytes": 1658880,
+  "reset_map_response": "Map reset requested; epoch=2",
+  "reset_service_epoch": 2,
+  "passed": false,
+  "error": "TimeoutError('No populated ESDF in expected epoch')"
+}

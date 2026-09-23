@@ -1,0 +1,196 @@
+{
+  "rejection": {
+    "rates_hz": {
+      "depth_received": 4.000081049640038,
+      "depth_integrated": 0.0,
+      "depth_overwritten": 0.0,
+      "tf_missing": 0.0,
+      "stale_depth": 0.0,
+      "esdf_updated": 0.0,
+      "esdf_published": 0.0,
+      "invalid_stamp": 0.0,
+      "future_depth": 4.000081049640038,
+      "out_of_order": 0.0,
+      "map_resets": 0.0
+    },
+    "totals": {
+      "depth_received": 42,
+      "depth_integrated": 0,
+      "depth_overwritten": 0,
+      "tf_missing": 22,
+      "stale_depth": 8,
+      "esdf_updated": 0,
+      "esdf_published": 0,
+      "invalid_stamp": 7,
+      "future_depth": 5,
+      "out_of_order": 0,
+      "map_resets": 0
+    },
+    "latency": {},
+    "input_stamp_ns": 0,
+    "camera_position_base": [],
+    "receive_to_result_ms": 0.0,
+    "known_cells": 0,
+    "total_cells": 0,
+    "error": "",
+    "pose_source": "image_timestamp_tf",
+    "map_epoch": 0,
+    "sim_time_ns": 10000000000,
+    "depth_received": 42,
+    "depth_integrated": 0,
+    "depth_overwritten": 0,
+    "tf_missing": 22,
+    "stale_depth": 8,
+    "esdf_updated": 0,
+    "esdf_published": 0,
+    "invalid_stamp": 7,
+    "future_depth": 5,
+    "out_of_order": 0,
+    "map_resets": 0
+  },
+  "recovered_epoch_1": {
+    "rates_hz": {
+      "depth_received": 10.00158225031642,
+      "depth_integrated": 10.00158225031642,
+      "depth_overwritten": 0.0,
+      "tf_missing": 0.0,
+      "stale_depth": 0.0,
+      "esdf_updated": 10.00158225031642,
+      "esdf_published": 10.00158225031642,
+      "invalid_stamp": 0.0,
+      "future_depth": 0.0,
+      "out_of_order": 0.0,
+      "map_resets": 0.0
+    },
+    "totals": {
+      "depth_received": 128,
+      "depth_integrated": 64,
+      "depth_overwritten": 17,
+      "tf_missing": 22,
+      "stale_depth": 9,
+      "esdf_updated": 64,
+      "esdf_published": 63,
+      "invalid_stamp": 7,
+      "future_depth": 8,
+      "out_of_order": 1,
+      "map_resets": 1
+    },
+    "latency": {
+      "integrate_submit": {
+        "mean_ms": 2.360098578179759,
+        "p50_ms": 0.8978689993455191,
+        "p95_ms": 3.602735749427662,
+        "max_ms": 52.70388200005982
+      },
+      "mapping_with_gpu_readback": {
+        "mean_ms": 3.6255389064194787,
+        "p50_ms": 1.8780235013764468,
+        "p95_ms": 5.92425450095106,
+        "max_ms": 68.50154699895938
+      },
+      "receive_to_result": {
+        "mean_ms": 58.560032492038324,
+        "p50_ms": 55.961580999792204,
+        "p95_ms": 62.08400859904941,
+        "max_ms": 145.5309329994634
+      }
+    },
+    "input_stamp_ns": 9800000000,
+    "camera_position_base": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "receive_to_result_ms": 55.455108000387554,
+    "known_cells": 1623,
+    "total_cells": 52111,
+    "error": "",
+    "pose_source": "image_timestamp_tf",
+    "map_epoch": 1,
+    "sim_time_ns": 9900000000,
+    "depth_received": 128,
+    "depth_integrated": 64,
+    "depth_overwritten": 17,
+    "tf_missing": 22,
+    "stale_depth": 9,
+    "esdf_updated": 64,
+    "esdf_published": 63,
+    "invalid_stamp": 7,
+    "future_depth": 8,
+    "out_of_order": 1,
+    "map_resets": 1
+  },
+  "recovered_epoch_2": {
+    "rates_hz": {
+      "depth_received": 9.85412511903131,
+      "depth_integrated": 9.85412511903131,
+      "depth_overwritten": 0.0,
+      "tf_missing": 0.0,
+      "stale_depth": 0.0,
+      "esdf_updated": 9.85412511903131,
+      "esdf_published": 8.86871260712818,
+      "invalid_stamp": 0.0,
+      "future_depth": 0.0,
+      "out_of_order": 0.0,
+      "map_resets": 0.0
+    },
+    "totals": {
+      "depth_received": 225,
+      "depth_integrated": 160,
+      "depth_overwritten": 17,
+      "tf_missing": 22,
+      "stale_depth": 9,
+      "esdf_updated": 160,
+      "esdf_published": 159,
+      "invalid_stamp": 7,
+      "future_depth": 8,
+      "out_of_order": 2,
+      "map_resets": 2
+    },
+    "latency": {
+      "integrate_submit": {
+        "mean_ms": 1.7669901438466695,
+        "p50_ms": 0.8865169993441668,
+        "p95_ms": 4.116024149516305,
+        "max_ms": 52.70388200005982
+      },
+      "mapping_with_gpu_readback": {
+        "mean_ms": 2.9389116189349807,
+        "p50_ms": 1.9050930004596012,
+        "p95_ms": 5.63899584949467,
+        "max_ms": 68.50154699895938
+      },
+      "receive_to_result": {
+        "mean_ms": 59.929775081651975,
+        "p50_ms": 56.781709999995655,
+        "p95_ms": 73.09228920021268,
+        "max_ms": 145.5309329994634
+      }
+    },
+    "input_stamp_ns": 8800000000,
+    "camera_position_base": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "receive_to_result_ms": 61.01416699857509,
+    "known_cells": 1623,
+    "total_cells": 52111,
+    "error": "",
+    "pose_source": "image_timestamp_tf",
+    "map_epoch": 2,
+    "sim_time_ns": 8900000000,
+    "depth_received": 225,
+    "depth_integrated": 160,
+    "depth_overwritten": 17,
+    "tf_missing": 22,
+    "stale_depth": 9,
+    "esdf_updated": 160,
+    "esdf_published": 159,
+    "invalid_stamp": 7,
+    "future_depth": 8,
+    "out_of_order": 2,
+    "map_resets": 2
+  },
+  "passed": true
+}

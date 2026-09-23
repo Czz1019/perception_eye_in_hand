@@ -1,0 +1,93 @@
+{
+  "nodes": [
+    "/controller_manager",
+    "/forward_position_controller",
+    "/gazebo",
+    "/gazebo_mapping_verification",
+    "/gazebo_realsense_camera",
+    "/gazebo_ros2_control",
+    "/joint_state_broadcaster",
+    "/realtime_nvblox",
+    "/record_perception_graph",
+    "/robot_state_publisher",
+    "/rviz2",
+    "/transform_listener_impl_61c1c1c69810"
+  ],
+  "topics": {
+    "/camera/color/camera_info": [
+      "sensor_msgs/msg/CameraInfo"
+    ],
+    "/camera/color/image_raw": [
+      "sensor_msgs/msg/Image"
+    ],
+    "/camera/depth/camera_info": [
+      "sensor_msgs/msg/CameraInfo"
+    ],
+    "/camera/depth/color/points": [
+      "sensor_msgs/msg/PointCloud2"
+    ],
+    "/camera/depth/image_rect_raw": [
+      "sensor_msgs/msg/Image"
+    ],
+    "/camera/infra1/camera_info": [
+      "sensor_msgs/msg/CameraInfo"
+    ],
+    "/camera/infra1/image_raw": [
+      "sensor_msgs/msg/Image"
+    ],
+    "/camera/infra2/camera_info": [
+      "sensor_msgs/msg/CameraInfo"
+    ],
+    "/camera/infra2/image_raw": [
+      "sensor_msgs/msg/Image"
+    ],
+    "/clock": [
+      "rosgraph_msgs/msg/Clock"
+    ],
+    "/dynamic_joint_states": [
+      "control_msgs/msg/DynamicJointState"
+    ],
+    "/forward_position_controller/commands": [
+      "std_msgs/msg/Float64MultiArray"
+    ],
+    "/forward_position_controller/transition_event": [
+      "lifecycle_msgs/msg/TransitionEvent"
+    ],
+    "/joint_state_broadcaster/transition_event": [
+      "lifecycle_msgs/msg/TransitionEvent"
+    ],
+    "/joint_states": [
+      "sensor_msgs/msg/JointState"
+    ],
+    "/parameter_events": [
+      "rcl_interfaces/msg/ParameterEvent"
+    ],
+    "/performance_metrics": [
+      "gazebo_msgs/msg/PerformanceMetrics"
+    ],
+    "/realtime_nvblox/camera_pose": [
+      "geometry_msgs/msg/PoseStamped"
+    ],
+    "/realtime_nvblox/esdf_3d": [
+      "sensor_msgs/msg/PointCloud2"
+    ],
+    "/realtime_nvblox/esdf_observed": [
+      "sensor_msgs/msg/PointCloud2"
+    ],
+    "/realtime_nvblox/stats": [
+      "std_msgs/msg/String"
+    ],
+    "/robot_description": [
+      "std_msgs/msg/String"
+    ],
+    "/rosout": [
+      "rcl_interfaces/msg/Log"
+    ],
+    "/tf": [
+      "tf2_msgs/msg/TFMessage"
+    ],
+    "/tf_static": [
+      "tf2_msgs/msg/TFMessage"
+    ]
+  }
+}

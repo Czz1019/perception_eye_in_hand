@@ -15,7 +15,7 @@ setup(
         (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
         (os.path.join('share', package_name, 'rviz'), glob('rviz/*.rviz')),
     ],
-    package_data={package_name: ['default.yaml']},
+    package_data={package_name: ['default.yaml', 'robot_eye_in_hand.yaml']},
     install_requires=['setuptools', 'PyYAML', 'numpy', 'scipy'],
     zip_safe=False,
     maintainer='czz',
@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'standalone_mapper = realtime_nvblox.cli:main',
             'ros_mapper = realtime_nvblox.ros_node:main',
+            'gazebo_ros_mapper = realtime_nvblox.gazebo_ros_node:main',
             'check_environment = realtime_nvblox.check_env:main',
         ],
     },
