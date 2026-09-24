@@ -3,10 +3,11 @@ from pathlib import Path
 
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, OpaqueFunction
 from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
+import yaml
 
 
 def generate_launch_description():
@@ -15,10 +16,19 @@ def generate_launch_description():
         DeclareLaunchArgument('config', default_value=str(share/'config/gazebo_robot.yaml')),
         DeclareLaunchArgument('python_executable', default_value='/usr/bin/python3'),
         DeclareLaunchArgument('run_rviz', default_value='false'),
+        OpaqueFunction(function=_nodes),
+    ])
+
+
+def _nodes(context):
+    share = Path(get_package_share_directory('realtime_nvblox'))
+    config = Path(LaunchConfiguration('config').perform(context)).expanduser()
+    sim_time = yaml.safe_load(config.read_text()).get('use_sim_time', True)
+    return [
         Node(package='realtime_nvblox', executable='gazebo_ros_mapper', name='realtime_nvblox',
              prefix=[LaunchConfiguration('python_executable')], output='screen',
-             parameters=[{'config': LaunchConfiguration('config'), 'use_sim_time': True}]),
+             parameters=[{'config': LaunchConfiguration('config'), 'use_sim_time': sim_time}]),
         Node(package='rviz2', executable='rviz2', name='rviz2', output='screen',
              arguments=['-d', str(share/'rviz/gazebo_esdf.rviz')],
-             parameters=[{'use_sim_time': True}], condition=IfCondition(LaunchConfiguration('run_rviz'))),
-    ])
+             parameters=[{'use_sim_time': sim_time}], condition=IfCondition(LaunchConfiguration('run_rviz'))),
+    ]

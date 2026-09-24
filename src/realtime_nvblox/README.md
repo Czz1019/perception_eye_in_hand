@@ -1,5 +1,14 @@
 # realtime_nvblox_ws
 
+RViz退出修正及最新运行方式见 [RVIZ_CRASH_FIX.md](RVIZ_CRASH_FIX.md)：prepare-view默认不再清图；Mesh改为稳定ID更新。本次未运行验证。
+
+最新默认显示已收敛为一个ESDF近障碍小点话题，观察姿态已调整；请先看 [NEAR_OBSTACLE_VIEW.md](NEAR_OBSTACLE_VIEW.md)。本次未运行验证。
+
+新增 Mesh 重建及分段 ESDF 着色的运行与用户验证步骤见 [MESH_ESDF_GUIDE.md](MESH_ESDF_GUIDE.md)。本次未构建或运行验证。
+
+Gazebo / ROS 图像输入的新版稀疏 3D ESDF 运行、迁移及用户测试步骤见
+[GAZEBO_MAPPING.md](GAZEBO_MAPPING.md)。新版默认不发布稠密 unknown 网格；本次修改未构建或运行测试。
+
 > 基于仓库 `Czz1019/realtime_nvblox_ws` 的当前 `main` 分支整理。  
 > 分析基准：commit `1fe9255facb845dc20070383c677770aa27275b9`。  
 > 本文档重点说明 **系统数据流、各 Python 模块职责、线程/队列关系、配置参数、ROS2 接口、运行方式以及当前实现的关键限制**。

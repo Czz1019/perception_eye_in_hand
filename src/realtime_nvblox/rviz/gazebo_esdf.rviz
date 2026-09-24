@@ -8,6 +8,26 @@ Visualization Manager:
     Background Color: 35; 35; 35
     Frame Rate: 30
   Displays:
+    - Class: rviz_default_plugins/Image
+      Name: Camera RGB
+      Enabled: true
+      Topic:
+        Value: /camera/color/image_raw
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Transport Hint: raw
+    - Class: rviz_default_plugins/Image
+      Name: Camera Depth
+      Enabled: false
+      Topic:
+        Value: /camera/depth/image_rect_raw
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Transport Hint: raw
     - Class: rviz_default_plugins/Grid
       Name: Grid
       Enabled: true
@@ -28,8 +48,17 @@ Visualization Manager:
         Durability Policy: Transient Local
         History Policy: Keep Last
         Depth: 1
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Reconstructed Mesh
+      Enabled: true
+      Marker Topic:
+        Value: /realtime_nvblox/mesh
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
     - Class: rviz_default_plugins/PointCloud2
-      Name: ESDF observed
+      Name: ESDF near obstacles (15 cm)
       Enabled: true
       Topic:
         Value: /realtime_nvblox/esdf_observed
@@ -37,21 +66,10 @@ Visualization Manager:
         Durability Policy: Volatile
         History Policy: Keep Last
         Depth: 1
-      Style: Points
-      Size (Pixels): 3
-      Position Transformer: XYZ
-      Color Transformer: RGB8
-    - Class: rviz_default_plugins/PointCloud2
-      Name: ESDF full grid (including unknown)
-      Enabled: false
-      Topic:
-        Value: /realtime_nvblox/esdf_3d
-        Reliability Policy: Reliable
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Depth: 1
-      Style: Points
-      Size (Pixels): 2
+      Style: Spheres
+      Size (m): 0.008
+      Alpha: 0.85
+      Decay Time: 0
       Position Transformer: XYZ
       Color Transformer: RGB8
   Views:

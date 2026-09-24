@@ -5,6 +5,7 @@ Run in the same isolated ROS_DOMAIN_ID as Gazebo. Never use with real hardware.
 import argparse
 import json
 import math
+import os
 from pathlib import Path
 import time
 
@@ -36,7 +37,7 @@ class Probe(Node):
         self.listener = TransformListener(self.buffer, self)
         best = QoSProfile(depth=1, reliability=ReliabilityPolicy.BEST_EFFORT)
         self.create_subscription(String, '/realtime_nvblox/stats', self.stats_cb, 10)
-        self.create_subscription(PointCloud2, '/realtime_nvblox/esdf_3d', self.cloud_cb, 1)
+        self.create_subscription(PointCloud2, '/realtime_nvblox/esdf_observed', self.cloud_cb, best)
         self.create_subscription(PointCloud2, '/realtime_nvblox/esdf_observed', self.observed_cb, best)
         self.create_subscription(PoseStamped, '/realtime_nvblox/camera_pose', self.pose_cb, best)
         self.create_subscription(JointState, '/joint_states', self.joints_cb, best)
@@ -101,11 +102,24 @@ class Probe(Node):
             return response.message
         return 'completed'
 
+    def wait_for_gazebo(self):
+        end = time.monotonic()+15
+        while time.monotonic() < end:
+            self.spin(.2)
+            services = dict(self.get_service_names_and_types())
+            if '/pause_physics' in services and '/reset_simulation' in services and self.joints:
+                return
+        raise RuntimeError(
+            'Gazebo services/joint_states not discovered within 15 s. '
+            f"ROS_DOMAIN_ID={os.environ.get('ROS_DOMAIN_ID', '0')}; "
+            'start scene and mapper in the SAME domain; check gzserver exit errors. '
+            f'Available services: {sorted(services)}')
+
     def wait_ready(self, epoch=None):
         end = time.monotonic()+60
         while time.monotonic() < end:
             self.spin(.2)
-            if self.stats and self.stats['total_cells'] == 52111 and self.stats['known_cells'] > 0 and (epoch is None or self.stats['map_epoch'] >= epoch):
+            if self.stats and self.stats['total_cells'] > 0 and self.stats['known_cells'] > 0 and (epoch is None or self.stats['map_epoch'] >= epoch):
                 return
         raise TimeoutError('No populated ESDF in expected epoch')
 
@@ -121,25 +135,34 @@ def rate_window(a, b):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--exercise-simulation', action='store_true')
+    parser.add_argument('--reset-after-view', action='store_true', help='Explicitly clear the accumulated map after changing the view')
+    parser.add_argument('--original-view', action='store_true', help='Use the previous lower observation pose')
+    parser.add_argument('--view-lift-rad', type=float, default=.40,
+                        help='Elbow lift offset with opposite wrist compensation (radians, 0 to 0.6); ignored by --original-view')
     parser.add_argument('--prepare-view', action='store_true', help='Only move the simulated wrist to view the obstacles, then exit')
     parser.add_argument('--reset-simulation', action='store_true', help='Also test Gazebo global clock reset (some Classic control plugins stop joint states)')
     parser.add_argument('--view', choices=('walls', 'sphere'), default='walls', help='Gazebo observation pose')
     parser.add_argument('--seconds', type=float, default=20)
     parser.add_argument('--output', default='artifacts/gazebo_perception/verification.json')
     args = parser.parse_args()
+    if not math.isfinite(args.view_lift_rad) or not 0 <= args.view_lift_rad <= .6:
+        parser.error('--view-lift-rad must be between 0 and 0.6 radians')
     rclpy.init()
     node = Probe()
     report = {}
     initial = None
     try:
         if args.exercise_simulation or args.prepare_view:
-            node.spin(2)
-            services = dict(node.get_service_names_and_types())
-            assert '/pause_physics' in services and '/reset_simulation' in services, 'Gazebo services required'
+            node.wait_for_gazebo()
             names = ['shoulder_pan_joint','shoulder_lift_joint','elbow_joint','wrist_1_joint','wrist_2_joint','wrist_3_joint']
             assert node.joints is not None
             original = np.array([node.joints[n] for n in names])
             view = np.array([0., -1.57, 1.1, -.90879335, -3.21580312, -.69520875])
+            # Extend the elbow upward; compensate wrist_1 to preserve camera pitch.
+            # Simulation-only preset; no collision/visibility validation is implied.
+            if not args.original_view:
+                view[2] -= args.view_lift_rad
+                view[3] += args.view_lift_rad
             if args.view == 'sphere':
                 view[0] = 1.0
             start = time.monotonic()
@@ -149,7 +172,10 @@ def main():
                 node.command.publish(Float64MultiArray(data=((1-u)*original+u*view).tolist()))
                 node.spin(.05)
             report['view_joint_positions_rad'] = view.tolist()
-            report['view_reset'] = node.service('/realtime_nvblox/reset_map')
+            if args.exercise_simulation or args.reset_after_view:
+                report['view_reset'] = node.service('/realtime_nvblox/reset_map')
+            else:
+                report['view_reset'] = 'Map preserved; use --reset-after-view to clear explicitly'
             if args.prepare_view:
                 node.wait_ready()
                 report['passed'] = True
@@ -189,6 +215,14 @@ def main():
             poses = np.asarray(node.poses[pose_start:])
             report['camera_motion_extent_m'] = float(np.linalg.norm(np.ptp(poses, axis=0)))
             current = node.cloud
+            # Sparse block ordering/counts change as new regions are observed.
+            # Match world voxel coordinates rather than comparing row indices.
+            def keys(points):
+                return np.ascontiguousarray(np.rint(points[:, :3]*1e5).astype(np.int64)).view(
+                    np.dtype((np.void, 24))).ravel()
+            _, before_indices, after_indices = np.intersect1d(
+                keys(baseline), keys(current), return_indices=True)
+            baseline, current = baseline[before_indices], current[after_indices]
             common = (np.abs(baseline[:,4]) < .15) & (np.abs(current[:,4]) < .5)
             delta = np.abs(baseline[common,4]-current[common,4])
             assert len(delta) > 20, 'Insufficient common surface cells for stability measurement'

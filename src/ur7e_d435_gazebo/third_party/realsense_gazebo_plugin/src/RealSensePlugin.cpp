@@ -13,6 +13,7 @@
 // limitations under the License.
 
 #include "realsense_gazebo_plugin/RealSensePlugin.hpp"
+#include <cmath>
 #include <gazebo/physics/physics.hh>
 #include <gazebo/rendering/DepthCamera.hh>
 #include <gazebo/sensors/sensors.hh>
@@ -223,6 +224,10 @@ void RealSensePlugin::OnNewFrame(
   const rendering::CameraPtr cam,
   const transport::PublisherPtr pub)
 {
+  // ROS publishes separately; avoid a second image copy for unused Gazebo transport.
+  if (!pub->HasConnections()) {
+    return;
+  }
   msgs::ImageStamped msg;
 
   // Set Simulation Time
@@ -261,7 +266,7 @@ void RealSensePlugin::OnNewDepthFrame()
   const float * depthDataFloat = this->depthCam->DepthData();
   for (unsigned int i = 0; i < imageSize; ++i) {
     // Check clipping and overflow
-    if (depthDataFloat[i] < rangeMinDepth_ ||
+    if (!std::isfinite(depthDataFloat[i]) || depthDataFloat[i] < rangeMinDepth_ ||
       depthDataFloat[i] > rangeMaxDepth_ ||
       depthDataFloat[i] > DEPTH_SCALE_M * UINT16_MAX ||
       depthDataFloat[i] < 0)
@@ -272,6 +277,10 @@ void RealSensePlugin::OnNewDepthFrame()
     }
   }
 
+  // Keep depthMap conversion for the ROS publisher, but skip unused transport copies.
+  if (!this->depthPub->HasConnections()) {
+    return;
+  }
   // Pack realsense scaled depth map
   msgs::Set(msg.mutable_time(), this->world->SimTime());
   msg.mutable_image()->set_width(this->depthCam->ImageWidth());

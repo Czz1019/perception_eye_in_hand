@@ -94,7 +94,7 @@ def test_reset_clears_queues_and_rejects_inflight_epoch():
     from realtime_nvblox.gazebo_ros_node import GazeboNvbloxNode
     from realtime_nvblox.latest_slot import LatestSlot
     from realtime_nvblox.stats import RuntimeStats
-    adapter = SimpleNamespace(epoch=2, now_ns=100, floor_ns=0, last_input_ns=90,
+    adapter = SimpleNamespace(sim_time=True, epoch=2, now_ns=100, floor_ns=0, last_input_ns=90,
                               depth_slot=LatestSlot(), result_slot=LatestSlot(), extra={}, stats=RuntimeStats(),
                               get_logger=lambda: Mock(), state=threading.RLock())
     adapter.depth_slot.put('old depth'); adapter.result_slot.put('old result')

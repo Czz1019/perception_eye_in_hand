@@ -79,13 +79,17 @@ def _setup(context):
     return [
         LogInfo(msg=f"Camera transform file: {calibration_file}"),
         LogInfo(msg=diagnostic),
+        # This scene uses local assets; do not fetch the online Insert catalog.
+        SetEnvironmentVariable("GAZEBO_MODEL_DATABASE_URI", ""),
         SetEnvironmentVariable("GAZEBO_PLUGIN_PATH", os.pathsep.join(filter(None, [str(lib), os.environ.get("GAZEBO_PLUGIN_PATH", "")]))),
         SetEnvironmentVariable("GAZEBO_RESOURCE_PATH", os.pathsep.join(filter(None, ["/usr/share/gazebo-11", os.environ.get("GAZEBO_RESOURCE_PATH", "")]))),
         Node(package="robot_state_publisher", executable="robot_state_publisher",
-             parameters=[{"use_sim_time": True, "robot_description": description}], output="screen"),
+             parameters=[{"use_sim_time": True, "publish_frequency": 100.0,
+                          "robot_description": description}], output="screen"),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(str(Path(get_package_share_directory("gazebo_ros")) / "launch/gazebo.launch.py")),
             launch_arguments={"gui": LaunchConfiguration("gazebo_gui"),
+                              "params_file": str(share / "config/gazebo_clock.yaml"),
                               "server_required": "true", "verbose": "true"}.items()),
         Node(package="gazebo_ros", executable="spawn_entity.py", name="spawn_ur",
              arguments=["-entity", "ur", "-topic", "robot_description", "-timeout", "60"], output="screen"),

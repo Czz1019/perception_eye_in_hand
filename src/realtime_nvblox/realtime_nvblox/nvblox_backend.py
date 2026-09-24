@@ -111,6 +111,48 @@ class NvbloxBackend:
         with self.lock:
             self.mapper.update_esdf(0)
 
+    def observed_esdf_numpy(self, max_distance_m: float | None = None) -> tuple[np.ndarray, np.ndarray]:
+        """Export valid ESDF samples at observed native voxel centers.
+
+        The installed Python binding exposes TSDF blocks but no ESDF layer
+        view. Positive-weight TSDF voxels supply sparse candidates; querying
+        ESDF and removing its unknown sentinel determines the output support.
+        No world-sized sampling lattice or CPU point upload is involved.
+        """
+        from nvblox_torch.indexing import get_local_voxel_center_grid
+        torch = self.torch
+        with self.lock, torch.no_grad():
+            layer = self.mapper.tsdf_layer_view(0)
+            blocks, indices = layer.get_all_blocks()
+            if not blocks:
+                return np.empty((0, 3), np.float32), np.empty(0, np.float32)
+            voxel_size = layer.voxel_size()
+            local = get_local_voxel_center_grid(voxel_size)
+            exported = []
+            # Bound intermediate copies; do not repeatedly concatenate growing
+            # tensors or synchronize once per voxel/block.
+            for start in range(0, len(blocks), 128):
+                values = torch.stack(blocks[start:start+128])
+                origins = torch.stack(indices[start:start+128]).to(device='cuda', dtype=torch.float32)
+                centers = origins[:, None, None, None, :] * (8*voxel_size) + local
+                mask = torch.isfinite(values[..., 1]) & (values[..., 1] > 0)
+                points = centers[mask]
+                if points.shape[0] == 0:
+                    continue
+                query = torch.cat((points, torch.zeros_like(points[:, :1])), dim=1).contiguous()
+                distance = self.mapper.query_layer(self.QueryType.ESDF, query, mapper_id=0).reshape(-1)
+                known = torch.isfinite(distance) & ~torch.isclose(
+                    distance.abs(), torch.full_like(distance, abs(self.esdf_unknown_distance)),
+                    rtol=1e-5, atol=1e-3)
+                if max_distance_m is not None:
+                    known &= distance.abs() <= max_distance_m
+                exported.append(torch.cat((points[known], distance[known, None]), dim=1))
+            if not exported:
+                return np.empty((0, 3), np.float32), np.empty(0, np.float32)
+            # The lock protects zero-copy layer views through GPU completion.
+            owned = torch.cat(exported).detach().cpu().numpy()
+            return owned[:, :3], owned[:, 3]
+
     def update_mesh(self) -> None:
         with self.lock:
             self.mapper.update_color_mesh(0)
@@ -119,9 +161,9 @@ class NvbloxBackend:
         with self.lock:
             mesh = self.mapper.get_color_mesh(0)
             return (
-                mesh.vertices().detach().cpu().numpy(),
-                mesh.triangles().detach().cpu().numpy(),
-                mesh.vertex_colors().detach().cpu().numpy(),
+                mesh.vertices().detach().cpu().numpy().copy(),
+                mesh.triangles().detach().cpu().numpy().copy(),
+                mesh.vertex_colors().detach().cpu().numpy().copy(),
             )
 
     def _prepare_esdf_query(self, points_xyz: np.ndarray):

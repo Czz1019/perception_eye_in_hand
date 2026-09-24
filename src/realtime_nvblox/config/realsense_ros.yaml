@@ -1,0 +1,30 @@
+# Physical RealSense ROS driver input: requires real robot timestamped TF.
+use_sim_time: false
+world_frame: base_link
+depth_frame: camera_depth_optical_frame
+depth_topic: /camera/depth/image_rect_raw
+camera_info_topic: /camera/depth/camera_info
+depth_stride: 1
+min_depth_m: 0.2
+max_depth_m: 4.0
+voxel_size_m: 0.03
+tf_timeout_sec: 0.15
+max_frame_age_sec: 0.5
+esdf_hz: 30.0
+grid_resolution_m: 0.05
+grid_size_m: [2.0, 2.0, 1.5]
+grid_center_m: [0.0, 0.0, 0.5]
+max_visualized_distance_m: 0.5
+# Disabled by default: no dense lattice allocation, query or publication.
+publish_dense_debug: false
+output_directory: ~/nvblox_output/realtime_nvblox_realsense_ros
+
+# Reconstruction from the SAME accumulated TSDF (no SLAM, no RGB texture).
+enable_mesh: true
+mesh_hz: 2.0
+# Metres: near-surface red, close orange, intermediate yellow, farther blue.
+clearance_thresholds_m: [0.05, 0.15, 0.30]
+
+# One default ESDF display: observed samples within 15 cm of surfaces.
+near_obstacle_distance_m: 0.15
+publish_esdf_extras: false
