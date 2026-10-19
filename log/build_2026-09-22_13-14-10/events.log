@@ -1,0 +1,485 @@
+[0.000000] (-) TimerEvent: {}
+[0.000209] (-) JobUnselected: {'identifier': 'realtime_nvblox'}
+[0.000233] (-) JobUnselected: {'identifier': 'ur7e_d435_gazebo'}
+[0.000245] (-) JobUnselected: {'identifier': 'ur7e_nvblox'}
+[0.000251] (-) JobUnselected: {'identifier': 'ur7e_reconstruction'}
+[0.000257] (-) JobUnselected: {'identifier': 'ur7e_sage_planner'}
+[0.000263] (ur7e_perception_planning) JobQueued: {'identifier': 'ur7e_perception_planning', 'dependencies': OrderedDict([('realtime_nvblox', '/home/wqj/realtime_nvblox_ws/install/realtime_nvblox'), ('ur7e_d435_gazebo', '/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo'), ('ur7e_nvblox', '/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox'), ('ur7e_sage_planner', '/home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner'), ('ur7e_reconstruction', '/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction')])}
+[0.000538] (ur7e_perception_planning) JobStarted: {'identifier': 'ur7e_perception_planning'}
+[0.007894] (ur7e_perception_planning) JobProgress: {'identifier': 'ur7e_perception_planning', 'progress': 'cmake'}
+[0.007925] (ur7e_perception_planning) JobProgress: {'identifier': 'ur7e_perception_planning', 'progress': 'build'}
+[0.008739] (ur7e_perception_planning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wqj/realtime_nvblox_ws/build/ur7e_perception_planning', '--', '-j24', '-l24'], 'cwd': '/home/wqj/realtime_nvblox_ws/build/ur7e_perception_planning', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(whole_control)'), ('CODEX_CI', '1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'wqj'), ('XDG_SESSION_TYPE', 'x11'), ('ISAACSIM_PATH', '/home/wqj/isaac-sim/isaac-sim-standalone-5.1.0-linux-x86_64'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo/lib:/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wqj'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/wqj/realtime_nvblox_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '2110'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2395'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('_CONDA_ROOT', '/home/wqj/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6969'), ('COLCON_PREFIX_PATH', '/home/wqj/realtime_nvblox_ws/install'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'wqj'), ('JOURNAL_STREAM', '8:4891'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wqj'), ('ANTHROPIC_BASE_URL', 'https://jp.duckcoding.com'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/wqj/.local/bin:/home/wqj/.codex/tmp/arg0/codex-arg00JKPQ2:/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/wqj/miniconda3/envs/whole_control/bin:/opt/ros/humble/bin:/home/wqj/miniconda3/condabin:/usr/local/cuda-12.8/bin:/home/wqj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wqj:@/tmp/.ICE-unix/2364,unix/wqj:/tmp/.ICE-unix/2364'), ('CODEX_SESSION_ID', '01a0a4fd-e566-7482-a175-42a53be197d3'), ('INVOCATION_ID', 'f57df87d65de46b6ba720874854d32c8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox:/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning:/home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner:/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/wqj/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:43510221-f943-47e3-9630-64633075b957'), ('ANTHROPIC_AUTH_TOKEN', 'sk-AK93QgdSS4ZKAU1vKORj24QZj8Kn6IN2qu8HqAJ1d4DB5VKm'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'whole_control'), ('CODEX_THREAD_ID', '01a0a4fd-e566-7482-a175-42a53be197d3'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/wqj/miniconda3/bin/conda'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wqj/realtime_nvblox_ws/build/ur7e_perception_planning'), ('LC_ALL', 'C.UTF-8'), ('CODEX_MANAGED_PACKAGE_ROOT', '/usr/lib/node_modules/@openai/codex'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/wqj/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/python3.10/site-packages:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages:/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages:/home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/wqj/miniconda3/envs/whole_control'), ('COLCON', '1'), ('CODEX_MANAGED_BY_NPM', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner:/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo:/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning:/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox:/opt/ros/humble')]), 'shell': False}
+[0.039255] (ur7e_perception_planning) StdoutLine: {'line': b'[  3%] Built target ur7e_perception_planning__cpp\n'}
+[0.041959] (ur7e_perception_planning) StdoutLine: {'line': b'[ 12%] Built target ur7e_perception_planning__rosidl_generator_c\n'}
+[0.043302] (ur7e_perception_planning) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_symlink_ur7e_perception_planning_core\n'}
+[0.045834] (ur7e_perception_planning) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_symlink_ur7e_perception_planning\n'}
+[0.051719] (ur7e_perception_planning) StdoutLine: {'line': b'[ 22%] Built target ur7e_perception_planning__rosidl_typesupport_cpp\n'}
+[0.052317] (ur7e_perception_planning) StdoutLine: {'line': b'[ 32%] Built target ur7e_perception_planning__rosidl_typesupport_c\n'}
+[0.052489] (ur7e_perception_planning) StdoutLine: {'line': b'[ 41%] Built target ur7e_perception_planning__rosidl_typesupport_introspection_c\n'}
+[0.055332] (ur7e_perception_planning) StdoutLine: {'line': b'[ 61%] Built target ur7e_perception_planning__rosidl_typesupport_fastrtps_cpp\n'}
+[0.055438] (ur7e_perception_planning) StdoutLine: {'line': b'[ 61%] Built target ur7e_perception_planning__rosidl_typesupport_introspection_cpp\n'}
+[0.055732] (ur7e_perception_planning) StdoutLine: {'line': b'[ 70%] Built target ur7e_perception_planning__rosidl_typesupport_fastrtps_c\n'}
+[0.068272] (ur7e_perception_planning) StdoutLine: {'line': b'[ 70%] Built target ur7e_perception_planning\n'}
+[0.079097] (ur7e_perception_planning) StdoutLine: {'line': b'[ 74%] Built target ur7e_perception_planning__py\n'}
+[0.092513] (ur7e_perception_planning) StdoutLine: {'line': b'[ 80%] Built target ur7e_perception_planning__rosidl_generator_py\n'}
+[0.100042] (-) TimerEvent: {}
+[0.107150] (ur7e_perception_planning) StdoutLine: {'line': b'[ 87%] Built target ur7e_perception_planning__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.107344] (ur7e_perception_planning) StdoutLine: {'line': b'[ 93%] Built target ur7e_perception_planning__rosidl_typesupport_c__pyext\n'}
+[0.108461] (ur7e_perception_planning) StdoutLine: {'line': b'[100%] Built target ur7e_perception_planning__rosidl_typesupport_introspection_c__pyext\n'}
+[0.161588] (ur7e_perception_planning) StdoutLine: {'line': b'running egg_info\n'}
+[0.161993] (ur7e_perception_planning) StdoutLine: {'line': b'writing ur7e_perception_planning_core.egg-info/PKG-INFO\n'}
+[0.162126] (ur7e_perception_planning) StdoutLine: {'line': b'writing dependency_links to ur7e_perception_planning_core.egg-info/dependency_links.txt\n'}
+[0.162185] (ur7e_perception_planning) StdoutLine: {'line': b'writing top-level names to ur7e_perception_planning_core.egg-info/top_level.txt\n'}
+[0.163153] (ur7e_perception_planning) StdoutLine: {'line': b"reading manifest file 'ur7e_perception_planning_core.egg-info/SOURCES.txt'\n"}
+[0.163644] (ur7e_perception_planning) StdoutLine: {'line': b"writing manifest file 'ur7e_perception_planning_core.egg-info/SOURCES.txt'\n"}
+[0.164428] (ur7e_perception_planning) StdoutLine: {'line': b'running egg_info\n'}
+[0.164771] (ur7e_perception_planning) StdoutLine: {'line': b'writing ur7e_perception_planning.egg-info/PKG-INFO\n'}
+[0.165091] (ur7e_perception_planning) StdoutLine: {'line': b'writing dependency_links to ur7e_perception_planning.egg-info/dependency_links.txt\n'}
+[0.165159] (ur7e_perception_planning) StdoutLine: {'line': b'writing top-level names to ur7e_perception_planning.egg-info/top_level.txt\n'}
+[0.166105] (ur7e_perception_planning) StdoutLine: {'line': b"reading manifest file 'ur7e_perception_planning.egg-info/SOURCES.txt'\n"}
+[0.166439] (ur7e_perception_planning) StdoutLine: {'line': b"writing manifest file 'ur7e_perception_planning.egg-info/SOURCES.txt'\n"}
+[0.178685] (ur7e_perception_planning) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_ur7e_perception_planning_core_egg\n'}
+[0.182200] (ur7e_perception_planning) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_ur7e_perception_planning_egg\n'}
+[0.188350] (ur7e_perception_planning) CommandEnded: {'returncode': 0}
+[0.189081] (ur7e_perception_planning) JobProgress: {'identifier': 'ur7e_perception_planning', 'progress': 'install'}
+[0.193177] (ur7e_perception_planning) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wqj/realtime_nvblox_ws/build/ur7e_perception_planning'], 'cwd': '/home/wqj/realtime_nvblox_ws/build/ur7e_perception_planning', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(whole_control)'), ('CODEX_CI', '1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'wqj'), ('XDG_SESSION_TYPE', 'x11'), ('ISAACSIM_PATH', '/home/wqj/isaac-sim/isaac-sim-standalone-5.1.0-linux-x86_64'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo/lib:/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wqj'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/wqj/realtime_nvblox_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '2110'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2395'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('_CONDA_ROOT', '/home/wqj/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6969'), ('COLCON_PREFIX_PATH', '/home/wqj/realtime_nvblox_ws/install'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'wqj'), ('JOURNAL_STREAM', '8:4891'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wqj'), ('ANTHROPIC_BASE_URL', 'https://jp.duckcoding.com'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/wqj/.local/bin:/home/wqj/.codex/tmp/arg0/codex-arg00JKPQ2:/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/wqj/miniconda3/envs/whole_control/bin:/opt/ros/humble/bin:/home/wqj/miniconda3/condabin:/usr/local/cuda-12.8/bin:/home/wqj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wqj:@/tmp/.ICE-unix/2364,unix/wqj:/tmp/.ICE-unix/2364'), ('CODEX_SESSION_ID', '01a0a4fd-e566-7482-a175-42a53be197d3'), ('INVOCATION_ID', 'f57df87d65de46b6ba720874854d32c8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox:/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning:/home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner:/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/wqj/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:43510221-f943-47e3-9630-64633075b957'), ('ANTHROPIC_AUTH_TOKEN', 'sk-AK93QgdSS4ZKAU1vKORj24QZj8Kn6IN2qu8HqAJ1d4DB5VKm'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'whole_control'), ('CODEX_THREAD_ID', '01a0a4fd-e566-7482-a175-42a53be197d3'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/wqj/miniconda3/bin/conda'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wqj/realtime_nvblox_ws/build/ur7e_perception_planning'), ('LC_ALL', 'C.UTF-8'), ('CODEX_MANAGED_PACKAGE_ROOT', '/usr/lib/node_modules/@openai/codex'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/wqj/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/python3.10/site-packages:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages:/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages:/home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/wqj/miniconda3/envs/whole_control'), ('COLCON', '1'), ('CODEX_MANAGED_BY_NPM', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner:/home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo:/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning:/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox:/opt/ros/humble')]), 'shell': False}
+[0.197554] (ur7e_perception_planning) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.197845] (ur7e_perception_planning) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.197882] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ament_index/resource_index/rosidl_interfaces/ur7e_perception_planning\n'}
+[0.198222] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/detail/planning_map__functions.h\n'}
+[0.198333] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/detail/planning_map__struct.h\n'}
+[0.198397] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/detail/planning_map__type_support.h\n'}
+[0.198458] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/planning_map.h\n'}
+[0.198637] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.198720] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/environment/library_path.sh\n'}
+[0.198773] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/environment/library_path.dsv\n'}
+[0.198823] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/detail/planning_map__rosidl_typesupport_fastrtps_c.h\n'}
+[0.198926] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.198985] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/detail/planning_map__rosidl_typesupport_introspection_c.h\n'}
+[0.199035] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.199124] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/detail/planning_map__builder.hpp\n'}
+[0.199202] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/detail/planning_map__struct.hpp\n'}
+[0.199299] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/detail/planning_map__traits.hpp\n'}
+[0.199390] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/detail/planning_map__type_support.hpp\n'}
+[0.199443] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/planning_map.hpp\n'}
+[0.199495] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.199600] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/detail/planning_map__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.199682] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.199803] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/include/ur7e_perception_planning/ur7e_perception_planning/msg/detail/planning_map__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.199885] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/environment/pythonpath.sh\n'}
+[0.200131] (-) TimerEvent: {}
+[0.200148] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/environment/pythonpath.dsv\n'}
+[0.200186] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[0.200245] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.200273] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.200315] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[0.200555] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/__init__.py\n'}
+[0.200612] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/_ur7e_perception_planning_s.ep.rosidl_typesupport_c.c\n'}
+[0.200670] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/_ur7e_perception_planning_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.200725] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/_ur7e_perception_planning_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.200779] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/libur7e_perception_planning__rosidl_generator_py.so\n'}
+[0.200835] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/msg/__init__.py\n'}
+[0.200891] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/msg/_planning_map.py\n'}
+[0.200950] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/msg/_planning_map_s.c\n'}
+[0.201007] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/ur7e_perception_planning_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.201061] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/ur7e_perception_planning_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.201116] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/ur7e_perception_planning_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.201252] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/ur7e_perception_planning_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.201369] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/ur7e_perception_planning_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.201487] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/ur7e_perception_planning_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.201569] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/msg/PlanningMap.idl\n'}
+[0.201643] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/msg/PlanningMap.msg\n'}
+[0.201794] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[0.201854] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.201912] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.201969] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[0.202184] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/__init__.py\n'}
+[0.202226] (ur7e_perception_planning) StdoutLine: {'line': b'-- Symlinking: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/adaptive_demo.py\n'}
+[0.206437] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py\n'}
+[0.206525] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py\n'}
+[0.206557] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/geometry.py\n'}
+[0.206582] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/grid.py\n'}
+[0.206632] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py\n'}
+[0.206677] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py\n'}
+[0.206698] (ur7e_perception_planning) StdoutLine: {'line': b'-- Symlinking: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/routing.py\n'}
+[0.211260] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/runtime.py\n'}
+[0.211294] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/sage.py\n'}
+[0.211316] (ur7e_perception_planning) StdoutLine: {'line': b'-- Symlinking: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/speed.py\n'}
+[0.216541] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/config/demo.yaml\n'}
+[0.216601] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/config/demo_scan.yaml\n'}
+[0.216623] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/config/online.yaml\n'}
+[0.216691] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/launch/bringup.launch.py\n'}
+[0.216744] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/launch/scene.launch.py\n'}
+[0.216844] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/rviz/online.rviz\n'}
+[0.216987] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/validation/AB_DEMO.md\n'}
+[0.217041] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/validation/AB_DEMO_PATH.png\n'}
+[0.217094] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/validation/HEADLESS_FIX.md\n'}
+[0.217146] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/validation/MARKERS_QOS_FIX.md\n'}
+[0.217199] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/validation/RESULTS.md\n'}
+[0.217251] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/validation/acceptance_summary.json\n'}
+[0.217303] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/validation/execution_acceptance.csv\n'}
+[0.217355] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/validation/final_status.json\n'}
+[0.217405] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/validation/headless_runs.json\n'}
+[0.217459] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/validation/rviz.png\n'}
+[0.217505] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/validation/tests.log\n'}
+[0.217592] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/README.md\n'}
+[0.217646] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/ToDoList.md\n'}
+[0.217724] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/lib/ur7e_perception_planning/perception_planning\n'}
+[0.217809] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ament_index/resource_index/package_run_dependencies/ur7e_perception_planning\n'}
+[0.217887] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ament_index/resource_index/parent_prefix_path/ur7e_perception_planning\n'}
+[0.217968] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/environment/ament_prefix_path.sh\n'}
+[0.218040] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/environment/ament_prefix_path.dsv\n'}
+[0.218113] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/environment/path.sh\n'}
+[0.218186] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/environment/path.dsv\n'}
+[0.218256] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/local_setup.bash\n'}
+[0.218325] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/local_setup.sh\n'}
+[0.218391] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/local_setup.zsh\n'}
+[0.218457] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/local_setup.dsv\n'}
+[0.218509] (ur7e_perception_planning) StdoutLine: {'line': b'-- Symlinking: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/package.dsv\n'}
+[0.223268] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ament_index/resource_index/packages/ur7e_perception_planning\n'}
+[0.223351] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/rosidl_cmake-extras.cmake\n'}
+[0.223414] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.223438] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.223486] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.223534] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.223577] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.223634] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.223694] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ur7e_perception_planningConfig.cmake\n'}
+[0.223742] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ur7e_perception_planningConfig-version.cmake\n'}
+[0.223789] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/package.xml\n'}
+[0.223901] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/lib/libur7e_perception_planning__rosidl_generator_c.so\n'}
+[0.224022] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/lib/libur7e_perception_planning__rosidl_typesupport_fastrtps_c.so\n'}
+[0.224130] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/lib/libur7e_perception_planning__rosidl_typesupport_introspection_c.so\n'}
+[0.224226] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/lib/libur7e_perception_planning__rosidl_typesupport_c.so\n'}
+[0.224325] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/lib/libur7e_perception_planning__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.224433] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/lib/libur7e_perception_planning__rosidl_typesupport_introspection_cpp.so\n'}
+[0.224535] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/lib/libur7e_perception_planning__rosidl_typesupport_cpp.so\n'}
+[0.246540] (ur7e_perception_planning) StdoutLine: {'line': b"Listing '/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning'...\n"}
+[0.246630] (ur7e_perception_planning) StdoutLine: {'line': b"Listing '/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning/msg'...\n"}
+[0.248966] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/lib/libur7e_perception_planning__rosidl_generator_py.so\n'}
+[0.274024] (ur7e_perception_planning) StdoutLine: {'line': b"Listing '/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core'...\n"}
+[0.274135] (ur7e_perception_planning) StdoutLine: {'line': b"Compiling '/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/adaptive_demo.py'...\n"}
+[0.274205] (ur7e_perception_planning) StdoutLine: {'line': b"Compiling '/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py'...\n"}
+[0.274260] (ur7e_perception_planning) StdoutLine: {'line': b"Compiling '/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/geometry.py'...\n"}
+[0.274313] (ur7e_perception_planning) StdoutLine: {'line': b"Compiling '/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py'...\n"}
+[0.274364] (ur7e_perception_planning) StdoutLine: {'line': b"Compiling '/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py'...\n"}
+[0.274416] (ur7e_perception_planning) StdoutLine: {'line': b"Compiling '/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/routing.py'...\n"}
+[0.274468] (ur7e_perception_planning) StdoutLine: {'line': b"Compiling '/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/runtime.py'...\n"}
+[0.274519] (ur7e_perception_planning) StdoutLine: {'line': b"Compiling '/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/speed.py'...\n"}
+[0.276384] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/export_ur7e_perception_planning__rosidl_generator_cExport.cmake\n'}
+[0.276610] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/export_ur7e_perception_planning__rosidl_generator_cExport-release.cmake\n'}
+[0.276677] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/export_ur7e_perception_planning__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.276732] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/export_ur7e_perception_planning__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[0.276785] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ur7e_perception_planning__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.276837] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ur7e_perception_planning__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[0.276888] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ur7e_perception_planning__rosidl_typesupport_cExport.cmake\n'}
+[0.277015] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ur7e_perception_planning__rosidl_typesupport_cExport-release.cmake\n'}
+[0.277055] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/export_ur7e_perception_planning__rosidl_generator_cppExport.cmake\n'}
+[0.277080] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/export_ur7e_perception_planning__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.277102] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/export_ur7e_perception_planning__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[0.277124] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ur7e_perception_planning__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.277145] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ur7e_perception_planning__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[0.277165] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ur7e_perception_planning__rosidl_typesupport_cppExport.cmake\n'}
+[0.277186] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/ur7e_perception_planning__rosidl_typesupport_cppExport-release.cmake\n'}
+[0.277207] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/export_ur7e_perception_planning__rosidl_generator_pyExport.cmake\n'}
+[0.277234] (ur7e_perception_planning) StdoutLine: {'line': b'-- Up-to-date: /home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/share/ur7e_perception_planning/cmake/export_ur7e_perception_planning__rosidl_generator_pyExport-release.cmake\n'}
+[0.300198] (-) TimerEvent: {}
+[0.400449] (-) TimerEvent: {}
+[0.500630] (-) TimerEvent: {}
+[0.600889] (-) TimerEvent: {}
+[0.701224] (-) TimerEvent: {}
+[0.801433] (-) TimerEvent: {}
+[0.901688] (-) TimerEvent: {}
+[1.002124] (-) TimerEvent: {}
+[1.102387] (-) TimerEvent: {}
+[1.202561] (-) TimerEvent: {}
+[1.302784] (-) TimerEvent: {}
+[1.403414] (-) TimerEvent: {}
+[1.503701] (-) TimerEvent: {}
+[1.604036] (-) TimerEvent: {}
+[1.704179] (-) TimerEvent: {}
+[1.804432] (-) TimerEvent: {}
+[1.904827] (-) TimerEvent: {}
+[2.005184] (-) TimerEvent: {}
+[2.105547] (-) TimerEvent: {}
+[2.206030] (-) TimerEvent: {}
+[2.306223] (-) TimerEvent: {}
+[2.406510] (-) TimerEvent: {}
+[2.506767] (-) TimerEvent: {}
+[2.607174] (-) TimerEvent: {}
+[2.707635] (-) TimerEvent: {}
+[2.808094] (-) TimerEvent: {}
+[2.908304] (-) TimerEvent: {}
+[3.008439] (-) TimerEvent: {}
+[3.108617] (-) TimerEvent: {}
+[3.208889] (-) TimerEvent: {}
+[3.309233] (-) TimerEvent: {}
+[3.410108] (-) TimerEvent: {}
+[3.510477] (-) TimerEvent: {}
+[3.611152] (-) TimerEvent: {}
+[3.711448] (-) TimerEvent: {}
+[3.811675] (-) TimerEvent: {}
+[3.912037] (-) TimerEvent: {}
+[4.012389] (-) TimerEvent: {}
+[4.112782] (-) TimerEvent: {}
+[4.213079] (-) TimerEvent: {}
+[4.313298] (-) TimerEvent: {}
+[4.413572] (-) TimerEvent: {}
+[4.513935] (-) TimerEvent: {}
+[4.614180] (-) TimerEvent: {}
+[4.714372] (-) TimerEvent: {}
+[4.814629] (-) TimerEvent: {}
+[4.914768] (-) TimerEvent: {}
+[5.015034] (-) TimerEvent: {}
+[5.115297] (-) TimerEvent: {}
+[5.215588] (-) TimerEvent: {}
+[5.316077] (-) TimerEvent: {}
+[5.416360] (-) TimerEvent: {}
+[5.516556] (-) TimerEvent: {}
+[5.617058] (-) TimerEvent: {}
+[5.717196] (-) TimerEvent: {}
+[5.817322] (-) TimerEvent: {}
+[5.917448] (-) TimerEvent: {}
+[6.017665] (-) TimerEvent: {}
+[6.118043] (-) TimerEvent: {}
+[6.218289] (-) TimerEvent: {}
+[6.318475] (-) TimerEvent: {}
+[6.418614] (-) TimerEvent: {}
+[6.518774] (-) TimerEvent: {}
+[6.619239] (-) TimerEvent: {}
+[6.719465] (-) TimerEvent: {}
+[6.819693] (-) TimerEvent: {}
+[6.919887] (-) TimerEvent: {}
+[7.020030] (-) TimerEvent: {}
+[7.120303] (-) TimerEvent: {}
+[7.220507] (-) TimerEvent: {}
+[7.320875] (-) TimerEvent: {}
+[7.421381] (-) TimerEvent: {}
+[7.521818] (-) TimerEvent: {}
+[7.622236] (-) TimerEvent: {}
+[7.722540] (-) TimerEvent: {}
+[7.822778] (-) TimerEvent: {}
+[7.923092] (-) TimerEvent: {}
+[8.023407] (-) TimerEvent: {}
+[8.123631] (-) TimerEvent: {}
+[8.223889] (-) TimerEvent: {}
+[8.324302] (-) TimerEvent: {}
+[8.424562] (-) TimerEvent: {}
+[8.524970] (-) TimerEvent: {}
+[8.625315] (-) TimerEvent: {}
+[8.725606] (-) TimerEvent: {}
+[8.826694] (-) TimerEvent: {}
+[8.926977] (-) TimerEvent: {}
+[9.027120] (-) TimerEvent: {}
+[9.127330] (-) TimerEvent: {}
+[9.227583] (-) TimerEvent: {}
+[9.328004] (-) TimerEvent: {}
+[9.428231] (-) TimerEvent: {}
+[9.528525] (-) TimerEvent: {}
+[9.628721] (-) TimerEvent: {}
+[9.729138] (-) TimerEvent: {}
+[9.829462] (-) TimerEvent: {}
+[9.929669] (-) TimerEvent: {}
+[10.029978] (-) TimerEvent: {}
+[10.130467] (-) TimerEvent: {}
+[10.230857] (-) TimerEvent: {}
+[10.331174] (-) TimerEvent: {}
+[10.431444] (-) TimerEvent: {}
+[10.531784] (-) TimerEvent: {}
+[10.632137] (-) TimerEvent: {}
+[10.732301] (-) TimerEvent: {}
+[10.832538] (-) TimerEvent: {}
+[10.932788] (-) TimerEvent: {}
+[11.033062] (-) TimerEvent: {}
+[11.133290] (-) TimerEvent: {}
+[11.233450] (-) TimerEvent: {}
+[11.333587] (-) TimerEvent: {}
+[11.433826] (-) TimerEvent: {}
+[11.534189] (-) TimerEvent: {}
+[11.634330] (-) TimerEvent: {}
+[11.734607] (-) TimerEvent: {}
+[11.834837] (-) TimerEvent: {}
+[11.935497] (-) TimerEvent: {}
+[12.035678] (-) TimerEvent: {}
+[12.135962] (-) TimerEvent: {}
+[12.236236] (-) TimerEvent: {}
+[12.336379] (-) TimerEvent: {}
+[12.436589] (-) TimerEvent: {}
+[12.536803] (-) TimerEvent: {}
+[12.637089] (-) TimerEvent: {}
+[12.737295] (-) TimerEvent: {}
+[12.837466] (-) TimerEvent: {}
+[12.937683] (-) TimerEvent: {}
+[13.038007] (-) TimerEvent: {}
+[13.138337] (-) TimerEvent: {}
+[13.238579] (-) TimerEvent: {}
+[13.338877] (-) TimerEvent: {}
+[13.439267] (-) TimerEvent: {}
+[13.539510] (-) TimerEvent: {}
+[13.639655] (-) TimerEvent: {}
+[13.739935] (-) TimerEvent: {}
+[13.840520] (-) TimerEvent: {}
+[13.940883] (-) TimerEvent: {}
+[14.041201] (-) TimerEvent: {}
+[14.141534] (-) TimerEvent: {}
+[14.242008] (-) TimerEvent: {}
+[14.342452] (-) TimerEvent: {}
+[14.442743] (-) TimerEvent: {}
+[14.542995] (-) TimerEvent: {}
+[14.643211] (-) TimerEvent: {}
+[14.743763] (-) TimerEvent: {}
+[14.844019] (-) TimerEvent: {}
+[14.944152] (-) TimerEvent: {}
+[15.044345] (-) TimerEvent: {}
+[15.144707] (-) TimerEvent: {}
+[15.245032] (-) TimerEvent: {}
+[15.345323] (-) TimerEvent: {}
+[15.445527] (-) TimerEvent: {}
+[15.545764] (-) TimerEvent: {}
+[15.645918] (-) TimerEvent: {}
+[15.746050] (-) TimerEvent: {}
+[15.846235] (-) TimerEvent: {}
+[15.946444] (-) TimerEvent: {}
+[16.046666] (-) TimerEvent: {}
+[16.147042] (-) TimerEvent: {}
+[16.247323] (-) TimerEvent: {}
+[16.347566] (-) TimerEvent: {}
+[16.447946] (-) TimerEvent: {}
+[16.548075] (-) TimerEvent: {}
+[16.648312] (-) TimerEvent: {}
+[16.748812] (-) TimerEvent: {}
+[16.849209] (-) TimerEvent: {}
+[16.949439] (-) TimerEvent: {}
+[17.049643] (-) TimerEvent: {}
+[17.149827] (-) TimerEvent: {}
+[17.249938] (-) TimerEvent: {}
+[17.350077] (-) TimerEvent: {}
+[17.450234] (-) TimerEvent: {}
+[17.550446] (-) TimerEvent: {}
+[17.650751] (-) TimerEvent: {}
+[17.751133] (-) TimerEvent: {}
+[17.851504] (-) TimerEvent: {}
+[17.951753] (-) TimerEvent: {}
+[18.052123] (-) TimerEvent: {}
+[18.152420] (-) TimerEvent: {}
+[18.252544] (-) TimerEvent: {}
+[18.352748] (-) TimerEvent: {}
+[18.453019] (-) TimerEvent: {}
+[18.553321] (-) TimerEvent: {}
+[18.653547] (-) TimerEvent: {}
+[18.753811] (-) TimerEvent: {}
+[18.854090] (-) TimerEvent: {}
+[18.954359] (-) TimerEvent: {}
+[19.054584] (-) TimerEvent: {}
+[19.154798] (-) TimerEvent: {}
+[19.255129] (-) TimerEvent: {}
+[19.355357] (-) TimerEvent: {}
+[19.455581] (-) TimerEvent: {}
+[19.555810] (-) TimerEvent: {}
+[19.656063] (-) TimerEvent: {}
+[19.756401] (-) TimerEvent: {}
+[19.856953] (-) TimerEvent: {}
+[19.957532] (-) TimerEvent: {}
+[20.057866] (-) TimerEvent: {}
+[20.158167] (-) TimerEvent: {}
+[20.258539] (-) TimerEvent: {}
+[20.358979] (-) TimerEvent: {}
+[20.459238] (-) TimerEvent: {}
+[20.559526] (-) TimerEvent: {}
+[20.659964] (-) TimerEvent: {}
+[20.760418] (-) TimerEvent: {}
+[20.860703] (-) TimerEvent: {}
+[20.960971] (-) TimerEvent: {}
+[21.061615] (-) TimerEvent: {}
+[21.161869] (-) TimerEvent: {}
+[21.262224] (-) TimerEvent: {}
+[21.362434] (-) TimerEvent: {}
+[21.462641] (-) TimerEvent: {}
+[21.562964] (-) TimerEvent: {}
+[21.663200] (-) TimerEvent: {}
+[21.763358] (-) TimerEvent: {}
+[21.863609] (-) TimerEvent: {}
+[21.963868] (-) TimerEvent: {}
+[22.064177] (-) TimerEvent: {}
+[22.164423] (-) TimerEvent: {}
+[22.264627] (-) TimerEvent: {}
+[22.364929] (-) TimerEvent: {}
+[22.465063] (-) TimerEvent: {}
+[22.565192] (-) TimerEvent: {}
+[22.665322] (-) TimerEvent: {}
+[22.765543] (-) TimerEvent: {}
+[22.865802] (-) TimerEvent: {}
+[22.966177] (-) TimerEvent: {}
+[23.066516] (-) TimerEvent: {}
+[23.166824] (-) TimerEvent: {}
+[23.267213] (-) TimerEvent: {}
+[23.367464] (-) TimerEvent: {}
+[23.467792] (-) TimerEvent: {}
+[23.568041] (-) TimerEvent: {}
+[23.668428] (-) TimerEvent: {}
+[23.768653] (-) TimerEvent: {}
+[23.869030] (-) TimerEvent: {}
+[23.969297] (-) TimerEvent: {}
+[24.069521] (-) TimerEvent: {}
+[24.169753] (-) TimerEvent: {}
+[24.270339] (-) TimerEvent: {}
+[24.370476] (-) TimerEvent: {}
+[24.470663] (-) TimerEvent: {}
+[24.570902] (-) TimerEvent: {}
+[24.671062] (-) TimerEvent: {}
+[24.771519] (-) TimerEvent: {}
+[24.871740] (-) TimerEvent: {}
+[24.972141] (-) TimerEvent: {}
+[25.072323] (-) TimerEvent: {}
+[25.172559] (-) TimerEvent: {}
+[25.272816] (-) TimerEvent: {}
+[25.373213] (-) TimerEvent: {}
+[25.473465] (-) TimerEvent: {}
+[25.573632] (-) TimerEvent: {}
+[25.673977] (-) TimerEvent: {}
+[25.774228] (-) TimerEvent: {}
+[25.874451] (-) TimerEvent: {}
+[25.974856] (-) TimerEvent: {}
+[26.075000] (-) TimerEvent: {}
+[26.175404] (-) TimerEvent: {}
+[26.275936] (-) TimerEvent: {}
+[26.376359] (-) TimerEvent: {}
+[26.476710] (-) TimerEvent: {}
+[26.576978] (-) TimerEvent: {}
+[26.677232] (-) TimerEvent: {}
+[26.777430] (-) TimerEvent: {}
+[26.877603] (-) TimerEvent: {}
+[26.977778] (-) TimerEvent: {}
+[27.078203] (-) TimerEvent: {}
+[27.178484] (-) TimerEvent: {}
+[27.278778] (-) TimerEvent: {}
+[27.379117] (-) TimerEvent: {}
+[27.479286] (-) TimerEvent: {}
+[27.579502] (-) TimerEvent: {}
+[27.680073] (-) TimerEvent: {}
+[27.780198] (-) TimerEvent: {}
+[27.880341] (-) TimerEvent: {}
+[27.980588] (-) TimerEvent: {}
+[28.080926] (-) TimerEvent: {}
+[28.181212] (-) TimerEvent: {}
+[28.281358] (-) TimerEvent: {}
+[28.381536] (-) TimerEvent: {}
+[28.481755] (-) TimerEvent: {}
+[28.582007] (-) TimerEvent: {}
+[28.682144] (-) TimerEvent: {}
+[28.782352] (-) TimerEvent: {}
+[28.882544] (-) TimerEvent: {}
+[28.983119] (-) TimerEvent: {}
+[29.083287] (-) TimerEvent: {}
+[29.183469] (-) TimerEvent: {}
+[29.283641] (-) TimerEvent: {}
+[29.384024] (-) TimerEvent: {}
+[29.484393] (-) TimerEvent: {}
+[29.584641] (-) TimerEvent: {}
+[29.685216] (-) TimerEvent: {}
+[29.785762] (-) TimerEvent: {}
+[29.886134] (-) TimerEvent: {}
+[29.986529] (-) TimerEvent: {}
+[30.017048] (ur7e_perception_planning) CommandEnded: {'returncode': 0}
+[30.027234] (ur7e_perception_planning) JobEnded: {'identifier': 'ur7e_perception_planning', 'rc': 0}
+[30.027429] (-) EventReactorShutdown: {}

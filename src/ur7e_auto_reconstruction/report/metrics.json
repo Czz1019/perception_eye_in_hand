@@ -1,0 +1,231 @@
+{
+  "runs": {
+    "first": {
+      "directory": "/home/wqj/nvblox_output/ur7e_auto_reconstruction/plans/run_20260929_130313_72d380",
+      "result": {
+        "observations": [],
+        "phase": "ERROR",
+        "error": "Reconstruction heartbeat missing",
+        "waypoint": "S01"
+      },
+      "samples": 15074,
+      "trace_duration_sec": 37.50977432599757,
+      "recorded_interval_ms_p50_p95_p99_max": [
+        2.040951978415251,
+        5.857660208130255,
+        7.923320924164728,
+        18.28218999435194
+      ],
+      "max_abs_dq_rad_s": [
+        0.008851933293044567,
+        0.17086847126483917,
+        0.4471473693847656,
+        0.6169331669807434,
+        0.033049166202545166,
+        0.0021831889171153307
+      ],
+      "max_abs_tracking_rad": [
+        0.0001369486807489828,
+        0.022331744537416043,
+        0.06409667328266067,
+        0.086373038248853,
+        0.00021714169529396532,
+        0.0001667502520421582
+      ]
+    },
+    "second": {
+      "directory": "/home/wqj/nvblox_output/ur7e_auto_reconstruction/plans/run_20260929_131301_6bccec",
+      "result": {
+        "observations": [
+          {
+            "name": "S01",
+            "epoch": 1,
+            "frames": 8,
+            "session": "/home/wqj/nvblox_output/ur7e_auto_reconstruction/scan_20260929_131301_9fb3a9"
+          },
+          {
+            "name": "S02",
+            "epoch": 2,
+            "frames": 8,
+            "session": "/home/wqj/nvblox_output/ur7e_auto_reconstruction/scan_20260929_131301_9fb3a9"
+          },
+          {
+            "name": "S03",
+            "epoch": 3,
+            "frames": 8,
+            "session": "/home/wqj/nvblox_output/ur7e_auto_reconstruction/scan_20260929_131301_9fb3a9"
+          },
+          {
+            "name": "S04",
+            "epoch": 4,
+            "frames": 8,
+            "session": "/home/wqj/nvblox_output/ur7e_auto_reconstruction/scan_20260929_131301_9fb3a9"
+          },
+          {
+            "name": "S05",
+            "epoch": 5,
+            "frames": 8,
+            "session": "/home/wqj/nvblox_output/ur7e_auto_reconstruction/scan_20260929_131301_9fb3a9"
+          },
+          {
+            "name": "S06",
+            "epoch": 6,
+            "frames": 8,
+            "session": "/home/wqj/nvblox_output/ur7e_auto_reconstruction/scan_20260929_131301_9fb3a9"
+          },
+          {
+            "name": "S07",
+            "epoch": 7,
+            "frames": 8,
+            "session": "/home/wqj/nvblox_output/ur7e_auto_reconstruction/scan_20260929_131301_9fb3a9"
+          }
+        ],
+        "partial_surface": null,
+        "phase": "ERROR",
+        "error": "Servo scheduling deadline missed; no catch-up jump",
+        "waypoint": "S08"
+      },
+      "samples": 63552,
+      "trace_duration_sec": 144.36126499800594,
+      "recorded_interval_ms_p50_p95_p99_max": [
+        2.00699400738813,
+        4.167222505202517,
+        7.109300509910099,
+        24.042294011451304
+      ],
+      "max_abs_dq_rad_s": [
+        0.12566368281841278,
+        0.12343685328960419,
+        0.12366276234388351,
+        0.09270269423723221,
+        0.10233204066753387,
+        0.12340559810400009
+      ],
+      "max_abs_tracking_rad": [
+        0.012965378125337157,
+        0.0129525243843982,
+        0.012792903627339536,
+        0.009352749926513582,
+        0.01058000262449621,
+        0.012856476499669922
+      ]
+    }
+  },
+  "observations": [
+    {
+      "name": "S01",
+      "max_joint_error_rad": 1.962322962012486e-05,
+      "camera_depth_xyz_m": [
+        0.21834956109523773,
+        -0.4302702844142914,
+        0.7000020742416382
+      ],
+      "captured_at": "2026-09-29T13:13:07.272535+08:00",
+      "completed_capture": true
+    },
+    {
+      "name": "S02",
+      "max_joint_error_rad": 2.6071312289266402e-05,
+      "camera_depth_xyz_m": [
+        0.3799896836280823,
+        -0.19999974966049194,
+        0.7300128936767578
+      ],
+      "captured_at": "2026-09-29T13:13:22.743932+08:00",
+      "completed_capture": true
+    },
+    {
+      "name": "S03",
+      "max_joint_error_rad": 2.593461583533241e-05,
+      "camera_depth_xyz_m": [
+        0.5399912595748901,
+        -0.20001183450222015,
+        0.7300019860267639
+      ],
+      "captured_at": "2026-09-29T13:13:36.045683+08:00",
+      "completed_capture": true
+    },
+    {
+      "name": "S04",
+      "max_joint_error_rad": 2.3399912937538403e-05,
+      "camera_depth_xyz_m": [
+        0.5400029420852661,
+        0.24999824166297913,
+        0.7299964427947998
+      ],
+      "captured_at": "2026-09-29T13:14:14.713004+08:00",
+      "completed_capture": true
+    },
+    {
+      "name": "S05",
+      "max_joint_error_rad": 2.3365755386306475e-05,
+      "camera_depth_xyz_m": [
+        0.539999783039093,
+        -0.4499800205230713,
+        0.7300099730491638
+      ],
+      "captured_at": "2026-09-29T13:14:42.123396+08:00",
+      "completed_capture": true
+    },
+    {
+      "name": "S06",
+      "max_joint_error_rad": 1.6252124087845488e-05,
+      "camera_depth_xyz_m": [
+        0.3799908757209778,
+        -0.44999369978904724,
+        0.7300118207931519
+      ],
+      "captured_at": "2026-09-29T13:14:54.799093+08:00",
+      "completed_capture": true
+    },
+    {
+      "name": "S07",
+      "max_joint_error_rad": 1.6617314090972002e-05,
+      "camera_depth_xyz_m": [
+        0.22000715136528015,
+        -0.2000061720609665,
+        0.7299939393997192
+      ],
+      "captured_at": "2026-09-29T13:15:10.333823+08:00",
+      "completed_capture": true
+    },
+    {
+      "name": "S08",
+      "max_joint_error_rad": 3.0423272503687926e-05,
+      "camera_depth_xyz_m": [
+        0.2199966311454773,
+        0.050000835210084915,
+        0.7300094962120056
+      ],
+      "captured_at": "2026-09-29T13:15:26.140904+08:00",
+      "completed_capture": false
+    }
+  ],
+  "full_scan_passed": false,
+  "operator_observation": "无明显抖动",
+  "collision_confirmation": null,
+  "map": {
+    "session": "/home/wqj/nvblox_output/ur7e_auto_reconstruction/scan_20260929_131301_9fb3a9",
+    "frames": 58,
+    "views": 8,
+    "vertices": 16294,
+    "triangles": 22549,
+    "bounds_min_m": [
+      -0.1198248416185379,
+      -0.9995050430297852,
+      -0.09749999642372131
+    ],
+    "bounds_max_m": [
+      0.9994860291481018,
+      0.9291501641273499,
+      0.35249999165534973
+    ],
+    "colored_vertex_fraction": 0.10015956793911869,
+    "npz_sha256": "5bf2975fec212ce6c006ecbf2066bbb32aef7e145b033926f3d512af99e0bcfc"
+  },
+  "source_integrity": {
+    "checked": 275,
+    "changed": [],
+    "passed": true
+  }
+}

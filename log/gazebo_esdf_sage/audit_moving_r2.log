@@ -1,0 +1,26 @@
+{
+  "scenario_complete": false,
+  "min_static_gap_m": 0.07619921273921475,
+  "min_self_gap_m": 0.021381798390222466,
+  "min_moving_gap_m": {
+    "crossing": 0.15600950092367663
+  },
+  "moving_samples": {
+    "crossing": 15532
+  },
+  "max_obstacle_speed_m_s": {
+    "crossing": 0.015000000000014765
+  },
+  "online_frames": 2371,
+  "online_versions": 117,
+  "online_commit_gap_max_s": 29.94500000000005,
+  "online_commit_gap_p95_s": 0.1150000000000091,
+  "online_latency_p95_s": 0.07474768452811986,
+  "online_latency_max_s": 0.44322154304245487,
+  "executed_steps_checked": 347,
+  "recorded_map_edge_violations": []
+}
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/audit_moving.py", line 42, in <module>
+    assert r['scenario_complete'];assert static>=.03 and selfgap>=.015 and all(x>=.03 for x in minima.values());assert not violations
+AssertionError

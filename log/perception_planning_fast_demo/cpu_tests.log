@@ -1,0 +1,84 @@
+.........E......                                                         [100%]
+==================================== ERRORS ====================================
+___________ ERROR at setup of test_sage_rollout_really_consumes_esdf ___________
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x7500cceb90c0>, _basetemp=PosixPath('/tmp/pytest-of-wqj/pytest-16'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def task(tmp_path_factory):
+>       return build_task(tmp_path_factory.mktemp('sage'), particles=64)
+
+src/ur7e_perception_planning/test/test_integration.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/sage.py:146: in build_task
+    return EsdfTask(str(config), str(share/'config/ur7e_robot_gazebo.yml'), str(world),
+../storm/storm_kit/mpc/task/sage_reacher_task_v3.py:25: in __init__
+    super().__init__(
+../storm/storm_kit/mpc/task/sage_arm_task_impl.py:42: in __init__
+    self.controller = self.init_sage_mppi(task_file, robot_file, world_file)
+../storm/storm_kit/mpc/task/sage_arm_task_impl.py:106: in init_sage_mppi
+    rollout_fn = self.get_rollout_fn(
+install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/sage.py:75: in get_rollout_fn
+    return EsdfRollout(**kwargs)
+install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/sage.py:15: in __init__
+    super().__init__(**kwargs)
+../storm/storm_kit/mpc/rollout/sage_arm_reacher.py:33: in __init__
+    super().__init__(
+../storm/storm_kit/mpc/rollout/arm_base.py:58: in __init__
+    self.dynamics_model = URDFKinematicModel(join_path(assets_path,exp_params['model']['urdf_path']),
+../storm/storm_kit/mpc/model/urdf_kinematic_model.py:47: in __init__
+    self.robot_model = DifferentiableRobotModel(urdf_path, None, tensor_args=tensor_args) # 由传入的urdf_path构建机器人模型
+../storm/storm_kit/differentiable_robot_model/differentiable_robot_model.py:100: in __init__
+    self._base_lin_vel = torch.zeros((self._batch_size, 3), **self.tensor_args)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _lazy_init():
+        global _initialized, _queued_calls
+        if is_initialized() or hasattr(_tls, "is_initializing"):
+            return
+        with _initialization_lock:
+            # We be double-checked locking, boys!  This is OK because
+            # the above test was GIL protected anyway.  The inner test
+            # is for when a thread blocked on some other thread which was
+            # doing the initialization; when they get the lock, they will
+            # find there is nothing left to do.
+            if is_initialized():
+                return
+            # It is important to prevent other threads from entering _lazy_init
+            # immediately, while we are still guaranteed to have the GIL, because some
+            # of the C calls we make below will release the GIL
+            if _is_in_bad_fork():
+                raise RuntimeError(
+                    "Cannot re-initialize CUDA in forked subprocess. To use CUDA with "
+                    "multiprocessing, you must use the 'spawn' start method"
+                )
+            if not hasattr(torch._C, "_cuda_getDeviceCount"):
+                raise AssertionError("Torch not compiled with CUDA enabled")
+            if _cudart is None:
+                raise AssertionError(
+                    "libcudart functions unavailable. It looks like you have a broken build?"
+                )
+            # This function throws if there's a driver initialization error, no GPUs
+            # are found or any other error occurs
+>           torch._C._cuda_init()
+E           RuntimeError: No CUDA GPUs are available
+
+../miniconda3/envs/whole_control/lib/python3.10/site-packages/torch/cuda/__init__.py:410: RuntimeError
+---------------------------- Captured stderr setup -----------------------------
+Unknown tag "ros2_control" in /robot[@name='ur7e']
+=============================== warnings summary ===============================
+../miniconda3/envs/whole_control/lib/python3.10/site-packages/torch/__init__.py:1275
+  /home/wqj/miniconda3/envs/whole_control/lib/python3.10/site-packages/torch/__init__.py:1275: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+    _C._set_default_tensor_type(t)
+
+<frozen importlib._bootstrap>:241
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+<frozen importlib._bootstrap>:241
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR src/ur7e_perception_planning/test/test_integration.py::test_sage_rollout_really_consumes_esdf
+15 passed, 3 deselected, 3 warnings, 1 error in 16.70s
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

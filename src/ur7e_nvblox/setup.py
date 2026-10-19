@@ -5,7 +5,7 @@ setup(
     name='ur7e_nvblox', version='0.1.0', packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages', ['resource/ur7e_nvblox']),
-        ('share/ur7e_nvblox', ['package.xml', 'README.md', 'TEST_RESULTS.md']),
+        ('share/ur7e_nvblox', ['package.xml', 'README.md', 'TEST_RESULTS.md', 'PERFORMANCE.md']),
         ('share/ur7e_nvblox/config', glob('config/*.yaml')),
         ('share/ur7e_nvblox/launch', glob('launch/*.launch.py')),
         ('share/ur7e_nvblox/rviz', glob('rviz/*.rviz')),

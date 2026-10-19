@@ -1,0 +1,74 @@
+{
+  "start_passes": false,
+  "self_clearance_m": 0.006552732178420437,
+  "required_environment_margin_m": 0.03,
+  "tool0_xyz": [
+    0.13834226270056116,
+    -0.4779650112748802,
+    0.6684194469158952
+  ],
+  "q": [
+    -1.738394562398092,
+    -1.3294486713460465,
+    1.3585637251483362,
+    -4.096803089181417,
+    -0.6018531958209437,
+    -1.2998703161822718
+  ],
+  "per_link": [
+    {
+      "link": "shoulder_link",
+      "spheres": 1,
+      "nonpositive_or_unknown_center_count": 1,
+      "margin_failed_count": 1,
+      "min_clearance_m": -0.12190126941204071
+    },
+    {
+      "link": "upper_arm_link",
+      "spheres": 5,
+      "nonpositive_or_unknown_center_count": 5,
+      "margin_failed_count": 5,
+      "min_clearance_m": -0.12280126941204071
+    },
+    {
+      "link": "forearm_link",
+      "spheres": 6,
+      "nonpositive_or_unknown_center_count": 6,
+      "margin_failed_count": 6,
+      "min_clearance_m": -0.11540126941204071
+    },
+    {
+      "link": "wrist_1_link",
+      "spheres": 2,
+      "nonpositive_or_unknown_center_count": 2,
+      "margin_failed_count": 2,
+      "min_clearance_m": -0.1016012694120407
+    },
+    {
+      "link": "wrist_2_link",
+      "spheres": 1,
+      "nonpositive_or_unknown_center_count": 1,
+      "margin_failed_count": 1,
+      "min_clearance_m": -0.10190126941204071
+    },
+    {
+      "link": "wrist_3_link",
+      "spheres": 1,
+      "nonpositive_or_unknown_center_count": 1,
+      "margin_failed_count": 1,
+      "min_clearance_m": -0.0955012694120407
+    },
+    {
+      "link": "tool0",
+      "spheres": 1,
+      "nonpositive_or_unknown_center_count": 1,
+      "margin_failed_count": 1,
+      "min_clearance_m": -0.09665543805343088
+    }
+  ],
+  "limiting_self_pair": [
+    "tool0",
+    "wrist_2_link"
+  ],
+  "required_self_margin_m": 0.015
+}

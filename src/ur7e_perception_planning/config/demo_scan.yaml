@@ -1,0 +1,23 @@
+# Commissioned high observation route for THIS static Gazebo fixture only.
+# Offsets from ur7e_reconstruction/high_initial_positions.yaml; no obstacle truth.
+clearance_m: 0.075
+dwell_sec: 0.4
+joint_offsets:
+  - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  # Retreat far enough to observe the arm's future swept volume outside the
+  # camera near-field blind zone, including the air above the walls.
+  - [-0.6, -0.7, 0.0, 0.0, 0.0, 0.0]
+  - [-0.6, -0.7, 0.35, -0.5, 0.0, 0.0]
+  # Straighten the elbow high above the future forearm corridor.
+  - [-0.6, -0.3, -0.55, 0.0, 0.0, 0.0]
+  # Retract to observe the space initially hidden by the forearm.
+  - [-0.6, -0.3, 0.2, 0.2, 0.0, 0.0]
+  - [0.6, -0.3, 0.2, 0.2, 0.0, 0.0]
+  - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  # Look forward as well as down: the wrist needs free air above the walls.
+  - [-0.6, 0.0, 0.0, -1.0, 0.0, 0.0]
+  - [0.6, 0.0, 0.0, -1.0, 0.0, 0.0]
+  # Move the camera origin forward to see behind its earlier occlusions.
+  - [0.6, 0.3, -0.3, 0.3, 0.0, 0.0]
+  - [0.0, 0.3, -0.3, 0.3, 0.0, 0.0]
+  - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]

@@ -1,0 +1,7 @@
+{'kind': 'failed', 'trial': 'waiting', 'sim_time': 0.0, 'error': "'NoneType' object is not iterable"}
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage_continuous/test/moving_scenario.py", line 88, in <module>
+    s=wait(lambda s:same_run() and s.get('phase')=='ONLINE_READY' and (s.get('online') or {}).get('frames',0)>=20,1800);uid=s['map_uid'];seed_tool=g.fk(q)['tool0'][:3,3].copy();record('ready',map_uid=uid,seed_tool=seed_tool.tolist())
+  File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/geometry.py", line 55, in fk
+    values = dict(zip(JOINTS, q))
+TypeError: 'NoneType' object is not iterable

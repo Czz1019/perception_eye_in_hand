@@ -1,0 +1,335 @@
+cmd_filter_coeff:
+  acceleration: 0.0
+  position: 1.0
+  velocity: 1.0
+control_dt: 0.1
+control_space: vel
+cost:
+  collision:
+    gaussian_params:
+      c: 0.5
+      n: 0
+      r: 5.0
+      s: 0
+    weight: 0.0
+  ee_vel:
+    gaussian_params:
+      c: 0.0
+      n: 0
+      r: 5.0
+      s: 0.0
+    vec_weight:
+    - 1.0
+    - 1.0
+    - 1.0
+    weight: 0.0
+  goal_pose:
+    convergence_val:
+    - 0.0
+    - 0.0
+    hinge_val: -1
+    orientation_gaussian_params:
+      c: 0.0
+      n: 0
+      r: 10.0
+      s: 0.0
+    position_gaussian_params:
+      c: 0.0
+      n: 0
+      r: 10.0
+      s: 0.0
+    vec_weight:
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    weight:
+    - 0.0
+    - 200.0
+  joint_l2:
+    gaussian_params:
+      c: 0.2
+      n: 0
+      r: 5.0
+      s: 0
+    weight: 0.0
+  manipulability:
+    gaussian_params:
+      c: 0.0
+      n: 0
+      r: 10.0
+      s: 0
+    thresh: 0.03
+    weight: 0.0
+  null_space:
+    gaussian_params:
+      c: 0.0
+      n: 0
+      r: 1.0
+      s: 0
+    vec_weight:
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    weight: 0.0
+  primitive_collision:
+    distance_threshold: 0.05
+    gaussian_params:
+      c: 0.0
+      n: 0
+      r: 10.0
+      s: 0
+    weight: 0.0
+  retract_state:
+  - 0.0
+  - -1.57
+  - 1.57
+  - -1.57
+  - -1.57
+  - 0.0
+  retract_weight:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  robot_self_collision:
+    distance_threshold: 0.05
+    gaussian_params:
+      c: 0.0
+      n: 0
+      r: 10.0
+      s: 0
+    weight: 0.0
+  scene_collision:
+    gaussian_params:
+      c: 0.0
+      n: 0
+      r: 10.0
+      s: 0
+    weight: 0.0
+  smooth:
+    gaussian_params:
+      c: 0.2
+      n: 0
+      r: 10.0
+      s: 0
+    order: 1
+    weight: 0.0
+  state_bound:
+    bound_thresh: 0.01
+    gaussian_params:
+      c: 0.0
+      n: 0
+      r: 10.0
+      s: 0
+    weight: 1000.0
+  stop_cost:
+    gaussian_params:
+      c: 0.0
+      n: 0
+      r: 1.0
+      s: 0
+    max_nlimit: 1.5
+    weight: 1.0
+  stop_cost_acc:
+    gaussian_params:
+      c: 0.0
+      n: 0
+      r: 1.0
+      s: 0
+    max_limit: 0.1
+    weight: 0.0
+  voxel_collision:
+    distance_threshold: 0.05
+    gaussian_params:
+      c: 0.0
+      n: 0
+      r: 100.0
+      s: 0
+    grid_resolution: 0.05
+    weight: 0.0
+  zero_acc:
+    gaussian_params:
+      c: 0.2
+      n: 0
+      r: 5.0
+      s: 0
+    hinge_val: -1.0
+    weight: 0.0
+  zero_vel:
+    gaussian_params:
+      c: 0.2
+      n: 0
+      r: 1.0
+      s: 0
+    hinge_val: 0.2
+    weight: 0.0
+cuda_device_num: 0
+float_dtype: float32
+model:
+  collision_spheres: /home/wqj/realtime_nvblox_ws/src/ur7e_real_static/config/collision_spheres_d435i.yaml
+  dt: 0.1
+  dt_traj_params:
+    base_dt: 0.1
+    base_ratio: 0.5
+    max_dt: 0.2
+  ee_link_name: tool0
+  init_state:
+  - 0.0
+  - -1.57
+  - 1.57
+  - -1.57
+  - -1.57
+  - 0.0
+  learnable_rigid_body_config:
+    learnable_links: []
+  link_names: &id001
+  - shoulder_link
+  - upper_arm_link
+  - forearm_link
+  - wrist_1_link
+  - wrist_2_link
+  - wrist_3_link
+  - tool0
+  max_acc: 0.5
+  name: ur7e
+  robot_collision_params:
+    bounds:
+    - - -0.8
+      - -0.8
+      - 0.0
+    - - 0.8
+      - 0.8
+      - 1.0
+    collision_spheres: /home/wqj/realtime_nvblox_ws/src/ur7e_real_static/config/collision_spheres_d435i.yaml
+    dof: 6
+    link_objs: *id001
+    sample_points: 100
+    self_collision_weights: /home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner/share/ur7e_sage_planner/weights/ur7e_self_sdf.pt
+    threshold: 0.35
+    urdf: /home/wqj/realtime_nvblox_ws/src/ur7e_real_static/validation/camera_collision/sage_task/calibrated_planning.urdf
+  urdf_path: /home/wqj/realtime_nvblox_ws/src/ur7e_real_static/validation/camera_collision/sage_task/calibrated_planning.urdf
+  vel_scale: 0.0954929658551372
+  world_collision_params:
+    bounds:
+    - - -1.0
+      - -1.0
+      - -0.2
+    - - 1.0
+      - 1.0
+      - 1.0
+    grid_resolution: 0.05
+    label_map:
+      ground: 0
+      robot: 2
+    model_path: scene_coll_nn/
+mppi:
+  alpha: 1
+  base_action: repeat
+  beta: 1.0
+  cov_type: diag_AxA
+  execute_best: true
+  execution_mode: best_sample
+  gamma: 0.98
+  horizon: 32
+  hotstart: true
+  init_cov: 0.025
+  kappa: 0.005
+  n_iters: 1
+  null_act_frac: 0.01
+  num_particles: 64
+  sample_mode: mean
+  sample_params:
+    filter_coeffs: None
+    fixed_samples: true
+    knot_scale: 4
+    sample_ratio:
+      halton: 0.0
+      halton-knot: 1.0
+      random: 0.0
+      random-knot: 0.0
+    seed: 0
+    type: multiple
+  squash_fn: clamp
+  step_size_cov: 0.7
+  step_size_mean: 0.98
+  update_cov: false
+  visual_traj: ee_pos_seq
+run_open_loop: false
+sage_controller_core:
+  enable_anisotropic_shape_update: true
+  enable_runtime_stats: false
+  enable_shape_collapse_guard: true
+  enable_stage_scale: true
+  enable_stagnation_amplification: true
+  shape_update_last_iter_only: true
+  shape_update_max_fallback_fraction: 0.85
+  shape_update_min_normalized_entropy: 0.04
+  sigma_0: 0.025
+  sigma_1: 1.0
+  sigma_2: 0.5
+  stagnation_alpha: 8.0
+  tau_p: 0.0001
+sage_deployment_refinement:
+  enabled: false
+  goal_change_boost:
+    enabled: true
+    restore_error_threshold: 0.18
+    sigma_scale: 4.0
+    step_size_mean: 0.45
+  hold:
+    cart_hold_count: 10
+    cart_hold_threshold: 0.01
+    enabled: false
+    enter_count: 8
+    enter_threshold: 0.03
+    exit_count: 6
+    exit_threshold: 0.05
+    success_threshold: 0.05
+    velocity_threshold: 0.06
+  local_refinement:
+    blend_steps: 8
+    damping: 0.05
+    dist_threshold: 0.09
+    enabled: true
+    exit_threshold: 0.13
+    gain: 0.4
+    max_command_slew: 0.006
+    max_step: 0.01
+    output_mode: blend
+  near_goal_refinement:
+    enabled: true
+    enter_threshold: 0.2
+    exit_threshold: 0.24
+    goal_weight_scale: 3.0
+    sigma_scale: 0.35
+    stagnation_alpha: 0.0
+    step_size_mean: 0.7
+    stop_cost_acc_scale: 1.0
+    stop_cost_scale: 0.5
+    tau_p: 0.001
+  stall_recovery:
+    cooldown: 8.0
+    enabled: true
+    error_threshold: 0.15
+    history_len: 50
+    min_runtime: 8.0
+    motion_threshold: 0.015
+    restore_error_threshold: 0.18
+    sigma_scale: 8.0
+    step_size_mean: 0.35
+    velocity_threshold: 0.08
+state_filter_coeff:
+  acceleration: 0.0
+  position: 0.1
+  velocity: 0.0
+task_metrics:
+  success_threshold: 0.05
+use_cuda: true

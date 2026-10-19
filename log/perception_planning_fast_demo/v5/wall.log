@@ -1,0 +1,60 @@
+{"elapsed": 0.0, "status": null, "phase": null, "error": null}
+{"elapsed": 10.0, "status": "SCANNING", "phase": "SCANNING_6_OF_12", "error": 0.5512230582938252}
+{"elapsed": 20.0, "status": "SOLVING_GUIDE", "phase": "CHECKING_COVERAGE", "error": 0.45823854562288596}
+{"elapsed": 30.0, "status": "SCANNING", "phase": "SCANNING_9_OF_12", "error": 0.551113198022197}
+{"elapsed": 40.0, "status": "SCANNING", "phase": "SCANNING_9_OF_12", "error": 0.5478836727051254}
+{"elapsed": 50.0, "status": "SCANNING", "phase": "SCANNING_9_OF_12", "error": 0.5478836727051245}
+{"elapsed": 60.1, "status": "STALE_MAP", "phase": "SCANNING_9_OF_12", "error": 0.5478839509524467}
+{"elapsed": 70.1, "status": "SCANNING", "phase": "SCANNING_9_OF_12", "error": 0.5478839509524462}
+{"elapsed": 80.1, "status": "SCANNING", "phase": "SCANNING_9_OF_12", "error": 0.5570435282100598}
+{"elapsed": 90.1, "status": "SOLVING_GUIDE", "phase": "CHECKING_COVERAGE", "error": 0.40006681992698}
+{
+  "passed": true,
+  "checks": {
+    "goal_reached": true,
+    "no_runtime_error": true,
+    "online_map_updates": true,
+    "collision_model_clear": true,
+    "self_collision_clear": true,
+    "sage_reaching_used": true
+  },
+  "duration": 95.54667757009156,
+  "latest": {
+    "status": "GOAL_REACHED",
+    "demo_phase": "GOAL_REACHED",
+    "scan_index": 10,
+    "completed_views": 10,
+    "speed_limit": 0.3,
+    "route_waypoints": 1,
+    "guard": "clear",
+    "enabled": true,
+    "error": null,
+    "plans": 641,
+    "sage_optimizations": 641,
+    "plan_ms": 16.102788038551807,
+    "minimum_clearance": 0.032726687157154086,
+    "optimize_ms": 14.311847975477576,
+    "admission_ms": 0.6482650060206652,
+    "accepted_commands": 3454,
+    "guard_rejections": 0,
+    "command_source": "sage",
+    "map_sequence": 434,
+    "map_epoch": 1790077792229762234,
+    "last_plan_map": 427,
+    "map_age_sim": 0.11299999999999955,
+    "goal": [
+      0.45,
+      0.4,
+      0.55
+    ],
+    "ee": [
+      0.4442755862298278,
+      0.40045514916116387,
+      0.5601243325341853
+    ],
+    "goal_error": 0.011639509570158281
+  },
+  "min_geometry_clearance": 0.05720479552371906,
+  "min_self_clearance": 0.02447670510950297,
+  "map_rate": 2.7402833311859562
+}

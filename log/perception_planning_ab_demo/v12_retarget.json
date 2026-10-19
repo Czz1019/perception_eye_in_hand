@@ -1,0 +1,4825 @@
+{
+  "passed": true,
+  "checks": {
+    "goal_reached": true,
+    "no_runtime_error": true,
+    "online_map_updates": true,
+    "collision_model_clear": true,
+    "self_collision_clear": true,
+    "sage_reaching_used": true
+  },
+  "duration": 33.27692814194597,
+  "latest": {
+    "status": "GOAL_REACHED",
+    "demo_phase": "GOAL_REACHED",
+    "scan_index": 12,
+    "guard": "clear",
+    "enabled": true,
+    "error": null,
+    "plans": 3661,
+    "sage_optimizations": 3661,
+    "plan_ms": 21.859848988242447,
+    "minimum_clearance": 0.04131222217082977,
+    "optimize_ms": 20.25604690425098,
+    "admission_ms": 1.1510030599310994,
+    "accepted_commands": 18028,
+    "guard_rejections": 0,
+    "command_source": "sage",
+    "map_sequence": 1134,
+    "map_epoch": 1789999167089529678,
+    "last_plan_map": 1130,
+    "map_age_sim": 0.3410000000000082,
+    "goal": [
+      0.45,
+      0.03,
+      0.52
+    ],
+    "ee": [
+      0.4576149696088716,
+      0.026980369275255045,
+      0.51135598958768
+    ],
+    "goal_error": 0.011909023799882092
+  },
+  "min_geometry_clearance": 0.062454002356426355,
+  "min_self_clearance": 0.02421359098648112,
+  "map_rate": 0.515416912862867,
+  "statuses": [
+    {
+      "wall": 608078.298932756,
+      "status": "STALE_MAP",
+      "demo_phase": "GOAL_REACHED",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1117,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 1.72300000000007,
+      "goal": [
+        0.5,
+        0.0,
+        0.45
+      ],
+      "ee": [
+        0.49844334750793196,
+        0.00289584922839662,
+        0.46138776085047456
+      ],
+      "goal_error": 0.011852856487879525
+    },
+    {
+      "wall": 608078.792984914,
+      "status": "STALE_MAP",
+      "demo_phase": "GOAL_REACHED",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1117,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 2.1230000000000473,
+      "goal": [
+        0.5,
+        0.0,
+        0.45
+      ],
+      "ee": [
+        0.49844334750793196,
+        0.00289584922839662,
+        0.46138776085047456
+      ],
+      "goal_error": 0.011852856487879525
+    },
+    {
+      "wall": 608079.298550066,
+      "status": "STALE_MAP",
+      "demo_phase": "GOAL_REACHED",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1117,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 2.5230000000000246,
+      "goal": [
+        0.5,
+        0.0,
+        0.45
+      ],
+      "ee": [
+        0.49844334750793196,
+        0.00289584922839662,
+        0.46138776085047456
+      ],
+      "goal_error": 0.011852856487879525
+    },
+    {
+      "wall": 608079.791489844,
+      "status": "STALE_MAP",
+      "demo_phase": "GOAL_REACHED",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1117,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 3.0230000000000246,
+      "goal": [
+        0.5,
+        0.0,
+        0.45
+      ],
+      "ee": [
+        0.49844334750793196,
+        0.00289584922839662,
+        0.46138776085047456
+      ],
+      "goal_error": 0.011852856487879525
+    },
+    {
+      "wall": 608080.288309349,
+      "status": "STALE_MAP",
+      "demo_phase": "GOAL_REACHED",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1117,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 3.5230000000000246,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.49844334750793196,
+        0.00289584922839662,
+        0.46138776085047456
+      ],
+      "goal_error": 0.08072662190966019
+    },
+    {
+      "wall": 608080.790255377,
+      "status": "STALE_MAP",
+      "demo_phase": "GOAL_REACHED",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1117,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 3.923000000000002,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.49844334750793196,
+        0.00289584922839662,
+        0.46138776085047456
+      ],
+      "goal_error": 0.08072662190966019
+    },
+    {
+      "wall": 608081.305948863,
+      "status": "GOAL_REACHED",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_PLAN",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 1.0279999999999063,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608081.879602548,
+      "status": "GOAL_REACHED",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_PLAN",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 1.4279999999999973,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608082.333863847,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 1.9279999999999973,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608082.887367553,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 2.3279999999999745,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608083.322436284,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 2.8279999999999745,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608083.808816225,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 3.3279999999999745,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608084.307309533,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 3.8279999999999745,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608084.816401804,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 4.227999999999952,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608085.328598616,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 4.727999999999952,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608085.813645417,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 5.227999999999952,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608086.305534246,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 5.627999999999929,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608086.805562068,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 6.127999999999929,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608087.316387047,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 6.627999999999929,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608087.789285637,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 7.027999999999906,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608088.307499397,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 7.527999999999906,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608088.818664423,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 7.927999999999997,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608089.300149887,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 8.427999999999997,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608089.801926792,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 8.927999999999997,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608090.294117372,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 9.327999999999975,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608090.806501722,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 9.827999999999975,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608091.295831184,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 10.327999999999975,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608091.806133462,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 10.827999999999975,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608092.306716861,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 11.227999999999952,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608092.792930564,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 11.727999999999952,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608093.293180642,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 12.227999999999952,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608093.809152818,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 12.627999999999929,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608094.303130942,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 13.127999999999929,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608094.826113858,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 13.627999999999929,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608095.311891361,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 14.027999999999906,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608095.794731421,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 14.527999999999906,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608096.292807348,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 15.027999999999906,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608096.793335991,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 15.427999999999997,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608097.295987038,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 15.927999999999997,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608097.788878173,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 16.427999999999997,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608098.297177354,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 16.827999999999975,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608098.791512271,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3634,
+      "sage_optimizations": 3634,
+      "plan_ms": 22.021726006641984,
+      "minimum_clearance": null,
+      "optimize_ms": 19.39839799888432,
+      "admission_ms": 2.0896849455311894,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1056,
+      "map_age_sim": 17.327999999999975,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608099.287647103,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3635,
+      "sage_optimizations": 3635,
+      "plan_ms": 17975.076452014036,
+      "minimum_clearance": null,
+      "optimize_ms": 3345.261059002951,
+      "admission_ms": 97.76983200572431,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1119,
+      "map_age_sim": 17.827999999999975,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608099.793172999,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3635,
+      "sage_optimizations": 3635,
+      "plan_ms": 17975.076452014036,
+      "minimum_clearance": null,
+      "optimize_ms": 3345.261059002951,
+      "admission_ms": 97.76983200572431,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1119,
+      "map_age_sim": 18.227999999999952,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608100.285685126,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3635,
+      "sage_optimizations": 3635,
+      "plan_ms": 17975.076452014036,
+      "minimum_clearance": null,
+      "optimize_ms": 3345.261059002951,
+      "admission_ms": 97.76983200572431,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1119,
+      "map_age_sim": 18.727999999999952,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608100.794761878,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3635,
+      "sage_optimizations": 3635,
+      "plan_ms": 17975.076452014036,
+      "minimum_clearance": null,
+      "optimize_ms": 3345.261059002951,
+      "admission_ms": 97.76983200572431,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1119,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1119,
+      "map_age_sim": 19.12799999999993,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608101.290988134,
+      "status": "PLANNING",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3635,
+      "sage_optimizations": 3635,
+      "plan_ms": 17975.076452014036,
+      "minimum_clearance": null,
+      "optimize_ms": 3345.261059002951,
+      "admission_ms": 97.76983200572431,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1122,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1119,
+      "map_age_sim": 0.9339999999999691,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396169,
+        0.4613877608504746
+      ],
+      "goal_error": 0.0807266219096604
+    },
+    {
+      "wall": 608101.804889035,
+      "status": "PLANNING",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_PLAN",
+      "enabled": true,
+      "error": null,
+      "plans": 3635,
+      "sage_optimizations": 3635,
+      "plan_ms": 17975.076452014036,
+      "minimum_clearance": null,
+      "optimize_ms": 3345.261059002951,
+      "admission_ms": 97.76983200572431,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1122,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1119,
+      "map_age_sim": 1.3339999999999463,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.49844334750793173,
+        0.0028958492283966616,
+        0.4613877608504744
+      ],
+      "goal_error": 0.08072662190966017
+    },
+    {
+      "wall": 608102.29088207,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3635,
+      "sage_optimizations": 3635,
+      "plan_ms": 17975.076452014036,
+      "minimum_clearance": null,
+      "optimize_ms": 3345.261059002951,
+      "admission_ms": 97.76983200572431,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1122,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1119,
+      "map_age_sim": 1.8339999999999463,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.49844334750793173,
+        0.0028958492283966616,
+        0.4613877608504744
+      ],
+      "goal_error": 0.08072662190966017
+    },
+    {
+      "wall": 608102.800105751,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3635,
+      "sage_optimizations": 3635,
+      "plan_ms": 17975.076452014036,
+      "minimum_clearance": null,
+      "optimize_ms": 3345.261059002951,
+      "admission_ms": 97.76983200572431,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1122,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1119,
+      "map_age_sim": 2.3339999999999463,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.49844334750793173,
+        0.0028958492283966616,
+        0.4613877608504744
+      ],
+      "goal_error": 0.08072662190966017
+    },
+    {
+      "wall": 608103.288401066,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3635,
+      "sage_optimizations": 3635,
+      "plan_ms": 17975.076452014036,
+      "minimum_clearance": null,
+      "optimize_ms": 3345.261059002951,
+      "admission_ms": 97.76983200572431,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1122,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1119,
+      "map_age_sim": 2.7340000000000373,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.49844334750793173,
+        0.0028958492283966616,
+        0.4613877608504744
+      ],
+      "goal_error": 0.08072662190966017
+    },
+    {
+      "wall": 608103.789212219,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3635,
+      "sage_optimizations": 3635,
+      "plan_ms": 17975.076452014036,
+      "minimum_clearance": null,
+      "optimize_ms": 3345.261059002951,
+      "admission_ms": 97.76983200572431,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1122,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1119,
+      "map_age_sim": 3.2340000000000373,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.49844334750793173,
+        0.0028958492283966616,
+        0.4613877608504744
+      ],
+      "goal_error": 0.08072662190966017
+    },
+    {
+      "wall": 608104.288863911,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3636,
+      "sage_optimizations": 3636,
+      "plan_ms": 2908.4629339631647,
+      "minimum_clearance": null,
+      "optimize_ms": 2754.610648029484,
+      "admission_ms": 141.28855196759105,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1122,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1122,
+      "map_age_sim": 3.6340000000000146,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.49844334750793173,
+        0.0028958492283966616,
+        0.4613877608504744
+      ],
+      "goal_error": 0.08072662190966017
+    },
+    {
+      "wall": 608104.794233011,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3636,
+      "sage_optimizations": 3636,
+      "plan_ms": 2908.4629339631647,
+      "minimum_clearance": null,
+      "optimize_ms": 2754.610648029484,
+      "admission_ms": 141.28855196759105,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1122,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1122,
+      "map_age_sim": 4.1340000000000146,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.49844334750793173,
+        0.0028958492283966616,
+        0.4613877608504744
+      ],
+      "goal_error": 0.08072662190966017
+    },
+    {
+      "wall": 608105.28590939,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3636,
+      "sage_optimizations": 3636,
+      "plan_ms": 2908.4629339631647,
+      "minimum_clearance": null,
+      "optimize_ms": 2754.610648029484,
+      "admission_ms": 141.28855196759105,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1122,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1122,
+      "map_age_sim": 4.6340000000000146,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.49844334750793173,
+        0.0028958492283966616,
+        0.4613877608504744
+      ],
+      "goal_error": 0.08072662190966017
+    },
+    {
+      "wall": 608105.859874648,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3636,
+      "sage_optimizations": 3636,
+      "plan_ms": 2908.4629339631647,
+      "minimum_clearance": null,
+      "optimize_ms": 2754.610648029484,
+      "admission_ms": 141.28855196759105,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1123,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1122,
+      "map_age_sim": 1.5259999999999536,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396412,
+        0.4613877608504747
+      ],
+      "goal_error": 0.08072662190966023
+    },
+    {
+      "wall": 608106.300481786,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3636,
+      "sage_optimizations": 3636,
+      "plan_ms": 2908.4629339631647,
+      "minimum_clearance": null,
+      "optimize_ms": 2754.610648029484,
+      "admission_ms": 141.28855196759105,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1123,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1122,
+      "map_age_sim": 1.9259999999999309,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396412,
+        0.4613877608504747
+      ],
+      "goal_error": 0.08072662190966023
+    },
+    {
+      "wall": 608106.783483355,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3637,
+      "sage_optimizations": 3637,
+      "plan_ms": 1237.3550159391016,
+      "minimum_clearance": null,
+      "optimize_ms": 1199.6819589985535,
+      "admission_ms": 31.87313606031239,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1123,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1123,
+      "map_age_sim": 2.5259999999999536,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.002895849228396412,
+        0.4613877608504747
+      ],
+      "goal_error": 0.08072662190966023
+    },
+    {
+      "wall": 608107.283491808,
+      "status": "STALE_MAP",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 3637,
+      "sage_optimizations": 3638,
+      "plan_ms": 1237.3550159391016,
+      "minimum_clearance": null,
+      "optimize_ms": 381.40562595799565,
+      "admission_ms": 31.87313606031239,
+      "accepted_commands": 17867,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1124,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1123,
+      "map_age_sim": 1.5339999999999918,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4984433475079321,
+        0.0028958492283965853,
+        0.4613877608504746
+      ],
+      "goal_error": 0.08072662190966026
+    },
+    {
+      "wall": 608107.782164903,
+      "status": "PLANNING",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 3641,
+      "sage_optimizations": 3641,
+      "plan_ms": 25.061064981855452,
+      "minimum_clearance": 0.03174709993600845,
+      "optimize_ms": 18.15653289668262,
+      "admission_ms": 6.247023004107177,
+      "accepted_commands": 17876,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1125,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1125,
+      "map_age_sim": 0.6369999999999436,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4958028135859017,
+        0.004584446665193441,
+        0.46506608324350607
+      ],
+      "goal_error": 0.07590509399183079
+    },
+    {
+      "wall": 608108.282034826,
+      "status": "PLANNING",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 3645,
+      "sage_optimizations": 3645,
+      "plan_ms": 29.047608957625926,
+      "minimum_clearance": 0.03562612935304642,
+      "optimize_ms": 25.81597596872598,
+      "admission_ms": 2.6659179711714387,
+      "accepted_commands": 17895,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1127,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1126,
+      "map_age_sim": 0.1409999999999627,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4856640536773376,
+        0.01113135876773727,
+        0.47840675243983966
+      ],
+      "goal_error": 0.0579478091842362
+    },
+    {
+      "wall": 608108.782089109,
+      "status": "PLANNING",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 3651,
+      "sage_optimizations": 3651,
+      "plan_ms": 23.201189003884792,
+      "minimum_clearance": 0.03979805215597153,
+      "optimize_ms": 20.554517977871,
+      "admission_ms": 2.1158240269869566,
+      "accepted_commands": 17916,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1128,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1128,
+      "map_age_sim": 0.23900000000003274,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4758978442612867,
+        0.017259955594826792,
+        0.4903408893076743
+      ],
+      "goal_error": 0.04138441634102473
+    },
+    {
+      "wall": 608109.281887033,
+      "status": "PLANNING",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 3656,
+      "sage_optimizations": 3656,
+      "plan_ms": 18.2738050352782,
+      "minimum_clearance": 0.041041937458515164,
+      "optimize_ms": 16.308891936205328,
+      "admission_ms": 1.4808730920776725,
+      "accepted_commands": 17938,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1129,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1129,
+      "map_age_sim": 0.3410000000000082,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4652812868692401,
+        0.023332634294207774,
+        0.5026457355840335
+      ],
+      "goal_error": 0.024065369044626472
+    },
+    {
+      "wall": 608109.781953341,
+      "status": "PLANNING",
+      "demo_phase": "REACHING",
+      "scan_index": 12,
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 3661,
+      "sage_optimizations": 3661,
+      "plan_ms": 21.859848988242447,
+      "minimum_clearance": 0.04143546222448349,
+      "optimize_ms": 20.25604690425098,
+      "admission_ms": 1.1510030599310994,
+      "accepted_commands": 17960,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1130,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1130,
+      "map_age_sim": 0.4399999999999409,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.45825239683075714,
+        0.026579265247640586,
+        0.5107148550159877
+      ],
+      "goal_error": 0.012884773846382369
+    },
+    {
+      "wall": 608110.281972845,
+      "status": "GOAL_REACHED",
+      "demo_phase": "GOAL_REACHED",
+      "scan_index": 12,
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 3661,
+      "sage_optimizations": 3661,
+      "plan_ms": 21.859848988242447,
+      "minimum_clearance": 0.04131222217082977,
+      "optimize_ms": 20.25604690425098,
+      "admission_ms": 1.1510030599310994,
+      "accepted_commands": 17982,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1132,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1130,
+      "map_age_sim": 0.1409999999999627,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4576149696088715,
+        0.026980369275254983,
+        0.5113559895876796
+      ],
+      "goal_error": 0.01190902379988236
+    },
+    {
+      "wall": 608110.781997822,
+      "status": "GOAL_REACHED",
+      "demo_phase": "GOAL_REACHED",
+      "scan_index": 12,
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 3661,
+      "sage_optimizations": 3661,
+      "plan_ms": 21.859848988242447,
+      "minimum_clearance": 0.04131222217082977,
+      "optimize_ms": 20.25604690425098,
+      "admission_ms": 1.1510030599310994,
+      "accepted_commands": 18005,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1133,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1130,
+      "map_age_sim": 0.2419999999999618,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4576149696088712,
+        0.026980369275255447,
+        0.5113559895876804
+      ],
+      "goal_error": 0.011909023799881499
+    },
+    {
+      "wall": 608111.281974536,
+      "status": "GOAL_REACHED",
+      "demo_phase": "GOAL_REACHED",
+      "scan_index": 12,
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 3661,
+      "sage_optimizations": 3661,
+      "plan_ms": 21.859848988242447,
+      "minimum_clearance": 0.04131222217082977,
+      "optimize_ms": 20.25604690425098,
+      "admission_ms": 1.1510030599310994,
+      "accepted_commands": 18028,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 1134,
+      "map_epoch": 1789999167089529678,
+      "last_plan_map": 1130,
+      "map_age_sim": 0.3410000000000082,
+      "goal": [
+        0.45,
+        0.03,
+        0.52
+      ],
+      "ee": [
+        0.4576149696088716,
+        0.026980369275255045,
+        0.51135598958768
+      ],
+      "goal_error": 0.011909023799882092
+    }
+  ],
+  "map_samples": [
+    [
+      608078.29896977,
+      1117,
+      1789999167089529678
+    ],
+    [
+      608081.305989162,
+      1119,
+      1789999167089529678
+    ],
+    [
+      608101.291057845,
+      1122,
+      1789999167089529678
+    ],
+    [
+      608105.859905907,
+      1123,
+      1789999167089529678
+    ],
+    [
+      608107.283503969,
+      1124,
+      1789999167089529678
+    ],
+    [
+      608107.782169714,
+      1125,
+      1789999167089529678
+    ],
+    [
+      608108.28203863,
+      1127,
+      1789999167089529678
+    ],
+    [
+      608108.782092669,
+      1128,
+      1789999167089529678
+    ],
+    [
+      608109.281890132,
+      1129,
+      1789999167089529678
+    ],
+    [
+      608109.781956929,
+      1130,
+      1789999167089529678
+    ],
+    [
+      608110.281977629,
+      1132,
+      1789999167089529678
+    ],
+    [
+      608110.782006005,
+      1133,
+      1789999167089529678
+    ],
+    [
+      608111.281977459,
+      1134,
+      1789999167089529678
+    ]
+  ],
+  "joint_states": [
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749242,
+      -1.9987112661989752,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.9987112661989779,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.9987112661989752,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.9987112661989752,
+      0.16911424001114916
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749242,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749278,
+      -1.9987112661989752,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.9987112661989752,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.9987112661989752,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.9987112661989779,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749242,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822464,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749278,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822464,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822482,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749233,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749242,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822482,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985776,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.9987112661989752,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822482,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.9987112661989779,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822464,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.9987112661989743,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.9987112661989752,
+      0.1691142400111474
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.9987112661989752,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.9987112661989752,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749278,
+      -1.9987112661989752,
+      0.1691142400111474
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.9987112661989743,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822482,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.9987112661989752,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.9987112661989752,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.9987112661989752,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.9987112661989752,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749242,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749242,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822464,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.9987112661989779,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749242,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749242,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.9987112661989779,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749278,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822464,
+      1.4923337135450572,
+      -1.2107275585749242,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.9987112661989779,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749242,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822482,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.9987112661989752,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.9987112661989752,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.9987112661989779,
+      0.16911424001114828
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822482,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.9987112661989752,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.9987112661989779,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822464,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.9987112661989752,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749286,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749233,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822482,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822482,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822464,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.9987112661989752,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001115005
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822482,
+      1.4923337135450572,
+      -1.2107275585749242,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822482,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.9987112661989752,
+      0.1691142400111474
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822464,
+      1.4923337135450563,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749233,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985776,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198977,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.9987112661989779,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822482,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749242,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.9987112661989743,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.9987112661989779,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749278,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.2107275585749269,
+      -1.9987112661989752,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.9987112661989752,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749242,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111465
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198977,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749269,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749278,
+      -1.998711266198977,
+      0.1691142400111465
+    ],
+    [
+      -0.17976190659857938,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.2107275585749233,
+      -1.998711266198976,
+      0.16911424001114916
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450572,
+      -1.210727558574925,
+      -1.998711266198977,
+      0.16911424001114828
+    ],
+    [
+      -0.1797619065985785,
+      -1.4823656932822473,
+      1.4923337135450563,
+      -1.210727558574926,
+      -1.998711266198976,
+      0.1691142400111474
+    ],
+    [
+      -0.1773659194703434,
+      -1.4895658128594311,
+      1.4925497998547739,
+      -1.2087118644792854,
+      -1.9984665433757434,
+      0.1691138503818328
+    ],
+    [
+      -0.17496998339343506,
+      -1.4943639941533888,
+      1.4927660163816965,
+      -1.206696191545978,
+      -1.9982217306384513,
+      0.1691134205095448
+    ],
+    [
+      -0.17497000837891807,
+      -1.4983622926404383,
+      1.4927661083123542,
+      -1.206696208108102,
+      -1.9982216732197993,
+      0.16911340361042448
+    ],
+    [
+      -0.17257433833036462,
+      -1.505562477406487,
+      1.4929793279060943,
+      -1.2046771063913366,
+      -1.9979768200670425,
+      0.16911296904747086
+    ],
+    [
+      -0.17017872750702612,
+      -1.511960882892291,
+      1.4931927103867197,
+      -1.202658029530333,
+      -1.9977318502184434,
+      0.16911248804590517
+    ],
+    [
+      -0.1677831526329676,
+      -1.517559468270182,
+      1.4934061980051379,
+      -1.2006389663411061,
+      -1.9974868010351374,
+      0.16911197804803635
+    ],
+    [
+      -0.16778317036947232,
+      -1.5199595973651636,
+      1.49340625262555,
+      -1.200638975643656,
+      -1.997486764178601,
+      0.16911196608335022
+    ],
+    [
+      -0.16544753357906128,
+      -1.5279584502220018,
+      1.4936092306466406,
+      -1.198664410436108,
+      -1.9972478987755837,
+      0.16911151360556342
+    ],
+    [
+      -0.16311196429141095,
+      -1.535158570793132,
+      1.4938123692835426,
+      -1.1966898675696294,
+      -1.9970089088104601,
+      0.16911100771004683
+    ],
+    [
+      -0.1607764328012884,
+      -1.5415575256079403,
+      1.49401561034247,
+      -1.194715336125619,
+      -1.9967698349711214,
+      0.16911047086177344
+    ],
+    [
+      -0.1585161005558886,
+      -1.5487577379759205,
+      1.4942053923543712,
+      -1.1927966576810902,
+      -1.9965387088229385,
+      0.16911007762773433
+    ],
+    [
+      -0.15625580732686295,
+      -1.55515700774502,
+      1.494395275549075,
+      -1.190877989463386,
+      -1.996307496875627,
+      0.1691096532365659
+    ],
+    [
+      -0.15426091956180077,
+      -1.5618013797899923,
+      1.4945599663724787,
+      -1.1891813159467597,
+      -1.9961034989272772,
+      0.16910931406124252
+    ],
+    [
+      -0.15226607383039426,
+      -1.5666014547523446,
+      1.49472475369112,
+      -1.1874846521376632,
+      -1.9958994174462605,
+      0.1691089419818903
+    ],
+    [
+      -0.15075005833849175,
+      -1.571401827441731,
+      1.4948501283534972,
+      -1.1861952035990446,
+      -1.9957441966604217,
+      0.16910860449220877
+    ],
+    [
+      -0.14923406401434836,
+      -1.5757772368991905,
+      1.494975559247564,
+      -1.1849057592807186,
+      -1.995588925162066,
+      0.16910825147027353
+    ],
+    [
+      -0.14808198155256314,
+      -1.5806516640783697,
+      1.4950710335251545,
+      -1.1839257987844396,
+      -1.9954707893019548,
+      0.16910792466774005
+    ],
+    [
+      -0.14692995490588245,
+      -1.5854517451209817,
+      1.4951666111852733,
+      -1.1829458498083898,
+      -1.9953525602567075,
+      0.16910755325008697
+    ],
+    [
+      -0.14605442516587352,
+      -1.5877573256022366,
+      1.4952392789239282,
+      -1.1822010898317339,
+      -1.9952626779558182,
+      0.1691072623466061
+    ],
+    [
+      -0.14517895386398028,
+      -1.5916629992302616,
+      1.4953120636733868,
+      -1.1814563429490066,
+      -1.9951726894242,
+      0.16910692545709605
+    ],
+    [
+      -0.14451363441428633,
+      -1.5946313698376695,
+      1.4953674528489156,
+      -1.1808903428390172,
+      -1.9951042303909958,
+      0.16910663820744265
+    ],
+    [
+      -0.1438484319992801,
+      -1.596231374305587,
+      1.4954489340171682,
+      -1.1803506512104975,
+      -1.9950330881047311,
+      0.16910516136034914
+    ],
+    [
+      -0.14384843461172192,
+      -1.5962313768762169,
+      1.495448934729044,
+      -1.180350651534266,
+      -1.9950330879169063,
+      0.16910515955440264
+    ],
+    [
+      -0.14384843462128405,
+      -1.5962313768815628,
+      1.4954489347312752,
+      -1.18035065153476,
+      -1.9950330879139815,
+      0.16910515954386884
+    ],
+    [
+      -0.14384843462133023,
+      -1.5962313768815894,
+      1.495448934731285,
+      -1.1803506515347617,
+      -1.9950330879139655,
+      0.1691051595438191
+    ],
+    [
+      -0.143848434621332,
+      -1.5962313768815886,
+      1.4954489347312858,
+      -1.1803506515347626,
+      -1.9950330879139673,
+      0.1691051595438191
+    ],
+    [
+      -0.14384843462133112,
+      -1.5962313768815877,
+      1.495448934731285,
+      -1.1803506515347626,
+      -1.9950330879139664,
+      0.1691051595438191
+    ],
+    [
+      -0.14384843462132935,
+      -1.5962313768815886,
+      1.4954489347312858,
+      -1.1803506515347635,
+      -1.9950330879139673,
+      0.1691051595438191
+    ],
+    [
+      -0.14384843462132935,
+      -1.5962313768815886,
+      1.495448934731285,
+      -1.1803506515347626,
+      -1.9950330879139664,
+      0.1691051595438191
+    ],
+    [
+      -0.14384843462133112,
+      -1.5962313768815894,
+      1.4954489347312858,
+      -1.1803506515347626,
+      -1.9950330879139664,
+      0.16910515954381822
+    ],
+    [
+      -0.14384843462133023,
+      -1.5962313768815886,
+      1.495448934731285,
+      -1.1803506515347626,
+      -1.9950330879139664,
+      0.1691051595438191
+    ],
+    [
+      -0.14384843462133023,
+      -1.5962313768815886,
+      1.495448934731285,
+      -1.1803506515347626,
+      -1.9950330879139655,
+      0.1691051595438191
+    ],
+    [
+      -0.14384843462133112,
+      -1.5962313768815894,
+      1.495448934731285,
+      -1.1803506515347626,
+      -1.9950330879139673,
+      0.1691051595438191
+    ],
+    [
+      -0.14384843462133112,
+      -1.5962313768815886,
+      1.495448934731285,
+      -1.1803506515347635,
+      -1.9950330879139673,
+      0.1691051595438191
+    ],
+    [
+      -0.14384843462133023,
+      -1.5962313768815886,
+      1.495448934731285,
+      -1.1803506515347626,
+      -1.9950330879139655,
+      0.1691051595438191
+    ]
+  ]
+}

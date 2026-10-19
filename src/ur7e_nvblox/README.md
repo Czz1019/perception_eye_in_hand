@@ -61,7 +61,7 @@ TF 严格按图像时间戳查询，缺失时等待至超时并丢帧，不使�
 下游必须排除未知值，不能当作超大安全距离。
 
 默认体素 3 cm，输出采样 5 cm，查询范围 2×2×1.5 m，中心 `[0,0,0.5]`。
-ESDF 的 10 Hz 是更新频率上限；实际速度取决于 Gazebo 实时率、GPU 和发布开销。
+默认配置 ESDF 的 15 Hz 是目标更新频率；实际速度取决于 Gazebo 实时率、GPU 和发布开销。
 相机单视角只能建立已观测区域；遮挡区域保持未知。
 此包不提供机器人自身过滤、动态物体分离或地图衰减；机器人进入相机视野也会被融合。
 
@@ -86,3 +86,22 @@ CUDA 单元测试融合已知深度平面，检查变换后的距离数值和未
 本机测试中 Gazebo `/reset_simulation` 后曾出现上游关节 TF 不再正常更新；
 此时 mapper 会停止融合并等待有效 TF，需要重启场景恢复上游。
 mapper 可以在场景重启、仿真时钟回退后恢复建图。
+
+
+## 2026-09-23：借鉴 realtime_nvblox_2 的优化
+
+实现与实测详见 [PERFORMANCE.md](PERFORMANCE.md)。原规则网格接口、顺序、未知值和 QoS 保持兼容。
+固定查询复用 GPU 坐标/输出，读回时不再额外 clone；没有订阅者时不打包完整点云；更新周期从开始计算，避免额外叠加一次计算时长。
+
+配置 `esdf_output_mode: sparse` 可改为原生已观测体素中心的 ESDF 输出；GPU 上按 TSDF 正权重选候选点，再查询真正的 ESDF 并过滤 unknown。
+此模式的点数/顺序会变化，不能当作完整规则网格。`dense` 仍是默认值。
+稀疏并不必然更快：遍历全局活动块也有开销，应按地图大小和实际传输需求选择。
+
+当前工作区的 `realtime_nvblox` 和 `realtime_nvblox_2` 在 package.xml 中同名。
+为避免 colcon 重复包发现，构建时限定路径（先 source ROS 和现有 install）：
+
+```bash
+colcon build --symlink-install \
+  --base-paths src/ur7e_nvblox src/ur7e_perception_planning \
+  --packages-select ur7e_nvblox ur7e_perception_planning
+```

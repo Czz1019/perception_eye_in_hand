@@ -1,0 +1,47 @@
+{
+  "no_startup_motion": true,
+  "no_map_rejected": true,
+  "capture_measurement": {
+    "input_size": [
+      160,
+      90
+    ],
+    "encoding": "32FC1",
+    "input_hz": 10.0,
+    "fields_hz": 9.99094174255823,
+    "latest": {
+      "input_stamp": 1790227355.0977144,
+      "queue_ms": 20.3692140057683,
+      "tf_ms": 1.0367929935455322,
+      "filter_ms": 0.5707460222765803,
+      "gpu_wait_ms": 0.006149988621473312,
+      "native_esdf_ms": 1.417576102539897,
+      "free_field_ms": 14.7064229240641,
+      "receive_to_result_ms": 38.10701204929501,
+      "edt_recomputed": false,
+      "edt_backend": "cuda",
+      "observed_cells": 18124,
+      "prior_cells": 293780
+    }
+  },
+  "empty_depth_does_not_refresh": true,
+  "wrong_tf_does_not_refresh": true,
+  "actual_nvblox_scan_frozen": {
+    "frames": 27,
+    "views": 2,
+    "map_uid": "f8700035477b597d0b5751029b3baf64afd62baffcb676ac4be2a63c15f16f54",
+    "observed_cells": 21986,
+    "surveyed_cells": 290038
+  },
+  "freeze_stops_capture": true,
+  "late_rviz_receives_frozen_surface": true,
+  "scene_confirmation_required": true,
+  "static_map_goal_reached": {
+    "error_m": 3.9965236256567415e-08,
+    "sage_iterations": 16
+  },
+  "joint_stream_loss_cancels": true,
+  "invalidation_discards_map": true,
+  "reload_requires_reconfirmation": true,
+  "passed": true
+}

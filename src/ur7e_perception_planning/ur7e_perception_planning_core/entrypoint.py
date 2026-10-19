@@ -13,8 +13,8 @@ def main():
     if args.mode == 'combined':
         from .mapper import PlanningMapper
         from .planner import Planner
-        mapper, planner = PlanningMapper(), Planner()
-        mapper.map_consumer = planner.on_map
+        mapper, planner = PlanningMapper(), Planner(receive_maps=False)
+        mapper.snapshot_consumer = planner.on_snapshot
         nodes = [planner, mapper]
     elif args.mode == 'mapper':
         from .mapper import PlanningMapper

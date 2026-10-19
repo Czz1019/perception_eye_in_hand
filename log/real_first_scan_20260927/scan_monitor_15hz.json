@@ -1,0 +1,75 @@
+{
+  "duration_s": 29.59617979399991,
+  "depth_received_hz": 14.562690286378698,
+  "completed_field_hz": 0.0,
+  "first_frames": 148,
+  "last_frames": 148,
+  "last_views": 1,
+  "capture_errors": [],
+  "last_status": {
+    "phase": "SCANNING",
+    "error": null,
+    "capture_error": null,
+    "frames": 148,
+    "views": 1,
+    "map_uid": null,
+    "scene_confirmed": false,
+    "execution_enabled": false,
+    "planning_active": false,
+    "trajectory_seconds": null,
+    "sage_iterations": null,
+    "perception": {
+      "rates_hz": {
+        "depth_received": 15.958005200756999,
+        "visualizations_published": 0.0,
+        "invalid_or_stale_depth": 0.0,
+        "frames_overwritten": 11.968503900567748,
+        "stale_before_fusion": 3.9895013001892496,
+        "fields_completed": 0.0,
+        "input_wait_attempts": 0.0,
+        "stale_completed_field": 0.0
+      },
+      "totals": {
+        "depth_received": 846,
+        "visualizations_published": 28,
+        "invalid_or_stale_depth": 3,
+        "frames_overwritten": 332,
+        "stale_before_fusion": 69,
+        "fields_completed": 148,
+        "input_wait_attempts": 162,
+        "stale_completed_field": 8
+      },
+      "latency": {
+        "visualization": {
+          "mean_ms": 34.11613382143384,
+          "p50_ms": 7.585191000089253,
+          "p95_ms": 141.88935289993194,
+          "max_ms": 369.7628459999578
+        },
+        "capture": {
+          "mean_ms": 88.90631231757327,
+          "p50_ms": 74.14626449997286,
+          "p95_ms": 255.95499304986362,
+          "max_ms": 479.2049570000927
+        }
+      },
+      "latest": {
+        "input_stamp": 1790516067.6753776,
+        "queue_ms": 19.617016999973202,
+        "tf_ms": 61.03441800019027,
+        "filter_ms": 96.22471399984533,
+        "gpu_wait_ms": 0.05310200003805221,
+        "native_esdf_ms": 40.96689200014225,
+        "free_field_ms": 261.3079759998982,
+        "receive_to_result_ms": 479.2049570000927,
+        "edt_recomputed": true,
+        "edt_backend": "cuda",
+        "observed_cells": 2449,
+        "prior_cells": 0
+      },
+      "wait_reason": "WAIT_TF_AT_IMAGE_TIME",
+      "capture_hz_limit": 15.0,
+      "configured_backend": "cuda"
+    }
+  }
+}

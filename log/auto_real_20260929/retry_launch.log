@@ -1,0 +1,132 @@
+[INFO] [launch]: All log files can be found below /home/wqj/.ros/log/2026-09-29-13-12-36-341230-wqj-1531112
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [auto_mapper-1]: process started with pid [1531134]
+[INFO] [auto_scan-2]: process started with pid [1531136]
+[INFO] [robot_state_publisher-3]: process started with pid [1531138]
+[INFO] [rviz2-4]: process started with pid [1531140]
+[robot_state_publisher-3] [INFO] [1790658756.406876141] [ur7e_auto.robot_state_publisher]: got segment base
+[robot_state_publisher-3] [INFO] [1790658756.406942145] [ur7e_auto.robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1790658756.406947574] [ur7e_auto.robot_state_publisher]: got segment base_link_inertia
+[robot_state_publisher-3] [INFO] [1790658756.406950942] [ur7e_auto.robot_state_publisher]: got segment camera_color_frame
+[robot_state_publisher-3] [INFO] [1790658756.406953993] [ur7e_auto.robot_state_publisher]: got segment camera_color_optical_frame
+[robot_state_publisher-3] [INFO] [1790658756.406956944] [ur7e_auto.robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-3] [INFO] [1790658756.406959637] [ur7e_auto.robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-3] [INFO] [1790658756.406962505] [ur7e_auto.robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1790658756.406965487] [ur7e_auto.robot_state_publisher]: got segment flange
+[robot_state_publisher-3] [INFO] [1790658756.406968414] [ur7e_auto.robot_state_publisher]: got segment forearm_link
+[robot_state_publisher-3] [INFO] [1790658756.406971159] [ur7e_auto.robot_state_publisher]: got segment ft_frame
+[robot_state_publisher-3] [INFO] [1790658756.406973856] [ur7e_auto.robot_state_publisher]: got segment shoulder_link
+[robot_state_publisher-3] [INFO] [1790658756.406976706] [ur7e_auto.robot_state_publisher]: got segment tool0
+[robot_state_publisher-3] [INFO] [1790658756.406979494] [ur7e_auto.robot_state_publisher]: got segment upper_arm_link
+[robot_state_publisher-3] [INFO] [1790658756.406982277] [ur7e_auto.robot_state_publisher]: got segment world
+[robot_state_publisher-3] [INFO] [1790658756.406984902] [ur7e_auto.robot_state_publisher]: got segment wrist_1_link
+[robot_state_publisher-3] [INFO] [1790658756.406987582] [ur7e_auto.robot_state_publisher]: got segment wrist_2_link
+[robot_state_publisher-3] [INFO] [1790658756.406990180] [ur7e_auto.robot_state_publisher]: got segment wrist_3_link
+[auto_mapper-1] [INFO] [1790658756.860920167] [ur7e_auto_mapper]: Read-only RGB-D TSDF preview in base_link. Start with ~/start_scan. No ESDF or motion interfaces.
+[auto_scan-2] [INFO] [1790658756.918818471] [ur7e_auto_scan]: RTDE receive-only. ~/prepare writes a preview; ~/start requires allow_motion and an approved live plan.
+[rviz2-4] [INFO] [1790658757.064266558] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-4] [INFO] [1790658757.064341915] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-4] [INFO] [1790658757.148253281] [rviz2]: Stereo is NOT SUPPORTED
+[auto_mapper-1] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[auto_mapper-1] I20260929 13:13:03.972164 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:03.985972 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:03.991565 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:03.991619 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:03.996858 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.010581 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.015547 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.029011 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.032404 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.046094 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.050801 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.064550 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.064779 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.064818 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.065126 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.065165 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.065171 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.065173 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.065176 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.065177 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.065181 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.065181 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.065183 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.065186 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.071759 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.071807 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.076869 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.076906 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.082844 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.082886 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.089067 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.089102 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.093499 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.093531 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.099123 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.099159 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.099620 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.099651 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.100023 1531676 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:04.100059 1531676 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.100065 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.100073 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.100076 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.100080 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.100082 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.100085 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.100092 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.100096 1531676 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:04.176250 1531676 mapper_impl.h:60] Allocating space for last depth view for sensor type
+[auto_mapper-1] I20260929 13:13:04.177588 1531676 image_cache_impl.h:45] Allocating a new cached image
+[auto_mapper-1] I20260929 13:13:07.366185 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.366236 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.371585 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.371618 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.377408 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.377444 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.382802 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.382835 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.386962 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.386996 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.393468 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.393512 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.393994 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.394025 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.394374 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.394402 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.394405 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.394407 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.394409 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.394411 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.394413 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.394418 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.394419 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.394421 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.400974 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.401017 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.407462 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.407500 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.413409 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.413448 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.419160 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.419195 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.424026 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.424062 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.429734 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.429774 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.430157 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.430188 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.430622 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20260929 13:13:07.430655 1531176 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.015, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.430660 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.430662 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.430665 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.430666 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.430668 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.430670 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.430672 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.430675 1531176 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[auto_mapper-1] I20260929 13:13:07.440442 1531176 mapper_impl.h:60] Allocating space for last depth view for sensor type
+[auto_mapper-1] I20260929 13:13:07.441334 1531176 image_cache_impl.h:45] Allocating a new cached image
+[auto_mapper-1] I20260929 13:14:15.001191 1531176 gpu_layer_view_impl.cuh:100] Resizing GPU hash capacity from 4096 to 8192 in order to accomodate space for 1435 new elements.
+[auto_mapper-1] I20260929 13:14:15.002019 1531176 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 8192 blocks. Real capacity: 8192

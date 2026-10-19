@@ -1,0 +1,64 @@
+{
+  "phase": "SCANNING",
+  "error": null,
+  "capture_error": null,
+  "frames": 101,
+  "views": 1,
+  "map_uid": null,
+  "scene_confirmed": false,
+  "execution_enabled": false,
+  "planning_active": false,
+  "trajectory_seconds": null,
+  "sage_iterations": null,
+  "perception": {
+    "rates_hz": {
+      "visualizations_published": 1.9996490415963293,
+      "depth_received": 9.998245207981647,
+      "frames_overwritten": 0.0,
+      "invalid_or_stale_depth": 0.0,
+      "input_wait_attempts": 3.9992980831926586,
+      "stale_before_fusion": 0.0,
+      "fields_completed": 3.9992980831926586
+    },
+    "totals": {
+      "visualizations_published": 25,
+      "depth_received": 1094,
+      "frames_overwritten": 268,
+      "invalid_or_stale_depth": 4,
+      "input_wait_attempts": 1875,
+      "stale_before_fusion": 1,
+      "fields_completed": 101
+    },
+    "latency": {
+      "visualization": {
+        "mean_ms": 10.019876239994119,
+        "p50_ms": 10.383996000200568,
+        "p95_ms": 16.917531000035524,
+        "max_ms": 17.75811600009547
+      },
+      "capture": {
+        "mean_ms": 106.24670284158191,
+        "p50_ms": 102.07160999993903,
+        "p95_ms": 202.11577700001726,
+        "max_ms": 260.2323839998917
+      }
+    },
+    "latest": {
+      "input_stamp": 1790516278.3980076,
+      "queue_ms": 62.03300999982275,
+      "tf_ms": 8.501989000023968,
+      "filter_ms": 3.348491999986436,
+      "gpu_wait_ms": 0.01169300003311946,
+      "native_esdf_ms": 1.6561649999857764,
+      "free_field_ms": 22.13720000008834,
+      "receive_to_result_ms": 97.68871999995099,
+      "edt_recomputed": false,
+      "edt_backend": "cuda",
+      "observed_cells": 2447,
+      "prior_cells": 0
+    },
+    "wait_reason": "CAPTURING",
+    "capture_hz_limit": 5.0,
+    "configured_backend": "cuda"
+  }
+}

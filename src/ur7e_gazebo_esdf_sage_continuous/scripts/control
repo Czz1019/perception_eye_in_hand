@@ -1,0 +1,34 @@
+#!/usr/bin/python3
+"""Client for the isolated simulation, never a hardware driver."""
+import argparse,json,time
+import rclpy
+from geometry_msgs.msg import PoseStamped
+from std_msgs.msg import String
+from std_srvs.srv import Trigger
+
+p=argparse.ArgumentParser();p.add_argument('command',choices=['status','target','start','stop','invalidate','test_feedback_loss']);p.add_argument('xyz',nargs='*',type=float)
+a=p.parse_args();rclpy.init();node=rclpy.create_node('esdf_sage_sim_control')
+try:
+    if a.command=='status':
+        received=[];node.create_subscription(String,'/sim_esdf_sage/status',lambda m:received.append(json.loads(m.data)),10)
+        until=time.monotonic()+8
+        while not received and time.monotonic()<until:rclpy.spin_once(node,timeout_sec=.2)
+        if not received:raise RuntimeError('No simulation status; check ROS domain and launch')
+        print(json.dumps(received[-1],indent=2,ensure_ascii=False))
+    elif a.command=='target':
+        if len(a.xyz)!=3:p.error('target requires X Y Z in base_link, metres')
+        pub=node.create_publisher(PoseStamped,'/target_pose',10)
+        until=time.monotonic()+8
+        while pub.get_subscription_count()==0 and time.monotonic()<until:rclpy.spin_once(node,timeout_sec=.1)
+        if pub.get_subscription_count()==0:raise RuntimeError('No simulation target subscriber')
+        m=PoseStamped();m.header.frame_id='base_link';m.pose.position.x,m.pose.position.y,m.pose.position.z=a.xyz;m.pose.orientation.w=1.;pub.publish(m)
+        for _ in range(5):rclpy.spin_once(node,timeout_sec=.1)
+        print('Target submitted:',a.xyz)
+    else:
+        c=node.create_client(Trigger,'/sim_esdf_sage/'+a.command)
+        if not c.wait_for_service(timeout_sec=8):raise RuntimeError('Simulation service unavailable')
+        f=c.call_async(Trigger.Request());rclpy.spin_until_future_complete(node,f,timeout_sec=10)
+        if f.result() is None:raise RuntimeError('Simulation service timeout')
+        print(f.result())
+finally:
+    node.destroy_node();rclpy.shutdown()

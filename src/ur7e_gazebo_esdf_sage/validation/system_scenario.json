@@ -1,0 +1,83 @@
+[
+  {
+    "test": "fresh_scan_default",
+    "passed": true,
+    "status": {
+      "phase": "GOAL_REACHED",
+      "error": null,
+      "view": 15,
+      "sage_iterations": 177,
+      "map_uid": "7f6c987b1ea92244c81285c3ad150a09acb37bb318654a0021e793e7e71267e9",
+      "frames": 80,
+      "map_frozen": true,
+      "capture_wait": "CAPTURING",
+      "capture_error": null,
+      "model": "measured real camera extrinsics",
+      "mode": "B: actual-feedback rolling SAGE",
+      "stopped": false
+    }
+  },
+  {
+    "test": "low_between_walls",
+    "passed": true,
+    "event": {
+      "kind": "goal_reached",
+      "sim_time": 316.485,
+      "wall_time": 19896.720950049,
+      "goal": [
+        0.6027275713,
+        -0.0729611598,
+        0.4420525377
+      ],
+      "error_m": 0.0024549403469607315,
+      "iterations": 338,
+      "revision": 2
+    }
+  },
+  {
+    "test": "retarget_while_moving",
+    "passed": true,
+    "event": {
+      "kind": "goal_reached",
+      "sim_time": 417.605,
+      "wall_time": 20001.087681808,
+      "goal": [
+        0.3,
+        0.1,
+        0.94
+      ],
+      "error_m": 0.003311452135847333,
+      "iterations": 581,
+      "revision": 4
+    }
+  },
+  {
+    "test": "unknown_goal_hold",
+    "passed": true,
+    "event": {
+      "kind": "goal_rejected",
+      "sim_time": 422.38500000000005,
+      "wall_time": 20005.873666913,
+      "error": "No observed collision-free goal IK; collect more views or change target",
+      "revision": 5
+    }
+  },
+  {
+    "test": "feedback_loss_hold",
+    "passed": true,
+    "status": {
+      "phase": "STOPPED",
+      "error": "STALE_JOINT_STATE wall=0.000s sim=0.000s injected=True",
+      "view": 15,
+      "sage_iterations": 594,
+      "map_uid": "7f6c987b1ea92244c81285c3ad150a09acb37bb318654a0021e793e7e71267e9",
+      "frames": 80,
+      "map_frozen": true,
+      "capture_wait": "CAPTURING",
+      "capture_error": null,
+      "model": "measured real camera extrinsics",
+      "mode": "B: actual-feedback rolling SAGE",
+      "stopped": true
+    }
+  }
+]

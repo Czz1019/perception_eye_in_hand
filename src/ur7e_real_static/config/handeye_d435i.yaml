@@ -1,0 +1,15 @@
+# User-provided real hand-eye calibration, 2026-09-24.
+# Calibration record only: not automatically loaded by real.yaml or published to TF.
+# Translation interpreted in ROS SI units (meters); confirm against calibration output.
+# p_tool0 = T_tool0_camera_color_optical_frame @ p_camera_color_optical_frame
+parent_frame: tool0
+child_frame: camera_color_optical_frame
+translation_unit: m
+matrix:
+  - [-0.706400704,  0.002414966, -0.707808034, -0.029901376]
+  - [ 0.707783955, -0.006516156, -0.706398905, -0.069185919]
+  - [-0.006318117, -0.999975854,  0.002893743, -0.012263443]
+  - [ 0.0,          0.0,          0.0,          1.0]
+translation_xyz: [-0.029901376, -0.069185919, -0.012263443]
+quaternion_xyzw: [-0.2725902185481041, -0.6513429981602793, 0.654944769249596, 0.26924750831171784]
+urdf_rpy_rad: [-1.5679025219982932, 0.006318158987312916, 2.3552163644917203]

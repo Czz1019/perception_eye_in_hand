@@ -1,0 +1,14 @@
+{'kind': 'ready', 'trial': 'waiting', 'sim_time': 4.005, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'seed_tool': [-0.009659804775463202, -0.31249507876607424, 0.9494869803688378]}
+{'kind': 'spawn_requested', 'trial': 'crossing', 'sim_time': 4.005, 'center': [0.4, -0.32, 0.7], 'size': [0.08, 0.08, 0.08], 'initial_gap_m': 0.22402795545817353}
+{'kind': 'spawned', 'trial': 'crossing', 'sim_time': 4.2250000000000005}
+{'kind': 'sensor_detected', 'trial': 'crossing', 'sim_time': 4.505, 'cells': 78}
+{'kind': 'crossing_begin', 'trial': 'crossing', 'sim_time': 6.505000000000001}
+{'kind': 'target', 'trial': 'crossing', 'sim_time': 6.505000000000001, 'xyz': [0.4, -0.12, 0.5]}
+{'kind': 'crossing_end', 'trial': 'crossing', 'sim_time': 44.525000000000006, 'position': [0.4, 0.25014999999974363, 0.7], 'status': {'online': {'version': 137, 'frames': 406, 'stamp': 43.954, 'occupied_cells': 224, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'WAIT_DYNAMIC', 'error': 'ONLINE_MAP_STALE', 'view': None, 'sage_iterations': 0, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'frames': 315, 'map_frozen': True, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'B: actual-feedback rolling SAGE', 'stopped': False}}
+{'kind': 'failed', 'trial': 'crossing', 'sim_time': 126.00500000000001, 'error': "{'online': {'version': 137, 'frames': 979, 'stamp': 125.937, 'occupied_cells': 224, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'STOPPED', 'error': 'USER_STOP', 'view': None, 'sage_iterations': 0, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'frames': 315, 'map_frozen': True, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'B: actual-feedback rolling SAGE', 'stopped': True}"}
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/moving_scenario.py", line 80, in <module>
+    s=wait(lambda s:s.get('phase')=='GOAL_REACHED',240);record('crossing_reached',status=s);remove();pause(3)
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/moving_scenario.py", line 45, in wait
+    if s.get('stopped'):raise RuntimeError(str(s))
+RuntimeError: {'online': {'version': 137, 'frames': 979, 'stamp': 125.937, 'occupied_cells': 224, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'STOPPED', 'error': 'USER_STOP', 'view': None, 'sage_iterations': 0, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'frames': 315, 'map_frozen': True, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'B: actual-feedback rolling SAGE', 'stopped': True}

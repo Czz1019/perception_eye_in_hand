@@ -1,0 +1,39 @@
+# Fill with measured/commissioned files before starting. No simulation defaults.
+robot_urdf: ''                 # expanded, calibrated URDF including camera fixed joints
+collision_spheres: ''          # same link frames as robot_urdf; include payload
+output_directory: ~/nvblox_output/ur7e_real_static
+base_frame: base_link
+tool_frame: tool0
+camera_frame: camera_depth_optical_frame
+depth_topic: /camera/camera/depth/image_rect_raw
+camera_info_topic: /camera/camera/depth/camera_info
+joint_topic: /joint_states
+target_topic: /target_pose
+trajectory_action: /scaled_joint_trajectory_controller/follow_joint_trajectory
+execution_enabled: false
+commissioned: false            # model, extrinsic, payload and environment physically checked
+use_sim_time: false
+max_joint_speed: 0.05          # rad/s, trajectory peak bound
+max_joint_acceleration: 0.10   # rad/s^2, trajectory peak bound
+collision_margin: 0.03
+self_margin: 0.015
+joint_timeout: 0.3
+frame_timeout: 0.5
+start_tolerance: 0.01
+tracking_tolerance: 0.03
+settle_speed: 0.015
+settle_seconds: 0.5
+min_frames: 15
+min_views: 3
+view_separation_rad: 0.15
+max_plan_seconds: 90.0
+particles: 64
+voxel_size: 0.025
+grid_resolution: 0.025
+grid_center: [0.0, 0.0, 0.6]
+grid_size: [2.0, 2.0, 1.4]
+min_depth: 0.2
+max_depth: 3.0
+depth_stride: 2
+# Optional surveyed free volumes. Empty by default, never inferred from robot motion.
+commissioned_free_boxes: []    # [{min: [x,y,z], max: [x,y,z]}] in base_link

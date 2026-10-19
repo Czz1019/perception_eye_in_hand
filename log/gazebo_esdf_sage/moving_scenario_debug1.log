@@ -1,0 +1,7 @@
+{'kind': 'failed', 'trial': 'waiting', 'sim_time': 8.26, 'error': "{'online': None, 'planning_policy': 'bounded_unknown', 'phase': 'STOPPED', 'error': 'Replay initial joints differ from frozen ownership pose', 'view': None, 'sage_iterations': 0, 'map_uid': None, 'frames': 315, 'map_frozen': False, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'B: actual-feedback rolling SAGE', 'stopped': True}"}
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/moving_scenario.py", line 77, in <module>
+    s=wait(lambda s:s.get('phase')=='ONLINE_READY' and (s.get('online') or {}).get('frames',0)>=20,1800);uid=s['map_uid'];seed_tool=g.fk(q)['tool0'][:3,3].copy();record('ready',map_uid=uid,seed_tool=seed_tool.tolist())
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/moving_scenario.py", line 45, in wait
+    if s.get('stopped'):raise RuntimeError(str(s))
+RuntimeError: {'online': None, 'planning_policy': 'bounded_unknown', 'phase': 'STOPPED', 'error': 'Replay initial joints differ from frozen ownership pose', 'view': None, 'sage_iterations': 0, 'map_uid': None, 'frames': 315, 'map_frozen': False, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'B: actual-feedback rolling SAGE', 'stopped': True}

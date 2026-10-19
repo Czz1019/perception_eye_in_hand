@@ -1,0 +1,101 @@
+[0.647s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--base-paths', '/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf', '--packages-select', 'ur7e_auto_esdf', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release', '-DPython3_EXECUTABLE=/usr/bin/python3', '-DPYTHON_EXECUTABLE=/usr/bin/python3']
+[0.648s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['ur7e_auto_esdf'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Release', '-DPython3_EXECUTABLE=/usr/bin/python3', '-DPYTHON_EXECUTABLE=/usr/bin/python3'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x71a2b5466f50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71a2b5466a40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71a2b5466a40>>)
+[1.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.370s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf'
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf) by extensions ['ignore', 'ignore_ament_install']
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf) by extension 'ignore'
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf) by extension 'ignore_ament_install'
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf) by extensions ['colcon_pkg']
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf) by extension 'colcon_pkg'
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf) by extensions ['colcon_meta']
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf) by extension 'colcon_meta'
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf) by extensions ['ros']
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf) by extension 'ros'
+[1.418s] DEBUG:colcon.colcon_core.package_identification:Package '/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf' with type 'ros.ament_cmake' and name 'ur7e_auto_esdf'
+[1.419s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.518s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.518s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.524s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/wqj/realtime_nvblox_ws/install
+[1.529s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 409 installed packages in /opt/ros/humble
+[1.536s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'ur7e_auto_esdf' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release', '-DPython3_EXECUTABLE=/usr/bin/python3', '-DPYTHON_EXECUTABLE=/usr/bin/python3']'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'ur7e_auto_esdf' build argument 'cmake_target' from command line to 'None'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'ur7e_auto_esdf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'ur7e_auto_esdf' build argument 'cmake_clean_cache' from command line to 'False'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'ur7e_auto_esdf' build argument 'cmake_clean_first' from command line to 'False'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'ur7e_auto_esdf' build argument 'cmake_force_configure' from command line to 'False'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'ur7e_auto_esdf' build argument 'ament_cmake_args' from command line to 'None'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'ur7e_auto_esdf' build argument 'catkin_cmake_args' from command line to 'None'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'ur7e_auto_esdf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.674s] DEBUG:colcon.colcon_core.verb:Building package 'ur7e_auto_esdf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wqj/realtime_nvblox_ws/build/ur7e_auto_esdf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release', '-DPython3_EXECUTABLE=/usr/bin/python3', '-DPYTHON_EXECUTABLE=/usr/bin/python3'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf', 'merge_install': False, 'path': '/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf', 'symlink_install': True, 'test_result_base': None}
+[1.675s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.678s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.679s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf' with build type 'ament_cmake'
+[1.679s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf'
+[1.685s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.686s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.686s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wqj/realtime_nvblox_ws/build/ur7e_auto_esdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox:/opt/ros/humble /usr/bin/cmake /home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf -DCMAKE_BUILD_TYPE=Release -DPython3_EXECUTABLE=/usr/bin/python3 -DPYTHON_EXECUTABLE=/usr/bin/python3 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf
+[4.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wqj/realtime_nvblox_ws/build/ur7e_auto_esdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox:/opt/ros/humble /usr/bin/cmake /home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf -DCMAKE_BUILD_TYPE=Release -DPython3_EXECUTABLE=/usr/bin/python3 -DPYTHON_EXECUTABLE=/usr/bin/python3 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf
+[4.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wqj/realtime_nvblox_ws/build/ur7e_auto_esdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox:/opt/ros/humble /usr/bin/cmake --build /home/wqj/realtime_nvblox_ws/build/ur7e_auto_esdf -- -j24 -l24
+[5.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wqj/realtime_nvblox_ws/build/ur7e_auto_esdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox:/opt/ros/humble /usr/bin/cmake --build /home/wqj/realtime_nvblox_ws/build/ur7e_auto_esdf -- -j24 -l24
+[5.762s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wqj/realtime_nvblox_ws/build/ur7e_auto_esdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox:/opt/ros/humble /usr/bin/cmake --install /home/wqj/realtime_nvblox_ws/build/ur7e_auto_esdf
+[6.921s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur7e_auto_esdf)
+[6.923s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wqj/realtime_nvblox_ws/build/ur7e_auto_esdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction:/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox:/home/wqj/realtime_nvblox_ws/install/realtime_nvblox:/opt/ros/humble /usr/bin/cmake --install /home/wqj/realtime_nvblox_ws/build/ur7e_auto_esdf
+[6.929s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf' for CMake module files
+[6.930s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf' for CMake config files
+[6.931s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur7e_auto_esdf', 'cmake_prefix_path')
+[6.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/hook/cmake_prefix_path.ps1'
+[6.933s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/hook/cmake_prefix_path.dsv'
+[6.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/hook/cmake_prefix_path.sh'
+[6.937s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/lib'
+[6.937s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/bin'
+[6.937s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/lib/pkgconfig/ur7e_auto_esdf.pc'
+[6.938s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/lib/python3.10/site-packages'
+[6.939s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/bin'
+[6.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/package.ps1'
+[6.942s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/package.dsv'
+[6.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/package.sh'
+[6.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/package.bash'
+[6.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/package.zsh'
+[6.949s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/colcon-core/packages/ur7e_auto_esdf)
+[6.951s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur7e_auto_esdf)
+[6.951s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf' for CMake module files
+[6.953s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf' for CMake config files
+[6.953s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur7e_auto_esdf', 'cmake_prefix_path')
+[6.954s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/hook/cmake_prefix_path.ps1'
+[6.955s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/hook/cmake_prefix_path.dsv'
+[6.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/hook/cmake_prefix_path.sh'
+[6.957s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/lib'
+[6.958s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/bin'
+[6.958s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/lib/pkgconfig/ur7e_auto_esdf.pc'
+[6.958s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/lib/python3.10/site-packages'
+[6.959s] Level 1:colcon.colcon_core.environment:checking '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/bin'
+[6.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/package.ps1'
+[6.962s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/package.dsv'
+[6.963s] INFO:colcon.colcon_core.shell:Creating package script '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/package.sh'
+[6.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/package.bash'
+[6.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/ur7e_auto_esdf/package.zsh'
+[6.966s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wqj/realtime_nvblox_ws/install/ur7e_auto_esdf/share/colcon-core/packages/ur7e_auto_esdf)
+[6.967s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.968s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.969s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.969s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.983s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.983s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.984s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.027s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.028s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wqj/realtime_nvblox_ws/install/local_setup.ps1'
+[7.032s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wqj/realtime_nvblox_ws/install/_local_setup_util_ps1.py'
+[7.035s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wqj/realtime_nvblox_ws/install/setup.ps1'
+[7.038s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wqj/realtime_nvblox_ws/install/local_setup.sh'
+[7.040s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wqj/realtime_nvblox_ws/install/_local_setup_util_sh.py'
+[7.041s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wqj/realtime_nvblox_ws/install/setup.sh'
+[7.044s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wqj/realtime_nvblox_ws/install/local_setup.bash'
+[7.046s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wqj/realtime_nvblox_ws/install/setup.bash'
+[7.049s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wqj/realtime_nvblox_ws/install/local_setup.zsh'
+[7.050s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wqj/realtime_nvblox_ws/install/setup.zsh'

@@ -1,0 +1,63 @@
+[INFO] [1790145190.518781376] [ur7e_real_static]: Ready for stationary-view scanning; no automatic startup motion. execution_enabled=True
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260923 14:33:13.597771 3084314 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 14:33:13.608958 3084314 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+I20260923 14:33:13.613590 3084314 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 14:33:13.625653 3084314 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+I20260923 14:33:13.630285 3084314 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 14:33:13.643028 3084314 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+I20260923 14:33:13.647488 3084314 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 14:33:13.659942 3084314 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+I20260923 14:33:13.663131 3084314 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 14:33:13.676832 3084314 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+I20260923 14:33:13.683390 3084314 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 14:33:13.696851 3084314 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+I20260923 14:33:13.697078 3084314 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 14:33:13.697117 3084314 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+I20260923 14:33:13.697362 3084314 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 14:33:13.697402 3084314 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+I20260923 14:33:13.697408 3084314 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+I20260923 14:33:13.697412 3084314 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+I20260923 14:33:13.697413 3084314 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+I20260923 14:33:13.697417 3084314 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+I20260923 14:33:13.697418 3084314 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+I20260923 14:33:13.697422 3084314 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+I20260923 14:33:13.697423 3084314 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+I20260923 14:33:13.697435 3084314 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+I20260923 14:33:13.790324 3084314 mapper_impl.h:60] Allocating space for last depth view for sensor type
+/home/wqj/miniconda3/envs/whole_control/lib/python3.10/site-packages/torch/__init__.py:1275: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+  _C._set_default_tensor_type(t)
+no dynamics information for link: world
+no dynamics information for link: base_link
+no dynamics information for link: ft_frame
+no dynamics information for link: flange
+no dynamics information for link: tool0
+no dynamics information for link: camera_depth_optical_frame
+no dynamics information for link: base
+no dynamics information for link: world
+no dynamics information for link: base_link
+no dynamics information for link: ft_frame
+no dynamics information for link: flange
+no dynamics information for link: tool0
+no dynamics information for link: camera_depth_optical_frame
+no dynamics information for link: base
+{
+  "no_startup_motion": true,
+  "no_map_rejected": true,
+  "actual_nvblox_scan_frozen": {
+    "frames": 6,
+    "views": 2,
+    "map_uid": "92d2b760aeee2d70ece2b9e2e1d06ec6320f1d30b8fd14d516abe8a75eba3c14",
+    "observed_cells": 21986,
+    "surveyed_cells": 290038
+  },
+  "scene_confirmation_required": true,
+  "static_map_goal_reached": {
+    "error_m": 3.9965236256567415e-08,
+    "sage_iterations": 16
+  },
+  "joint_stream_loss_cancels": true,
+  "invalidation_discards_map": true,
+  "reload_requires_reconfirmation": true,
+  "passed": true
+}

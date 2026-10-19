@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -eo pipefail
+AUTO_ENV="${SAGE_CONDA_PREFIX:-$HOME/miniconda3/envs/whole_control}"
+export CONDA_PREFIX="$AUTO_ENV"
+export PATH="$AUTO_ENV/bin:$PATH"
+export PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1
+exec "$AUTO_ENV/bin/python" -B -m ur7e_auto_reconstruction.node "$@"

@@ -1,0 +1,32 @@
+/ur7e_real_reconstruction
+  Subscribers:
+    /camera/camera/color/camera_info: sensor_msgs/msg/CameraInfo
+    /camera/camera/color/image_raw: sensor_msgs/msg/Image
+    /camera/camera/depth/camera_info: sensor_msgs/msg/CameraInfo
+    /camera/camera/depth/image_rect_raw: sensor_msgs/msg/Image
+    /joint_states: sensor_msgs/msg/JointState
+    /tf: tf2_msgs/msg/TFMessage
+    /tf_static: tf2_msgs/msg/TFMessage
+  Publishers:
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /rosout: rcl_interfaces/msg/Log
+    /ur7e_real_reconstruction/camera_pose: geometry_msgs/msg/PoseStamped
+    /ur7e_real_reconstruction/mesh: visualization_msgs/msg/MarkerArray
+    /ur7e_real_reconstruction/status: std_msgs/msg/String
+    /ur7e_real_reconstruction/surface_points: sensor_msgs/msg/PointCloud2
+  Service Servers:
+    /tf2_frames: tf2_msgs/srv/FrameGraph
+    /ur7e_real_reconstruction/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /ur7e_real_reconstruction/freeze_scan: std_srvs/srv/Trigger
+    /ur7e_real_reconstruction/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /ur7e_real_reconstruction/get_parameters: rcl_interfaces/srv/GetParameters
+    /ur7e_real_reconstruction/list_parameters: rcl_interfaces/srv/ListParameters
+    /ur7e_real_reconstruction/set_parameters: rcl_interfaces/srv/SetParameters
+    /ur7e_real_reconstruction/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+    /ur7e_real_reconstruction/start_scan: std_srvs/srv/Trigger
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:
+

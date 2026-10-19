@@ -1,0 +1,61 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: base_link
+    Background Color: 35; 35; 35
+    Frame Rate: 15
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Base Grid
+      Enabled: true
+      Cell Size: 0.1
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Measured surface ESDF
+      Enabled: true
+      Topic:
+        Value: /ur7e_real_static/surface_esdf
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        Depth: 1
+      Position Transformer: XYZ
+      Color Transformer: RGB8
+      Size (Pixels): 3
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Planning free-space clearance
+      Enabled: false
+      Topic:
+        Value: /ur7e_real_static/esdf
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        Depth: 1
+      Position Transformer: XYZ
+      Color Transformer: RGB8
+      Size (Pixels): 2
+    - Class: rviz_default_plugins/RobotModel
+      Name: Live robot description
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+        Durability Policy: Transient Local
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Collision spheres and checked TCP path
+      Enabled: true
+      Topic:
+        Value: /ur7e_real_static/markers
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        Depth: 1
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 2.5
+      Focal Point: {X: 0.3, Y: 0.0, Z: 0.5}
+      Pitch: 0.6
+      Yaw: 0.8
+Window Geometry:
+  Width: 1200
+  Height: 800

@@ -1,0 +1,112 @@
+[INFO] [1790173089.212371860] [ur7e_nvblox]: Depth /test/depth; timestamped TF base_link <- camera_depth_optical_frame; Python /home/wqj/miniconda3/envs/whole_control/bin/python. Waiting for camera/TF.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260923 22:18:11.053830 3236841 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 22:18:11.064278 3236841 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+I20260923 22:18:11.068856 3236841 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 22:18:11.079223 3236841 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+I20260923 22:18:11.083619 3236841 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 22:18:11.094472 3236841 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+I20260923 22:18:11.098773 3236841 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 22:18:11.098809 3236841 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+I20260923 22:18:11.101089 3236841 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 22:18:11.111037 3236841 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+I20260923 22:18:11.115368 3236841 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 22:18:11.125195 3236841 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+I20260923 22:18:11.125349 3236841 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 22:18:11.125382 3236841 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+I20260923 22:18:11.125589 3236841 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+I20260923 22:18:11.125622 3236841 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+I20260923 22:18:11.125625 3236841 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+I20260923 22:18:11.125627 3236841 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+I20260923 22:18:11.125628 3236841 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+I20260923 22:18:11.125630 3236841 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+I20260923 22:18:11.125636 3236841 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+I20260923 22:18:11.125638 3236841 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+I20260923 22:18:11.125638 3236841 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+I20260923 22:18:11.125646 3236841 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[INFO] [1790173091.163457311] [ur7e_nvblox]: Mapper ready: 160x90, 0.03 m voxels, frame=base_link
+I20260923 22:18:11.207093 3236841 mapper_impl.h:60] Allocating space for last depth view for sensor type
+{
+  "passed": true,
+  "mode": "dense",
+  "rate_hz": 13.989663890503728,
+  "frames": 209,
+  "points": 52111,
+  "latency_p50_ms": 60.44960021972656,
+  "latency_p95_ms": 72.16610908508295,
+  "last_stats": {
+    "rates_hz": {
+      "depth_received": 29.978188590333154,
+      "depth_overwritten": 0.0,
+      "map_initialized": 0.0,
+      "stale_depth": 0.0,
+      "depth_integrated": 29.978188590333154,
+      "esdf_updated": 13.989821342155471,
+      "esdf_published": 13.989821342155471
+    },
+    "totals": {
+      "depth_received": 497,
+      "depth_overwritten": 45,
+      "map_initialized": 1,
+      "stale_depth": 1,
+      "depth_integrated": 451,
+      "esdf_updated": 209,
+      "esdf_published": 209
+    },
+    "latency": {
+      "tf_lookup": {
+        "mean_ms": 0.06775779158198399,
+        "p50_ms": 0.06503402255475521,
+        "p95_ms": 0.09328313753940165,
+        "max_ms": 0.1497020712122321
+      },
+      "backend_initialization": {
+        "mean_ms": 1908.0188879743218,
+        "p50_ms": 1908.0188879743218,
+        "p95_ms": 1908.0188879743218,
+        "max_ms": 1908.0188879743218
+      },
+      "query_readback": {
+        "mean_ms": 0.1355229417958328,
+        "p50_ms": 0.12139102909713984,
+        "p95_ms": 0.16514037270098925,
+        "max_ms": 1.4416410122066736
+      },
+      "fusion_and_esdf": {
+        "mean_ms": 2.82876318071091,
+        "p50_ms": 1.4217660063877702,
+        "p95_ms": 5.715061607770622,
+        "max_ms": 50.03354698419571
+      }
+    },
+    "world_frame": "base_link",
+    "python_executable": "/home/wqj/miniconda3/envs/whole_control/bin/python",
+    "error": null,
+    "latest": {
+      "output_mode": "dense",
+      "input_stamp_ns": 1790173106147677348,
+      "known_cells": 3760,
+      "total_cells": 52111,
+      "map_epoch": 0,
+      "unknown_distance_m": 100.0,
+      "depth_encoding": "32FC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        160,
+        90
+      ],
+      "integration_size": [
+        160,
+        90
+      ],
+      "camera_position_base": [
+        -0.024276534095406532,
+        0.0,
+        0.20000000298023224
+      ],
+      "ros_clock_minus_image_sec": 0.007956218,
+      "receive_to_result_ms": 4.159169038757682
+    }
+  },
+  "seconds": 15.0
+}

@@ -1,0 +1,1 @@
+/home/wqj/realtime_nvblox_ws/build/ur7e_auto_reconstruction/ament_cmake_environment_hooks/local_setup.bash

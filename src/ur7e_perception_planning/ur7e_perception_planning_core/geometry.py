@@ -79,3 +79,41 @@ class RobotGeometry:
     def self_clearance(self, centers):
         return float(np.min(np.linalg.norm(centers[self.pair_a]-centers[self.pair_b], axis=1)
                             -self.radii[self.pair_a]-self.radii[self.pair_b]))
+
+    def poses_batch(self, configurations):
+        """Vectorized CPU FK using the same URDF."""
+        q = np.atleast_2d(configurations)
+        poses = {'world': np.broadcast_to(np.eye(4), (len(q), 4, 4))}
+        pending = list(self.joints)
+        while pending:
+            remaining = []
+            for name, parent, child, origin, axis, kind in pending:
+                if parent not in poses:
+                    remaining.append((name, parent, child, origin, axis, kind)); continue
+                if kind in ('revolute', 'continuous'):
+                    motion = np.broadcast_to(np.eye(4), (len(q), 4, 4)).copy()
+                    motion[:, :3, :3] = Rotation.from_rotvec(q[:, JOINTS.index(name), None]*axis).as_matrix()
+                    poses[child] = poses[parent] @ origin @ motion
+                else:
+                    poses[child] = poses[parent] @ origin
+            if len(remaining) == len(pending):
+                raise ValueError('Disconnected robot tree')
+            pending = remaining
+        return poses
+
+    def camera_axis_z(self, configurations):
+        # This demo fixture has optical +Z aligned with tool0 +Z.
+        return self.poses_batch(configurations)['tool0'][:, 2, 2]
+
+    def spheres_batch(self, configurations):
+        q = np.atleast_2d(configurations)
+        poses = self.poses_batch(q)
+        centers = np.empty((len(q), len(self.radii), 3))
+        for i, link in enumerate(self.links):
+            ids = self.link_ids == i
+            centers[:, ids] = self.local[ids] @ poses[link][:, :3, :3].transpose(0, 2, 1) + poses[link][:, None, :3, 3]
+        return centers
+
+    def self_clearance_batch(self, centers):
+        return np.min(np.linalg.norm(centers[..., self.pair_a, :]-centers[..., self.pair_b, :], axis=-1)
+                      -self.radii[self.pair_a]-self.radii[self.pair_b], axis=-1)

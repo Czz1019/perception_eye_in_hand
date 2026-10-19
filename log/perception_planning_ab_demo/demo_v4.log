@@ -1,0 +1,806 @@
+[INFO] [launch]: All log files can be found below /home/wqj/.ros/log/2026-09-21-11-38-27-143959-wqj-1971958
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [1971999]
+[INFO] [gzserver-2]: process started with pid [1972001]
+[INFO] [spawn_entity.py-3]: process started with pid [1972003]
+[INFO] [spawner-4]: process started with pid [1972005]
+[INFO] [spawner-5]: process started with pid [1972007]
+[INFO] [spawn_scene.py-6]: process started with pid [1972009]
+[INFO] [perception_planning-7]: process started with pid [1972011]
+[robot_state_publisher-1] [INFO] [1789961909.750414345] [robot_state_publisher]: got segment base
+[robot_state_publisher-1] [INFO] [1789961909.751109702] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1789961909.751164862] [robot_state_publisher]: got segment base_link_inertia
+[robot_state_publisher-1] [INFO] [1789961909.751193406] [robot_state_publisher]: got segment camera_bottom_screw_frame
+[robot_state_publisher-1] [INFO] [1789961909.751221611] [robot_state_publisher]: got segment camera_color_frame
+[robot_state_publisher-1] [INFO] [1789961909.751246831] [robot_state_publisher]: got segment camera_color_optical_frame
+[robot_state_publisher-1] [INFO] [1789961909.751271026] [robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-1] [INFO] [1789961909.751294957] [robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-1] [INFO] [1789961909.751318598] [robot_state_publisher]: got segment camera_infra1_frame
+[robot_state_publisher-1] [INFO] [1789961909.751342532] [robot_state_publisher]: got segment camera_infra1_optical_frame
+[robot_state_publisher-1] [INFO] [1789961909.751366603] [robot_state_publisher]: got segment camera_infra2_frame
+[robot_state_publisher-1] [INFO] [1789961909.751389818] [robot_state_publisher]: got segment camera_infra2_optical_frame
+[robot_state_publisher-1] [INFO] [1789961909.751412085] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-1] [INFO] [1789961909.751436898] [robot_state_publisher]: got segment d435_mount_link
+[robot_state_publisher-1] [INFO] [1789961909.751459884] [robot_state_publisher]: got segment flange
+[robot_state_publisher-1] [INFO] [1789961909.751483495] [robot_state_publisher]: got segment forearm_link
+[robot_state_publisher-1] [INFO] [1789961909.751507544] [robot_state_publisher]: got segment ft_frame
+[robot_state_publisher-1] [INFO] [1789961909.751531772] [robot_state_publisher]: got segment ground_plane
+[robot_state_publisher-1] [INFO] [1789961909.751555002] [robot_state_publisher]: got segment shoulder_link
+[robot_state_publisher-1] [INFO] [1789961909.751578852] [robot_state_publisher]: got segment tool0
+[robot_state_publisher-1] [INFO] [1789961909.751604713] [robot_state_publisher]: got segment upper_arm_link
+[robot_state_publisher-1] [INFO] [1789961909.751627736] [robot_state_publisher]: got segment world
+[robot_state_publisher-1] [INFO] [1789961909.751650114] [robot_state_publisher]: got segment wrist_1_link
+[robot_state_publisher-1] [INFO] [1789961909.751673192] [robot_state_publisher]: got segment wrist_2_link
+[robot_state_publisher-1] [INFO] [1789961909.751696003] [robot_state_publisher]: got segment wrist_3_link
+[spawner-5] [INFO] [1789961911.738906421] [spawner_forward_position_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-4] [INFO] [1789961911.747174025] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[spawn_entity.py-3] [INFO] [1789961912.310767787] [spawn_ur]: Spawn Entity started
+[spawn_entity.py-3] [INFO] [1789961912.312890757] [spawn_ur]: Loading entity published on topic robot_description
+[spawn_entity.py-3] [INFO] [1789961912.323295761] [spawn_ur]: Waiting for entity xml on robot_description
+[spawn_entity.py-3] [INFO] [1789961912.340661158] [spawn_ur]: Waiting for service /spawn_entity, timeout = 60
+[spawn_entity.py-3] [INFO] [1789961912.342486372] [spawn_ur]: Waiting for service /spawn_entity
+[spawn_entity.py-3] [INFO] [1789961915.116573306] [spawn_ur]: Calling service /spawn_entity
+[spawn_entity.py-3] [INFO] [1789961916.743094787] [spawn_ur]: Spawn status: SpawnEntity: Successfully spawned entity [ur]
+[INFO] [spawn_entity.py-3]: process has finished cleanly [pid 1972003]
+[perception_planning-7] /home/wqj/miniconda3/envs/whole_control/lib/python3.10/site-packages/torch/__init__.py:1275: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+[perception_planning-7]   _C._set_default_tensor_type(t)
+[gzserver-2] [INFO] [1789961920.087477546] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[gzserver-2] [INFO] [1789961920.109870284] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+[gzserver-2] [INFO] [1789961920.110762088] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+[gzserver-2] [INFO] [1789961920.135190657] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+[gzserver-2] [INFO] [1789961920.139771187] [gazebo_ros2_control]: Received urdf from param server, parsing...
+[gzserver-2] [INFO] [1789961920.140205010] [gazebo_ros2_control]: Loading parameter files /home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/controllers.yaml
+[gzserver-2] [INFO] [1789961920.195730507] [gazebo_ros2_control]: Loading joint: shoulder_pan_joint
+[gzserver-2] [INFO] [1789961920.195921015] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1789961920.195971442] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789961920.196026534] [gazebo_ros2_control]: 			 found initial value: 0.157471
+[gzserver-2] [INFO] [1789961920.196082127] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789961920.196117419] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789961920.196148906] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1789961920.196179532] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789961920.197001786] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789961920.197347706] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789961920.197402606] [gazebo_ros2_control]: Loading joint: shoulder_lift_joint
+[gzserver-2] [INFO] [1789961920.197439639] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1789961920.197469222] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789961920.197503420] [gazebo_ros2_control]: 			 found initial value: -1.672229
+[gzserver-2] [INFO] [1789961920.197540877] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789961920.197570333] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789961920.197598001] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1789961920.197625418] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789961920.197986041] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789961920.199795883] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789961920.200106722] [gazebo_ros2_control]: Loading joint: elbow_joint
+[gzserver-2] [INFO] [1789961920.200220906] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1789961920.200310614] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789961920.200398999] [gazebo_ros2_control]: 			 found initial value: 0.553363
+[gzserver-2] [INFO] [1789961920.200505849] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789961920.200650911] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789961920.200744876] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1789961920.200854605] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789961920.201656817] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789961920.202513822] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789961920.202703792] [gazebo_ros2_control]: Loading joint: wrist_1_joint
+[gzserver-2] [INFO] [1789961920.202794789] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1789961920.202910396] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789961920.202990122] [gazebo_ros2_control]: 			 found initial value: -0.589218
+[gzserver-2] [INFO] [1789961920.203088300] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789961920.203164829] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789961920.203241416] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1789961920.203316301] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789961920.204707911] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789961920.205607829] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789961920.205746511] [gazebo_ros2_control]: Loading joint: wrist_2_joint
+[gzserver-2] [INFO] [1789961920.205867412] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1789961920.205951767] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789961920.206030037] [gazebo_ros2_control]: 			 found initial value: -1.776573
+[gzserver-2] [INFO] [1789961920.206127684] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789961920.206206691] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789961920.206283952] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1789961920.206355633] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789961920.208008762] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789961920.208952137] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789961920.209177205] [gazebo_ros2_control]: Loading joint: wrist_3_joint
+[gzserver-2] [INFO] [1789961920.209223302] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1789961920.209257864] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789961920.209299994] [gazebo_ros2_control]: 			 found initial value: 0.158612
+[gzserver-2] [INFO] [1789961920.209355881] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789961920.209481752] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789961920.209514739] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1789961920.209545471] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789961920.209927415] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789961920.211451796] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789961920.212186373] [resource_manager]: Initialize hardware 'ur' 
+[gzserver-2] [INFO] [1789961920.213363619] [resource_manager]: Successful initialization of hardware 'ur'
+[gzserver-2] [INFO] [1789961920.214109929] [resource_manager]: 'configure' hardware 'ur' 
+[gzserver-2] [INFO] [1789961920.214211896] [resource_manager]: Successful 'configure' of hardware 'ur'
+[gzserver-2] [INFO] [1789961920.214305418] [resource_manager]: 'activate' hardware 'ur' 
+[gzserver-2] [INFO] [1789961920.214355207] [resource_manager]: Successful 'activate' of hardware 'ur'
+[gzserver-2] [INFO] [1789961920.214928379] [gazebo_ros2_control]: Loading controller_manager
+[gzserver-2] [WARN] [1789961920.299170681] [gazebo_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gzserver-2] [INFO] [1789961920.300065120] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+[gzserver-2] 
+[gzserver-2] RealSensePlugin: The realsense_camera plugin is attach to model ur
+[gzserver-2] [INFO] [1789961920.437588494] [gazebo_realsense_camera]: Realsense Gazebo ROS plugin loading.
+[gzserver-2] [INFO] [1789961920.520656152] [controller_manager]: Loading controller 'forward_position_controller'
+[spawner-5] [INFO] [1789961920.854315768] [spawner_forward_position_controller]: [94mLoaded [1mforward_position_controller[0m
+[gzserver-2] [INFO] [1789961920.859582949] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gzserver-2] [INFO] [1789961920.911984253] [gazebo_realsense_camera]: Loaded Realsense Gazebo ROS plugin.
+[gzserver-2] [INFO] [1789961920.938402900] [controller_manager]: Configuring controller 'forward_position_controller'
+[spawner-4] [INFO] [1789961920.941959645] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gzserver-2] [INFO] [1789961920.949997347] [forward_position_controller]: configure successful
+[gzserver-2] [INFO] [1789961920.959061938] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[gzserver-2] [INFO] [1789961920.959562602] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[gzserver-2] [INFO] [1789961921.008156797] [forward_position_controller]: activate successful
+[spawner-5] [INFO] [1789961921.023293876] [spawner_forward_position_controller]: [92mConfigured and activated [1mforward_position_controller[0m
+[spawner-4] [INFO] [1789961921.048372487] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[INFO] [spawner-5]: process has finished cleanly [pid 1972007]
+[INFO] [spawner-4]: process has finished cleanly [pid 1972005]
+[spawn_scene.py-6] [INFO] [1789961921.422271344] [spawn_eih_tall_obstacles]: 已在 Gazebo 中生成障碍物: sage_clean_sphere1
+[spawn_scene.py-6] [INFO] [1789961921.828370350] [spawn_eih_tall_obstacles]: 已在 Gazebo 中生成障碍物: sage_clean_cube1
+[spawn_scene.py-6] [INFO] [1789961922.133547095] [spawn_eih_tall_obstacles]: 已在 Gazebo 中生成障碍物: sage_clean_cube2
+[INFO] [spawn_scene.py-6]: process has finished cleanly [pid 1972009]
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 41 in scan_prior
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 52 in _validate_config
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 48 in __init__
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 19 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] [WARN] [1789961935.621541046] [ur7e_nvblox]: Demo scan corridor prior enabled: only valid in the commissioned static Gazebo fixture
+[perception_planning-7] [INFO] [1789961935.630666046] [ur7e_nvblox]: Depth /camera/depth/image_rect_raw; timestamped TF base_link <- camera_depth_optical_frame; Python /home/wqj/miniconda3/envs/whole_control/bin/python. Waiting for camera/TF.
+[perception_planning-7] [INFO] [1789961935.698063503] [perception_planner]: Low-speed online ESDF planning; logs: /home/wqj/nvblox_output/perception_planning/20260921_113855
+[perception_planning-7] Unknown tag "ros2_control" in /robot[@name='ur7e']
+[perception_planning-7] no dynamics information for link: world
+[perception_planning-7] no dynamics information for link: base_link
+[perception_planning-7] no dynamics information for link: ft_frame
+[perception_planning-7] no dynamics information for link: base
+[perception_planning-7] no dynamics information for link: flange
+[perception_planning-7] no dynamics information for link: tool0
+[perception_planning-7] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[perception_planning-7] I20260921 11:38:58.341161 1972376 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260921 11:38:58.355019 1972376 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260921 11:38:58.360982 1972376 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260921 11:38:58.375204 1972376 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260921 11:38:58.382025 1972376 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260921 11:38:58.396138 1972376 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260921 11:38:58.401331 1972376 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260921 11:38:58.415516 1972376 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260921 11:38:58.419309 1972376 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260921 11:38:58.433672 1972376 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260921 11:38:58.438889 1972376 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260921 11:38:58.438942 1972376 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260921 11:38:58.439158 1972376 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260921 11:38:58.439198 1972376 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260921 11:38:58.439361 1972376 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260921 11:38:58.439397 1972376 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260921 11:38:58.439402 1972376 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[perception_planning-7] I20260921 11:38:58.439405 1972376 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[perception_planning-7] I20260921 11:38:58.439407 1972376 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[perception_planning-7] I20260921 11:38:58.439409 1972376 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[perception_planning-7] I20260921 11:38:58.439411 1972376 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[perception_planning-7] I20260921 11:38:58.439414 1972376 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[perception_planning-7] I20260921 11:38:58.439415 1972376 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[perception_planning-7] I20260921 11:38:58.439417 1972376 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[perception_planning-7] I20260921 11:38:58.735491 1972376 mapper_impl.h:60] Allocating space for last depth view for sensor type
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 169 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 253 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 80 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 642 in _wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 745 in wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 762 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 169 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 253 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 80 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 642 in _wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 745 in wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 762 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 85 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 253 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 80 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 375 in _take_subscription
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 453 in handler
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 254 in __call__
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 768 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 85 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 253 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 111 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 543 in _wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 745 in wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 762 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 85 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 253 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/depth.py", line 58 in known_distances
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 144 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "<frozen importlib._bootstrap>", line 1087 in _handle_fromlist
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/std_msgs/msg/_header.py", line 132 in stamp
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 375 in _take_subscription
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 453 in handler
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 254 in __call__
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 768 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/site-packages/numpy/lib/twodim_base.py", line 224 in eye
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/geometry.py", line 64 in fk
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/geometry.py", line 72 in spheres
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 44 in check_segment
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 158 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 253 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 72 in _robot_centers
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 97 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 642 in _wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 745 in wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 762 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 85 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/grid.py", line 12 in pack_map
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 183 in _publish_latest
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 255 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 80 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/callback_groups.py", line 103 in can_execute
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 486 in can_execute
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 572 in _wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 745 in wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 762 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/geometry.py", line 76 in spheres
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 44 in check_segment
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 158 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/grid.py", line 22 in map_arrays
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/grid.py", line 83 in from_message
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 139 in on_map
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 186 in _publish_latest
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 255 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 80 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 642 in _wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 745 in wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 762 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 169 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 253 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/site-packages/scipy/ndimage/_morphology.py", line 2580 in distance_transform_edt
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/grid.py", line 61 in conservative_field
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 149 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 642 in _wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 745 in wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 762 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 116 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 253 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 80 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 642 in _wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 745 in wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 762 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/rollout/arm_base.py", line 157 in cost_fn
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/rollout/sage_arm_reacher.py", line 63 in cost_fn
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/sage.py", line 42 in cost_fn
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/rollout/sage_arm_base.py", line 44 in rollout_fn
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/rollout/arm_base.py", line 257 in __call__
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/control/sage_mppi.py", line 702 in _build_rollout_dict
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/control/sage_mppi.py", line 1192 in generate_rollouts
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/control/sage_mppi.py", line 1292 in optimize
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 151 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 253 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 121 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "<frozen importlib._bootstrap>", line 1053 in _handle_fromlist
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/geometry_msgs/msg/_transform.py", line 86 in __init__
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 375 in _take_subscription
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 453 in handler
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 254 in __call__
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 768 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 85 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 253 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/site-packages/scipy/ndimage/_morphology.py", line 2580 in distance_transform_edt
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/grid.py", line 61 in conservative_field
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 149 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 375 in _take_subscription
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 453 in handler
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 254 in __call__
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 768 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[perception_planning-7] Timeout (0:00:20)!
+[perception_planning-7] Thread 0x00007eee1fe00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 607 in wait
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 280 in servo_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29400640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/cost/bound_cost.py", line 46 in forward
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/rollout/arm_base.py", line 191 in cost_fn
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/rollout/sage_arm_reacher.py", line 63 in cost_fn
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/sage.py", line 42 in cost_fn
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/rollout/sage_arm_base.py", line 44 in rollout_fn
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/rollout/arm_base.py", line 257 in __call__
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/control/sage_mppi.py", line 702 in _build_rollout_dict
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/control/sage_mppi.py", line 1192 in generate_rollouts
+[perception_planning-7]   File "/home/wqj/storm/storm_kit/mpc/control/sage_mppi.py", line 1292 in optimize
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/demo.py", line 151 in run_demo
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/planner.py", line 200 in plan_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee29e00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 324 in wait
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 355 in wait_for
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/realtime_nvblox/lib/python3.10/site-packages/realtime_nvblox/latest_slot.py", line 40 in wait_newer
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_nvblox/lib/python3.10/site-packages/ur7e_nvblox/node.py", line 253 in _publisher_loop
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eee30a00640 (most recent call first):
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/mapper.py", line 121 in _worker
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 953 in run
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/threading.py", line 973 in _bootstrap
+[perception_planning-7] 
+[perception_planning-7] Thread 0x00007eef657eb740 (most recent call first):
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/contextlib.py", line 515 in _push_exit_callback
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/contextlib.py", line 512 in _push_cm_exit
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/contextlib.py", line 493 in enter_context
+[perception_planning-7]   File "XXX lineno: -1, opcode: 244
+[perception_planning-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 611 in _wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 745 in wait_for_ready_callbacks
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 762 in _spin_once_impl
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773 in spin_once
+[perception_planning-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 298 in spin
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 32 in main
+[perception_planning-7]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/local/lib/python3.10/dist-packages/ur7e_perception_planning_core/entrypoint.py", line 52 in <module>
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 86 in _run_code
+[perception_planning-7]   File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+[ERROR] [perception_planning-7]: process has died [pid 1972011, exit code -11, cmd '/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning/lib/ur7e_perception_planning/perception_planning combined --ros-args --params-file /home/wqj/realtime_nvblox_ws/src/ur7e_perception_planning/config/demo.yaml'].
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [gzserver-2]: sending signal 'SIGINT' to process[gzserver-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1789962346.511379517] [rclcpp]: signal_handler(signum=2)
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 1971999]
+[INFO] [gzserver-2]: process has finished cleanly [pid 1972001]

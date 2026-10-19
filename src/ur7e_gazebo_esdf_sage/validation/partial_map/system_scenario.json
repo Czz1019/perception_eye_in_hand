@@ -1,0 +1,96 @@
+[
+  {
+    "test": "fresh_scan_default",
+    "passed": true,
+    "status": {
+      "planning_policy": "bounded_unknown",
+      "phase": "GOAL_REACHED",
+      "error": null,
+      "view": 62,
+      "sage_iterations": 121,
+      "map_uid": "0634f7f548db5abe81e124e2569d83a3c8a0b1c682634f22905472f60641c0e5",
+      "frames": 315,
+      "map_frozen": true,
+      "capture_wait": "CAPTURING",
+      "capture_error": null,
+      "model": "measured real camera extrinsics",
+      "mode": "B: actual-feedback rolling SAGE",
+      "stopped": false
+    }
+  },
+  {
+    "test": "low_between_walls",
+    "passed": true,
+    "event": {
+      "kind": "goal_reached",
+      "sim_time": 675.965,
+      "wall_time": 203470.582725949,
+      "goal": [
+        0.6027275713,
+        -0.0729611598,
+        0.4420525377
+      ],
+      "error_m": 0.006088777996419197,
+      "iterations": 159,
+      "revision": 2
+    }
+  },
+  {
+    "test": "occupied_goal_hold",
+    "passed": true,
+    "event": {
+      "kind": "goal_rejected",
+      "sim_time": 676.6650000000001,
+      "wall_time": 203471.281722783,
+      "error": "Goal must lie in observed or tabletop-supported space",
+      "revision": 3
+    }
+  },
+  {
+    "test": "retarget_while_moving",
+    "passed": true,
+    "event": {
+      "kind": "goal_reached",
+      "sim_time": 695.195,
+      "wall_time": 203489.824389048,
+      "goal": [
+        0.3,
+        0.1,
+        0.94
+      ],
+      "error_m": 0.0056253259643354305,
+      "iterations": 240,
+      "revision": 5
+    }
+  },
+  {
+    "test": "unknown_goal_hold",
+    "passed": true,
+    "event": {
+      "kind": "goal_rejected",
+      "sim_time": 695.86,
+      "wall_time": 203490.489613577,
+      "error": "Goal must lie in observed or tabletop-supported space",
+      "revision": 6
+    }
+  },
+  {
+    "test": "feedback_loss_hold",
+    "passed": true,
+    "status": {
+      "planning_policy": "bounded_unknown",
+      "phase": "STOPPED",
+      "error": "STALE_JOINT_STATE wall=0.000s sim=-0.001s injected=True",
+      "view": 62,
+      "sage_iterations": 254,
+      "map_uid": "0634f7f548db5abe81e124e2569d83a3c8a0b1c682634f22905472f60641c0e5",
+      "frames": 315,
+      "map_frozen": true,
+      "capture_wait": "CAPTURING",
+      "capture_error": null,
+      "model": "measured real camera extrinsics",
+      "mode": "B: actual-feedback rolling SAGE",
+      "stopped": true
+    }
+  }
+]

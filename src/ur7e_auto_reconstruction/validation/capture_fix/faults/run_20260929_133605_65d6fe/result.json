@@ -1,0 +1,28 @@
+{
+  "observations": [],
+  "motion_segments": [
+    {
+      "waypoint": "S01",
+      "sample_start": 0,
+      "sample_end": 621,
+      "error": null,
+      "cleanup_errors": [
+        "Injected stop acknowledgement failure"
+      ],
+      "diagnostics": {
+        "max_interval_sec": 0.009686187986517325,
+        "last_cycle_sec": {
+          "period": 1.8593011191114783e-05,
+          "feedback": 5.0709000788629055e-05,
+          "compute": 0.0004659609985537827,
+          "send": 1.812097616493702e-05,
+          "record_and_wait": 0.0018706710252445191
+        },
+        "fault": null
+      }
+    }
+  ],
+  "phase": "ERROR",
+  "error": "Stop acknowledgement failed: ['Injected stop acknowledgement failure']",
+  "waypoint": "S01"
+}

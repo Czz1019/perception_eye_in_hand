@@ -1,0 +1,88 @@
+{
+  "no_frames": {
+    "phase": "ERROR",
+    "error": "Timeout during CAPTURING; mapper={'warmup_state': 'READY', 'phase': 'SCANNING', 'error': None, 'epoch': 1, 'gate': True, 'gate_frames': 0, 'frames': 0, 'session': '/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf/validation/faults/map_4969.388683537', 'sensor_ready': True}",
+    "stopped": true,
+    "commands": 637,
+    "control_connections": 1
+  },
+  "mapper_loss": {
+    "phase": "ERROR",
+    "error": "Reconstruction heartbeat missing",
+    "stopped": true,
+    "commands": 126,
+    "control_connections": 1
+  },
+  "feedback_loss": {
+    "phase": "ERROR",
+    "error": "Injected feedback loss",
+    "stopped": true,
+    "commands": 3,
+    "control_connections": 1
+  },
+  "cancel_connect": {
+    "phase": "CANCELLED",
+    "error": "CANCELLED_BY_USER",
+    "stopped": true,
+    "commands": 0,
+    "control_connections": 1
+  },
+  "delayed_partial_export": {
+    "phase": "ERROR",
+    "error": "Timeout during CAPTURING; mapper={'warmup_state': 'READY', 'phase': 'SCANNING', 'error': None, 'epoch': 2, 'gate': True, 'gate_frames': 0, 'frames': 1, 'session': '/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf/validation/faults/map_4973.39052703', 'sensor_ready': True}",
+    "stopped": true,
+    "commands": 636,
+    "control_connections": 1,
+    "partial_map": "/home/wqj/realtime_nvblox_ws/src/ur7e_auto_esdf/validation/faults/map_4973.39052703/frozen_map.npz"
+  },
+  "capture_drift": {
+    "phase": "ERROR",
+    "error": "Robot position drifted while stationary; prepare again",
+    "stopped": true,
+    "commands": 636,
+    "control_connections": 1
+  },
+  "capture_feedback_loss": {
+    "phase": "ERROR",
+    "error": "Injected feedback loss",
+    "stopped": true,
+    "commands": 638,
+    "control_connections": 1
+  },
+  "capture_safety": {
+    "phase": "ERROR",
+    "error": "Robot state changed while stationary; no automatic recovery",
+    "stopped": true,
+    "commands": 635,
+    "control_connections": 1
+  },
+  "capture_velocity": {
+    "phase": "ERROR",
+    "error": "Robot is moving while stationary capture/control acquisition is required",
+    "stopped": true,
+    "commands": 637,
+    "control_connections": 1
+  },
+  "cancel_capture": {
+    "phase": "CANCELLED",
+    "error": "CANCELLED_BY_USER",
+    "stopped": true,
+    "commands": 639,
+    "control_connections": 1
+  },
+  "stop_ack_failure": {
+    "phase": "ERROR",
+    "error": "Stop acknowledgement failed: ['Injected stop acknowledgement failure']",
+    "stopped": true,
+    "commands": 636,
+    "control_connections": 1
+  },
+  "reconnect_drift": {
+    "phase": "ERROR",
+    "error": "Robot position drifted while stationary; prepare again",
+    "stopped": true,
+    "commands": 0,
+    "control_connections": 2
+  },
+  "passed": true
+}

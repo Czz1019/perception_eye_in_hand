@@ -1,0 +1,95 @@
+{
+  "phase": "FROZEN",
+  "error": null,
+  "epoch": 43,
+  "gate": false,
+  "gate_frames": 5,
+  "frames": 215,
+  "views": 43,
+  "session": "/home/wqj/nvblox_output/gazebo_esdf_sage/coverage_stationary_20261015/maps/scan_20261015_221847_c7fcce",
+  "warmup_state": "READY",
+  "warmup_error": null,
+  "sensor_ready": true,
+  "wait_reason": "CAPTURING",
+  "metrics": {
+    "input_stamp": 338.246,
+    "queue_ms": 80.51100598822813,
+    "tf_ms": 1.2479980068746954,
+    "filter_ms": 9.207772993249819,
+    "gpu_wait_ms": 0.012892007362097502,
+    "native_esdf_ms": 2.5354349927511066,
+    "free_field_ms": 31.216602001222782,
+    "receive_to_result_ms": 124.73184599366505,
+    "edt_recomputed": false,
+    "edt_backend": "cuda",
+    "observed_cells": 204866,
+    "tabletop_cells": 181200,
+    "scan_prior_cells": 0
+  },
+  "last_wait": {
+    "reason": "WAIT_TF_AT_IMAGE_TIME",
+    "sim_now": 320.365,
+    "image_stamps": [
+      320.348
+    ],
+    "joint_stamps": [
+      320.17,
+      320.18,
+      320.19,
+      320.2,
+      320.21,
+      320.22,
+      320.23,
+      320.24,
+      320.25,
+      320.26,
+      320.27,
+      320.28,
+      320.29,
+      320.3,
+      320.31,
+      320.32,
+      320.33,
+      320.34,
+      320.35,
+      320.36
+    ],
+    "joint_count": 2000,
+    "wall_time": 117649.550686115
+  },
+  "lease_age": 79.33207332401071,
+  "last_depth_stamp": 338.347,
+  "input_depth_age_s": -0.0019999999999527063,
+  "latest_joint_stamp": 416.4,
+  "sim_time": 416.40000000000003,
+  "stats": {
+    "rates_hz": {
+      "depth_received": 0.0,
+      "frames_overwritten": 0.0,
+      "fields_completed": 0.0,
+      "input_wait_attempts": 0.0,
+      "WAIT_IMAGE_CLOCK": 0.0,
+      "WAIT_TF_AT_IMAGE_TIME": 0.0,
+      "WAIT_JOINTS_AT_IMAGE_TIME": 0.0,
+      "rejected_completed_field": 0.0
+    },
+    "totals": {
+      "depth_received": 1074,
+      "frames_overwritten": 337,
+      "fields_completed": 215,
+      "input_wait_attempts": 70,
+      "WAIT_IMAGE_CLOCK": 25,
+      "WAIT_TF_AT_IMAGE_TIME": 26,
+      "WAIT_JOINTS_AT_IMAGE_TIME": 19,
+      "rejected_completed_field": 6
+    },
+    "latency": {
+      "capture": {
+        "mean_ms": 260.0522781764211,
+        "p50_ms": 110.55083600513171,
+        "p95_ms": 1659.043455999926,
+        "max_ms": 2356.690669010277
+      }
+    }
+  }
+}

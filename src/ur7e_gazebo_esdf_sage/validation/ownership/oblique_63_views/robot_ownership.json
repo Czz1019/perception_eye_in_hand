@@ -1,0 +1,82 @@
+{
+  "policy": "frozen_urdf_interior_cells_v1",
+  "urdf": "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/config/real_calibrated.urdf",
+  "urdf_sha256": "ad1f910ae4c95ed5f306bbede50eb7dca0a2092ec12b224d9e44e0ad05839c1a",
+  "meshes": [
+    {
+      "link": "base_link_inertia",
+      "path": "/opt/ros/humble/share/ur_description/meshes/ur5e/collision/base.stl",
+      "sha256": "9a145e0d46f2130afdf2a2e8825a00a929870c4c3d6d8e4d1adc5f04db3aac1b"
+    },
+    {
+      "link": "shoulder_link",
+      "path": "/opt/ros/humble/share/ur_description/meshes/ur5e/collision/shoulder.stl",
+      "sha256": "ceb92532177daa77682f5fbd628e01c2137d168f949a7a706ce1dabe9f002387"
+    },
+    {
+      "link": "upper_arm_link",
+      "path": "/opt/ros/humble/share/ur_description/meshes/ur5e/collision/upperarm.stl",
+      "sha256": "ee893044caf00075cb55b4cf666d1f1311c7979786212a501009f33bee945209"
+    },
+    {
+      "link": "forearm_link",
+      "path": "/opt/ros/humble/share/ur_description/meshes/ur5e/collision/forearm.stl",
+      "sha256": "2e7423cab807c34160ec4f770daee5e747d70e777eb01b7beeace2b8c5751816"
+    },
+    {
+      "link": "wrist_1_link",
+      "path": "/opt/ros/humble/share/ur_description/meshes/ur5e/collision/wrist1.stl",
+      "sha256": "f8c9f9337b6fd98c75f052e96de10e14a107ddb6874ba6b904e546f8a4e4f43a"
+    },
+    {
+      "link": "wrist_2_link",
+      "path": "/opt/ros/humble/share/ur_description/meshes/ur5e/collision/wrist2.stl",
+      "sha256": "2964a63f60ce3e3cf3ad55bcf190d7876d50e373cb64b70a57cea5885eaf3c86"
+    },
+    {
+      "link": "wrist_3_link",
+      "path": "/opt/ros/humble/share/ur_description/meshes/ur5e/collision/wrist3.stl",
+      "sha256": "83b3666b4ae2badd54af0d2c25a921682ecbc29e849eec646c3ed55fb74c78a3"
+    }
+  ],
+  "environment_map_uid": "24c44dff4b766ee8061fffc9d5a8065b40902c47664170c3f983deec9e3ac9c5",
+  "freeze_q": [
+    -1.7499947187734066,
+    -1.3407551798831263,
+    0.03207985666629831,
+    -0.6488012052434029,
+    -2.644011004729442,
+    -1.1413366667989504
+  ],
+  "owned_cells": 1187,
+  "per_link_interior_cells": {
+    "base_link_inertia": 92,
+    "shoulder_link": 119,
+    "upper_arm_link": 658,
+    "forearm_link": 263,
+    "wrist_1_link": 34,
+    "wrist_2_link": 19,
+    "wrist_3_link": 2
+  },
+  "measured_obstacle_conflicts": 0,
+  "environment_source_changed": false,
+  "historical_sweep_used": false,
+  "collision_uid": "2253b195c2adba4f36d3f26ca2d9ff49656c74b594acaef78741fed974982ee1",
+  "start_min_clearance_m": -0.08256257372945547,
+  "blocked_spheres": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ]
+}

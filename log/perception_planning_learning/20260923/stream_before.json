@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "mode": "dense",
+  "rate_hz": 10.09034291323046,
+  "frames": 151,
+  "points": 52111,
+  "latency_p50_ms": 61.44237518310547,
+  "latency_p95_ms": 64.71121311187744,
+  "last_stats": {
+    "rates_hz": {
+      "depth_received": 31.039537915210854,
+      "depth_overwritten": 0.0,
+      "map_initialized": 0.0,
+      "stale_depth": 0.0,
+      "depth_integrated": 31.039537915210854,
+      "esdf_updated": 10.01275416619705,
+      "esdf_published": 11.014029582816754
+    },
+    "totals": {
+      "depth_received": 496,
+      "depth_overwritten": 42,
+      "map_initialized": 1,
+      "stale_depth": 1,
+      "depth_integrated": 453,
+      "esdf_updated": 152,
+      "esdf_published": 152
+    },
+    "latency": {
+      "tf_lookup": {
+        "mean_ms": 0.06547003409041642,
+        "p50_ms": 0.06319902604445815,
+        "p95_ms": 0.08240159368142477,
+        "max_ms": 0.13578403741121292
+      },
+      "backend_initialization": {
+        "mean_ms": 1867.497309925966,
+        "p50_ms": 1867.497309925966,
+        "p95_ms": 1867.497309925966,
+        "max_ms": 1867.497309925966
+      },
+      "fusion_and_esdf": {
+        "mean_ms": 4.048763244339314,
+        "p50_ms": 3.954761486966163,
+        "p95_ms": 6.0958060377743095,
+        "max_ms": 56.3085830071941
+      }
+    },
+    "world_frame": "base_link",
+    "python_executable": "/home/wqj/miniconda3/envs/whole_control/bin/python",
+    "error": null,
+    "latest": {
+      "input_stamp_ns": 1790173087934015649,
+      "known_cells": 3760,
+      "total_cells": 52111,
+      "map_epoch": 0,
+      "unknown_distance_m": 100.0,
+      "depth_encoding": "32FC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        160,
+        90
+      ],
+      "integration_size": [
+        160,
+        90
+      ],
+      "camera_position_base": [
+        -0.023627469316124916,
+        0.0,
+        0.20000000298023224
+      ],
+      "ros_clock_minus_image_sec": 0.009733455,
+      "receive_to_result_ms": 2.554474980570376
+    }
+  },
+  "seconds": 15.0
+}

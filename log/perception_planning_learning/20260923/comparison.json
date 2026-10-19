@@ -1,0 +1,186 @@
+{
+  "gazebo_before": {
+    "baseline": {
+      "passed": true,
+      "duration": 34.91552872094326,
+      "map_rate": 4.786807610634003,
+      "stale_status_seconds": 0,
+      "cpu_median_mhz": 822.9165,
+      "cpu_low_sample_fraction": 0.0,
+      "phase_times": {
+        "receive_to_result_ms": {
+          "p50_ms": 120.53999700583518,
+          "p95_ms": 166.8837085017003
+        },
+        "fusion_query_ms": {
+          "p50_ms": 4.172486020252109,
+          "p95_ms": 11.489575961604714
+        },
+        "free_field_ms": {
+          "p50_ms": 34.20611598994583,
+          "p95_ms": 55.02884543966502
+        }
+      }
+    },
+    "wall": {
+      "passed": true,
+      "duration": 84.17032736702822,
+      "map_rate": 2.7499698672680504,
+      "stale_status_seconds": 29.51491263275966,
+      "cpu_median_mhz": 800.0,
+      "cpu_low_sample_fraction": 0.44047619047619047,
+      "phase_times": {
+        "receive_to_result_ms": {
+          "p50_ms": 176.11597146606073,
+          "p95_ms": 1323.5273660393432
+        },
+        "fusion_query_ms": {
+          "p50_ms": 8.61482002073899,
+          "p95_ms": 131.46316399797797
+        },
+        "free_field_ms": {
+          "p50_ms": 54.80364593677223,
+          "p95_ms": 709.5344179542735
+        }
+      }
+    }
+  },
+  "gazebo_after_5hz": {
+    "baseline": {
+      "passed": true,
+      "duration": 34.4102844040608,
+      "map_rate": 4.80000429504004,
+      "stale_status_seconds": 0,
+      "cpu_median_mhz": 800.31125,
+      "cpu_low_sample_fraction": 0.0,
+      "phase_times": {
+        "receive_to_result_ms": {
+          "p50_ms": 120.4435215331614,
+          "p95_ms": 166.80400783661753
+        },
+        "fusion_query_ms": {
+          "p50_ms": 3.213478543329984,
+          "p95_ms": 9.953094646334648
+        },
+        "free_field_ms": {
+          "p50_ms": 34.66795105487108,
+          "p95_ms": 53.62232987536117
+        }
+      }
+    },
+    "wall": {
+      "passed": true,
+      "duration": 99.16342399595305,
+      "map_rate": 2.545418058324982,
+      "stale_status_seconds": 30.517277701874264,
+      "cpu_median_mhz": 400.09175,
+      "cpu_low_sample_fraction": 0.52,
+      "phase_times": {
+        "receive_to_result_ms": {
+          "p50_ms": 584.3748699408025,
+          "p95_ms": 1198.3722409931943
+        },
+        "fusion_query_ms": {
+          "p50_ms": 58.07375500444323,
+          "p95_ms": 154.8677345912438
+        },
+        "free_field_ms": {
+          "p50_ms": 322.86380598088726,
+          "p95_ms": 718.2513739680871
+        }
+      }
+    }
+  },
+  "gazebo_cuda_10hz": {
+    "baseline": {
+      "passed": true,
+      "duration": 33.93651268200483,
+      "map_rate": 9.152500601179721,
+      "stale_status_seconds": 0,
+      "cpu_median_mhz": 954.36025,
+      "cpu_low_sample_fraction": 0.0,
+      "phase_times": {
+        "receive_to_result_ms": {
+          "p50_ms": 118.19102306617424,
+          "p95_ms": 155.4035869659856
+        },
+        "fusion_query_ms": {
+          "p50_ms": 3.1057060696184635,
+          "p95_ms": 8.910230133915318
+        },
+        "free_field_ms": {
+          "p50_ms": 17.746330006048083,
+          "p95_ms": 31.394835561513897
+        }
+      }
+    },
+    "wall": {
+      "passed": true,
+      "duration": 89.64163571002427,
+      "map_rate": 4.659166783886814,
+      "stale_status_seconds": 34.46673387486953,
+      "cpu_median_mhz": 792.6585,
+      "cpu_low_sample_fraction": 0.4888888888888889,
+      "phase_times": {
+        "receive_to_result_ms": {
+          "p50_ms": 334.51570698525757,
+          "p95_ms": 1476.229919004254
+        },
+        "fusion_query_ms": {
+          "p50_ms": 25.788175989873707,
+          "p95_ms": 286.26954392530024
+        },
+        "free_field_ms": {
+          "p50_ms": 173.17340499721467,
+          "p95_ms": 785.3160171071067
+        }
+      }
+    }
+  },
+  "gazebo_cuda_10hz_installed": {
+    "baseline": {
+      "passed": true,
+      "duration": 37.09482424100861,
+      "map_rate": 9.093743055811688,
+      "stale_status_seconds": 0,
+      "cpu_median_mhz": 1588.818,
+      "cpu_low_sample_fraction": 0.0,
+      "phase_times": {
+        "receive_to_result_ms": {
+          "p50_ms": 111.64291901513934,
+          "p95_ms": 175.66447921562934
+        },
+        "fusion_query_ms": {
+          "p50_ms": 3.327056998386979,
+          "p95_ms": 16.539040021598336
+        },
+        "free_field_ms": {
+          "p50_ms": 19.03750596102327,
+          "p95_ms": 40.311494586057954
+        }
+      }
+    },
+    "wall": {
+      "passed": true,
+      "duration": 90.64029567199759,
+      "map_rate": 4.685034065849022,
+      "stale_status_seconds": 33.14440917922184,
+      "cpu_median_mhz": 800.0,
+      "cpu_low_sample_fraction": 0.4835164835164835,
+      "phase_times": {
+        "receive_to_result_ms": {
+          "p50_ms": 242.44986206758767,
+          "p95_ms": 1029.0051809279248
+        },
+        "fusion_query_ms": {
+          "p50_ms": 16.046928009018302,
+          "p95_ms": 131.57079892698675
+        },
+        "free_field_ms": {
+          "p50_ms": 102.66776895150542,
+          "p95_ms": 536.97591193486
+        }
+      }
+    }
+  }
+}

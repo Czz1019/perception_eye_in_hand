@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "mode": "sparse",
+  "rate_hz": 13.754683055963607,
+  "frames": 206,
+  "points": 19714,
+  "latency_p50_ms": 24.29497241973877,
+  "latency_p95_ms": 26.575744152069092,
+  "last_stats": {
+    "rates_hz": {
+      "depth_received": 29.758132712853367,
+      "depth_overwritten": 0.0,
+      "map_initialized": 0.0,
+      "stale_depth": 0.0,
+      "depth_integrated": 29.758132712853367,
+      "esdf_updated": 13.88712859933157,
+      "esdf_published": 13.88712859933157
+    },
+    "totals": {
+      "depth_received": 498,
+      "depth_overwritten": 47,
+      "map_initialized": 1,
+      "stale_depth": 1,
+      "depth_integrated": 450,
+      "esdf_updated": 207,
+      "esdf_published": 207
+    },
+    "latency": {
+      "tf_lookup": {
+        "mean_ms": 0.06707704846980567,
+        "p50_ms": 0.0630250433459878,
+        "p95_ms": 0.09534251876175404,
+        "max_ms": 0.37494103889912367
+      },
+      "backend_initialization": {
+        "mean_ms": 1885.4117080336437,
+        "p50_ms": 1885.4117080336437,
+        "p95_ms": 1885.4117080336437,
+        "max_ms": 1885.4117080336437
+      },
+      "query_readback": {
+        "mean_ms": 1.1460843331805894,
+        "p50_ms": 0.8451989851891994,
+        "p95_ms": 1.6654579783789802,
+        "max_ms": 49.13693608250469
+      },
+      "fusion_and_esdf": {
+        "mean_ms": 2.7976933296472914,
+        "p50_ms": 2.0220959559082985,
+        "p95_ms": 3.5308669204823673,
+        "max_ms": 116.89874797593802
+      }
+    },
+    "world_frame": "base_link",
+    "python_executable": "/home/wqj/miniconda3/envs/whole_control/bin/python",
+    "error": null,
+    "latest": {
+      "output_mode": "sparse",
+      "input_stamp_ns": 1790173124311358836,
+      "known_cells": 19530,
+      "total_cells": 19530,
+      "map_epoch": 0,
+      "unknown_distance_m": 100.0,
+      "depth_encoding": "32FC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        160,
+        90
+      ],
+      "integration_size": [
+        160,
+        90
+      ],
+      "camera_position_base": [
+        -0.0249178446829319,
+        0.0,
+        0.20000000298023224
+      ],
+      "ros_clock_minus_image_sec": 0.006903402,
+      "receive_to_result_ms": 3.0986659694463015
+    }
+  },
+  "seconds": 15.0
+}

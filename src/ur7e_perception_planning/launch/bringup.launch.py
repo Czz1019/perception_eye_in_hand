@@ -16,7 +16,7 @@ def generate_launch_description():
         DeclareLaunchArgument('gazebo_gui', default_value='false',
                              description='Open gzclient; headless by default to avoid remote model-list requests'),
         DeclareLaunchArgument('run_rviz', default_value='true'),
-        DeclareLaunchArgument('config', default_value=str(share/'config/online.yaml')),
+        DeclareLaunchArgument('config', default_value=str(share/'config/demo.yaml')),
         IncludeLaunchDescription(PythonLaunchDescriptionSource(str(scene)),
                                  launch_arguments={'gazebo_gui': LaunchConfiguration('gazebo_gui')}.items(),
                                  condition=IfCondition(LaunchConfiguration('start_scene'))),

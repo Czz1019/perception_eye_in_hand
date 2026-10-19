@@ -1,0 +1,35 @@
+[INFO] [1790659236.496247514] [ur7e_auto_scan]: RTDE receive-only. ~/prepare writes a preview; ~/start requires allow_motion and an approved live plan.
+{
+  "no_frames": {
+    "phase": "ERROR",
+    "error": "Timeout during CAPTURING; mapper={'warmup_state': 'READY', 'phase': 'SCANNING', 'error': None, 'epoch': 1, 'gate': True, 'gate_frames': 0, 'frames': 0, 'session': '/home/wqj/realtime_nvblox_ws/src/ur7e_auto_reconstruction/validation/faults/map_144779.269930851', 'sensor_ready': True}",
+    "stopped": true,
+    "commands": 1043
+  },
+  "mapper_loss": {
+    "phase": "ERROR",
+    "error": "Reconstruction heartbeat missing",
+    "stopped": true,
+    "commands": 136
+  },
+  "feedback_loss": {
+    "phase": "ERROR",
+    "error": "Injected feedback loss",
+    "stopped": true,
+    "commands": 4
+  },
+  "cancel_connect": {
+    "phase": "CANCELLED",
+    "error": "CANCELLED_BY_USER",
+    "stopped": true,
+    "commands": 0
+  },
+  "delayed_partial_export": {
+    "phase": "ERROR",
+    "error": "Timeout during CAPTURING; mapper={'warmup_state': 'READY', 'phase': 'SCANNING', 'error': None, 'epoch': 2, 'gate': True, 'gate_frames': 0, 'frames': 1, 'session': '/home/wqj/realtime_nvblox_ws/src/ur7e_auto_reconstruction/validation/faults/map_144783.119246949', 'sensor_ready': True}",
+    "stopped": true,
+    "commands": 1042,
+    "partial_surface": "/home/wqj/realtime_nvblox_ws/src/ur7e_auto_reconstruction/validation/faults/map_144783.119246949/surface.npz"
+  },
+  "passed": true
+}

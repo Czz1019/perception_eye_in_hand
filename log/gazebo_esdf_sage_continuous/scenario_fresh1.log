@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage_continuous/test/moving_scenario.py", line 88, in <module>
+    s=wait(lambda s:same_run() and q is not None and now()>0 and s.get('phase')=='ONLINE_READY' and (s.get('online') or {}).get('frames',0)>=20,1800);uid=s['map_uid'];seed_tool=g.fk(q)['tool0'][:3,3].copy();record('ready',map_uid=uid,seed_tool=seed_tool.tolist())
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage_continuous/test/moving_scenario.py", line 53, in wait
+    if live_run is not None and not same_run():raise RuntimeError('Different simulation run; no control action permitted')
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage_continuous/test/moving_scenario.py", line 39, in same_run
+    def same_run():return live_run==str(out.resolve())
+  File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/pathlib.py", line 1077, in resolve
+    s = self._accessor.realpath(self, strict=strict)
+  File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/posixpath.py", line 395, in realpath
+    filename = os.fspath(filename)
+  File "/home/wqj/miniconda3/envs/whole_control/lib/python3.10/pathlib.py", line 632, in __fspath__
+    return str(self)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage_continuous/test/moving_scenario.py", line 107, in <module>
+    truth.close();node.destroy_node();rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

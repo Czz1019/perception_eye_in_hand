@@ -1,0 +1,99 @@
+{
+  "phase": "FROZEN",
+  "error": null,
+  "epoch": 63,
+  "gate": false,
+  "gate_frames": 5,
+  "frames": 315,
+  "views": 63,
+  "session": "/home/wqj/nvblox_output/gazebo_esdf_sage/ownership_oblique_20261016/maps/scan_20261016_124640_135de9",
+  "warmup_state": "READY",
+  "warmup_error": null,
+  "sensor_ready": true,
+  "wait_reason": "CAPTURING",
+  "metrics": {
+    "input_stamp": 717.05,
+    "queue_ms": 40.83527499460615,
+    "tf_ms": 3.8804840005468577,
+    "filter_ms": 11.992554005701095,
+    "gpu_wait_ms": 0.015112018445506692,
+    "native_esdf_ms": 3.708924981765449,
+    "free_field_ms": 40.304693015059456,
+    "receive_to_result_ms": 100.73715800535865,
+    "edt_recomputed": false,
+    "edt_backend": "cuda",
+    "observed_cells": 234322,
+    "tabletop_cells": 169116,
+    "scan_prior_cells": 0
+  },
+  "last_wait": {
+    "reason": "WAIT_TF_AT_IMAGE_TIME",
+    "sim_now": 715.45,
+    "image_stamps": [
+      715.45
+    ],
+    "joint_stamps": [
+      715.26,
+      715.27,
+      715.28,
+      715.29,
+      715.3,
+      715.31,
+      715.32,
+      715.33,
+      715.34,
+      715.35,
+      715.36,
+      715.37,
+      715.38,
+      715.39,
+      715.4,
+      715.41,
+      715.42,
+      715.43,
+      715.44,
+      715.45
+    ],
+    "joint_count": 2000,
+    "wall_time": 170152.349212946
+  },
+  "lease_age": 123.2340318080096,
+  "last_depth_stamp": 717.149,
+  "input_depth_age_s": 1.1368683772161603e-13,
+  "latest_joint_stamp": 831.7,
+  "sim_time": 831.7,
+  "stats": {
+    "rates_hz": {
+      "depth_received": 0.0,
+      "frames_overwritten": 0.0,
+      "fields_completed": 0.0,
+      "input_wait_attempts": 0.0,
+      "WAIT_TF_AT_IMAGE_TIME": 0.0,
+      "WAIT_IMAGE_CLOCK": 0.0,
+      "rejected_completed_field": 0.0,
+      "WAIT_JOINTS_AT_IMAGE_TIME": 0.0,
+      "stale_before_fusion": 0.0,
+      "WAIT_STATIONARY": 0.0
+    },
+    "totals": {
+      "depth_received": 2186,
+      "frames_overwritten": 1191,
+      "fields_completed": 315,
+      "input_wait_attempts": 112,
+      "WAIT_TF_AT_IMAGE_TIME": 25,
+      "WAIT_IMAGE_CLOCK": 7,
+      "rejected_completed_field": 24,
+      "WAIT_JOINTS_AT_IMAGE_TIME": 79,
+      "stale_before_fusion": 2,
+      "WAIT_STATIONARY": 1
+    },
+    "latency": {
+      "capture": {
+        "mean_ms": 484.68487115229465,
+        "p50_ms": 107.08507601520978,
+        "p95_ms": 2263.892504209071,
+        "max_ms": 2919.4391559867654
+      }
+    }
+  }
+}

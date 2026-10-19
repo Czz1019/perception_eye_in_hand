@@ -11,7 +11,9 @@
     voxel_size_m: 0.03
     tf_timeout_sec: 0.15
     max_frame_age_sec: 0.5
-    esdf_hz: 10.0
+    esdf_hz: 15.0
+    # dense preserves the existing fixed-grid interface; sparse exports native observed voxels.
+    esdf_output_mode: dense
     grid_resolution_m: 0.05
     grid_size_m: [2.0, 2.0, 1.5]
     grid_center_m: [0.0, 0.0, 0.5]

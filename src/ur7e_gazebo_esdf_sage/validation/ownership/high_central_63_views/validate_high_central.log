@@ -1,0 +1,23 @@
+{
+  "samples": 40731,
+  "capture_frames": 315,
+  "observations": 63,
+  "map_uid": "41269bc64c54580242b191a4af1d63d90016fb64bc835039239a06242e4bf510",
+  "min_measured_self_gap_m": 0.021381798390222494,
+  "min_measured_fixture_gap_m": 0.08754247802458756,
+  "min_planning_map_gap_m": null,
+  "max_tracking_error_rad": 0.03238211847354311,
+  "max_command_speed_rad_s": 0.24999993307714755,
+  "max_reaching_command_speed_rad_s": null,
+  "goals_reached": [],
+  "guide_checks": [],
+  "sage_feedback_steps": 0,
+  "unique_feedback_timestamps": 0,
+  "observed_cells": 306981,
+  "tabletop_cells": 137668,
+  "planning_policy": "depth_tabletop_columns_v1"
+}
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/validate_run.py", line 39, in <module>
+    assert goals and feedback,'No completed SAGE reaching'
+AssertionError: No completed SAGE reaching

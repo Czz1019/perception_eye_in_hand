@@ -1,0 +1,55 @@
+{"elapsed": 0.1, "status": null, "phase": null, "error": null}
+{"elapsed": 10.1, "status": null, "phase": null, "error": null}
+{"elapsed": 20.2, "status": "WAITING_FOR_MAP", "phase": null, "error": null}
+{"elapsed": 30.2, "status": "WAITING_FOR_MAP", "phase": null, "error": null}
+{"elapsed": 40.2, "status": "WAITING_FOR_MAP", "phase": null, "error": null}
+{"elapsed": 50.2, "status": "SCANNING", "phase": "SCANNING_2_OF_14", "error": 0.5400232303416196}
+{"elapsed": 60.2, "status": "SCANNING", "phase": "SCANNING_3_OF_14", "error": 0.5518006943837511}
+{"elapsed": 70.2, "status": "SCANNING", "phase": "SCANNING_3_OF_14", "error": 0.6106291451122873}
+{"elapsed": 80.2, "status": "SCANNING", "phase": "SCANNING_3_OF_14", "error": 0.6560526959388663}
+{"elapsed": 90.2, "status": "SCANNING", "phase": "SCANNING_4_OF_14", "error": 0.5428027035365444}
+{"elapsed": 100.2, "status": "STALE_MAP", "phase": "SCANNING_4_OF_14", "error": 0.5196490475482372}
+{"elapsed": 110.2, "status": "SCANNING", "phase": "SCANNING_4_OF_14", "error": 0.5190873299032811}
+{"elapsed": 120.2, "status": "STALE_MAP", "phase": "SCANNING_4_OF_14", "error": 0.5190853669257623}
+{"elapsed": 130.2, "status": "STALE_MAP", "phase": "SCANNING_4_OF_14", "error": 0.5190873299032805}
+{"elapsed": 140.3, "status": "STALE_MAP", "phase": "SCANNING_4_OF_14", "error": 0.5190853669257619}
+{"elapsed": 150.3, "status": "STALE_MAP", "phase": "SCANNING_4_OF_14", "error": 0.5190853669257622}
+{"elapsed": 160.3, "status": "STALE_MAP", "phase": "SCANNING_4_OF_14", "error": 0.5190853669257615}
+{"elapsed": 170.3, "status": "STALE_MAP", "phase": "SCANNING_4_OF_14", "error": 0.5190873299032803}
+{"elapsed": 180.3, "status": "STALE_MAP", "phase": "SCANNING_4_OF_14", "error": 0.5190873299032807}
+{"elapsed": 190.3, "status": "STALE_MAP", "phase": "SCANNING_4_OF_14", "error": 0.5190873299032815}
+{"elapsed": 200.3, "status": "SCANNING", "phase": "SCANNING_5_OF_14", "error": 0.44006537829334025}
+{"elapsed": 210.3, "status": "SCANNING", "phase": "SCANNING_6_OF_14", "error": 0.5091642995773136}
+{"elapsed": 220.3, "status": "SCANNING", "phase": "SCANNING_6_OF_14", "error": 0.6314594206256937}
+{"elapsed": 230.3, "status": "SCANNING", "phase": "SCANNING_7_OF_14", "error": 0.5330818653070372}
+{"elapsed": 240.3, "status": "SCANNING", "phase": "SCANNING_7_OF_14", "error": 0.4532948242598958}
+{"elapsed": 250.3, "status": "STALE_MAP", "phase": "SCANNING_7_OF_14", "error": 0.4485672888272064}
+{"elapsed": 260.3, "status": "STALE_MAP", "phase": "SCANNING_7_OF_14", "error": 0.4485672888272062}
+{"elapsed": 270.3, "status": "STALE_MAP", "phase": "SCANNING_7_OF_14", "error": 0.4485672888272062}
+{"elapsed": 280.3, "status": "STALE_MAP", "phase": "SCANNING_7_OF_14", "error": 0.44856728882720653}
+{"elapsed": 290.3, "status": "STALE_MAP", "phase": "SCANNING_7_OF_14", "error": 0.4485672888272062}
+{"elapsed": 300.3, "status": "STALE_MAP", "phase": "SCANNING_7_OF_14", "error": 0.4485672888272062}
+{"elapsed": 310.3, "status": "STALE_MAP", "phase": "SCANNING_7_OF_14", "error": 0.4485672888272064}
+{"elapsed": 320.3, "status": "SCANNING", "phase": "SCANNING_7_OF_14", "error": 0.44856728882720615}
+{"elapsed": 330.4, "status": "STALE_MAP", "phase": "SCANNING_7_OF_14", "error": 0.4485672888272062}
+{"elapsed": 340.4, "status": "SCANNING", "phase": "SCANNING_8_OF_14", "error": 0.42367460573543053}
+{"elapsed": 350.4, "status": "SCANNING", "phase": "SCANNING_9_OF_14", "error": 0.4554204094431232}
+{"elapsed": 360.4, "status": "SCANNING", "phase": "SCANNING_10_OF_14", "error": 0.5026160503372628}
+{"elapsed": 370.4, "status": "SCANNING", "phase": "SCANNING_10_OF_14", "error": 0.4696794945367026}
+{"elapsed": 380.4, "status": "SCANNING", "phase": "SCANNING_11_OF_14", "error": 0.4953621631156833}
+{"elapsed": 390.4, "status": "STALE_MAP", "phase": "SCANNING_11_OF_14", "error": 0.49657710667006366}
+{"elapsed": 400.4, "status": "STALE_MAP", "phase": "SCANNING_11_OF_14", "error": 0.49691654367726357}
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_perception_planning/test/validate_demo.py", line 48, in <module>
+    rclpy.spin_once(node,timeout_sec=.1)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 208, in spin_once
+    executor.spin_once(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 762, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 745, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 488, in _wait_for_ready_callbacks
+    def _wait_for_ready_callbacks(
+KeyboardInterrupt

@@ -1,0 +1,26 @@
+F...........                                                             [100%]
+=================================== FAILURES ===================================
+____________ test_two_distinct_views_required_and_ray_vs_inference _____________
+
+    def test_two_distinct_views_required_and_ray_vs_inference():
+        f,intr=setup();d,s=update(f,intr)
+        assert not np.any(s==2)
+        for _ in range(3):d,s=update(f,intr)
+        assert not np.any(s==2),'Repeated frames are not distinct viewpoints'
+        d,s=update(f,intr,tx=.08)
+        assert s[index(f,[0,0,1.2])]==2,'Above-camera freedom must come from tabletop evidence'
+        assert s[index(f,[0,0,.5])]==1
+>       assert s[index(f,[.48,.48,1.2])]==0,'Uncovered footprint cannot be extrapolated'
+E       AssertionError: Uncovered footprint cannot be extrapolated
+E       assert 2 == 0
+
+src/ur7e_gazebo_esdf_sage/test/test_tabletop.py:40: AssertionError
+=============================== warnings summary ===============================
+../../../opt/ros/humble/local/lib/python3.10/dist-packages/xacro/__init__.py:115
+  /opt/ros/humble/local/lib/python3.10/dist-packages/xacro/__init__.py:115: DeprecationWarning: private variables, such as '_ConstructUnits__ConstructUnitsValue', will be normal attributes in 3.11
+    __ConstructUnitsValue = collections.namedtuple('__ConstructUnitsValue', ['tag', 'conversion_constant'])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED src/ur7e_gazebo_esdf_sage/test/test_tabletop.py::test_two_distinct_views_required_and_ray_vs_inference
+1 failed, 11 passed, 1 warning in 17.86s

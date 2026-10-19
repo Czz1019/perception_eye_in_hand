@@ -1,0 +1,233 @@
+[
+  {
+    "kind": "ready",
+    "trial": "waiting",
+    "sim_time": 681.75,
+    "map_uid": "b5097b0df551b997ec73c1ab0050ff8e3eba64987988adc7554c46de857b0c1e",
+    "seed_tool": [
+      -0.009662141632383894,
+      -0.31249701377609795,
+      0.9494951758151745
+    ]
+  },
+  {
+    "kind": "spawn_requested",
+    "trial": "crossing",
+    "sim_time": 681.75,
+    "center": [
+      0.25,
+      -0.375,
+      0.675
+    ],
+    "size": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "initial_gap_m": 0.1633798098491816
+  },
+  {
+    "kind": "spawned",
+    "trial": "crossing",
+    "sim_time": 681.9350000000001
+  },
+  {
+    "kind": "sensor_detected",
+    "trial": "crossing",
+    "sim_time": 682.25,
+    "cells": 154
+  },
+  {
+    "kind": "crossing_begin",
+    "trial": "crossing",
+    "sim_time": 684.25
+  },
+  {
+    "kind": "target",
+    "trial": "crossing",
+    "sim_time": 684.25,
+    "xyz": [
+      0.4,
+      -0.12,
+      0.5
+    ]
+  },
+  {
+    "kind": "crossing_end",
+    "trial": "crossing",
+    "sim_time": 698.755,
+    "position": [
+      0.25,
+      -0.520000000000034,
+      0.675
+    ],
+    "status": {
+      "run_id": "/home/wqj/nvblox_output/gazebo_esdf_sage/moving_stage2_r4",
+      "online": {
+        "version": 105,
+        "frames": 157,
+        "stamp": 697.817,
+        "occupied_cells": 178,
+        "error": null
+      },
+      "planning_policy": "bounded_unknown",
+      "phase": "WAIT_DYNAMIC",
+      "error": "ONLINE_MAP_STALE",
+      "view": 62,
+      "sage_iterations": 0,
+      "map_uid": "b5097b0df551b997ec73c1ab0050ff8e3eba64987988adc7554c46de857b0c1e",
+      "frames": 315,
+      "map_frozen": true,
+      "capture_wait": "CAPTURING",
+      "capture_error": null,
+      "model": "measured real camera extrinsics",
+      "mode": "B: actual-feedback rolling SAGE",
+      "stopped": false
+    }
+  },
+  {
+    "kind": "crossing_reached",
+    "trial": "crossing",
+    "sim_time": 755.75,
+    "status": {
+      "run_id": "/home/wqj/nvblox_output/gazebo_esdf_sage/moving_stage2_r4",
+      "online": {
+        "version": 127,
+        "frames": 650,
+        "stamp": 755.707,
+        "occupied_cells": 194,
+        "error": null
+      },
+      "planning_policy": "bounded_unknown",
+      "phase": "GOAL_REACHED",
+      "error": null,
+      "view": 62,
+      "sage_iterations": 151,
+      "map_uid": "b5097b0df551b997ec73c1ab0050ff8e3eba64987988adc7554c46de857b0c1e",
+      "frames": 315,
+      "map_frozen": true,
+      "capture_wait": "CAPTURING",
+      "capture_error": null,
+      "model": "measured real camera extrinsics",
+      "mode": "B: actual-feedback rolling SAGE",
+      "stopped": false
+    }
+  },
+  {
+    "kind": "deleted",
+    "trial": "crossing",
+    "sim_time": 755.955
+  },
+  {
+    "kind": "target",
+    "trial": "return",
+    "sim_time": 758.955,
+    "xyz": [
+      -0.009662141632383894,
+      -0.31249701377609795,
+      0.9494951758151745
+    ]
+  },
+  {
+    "kind": "returned",
+    "trial": "return",
+    "sim_time": 786.005
+  },
+  {
+    "kind": "spawn_requested",
+    "trial": "blocked",
+    "sim_time": 786.005,
+    "center": [
+      0.4,
+      -0.12,
+      0.5
+    ],
+    "size": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "initial_gap_m": 0.1383081253480184
+  },
+  {
+    "kind": "spawned",
+    "trial": "blocked",
+    "sim_time": 786.215
+  },
+  {
+    "kind": "sensor_detected",
+    "trial": "blocked",
+    "sim_time": 786.5,
+    "cells": 160
+  },
+  {
+    "kind": "target",
+    "trial": "blocked",
+    "sim_time": 789.5,
+    "xyz": [
+      0.4,
+      -0.12,
+      0.5
+    ]
+  },
+  {
+    "kind": "blocked_hold",
+    "trial": "blocked",
+    "sim_time": 792.75,
+    "range_rad": 0.0
+  },
+  {
+    "kind": "unblocking_begin",
+    "trial": "blocked",
+    "sim_time": 792.75
+  },
+  {
+    "kind": "unblocking_end",
+    "trial": "blocked",
+    "sim_time": 820.755,
+    "position": [
+      0.4,
+      0.16000000000000542,
+      0.5
+    ]
+  },
+  {
+    "kind": "resumed_reached",
+    "trial": "blocked",
+    "sim_time": 860.75,
+    "status": {
+      "run_id": "/home/wqj/nvblox_output/gazebo_esdf_sage/moving_stage2_r4",
+      "online": {
+        "version": 468,
+        "frames": 1573,
+        "stamp": 860.708,
+        "occupied_cells": 157,
+        "error": null
+      },
+      "planning_policy": "bounded_unknown",
+      "phase": "GOAL_REACHED",
+      "error": null,
+      "view": 62,
+      "sage_iterations": 444,
+      "map_uid": "b5097b0df551b997ec73c1ab0050ff8e3eba64987988adc7554c46de857b0c1e",
+      "frames": 315,
+      "map_frozen": true,
+      "capture_wait": "CAPTURING",
+      "capture_error": null,
+      "model": "measured real camera extrinsics",
+      "mode": "B: actual-feedback rolling SAGE",
+      "stopped": false
+    }
+  },
+  {
+    "kind": "deleted",
+    "trial": "blocked",
+    "sim_time": 861.0600000000001
+  },
+  {
+    "kind": "complete",
+    "trial": "blocked",
+    "sim_time": 861.0600000000001,
+    "passed": true
+  }
+]

@@ -31,14 +31,14 @@ def _setup(context):
     document = xacro.process_file(str(share / "urdf/ur7e_d435.urdf.xacro"), mappings={
         'initial_positions_file': str(reconstruction / 'config/high_initial_positions.yaml')})
     for sensor in document.getElementsByTagName('sensor'):
-        rate = 10 if sensor.getAttribute('name') == 'cameradepth' else (5 if sensor.getAttribute('name') == 'cameracolor' else 1)
+        rate = 10 if sensor.getAttribute('name') == 'cameradepth' else 1
         for element in sensor.getElementsByTagName('update_rate'):
             element.firstChild.nodeValue = str(rate)
         for element in sensor.getElementsByTagName('width'):
             element.firstChild.nodeValue = '320'
         for element in sensor.getElementsByTagName('height'):
             element.firstChild.nodeValue = '180'
-    for tag, value in [('depthUpdateRate', '10'), ('colorUpdateRate', '5'), ('pointCloud', 'false')]:
+    for tag, value in [('depthUpdateRate', '10'), ('colorUpdateRate', '1'), ('pointCloud', 'false')]:
         for element in document.getElementsByTagName(tag):
             element.firstChild.nodeValue = value
     _remove_comments(document)

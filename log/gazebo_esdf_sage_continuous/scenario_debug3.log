@@ -1,0 +1,39 @@
+{'kind': 'ready', 'trial': 'waiting', 'sim_time': 28.750000000000004, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'seed_tool': [-0.009659804775463271, -0.3124950787660742, 0.9494869803688379]}
+{'kind': 'spawn_requested', 'trial': 'crossing', 'sim_time': 28.750000000000004, 'center': [0.25, -0.375, 0.675], 'size': [0.08, 0.08, 0.08], 'initial_gap_m': 0.163379519748536}
+{'kind': 'spawned', 'trial': 'crossing', 'sim_time': 28.860000000000003}
+{'kind': 'sensor_detected', 'trial': 'crossing', 'sim_time': 29.000000000000004, 'cells': 154}
+{'kind': 'crossing_begin', 'trial': 'crossing', 'sim_time': 31.000000000000004}
+{'kind': 'target', 'trial': 'crossing', 'sim_time': 31.000000000000004, 'xyz': [0.4, -0.12, 0.5]}
+{'kind': 'crossing_end', 'trial': 'crossing', 'sim_time': 45.52, 'position': [0.25, -0.5201000000000335, 0.675], 'status': {'run_id': '/home/wqj/nvblox_output/gazebo_esdf_sage_continuous/debug3', 'online': {'version': 32, 'frames': 431, 'stamp': 45.445, 'occupied_cells': 189, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'REACHING', 'error': None, 'view': None, 'sage_iterations': 360, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'frames': 315, 'map_frozen': True, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'continuous final-goal SAGE with asynchronous checked execution', 'stopped': False}}
+{'kind': 'crossing_reached', 'trial': 'crossing', 'sim_time': 58.255, 'status': {'run_id': '/home/wqj/nvblox_output/gazebo_esdf_sage_continuous/debug3', 'online': {'version': 32, 'frames': 556, 'stamp': 58.144, 'occupied_cells': 189, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'GOAL_REACHED', 'error': None, 'view': None, 'sage_iterations': 676, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'frames': 315, 'map_frozen': True, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'continuous final-goal SAGE with asynchronous checked execution', 'stopped': False}}
+{'kind': 'deleted', 'trial': 'crossing', 'sim_time': 58.49}
+{'kind': 'target', 'trial': 'return', 'sim_time': 61.49, 'xyz': [-0.009659804775463271, -0.3124950787660742, 0.9494869803688379]}
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage_continuous/test/moving_scenario.py", line 92, in <module>
+    trial='return';goal(seed_tool);pause(1);wait(lambda s:s.get('phase')=='GOAL_REACHED',240);record('returned')
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage_continuous/test/moving_scenario.py", line 52, in wait
+    rclpy.spin_once(node,timeout_sec=.02)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 208, in spin_once
+    executor.spin_once(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 762, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 745, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 642, in _wait_for_ready_callbacks
+    wait_set.wait(timeout_nsec)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage_continuous/test/moving_scenario.py", line 107, in <module>
+    truth.close();node.destroy_node();rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

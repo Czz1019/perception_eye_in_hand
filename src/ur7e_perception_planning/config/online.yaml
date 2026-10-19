@@ -11,7 +11,9 @@
     voxel_size_m: 0.025
     tf_timeout_sec: 0.15
     max_frame_age_sec: 1.5
-    esdf_hz: 4.0
+    esdf_hz: 10.0
+    free_space_backend: cuda
+    free_space_update_hz: 5.0
     grid_resolution_m: 0.03
     grid_size_m: [1.8, 1.8, 1.5]
     grid_center_m: [0.0, 0.0, 0.6]

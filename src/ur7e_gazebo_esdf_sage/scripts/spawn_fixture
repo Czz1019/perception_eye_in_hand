@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+"""Static test fixture; dimensions are not published to the planner."""
+import rclpy
+from gazebo_msgs.srv import SpawnEntity
+from std_msgs.msg import String
+from rclpy.qos import QoSProfile, DurabilityPolicy
+
+def main():
+    rclpy.init();node=rclpy.create_node('spawn_esdf_sage_fixture')
+    client=node.create_client(SpawnEntity,'/spawn_entity')
+    if not client.wait_for_service(timeout_sec=90):raise RuntimeError('Gazebo spawn service unavailable')
+    for name,xyz,shape,color in [
+        ('esdf_wall_positive',[.50,.20,.23],'<box><size>0.24 0.10 0.46</size></box>','0.85 0.25 0.15 1'),
+        ('esdf_wall_negative',[.50,-.28,.23],'<box><size>0.24 0.10 0.46</size></box>','0.85 0.55 0.15 1'),
+        ('esdf_sphere',[.65,0,.1],'<sphere><radius>0.1</radius></sphere>','0.15 0.35 0.85 1')]:
+        xml=f'''<sdf version="1.6"><model name="{name}"><static>true</static><link name="body"><collision name="collision"><geometry>{shape}</geometry></collision><visual name="visual"><geometry>{shape}</geometry><material><ambient>{color}</ambient><diffuse>{color}</diffuse></material></visual></link></model></sdf>'''
+        req=SpawnEntity.Request();req.name=name;req.xml=xml;req.initial_pose.position.x=float(xyz[0]);req.initial_pose.position.y=float(xyz[1]);req.initial_pose.position.z=float(xyz[2]);req.initial_pose.orientation.w=1.
+        fut=client.call_async(req);rclpy.spin_until_future_complete(node,fut,timeout_sec=90)
+        if fut.result() is None or not fut.result().success:raise RuntimeError(str(fut.result()))
+        node.get_logger().info('Spawned '+name)
+    publisher=node.create_publisher(String,'/sim_esdf_sage/fixture_ready',QoSProfile(depth=1,durability=DurabilityPolicy.TRANSIENT_LOCAL))
+    publisher.publish(String(data='esdf_sage_fixture_v1'))
+    try:rclpy.spin(node)
+    except KeyboardInterrupt:pass
+    node.destroy_node()
+    if rclpy.ok():rclpy.shutdown()
+
+if __name__=='__main__':main()

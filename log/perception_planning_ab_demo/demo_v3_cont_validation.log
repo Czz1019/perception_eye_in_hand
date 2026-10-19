@@ -1,0 +1,69 @@
+{"elapsed": 0.0, "status": null, "phase": null, "error": null}
+{"elapsed": 10.0, "status": "SCANNING", "phase": "SCANNING_11_OF_11", "error": 0.6435798737412809}
+{"elapsed": 20.0, "status": "SCANNING", "phase": "SCANNING_11_OF_11", "error": 0.5549579848493529}
+{"elapsed": 30.0, "status": "GOAL_NOT_OBSERVED_OR_BLOCKED", "phase": "REACHING", "error": 0.5152656438519441}
+{"elapsed": 40.0, "status": "GOAL_NOT_OBSERVED_OR_BLOCKED", "phase": "REACHING", "error": 0.5152676305846574}
+{"elapsed": 50.0, "status": "STALE_MAP", "phase": "REACHING", "error": 0.515267630584657}
+{"elapsed": 60.1, "status": "STALE_MAP", "phase": "REACHING", "error": 0.5152676305846572}
+{"elapsed": 70.1, "status": "STALE_MAP", "phase": "REACHING", "error": 0.5152676305846566}
+{"elapsed": 80.1, "status": "STALE_MAP", "phase": "REACHING", "error": 0.5152656438519444}
+{"elapsed": 90.1, "status": "STALE_MAP", "phase": "REACHING", "error": 0.5152656438519444}
+{"elapsed": 100.1, "status": "STALE_MAP", "phase": "REACHING", "error": 0.5152656438519444}
+{"elapsed": 110.1, "status": "GOAL_NOT_OBSERVED_OR_BLOCKED", "phase": "REACHING", "error": 0.5152676305846575}
+{"elapsed": 120.1, "status": "GOAL_NOT_OBSERVED_OR_BLOCKED", "phase": "REACHING", "error": 0.5152676305846575}
+{"elapsed": 130.2, "status": "GOAL_NOT_OBSERVED_OR_BLOCKED", "phase": "REACHING", "error": 0.5152656438519434}
+{"elapsed": 140.2, "status": "GOAL_NOT_OBSERVED_OR_BLOCKED", "phase": "REACHING", "error": 0.5152676305846572}
+{"elapsed": 150.2, "status": "GOAL_NOT_OBSERVED_OR_BLOCKED", "phase": "REACHING", "error": 0.5152676305846573}
+{"elapsed": 160.2, "status": "GOAL_NOT_OBSERVED_OR_BLOCKED", "phase": "REACHING", "error": 0.5152676305846572}
+{"elapsed": 170.2, "status": "STALE_MAP", "phase": "REACHING", "error": 0.5152656438519438}
+{"elapsed": 180.2, "status": "STALE_MAP", "phase": "REACHING", "error": 0.5152656438519443}
+{"elapsed": 190.2, "status": "STALE_MAP", "phase": "REACHING", "error": 0.5152656438519443}
+{"elapsed": 200.2, "status": "STALE_MAP", "phase": "REACHING", "error": 0.5152676305846567}
+{"elapsed": 210.2, "status": "STALE_MAP", "phase": "REACHING", "error": 0.5152656438519433}
+{"elapsed": 220.2, "status": "GOAL_NOT_OBSERVED_OR_BLOCKED", "phase": "REACHING", "error": 0.5152676305846567}
+{"elapsed": 230.2, "status": "GOAL_NOT_OBSERVED_OR_BLOCKED", "phase": "REACHING", "error": 0.5152676305846571}
+{
+  "passed": false,
+  "checks": {
+    "goal_reached": false,
+    "no_runtime_error": true,
+    "online_map_updates": true,
+    "collision_model_clear": true,
+    "sage_used": true
+  },
+  "duration": 240.0012378100073,
+  "latest": {
+    "status": "GOAL_NOT_OBSERVED_OR_BLOCKED",
+    "demo_phase": "REACHING",
+    "scan_index": 11,
+    "guard": "STALE_PLAN",
+    "enabled": true,
+    "error": null,
+    "plans": 1621,
+    "sage_optimizations": 1621,
+    "plan_ms": 62.80595500720665,
+    "minimum_clearance": null,
+    "optimize_ms": 61.21716904453933,
+    "admission_ms": 1.1968959588557482,
+    "accepted_commands": 7848,
+    "guard_rejections": 0,
+    "command_source": "sage_scan",
+    "map_sequence": 830,
+    "map_epoch": 1789903126677877060,
+    "last_plan_map": 527,
+    "map_age_sim": 0.01700000000005275,
+    "goal": [
+      0.5,
+      0.0,
+      0.45
+    ],
+    "ee": [
+      0.218336709793298,
+      0.15183534693506023,
+      0.8538694121931033
+    ],
+    "goal_error": 0.5152656438519433
+  },
+  "min_geometry_clearance": 0.0879,
+  "map_rate": 1.4415920635337007
+}

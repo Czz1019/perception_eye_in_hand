@@ -1,0 +1,33 @@
+{
+  "observations": [
+    {
+      "name": "S01",
+      "epoch": 8,
+      "frames": 8,
+      "session": "/home/wqj/realtime_nvblox_ws/src/ur7e_auto_reconstruction/validation/capture_fix/faults/map_145710.908853361"
+    }
+  ],
+  "motion_segments": [
+    {
+      "waypoint": "S01",
+      "sample_start": 0,
+      "sample_end": 621,
+      "error": null,
+      "cleanup_errors": [],
+      "diagnostics": {
+        "max_interval_sec": 0.01231799999368377,
+        "last_cycle_sec": {
+          "period": 2.9542017728090286e-05,
+          "feedback": 5.436199717223644e-05,
+          "compute": 0.00041148599120788276,
+          "send": 1.3251003110781312e-05,
+          "record_and_wait": 0.0017222219903487712
+        },
+        "fault": null
+      }
+    }
+  ],
+  "phase": "ERROR",
+  "error": "Robot position drifted while stationary; prepare again",
+  "waypoint": "S02"
+}

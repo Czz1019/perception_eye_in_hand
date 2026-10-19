@@ -3,6 +3,7 @@ import csv
 import json
 import threading
 import time
+from collections import deque
 from pathlib import Path
 import numpy as np
 import torch
@@ -39,6 +40,16 @@ def check_segment(geometry, snapshot, start, end, margin=.025):
     count = max(2, int(np.ceil(np.max(np.abs(delta))/.003))+1,
                 int(np.ceil(1.4*np.sum(np.abs(delta))/.002))+1)
     swept_padding = 1.4*np.sum(np.abs(delta))/(2*(count-1))
+    if hasattr(geometry, 'spheres_batch'):
+        centers = geometry.spheres_batch(np.linspace(start, end, count))
+        minimum = float(np.min(snapshot.query(centers)-geometry.radii))
+        if minimum < margin+swept_padding:
+            return False, minimum, 'esdf_or_unknown'
+        if np.min(geometry.self_clearance_batch(centers)) < .008+2*swept_padding:
+            return False, minimum, 'self_collision'
+        if np.min(centers[..., 2]-geometry.radii) < margin+swept_padding:
+            return False, minimum, 'floor'
+        return True, minimum, 'clear'
     minimum = float('inf')
     for alpha in np.linspace(0, 1, count):
         centers = geometry.spheres(start+alpha*delta)
@@ -54,11 +65,13 @@ def check_segment(geometry, snapshot, start, end, margin=.025):
 
 
 class Planner(Node):
-    def __init__(self):
+    def __init__(self, receive_maps=True):
         super().__init__('perception_planner')
         defaults = dict(max_joint_speed=.08, planning_dt=.1, servo_hz=50., map_timeout_wall=3.,
                         map_timeout_sim=.8, joint_timeout_wall=.5, command_timeout_wall=1.5,
                         collision_margin=.015, particles=384, autostart=True,
+                        demo_mode=False, demo_goal=[.5, 0., .45],
+                        adaptive_speed=False,
                         goal_offset=[-.06, -.06, 0.], output_directory='~/nvblox_output/perception_planning')
         self.cfg = {k: self.declare_parameter(k, v).value for k, v in defaults.items()}
         self.geometry = RobotGeometry()
@@ -66,6 +79,7 @@ class Planner(Node):
         self.stop = threading.Event()
         self.state = None
         self.snapshot = None
+        self.map_delays = deque(maxlen=8)
         self.goal = None
         self.target = None
         self.q_command = None
@@ -91,8 +105,9 @@ class Planner(Node):
         self.tf_buffer = Buffer(cache_time=Duration(seconds=10), node=self)
         self.tf_listener = TransformListener(self.tf_buffer, self)
         best = QoSProfile(depth=1, reliability=ReliabilityPolicy.BEST_EFFORT)
-        self.create_subscription(PlanningMap, '/perception_planning/map', self.on_map,
-                                 QoSProfile(depth=1, reliability=ReliabilityPolicy.RELIABLE))
+        if receive_maps:
+            self.create_subscription(PlanningMap, '/perception_planning/map', self.on_map,
+                                     QoSProfile(depth=1, reliability=ReliabilityPolicy.RELIABLE))
         self.create_subscription(JointState, '/joint_states', self.on_state, best)
         self.create_subscription(PoseStamped, '/target_pose', self.on_goal, 1)
         self.pub_command = self.create_publisher(Float64MultiArray, '/forward_position_controller/commands', 1)
@@ -135,19 +150,27 @@ class Planner(Node):
 
     def on_map(self, msg):
         try:
-            snapshot = Snapshot.from_message(msg)
-            now = self.get_clock().now().nanoseconds*1e-9
-            if abs(now-snapshot.stamp) > self.cfg['map_timeout_sim']:
-                return
-            with self.lock:
-                if self.snapshot is not None and snapshot.epoch == self.snapshot.epoch and snapshot.sequence <= self.snapshot.sequence:
-                    return
-                if self.last_map_epoch != snapshot.epoch:
-                    self.target = None; self.generation += 1
-                self.last_map_epoch = snapshot.epoch
-                self.snapshot = snapshot
+            self.on_snapshot(Snapshot.from_message(msg))
         except ValueError as exc:
             self.get_logger().warning(str(exc), throttle_duration_sec=5)
+
+    def on_snapshot(self, snapshot):
+        """Accept an owned snapshot, from the mapper or validated ROS decoding."""
+        now = self.get_clock().now().nanoseconds*1e-9
+        if abs(now-snapshot.stamp) > self.cfg['map_timeout_sim']:
+            return
+        with self.lock:
+            if self.snapshot is not None and snapshot.epoch == self.snapshot.epoch and snapshot.sequence <= self.snapshot.sequence:
+                return
+            if self.last_map_epoch != snapshot.epoch:
+                self.target = None; self.generation += 1
+                if hasattr(self, 'map_delays'):
+                    self.map_delays.clear()
+            if hasattr(self, 'map_delays'):
+                interval = 0. if self.snapshot is None else max(0., snapshot.received-self.snapshot.received)
+                self.map_delays.append(max(abs(now-snapshot.stamp), interval))
+            self.last_map_epoch = snapshot.epoch
+            self.snapshot = snapshot
 
     def on_goal(self, msg):
         p = np.array([msg.pose.position.x, msg.pose.position.y, msg.pose.position.z])
@@ -187,12 +210,28 @@ class Planner(Node):
             return 'STALE_MAP'
         return None
 
+    def speed_limit(self, snapshot):
+        if not self.cfg['adaptive_speed']:
+            return self.cfg['max_joint_speed']
+        from .speed import latency_speed
+        with self.lock:
+            delays = list(self.map_delays)
+        now = self.get_clock().now().nanoseconds*1e-9
+        age = float('inf') if snapshot is None else max(abs(now-snapshot.stamp), time.monotonic()-snapshot.received)
+        return latency_speed(self.cfg['max_joint_speed'], age, delays, self.plan_ms)
+
     def plan_loop(self):
         try:
-            torch.set_num_threads(2)
+            torch.set_num_threads(1 if self.cfg['demo_mode'] else 2)
             with GPU_LOCK:
-                task = build_task(self.run_dir, self.cfg['planning_dt'], self.cfg['particles'])
+                task = build_task(self.run_dir, self.cfg['planning_dt'], self.cfg['particles'],
+                                  velocity_control=self.cfg['demo_mode'],
+                                  max_joint_speed=self.cfg['max_joint_speed'])
             self.task = task
+            if self.cfg['demo_mode']:
+                from .demo import run_demo
+                run_demo(self, task)
+                return
             rollout = task.controller.rollout_fn
             hold_generation, hold_position = None, None
             while not self.stop.is_set():
@@ -297,7 +336,8 @@ class Planner(Node):
                     self.minimum = None
                     self.guard_reason = reason
                 else:
-                    step = np.clip(target[0]-self.q_command, -self.cfg['max_joint_speed']*dt, self.cfg['max_joint_speed']*dt)
+                    speed = self.speed_limit(snapshot)
+                    step = np.clip(target[0]-self.q_command, -speed*dt, speed*dt)
                     candidate = self.q_command+step
                     ok, minimum, why = check_segment(self.geometry, snapshot, q, candidate, self.cfg['collision_margin'])
                     self.minimum = minimum
@@ -321,6 +361,10 @@ class Planner(Node):
         state, snapshot, goal, generation = self.inputs()
         sim = self.get_clock().now().nanoseconds*1e-9
         record = dict(status=self.freshness(state, snapshot) or self.status,
+                      demo_phase=getattr(self, 'demo_phase', None), scan_index=getattr(self, 'scan_index', None),
+                      completed_views=getattr(self, 'completed_views', 0),
+                      speed_limit=self.speed_limit(snapshot),
+                      route_waypoints=getattr(self, 'route_waypoints', 0),
                       guard=self.guard_reason, enabled=self.enabled, error=self.error,
                       plans=self.plan_count, sage_optimizations=self.sage_count, plan_ms=self.plan_ms, minimum_clearance=self.minimum,
                       optimize_ms=self.optimize_ms, admission_ms=self.admission_ms,

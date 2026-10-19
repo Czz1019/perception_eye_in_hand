@@ -22,7 +22,7 @@ from std_srvs.srv import Trigger
 from tf2_ros import Buffer, TransformException, TransformListener
 
 from realtime_nvblox.latest_slot import LatestSlot
-from realtime_nvblox.nvblox_backend import NvbloxBackend
+from ur7e_nvblox.esdf import EfficientBackend as NvbloxBackend
 from realtime_nvblox.ros_publishers import esdf_cloud, pose_stamped
 from realtime_nvblox.stats import RuntimeStats
 from ur7e_nvblox.depth import (
@@ -41,7 +41,7 @@ class TfMapper(Node):
             'tf_timeout_sec': 0.15, 'max_frame_age_sec': 0.5, 'esdf_hz': 10.0,
             'grid_resolution_m': 0.05, 'grid_size_m': [2.0, 2.0, 1.5],
             'grid_center_m': [0.0, 0.0, 0.5], 'max_visualized_distance_m': 0.5,
-            'full_grid_reliable': True,
+            'full_grid_reliable': True, 'esdf_output_mode': 'dense',
             'output_directory': '~/nvblox_output/ur7e_sim',
         }
         self.cfg = {key: self.declare_parameter(key, value).value for key, value in defaults.items()}
@@ -91,6 +91,8 @@ class TfMapper(Node):
 
     def _validate_config(self):
         c = self.cfg
+        if c['esdf_output_mode'] not in ('dense','sparse'):
+            raise ValueError('esdf_output_mode must be dense or sparse')
         for name in ('max_depth_m', 'voxel_size_m', 'tf_timeout_sec', 'max_frame_age_sec',
                      'esdf_hz', 'grid_resolution_m', 'max_visualized_distance_m'):
             if not np.isfinite(c[name]) or c[name] <= 0:
@@ -200,7 +202,8 @@ class TfMapper(Node):
                             'voxel_size_m': self.cfg['voxel_size_m'],
                             'max_integration_distance_m': self.cfg['max_depth_m'],
                         })
-                        self._backend.prepare_esdf_grid(self.grid)
+                        if self.cfg['esdf_output_mode']=='dense':
+                            self._backend.prepare_fixed_grid(self.cfg['grid_center_m'],self.grid)
                         self._backend_intrinsics, active_epoch = intr, epoch
                         next_esdf = 0.0
                         self.stats.inc('map_initialized')
@@ -219,9 +222,15 @@ class TfMapper(Node):
                     if time.monotonic() < next_esdf:
                         continue
                     backend.update_esdf()
-                    points, distances = backend.query_esdf_grid(self.cfg['grid_center_m'], self.grid)
+                    queried = time.perf_counter()
+                    if self.cfg['esdf_output_mode']=='sparse':
+                        points, distances = backend.observed_esdf_numpy()
+                    else:
+                        points, distances = backend.query_points, backend.query_prepared()
+                    self.stats.add_latency('query_readback', (time.perf_counter()-queried)*1000)
                     known = known_distances(distances, backend.esdf_unknown_distance)
                     summary = {
+                        'output_mode': self.cfg['esdf_output_mode'],
                         'input_stamp_ns': ns, 'known_cells': int(known.sum()),
                         'total_cells': int(len(distances)), 'map_epoch': epoch,
                         'unknown_distance_m': float(backend.esdf_unknown_distance),
@@ -235,7 +244,7 @@ class TfMapper(Node):
                 self.stats.inc('esdf_updated')
                 self.stats.add_latency('fusion_and_esdf', (time.perf_counter() - started) * 1000)
                 self.results.put((epoch, ns, pose, points, distances, summary))
-                next_esdf = time.monotonic() + 1.0 / self.cfg['esdf_hz']
+                next_esdf = started + 1.0 / self.cfg['esdf_hz']
         except Exception as exc:
             self._worker_error('Mapping', exc)
 
@@ -271,8 +280,9 @@ class TfMapper(Node):
         self._summary = summary
         unknown = summary['unknown_distance_m']
         max_d = self.cfg['max_visualized_distance_m']
-        self.cloud_pub.publish(esdf_cloud(points, distances, self.world, ns, max_d,
-                                         full_grid=True, unknown_distance_m=unknown))
+        if self.cloud_pub.get_subscription_count():
+            self.cloud_pub.publish(esdf_cloud(points, distances, self.world, ns, max_d,
+                                             full_grid=True, unknown_distance_m=unknown))
         if self.observed_pub.get_subscription_count():
             self.observed_pub.publish(esdf_cloud(points, distances, self.world, ns, max_d,
                                                 unknown_distance_m=unknown))

@@ -51,14 +51,52 @@ def observed_free(points, depth, pose, intr, padding):
     return free
 
 
-def conservative_field(raw, known, free_source, points, dims, resolution):
+def integration_depth(ray_depth, maximum):
+    """Keep only surfaces inside the fusion range; never invent a capped surface.
+
+    A valid farther return can still prove that a nearby ray segment is free.
+    Its original range must therefore remain available to observed_free().
+    """
+    depth = ray_depth.copy()
+    depth[depth > maximum] = 0.
+    return depth
+
+
+def conservative_field(raw, known, free_source, points, dims, resolution, cache=None, min_interval=0.):
     free = free_source > 0
     # A measured obstacle always overrides an initial clearance prior or old rays.
     free[known & (raw <= .02)] = False
     free[points[:, 2] <= 0.] = False  # fixed support plane, not scene obstacle geometry
     shape = tuple(dims[::-1])
-    padded = np.pad(free.reshape(shape), 1, constant_values=False)
-    distance = distance_transform_edt(padded)[1:-1, 1:-1, 1:-1].reshape(-1) * resolution
+    geometry_key = (*map(int, dims), float(resolution))
+    cached = cache is not None and cache.get('geometry') == geometry_key
+    unchanged = cached and np.array_equal(free, cache['free'])
+    # Reuse an older, smaller free set only: its EDT is a LOWER bound. A newly
+    # blocked cached-free cell forces immediate recomputation, regardless of rate.
+    deferred = (cached and not unchanged and min_interval>0
+                and time.monotonic()-cache.get('updated_at',0.)<min_interval
+                and not np.any(cache['free'] & ~free))
+    if unchanged or deferred:
+        distance = cache['distance'].copy()
+        cache.update(recomputed=False, deferred=bool(deferred))
+    else:
+        # Outside the free bounding box the EDT is zero. Cropping with a zero
+        # border gives exactly the same Euclidean result as the full grid.
+        volume = free.reshape(shape)
+        distance = np.zeros(shape, dtype=np.float64)
+        if np.any(free):
+            bounds = []
+            for axis in range(3):
+                ids = np.flatnonzero(np.any(volume, axis=tuple(i for i in range(3) if i != axis)))
+                bounds.append(slice(ids[0], ids[-1]+1))
+            region = tuple(bounds)
+            padded = np.pad(volume[region], 1, constant_values=False)
+            transform = cache.get('edt_function', distance_transform_edt) if cache is not None else distance_transform_edt
+            distance[region] = transform(padded)[1:-1, 1:-1, 1:-1]*resolution
+        distance = distance.reshape(-1)
+        if cache is not None:
+            cache.update(free=free.copy(), distance=distance.copy(), geometry=geometry_key, recomputed=True,
+                         deferred=False, updated_at=time.monotonic())
     distance -= np.sqrt(3.) * resolution / 2
     distance = np.minimum(distance, np.where(known, raw, np.inf))
     distance[~free] = np.minimum(distance[~free], 0.)
