@@ -1,0 +1,35 @@
+{
+  "query_points": 356136,
+  "native_known_cells": 49445,
+  "query": {
+    "old_allocating_query": {
+      "mean_ms": 1.4336643973365426,
+      "p50_ms": 1.1390504660084844,
+      "p95_ms": 3.236321138683705
+    },
+    "prepared_query": {
+      "mean_ms": 0.5026017755476965,
+      "p50_ms": 0.37619099020957947,
+      "p95_ms": 1.1200663109775606
+    }
+  },
+  "sparse_export": {
+    "mean_ms": 1.0095764688837032,
+    "p50_ms": 0.9080800227820873,
+    "p95_ms": 1.5327180153690274
+  },
+  "sparse_points": 28372,
+  "reference_sparse_matches": true,
+  "field_exact": {
+    "mean_ms": 6.681439135637548,
+    "p50_ms": 6.751801527570933,
+    "p95_ms": 8.049982122611254
+  },
+  "field_conservative_scheduled": {
+    "mean_ms": 2.5705542829301624,
+    "p50_ms": 1.9226365257054567,
+    "p95_ms": 3.458939504344016
+  },
+  "field_deferred_frames": 65,
+  "all_scheduled_distances_no_greater_than_exact": true
+}

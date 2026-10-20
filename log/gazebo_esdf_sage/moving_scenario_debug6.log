@@ -1,0 +1,17 @@
+{'kind': 'ready', 'trial': 'waiting', 'sim_time': 5.005, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'seed_tool': [-0.009659804775463354, -0.3124950787660752, 0.9494869803688374]}
+{'kind': 'spawn_requested', 'trial': 'crossing', 'sim_time': 5.005, 'center': [0.25, -0.375, 0.675], 'size': [0.08, 0.08, 0.08], 'initial_gap_m': 0.163379519748536}
+{'kind': 'spawned', 'trial': 'crossing', 'sim_time': 5.2}
+{'kind': 'sensor_detected', 'trial': 'crossing', 'sim_time': 5.505000000000001, 'cells': 154}
+{'kind': 'crossing_begin', 'trial': 'crossing', 'sim_time': 7.505000000000001}
+{'kind': 'target', 'trial': 'crossing', 'sim_time': 7.505000000000001, 'xyz': [0.4, -0.12, 0.5]}
+{'kind': 'crossing_end', 'trial': 'crossing', 'sim_time': 22.020000000000003, 'position': [0.25, -0.5201000000000335, 0.675], 'status': {'online': {'version': 106, 'frames': 191, 'stamp': 21.932, 'occupied_cells': 200, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'REACHING', 'error': None, 'view': None, 'sage_iterations': 54, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'frames': 315, 'map_frozen': True, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'B: actual-feedback rolling SAGE', 'stopped': False}}
+{'kind': 'crossing_reached', 'trial': 'crossing', 'sim_time': 41.755, 'status': {'online': {'version': 106, 'frames': 388, 'stamp': 41.63, 'occupied_cells': 200, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'GOAL_REACHED', 'error': None, 'view': None, 'sage_iterations': 195, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'frames': 315, 'map_frozen': True, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'B: actual-feedback rolling SAGE', 'stopped': False}}
+{'kind': 'deleted', 'trial': 'crossing', 'sim_time': 42.02}
+{'kind': 'target', 'trial': 'return', 'sim_time': 45.02, 'xyz': [-0.009659804775463354, -0.3124950787660752, 0.9494869803688374]}
+{'kind': 'failed', 'trial': 'return', 'sim_time': 49.255, 'error': "{'online': {'version': 106, 'frames': 463, 'stamp': 49.13, 'occupied_cells': 200, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'STOPPED', 'error': 'USER_STOP', 'view': None, 'sage_iterations': 208, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'frames': 315, 'map_frozen': True, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'B: actual-feedback rolling SAGE', 'stopped': True}"}
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/moving_scenario.py", line 81, in <module>
+    trial='return';goal(seed_tool);pause(1);wait(lambda s:s.get('phase')=='GOAL_REACHED',240);record('returned')
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/moving_scenario.py", line 45, in wait
+    if s.get('stopped'):raise RuntimeError(str(s))
+RuntimeError: {'online': {'version': 106, 'frames': 463, 'stamp': 49.13, 'occupied_cells': 200, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'STOPPED', 'error': 'USER_STOP', 'view': None, 'sage_iterations': 208, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'frames': 315, 'map_frozen': True, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'B: actual-feedback rolling SAGE', 'stopped': True}

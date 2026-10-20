@@ -1,0 +1,210 @@
+{
+  "world_frame": "base_link",
+  "frames": 59,
+  "views": [
+    {
+      "id": 1,
+      "depth_stamp": 1790571390.9525688,
+      "color_stamp": 1790571390.9526129,
+      "q_rad": [
+        -1.7406366289259172,
+        -1.3309017712329143,
+        1.364491358679609,
+        -4.102255861722928,
+        -0.6014466240496815,
+        -1.2985669716942636
+      ],
+      "T_base_depth": [
+        [
+          -0.4318775534629822,
+          -0.7583749294281006,
+          0.4882102608680725,
+          0.1681762933731079
+        ],
+        [
+          -0.8820613622665405,
+          0.46813300251960754,
+          -0.05309634655714035,
+          -0.4634641110897064
+        ],
+        [
+          -0.188280388712883,
+          -0.45356252789497375,
+          -0.8711093664169312,
+          0.6023375988006592
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_base_color": [
+        [
+          -0.4395822584629059,
+          -0.7522294521331787,
+          0.4908343255519867,
+          0.1744878739118576
+        ],
+        [
+          -0.8758296966552734,
+          0.48017948865890503,
+          -0.04847673699259758,
+          -0.45051440596580505
+        ],
+        [
+          -0.19922295212745667,
+          -0.4511967897415161,
+          -0.8699032664299011,
+          0.6056600213050842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "depth_info": {
+        "frame_id": "camera_depth_optical_frame",
+        "width": 640,
+        "height": 480,
+        "k": [
+          388.26068115234375,
+          0.0,
+          320.89794921875,
+          0.0,
+          388.26068115234375,
+          241.32009887695312,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "p": [
+          388.26068115234375,
+          0.0,
+          320.89794921875,
+          0.0,
+          0.0,
+          388.26068115234375,
+          241.32009887695312,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "r": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "distortion_model": "plumb_bob"
+      },
+      "color_info": {
+        "frame_id": "camera_color_optical_frame",
+        "width": 640,
+        "height": 480,
+        "k": [
+          607.5555419921875,
+          0.0,
+          319.55047607421875,
+          0.0,
+          607.77392578125,
+          255.34555053710938,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "p": [
+          607.5555419921875,
+          0.0,
+          319.55047607421875,
+          0.0,
+          0.0,
+          607.77392578125,
+          255.34555053710938,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "r": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "distortion_model": "plumb_bob"
+      },
+      "path": "observations/001"
+    }
+  ],
+  "esdf_enabled": false,
+  "motion_interfaces": false,
+  "config": {
+    "robot_urdf": "/home/wqj/ur7e_real_setup/calibrated_with_camera.urdf",
+    "collision_spheres": "/home/wqj/ur7e_real_setup/collision_spheres_preview.yaml",
+    "output_directory": "/home/wqj/realtime_nvblox_ws/log/real_reconstruction_20260928/real",
+    "world_frame": "base_link",
+    "depth_frame": "camera_depth_optical_frame",
+    "color_frame": "camera_color_optical_frame",
+    "depth_topic": "/camera/camera/depth/image_rect_raw",
+    "camera_info_topic": "/camera/camera/depth/camera_info",
+    "color_topic": "/camera/camera/color/image_raw",
+    "color_info_topic": "/camera/camera/color/camera_info",
+    "joint_topic": "/joint_states",
+    "capture_hz": 5.0,
+    "mesh_hz": 1.0,
+    "voxel_size_m": 0.015,
+    "depth_stride": 2,
+    "min_depth_m": 0.2,
+    "max_depth_m": 3.0,
+    "roi_min_m": [
+      -1.0,
+      -1.0,
+      -0.1
+    ],
+    "roi_max_m": [
+      1.0,
+      1.0,
+      1.3
+    ],
+    "frame_timeout": 0.5,
+    "sync_slop_sec": 0.035,
+    "settle_seconds": 0.5,
+    "settle_speed": 0.015,
+    "view_separation_rad": 0.15
+  },
+  "model_sha256": {
+    "robot_urdf": "ad1f910ae4c95ed5f306bbede50eb7dca0a2092ec12b224d9e44e0ad05839c1a",
+    "collision_spheres": "76153041b6397800005597b1d1ca0a596b9262e40f7dd67ab234d8559d275b3e"
+  }
+}

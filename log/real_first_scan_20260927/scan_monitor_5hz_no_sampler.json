@@ -1,0 +1,50 @@
+{
+  "duration_s": 29.585042808000026,
+  "depth_received_hz": 13.993557578630618,
+  "completed_field_hz": 0.0,
+  "first_frames": 0,
+  "last_frames": 0,
+  "last_views": 0,
+  "capture_errors": [],
+  "last_status": {
+    "phase": "SCANNING",
+    "error": null,
+    "capture_error": null,
+    "frames": 0,
+    "views": 0,
+    "map_uid": null,
+    "scene_confirmed": false,
+    "execution_enabled": false,
+    "planning_active": false,
+    "trajectory_seconds": null,
+    "sage_iterations": null,
+    "perception": {
+      "rates_hz": {
+        "visualizations_published": 0.0,
+        "depth_received": 14.038600395259312,
+        "frames_overwritten": 0.0,
+        "invalid_or_stale_depth": 0.0,
+        "input_wait_attempts": 44.12131552795784
+      },
+      "totals": {
+        "visualizations_published": 1,
+        "depth_received": 415,
+        "frames_overwritten": 211,
+        "invalid_or_stale_depth": 4,
+        "input_wait_attempts": 624
+      },
+      "latency": {
+        "visualization": {
+          "mean_ms": 3.4267040000486304,
+          "p50_ms": 3.4267040000486304,
+          "p95_ms": 3.4267040000486304,
+          "max_ms": 3.4267040000486304
+        }
+      },
+      "latest": {},
+      "wait_reason": "WAIT_JOINTS_AT_IMAGE_TIME",
+      "capture_hz_limit": 5.0,
+      "configured_backend": "cuda"
+    }
+  }
+}

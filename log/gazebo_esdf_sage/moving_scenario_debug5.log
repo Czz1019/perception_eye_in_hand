@@ -1,0 +1,14 @@
+{'kind': 'ready', 'trial': 'waiting', 'sim_time': 10.75, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'seed_tool': [-0.00965980477546348, -0.3124950787660743, 0.9494869803688379]}
+{'kind': 'spawn_requested', 'trial': 'crossing', 'sim_time': 10.75, 'center': [0.4, -0.32, 0.5], 'size': [0.08, 0.08, 0.08], 'initial_gap_m': 0.2013648149208265}
+{'kind': 'spawned', 'trial': 'crossing', 'sim_time': 10.91}
+{'kind': 'sensor_detected', 'trial': 'crossing', 'sim_time': 11.25, 'cells': 111}
+{'kind': 'crossing_begin', 'trial': 'crossing', 'sim_time': 13.25}
+{'kind': 'target', 'trial': 'crossing', 'sim_time': 13.25, 'xyz': [0.4, -0.12, 0.5]}
+{'kind': 'crossing_end', 'trial': 'crossing', 'sim_time': 53.25, 'position': [0.4, 0.08000000000018091, 0.5], 'status': {}}
+{'kind': 'failed', 'trial': 'crossing', 'sim_time': 49.150000000000006, 'error': "{'online': {'version': 299, 'frames': 1579, 'stamp': 222.724, 'occupied_cells': 193, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'WAIT_DYNAMIC', 'error': 'ONLINE_MAP_STALE', 'view': None, 'sage_iterations': 0, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'frames': 315, 'map_frozen': True, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'B: actual-feedback rolling SAGE', 'stopped': False}"}
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/moving_scenario.py", line 80, in <module>
+    s=wait(lambda s:s.get('phase')=='GOAL_REACHED',240);record('crossing_reached',status=s);remove();pause(3)
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/moving_scenario.py", line 47, in wait
+    raise TimeoutError(str(status()))
+TimeoutError: {'online': {'version': 299, 'frames': 1579, 'stamp': 222.724, 'occupied_cells': 193, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'WAIT_DYNAMIC', 'error': 'ONLINE_MAP_STALE', 'view': None, 'sage_iterations': 0, 'map_uid': '42ef35694740f21e287c116a1c517258de7070f74113b4fb02555c72c191ed22', 'frames': 315, 'map_frozen': True, 'capture_wait': 'IDLE', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'B: actual-feedback rolling SAGE', 'stopped': False}

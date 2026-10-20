@@ -1,0 +1,272 @@
+from __future__ import annotations
+
+import ctypes
+import importlib.util
+from pathlib import Path
+import threading
+import time
+
+import numpy as np
+
+from realtime_nvblox.types import Calibration
+
+
+_PRELOAD_LOCK = threading.Lock()
+_PRELOADED = False
+
+
+def preload_nvblox_runtime() -> Path:
+    """Load the nvblox shared library bundled with the nvblox_torch wheel."""
+    global _PRELOADED
+    with _PRELOAD_LOCK:
+        spec = importlib.util.find_spec('nvblox_torch')
+        if spec is None or not spec.submodule_search_locations:
+            raise ImportError('nvblox_torch is not installed.')
+        pkg = Path(next(iter(spec.submodule_search_locations)))
+        lib = pkg / 'lib' / 'nvblox' / 'libnvblox_lib.so'
+        if not lib.exists():
+            raise FileNotFoundError(f'nvblox_torch bundled library not found: {lib}')
+        if not _PRELOADED:
+            import torch  # load c10/libtorch first
+            ctypes.CDLL(str(lib), mode=ctypes.RTLD_GLOBAL)
+            _PRELOADED = True
+        return lib
+
+
+class NvbloxBackend:
+    """Thread-safe wrapper around one nvblox_torch Mapper.
+
+    Mapper access is serialized by one RLock.  The runtime may therefore keep
+    mapping and 3D-ESDF query workers separate without allowing two Python
+    threads to mutate/query the same mapper object simultaneously.
+    """
+
+    def __init__(self, calibration: Calibration, cfg: dict):
+        self.calib = calibration
+        self.cfg = cfg
+        self.lock = threading.RLock()
+        self.mapper = None
+        self.torch = None
+        self.QueryType = None
+        self.depth_sensor = None
+        self.color_sensor = None
+        self.loaded_lib = None
+        self.esdf_unknown_distance = 1.0e6
+
+        self.query_timings_ms = {}
+        self._grid_key = None
+        self._grid_offsets_cpu = None
+        self._grid_offsets_gpu = None
+        self._grid_query_gpu = None
+        self._grid_output_gpu = None
+
+        self._initialize()
+
+    def _initialize(self) -> None:
+        self.loaded_lib = preload_nvblox_runtime()
+        import torch
+        from nvblox_torch.mapper import Mapper, QueryType
+        from nvblox_torch.projective_integrator_types import ProjectiveIntegratorType
+        from nvblox_torch.sensor import Sensor
+        try:
+            from nvblox_torch.constants import constants
+            self.esdf_unknown_distance = float(constants.esdf_unknown_distance())
+        except Exception:
+            self.esdf_unknown_distance = 1.0e6
+
+        if not torch.cuda.is_available():
+            raise RuntimeError('CUDA is not available to PyTorch.')
+        self.torch = torch
+        self.QueryType = QueryType
+        d = self.calib.depth_intrinsics
+        c = self.calib.color_intrinsics
+        self.depth_sensor = Sensor.from_camera(d.fx, d.fy, d.cx, d.cy, d.width, d.height)
+        self.color_sensor = Sensor.from_camera(c.fx, c.fy, c.cx, c.cy, c.width, c.height)
+        self.mapper = Mapper(
+            voxel_sizes_m=float(self.cfg.get('voxel_size_m', 0.05)),
+            integrator_types=ProjectiveIntegratorType.TSDF,
+        )
+
+    def _pose(self, T: np.ndarray):
+        return self.torch.from_numpy(np.asarray(T, dtype=np.float32)).contiguous().cpu()
+
+    def integrate_depth(self, depth_raw: np.ndarray, T_world_depth: np.ndarray) -> None:
+        with self.lock:
+            depth = self.torch.as_tensor(depth_raw, device='cuda', dtype=self.torch.float32)
+            depth = depth * float(self.calib.depth_scale_m)
+            valid = self.torch.isfinite(depth) & (depth > 0.0)
+            max_d = float(self.cfg.get('max_integration_distance_m', 0.0))
+            if max_d > 0.0:
+                valid = valid & (depth <= max_d)
+            # Avoid invalid.any().item(), which introduces a CPU/GPU sync every frame.
+            depth = self.torch.where(valid, depth, self.torch.zeros((), device='cuda', dtype=self.torch.float32))
+            self.mapper.add_depth_frame(depth.contiguous(), self._pose(T_world_depth), self.depth_sensor)
+
+    def integrate_color(self, color_rgb: np.ndarray, T_world_color: np.ndarray) -> None:
+        with self.lock:
+            color = self.torch.as_tensor(color_rgb, device='cuda', dtype=self.torch.uint8).contiguous()
+            self.mapper.add_color_frame(color, self._pose(T_world_color), self.color_sensor)
+
+    def update_esdf(self) -> None:
+        with self.lock:
+            self.mapper.update_esdf(0)
+
+    def observed_esdf_numpy(self) -> tuple[np.ndarray, np.ndarray]:
+        """Export valid ESDF samples at observed native voxel centers.
+
+        The installed Python binding exposes TSDF blocks but no ESDF layer
+        view. Positive-weight TSDF voxels supply sparse candidates; querying
+        ESDF and removing its unknown sentinel determines the output support.
+        No world-sized sampling lattice or CPU point upload is involved.
+        """
+        from nvblox_torch.indexing import get_local_voxel_center_grid
+        torch = self.torch
+        with self.lock, torch.no_grad():
+            layer = self.mapper.tsdf_layer_view(0)
+            blocks, indices = layer.get_all_blocks()
+            if not blocks:
+                return np.empty((0, 3), np.float32), np.empty(0, np.float32)
+            voxel_size = layer.voxel_size()
+            local = get_local_voxel_center_grid(voxel_size)
+            exported = []
+            # Bound intermediate copies; do not repeatedly concatenate growing
+            # tensors or synchronize once per voxel/block.
+            for start in range(0, len(blocks), 128):
+                values = torch.stack(blocks[start:start+128])
+                origins = torch.stack(indices[start:start+128]).to(device='cuda', dtype=torch.float32)
+                centers = origins[:, None, None, None, :] * (8*voxel_size) + local
+                mask = torch.isfinite(values[..., 1]) & (values[..., 1] > 0)
+                points = centers[mask]
+                if points.shape[0] == 0:
+                    continue
+                query = torch.cat((points, torch.zeros_like(points[:, :1])), dim=1).contiguous()
+                distance = self.mapper.query_layer(self.QueryType.ESDF, query, mapper_id=0).reshape(-1)
+                known = torch.isfinite(distance) & ~torch.isclose(
+                    distance.abs(), torch.full_like(distance, abs(self.esdf_unknown_distance)),
+                    rtol=1e-5, atol=1e-3)
+                exported.append(torch.cat((points[known], distance[known, None]), dim=1))
+            if not exported:
+                return np.empty((0, 3), np.float32), np.empty(0, np.float32)
+            # The lock protects zero-copy layer views through GPU completion.
+            owned = torch.cat(exported).detach().cpu().numpy()
+            return owned[:, :3], owned[:, 3]
+
+    def update_mesh(self) -> None:
+        with self.lock:
+            self.mapper.update_color_mesh(0)
+
+    def mesh_numpy(self):
+        with self.lock:
+            mesh = self.mapper.get_color_mesh(0)
+            return (
+                mesh.vertices().detach().cpu().numpy(),
+                mesh.triangles().detach().cpu().numpy(),
+                mesh.vertex_colors().detach().cpu().numpy(),
+            )
+
+    def _prepare_esdf_query(self, points_xyz: np.ndarray):
+        """Prepare Nx4 [x,y,z,radius] query for the installed v0.0.10 binding."""
+        pts = np.asarray(points_xyz, dtype=np.float32)
+        if pts.ndim != 2 or pts.shape[1] not in (3, 4):
+            raise ValueError(f'ESDF query must have shape (N,3) or (N,4), got {pts.shape}.')
+        q = self.torch.as_tensor(pts, device='cuda', dtype=self.torch.float32).contiguous()
+        if q.shape[1] == 3:
+            radius = self.torch.zeros((q.shape[0], 1), device=q.device, dtype=q.dtype)
+            q = self.torch.cat((q, radius), dim=1).contiguous()
+        return q
+
+    def query_esdf(self, points_xyz: np.ndarray) -> np.ndarray:
+        with self.lock:
+            q = self._prepare_esdf_query(points_xyz)
+            out = self.mapper.query_layer(self.QueryType.ESDF, q, mapper_id=0)
+            owned = out.detach().clone()
+        return owned.cpu().numpy().reshape(-1)
+
+    def query_esdf_with_gradients(self, points_xyz: np.ndarray) -> np.ndarray:
+        with self.lock:
+            q = self._prepare_esdf_query(points_xyz)
+            out = self.mapper.query_layer(self.QueryType.ESDF_GRAD, q, mapper_id=0)
+            owned = out.detach().clone()
+        return owned.cpu().numpy()
+
+    @staticmethod
+    def _grid_key_from_cfg(cfg: dict):
+        return (
+            float(cfg['resolution_m']),
+            float(cfg['size_x_m']),
+            float(cfg['size_y_m']),
+            float(cfg['size_z_m']),
+        )
+
+    @staticmethod
+    def grid_offsets(cfg: dict) -> np.ndarray:
+        r, sx, sy, sz = NvbloxBackend._grid_key_from_cfg(cfg)
+        if not all(np.isfinite(v) and v > 0 for v in (r, sx, sy, sz)):
+            raise ValueError('ESDF grid resolution and sizes must be finite and positive.')
+        # Symmetric sample lattice, exact spacing, never outside the requested box.
+        axes = []
+        for size in (sx, sy, sz):
+            intervals = int(np.floor(size / r + 1e-9))
+            axes.append(((np.arange(intervals + 1, dtype=np.float64) - intervals / 2) * r).astype(np.float32))
+        xx, yy, zz = np.meshgrid(*axes, indexing='xy')
+        return np.stack((xx, yy, zz), axis=-1).reshape(-1, 3)
+
+    def prepare_esdf_grid(self, cfg: dict) -> None:
+        key = self._grid_key_from_cfg(cfg)
+        if self._grid_key == key:
+            return
+        offsets = self.grid_offsets(cfg)
+
+        with self.lock:
+            offsets_gpu = self.torch.as_tensor(offsets, device='cuda', dtype=self.torch.float32).contiguous()
+            query_gpu = self.torch.empty((offsets_gpu.shape[0], 4), device='cuda', dtype=self.torch.float32)
+            query_gpu[:, 3].zero_()
+            output_gpu = self.torch.empty((offsets_gpu.shape[0], 1), device='cuda', dtype=self.torch.float32)
+            self._grid_key = key
+            self._grid_offsets_cpu = offsets
+            self._grid_offsets_gpu = offsets_gpu
+            self._grid_query_gpu = query_gpu
+            self._grid_output_gpu = output_gpu
+
+    def query_esdf_grid(self, center_xyz: np.ndarray, cfg: dict) -> tuple[np.ndarray, np.ndarray]:
+        """Query a complete local 3D ESDF grid using preallocated GPU buffers."""
+        self.prepare_esdf_grid(cfg)
+        center = np.asarray(center_xyz, dtype=np.float32).reshape(3)
+        center_cpu = center.copy()
+
+        with self.lock:
+            start = time.perf_counter()
+            center_gpu = self.torch.as_tensor(center, device='cuda', dtype=self.torch.float32)
+            self._grid_query_gpu[:, :3].copy_(self._grid_offsets_gpu + center_gpu)
+            self._grid_output_gpu.fill_(float(self.esdf_unknown_distance))
+            out = self.mapper.query_layer(
+                self.QueryType.ESDF,
+                self._grid_query_gpu,
+                output=self._grid_output_gpu,
+                mapper_id=0,
+            )
+            query_end = time.perf_counter()
+            # Finish the readback while the mapper/buffer is protected. CPU owns this copy.
+            distances = out.detach().cpu().numpy().reshape(-1)
+            copy_end = time.perf_counter()
+            self.query_timings_ms = {
+                'esdf_3d_query_submit': (query_end - start) * 1000.0,
+                'esdf_3d_readback': (copy_end - query_end) * 1000.0,
+            }
+        points = self._grid_offsets_cpu + center_cpu.reshape(1, 3)
+        return points.astype(np.float32, copy=False), distances.astype(np.float32, copy=False)
+
+    def save_map(self, path: str | Path) -> Path:
+        path = Path(path).expanduser()
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with self.lock:
+            self.mapper.save_map(str(path), 0)
+        return path
+
+    def save_mesh(self, path: str | Path) -> Path:
+        path = Path(path).expanduser()
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with self.lock:
+            self.mapper.update_color_mesh(0)
+            self.mapper.get_color_mesh(0).save(str(path))
+        return path

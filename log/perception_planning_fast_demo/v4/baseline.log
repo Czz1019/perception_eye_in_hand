@@ -1,0 +1,54 @@
+{"elapsed": 0.1, "status": null, "phase": null, "error": null}
+{"elapsed": 10.1, "status": "SCANNING", "phase": "SCANNING_2_OF_12", "error": 0.8156701711422665}
+{"elapsed": 20.1, "status": "SCANNING", "phase": "SCANNING_4_OF_12", "error": 0.8022714354919187}
+{"elapsed": 30.1, "status": "PLANNING", "phase": "REACHING", "error": 0.32000489888096867}
+{
+  "passed": true,
+  "checks": {
+    "goal_reached": true,
+    "no_runtime_error": true,
+    "online_map_updates": true,
+    "collision_model_clear": true,
+    "self_collision_clear": true,
+    "sage_reaching_used": true
+  },
+  "duration": 36.51958778803237,
+  "latest": {
+    "status": "GOAL_REACHED",
+    "demo_phase": "GOAL_REACHED",
+    "scan_index": 4,
+    "completed_views": 4,
+    "speed_limit": 0.3,
+    "route_waypoints": 1,
+    "guard": "clear",
+    "enabled": true,
+    "error": null,
+    "plans": 254,
+    "sage_optimizations": 254,
+    "plan_ms": 13.763986062258482,
+    "minimum_clearance": 0.04556010857820511,
+    "optimize_ms": 12.827744940295815,
+    "admission_ms": 0.49716606736183167,
+    "accepted_commands": 1397,
+    "guard_rejections": 0,
+    "command_source": "sage",
+    "map_sequence": 155,
+    "map_epoch": 1790058843223039275,
+    "last_plan_map": 148,
+    "map_age_sim": 0.15899999999999892,
+    "goal": [
+      0.5,
+      0.0,
+      0.45
+    ],
+    "ee": [
+      0.5016908091463417,
+      0.004006376967891572,
+      0.4602919473552114
+    ],
+    "goal_error": 0.0111729169128141
+  },
+  "min_geometry_clearance": 0.05103861533025851,
+  "min_self_clearance": 0.024473317769323065,
+  "map_rate": 4.768032861100926
+}

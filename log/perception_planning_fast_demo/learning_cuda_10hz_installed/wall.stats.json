@@ -1,0 +1,55 @@
+{
+  "wall": 781449.949161277,
+  "cpu_mhz_median": 1686.7875,
+  "rates_hz": {
+    "depth_received": 10.000379963779158,
+    "map_initialized": 0.0,
+    "stale_after_gpu_wait": 0.0,
+    "depth_integrated": 9.000341967401242,
+    "esdf_updated": 9.000341967401242,
+    "esdf_published": 9.000341967401242,
+    "tf_pending": 0.0
+  },
+  "totals": {
+    "depth_received": 1224,
+    "map_initialized": 1,
+    "stale_after_gpu_wait": 17,
+    "depth_integrated": 721,
+    "esdf_updated": 721,
+    "esdf_published": 721,
+    "tf_pending": 3
+  },
+  "latency": {
+    "fusion_and_esdf": {
+      "mean_ms": 43.34547073176509,
+      "p50_ms": 23.306619958020747,
+      "p95_ms": 80.2591003011912,
+      "max_ms": 1382.2106110164896
+    }
+  },
+  "world_frame": "base_link",
+  "python_executable": "/home/wqj/miniconda3/envs/whole_control/bin/python",
+  "error": null,
+  "latest": {
+    "known_cells": 180058,
+    "free_cells": 190245,
+    "prior_cells": 22028,
+    "map_epoch": 0,
+    "unknown_distance_m": 100.0,
+    "sequence": 721,
+    "receive_to_result_ms": 78.15912808291614,
+    "queue_ms": 60.630719061009586,
+    "tf_ms": 0.4328039940446615,
+    "filter_ms": 1.0407599620521069,
+    "gpu_wait_ms": 0.01164805144071579,
+    "fusion_query_ms": 2.3231320083141327,
+    "free_field_ms": 13.721653958782554,
+    "edt_recomputed": false,
+    "edt_deferred": false,
+    "free_projection_ms": 10.025666910223663,
+    "distance_transform_ms": 3.6970010260120034,
+    "free_space_backend": "cuda",
+    "far_free_ray_pixels": 0,
+    "self_filtered_pixels": 0
+  }
+}

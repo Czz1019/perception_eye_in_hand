@@ -1,0 +1,91 @@
+{
+  "distance_semantics": "partial-policy feasibility, not observed-free ESDF",
+  "samples": 100186,
+  "capture_frames": 315,
+  "observations": 63,
+  "map_uid": "b5097b0df551b997ec73c1ab0050ff8e3eba64987988adc7554c46de857b0c1e",
+  "min_measured_self_gap_m": 0.021381798390221994,
+  "min_measured_fixture_gap_m": 0.050569708749353424,
+  "min_planning_map_gap_m": 0.03818687497377395,
+  "max_tracking_error_rad": 0.03337515338761077,
+  "max_command_speed_rad_s": 0.24999988263924186,
+  "max_reaching_command_speed_rad_s": 0.15000000000001332,
+  "goals_reached": [
+    {
+      "kind": "goal_reached",
+      "sim_time": 755.5400000000001,
+      "wall_time": 348449.641656244,
+      "goal": [
+        0.4,
+        -0.12,
+        0.5
+      ],
+      "error_m": 0.003570372121535892,
+      "iterations": 151,
+      "revision": 1
+    },
+    {
+      "kind": "goal_reached",
+      "sim_time": 785.7950000000001,
+      "wall_time": 348479.92136683,
+      "goal": [
+        -0.009662141632383894,
+        -0.31249701377609795,
+        0.9494951758151745
+      ],
+      "error_m": 0.00235442540130739,
+      "iterations": 346,
+      "revision": 2
+    },
+    {
+      "kind": "goal_reached",
+      "sim_time": 860.5350000000001,
+      "wall_time": 348557.209819446,
+      "goal": [
+        0.4,
+        -0.12,
+        0.5
+      ],
+      "error_m": 0.004343648737823445,
+      "iterations": 444,
+      "revision": 3
+    }
+  ],
+  "guide_checks": [
+    {
+      "goal": [
+        0.4,
+        -0.12,
+        0.5
+      ],
+      "waypoints": 3,
+      "direct_joint_segment_fixture_gap_m": 0.04975611552761395,
+      "direct_joint_segment_map_gap_m": 0.0374058976650238
+    },
+    {
+      "goal": [
+        -0.009662141632383894,
+        -0.31249701377609795,
+        0.9494951758151745
+      ],
+      "waypoints": 3,
+      "direct_joint_segment_fixture_gap_m": 0.04973081186312863,
+      "direct_joint_segment_map_gap_m": 0.037405413377285
+    },
+    {
+      "goal": [
+        0.4,
+        -0.12,
+        0.5
+      ],
+      "waypoints": 2,
+      "direct_joint_segment_fixture_gap_m": 0.050693507519446686,
+      "direct_joint_segment_map_gap_m": 0.03830361812114715
+    }
+  ],
+  "sage_feedback_steps": 444,
+  "unique_feedback_timestamps": 444,
+  "observed_cells": 306980,
+  "tabletop_cells": 137668,
+  "planning_policy": "depth_tabletop_columns_v1"
+}

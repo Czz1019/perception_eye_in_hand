@@ -1,0 +1,56 @@
+{"elapsed": 0.1, "status": null, "phase": null, "error": null}
+{"elapsed": 10.2, "status": null, "phase": null, "error": null}
+{"elapsed": 20.2, "status": "SCAN_DWELL", "phase": "CHECKING_COVERAGE", "error": 0.5148175376743633}
+{"elapsed": 30.2, "status": "SCANNING", "phase": "SCANNING_3_OF_12", "error": 0.7707835271940588}
+{"elapsed": 40.2, "status": "SOLVING_GUIDE", "phase": "CHECKING_COVERAGE", "error": 0.8089014503502551}
+{"elapsed": 50.2, "status": "PLANNING", "phase": "REACHING", "error": 0.10753948473567007}
+{
+  "passed": true,
+  "checks": {
+    "goal_reached": true,
+    "no_runtime_error": true,
+    "online_map_updates": true,
+    "collision_model_clear": true,
+    "self_collision_clear": true,
+    "sage_reaching_used": true
+  },
+  "duration": 52.8497633819934,
+  "latest": {
+    "status": "GOAL_REACHED",
+    "demo_phase": "GOAL_REACHED",
+    "scan_index": 5,
+    "completed_views": 5,
+    "speed_limit": 0.3,
+    "route_waypoints": 1,
+    "guard": "clear",
+    "enabled": true,
+    "error": null,
+    "plans": 219,
+    "sage_optimizations": 219,
+    "plan_ms": 12.679407955147326,
+    "minimum_clearance": 0.04191914395093918,
+    "optimize_ms": 10.987534071318805,
+    "admission_ms": 1.2009108904749155,
+    "accepted_commands": 1239,
+    "guard_rejections": 0,
+    "command_source": "sage",
+    "map_sequence": 160,
+    "map_epoch": 1790078009004868017,
+    "last_plan_map": 152,
+    "map_age_sim": 0.13100000000000023,
+    "goal": [
+      0.5,
+      0.0,
+      0.45
+    ],
+    "ee": [
+      0.4969406829114142,
+      -0.0012076678177503615,
+      0.46152025847039513
+    ],
+    "goal_error": 0.011980577524946513
+  },
+  "min_geometry_clearance": 0.08772951585177263,
+  "min_self_clearance": 0.024476914807302706,
+  "map_rate": 4.751990398424524
+}

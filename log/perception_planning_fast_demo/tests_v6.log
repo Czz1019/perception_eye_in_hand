@@ -1,0 +1,42 @@
+.............F...............                                            [100%]
+=================================== FAILURES ===================================
+______ test_goal_ik_changes_redundant_posture_to_clear_intermediate_path _______
+
+    def test_goal_ik_changes_redundant_posture_to_clear_intermediate_path():
+        class Geometry:
+            radii = np.array([.005])
+            lower, upper = np.full(6, -2.), np.full(6, 2.)
+            def fk(self, q):
+                pose = np.eye(4); pose[:3, 3] = [q[0], 0., .5]
+                return {'tool0': pose}
+            def spheres(self, q):
+                return np.array([[q[0], q[1]*np.sin(np.pi*q[0]), .5]])
+            def self_clearance(self, centers): return 1.
+        class Obstacle:
+            def query(self, centers):
+                return np.linalg.norm(centers-np.array([.5, 0., .5]), axis=-1)-.1
+        geometry, snapshot = Geometry(), Obstacle()
+        start = np.array([0., .05, 0., 0., 0., 0.])
+        naive = start.copy(); naive[0] = 1.
+        assert not guide_is_clear(geometry, snapshot, start, naive)
+        goal = goal_ik(geometry, snapshot, start, np.array([1., 0., .5]))
+>       assert goal is not None
+E       assert None is not None
+
+src/ur7e_perception_planning/test/test_demo.py:78: AssertionError
+=============================== warnings summary ===============================
+../miniconda3/envs/whole_control/lib/python3.10/site-packages/torch/__init__.py:1275
+  /home/wqj/miniconda3/envs/whole_control/lib/python3.10/site-packages/torch/__init__.py:1275: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+    _C._set_default_tensor_type(t)
+
+<frozen importlib._bootstrap>:241
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+<frozen importlib._bootstrap>:241
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED src/ur7e_perception_planning/test/test_demo.py::test_goal_ik_changes_redundant_posture_to_clear_intermediate_path
+1 failed, 28 passed, 3 warnings in 30.43s
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

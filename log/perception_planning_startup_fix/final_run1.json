@@ -1,0 +1,3195 @@
+{
+  "phases": [
+    {
+      "name": "default_goal",
+      "duration": 1.3923781139892526,
+      "latest": {
+        "status": "GOAL_REACHED",
+        "guard": "clear",
+        "enabled": true,
+        "error": null,
+        "plans": 12,
+        "sage_optimizations": 0,
+        "plan_ms": 2.1755589987151325,
+        "minimum_clearance": 0.035896655762195584,
+        "optimize_ms": 0.0,
+        "admission_ms": 1.4845639816485345,
+        "accepted_commands": 107,
+        "guard_rejections": 0,
+        "command_source": "checked_cartesian_refinement",
+        "map_sequence": 7,
+        "map_epoch": 1789884364159891370,
+        "last_plan_map": 3,
+        "map_age_sim": 0.019999999999999574,
+        "goal": [
+          0.19965844863046173,
+          0.11924257406617966,
+          0.8552042240665222
+        ],
+        "ee": [
+          0.20491861142580703,
+          0.12886562687140415,
+          0.855033666433312
+        ],
+        "goal_error": 0.010968206226722768
+      }
+    },
+    {
+      "name": "second_goal",
+      "duration": 1.3939615240087733,
+      "latest": {
+        "status": "GOAL_REACHED",
+        "guard": "clear",
+        "enabled": true,
+        "error": null,
+        "plans": 20,
+        "sage_optimizations": 0,
+        "plan_ms": 2.2613309556618333,
+        "minimum_clearance": 0.03593326791524887,
+        "optimize_ms": 0.0,
+        "admission_ms": 1.5594899887219071,
+        "accepted_commands": 199,
+        "guard_rejections": 0,
+        "command_source": "checked_cartesian_refinement",
+        "map_sequence": 12,
+        "map_epoch": 1789884364159891370,
+        "last_plan_map": 8,
+        "map_age_sim": 0.019000000000000128,
+        "goal": [
+          0.22,
+          0.15,
+          0.86
+        ],
+        "ee": [
+          0.2134381454342088,
+          0.1404632136439033,
+          0.8575145234929107
+        ],
+        "goal_error": 0.011840009409274968
+      }
+    },
+    {
+      "name": "inside_wall_goal",
+      "duration": 20.001688415009994,
+      "latest": {
+        "status": "BLOCKED",
+        "guard": "clear",
+        "enabled": true,
+        "error": null,
+        "plans": 220,
+        "sage_optimizations": 200,
+        "plan_ms": 17.59879500605166,
+        "minimum_clearance": 0.025613823235034944,
+        "optimize_ms": 15.395258029457182,
+        "admission_ms": 1.6357249696739018,
+        "accepted_commands": 1144,
+        "guard_rejections": 0,
+        "command_source": "blocked_hold",
+        "map_sequence": 69,
+        "map_epoch": 1789884364159891370,
+        "last_plan_map": 69,
+        "map_age_sim": 0.11799999999999855,
+        "goal": [
+          0.4,
+          0.2,
+          0.3
+        ],
+        "ee": [
+          0.21781350322237159,
+          0.1394744995217138,
+          0.8192970389355986
+        ],
+        "goal_error": 0.5536467018447165
+      }
+    },
+    {
+      "name": "return_goal",
+      "duration": 2.2644574969890527,
+      "latest": {
+        "status": "GOAL_REACHED",
+        "guard": "clear",
+        "enabled": true,
+        "error": null,
+        "plans": 238,
+        "sage_optimizations": 201,
+        "plan_ms": 1.6899349866434932,
+        "minimum_clearance": 0.03593448981046676,
+        "optimize_ms": 0.0,
+        "admission_ms": 1.1692430125549436,
+        "accepted_commands": 1280,
+        "guard_rejections": 0,
+        "command_source": "checked_cartesian_refinement",
+        "map_sequence": 78,
+        "map_epoch": 1789884364159891370,
+        "last_plan_map": 74,
+        "map_age_sim": 0.22000000000000242,
+        "goal": [
+          0.22,
+          0.15,
+          0.86
+        ],
+        "ee": [
+          0.22131274855944028,
+          0.14815006378201706,
+          0.8490541280098982
+        ],
+        "goal_error": 0.011178447406264077
+      }
+    }
+  ],
+  "faults": {
+    "pause_during_motion": true,
+    "map_pause_status": "STALE_MAP",
+    "map_pause_joint_motion": 3.552713678800501e-15,
+    "resume_duration": 1.2748040009755641,
+    "map_resumed": true,
+    "reset_recovery_duration": 1.5353906949749216,
+    "reset_epoch_changed": true,
+    "post_reset_status": "GOAL_REACHED"
+  },
+  "status_samples": [
+    {
+      "wall": 492498.581926126,
+      "status": "WAITING_FOR_MAP",
+      "guard": "WAITING_FOR_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 0,
+      "sage_optimizations": 0,
+      "plan_ms": 0.0,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 0.0,
+      "accepted_commands": 0,
+      "guard_rejections": 0,
+      "command_source": "hold",
+      "map_sequence": null,
+      "map_epoch": null,
+      "last_plan_map": null,
+      "map_age_sim": null,
+      "goal": null,
+      "ee": null,
+      "goal_error": null
+    },
+    {
+      "wall": 492499.081298546,
+      "status": "WAITING_FOR_MAP",
+      "guard": "WAITING_FOR_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 0,
+      "sage_optimizations": 0,
+      "plan_ms": 0.0,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 0.0,
+      "accepted_commands": 0,
+      "guard_rejections": 0,
+      "command_source": "hold",
+      "map_sequence": null,
+      "map_epoch": null,
+      "last_plan_map": null,
+      "map_age_sim": null,
+      "goal": null,
+      "ee": null,
+      "goal_error": null
+    },
+    {
+      "wall": 492499.581719378,
+      "status": "WAITING_FOR_MAP",
+      "guard": "WAITING_FOR_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 0,
+      "sage_optimizations": 0,
+      "plan_ms": 0.0,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 0.0,
+      "accepted_commands": 0,
+      "guard_rejections": 0,
+      "command_source": "hold",
+      "map_sequence": null,
+      "map_epoch": null,
+      "last_plan_map": null,
+      "map_age_sim": null,
+      "goal": null,
+      "ee": null,
+      "goal_error": null
+    },
+    {
+      "wall": 492500.170410201,
+      "status": "WAITING_FOR_MAP",
+      "guard": "WAITING_FOR_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 0,
+      "sage_optimizations": 0,
+      "plan_ms": 0.0,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 0.0,
+      "accepted_commands": 0,
+      "guard_rejections": 0,
+      "command_source": "hold",
+      "map_sequence": null,
+      "map_epoch": null,
+      "last_plan_map": null,
+      "map_age_sim": null,
+      "goal": null,
+      "ee": null,
+      "goal_error": null
+    },
+    {
+      "wall": 492500.581433088,
+      "status": "WAITING_FOR_MAP",
+      "guard": "WAITING_FOR_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 0,
+      "sage_optimizations": 0,
+      "plan_ms": 0.0,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 0.0,
+      "accepted_commands": 0,
+      "guard_rejections": 0,
+      "command_source": "hold",
+      "map_sequence": null,
+      "map_epoch": null,
+      "last_plan_map": null,
+      "map_age_sim": null,
+      "goal": null,
+      "ee": null,
+      "goal_error": null
+    },
+    {
+      "wall": 492501.153773363,
+      "status": "WAITING_FOR_MAP",
+      "guard": "WAITING_FOR_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 0,
+      "sage_optimizations": 0,
+      "plan_ms": 0.0,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 0.0,
+      "accepted_commands": 0,
+      "guard_rejections": 0,
+      "command_source": "hold",
+      "map_sequence": null,
+      "map_epoch": null,
+      "last_plan_map": null,
+      "map_age_sim": null,
+      "goal": null,
+      "ee": null,
+      "goal_error": null
+    },
+    {
+      "wall": 492501.581132251,
+      "status": "WAITING_FOR_MAP",
+      "guard": "WAITING_FOR_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 0,
+      "sage_optimizations": 0,
+      "plan_ms": 0.0,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 0.0,
+      "accepted_commands": 0,
+      "guard_rejections": 0,
+      "command_source": "hold",
+      "map_sequence": null,
+      "map_epoch": null,
+      "last_plan_map": null,
+      "map_age_sim": null,
+      "goal": null,
+      "ee": null,
+      "goal_error": null
+    },
+    {
+      "wall": 492502.081237374,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 4,
+      "sage_optimizations": 0,
+      "plan_ms": 4.838785040192306,
+      "minimum_clearance": 0.035931867206096646,
+      "optimize_ms": 0.0,
+      "admission_ms": 4.1473000310361385,
+      "accepted_commands": 17,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 1,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 1,
+      "map_age_sim": 0.52,
+      "goal": [
+        0.1995566167256955,
+        0.1191670410062261,
+        0.8544639033258443
+      ],
+      "ee": [
+        0.2136887157665652,
+        0.14208956992290586,
+        0.8545874226348437
+      ],
+      "goal_error": 0.02692905145482599
+    },
+    {
+      "wall": 492502.580995749,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 9,
+      "sage_optimizations": 0,
+      "plan_ms": 4.221153969410807,
+      "minimum_clearance": 0.03591158672571182,
+      "optimize_ms": 0.0,
+      "admission_ms": 3.3169870148412883,
+      "accepted_commands": 36,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 3,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 3,
+      "map_age_sim": 0.11899999999999977,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.2076397938367149,
+        0.13359716797769264,
+        0.8548939756234499
+      ],
+      "goal_error": 0.016427187579200975
+    },
+    {
+      "wall": 492503.081038562,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 12,
+      "sage_optimizations": 0,
+      "plan_ms": 2.1755589987151325,
+      "minimum_clearance": 0.035896655762195584,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.4845639816485345,
+      "accepted_commands": 60,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 4,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 3,
+      "map_age_sim": 0.21999999999999975,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.2049186115071906,
+        0.12886562692601453,
+        0.8550336664109093
+      ],
+      "goal_error": 0.010968206314014186
+    },
+    {
+      "wall": 492503.581203405,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 12,
+      "sage_optimizations": 0,
+      "plan_ms": 2.1755589987151325,
+      "minimum_clearance": 0.035896655762195584,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.4845639816485345,
+      "accepted_commands": 84,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 5,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 3,
+      "map_age_sim": 0.3200000000000003,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20491861142580856,
+        0.12886562687140574,
+        0.8550336664333114
+      ],
+      "goal_error": 0.010968206226724899
+    },
+    {
+      "wall": 492504.082574327,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 12,
+      "sage_optimizations": 0,
+      "plan_ms": 2.1755589987151325,
+      "minimum_clearance": 0.035896655762195584,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.4845639816485345,
+      "accepted_commands": 107,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 7,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 3,
+      "map_age_sim": 0.019999999999999574,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20491861142580703,
+        0.12886562687140415,
+        0.855033666433312
+      ],
+      "goal_error": 0.010968206226722768
+    },
+    {
+      "wall": 492504.581193081,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 17,
+      "sage_optimizations": 0,
+      "plan_ms": 3.4630869631655514,
+      "minimum_clearance": 0.035930853927135464,
+      "optimize_ms": 0.0,
+      "admission_ms": 2.832236001268029,
+      "accepted_commands": 128,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 8,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 8,
+      "map_age_sim": 0.12100000000000044,
+      "goal": [
+        0.22,
+        0.15,
+        0.86
+      ],
+      "ee": [
+        0.21008725493998925,
+        0.13573795120160118,
+        0.8564963511039629
+      ],
+      "goal_error": 0.01771846793995966
+    },
+    {
+      "wall": 492505.081289105,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 20,
+      "sage_optimizations": 0,
+      "plan_ms": 2.2613309556618333,
+      "minimum_clearance": 0.03593326791524887,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.5594899887219071,
+      "accepted_commands": 151,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 9,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 8,
+      "map_age_sim": 0.2190000000000003,
+      "goal": [
+        0.22,
+        0.15,
+        0.86
+      ],
+      "ee": [
+        0.2134354225714486,
+        0.14046302523559076,
+        0.8575152654602461
+      ],
+      "goal_error": 0.011841514692195035
+    },
+    {
+      "wall": 492505.581189772,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 20,
+      "sage_optimizations": 0,
+      "plan_ms": 2.2613309556618333,
+      "minimum_clearance": 0.03593326791524887,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.5594899887219071,
+      "accepted_commands": 175,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 10,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 8,
+      "map_age_sim": 0.3210000000000006,
+      "goal": [
+        0.22,
+        0.15,
+        0.86
+      ],
+      "ee": [
+        0.21343842175788247,
+        0.14046325598359224,
+        0.8575144110459612
+      ],
+      "goal_error": 0.011839845772237031
+    },
+    {
+      "wall": 492506.085920677,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 20,
+      "sage_optimizations": 0,
+      "plan_ms": 2.2613309556618333,
+      "minimum_clearance": 0.03593326791524887,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.5594899887219071,
+      "accepted_commands": 199,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 12,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 8,
+      "map_age_sim": 0.019000000000000128,
+      "goal": [
+        0.22,
+        0.15,
+        0.86
+      ],
+      "ee": [
+        0.2134381454342088,
+        0.1404632136439033,
+        0.8575145234929107
+      ],
+      "goal_error": 0.011840009409274968
+    },
+    {
+      "wall": 492506.581240407,
+      "status": "GOAL_REACHED",
+      "guard": "STALE_PLAN",
+      "enabled": true,
+      "error": null,
+      "plans": 20,
+      "sage_optimizations": 0,
+      "plan_ms": 2.2613309556618333,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.5594899887219071,
+      "accepted_commands": 200,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 12,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 8,
+      "map_age_sim": 0.5190000000000001,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21343842175788172,
+        0.14046325598359213,
+        0.8575144110459613
+      ],
+      "goal_error": 0.5909079157433842
+    },
+    {
+      "wall": 492507.090629511,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 25,
+      "sage_optimizations": 5,
+      "plan_ms": 19.606133981142193,
+      "minimum_clearance": 0.03593590542078018,
+      "optimize_ms": 16.91019401187077,
+      "admission_ms": 2.128222957253456,
+      "accepted_commands": 215,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 14,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 13,
+      "map_age_sim": 0.019000000000000128,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21365861004808945,
+        0.14042423597234072,
+        0.8546060507247719
+      ],
+      "goal_error": 0.5880988494880921
+    },
+    {
+      "wall": 492507.581307178,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 30,
+      "sage_optimizations": 10,
+      "plan_ms": 20.436727965716273,
+      "minimum_clearance": 0.035937559449672696,
+      "optimize_ms": 18.36983801331371,
+      "admission_ms": 1.4486679574474692,
+      "accepted_commands": 238,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 15,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 15,
+      "map_age_sim": 0.11899999999999977,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2139750421263219,
+        0.1403290663519315,
+        0.8498127481357423
+      ],
+      "goal_error": 0.5834894714447837
+    },
+    {
+      "wall": 492508.081208999,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 35,
+      "sage_optimizations": 15,
+      "plan_ms": 21.635167009662837,
+      "minimum_clearance": 0.03593313380479812,
+      "optimize_ms": 19.460613024421036,
+      "admission_ms": 1.5167719684541225,
+      "accepted_commands": 261,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 16,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 16,
+      "map_age_sim": 0.22000000000000064,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21458596557525406,
+        0.14022861032996106,
+        0.8449766901334904
+      ],
+      "goal_error": 0.5787491477087487
+    },
+    {
+      "wall": 492508.581117349,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 40,
+      "sage_optimizations": 20,
+      "plan_ms": 21.398484997916967,
+      "minimum_clearance": 0.035928454840183255,
+      "optimize_ms": 19.483671989291906,
+      "admission_ms": 1.368689991068095,
+      "accepted_commands": 285,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 17,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 17,
+      "map_age_sim": 0.41600000000000037,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2149179898785386,
+        0.1400852655375477,
+        0.8402604745077937
+      ],
+      "goal_error": 0.5742181695067593
+    },
+    {
+      "wall": 492509.081149903,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 45,
+      "sage_optimizations": 25,
+      "plan_ms": 20.95702401129529,
+      "minimum_clearance": 0.035932910287380215,
+      "optimize_ms": 18.92789197154343,
+      "admission_ms": 1.4104089932516217,
+      "accepted_commands": 308,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 19,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 19,
+      "map_age_sim": 0.11899999999999977,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21525897214039835,
+        0.13993951889035106,
+        0.8355559267129665
+      ],
+      "goal_error": 0.569698744428254
+    },
+    {
+      "wall": 492509.58145206,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 50,
+      "sage_optimizations": 30,
+      "plan_ms": 25.59366001514718,
+      "minimum_clearance": 0.03474307179450989,
+      "optimize_ms": 22.82844897126779,
+      "admission_ms": 2.1963290637359023,
+      "accepted_commands": 332,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 20,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 20,
+      "map_age_sim": 0.21799999999999997,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21609053565600705,
+        0.13981606387393367,
+        0.8307273785144201
+      ],
+      "goal_error": 0.5649038392042574
+    },
+    {
+      "wall": 492510.081383561,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 55,
+      "sage_optimizations": 35,
+      "plan_ms": 17.399886972270906,
+      "minimum_clearance": 0.030247384011745454,
+      "optimize_ms": 14.962758985348046,
+      "admission_ms": 1.832141017075628,
+      "accepted_commands": 356,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 21,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 21,
+      "map_age_sim": 0.31700000000000017,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21684765083865176,
+        0.1396801359263106,
+        0.8259406938297197
+      ],
+      "goal_error": 0.5601757603032068
+    },
+    {
+      "wall": 492510.581353285,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 60,
+      "sage_optimizations": 40,
+      "plan_ms": 18.210522015579045,
+      "minimum_clearance": 0.026022226810455323,
+      "optimize_ms": 15.910135000012815,
+      "admission_ms": 1.7648760112933815,
+      "accepted_commands": 380,
+      "guard_rejections": 0,
+      "command_source": "sage",
+      "map_sequence": 22,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 22,
+      "map_age_sim": 0.41799999999999926,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21758700687663796,
+        0.13953724170301773,
+        0.8211761881553095
+      ],
+      "goal_error": 0.5554771501161876
+    },
+    {
+      "wall": 492511.081323834,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 65,
+      "sage_optimizations": 45,
+      "plan_ms": 22.59748801589012,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 19.901549036148936,
+      "admission_ms": 1.3804449699819088,
+      "accepted_commands": 403,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 24,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 24,
+      "map_age_sim": 0.11700000000000088,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322264642,
+        0.13947449952194751,
+        0.8192970389355164
+      ],
+      "goal_error": 0.5536467018445235
+    },
+    {
+      "wall": 492511.581251775,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 70,
+      "sage_optimizations": 50,
+      "plan_ms": 15.716577996499836,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 12.694064003881067,
+      "admission_ms": 2.4797169608063996,
+      "accepted_commands": 427,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 25,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 25,
+      "map_age_sim": 0.21799999999999997,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237156,
+        0.13947449952171423,
+        0.8192970389355987
+      ],
+      "goal_error": 0.5536467018447165
+    },
+    {
+      "wall": 492512.081314073,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 75,
+      "sage_optimizations": 55,
+      "plan_ms": 15.608732006512582,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 12.64744100626558,
+      "admission_ms": 2.4353819899260998,
+      "accepted_commands": 451,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 26,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 26,
+      "map_age_sim": 0.31899999999999906,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237086,
+        0.13947449952171367,
+        0.8192970389355987
+      ],
+      "goal_error": 0.5536467018447169
+    },
+    {
+      "wall": 492512.581325868,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 80,
+      "sage_optimizations": 60,
+      "plan_ms": 22.695344989188015,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 20.627033023629338,
+      "admission_ms": 1.4199260040186346,
+      "accepted_commands": 474,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 28,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 28,
+      "map_age_sim": 0.12100000000000222,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237028,
+        0.13947449952171365,
+        0.819297038935599
+      ],
+      "goal_error": 0.5536467018447174
+    },
+    {
+      "wall": 492513.081209503,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 85,
+      "sage_optimizations": 65,
+      "plan_ms": 17.412881017662585,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 14.871817955281585,
+      "admission_ms": 1.9793329993262887,
+      "accepted_commands": 498,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 29,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 29,
+      "map_age_sim": 0.21800000000000175,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2178135032223719,
+        0.13947449952171426,
+        0.8192970389355986
+      ],
+      "goal_error": 0.5536467018447164
+    },
+    {
+      "wall": 492513.581210169,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 90,
+      "sage_optimizations": 70,
+      "plan_ms": 20.608236955013126,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 18.72281200485304,
+      "admission_ms": 1.2998239835724235,
+      "accepted_commands": 522,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 30,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 30,
+      "map_age_sim": 0.3190000000000026,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322236984,
+        0.13947449952171362,
+        0.8192970389355994
+      ],
+      "goal_error": 0.5536467018447179
+    },
+    {
+      "wall": 492514.081420796,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 95,
+      "sage_optimizations": 75,
+      "plan_ms": 18.40089197503403,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 16.341797017958015,
+      "admission_ms": 1.4985179877839983,
+      "accepted_commands": 546,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 31,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 31,
+      "map_age_sim": 0.4190000000000005,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2178135032223706,
+        0.13947449952171384,
+        0.8192970389355992
+      ],
+      "goal_error": 0.5536467018447175
+    },
+    {
+      "wall": 492514.581229168,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 100,
+      "sage_optimizations": 80,
+      "plan_ms": 18.020674004219472,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 15.484872041270137,
+      "admission_ms": 1.9525029347278178,
+      "accepted_commands": 570,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 33,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 33,
+      "map_age_sim": 0.11899999999999977,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2178135032223707,
+        0.13947449952171379,
+        0.8192970389355989
+      ],
+      "goal_error": 0.5536467018447171
+    },
+    {
+      "wall": 492515.081181125,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 105,
+      "sage_optimizations": 85,
+      "plan_ms": 18.094081955496222,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 13.197127962484956,
+      "admission_ms": 4.3553850264288485,
+      "accepted_commands": 593,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 34,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 34,
+      "map_age_sim": 0.21999999999999886,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237014,
+        0.1394744995217141,
+        0.8192970389355991
+      ],
+      "goal_error": 0.5536467018447174
+    },
+    {
+      "wall": 492515.581474019,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 110,
+      "sage_optimizations": 90,
+      "plan_ms": 21.57310099573806,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 18.07480800198391,
+      "admission_ms": 2.9895069892518222,
+      "accepted_commands": 617,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 35,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 35,
+      "map_age_sim": 0.3200000000000003,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237117,
+        0.13947449952171387,
+        0.8192970389355989
+      ],
+      "goal_error": 0.5536467018447169
+    },
+    {
+      "wall": 492516.081278926,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 115,
+      "sage_optimizations": 95,
+      "plan_ms": 18.089754041284323,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 15.747073048260063,
+      "admission_ms": 1.814946997910738,
+      "accepted_commands": 641,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 37,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 37,
+      "map_age_sim": 0.21999999999999886,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237042,
+        0.13947449952171395,
+        0.8192970389355991
+      ],
+      "goal_error": 0.5536467018447174
+    },
+    {
+      "wall": 492516.581188322,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 120,
+      "sage_optimizations": 100,
+      "plan_ms": 16.593954002019018,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 14.957310049794614,
+      "admission_ms": 1.146780967246741,
+      "accepted_commands": 665,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 38,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 38,
+      "map_age_sim": 0.3210000000000015,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2178135032223718,
+        0.13947449952171398,
+        0.8192970389355989
+      ],
+      "goal_error": 0.5536467018447168
+    },
+    {
+      "wall": 492517.081132284,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 125,
+      "sage_optimizations": 105,
+      "plan_ms": 14.451525988988578,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 12.609795958269387,
+      "admission_ms": 1.2701980886049569,
+      "accepted_commands": 689,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 40,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 40,
+      "map_age_sim": 0.21999999999999886,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237053,
+        0.13947449952171376,
+        0.8192970389355991
+      ],
+      "goal_error": 0.5536467018447173
+    },
+    {
+      "wall": 492517.581322556,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 130,
+      "sage_optimizations": 110,
+      "plan_ms": 16.739297017920762,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 15.074933995492756,
+      "admission_ms": 1.17973901797086,
+      "accepted_commands": 713,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 41,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 41,
+      "map_age_sim": 0.3200000000000003,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237053,
+        0.13947449952171384,
+        0.8192970389355991
+      ],
+      "goal_error": 0.5536467018447173
+    },
+    {
+      "wall": 492518.081301244,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 135,
+      "sage_optimizations": 115,
+      "plan_ms": 18.512931012082845,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 16.254308982752264,
+      "admission_ms": 1.7439969815313816,
+      "accepted_commands": 737,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 43,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 43,
+      "map_age_sim": 0.21999999999999886,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237036,
+        0.13947449952171329,
+        0.8192970389355994
+      ],
+      "goal_error": 0.5536467018447176
+    },
+    {
+      "wall": 492518.58136145,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 140,
+      "sage_optimizations": 120,
+      "plan_ms": 17.586797010153532,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 15.583842003252357,
+      "admission_ms": 1.4782350044697523,
+      "accepted_commands": 761,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 44,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 44,
+      "map_age_sim": 0.3200000000000003,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322236934,
+        0.13947449952171398,
+        0.8192970389355995
+      ],
+      "goal_error": 0.5536467018447181
+    },
+    {
+      "wall": 492519.081376807,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 145,
+      "sage_optimizations": 125,
+      "plan_ms": 16.926523996517062,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 15.178973961155862,
+      "admission_ms": 1.2216950417496264,
+      "accepted_commands": 785,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 46,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 46,
+      "map_age_sim": 0.11899999999999977,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237067,
+        0.13947449952171395,
+        0.8192970389355988
+      ],
+      "goal_error": 0.5536467018447171
+    },
+    {
+      "wall": 492519.581272935,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 150,
+      "sage_optimizations": 130,
+      "plan_ms": 18.737584992777556,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 16.061537025962025,
+      "admission_ms": 2.1757419453933835,
+      "accepted_commands": 809,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 47,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 47,
+      "map_age_sim": 0.3210000000000015,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237014,
+        0.1394744995217138,
+        0.819297038935599
+      ],
+      "goal_error": 0.5536467018447174
+    },
+    {
+      "wall": 492520.081184763,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 155,
+      "sage_optimizations": 135,
+      "plan_ms": 17.22804398741573,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 14.204790990334004,
+      "admission_ms": 2.5236160145141184,
+      "accepted_commands": 833,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 49,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 49,
+      "map_age_sim": 0.21699999999999875,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322236998,
+        0.13947449952171387,
+        0.8192970389355994
+      ],
+      "goal_error": 0.5536467018447178
+    },
+    {
+      "wall": 492520.581309515,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 160,
+      "sage_optimizations": 140,
+      "plan_ms": 19.77590995375067,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 17.226895957719535,
+      "admission_ms": 2.0358850597403944,
+      "accepted_commands": 857,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 50,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 50,
+      "map_age_sim": 0.31899999999999906,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237045,
+        0.13947449952171384,
+        0.8192970389355991
+      ],
+      "goal_error": 0.5536467018447174
+    },
+    {
+      "wall": 492521.081389172,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 165,
+      "sage_optimizations": 145,
+      "plan_ms": 18.857388000469655,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 16.533849004190415,
+      "admission_ms": 1.8037529662251472,
+      "accepted_commands": 881,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 52,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 52,
+      "map_age_sim": 0.11899999999999977,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237114,
+        0.13947449952171395,
+        0.8192970389355989
+      ],
+      "goal_error": 0.5536467018447169
+    },
+    {
+      "wall": 492521.581184049,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 170,
+      "sage_optimizations": 150,
+      "plan_ms": 15.673246991354972,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 13.003417989239097,
+      "admission_ms": 2.1469939965754747,
+      "accepted_commands": 905,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 53,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 53,
+      "map_age_sim": 0.21999999999999886,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2178135032223707,
+        0.1394744995217137,
+        0.819297038935599
+      ],
+      "goal_error": 0.5536467018447173
+    },
+    {
+      "wall": 492522.082157931,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 175,
+      "sage_optimizations": 155,
+      "plan_ms": 16.215829993598163,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 13.47259699832648,
+      "admission_ms": 2.2356280242092907,
+      "accepted_commands": 929,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 55,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 55,
+      "map_age_sim": 0.120000000000001,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2178135032223706,
+        0.13947449952171398,
+        0.8192970389355989
+      ],
+      "goal_error": 0.5536467018447171
+    },
+    {
+      "wall": 492522.581399257,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 180,
+      "sage_optimizations": 160,
+      "plan_ms": 20.50479903118685,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 18.650893005542457,
+      "admission_ms": 1.3403880293481052,
+      "accepted_commands": 953,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 56,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 56,
+      "map_age_sim": 0.3200000000000003,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2178135032223707,
+        0.13947449952171387,
+        0.8192970389355988
+      ],
+      "goal_error": 0.5536467018447171
+    },
+    {
+      "wall": 492523.081301244,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 185,
+      "sage_optimizations": 165,
+      "plan_ms": 17.83538900781423,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 12.728284986224025,
+      "admission_ms": 4.590408003423363,
+      "accepted_commands": 977,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 58,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 58,
+      "map_age_sim": 0.120000000000001,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2178135032223709,
+        0.13947449952171345,
+        0.8192970389355994
+      ],
+      "goal_error": 0.5536467018447174
+    },
+    {
+      "wall": 492523.581452047,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 190,
+      "sage_optimizations": 170,
+      "plan_ms": 16.668975993525237,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 12.703715008683503,
+      "admission_ms": 3.4481649636290967,
+      "accepted_commands": 1001,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 59,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 59,
+      "map_age_sim": 0.3210000000000015,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2178135032223707,
+        0.1394744995217137,
+        0.819297038935599
+      ],
+      "goal_error": 0.5536467018447173
+    },
+    {
+      "wall": 492524.081342729,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 195,
+      "sage_optimizations": 175,
+      "plan_ms": 21.60317898960784,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 19.740830990485847,
+      "admission_ms": 1.27252604579553,
+      "accepted_commands": 1024,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 61,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 61,
+      "map_age_sim": 0.11899999999999977,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2178135032223706,
+        0.13947449952171392,
+        0.8192970389355992
+      ],
+      "goal_error": 0.5536467018447175
+    },
+    {
+      "wall": 492524.581322124,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 200,
+      "sage_optimizations": 180,
+      "plan_ms": 15.574199962429702,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 13.868985988665372,
+      "admission_ms": 1.1774080339819193,
+      "accepted_commands": 1048,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 62,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 62,
+      "map_age_sim": 0.3200000000000003,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322236942,
+        0.13947449952171379,
+        0.8192970389355995
+      ],
+      "goal_error": 0.5536467018447181
+    },
+    {
+      "wall": 492525.081261962,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 205,
+      "sage_optimizations": 185,
+      "plan_ms": 21.030909032560885,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 19.252476980909705,
+      "admission_ms": 1.2575460132211447,
+      "accepted_commands": 1072,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 64,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 64,
+      "map_age_sim": 0.120000000000001,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237067,
+        0.13947449952171395,
+        0.8192970389355988
+      ],
+      "goal_error": 0.5536467018447171
+    },
+    {
+      "wall": 492525.581448606,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 210,
+      "sage_optimizations": 190,
+      "plan_ms": 17.95076299458742,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 14.510233013425022,
+      "admission_ms": 2.9135849908925593,
+      "accepted_commands": 1096,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 65,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 65,
+      "map_age_sim": 0.3210000000000015,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.2178135032223699,
+        0.13947449952171379,
+        0.8192970389355992
+      ],
+      "goal_error": 0.5536467018447178
+    },
+    {
+      "wall": 492526.081420498,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 215,
+      "sage_optimizations": 195,
+      "plan_ms": 15.606723027303815,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 13.93039699178189,
+      "admission_ms": 1.1677620350383222,
+      "accepted_commands": 1120,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 67,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 67,
+      "map_age_sim": 0.22100000000000009,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237045,
+        0.13947449952171392,
+        0.8192970389355991
+      ],
+      "goal_error": 0.5536467018447174
+    },
+    {
+      "wall": 492526.581377728,
+      "status": "BLOCKED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 220,
+      "sage_optimizations": 200,
+      "plan_ms": 17.59879500605166,
+      "minimum_clearance": 0.025613823235034944,
+      "optimize_ms": 15.395258029457182,
+      "admission_ms": 1.6357249696739018,
+      "accepted_commands": 1144,
+      "guard_rejections": 0,
+      "command_source": "blocked_hold",
+      "map_sequence": 69,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 69,
+      "map_age_sim": 0.11799999999999855,
+      "goal": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "ee": [
+        0.21781350322237159,
+        0.1394744995217138,
+        0.8192970389355986
+      ],
+      "goal_error": 0.5536467018447165
+    },
+    {
+      "wall": 492527.081300729,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 225,
+      "sage_optimizations": 201,
+      "plan_ms": 5.2102290210314095,
+      "minimum_clearance": 0.03303730607032776,
+      "optimize_ms": 0.0,
+      "admission_ms": 4.673379997257143,
+      "accepted_commands": 1163,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 70,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 70,
+      "map_age_sim": 0.3170000000000037,
+      "goal": [
+        0.22,
+        0.15,
+        0.86
+      ],
+      "ee": [
+        0.22153393423914303,
+        0.14247220517743653,
+        0.8236623389603279
+      ],
+      "goal_error": 0.037140897390541466
+    },
+    {
+      "wall": 492527.581744628,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 230,
+      "sage_optimizations": 201,
+      "plan_ms": 2.5299640255980194,
+      "minimum_clearance": 0.0359368292927742,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.9884509965777397,
+      "accepted_commands": 1185,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 72,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 72,
+      "map_age_sim": 0.11900000000000333,
+      "goal": [
+        0.22,
+        0.15,
+        0.86
+      ],
+      "ee": [
+        0.22350204442911945,
+        0.145651576375458,
+        0.8335261108104001
+      ],
+      "goal_error": 0.027056236102333542
+    },
+    {
+      "wall": 492528.081522787,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 235,
+      "sage_optimizations": 201,
+      "plan_ms": 1.9853580160997808,
+      "minimum_clearance": 0.035936546170711514,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.4170229551382363,
+      "accepted_commands": 1209,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 73,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 73,
+      "map_age_sim": 0.32000000000000384,
+      "goal": [
+        0.22,
+        0.15,
+        0.86
+      ],
+      "ee": [
+        0.22212597084645846,
+        0.14730779568639887,
+        0.8436968778937457
+      ],
+      "goal_error": 0.016660117242012464
+    },
+    {
+      "wall": 492528.581419754,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 238,
+      "sage_optimizations": 201,
+      "plan_ms": 1.6899349866434932,
+      "minimum_clearance": 0.03593448981046676,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.1692430125549436,
+      "accepted_commands": 1232,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 75,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 74,
+      "map_age_sim": 0.12100000000000222,
+      "goal": [
+        0.22,
+        0.15,
+        0.86
+      ],
+      "ee": [
+        0.22131005594675843,
+        0.148149889699387,
+        0.8490548912768872
+      ],
+      "goal_error": 0.01117741292378661
+    },
+    {
+      "wall": 492529.081504465,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 238,
+      "sage_optimizations": 201,
+      "plan_ms": 1.6899349866434932,
+      "minimum_clearance": 0.03593448981046676,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.1692430125549436,
+      "accepted_commands": 1256,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 76,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 74,
+      "map_age_sim": 0.32000000000000384,
+      "goal": [
+        0.22,
+        0.15,
+        0.86
+      ],
+      "ee": [
+        0.22131302266356373,
+        0.14815010452954244,
+        0.8490540120323123
+      ],
+      "goal_error": 0.01117858642026862
+    },
+    {
+      "wall": 492529.581675321,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 238,
+      "sage_optimizations": 201,
+      "plan_ms": 1.6899349866434932,
+      "minimum_clearance": 0.03593448981046676,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.1692430125549436,
+      "accepted_commands": 1280,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 78,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 74,
+      "map_age_sim": 0.22000000000000242,
+      "goal": [
+        0.22,
+        0.15,
+        0.86
+      ],
+      "ee": [
+        0.22131274855944028,
+        0.14815006378201706,
+        0.8490541280098982
+      ],
+      "goal_error": 0.011178447406264077
+    },
+    {
+      "wall": 492530.081696357,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 243,
+      "sage_optimizations": 201,
+      "plan_ms": 3.2235769904218614,
+      "minimum_clearance": 0.035928380334377286,
+      "optimize_ms": 0.0,
+      "admission_ms": 2.632029994856566,
+      "accepted_commands": 1295,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 0.120000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.21384434372287156,
+        0.1408010049388695,
+        0.8507941390324784
+      ],
+      "goal_error": 0.026181184298516763
+    },
+    {
+      "wall": 492530.581310258,
+      "status": "PLANNING",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 248,
+      "sage_optimizations": 201,
+      "plan_ms": 1.7304010107181966,
+      "minimum_clearance": 0.035916027271747586,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.2533309636637568,
+      "accepted_commands": 1318,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 0.620000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20794015130033627,
+        0.13249288158111622,
+        0.8526370044337825
+      ],
+      "goal_error": 0.015835020208238296
+    },
+    {
+      "wall": 492531.081273168,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": 0.035910916173458096,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1342,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 1.120000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.2057110149273955,
+        0.1290583903636469,
+        0.8533318412041322
+      ],
+      "goal_error": 0.011682877468662159
+    },
+    {
+      "wall": 492531.581527787,
+      "status": "STALE_MAP",
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1361,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 1.620000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778607,
+        0.1290583903573829,
+        0.8533318412066071
+      ],
+      "goal_error": 0.01168287745802419
+    },
+    {
+      "wall": 492532.081881308,
+      "status": "STALE_MAP",
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1361,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 2.120000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778607,
+        0.1290583903573829,
+        0.8533318412066071
+      ],
+      "goal_error": 0.01168287745802419
+    },
+    {
+      "wall": 492532.581437561,
+      "status": "STALE_MAP",
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1361,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 2.620000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778607,
+        0.1290583903573829,
+        0.8533318412066071
+      ],
+      "goal_error": 0.01168287745802419
+    },
+    {
+      "wall": 492533.081300382,
+      "status": "STALE_MAP",
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1361,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 3.120000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778607,
+        0.1290583903573829,
+        0.8533318412066071
+      ],
+      "goal_error": 0.01168287745802419
+    },
+    {
+      "wall": 492533.581412931,
+      "status": "STALE_MAP",
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1361,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 3.620000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778607,
+        0.1290583903573829,
+        0.8533318412066071
+      ],
+      "goal_error": 0.01168287745802419
+    },
+    {
+      "wall": 492534.081315274,
+      "status": "STALE_MAP",
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1361,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 4.120000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778607,
+        0.1290583903573829,
+        0.8533318412066071
+      ],
+      "goal_error": 0.01168287745802419
+    },
+    {
+      "wall": 492534.58146263,
+      "status": "STALE_MAP",
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1361,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 4.620000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778607,
+        0.1290583903573829,
+        0.8533318412066071
+      ],
+      "goal_error": 0.01168287745802419
+    },
+    {
+      "wall": 492535.081543536,
+      "status": "STALE_MAP",
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1361,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 5.120000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778607,
+        0.1290583903573829,
+        0.8533318412066071
+      ],
+      "goal_error": 0.01168287745802419
+    },
+    {
+      "wall": 492535.58144806,
+      "status": "STALE_MAP",
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1361,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 5.620000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778607,
+        0.1290583903573829,
+        0.8533318412066071
+      ],
+      "goal_error": 0.01168287745802419
+    },
+    {
+      "wall": 492536.081396605,
+      "status": "STALE_MAP",
+      "guard": "STALE_MAP",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": null,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1361,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 80,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 6.120000000000001,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778607,
+        0.1290583903573829,
+        0.8533318412066071
+      ],
+      "goal_error": 0.01168287745802419
+    },
+    {
+      "wall": 492536.581495302,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": 0.035910916173458096,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1369,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 81,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 0.21999999999999886,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778332,
+        0.12905839035738148,
+        0.8533318412066077
+      ],
+      "goal_error": 0.011682877458021488
+    },
+    {
+      "wall": 492537.081662694,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": 0.035910916173458096,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1393,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 83,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 0.11999999999999744,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778296,
+        0.12905839035738156,
+        0.8533318412066079
+      ],
+      "goal_error": 0.011682877458021336
+    },
+    {
+      "wall": 492537.581722747,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": 0.035910916173458096,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1417,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 84,
+      "map_epoch": 1789884364159891370,
+      "last_plan_map": 80,
+      "map_age_sim": 0.3190000000000026,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571101491778432,
+        0.12905839035738137,
+        0.8533318412066074
+      ],
+      "goal_error": 0.011682877458021948
+    },
+    {
+      "wall": 492538.08133746,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": 0.03586646600961685,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1440,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 85,
+      "map_epoch": 1789884364159891371,
+      "last_plan_map": 80,
+      "map_age_sim": 0.4200000000000017,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571224547077563,
+        0.12905807150213017,
+        0.853322334893242
+      ],
+      "goal_error": 0.011684774407726257
+    },
+    {
+      "wall": 492538.581430332,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": 0.03586646600961685,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1464,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 87,
+      "map_epoch": 1789884364159891371,
+      "last_plan_map": 80,
+      "map_age_sim": 0.11999999999999744,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571224547056707,
+        0.12905807150199478,
+        0.8533223348932961
+      ],
+      "goal_error": 0.011684774407495766
+    },
+    {
+      "wall": 492539.081462382,
+      "status": "GOAL_REACHED",
+      "guard": "clear",
+      "enabled": true,
+      "error": null,
+      "plans": 250,
+      "sage_optimizations": 201,
+      "plan_ms": 1.585181977134198,
+      "minimum_clearance": 0.03586646600961685,
+      "optimize_ms": 0.0,
+      "admission_ms": 1.067347009666264,
+      "accepted_commands": 1488,
+      "guard_rejections": 0,
+      "command_source": "checked_cartesian_refinement",
+      "map_sequence": 88,
+      "map_epoch": 1789884364159891371,
+      "last_plan_map": 80,
+      "map_age_sim": 0.32099999999999795,
+      "goal": [
+        0.19965844863046173,
+        0.11924257406617966,
+        0.8552042240665222
+      ],
+      "ee": [
+        0.20571224547056752,
+        0.12905807150199458,
+        0.8533223348932959
+      ],
+      "goal_error": 0.011684774407495869
+    }
+  ],
+  "map_samples": [
+    [
+      492501.679794847,
+      1,
+      1789884364159891370,
+      3.48
+    ],
+    [
+      492502.085618281,
+      2,
+      1789884364159891370,
+      3.981
+    ],
+    [
+      492502.4789376,
+      3,
+      1789884364159891370,
+      4.381
+    ],
+    [
+      492502.878576096,
+      4,
+      1789884364159891370,
+      4.78
+    ],
+    [
+      492503.272375449,
+      5,
+      1789884364159891370,
+      5.18
+    ],
+    [
+      492503.67162525,
+      6,
+      1789884364159891370,
+      5.58
+    ],
+    [
+      492504.07250146,
+      7,
+      1789884364159891370,
+      5.98
+    ],
+    [
+      492504.473453888,
+      8,
+      1789884364159891370,
+      6.379
+    ],
+    [
+      492504.877292953,
+      9,
+      1789884364159891370,
+      6.781
+    ],
+    [
+      492505.274226573,
+      10,
+      1789884364159891370,
+      7.179
+    ],
+    [
+      492505.673776338,
+      11,
+      1789884364159891370,
+      7.58
+    ],
+    [
+      492506.075385036,
+      12,
+      1789884364159891370,
+      7.981
+    ],
+    [
+      492506.738539993,
+      13,
+      1789884364159891370,
+      8.381
+    ],
+    [
+      492507.079980976,
+      14,
+      1789884364159891370,
+      8.981
+    ],
+    [
+      492507.479435142,
+      15,
+      1789884364159891370,
+      9.381
+    ],
+    [
+      492507.879585381,
+      16,
+      1789884364159891370,
+      9.78
+    ],
+    [
+      492508.18670984,
+      17,
+      1789884364159891370,
+      10.084
+    ],
+    [
+      492508.584820125,
+      18,
+      1789884364159891370,
+      10.484
+    ],
+    [
+      492508.986454635,
+      19,
+      1789884364159891370,
+      10.881
+    ],
+    [
+      492509.381764682,
+      20,
+      1789884364159891370,
+      11.282
+    ],
+    [
+      492509.783810969,
+      21,
+      1789884364159891370,
+      11.683
+    ],
+    [
+      492510.182375644,
+      22,
+      1789884364159891370,
+      12.082
+    ],
+    [
+      492510.584951908,
+      23,
+      1789884364159891370,
+      12.481
+    ],
+    [
+      492510.987765894,
+      24,
+      1789884364159891370,
+      12.883
+    ],
+    [
+      492511.38327214,
+      25,
+      1789884364159891370,
+      13.282
+    ],
+    [
+      492511.780088697,
+      26,
+      1789884364159891370,
+      13.681000000000001
+    ],
+    [
+      492512.083910685,
+      27,
+      1789884364159891370,
+      13.982
+    ],
+    [
+      492512.483289389,
+      28,
+      1789884364159891370,
+      14.379
+    ],
+    [
+      492512.888903602,
+      29,
+      1789884364159891370,
+      14.782
+    ],
+    [
+      492513.289566794,
+      30,
+      1789884364159891370,
+      15.181
+    ],
+    [
+      492513.682369828,
+      31,
+      1789884364159891370,
+      15.581
+    ],
+    [
+      492514.086446731,
+      32,
+      1789884364159891370,
+      15.983
+    ],
+    [
+      492514.481476663,
+      33,
+      1789884364159891370,
+      16.381
+    ],
+    [
+      492514.883221883,
+      34,
+      1789884364159891370,
+      16.78
+    ],
+    [
+      492515.281401029,
+      35,
+      1789884364159891370,
+      17.18
+    ],
+    [
+      492515.58181033,
+      36,
+      1789884364159891370,
+      17.48
+    ],
+    [
+      492515.884111755,
+      37,
+      1789884364159891370,
+      17.78
+    ],
+    [
+      492516.283207432,
+      38,
+      1789884364159891370,
+      18.179
+    ],
+    [
+      492516.583974008,
+      39,
+      1789884364159891370,
+      18.48
+    ],
+    [
+      492516.887429276,
+      40,
+      1789884364159891370,
+      18.78
+    ],
+    [
+      492517.282215538,
+      41,
+      1789884364159891370,
+      19.18
+    ],
+    [
+      492517.584720915,
+      42,
+      1789884364159891370,
+      19.481
+    ],
+    [
+      492517.885590959,
+      43,
+      1789884364159891370,
+      19.78
+    ],
+    [
+      492518.282742113,
+      44,
+      1789884364159891370,
+      20.18
+    ],
+    [
+      492518.591072284,
+      45,
+      1789884364159891370,
+      20.481
+    ],
+    [
+      492518.984531145,
+      46,
+      1789884364159891370,
+      20.881
+    ],
+    [
+      492519.283258853,
+      47,
+      1789884364159891370,
+      21.179
+    ],
+    [
+      492519.586817272,
+      48,
+      1789884364159891370,
+      21.48
+    ],
+    [
+      492519.890810963,
+      49,
+      1789884364159891370,
+      21.783
+    ],
+    [
+      492520.286742373,
+      50,
+      1789884364159891370,
+      22.181
+    ],
+    [
+      492520.590788064,
+      51,
+      1789884364159891370,
+      22.48
+    ],
+    [
+      492520.990250096,
+      52,
+      1789884364159891370,
+      22.881
+    ],
+    [
+      492521.388190697,
+      53,
+      1789884364159891370,
+      23.28
+    ],
+    [
+      492521.686441461,
+      54,
+      1789884364159891370,
+      23.58
+    ],
+    [
+      492521.989393861,
+      55,
+      1789884364159891370,
+      23.88
+    ],
+    [
+      492522.291010116,
+      56,
+      1789884364159891370,
+      24.18
+    ],
+    [
+      492522.596281732,
+      57,
+      1789884364159891370,
+      24.48
+    ],
+    [
+      492522.989930122,
+      58,
+      1789884364159891370,
+      24.88
+    ],
+    [
+      492523.289750411,
+      59,
+      1789884364159891370,
+      25.179
+    ],
+    [
+      492523.59177576,
+      60,
+      1789884364159891370,
+      25.479
+    ],
+    [
+      492523.990674597,
+      61,
+      1789884364159891370,
+      25.881
+    ],
+    [
+      492524.298011983,
+      62,
+      1789884364159891370,
+      26.18
+    ],
+    [
+      492524.692912685,
+      63,
+      1789884364159891370,
+      26.58
+    ],
+    [
+      492524.991868942,
+      64,
+      1789884364159891370,
+      26.88
+    ],
+    [
+      492525.291115244,
+      65,
+      1789884364159891370,
+      27.179
+    ],
+    [
+      492525.590697433,
+      66,
+      1789884364159891370,
+      27.48
+    ],
+    [
+      492525.893200571,
+      67,
+      1789884364159891370,
+      27.779
+    ],
+    [
+      492526.191275214,
+      68,
+      1789884364159891370,
+      28.08
+    ],
+    [
+      492526.494198942,
+      69,
+      1789884364159891370,
+      28.382
+    ],
+    [
+      492526.799265298,
+      70,
+      1789884364159891370,
+      28.683
+    ],
+    [
+      492527.192526524,
+      71,
+      1789884364159891370,
+      29.081
+    ],
+    [
+      492527.494308332,
+      72,
+      1789884364159891370,
+      29.381
+    ],
+    [
+      492527.796261895,
+      73,
+      1789884364159891370,
+      29.68
+    ],
+    [
+      492528.097620862,
+      74,
+      1789884364159891370,
+      29.981
+    ],
+    [
+      492528.49216865,
+      75,
+      1789884364159891370,
+      30.379
+    ],
+    [
+      492528.792563949,
+      76,
+      1789884364159891370,
+      30.68
+    ],
+    [
+      492529.095883296,
+      77,
+      1789884364159891370,
+      30.98
+    ],
+    [
+      492529.394758571,
+      78,
+      1789884364159891370,
+      31.28
+    ],
+    [
+      492529.692799571,
+      79,
+      1789884364159891370,
+      31.579
+    ],
+    [
+      492530.001163512,
+      80,
+      1789884364159891370,
+      31.88
+    ],
+    [
+      492536.404124018,
+      81,
+      1789884364159891370,
+      38.28
+    ],
+    [
+      492536.701849079,
+      82,
+      1789884364159891370,
+      38.58
+    ],
+    [
+      492537.00458769,
+      83,
+      1789884364159891370,
+      38.88
+    ],
+    [
+      492537.305913168,
+      84,
+      1789884364159891370,
+      39.181
+    ],
+    [
+      492537.815348704,
+      85,
+      1789884364159891371,
+      39.58
+    ],
+    [
+      492538.204541875,
+      86,
+      1789884364159891371,
+      40.08
+    ],
+    [
+      492538.502799749,
+      87,
+      1789884364159891371,
+      40.38
+    ],
+    [
+      492538.804009999,
+      88,
+      1789884364159891371,
+      40.679
+    ],
+    [
+      492539.107985067,
+      89,
+      1789884364159891371,
+      40.981
+    ]
+  ],
+  "map_rate_wall": 2.3511689847323645,
+  "map_interval_p95": 0.40507615452224854,
+  "min_ground_truth_clearance": 0.0879,
+  "max_fk_tf_error": 7.550332863779066e-16,
+  "joint_motion_l2": 0.2108921158277672,
+  "checks": {
+    "runtime_no_errors": true,
+    "maps_updated": true,
+    "robot_moved": true,
+    "fk_matches_tf": true,
+    "geometry_clear": true,
+    "default_goal": true,
+    "second_goal": true,
+    "inside_wall_goal": true,
+    "return_goal": true,
+    "map_pause_during_motion": true,
+    "map_pause_holds": true,
+    "map_resumes": true,
+    "map_reset": true
+  },
+  "passed": true
+}

@@ -1,0 +1,48 @@
+/ur7e_nvblox:
+  ros__parameters:
+    use_sim_time: true
+    world_frame: base_link
+    depth_topic: /camera/depth/image_rect_raw
+    camera_info_topic: /camera/depth/camera_info
+    depth_frame: camera_depth_optical_frame
+    depth_stride: 2
+    min_depth_m: 0.2
+    max_depth_m: 3.0
+    free_ray_max_depth_m: 6.0
+    voxel_size_m: 0.025
+    tf_timeout_sec: 0.15
+    max_frame_age_sec: 1.5
+    esdf_hz: 10.0
+    free_space_backend: cuda
+    free_space_update_hz: 5.0
+    grid_resolution_m: 0.02
+    grid_size_m:
+    - 1.5
+    - 1.4
+    - 1.3
+    grid_center_m:
+    - 0.15
+    - 0.05
+    - 0.6
+    initial_clearance_m: 0.12
+    max_visualized_distance_m: 0.06
+    demo_scan_prior: true
+/perception_planner:
+  ros__parameters:
+    use_sim_time: true
+    max_joint_speed: 0.30
+    adaptive_speed: true
+    planning_dt: 0.1
+    servo_hz: 50.0
+    particles: 64
+    collision_margin: 0.015
+    map_timeout_wall: 3.0
+    map_timeout_sim: 1.5
+    joint_timeout_wall: 0.5
+    command_timeout_wall: 1.5
+    autostart: true
+    goal_offset:
+    - 0.0
+    - 0.0
+    - 0.0
+    demo_mode: true

@@ -1,0 +1,198 @@
+[INFO] [launch]: All log files can be found below /home/wqj/.ros/log/2026-10-15-16-18-49-804081-wqj-37099
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [37129]
+[INFO] [gzserver-2]: process started with pid [37131]
+[INFO] [spawn_entity.py-3]: process started with pid [37133]
+[INFO] [spawner-4]: process started with pid [37135]
+[INFO] [spawner-5]: process started with pid [37137]
+[INFO] [spawn_fixture-6]: process started with pid [37139]
+[INFO] [closed_loop-7]: process started with pid [37141]
+[robot_state_publisher-1] [INFO] [1792052330.201818550] [robot_state_publisher]: got segment base
+[robot_state_publisher-1] [INFO] [1792052330.201888657] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1792052330.201894489] [robot_state_publisher]: got segment base_link_inertia
+[robot_state_publisher-1] [INFO] [1792052330.201898095] [robot_state_publisher]: got segment camera_color_frame
+[robot_state_publisher-1] [INFO] [1792052330.201901301] [robot_state_publisher]: got segment camera_color_optical_frame
+[robot_state_publisher-1] [INFO] [1792052330.201904795] [robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-1] [INFO] [1792052330.201907842] [robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-1] [INFO] [1792052330.201911068] [robot_state_publisher]: got segment camera_infra1_optical_frame
+[robot_state_publisher-1] [INFO] [1792052330.201914175] [robot_state_publisher]: got segment camera_infra2_optical_frame
+[robot_state_publisher-1] [INFO] [1792052330.201917158] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-1] [INFO] [1792052330.201920446] [robot_state_publisher]: got segment flange
+[robot_state_publisher-1] [INFO] [1792052330.201923454] [robot_state_publisher]: got segment forearm_link
+[robot_state_publisher-1] [INFO] [1792052330.201926552] [robot_state_publisher]: got segment ft_frame
+[robot_state_publisher-1] [INFO] [1792052330.201929404] [robot_state_publisher]: got segment ground_plane
+[robot_state_publisher-1] [INFO] [1792052330.201932356] [robot_state_publisher]: got segment shoulder_link
+[robot_state_publisher-1] [INFO] [1792052330.201935282] [robot_state_publisher]: got segment tool0
+[robot_state_publisher-1] [INFO] [1792052330.201938241] [robot_state_publisher]: got segment upper_arm_link
+[robot_state_publisher-1] [INFO] [1792052330.201941290] [robot_state_publisher]: got segment world
+[robot_state_publisher-1] [INFO] [1792052330.201944134] [robot_state_publisher]: got segment wrist_1_link
+[robot_state_publisher-1] [INFO] [1792052330.201947027] [robot_state_publisher]: got segment wrist_2_link
+[robot_state_publisher-1] [INFO] [1792052330.201949816] [robot_state_publisher]: got segment wrist_3_link
+[spawner-4] [INFO] [1792052330.528475468] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-5] [INFO] [1792052330.570364703] [spawner_forward_position_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawn_entity.py-3] [INFO] [1792052330.658749584] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-3] [INFO] [1792052330.659231457] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-3] [INFO] [1792052330.661723590] [spawn_entity]: Waiting for entity xml on robot_description
+[spawn_entity.py-3] [INFO] [1792052330.673930517] [spawn_entity]: Waiting for service /spawn_entity, timeout = 90
+[spawn_entity.py-3] [INFO] [1792052330.674338580] [spawn_entity]: Waiting for service /spawn_entity
+[spawn_entity.py-3] [INFO] [1792052331.679665820] [spawn_entity]: Calling service /spawn_entity
+[spawn_fixture-6] [INFO] [1792052331.815840073] [spawn_esdf_sage_fixture]: Spawned esdf_wall_positive
+[spawn_entity.py-3] [INFO] [1792052332.452901630] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [ur]
+[INFO] [spawn_entity.py-3]: process has finished cleanly [pid 37133]
+[gzserver-2] [INFO] [1792052332.868669009] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[gzserver-2] [INFO] [1792052332.870855506] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+[gzserver-2] [INFO] [1792052332.870959788] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+[gzserver-2] [INFO] [1792052332.872689446] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+[gzserver-2] [INFO] [1792052332.872961772] [gazebo_ros2_control]: Received urdf from param server, parsing...
+[gzserver-2] [INFO] [1792052332.872981902] [gazebo_ros2_control]: Loading parameter files /home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/controllers.yaml
+[gzserver-2] [INFO] [1792052332.879270182] [gazebo_ros2_control]: Loading joint: shoulder_pan_joint
+[gzserver-2] [INFO] [1792052332.879287423] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792052332.879292990] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792052332.879299241] [gazebo_ros2_control]: 			 found initial value: -1.750000
+[gzserver-2] [INFO] [1792052332.879305464] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792052332.879309196] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792052332.879312716] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792052332.879315935] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792052332.879425801] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792052332.879464380] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792052332.879469746] [gazebo_ros2_control]: Loading joint: shoulder_lift_joint
+[gzserver-2] [INFO] [1792052332.879473366] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792052332.879476729] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792052332.879480547] [gazebo_ros2_control]: 			 found initial value: -1.340760
+[gzserver-2] [INFO] [1792052332.879484550] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792052332.879487786] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792052332.879491048] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792052332.879494152] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792052332.879535957] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792052332.879574628] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792052332.879579125] [gazebo_ros2_control]: Loading joint: elbow_joint
+[gzserver-2] [INFO] [1792052332.879582596] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792052332.879585812] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792052332.879589268] [gazebo_ros2_control]: 			 found initial value: 0.032089
+[gzserver-2] [INFO] [1792052332.879593479] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792052332.879596524] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792052332.879600290] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792052332.879603517] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792052332.879739249] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792052332.879786015] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792052332.879795989] [gazebo_ros2_control]: Loading joint: wrist_1_joint
+[gzserver-2] [INFO] [1792052332.879800262] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792052332.879803989] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792052332.879808618] [gazebo_ros2_control]: 			 found initial value: -0.648888
+[gzserver-2] [INFO] [1792052332.879814532] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792052332.879817933] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792052332.879821257] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792052332.879824528] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792052332.879858607] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792052332.879887436] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792052332.879891609] [gazebo_ros2_control]: Loading joint: wrist_2_joint
+[gzserver-2] [INFO] [1792052332.879895329] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792052332.879898557] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792052332.879902052] [gazebo_ros2_control]: 			 found initial value: -2.644010
+[gzserver-2] [INFO] [1792052332.879906265] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792052332.879909366] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792052332.879912382] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792052332.879915370] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792052332.879943849] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792052332.879971499] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792052332.879991091] [gazebo_ros2_control]: Loading joint: wrist_3_joint
+[gzserver-2] [INFO] [1792052332.879994540] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792052332.879997674] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792052332.880000854] [gazebo_ros2_control]: 			 found initial value: -1.141411
+[gzserver-2] [INFO] [1792052332.880004504] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792052332.880010144] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792052332.880013266] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792052332.880016373] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792052332.880050380] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792052332.880086017] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792052332.880116328] [resource_manager]: Initialize hardware 'ur' 
+[gzserver-2] [INFO] [1792052332.880196071] [resource_manager]: Successful initialization of hardware 'ur'
+[gzserver-2] [INFO] [1792052332.880248517] [resource_manager]: 'configure' hardware 'ur' 
+[gzserver-2] [INFO] [1792052332.880254098] [resource_manager]: Successful 'configure' of hardware 'ur'
+[gzserver-2] [INFO] [1792052332.880261427] [resource_manager]: 'activate' hardware 'ur' 
+[gzserver-2] [INFO] [1792052332.880265309] [resource_manager]: Successful 'activate' of hardware 'ur'
+[gzserver-2] [INFO] [1792052332.880305312] [gazebo_ros2_control]: Loading controller_manager
+[gzserver-2] [WARN] [1792052332.889024150] [gazebo_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gzserver-2] [INFO] [1792052332.889110493] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+[gzserver-2] 
+[gzserver-2] RealSensePlugin: The realsense_camera plugin is attach to model ur
+[gzserver-2] [INFO] [1792052332.904166852] [gazebo_realsense_camera]: Realsense Gazebo ROS plugin loading.
+[gzserver-2] [INFO] [1792052332.942951734] [gazebo_realsense_camera]: Loaded Realsense Gazebo ROS plugin.
+[gzserver-2] [INFO] [1792052333.033486762] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[spawner-4] [INFO] [1792052333.044482020] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gzserver-2] [INFO] [1792052333.045178522] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[gzserver-2] [INFO] [1792052333.045400908] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-4] [INFO] [1792052333.075137901] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[gzserver-2] [INFO] [1792052333.076334190] [controller_manager]: Loading controller 'forward_position_controller'
+[spawner-5] [INFO] [1792052333.095536851] [spawner_forward_position_controller]: [94mLoaded [1mforward_position_controller[0m
+[gzserver-2] [INFO] [1792052333.096596587] [controller_manager]: Configuring controller 'forward_position_controller'
+[gzserver-2] [INFO] [1792052333.097515509] [forward_position_controller]: configure successful
+[gzserver-2] [INFO] [1792052333.114337094] [forward_position_controller]: activate successful
+[spawner-5] [INFO] [1792052333.125596839] [spawner_forward_position_controller]: [92mConfigured and activated [1mforward_position_controller[0m
+[spawn_fixture-6] [INFO] [1792052333.162949832] [spawn_esdf_sage_fixture]: Spawned esdf_wall_negative
+[INFO] [spawner-4]: process has finished cleanly [pid 37135]
+[INFO] [spawner-5]: process has finished cleanly [pid 37137]
+[spawn_fixture-6] [INFO] [1792052333.377108998] [spawn_esdf_sage_fixture]: Spawned esdf_sphere
+[closed_loop-7] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[closed_loop-7] I20261015 16:18:56.739584 37399 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:18:56.753242 37399 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:18:56.759246 37399 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:18:56.773850 37399 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:18:56.779171 37399 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:18:56.794554 37399 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:18:56.799688 37399 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:18:56.814261 37399 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:18:56.817736 37399 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:18:56.832190 37399 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:18:56.837847 37399 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:18:56.851197 37399 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:18:56.851456 37399 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:18:56.851495 37399 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:18:56.851823 37399 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:18:56.851863 37399 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:18:56.851868 37399 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:18:56.851871 37399 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:18:56.851872 37399 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:18:56.851874 37399 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:18:56.851877 37399 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:18:56.851878 37399 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:18:56.851881 37399 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:18:56.851883 37399 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:18:56.937036 37399 mapper_impl.h:60] Allocating space for last depth view for sensor type
+[closed_loop-7] I20261015 16:19:09.679901 37278 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:19:09.679949 37278 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:19:09.684993 37278 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:19:09.685137 37278 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:19:09.690078 37278 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:19:09.690112 37278 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:19:09.694489 37278 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:19:09.694520 37278 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:19:09.697355 37278 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:19:09.697386 37278 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:19:09.702816 37278 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:19:09.702847 37278 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:19:09.703033 37278 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:19:09.703058 37278 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:19:09.703227 37278 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[closed_loop-7] I20261015 16:19:09.703251 37278 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[closed_loop-7] I20261015 16:19:09.703255 37278 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:19:09.703258 37278 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:19:09.703258 37278 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:19:09.703260 37278 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:19:09.703262 37278 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:19:09.703263 37278 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:19:09.703265 37278 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:19:09.703267 37278 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[closed_loop-7] I20261015 16:19:09.711671 37278 mapper_impl.h:60] Allocating space for last depth view for sensor type
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [closed_loop-7]: sending signal 'SIGINT' to process[closed_loop-7]
+[INFO] [spawn_fixture-6]: sending signal 'SIGINT' to process[spawn_fixture-6]
+[INFO] [gzserver-2]: sending signal 'SIGINT' to process[gzserver-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1792052566.776142114] [rclcpp]: signal_handler(signum=2)
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 37129]
+[INFO] [spawn_fixture-6]: process has finished cleanly [pid 37139]
+[closed_loop-7] The following exception was never retrieved: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[closed_loop-7] The following exception was never retrieved: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[INFO] [gzserver-2]: process has finished cleanly [pid 37131]
+[INFO] [closed_loop-7]: process has finished cleanly [pid 37141]

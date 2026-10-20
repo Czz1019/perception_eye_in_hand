@@ -1,0 +1,124 @@
+[INFO] [launch]: All log files can be found below /home/wqj/.ros/log/2026-09-16-20-18-09-097886-wqj-338066
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [scan_scene-1]: process started with pid [338088]
+[INFO] [static_transform_publisher-2]: process started with pid [338090]
+[INFO] [python-3]: process started with pid [338092]
+[INFO] [rviz2-4]: process started with pid [338094]
+[static_transform_publisher-2] [INFO] [1789561089.171641116] [gazebo_rgb_sensor_frame]: Spinning until stopped - publishing transform
+[static_transform_publisher-2] translation: ('-0.015000', '0.000000', '0.000000')
+[static_transform_publisher-2] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-2] from 'camera_depth_optical_frame' to 'camera_sim_color_optical_frame'
+[rviz2-4] [INFO] [1789561090.210446793] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-4] [INFO] [1789561090.210636366] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[python-3] [INFO] [1789561090.248132016] [ur7e_reconstruction]: TSDF surface reconstruction: base_link <- camera_depth_optical_frame; Python=/home/wqj/miniconda3/envs/whole_control/bin/python; no SLAM or ESDF updates.
+[rviz2-4] [INFO] [1789561090.265763284] [rviz2]: Stereo is NOT SUPPORTED
+[python-3] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[python-3] I20260916 20:18:55.406538 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:55.406963 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:55.452346 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:55.569520 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:55.611368 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:55.728821 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:55.770238 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:55.890328 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:55.921579 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:56.037714 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:56.081820 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:56.203003 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:56.204499 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:56.204726 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:56.206745 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:56.206995 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:56.207047 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.207067 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.207085 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.207103 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.207119 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.207135 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.207152 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.207170 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.256654 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:56.256939 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:56.307013 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:56.307387 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:56.363778 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:56.364087 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:56.417286 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:56.417570 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:56.454654 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:56.454857 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:56.508291 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:56.508538 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:56.511984 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:56.512229 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:56.515167 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[python-3] I20260916 20:18:56.515311 338185 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.01, and memory_type: kDevice to LayerCake.
+[python-3] I20260916 20:18:56.515362 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.515381 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.515398 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.515416 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.515453 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.515470 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.515486 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[python-3] I20260916 20:18:56.515504 338185 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[python-3] [INFO] [1789561136.621493266] [ur7e_reconstruction]: Mapper ready: 640x360, voxel=0.01 m
+[python-3] I20260916 20:18:57.259502 338185 mapper_impl.h:60] Allocating space for last depth view for sensor type
+[python-3] I20260916 20:18:57.323925 338185 image_cache_impl.h:45] Allocating a new cached image
+[python-3] [WARN] [1789561138.775050634] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 99.102000 but the latest data is at time 98.950000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[scan_scene-1] [INFO] [1789561140.299538332] [reconstruction_scan]: Moving to overview
+[python-3] [WARN] [1789561148.471716059] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 107.552000 but the latest data is at time 107.540000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[scan_scene-1] [INFO] [1789561155.238339370] [reconstruction_scan]: {"name": "overview", "integrated_frames": 15, "joint_error_rad": 4.669769788290257e-05, "latest": {"map_epoch": 0, "input_stamp_ns": 112122000000, "vertices": 7466, "triangles": 11204, "camera_position_base": [0.34999406337738037, 0.020009391009807587, 0.8299157023429871]}}
+[scan_scene-1] [INFO] [1789561155.240771163] [reconstruction_scan]: Moving to south
+[python-3] I20260916 20:19:21.005745 338185 gpu_layer_view_impl.cuh:100] Resizing GPU hash capacity from 4096 to 8192 in order to accomodate space for 2008 new elements.
+[python-3] I20260916 20:19:21.006742 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 8192 blocks. Real capacity: 8192
+[python-3] I20260916 20:19:21.104271 338185 gpu_layer_view_impl.cuh:100] Resizing GPU hash capacity from 4096 to 8192 in order to accomodate space for 1935 new elements.
+[python-3] I20260916 20:19:21.105057 338185 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 8192 blocks. Real capacity: 8192
+[python-3] [WARN] [1789561163.204137069] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 121.376000 but the latest data is at time 121.150000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[scan_scene-1] [INFO] [1789561172.170592066] [reconstruction_scan]: {"name": "south", "integrated_frames": 23, "joint_error_rad": 4.682767315247749e-05, "latest": {"map_epoch": 0, "input_stamp_ns": 129374000000, "vertices": 9729, "triangles": 14676, "camera_position_base": [0.3499937653541565, -0.49996671080589294, 0.579964280128479]}}
+[scan_scene-1] [INFO] [1789561172.170782684] [reconstruction_scan]: Moving to raised_transit_after_south
+[scan_scene-1] [INFO] [1789561181.685038211] [reconstruction_scan]: {"name": "raised_transit_after_south", "integrated_frames": 23, "joint_error_rad": 4.669769788290257e-05, "latest": {"map_epoch": 0, "input_stamp_ns": 138739000000, "vertices": 9694, "triangles": 14635, "camera_position_base": [0.34999406337738037, 0.020009391009807587, 0.8299157023429871]}}
+[scan_scene-1] [INFO] [1789561181.685236908] [reconstruction_scan]: Moving to east
+[scan_scene-1] Traceback (most recent call last):
+[scan_scene-1]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/ur7e_reconstruction/scan_scene", line 33, in <module>
+[scan_scene-1]     sys.exit(load_entry_point('ur7e-reconstruction==0.1.0', 'console_scripts', 'scan_scene')())
+[scan_scene-1]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/python3.10/site-packages/ur7e_reconstruction/scan.py", line 104, in main
+[scan_scene-1]     node.run()
+[scan_scene-1]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/python3.10/site-packages/ur7e_reconstruction/scan.py", line 79, in run
+[scan_scene-1]     self.move(target)
+[scan_scene-1]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/python3.10/site-packages/ur7e_reconstruction/scan.py", line 71, in move
+[scan_scene-1]     self.wait_until(lambda: np.max(np.abs(self.q-target)) < .008, 20, 'joint target')
+[scan_scene-1]   File "/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/python3.10/site-packages/ur7e_reconstruction/scan.py", line 51, in wait_until
+[scan_scene-1]     raise RuntimeError('Timeout: ' + description)
+[scan_scene-1] RuntimeError: Timeout: joint target
+[ERROR] [scan_scene-1]: process has died [pid 338088, exit code 1, cmd '/home/wqj/realtime_nvblox_ws/install/ur7e_reconstruction/lib/ur7e_reconstruction/scan_scene --ros-args --params-file /tmp/launch_params_b4sl7gvc'].
+[python-3] [WARN] [1789561435.056332799] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 363.155000 but the latest data is at time 363.090000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561441.683664463] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 368.816000 but the latest data is at time 368.540000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561450.526299641] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 376.579000 but the latest data is at time 376.060000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561456.215842744] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 381.694000 but the latest data is at time 381.670000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561461.437480218] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 386.296000 but the latest data is at time 385.670000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561469.873507798] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 393.691000 but the latest data is at time 393.660000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561474.988731340] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 398.267000 but the latest data is at time 397.960000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561482.912819328] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 405.190000 but the latest data is at time 404.750000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561489.524113766] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 410.961000 but the latest data is at time 410.960000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561497.359916320] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 417.941000 but the latest data is at time 417.780000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561505.414141516] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 424.546000 but the latest data is at time 424.380000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561515.970787064] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 433.940000 but the latest data is at time 433.880000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561521.218264516] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 438.955000 but the latest data is at time 438.780000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561527.137381062] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 443.742000 but the latest data is at time 443.650000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561534.362963236] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 450.521000 but the latest data is at time 450.490000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561539.365937091] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 454.976000 but the latest data is at time 454.350000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561546.209352902] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 460.652000 but the latest data is at time 460.380000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561555.102629448] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 468.664000 but the latest data is at time 468.440000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561564.354467410] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 476.802000 but the latest data is at time 476.740000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561569.402403181] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 481.156000 but the latest data is at time 480.070000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561574.850918077] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 485.937000 but the latest data is at time 485.870000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561580.180319253] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 490.486000 but the latest data is at time 489.360000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561595.150669866] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 503.494000 but the latest data is at time 503.260000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561603.237314914] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 510.629000 but the latest data is at time 510.580000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561608.333340838] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 515.058000 but the latest data is at time 514.080000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561616.104908050] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 521.683000 but the latest data is at time 521.560000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561633.906390925] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 537.804000 but the latest data is at time 537.740000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561639.272512679] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 542.821000 but the latest data is at time 542.070000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561648.157127737] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 550.696000 but the latest data is at time 550.180000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561653.222093902] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 555.193000 but the latest data is at time 554.840000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]
+[python-3] [WARN] [1789561658.685408148] [ur7e_reconstruction]: Waiting for image-time TF: Lookup would require extrapolation into the future.  Requested time 559.411000 but the latest data is at time 559.350000, when looking up transform from frame [camera_depth_optical_frame] to frame [base_link]

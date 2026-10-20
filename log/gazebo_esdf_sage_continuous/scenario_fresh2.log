@@ -1,0 +1,26 @@
+{'kind': 'ready', 'trial': 'waiting', 'sim_time': 754.505, 'map_uid': '2739bdce854864a79f0dc994bd422b03784baf1d7e55de85ddd318ff65894ba4', 'seed_tool': [-0.00966214163238377, -0.3124970137760974, 0.9494951758151746]}
+{'kind': 'spawn_requested', 'trial': 'crossing', 'sim_time': 754.505, 'center': [0.25, -0.375, 0.675], 'size': [0.08, 0.08, 0.08], 'initial_gap_m': 0.16337980984918193}
+{'kind': 'spawned', 'trial': 'crossing', 'sim_time': 754.585}
+{'kind': 'sensor_detected', 'trial': 'crossing', 'sim_time': 754.75, 'cells': 154}
+{'kind': 'crossing_begin', 'trial': 'crossing', 'sim_time': 756.75}
+{'kind': 'target', 'trial': 'crossing', 'sim_time': 756.75, 'xyz': [0.4, -0.12, 0.5]}
+{'kind': 'crossing_end', 'trial': 'crossing', 'sim_time': 771.2650000000001, 'position': [0.25, -0.5201000000000335, 0.675], 'status': {'run_id': '/home/wqj/nvblox_output/gazebo_esdf_sage_continuous/fresh2_20261019', 'online': {'version': 33, 'frames': 206, 'stamp': 771.204, 'occupied_cells': 189, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'REACHING', 'error': None, 'view': 62, 'sage_iterations': 256, 'map_uid': '2739bdce854864a79f0dc994bd422b03784baf1d7e55de85ddd318ff65894ba4', 'frames': 315, 'map_frozen': True, 'capture_wait': 'CAPTURING', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'continuous final-goal SAGE with asynchronous checked execution', 'stopped': False}}
+{'kind': 'crossing_reached', 'trial': 'crossing', 'sim_time': 847.75, 'status': {'run_id': '/home/wqj/nvblox_output/gazebo_esdf_sage_continuous/fresh2_20261019', 'online': {'version': 33, 'frames': 848, 'stamp': 847.7, 'occupied_cells': 189, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'GOAL_REACHED', 'error': None, 'view': 62, 'sage_iterations': 589, 'map_uid': '2739bdce854864a79f0dc994bd422b03784baf1d7e55de85ddd318ff65894ba4', 'frames': 315, 'map_frozen': True, 'capture_wait': 'CAPTURING', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'continuous final-goal SAGE with asynchronous checked execution', 'stopped': False}}
+{'kind': 'deleted', 'trial': 'crossing', 'sim_time': 848.0350000000001}
+{'kind': 'target', 'trial': 'return', 'sim_time': 851.0350000000001, 'xyz': [-0.00966214163238377, -0.3124970137760974, 0.9494951758151746]}
+{'kind': 'returned', 'trial': 'return', 'sim_time': 964.2600000000001}
+{'kind': 'spawn_requested', 'trial': 'blocked', 'sim_time': 964.2600000000001, 'center': [0.4, -0.12, 0.5], 'size': [0.08, 0.08, 0.08], 'initial_gap_m': 0.14225356994447647}
+{'kind': 'spawned', 'trial': 'blocked', 'sim_time': 964.36}
+{'kind': 'sensor_detected', 'trial': 'blocked', 'sim_time': 964.5000000000001, 'cells': 155}
+{'kind': 'target', 'trial': 'blocked', 'sim_time': 967.5000000000001, 'xyz': [0.4, -0.12, 0.5]}
+{'kind': 'blocked_hold', 'trial': 'blocked', 'sim_time': 970.7500000000001, 'range_rad': 0.0}
+{'kind': 'unblocking_begin', 'trial': 'blocked', 'sim_time': 970.7500000000001}
+{'kind': 'unblocking_end', 'trial': 'blocked', 'sim_time': 998.7600000000001, 'position': [0.4, 0.16000000000000542, 0.5]}
+{'kind': 'failed', 'trial': 'blocked', 'sim_time': 1219.98, 'error': "{'run_id': '/home/wqj/nvblox_output/gazebo_esdf_sage_continuous/fresh2_20261019', 'online': {'version': 421, 'frames': 4201, 'stamp': 1219.701, 'occupied_cells': 183, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'GOAL_REJECTED', 'error': 'Continuous reaching budget exceeded', 'view': 62, 'sage_iterations': 3340, 'map_uid': '2739bdce854864a79f0dc994bd422b03784baf1d7e55de85ddd318ff65894ba4', 'frames': 315, 'map_frozen': True, 'capture_wait': 'CAPTURING', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'continuous final-goal SAGE with asynchronous checked execution', 'stopped': False}"}
+{'kind': 'deleted', 'trial': 'blocked', 'sim_time': 1220.27}
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage_continuous/test/moving_scenario.py", line 96, in <module>
+    s=wait(lambda s:s.get('phase')=='GOAL_REACHED',240);assert s['map_uid']==uid and s['frames']==315;record('resumed_reached',status=s);remove();record('complete',passed=True)
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage_continuous/test/moving_scenario.py", line 57, in wait
+    raise TimeoutError(str(status()))
+TimeoutError: {'run_id': '/home/wqj/nvblox_output/gazebo_esdf_sage_continuous/fresh2_20261019', 'online': {'version': 421, 'frames': 4201, 'stamp': 1219.701, 'occupied_cells': 183, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'GOAL_REJECTED', 'error': 'Continuous reaching budget exceeded', 'view': 62, 'sage_iterations': 3340, 'map_uid': '2739bdce854864a79f0dc994bd422b03784baf1d7e55de85ddd318ff65894ba4', 'frames': 315, 'map_frozen': True, 'capture_wait': 'CAPTURING', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'continuous final-goal SAGE with asynchronous checked execution', 'stopped': False}

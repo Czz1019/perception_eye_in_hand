@@ -1,0 +1,21 @@
+/**:
+  ros__parameters:
+    use_sim_time: true
+    world_frame: base_link
+    depth_topic: /camera/depth/image_rect_raw
+    camera_info_topic: /camera/depth/camera_info
+    depth_frame: camera_depth_optical_frame
+    depth_stride: 2
+    min_depth_m: 0.2
+    max_depth_m: 4.0
+    voxel_size_m: 0.03
+    tf_timeout_sec: 0.15
+    max_frame_age_sec: 0.5
+    esdf_hz: 10.0
+    grid_resolution_m: 0.05
+    grid_size_m: [2.0, 2.0, 1.5]
+    grid_center_m: [0.0, 0.0, 0.5]
+    # Full query grid includes unknown cells. A second topic shows known cells only.
+    max_visualized_distance_m: 0.5
+    full_grid_reliable: true
+    output_directory: ~/nvblox_output/ur7e_sim

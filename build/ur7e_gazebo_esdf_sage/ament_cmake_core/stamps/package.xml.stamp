@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ur7e_gazebo_esdf_sage</name><version>0.1.0</version>
+  <description>Calibrated Gazebo prescan ESDF and feedback-based rolling SAGE reaching.</description>
+  <maintainer email="wqj@localhost.localdomain">wqj</maintainer><license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend><buildtool_depend>ament_cmake_python</buildtool_depend>
+  <exec_depend>ur7e_real_static</exec_depend><exec_depend>ur7e_real_reconstruction</exec_depend><exec_depend>ur7e_nvblox</exec_depend>
+  <exec_depend>realtime_nvblox</exec_depend><exec_depend>ur7e_sage_planner</exec_depend>
+  <exec_depend>ur7e_d435_gazebo</exec_depend><exec_depend>ur7e_perception_planning</exec_depend>
+  <exec_depend>gazebo_msgs</exec_depend><exec_depend>rviz2</exec_depend><exec_depend>gazebo_ros</exec_depend><exec_depend>gazebo_ros2_control</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend><exec_depend>controller_manager</exec_depend>
+  <exec_depend>rclpy</exec_depend><exec_depend>xacro</exec_depend><exec_depend>launch_ros</exec_depend>
+  <exec_depend>python3-numpy</exec_depend><exec_depend>python3-scipy</exec_depend><exec_depend>python3-yaml</exec_depend>
+  <exec_depend>python3-trimesh</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend><exec_depend>std_msgs</exec_depend><exec_depend>std_srvs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend><exec_depend>visualization_msgs</exec_depend><exec_depend>tf2_ros</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

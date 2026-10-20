@@ -1,0 +1,49 @@
+[INFO] [1790656349.143312999] [ur7e_auto_scan]: RTDE receive-only. ~/prepare writes a preview; ~/start requires allow_motion and an approved live plan.
+PREVIEW /home/wqj/realtime_nvblox_ws/src/ur7e_auto_reconstruction/validation/integration/plans/preview_20260929_123231_56fe28/plan.json
+STATE ('STARTING', None)
+STATE ('MOVING', 'S01')
+STATE ('SETTLING', 'S01')
+STATE ('CAPTURING', 'S01')
+STATE ('MOVING', 'S02')
+STATE ('SETTLING', 'S02')
+STATE ('CAPTURING', 'S02')
+STATE ('MOVING', 'S03')
+STATE ('SETTLING', 'S03')
+STATE ('CAPTURING', 'S03')
+STATE ('MOVING', 'S04')
+STATE ('SETTLING', 'S04')
+STATE ('CAPTURING', 'S04')
+STATE ('MOVING', 'S05')
+STATE ('SETTLING', 'S05')
+STATE ('CAPTURING', 'S05')
+STATE ('MOVING', 'S06')
+STATE ('SETTLING', 'S06')
+STATE ('CAPTURING', 'S06')
+STATE ('MOVING', 'S07')
+STATE ('SETTLING', 'S07')
+STATE ('CAPTURING', 'S07')
+STATE ('MOVING', 'S08')
+STATE ('SETTLING', 'S08')
+STATE ('CAPTURING', 'S08')
+STATE ('EXPORTING', 'S08')
+STATE ('SAVING_RESULT', 'S08')
+{
+  "default_start_rejected_no_control_connection": true,
+  "unleased_capture_rejected": true,
+  "changed_entry_rejected": true,
+  "eight_waypoint_closed_loop": true,
+  "vertices": 9140,
+  "triangles": 14015,
+  "views": 8,
+  "frames": 65,
+  "plane_error_p95_m": 0.0032542675733566277,
+  "red_vertices_fraction": 0.9490153172866521,
+  "esdf_disabled": true,
+  "final_surface": "/home/wqj/realtime_nvblox_ws/src/ur7e_auto_reconstruction/validation/integration/maps/scan_20260929_123232_7ed766/surface.npz",
+  "motion_finished_before_export": true,
+  "max_command_step_rad": 0.00023999999616836076,
+  "servo_cycle_p95_ms": 5.040755448862909,
+  "cancel_stops_and_does_not_resume": true,
+  "passed": true,
+  "elapsed_sec": 148.1963455720106
+}

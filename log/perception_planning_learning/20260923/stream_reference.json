@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "mode": "sparse",
+  "rate_hz": 11.429448132921578,
+  "frames": 171,
+  "points": 19714,
+  "latency_p50_ms": 42.98710823059082,
+  "latency_p95_ms": 46.92947864532471,
+  "last_stats": {
+    "rates_hz": {
+      "depth_received": 30.00669002326877,
+      "depth_integrated": 30.00669002326877,
+      "depth_overwritten": 0.0,
+      "tf_missing": 0.0,
+      "stale_depth": 0.0,
+      "esdf_updated": 11.002453008531884,
+      "esdf_published": 11.002453008531884,
+      "invalid_stamp": 0.0,
+      "future_depth": 0.0,
+      "out_of_order": 0.0,
+      "map_resets": 0.0
+    },
+    "totals": {
+      "depth_received": 498,
+      "depth_integrated": 451,
+      "depth_overwritten": 46,
+      "tf_missing": 0,
+      "stale_depth": 1,
+      "esdf_updated": 173,
+      "esdf_published": 173,
+      "invalid_stamp": 0,
+      "future_depth": 0,
+      "out_of_order": 0,
+      "map_resets": 0
+    },
+    "latency": {
+      "integrate_submit": {
+        "mean_ms": 1.3721244935743395,
+        "p50_ms": 0.7147510768845677,
+        "p95_ms": 3.275605442468077,
+        "max_ms": 66.77112902980298
+      },
+      "mapping_with_gpu_readback": {
+        "mean_ms": 3.3926151805917995,
+        "p50_ms": 2.0258509321138263,
+        "p95_ms": 3.954675607383251,
+        "max_ms": 123.49349702708423
+      },
+      "receive_to_result": {
+        "mean_ms": 36.869212485058505,
+        "p50_ms": 34.67721596825868,
+        "p95_ms": 40.65265506505966,
+        "max_ms": 183.86441993061453
+      }
+    },
+    "input_stamp_ns": 1790173142582526644,
+    "camera_position_base": [
+      -0.024269446250138927,
+      0.0,
+      0.2
+    ],
+    "receive_to_result_ms": 36.084370920434594,
+    "known_cells": 19530,
+    "total_cells": 19530,
+    "error": "",
+    "pose_source": "image_timestamp_tf",
+    "output_mode": "sparse_observed_voxels",
+    "observed_cells": 16776,
+    "allocated_tsdf_blocks": 102,
+    "map_epoch": 0,
+    "sim_time_ns": 1790173142627515101,
+    "depth_received": 498,
+    "depth_integrated": 451,
+    "depth_overwritten": 46,
+    "tf_missing": 0,
+    "stale_depth": 1,
+    "esdf_updated": 173,
+    "esdf_published": 173,
+    "invalid_stamp": 0,
+    "future_depth": 0,
+    "out_of_order": 0,
+    "map_resets": 0
+  },
+  "seconds": 15.0
+}

@@ -1,0 +1,81 @@
+{
+  "result": "PASS",
+  "messages": 32,
+  "wall_hz": 3.037912325391177,
+  "simulation_hz": 3.0398117277897625,
+  "known_cells_min": 2907,
+  "known_cells_max": 2907,
+  "tf_poses_checked": 32,
+  "max_pose_matrix_error": 2.3783416902567467e-08,
+  "stats": {
+    "rates_hz": {
+      "depth_received": 2.000491018495389,
+      "depth_overwritten": 0.0,
+      "tf_missing": 0.0,
+      "map_reset_requested": 0.0,
+      "map_initialized": 0.0,
+      "stale_depth": 0.0,
+      "depth_integrated": 2.000491018495389,
+      "esdf_updated": 2.000491018495389,
+      "esdf_published": 2.000491018495389
+    },
+    "totals": {
+      "depth_received": 632,
+      "depth_overwritten": 265,
+      "tf_missing": 203,
+      "map_reset_requested": 1,
+      "map_initialized": 1,
+      "stale_depth": 1,
+      "depth_integrated": 163,
+      "esdf_updated": 75,
+      "esdf_published": 75
+    },
+    "latency": {
+      "tf_lookup": {
+        "mean_ms": 18.255824041261803,
+        "p50_ms": 0.171843494172208,
+        "p95_ms": 60.6908702844521,
+        "max_ms": 70.73937801760621
+      },
+      "backend_initialization": {
+        "mean_ms": 4085.4770120058674,
+        "p50_ms": 4085.4770120058674,
+        "p95_ms": 4085.4770120058674,
+        "max_ms": 4085.4770120058674
+      },
+      "fusion_and_esdf": {
+        "mean_ms": 3.882115213588501,
+        "p50_ms": 2.3000390210654587,
+        "p95_ms": 6.188166295760311,
+        "max_ms": 100.56480998173356
+      }
+    },
+    "world_frame": "base_link",
+    "python_executable": "/home/wqj/miniconda3/envs/whole_control/bin/python",
+    "error": null,
+    "latest": {
+      "input_stamp_ns": 36194000000,
+      "known_cells": 2907,
+      "total_cells": 52111,
+      "map_epoch": 1,
+      "unknown_distance_m": 100.0,
+      "depth_encoding": "16UC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        1280,
+        720
+      ],
+      "integration_size": [
+        640,
+        360
+      ],
+      "camera_position_base": [
+        0.5670168995857239,
+        0.15087290108203888,
+        0.7234414219856262
+      ],
+      "ros_clock_minus_image_sec": 0.006,
+      "receive_to_result_ms": 64.7697210079059
+    }
+  }
+}

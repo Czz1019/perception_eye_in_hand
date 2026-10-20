@@ -1,0 +1,161 @@
+[INFO] [launch]: All log files can be found below /home/wqj/.ros/log/2026-10-18-13-59-16-867320-wqj-99780
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [99839]
+[INFO] [gzserver-2]: process started with pid [99841]
+[INFO] [spawn_entity.py-3]: process started with pid [99843]
+[INFO] [spawner-4]: process started with pid [99845]
+[INFO] [spawner-5]: process started with pid [99847]
+[INFO] [spawn_fixture-6]: process started with pid [99849]
+[INFO] [closed_loop-7]: process started with pid [99851]
+[robot_state_publisher-1] [INFO] [1792303157.208887818] [robot_state_publisher]: got segment base
+[robot_state_publisher-1] [INFO] [1792303157.208963397] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1792303157.208969193] [robot_state_publisher]: got segment base_link_inertia
+[robot_state_publisher-1] [INFO] [1792303157.208972797] [robot_state_publisher]: got segment camera_color_frame
+[robot_state_publisher-1] [INFO] [1792303157.208975875] [robot_state_publisher]: got segment camera_color_optical_frame
+[robot_state_publisher-1] [INFO] [1792303157.208979065] [robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-1] [INFO] [1792303157.208982010] [robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-1] [INFO] [1792303157.208985042] [robot_state_publisher]: got segment camera_infra1_optical_frame
+[robot_state_publisher-1] [INFO] [1792303157.208987908] [robot_state_publisher]: got segment camera_infra2_optical_frame
+[robot_state_publisher-1] [INFO] [1792303157.208990696] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-1] [INFO] [1792303157.208993734] [robot_state_publisher]: got segment flange
+[robot_state_publisher-1] [INFO] [1792303157.208996634] [robot_state_publisher]: got segment forearm_link
+[robot_state_publisher-1] [INFO] [1792303157.208999471] [robot_state_publisher]: got segment ft_frame
+[robot_state_publisher-1] [INFO] [1792303157.209002240] [robot_state_publisher]: got segment ground_plane
+[robot_state_publisher-1] [INFO] [1792303157.209005041] [robot_state_publisher]: got segment shoulder_link
+[robot_state_publisher-1] [INFO] [1792303157.209007918] [robot_state_publisher]: got segment tool0
+[robot_state_publisher-1] [INFO] [1792303157.209010691] [robot_state_publisher]: got segment upper_arm_link
+[robot_state_publisher-1] [INFO] [1792303157.209013572] [robot_state_publisher]: got segment world
+[robot_state_publisher-1] [INFO] [1792303157.209016304] [robot_state_publisher]: got segment wrist_1_link
+[robot_state_publisher-1] [INFO] [1792303157.209019065] [robot_state_publisher]: got segment wrist_2_link
+[robot_state_publisher-1] [INFO] [1792303157.209021757] [robot_state_publisher]: got segment wrist_3_link
+[spawner-4] [INFO] [1792303157.491021892] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-5] [INFO] [1792303157.500681858] [spawner_forward_position_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawn_entity.py-3] [INFO] [1792303157.599746047] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-3] [INFO] [1792303157.600055493] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-3] [INFO] [1792303157.601599677] [spawn_entity]: Waiting for entity xml on robot_description
+[spawn_entity.py-3] [INFO] [1792303157.705018200] [spawn_entity]: Waiting for service /spawn_entity, timeout = 90
+[spawn_entity.py-3] [INFO] [1792303157.705255822] [spawn_entity]: Waiting for service /spawn_entity
+[spawn_entity.py-3] [INFO] [1792303158.208267318] [spawn_entity]: Calling service /spawn_entity
+[spawn_entity.py-3] [INFO] [1792303159.145000252] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [ur]
+[gzserver-2] [INFO] [1792303159.157645024] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[gzserver-2] [INFO] [1792303159.159565953] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+[gzserver-2] [INFO] [1792303159.159657222] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+[gzserver-2] [INFO] [1792303159.161353446] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+[gzserver-2] [INFO] [1792303159.161620637] [gazebo_ros2_control]: Received urdf from param server, parsing...
+[gzserver-2] [INFO] [1792303159.161640261] [gazebo_ros2_control]: Loading parameter files /home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/controllers.yaml
+[gzserver-2] [INFO] [1792303159.166455044] [gazebo_ros2_control]: Loading joint: shoulder_pan_joint
+[gzserver-2] [INFO] [1792303159.166467757] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792303159.166471875] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792303159.166476573] [gazebo_ros2_control]: 			 found initial value: -1.750000
+[gzserver-2] [INFO] [1792303159.166481427] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792303159.166484081] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792303159.166486624] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792303159.166489067] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792303159.166557228] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792303159.166582394] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792303159.166586056] [gazebo_ros2_control]: Loading joint: shoulder_lift_joint
+[gzserver-2] [INFO] [1792303159.166588896] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792303159.166591468] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792303159.166594246] [gazebo_ros2_control]: 			 found initial value: -1.340760
+[gzserver-2] [INFO] [1792303159.166597206] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792303159.166599678] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792303159.166602003] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792303159.166604298] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792303159.166632448] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792303159.166653750] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792303159.166657085] [gazebo_ros2_control]: Loading joint: elbow_joint
+[gzserver-2] [INFO] [1792303159.166659751] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792303159.166662269] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792303159.166664709] [gazebo_ros2_control]: 			 found initial value: 0.032089
+[gzserver-2] [INFO] [1792303159.166667794] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792303159.166670123] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792303159.166673033] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792303159.166675454] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792303159.166779065] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792303159.166865045] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792303159.166887650] [gazebo_ros2_control]: Loading joint: wrist_1_joint
+[gzserver-2] [INFO] [1792303159.166897627] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792303159.166905914] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792303159.166914016] [gazebo_ros2_control]: 			 found initial value: -0.648888
+[gzserver-2] [INFO] [1792303159.166924653] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792303159.166932499] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792303159.166940139] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792303159.166947862] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792303159.167016955] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792303159.167091994] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792303159.167104847] [gazebo_ros2_control]: Loading joint: wrist_2_joint
+[gzserver-2] [INFO] [1792303159.167114140] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792303159.167122210] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792303159.167129983] [gazebo_ros2_control]: 			 found initial value: -2.644010
+[gzserver-2] [INFO] [1792303159.167139380] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792303159.167147012] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792303159.167154231] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792303159.167162054] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792303159.167236511] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792303159.167306265] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792303159.167338811] [gazebo_ros2_control]: Loading joint: wrist_3_joint
+[gzserver-2] [INFO] [1792303159.167350221] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792303159.167358598] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792303159.167371005] [gazebo_ros2_control]: 			 found initial value: -1.141411
+[gzserver-2] [INFO] [1792303159.167380757] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792303159.167413040] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792303159.167421350] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792303159.167429116] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792303159.167503999] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792303159.167584195] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792303159.167635931] [resource_manager]: Initialize hardware 'ur' 
+[gzserver-2] [INFO] [1792303159.167756018] [resource_manager]: Successful initialization of hardware 'ur'
+[gzserver-2] [INFO] [1792303159.167832864] [resource_manager]: 'configure' hardware 'ur' 
+[gzserver-2] [INFO] [1792303159.167847266] [resource_manager]: Successful 'configure' of hardware 'ur'
+[gzserver-2] [INFO] [1792303159.167856565] [resource_manager]: 'activate' hardware 'ur' 
+[gzserver-2] [INFO] [1792303159.167862511] [resource_manager]: Successful 'activate' of hardware 'ur'
+[gzserver-2] [INFO] [1792303159.167917409] [gazebo_ros2_control]: Loading controller_manager
+[gzserver-2] [WARN] [1792303159.173648899] [gazebo_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gzserver-2] [INFO] [1792303159.173731566] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+[gzserver-2] 
+[gzserver-2] RealSensePlugin: The realsense_camera plugin is attach to model ur
+[gzserver-2] [INFO] [1792303159.184812490] [gazebo_realsense_camera]: Realsense Gazebo ROS plugin loading.
+[gzserver-2] [INFO] [1792303159.211829699] [gazebo_realsense_camera]: Loaded Realsense Gazebo ROS plugin.
+[gzserver-2] [INFO] [1792303159.244756186] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[spawner-4] [INFO] [1792303159.252499780] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gzserver-2] [INFO] [1792303159.253036142] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[gzserver-2] [INFO] [1792303159.253151153] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[gzserver-2] [INFO] [1792303159.262351603] [controller_manager]: Loading controller 'forward_position_controller'
+[INFO] [spawn_entity.py-3]: process has finished cleanly [pid 99843]
+[spawner-5] [INFO] [1792303159.273130105] [spawner_forward_position_controller]: [94mLoaded [1mforward_position_controller[0m
+[gzserver-2] [INFO] [1792303159.293240694] [controller_manager]: Configuring controller 'forward_position_controller'
+[spawner-4] [INFO] [1792303159.293698842] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[gzserver-2] [INFO] [1792303159.294332057] [forward_position_controller]: configure successful
+[gzserver-2] [INFO] [1792303159.313021008] [forward_position_controller]: activate successful
+[spawner-5] [INFO] [1792303159.323735618] [spawner_forward_position_controller]: [92mConfigured and activated [1mforward_position_controller[0m
+[INFO] [spawner-4]: process has finished cleanly [pid 99845]
+[spawn_fixture-6] [INFO] [1792303159.435975180] [spawn_esdf_sage_fixture]: Spawned esdf_wall_positive
+[INFO] [spawner-5]: process has finished cleanly [pid 99847]
+[spawn_fixture-6] [INFO] [1792303159.638209288] [spawn_esdf_sage_fixture]: Spawned esdf_wall_negative
+[spawn_fixture-6] [INFO] [1792303159.850555738] [spawn_esdf_sage_fixture]: Spawned esdf_sphere
+[gzserver-2] [INFO] [1792303163.678318645] [moving_test.moving_test]: Subscribed to [/moving_test/cmd_vel]
+[gzserver-2] [INFO] [1792303163.679444547] [moving_test.moving_test]: Advertise odometry on [/moving_test/odom]
+[closed_loop-7] /home/wqj/miniconda3/envs/whole_control/lib/python3.10/site-packages/torch/__init__.py:1275: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+[closed_loop-7]   _C._set_default_tensor_type(t)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [closed_loop-7]: sending signal 'SIGINT' to process[closed_loop-7]
+[INFO] [spawn_fixture-6]: sending signal 'SIGINT' to process[spawn_fixture-6]
+[INFO] [gzserver-2]: sending signal 'SIGINT' to process[gzserver-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1792303291.166197864] [rclcpp]: signal_handler(signum=2)
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 99839]
+[INFO] [spawn_fixture-6]: process has finished cleanly [pid 99849]
+[closed_loop-7] no dynamics information for link: world
+[closed_loop-7] no dynamics information for link: base_link
+[closed_loop-7] no dynamics information for link: ft_frame
+[closed_loop-7] no dynamics information for link: flange
+[closed_loop-7] no dynamics information for link: tool0
+[closed_loop-7] no dynamics information for link: camera_depth_frame
+[closed_loop-7] no dynamics information for link: camera_depth_optical_frame
+[closed_loop-7] no dynamics information for link: camera_color_frame
+[closed_loop-7] no dynamics information for link: camera_color_optical_frame
+[closed_loop-7] no dynamics information for link: camera_infra1_optical_frame
+[closed_loop-7] no dynamics information for link: camera_infra2_optical_frame
+[closed_loop-7] no dynamics information for link: base
+[INFO] [gzserver-2]: process has finished cleanly [pid 99841]
+[INFO] [closed_loop-7]: process has finished cleanly [pid 99851]

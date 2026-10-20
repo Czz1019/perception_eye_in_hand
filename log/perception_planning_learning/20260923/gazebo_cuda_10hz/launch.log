@@ -1,0 +1,193 @@
+[INFO] [launch]: All log files can be found below /home/wqj/.ros/log/2026-09-23-22-14-48-809726-wqj-3233294
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [3233316]
+[INFO] [gzserver-2]: process started with pid [3233318]
+[INFO] [spawn_entity.py-3]: process started with pid [3233320]
+[INFO] [spawner-4]: process started with pid [3233322]
+[INFO] [spawner-5]: process started with pid [3233324]
+[INFO] [spawn_scene.py-6]: process started with pid [3233326]
+[INFO] [perception_planning-7]: process started with pid [3233328]
+[robot_state_publisher-1] [INFO] [1790172889.016064209] [robot_state_publisher]: got segment base
+[robot_state_publisher-1] [INFO] [1790172889.016114733] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1790172889.016119263] [robot_state_publisher]: got segment base_link_inertia
+[robot_state_publisher-1] [INFO] [1790172889.016121549] [robot_state_publisher]: got segment camera_bottom_screw_frame
+[robot_state_publisher-1] [INFO] [1790172889.016123871] [robot_state_publisher]: got segment camera_color_frame
+[robot_state_publisher-1] [INFO] [1790172889.016125948] [robot_state_publisher]: got segment camera_color_optical_frame
+[robot_state_publisher-1] [INFO] [1790172889.016127911] [robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-1] [INFO] [1790172889.016129914] [robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-1] [INFO] [1790172889.016131914] [robot_state_publisher]: got segment camera_infra1_frame
+[robot_state_publisher-1] [INFO] [1790172889.016133919] [robot_state_publisher]: got segment camera_infra1_optical_frame
+[robot_state_publisher-1] [INFO] [1790172889.016135999] [robot_state_publisher]: got segment camera_infra2_frame
+[robot_state_publisher-1] [INFO] [1790172889.016138008] [robot_state_publisher]: got segment camera_infra2_optical_frame
+[robot_state_publisher-1] [INFO] [1790172889.016139963] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-1] [INFO] [1790172889.016141977] [robot_state_publisher]: got segment d435_mount_link
+[robot_state_publisher-1] [INFO] [1790172889.016143900] [robot_state_publisher]: got segment flange
+[robot_state_publisher-1] [INFO] [1790172889.016145982] [robot_state_publisher]: got segment forearm_link
+[robot_state_publisher-1] [INFO] [1790172889.016147958] [robot_state_publisher]: got segment ft_frame
+[robot_state_publisher-1] [INFO] [1790172889.016149936] [robot_state_publisher]: got segment ground_plane
+[robot_state_publisher-1] [INFO] [1790172889.016151844] [robot_state_publisher]: got segment shoulder_link
+[robot_state_publisher-1] [INFO] [1790172889.016153834] [robot_state_publisher]: got segment tool0
+[robot_state_publisher-1] [INFO] [1790172889.016155800] [robot_state_publisher]: got segment upper_arm_link
+[robot_state_publisher-1] [INFO] [1790172889.016157831] [robot_state_publisher]: got segment world
+[robot_state_publisher-1] [INFO] [1790172889.016159710] [robot_state_publisher]: got segment wrist_1_link
+[robot_state_publisher-1] [INFO] [1790172889.016161610] [robot_state_publisher]: got segment wrist_2_link
+[robot_state_publisher-1] [INFO] [1790172889.016163509] [robot_state_publisher]: got segment wrist_3_link
+[spawner-5] [INFO] [1790172889.166600442] [spawner_forward_position_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-4] [INFO] [1790172889.167223876] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[spawn_entity.py-3] [INFO] [1790172889.202635889] [spawn_ur]: Spawn Entity started
+[spawn_entity.py-3] [INFO] [1790172889.202798071] [spawn_ur]: Loading entity published on topic robot_description
+[spawn_entity.py-3] [INFO] [1790172889.203617471] [spawn_ur]: Waiting for entity xml on robot_description
+[spawn_entity.py-3] [INFO] [1790172889.214561154] [spawn_ur]: Waiting for service /spawn_entity, timeout = 60
+[spawn_entity.py-3] [INFO] [1790172889.214698951] [spawn_ur]: Waiting for service /spawn_entity
+[perception_planning-7] /home/wqj/miniconda3/envs/whole_control/lib/python3.10/site-packages/torch/__init__.py:1275: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+[perception_planning-7]   _C._set_default_tensor_type(t)
+[spawn_entity.py-3] [INFO] [1790172889.967468821] [spawn_ur]: Calling service /spawn_entity
+[spawn_scene.py-6] [INFO] [1790172890.174856573] [spawn_eih_tall_obstacles]: 已在 Gazebo 中生成障碍物: sage_clean_sphere1
+[spawn_entity.py-3] [INFO] [1790172890.677989067] [spawn_ur]: Spawn status: SpawnEntity: Successfully spawned entity [ur]
+[gzserver-2] [INFO] [1790172890.690944599] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[gzserver-2] [INFO] [1790172890.694592287] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+[gzserver-2] [INFO] [1790172890.694767857] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+[gzserver-2] [INFO] [1790172890.696048617] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+[gzserver-2] [INFO] [1790172890.696316827] [gazebo_ros2_control]: Received urdf from param server, parsing...
+[gzserver-2] [INFO] [1790172890.696332562] [gazebo_ros2_control]: Loading parameter files /home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/controllers.yaml
+[gzserver-2] [INFO] [1790172890.701262490] [gazebo_ros2_control]: Loading joint: shoulder_pan_joint
+[gzserver-2] [INFO] [1790172890.701280795] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1790172890.701284862] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1790172890.701289824] [gazebo_ros2_control]: 			 found initial value: 0.157471
+[gzserver-2] [INFO] [1790172890.701295551] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1790172890.701298535] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1790172890.701301112] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1790172890.701303547] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1790172890.701385657] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1790172890.701409316] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1790172890.701413105] [gazebo_ros2_control]: Loading joint: shoulder_lift_joint
+[gzserver-2] [INFO] [1790172890.701415813] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1790172890.701418474] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1790172890.701421350] [gazebo_ros2_control]: 			 found initial value: -1.672229
+[gzserver-2] [INFO] [1790172890.701424564] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1790172890.701426916] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1790172890.701429209] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1790172890.701431467] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1790172890.701460063] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1790172890.701480931] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1790172890.701484108] [gazebo_ros2_control]: Loading joint: elbow_joint
+[gzserver-2] [INFO] [1790172890.701486762] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1790172890.701489089] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1790172890.701491471] [gazebo_ros2_control]: 			 found initial value: 0.553363
+[gzserver-2] [INFO] [1790172890.701494197] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1790172890.701496495] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1790172890.701499392] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1790172890.701501765] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1790172890.701536046] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1790172890.701555485] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1790172890.701559027] [gazebo_ros2_control]: Loading joint: wrist_1_joint
+[gzserver-2] [INFO] [1790172890.701561815] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1790172890.701564220] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1790172890.701566560] [gazebo_ros2_control]: 			 found initial value: -0.589218
+[gzserver-2] [INFO] [1790172890.701569523] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1790172890.701571779] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1790172890.701574004] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1790172890.701576354] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1790172890.701596592] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1790172890.701618242] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1790172890.701621591] [gazebo_ros2_control]: Loading joint: wrist_2_joint
+[gzserver-2] [INFO] [1790172890.701624097] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1790172890.701626553] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1790172890.701628805] [gazebo_ros2_control]: 			 found initial value: -1.776573
+[gzserver-2] [INFO] [1790172890.701631525] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1790172890.701633737] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1790172890.701635967] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1790172890.701638148] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1790172890.701660952] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1790172890.701678535] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1790172890.701696080] [gazebo_ros2_control]: Loading joint: wrist_3_joint
+[gzserver-2] [INFO] [1790172890.701698677] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1790172890.701701047] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1790172890.701703472] [gazebo_ros2_control]: 			 found initial value: 0.158612
+[gzserver-2] [INFO] [1790172890.701706139] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1790172890.701711616] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1790172890.701713968] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1790172890.701716376] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1790172890.701737175] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1790172890.701760774] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1790172890.701780261] [resource_manager]: Initialize hardware 'ur' 
+[gzserver-2] [INFO] [1790172890.701837289] [resource_manager]: Successful initialization of hardware 'ur'
+[gzserver-2] [INFO] [1790172890.701877138] [resource_manager]: 'configure' hardware 'ur' 
+[gzserver-2] [INFO] [1790172890.701881252] [resource_manager]: Successful 'configure' of hardware 'ur'
+[gzserver-2] [INFO] [1790172890.701887465] [resource_manager]: 'activate' hardware 'ur' 
+[gzserver-2] [INFO] [1790172890.701890100] [resource_manager]: Successful 'activate' of hardware 'ur'
+[gzserver-2] [INFO] [1790172890.701923129] [gazebo_ros2_control]: Loading controller_manager
+[gzserver-2] [WARN] [1790172890.707917076] [gazebo_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gzserver-2] [INFO] [1790172890.708003640] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+[gzserver-2] 
+[gzserver-2] RealSensePlugin: The realsense_camera plugin is attach to model ur
+[gzserver-2] [INFO] [1790172890.719738211] [gazebo_realsense_camera]: Realsense Gazebo ROS plugin loading.
+[gzserver-2] [INFO] [1790172890.747986511] [gazebo_realsense_camera]: Loaded Realsense Gazebo ROS plugin.
+[INFO] [spawn_entity.py-3]: process has finished cleanly [pid 3233320]
+[perception_planning-7] [WARN] [1790172890.842616596] [ur7e_nvblox]: Demo scan corridor prior enabled: only valid in the commissioned static Gazebo fixture
+[perception_planning-7] [INFO] [1790172890.849393859] [ur7e_nvblox]: Depth /camera/depth/image_rect_raw; timestamped TF base_link <- camera_depth_optical_frame; Python /home/wqj/miniconda3/envs/whole_control/bin/python. Waiting for camera/TF.
+[perception_planning-7] [INFO] [1790172890.876237250] [perception_planner]: Low-speed online ESDF planning; logs: /home/wqj/nvblox_output/perception_planning/20260923_221450
+[perception_planning-7] Unknown tag "ros2_control" in /robot[@name='ur7e']
+[gzserver-2] [INFO] [1790172890.920204011] [controller_manager]: Loading controller 'forward_position_controller'
+[spawner-5] [INFO] [1790172890.928871229] [spawner_forward_position_controller]: [94mLoaded [1mforward_position_controller[0m
+[gzserver-2] [INFO] [1790172890.929423023] [controller_manager]: Configuring controller 'forward_position_controller'
+[gzserver-2] [INFO] [1790172890.930000815] [forward_position_controller]: configure successful
+[gzserver-2] [INFO] [1790172890.948462565] [forward_position_controller]: activate successful
+[spawner-5] [INFO] [1790172890.971355777] [spawner_forward_position_controller]: [92mConfigured and activated [1mforward_position_controller[0m
+[spawn_scene.py-6] [INFO] [1790172890.977415348] [spawn_eih_tall_obstacles]: 已在 Gazebo 中生成障碍物: sage_clean_cube1
+[gzserver-2] [INFO] [1790172891.001722112] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[spawner-4] [INFO] [1790172891.011551604] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gzserver-2] [INFO] [1790172891.012002953] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[gzserver-2] [INFO] [1790172891.012044461] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-4] [INFO] [1790172891.041523126] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[INFO] [spawner-5]: process has finished cleanly [pid 3233324]
+[perception_planning-7] no dynamics information for link: world
+[INFO] [spawner-4]: process has finished cleanly [pid 3233322]
+[spawn_scene.py-6] [INFO] [1790172891.178280514] [spawn_eih_tall_obstacles]: 已在 Gazebo 中生成障碍物: sage_clean_cube2
+[perception_planning-7] no dynamics information for link: base_link
+[perception_planning-7] no dynamics information for link: ft_frame
+[perception_planning-7] no dynamics information for link: base
+[perception_planning-7] no dynamics information for link: flange
+[perception_planning-7] no dynamics information for link: tool0
+[INFO] [spawn_scene.py-6]: process has finished cleanly [pid 3233326]
+[perception_planning-7] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[perception_planning-7] I20260923 22:14:52.685448 3233508 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260923 22:14:52.695678 3233508 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260923 22:14:52.700158 3233508 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260923 22:14:52.712951 3233508 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260923 22:14:52.717338 3233508 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260923 22:14:52.727871 3233508 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260923 22:14:52.732856 3233508 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260923 22:14:52.732901 3233508 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260923 22:14:52.735505 3233508 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260923 22:14:52.745832 3233508 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260923 22:14:52.750202 3233508 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260923 22:14:52.760424 3233508 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260923 22:14:52.760601 3233508 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260923 22:14:52.760635 3233508 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260923 22:14:52.760771 3233508 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[perception_planning-7] I20260923 22:14:52.760802 3233508 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[perception_planning-7] I20260923 22:14:52.760805 3233508 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[perception_planning-7] I20260923 22:14:52.760807 3233508 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[perception_planning-7] I20260923 22:14:52.760809 3233508 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[perception_planning-7] I20260923 22:14:52.760810 3233508 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[perception_planning-7] I20260923 22:14:52.760812 3233508 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[perception_planning-7] I20260923 22:14:52.760813 3233508 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[perception_planning-7] I20260923 22:14:52.760815 3233508 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[perception_planning-7] I20260923 22:14:52.760818 3233508 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[perception_planning-7] I20260923 22:14:52.881515 3233508 mapper_impl.h:60] Allocating space for last depth view for sensor type
+[perception_planning-7] [INFO] [1790172917.011309953] [perception_planner]: Goal corridor ready after 5/12 views; 1 SAGE segments for [0.5, 0.0, 0.45]
+[perception_planning-7] [INFO] [1790172925.026257575] [perception_planner]: New base_link goal: [0.45, 0.4, 0.55]
+[perception_planning-7] I20260923 22:15:50.618651 3233508 gpu_layer_view_impl.cuh:100] Resizing GPU hash capacity from 4096 to 8192 in order to accomodate space for 32 new elements.
+[perception_planning-7] I20260923 22:15:50.618764 3233508 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 8192 blocks. Real capacity: 8192
+[perception_planning-7] I20260923 22:15:50.624224 3233508 gpu_layer_view_impl.cuh:100] Resizing GPU hash capacity from 4096 to 8192 in order to accomodate space for 32 new elements.
+[perception_planning-7] I20260923 22:15:50.624333 3233508 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 8192 blocks. Real capacity: 8192
+[perception_planning-7] [INFO] [1790173007.627013799] [perception_planner]: Goal corridor ready after 10/12 views; 1 SAGE segments for [0.45, 0.4, 0.55]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [perception_planning-7]: sending signal 'SIGINT' to process[perception_planning-7]
+[INFO] [gzserver-2]: sending signal 'SIGINT' to process[gzserver-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1790173013.297069025] [rclcpp]: signal_handler(signum=2)
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 3233316]
+[INFO] [gzserver-2]: process has finished cleanly [pid 3233318]
+[INFO] [perception_planning-7]: process has finished cleanly [pid 3233328]

@@ -1,0 +1,182 @@
+[INFO] [launch]: All log files can be found below /home/wqj/.ros/log/2026-10-13-20-09-46-914610-wqj-30566
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [auto_mapper-1]: process started with pid [30649]
+[INFO] [auto_scan-2]: process started with pid [30651]
+[INFO] [robot_state_publisher-3]: process started with pid [30653]
+[INFO] [rviz2-4]: process started with pid [30655]
+[robot_state_publisher-3] [INFO] [1791893387.569103906] [ur7e_auto_esdf.robot_state_publisher]: got segment base
+[robot_state_publisher-3] [INFO] [1791893387.569681138] [ur7e_auto_esdf.robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1791893387.569728520] [ur7e_auto_esdf.robot_state_publisher]: got segment base_link_inertia
+[robot_state_publisher-3] [INFO] [1791893387.569758066] [ur7e_auto_esdf.robot_state_publisher]: got segment camera_color_frame
+[robot_state_publisher-3] [INFO] [1791893387.569784331] [ur7e_auto_esdf.robot_state_publisher]: got segment camera_color_optical_frame
+[robot_state_publisher-3] [INFO] [1791893387.569811673] [ur7e_auto_esdf.robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-3] [INFO] [1791893387.569836696] [ur7e_auto_esdf.robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-3] [INFO] [1791893387.569861336] [ur7e_auto_esdf.robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1791893387.569885969] [ur7e_auto_esdf.robot_state_publisher]: got segment flange
+[robot_state_publisher-3] [INFO] [1791893387.569909641] [ur7e_auto_esdf.robot_state_publisher]: got segment forearm_link
+[robot_state_publisher-3] [INFO] [1791893387.569933589] [ur7e_auto_esdf.robot_state_publisher]: got segment ft_frame
+[robot_state_publisher-3] [INFO] [1791893387.569957311] [ur7e_auto_esdf.robot_state_publisher]: got segment shoulder_link
+[robot_state_publisher-3] [INFO] [1791893387.569980720] [ur7e_auto_esdf.robot_state_publisher]: got segment tool0
+[robot_state_publisher-3] [INFO] [1791893387.570005023] [ur7e_auto_esdf.robot_state_publisher]: got segment upper_arm_link
+[robot_state_publisher-3] [INFO] [1791893387.570029117] [ur7e_auto_esdf.robot_state_publisher]: got segment world
+[robot_state_publisher-3] [INFO] [1791893387.570052891] [ur7e_auto_esdf.robot_state_publisher]: got segment wrist_1_link
+[robot_state_publisher-3] [INFO] [1791893387.570094258] [ur7e_auto_esdf.robot_state_publisher]: got segment wrist_2_link
+[robot_state_publisher-3] [INFO] [1791893387.570119802] [ur7e_auto_esdf.robot_state_publisher]: got segment wrist_3_link
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[rviz2-4] [INFO] [1791893389.995109055] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-4] [INFO] [1791893389.995501731] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-4] [INFO] [1791893390.186710562] [rviz2]: Stereo is NOT SUPPORTED
+[auto_scan-2] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_scan-2] [INFO] [1791893391.993925358] [ur7e_auto_esdf_scan]: RTDE receive-only. ~/prepare writes a preview; ~/start requires allow_motion and an approved live plan.
+[auto_mapper-1] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[auto_mapper-1] I20261013 20:10:23.793807 30782 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:23.914633 30782 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:23.957093 30782 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:24.049489 30782 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.075359 30782 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:24.075580 30782 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.099606 30782 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:24.163679 30782 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.179551 30782 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:24.241638 30782 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.263386 30782 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:24.325520 30782 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.326316 30782 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:24.326435 30782 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.327806 30782 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:24.328001 30782 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.328027 30782 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.328034 30782 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.328043 30782 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.328052 30782 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.328061 30782 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.328084 30782 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.328094 30782 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.328102 30782 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:24.652740 30782 mapper_impl.h:60] Allocating space for last depth view for sensor type
+[auto_mapper-1] I20261013 20:10:42.697644 30765 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:42.697695 30765 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.707245 30765 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:42.707296 30765 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.716136 30765 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:42.716178 30765 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_12FeatureVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.721271 30765 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:42.721441 30765 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.724466 30765 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:42.724494 30765 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.728823 30765 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:42.728852 30765 layer_cake_impl.h:33] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.729148 30765 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:42.729172 30765 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ColorEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.729339 30765 gpu_hash_interface_impl.cuh:85] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[auto_mapper-1] I20261013 20:10:42.729363 30765 layer_cake_impl.h:33] Adding Layer with type: N6nvblox14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEE, voxel_size: 0.025, and memory_type: kDevice to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.729367 30765 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.729368 30765 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.729370 30765 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_12FeatureVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.729372 30765 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.729373 30765 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.729374 30765 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.729377 30765 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ColorEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.729377 30765 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_14MeshBlockLayerINS_5ArrayI6__halfLm128EEEEEEE to LayerCake.
+[auto_mapper-1] I20261013 20:10:42.733891 30765 mapper_impl.h:60] Allocating space for last depth view for sensor type
+[auto_mapper-1] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[auto_scan-2] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[auto_mapper-1] sequence size exceeds remaining buffer
+[rviz2-4] sequence size exceeds remaining buffer
+[robot_state_publisher-3] sequence size exceeds remaining buffer
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [rviz2-4]: sending signal 'SIGINT' to process[rviz2-4]
+[INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+[INFO] [auto_scan-2]: sending signal 'SIGINT' to process[auto_scan-2]
+[INFO] [auto_mapper-1]: sending signal 'SIGINT' to process[auto_mapper-1]
+[rviz2-4] [INFO] [1791893641.581593636] [rclcpp]: signal_handler(signum=2)
+[robot_state_publisher-3] [INFO] [1791893641.584043365] [rclcpp]: signal_handler(signum=2)
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 30653]
+[INFO] [rviz2-4]: process has finished cleanly [pid 30655]
+[INFO] [auto_scan-2]: process has finished cleanly [pid 30651]
+[INFO] [auto_mapper-1]: process has finished cleanly [pid 30649]

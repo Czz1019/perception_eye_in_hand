@@ -1,0 +1,35 @@
+{'kind': 'ready', 'trial': 'waiting', 'sim_time': 597.5, 'map_uid': '3a07015c0258a19cdee2ebdf33ca293b74991bc028dc01fe669f4bdfba916225', 'seed_tool': [-0.009662141632383825, -0.3124970137760979, 0.9494951758151746]}
+{'kind': 'spawn_requested', 'trial': 'crossing', 'sim_time': 597.5, 'center': [0.4, -0.32, 0.7], 'size': [0.08, 0.08, 0.08], 'initial_gap_m': 0.22402846198531276}
+{'kind': 'spawned', 'trial': 'crossing', 'sim_time': 597.6800000000001}
+{'kind': 'crossing_begin', 'trial': 'crossing', 'sim_time': 599.6800000000001}
+{'kind': 'target', 'trial': 'crossing', 'sim_time': 599.6800000000001, 'xyz': [0.4, -0.12, 0.5]}
+{'kind': 'crossing_end', 'trial': 'crossing', 'sim_time': 624.36, 'position': [0.4, 0.050199999999844425, 0.7], 'status': {'online': {'version': 129, 'frames': 286, 'stamp': 623.973, 'occupied_cells': 203, 'error': None}, 'planning_policy': 'bounded_unknown', 'phase': 'REACHING', 'error': None, 'view': 62, 'sage_iterations': 57, 'map_uid': '3a07015c0258a19cdee2ebdf33ca293b74991bc028dc01fe669f4bdfba916225', 'frames': 315, 'map_frozen': True, 'capture_wait': 'CAPTURING', 'capture_error': None, 'model': 'measured real camera extrinsics', 'mode': 'B: actual-feedback rolling SAGE', 'stopped': False}}
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/moving_scenario.py", line 73, in <module>
+    s=wait(lambda s:s.get('phase')=='GOAL_REACHED',240);record('crossing_reached',status=s);remove();pause(3)
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/moving_scenario.py", line 43, in wait
+    rclpy.spin_once(node,timeout_sec=.02)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 208, in spin_once
+    executor.spin_once(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 762, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 745, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 633, in _wait_for_ready_callbacks
+    wait_set.add_service(srv_capsule)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/moving_scenario.py", line 88, in <module>
+    truth.close();node.destroy_node();rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

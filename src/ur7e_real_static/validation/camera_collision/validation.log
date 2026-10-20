@@ -1,0 +1,349 @@
+/home/wqj/miniconda3/envs/whole_control/lib/python3.10/site-packages/torch/__init__.py:1275: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+  _C._set_default_tensor_type(t)
+no dynamics information for link: world
+no dynamics information for link: base_link
+no dynamics information for link: ft_frame
+no dynamics information for link: flange
+no dynamics information for link: tool0
+no dynamics information for link: camera_link
+no dynamics information for link: camera_depth_frame
+no dynamics information for link: camera_depth_optical_frame
+no dynamics information for link: camera_color_frame
+no dynamics information for link: camera_color_optical_frame
+no dynamics information for link: base
+{
+  "hardware_connected": false,
+  "environment_collision_validated": false,
+  "camera_spheres": 6,
+  "total_spheres": 22,
+  "camera_radius_m": 0.027122745105590863,
+  "padding_m": 0.005,
+  "vendor_points_checked": 154157,
+  "max_vendor_point_signed_distance_m": -0.005000565059154558,
+  "self_margin_m": 0.015,
+  "unmodelled": [
+    "mount/bracket",
+    "gripper/tool",
+    "cable"
+  ],
+  "poses": [
+    {
+      "name": "historical_scan_end",
+      "old": {
+        "min_gap_m": 0.006552732178420437,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_2_link"
+        ],
+        "sphere_indices": [
+          16,
+          14
+        ]
+      },
+      "new": {
+        "min_gap_m": 0.01728224511404519,
+        "sample_index": 0,
+        "pair": [
+          "wrist_2_link",
+          "forearm_link"
+        ],
+        "sphere_indices": [
+          14,
+          11
+        ]
+      },
+      "passes_self_margin": true
+    },
+    {
+      "name": "S01",
+      "old": {
+        "min_gap_m": 0.006557180805680768,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_2_link"
+        ],
+        "sphere_indices": [
+          16,
+          14
+        ]
+      },
+      "new": {
+        "min_gap_m": 0.014987508851083464,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          16,
+          12
+        ]
+      },
+      "passes_self_margin": false
+    },
+    {
+      "name": "S02",
+      "old": {
+        "min_gap_m": -0.014320039694202924,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          16,
+          12
+        ]
+      },
+      "new": {
+        "min_gap_m": 0.013000062661697537,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          18,
+          12
+        ]
+      },
+      "passes_self_margin": false
+    },
+    {
+      "name": "S03",
+      "old": {
+        "min_gap_m": -0.014293933773259396,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          16,
+          12
+        ]
+      },
+      "new": {
+        "min_gap_m": 0.013789298805231623,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          18,
+          12
+        ]
+      },
+      "passes_self_margin": false
+    },
+    {
+      "name": "S04",
+      "old": {
+        "min_gap_m": -0.011465736692802875,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          16,
+          12
+        ]
+      },
+      "new": {
+        "min_gap_m": 0.01180894385257271,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          16,
+          12
+        ]
+      },
+      "passes_self_margin": false
+    },
+    {
+      "name": "S05",
+      "old": {
+        "min_gap_m": -0.014292987496854384,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          16,
+          12
+        ]
+      },
+      "new": {
+        "min_gap_m": 0.011458640520842417,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          17,
+          12
+        ]
+      },
+      "passes_self_margin": false
+    },
+    {
+      "name": "S06",
+      "old": {
+        "min_gap_m": -0.01453079670056151,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          16,
+          12
+        ]
+      },
+      "new": {
+        "min_gap_m": 0.01049557217366702,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          17,
+          12
+        ]
+      },
+      "passes_self_margin": false
+    },
+    {
+      "name": "S07",
+      "old": {
+        "min_gap_m": -0.014484338601970709,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          16,
+          12
+        ]
+      },
+      "new": {
+        "min_gap_m": 0.007513273159168846,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          16,
+          13
+        ]
+      },
+      "passes_self_margin": false
+    },
+    {
+      "name": "S08",
+      "old": {
+        "min_gap_m": -0.013790607899782495,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          16,
+          12
+        ]
+      },
+      "new": {
+        "min_gap_m": 0.009681315897455786,
+        "sample_index": 0,
+        "pair": [
+          "tool0",
+          "wrist_1_link"
+        ],
+        "sphere_indices": [
+          17,
+          12
+        ]
+      },
+      "passes_self_margin": false
+    }
+  ],
+  "old_waypoint_edges": [
+    {
+      "start": "S01",
+      "end": "S02",
+      "samples": 1153,
+      "sampled_min_gap_m": 0.009110667831078917,
+      "conservative_self_gap_m": 0.005113176472431895,
+      "passes_self_margin": false
+    },
+    {
+      "start": "S02",
+      "end": "S03",
+      "samples": 715,
+      "sampled_min_gap_m": 0.013000062661697537,
+      "conservative_self_gap_m": 0.009001237920061295,
+      "passes_self_margin": false
+    },
+    {
+      "start": "S03",
+      "end": "S04",
+      "samples": 644,
+      "sampled_min_gap_m": 0.01180894385257271,
+      "conservative_self_gap_m": 0.0078101786656651516,
+      "passes_self_margin": false
+    },
+    {
+      "start": "S04",
+      "end": "S05",
+      "samples": 1246,
+      "sampled_min_gap_m": 0.011458640520842417,
+      "conservative_self_gap_m": 0.007460785604204347,
+      "passes_self_margin": false
+    },
+    {
+      "start": "S05",
+      "end": "S06",
+      "samples": 695,
+      "sampled_min_gap_m": 0.01049557217366702,
+      "conservative_self_gap_m": 0.006497425814047301,
+      "passes_self_margin": false
+    },
+    {
+      "start": "S06",
+      "end": "S07",
+      "samples": 785,
+      "sampled_min_gap_m": 0.007513273159168846,
+      "conservative_self_gap_m": 0.003517331684392444,
+      "passes_self_margin": false
+    },
+    {
+      "start": "S07",
+      "end": "S08",
+      "samples": 507,
+      "sampled_min_gap_m": 0.007513273159168846,
+      "conservative_self_gap_m": 0.0035145397421008874,
+      "passes_self_margin": false
+    }
+  ],
+  "random_states_below_margin": 186,
+  "sage": {
+    "actual_cuda": true,
+    "cpu_gpu_sphere_max_error_m": 1.5745981007952992e-07,
+    "collision_spheres_and_pairs_match": true
+  },
+  "unchanged_source_files": 110,
+  "adaptation_checks_passed": true
+}

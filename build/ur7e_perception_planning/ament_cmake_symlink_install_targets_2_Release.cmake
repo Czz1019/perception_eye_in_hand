@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/wqj/realtime_nvblox_ws/build/ur7e_perception_planning/rosidl_generator_py/ur7e_perception_planning/ur7e_perception_planning_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "ur7e_perception_planning__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/ur7e_perception_planning")

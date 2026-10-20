@@ -1,0 +1,47 @@
+{
+  "samples": 14804,
+  "capture_frames": 80,
+  "observations": 16,
+  "map_uid": "d50095f41b061d5173102c7e3e725dd320731acc608f68ee728f98cc6cc53708",
+  "min_measured_self_gap_m": 0.019415709537895252,
+  "min_measured_fixture_gap_m": 0.08754119632359728,
+  "min_planning_map_gap_m": 0.037629515969753266,
+  "max_tracking_error_rad": 0.020065812362580482,
+  "max_command_speed_rad_s": 0.3299670848609368,
+  "max_reaching_command_speed_rad_s": 0.15000000000000888,
+  "goals_reached": [
+    {
+      "kind": "goal_reached",
+      "sim_time": 235.76500000000001,
+      "wall_time": 19447.148056323,
+      "goal": [
+        0.5,
+        0.0,
+        0.6
+      ],
+      "error_m": 0.003920018125521345,
+      "iterations": 164,
+      "revision": 1
+    }
+  ],
+  "guide_checks": [
+    {
+      "goal": [
+        0.5,
+        0.0,
+        0.6
+      ],
+      "waypoints": 3,
+      "direct_joint_segment_fixture_gap_m": 0.08782747291672,
+      "direct_joint_segment_map_gap_m": -0.024337678110599517
+    }
+  ],
+  "sage_feedback_steps": 164,
+  "unique_feedback_timestamps": 164,
+  "observed_cells": 182070,
+  "prior_cells": 44003
+}
+Traceback (most recent call last):
+  File "/home/wqj/realtime_nvblox_ws/src/ur7e_gazebo_esdf_sage/test/validate_run.py", line 39, in <module>
+    assert result['max_command_speed_rad_s']<.27
+AssertionError

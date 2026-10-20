@@ -1,0 +1,46 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ur7e_perception_planning/msg/PlanningMap.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "std_msgs/msg/Header.idl"
+
+module ur7e_perception_planning {
+  module msg {
+    typedef uint32 uint32__3[3];
+    @verbatim (language="comment", text=
+      "One atomic snapshot. All distances in metres, positive in free space." "\n"
+      "Arrays use C order [z,y,x]; dimensions are [nx,ny,nz]. Unknown is NEVER free.")
+    struct PlanningMap {
+      std_msgs::msg::Header header;
+
+      uint64 epoch;
+
+      uint64 sequence;
+
+      geometry_msgs::msg::Point origin;
+
+      float resolution;
+
+      uint32__3 dimensions;
+
+      float unknown_distance;
+
+      sequence<float> nvblox_distance;
+
+      @verbatim (language="comment", text=
+        "Conservative distance to either an obstacle OR unobserved space.")
+      sequence<float> planning_distance;
+
+      @verbatim (language="comment", text=
+        "0 unknown/occupied, 1 depth-observed free, 2 commissioned initial clearance.")
+      sequence<uint8> free_source;
+
+      @verbatim (language="comment", text=
+        "If nonempty, the three arrays above are empty. Lossless zlib level-1 payload:" "\n"
+        "n little-endian float32 native distances, n float32 planning distances, n uint8" "\n"
+        "sources, where n=nx*ny*nz. Geometry/version/stamp remain explicit ROS fields.")
+      sequence<uint8> compressed_data;
+    };
+  };
+};

@@ -1,0 +1,244 @@
+[INFO] [launch]: All log files can be found below /home/wqj/.ros/log/2026-09-18-14-25-38-567376-wqj-813872
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [813894]
+[INFO] [gzserver-2]: process started with pid [813896]
+[INFO] [gzclient-3]: process started with pid [813898]
+[INFO] [spawn_entity.py-4]: process started with pid [813900]
+[INFO] [spawner-5]: process started with pid [813902]
+[INFO] [spawner-6]: process started with pid [813904]
+[INFO] [spawn_scene.py-7]: process started with pid [813906]
+[INFO] [sage_planner-8]: process started with pid [813908]
+[INFO] [rviz2-9]: process started with pid [813910]
+[robot_state_publisher-1] [INFO] [1789712739.156891839] [robot_state_publisher]: got segment base
+[robot_state_publisher-1] [INFO] [1789712739.157046830] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1789712739.157088116] [robot_state_publisher]: got segment base_link_inertia
+[robot_state_publisher-1] [INFO] [1789712739.157119565] [robot_state_publisher]: got segment camera_bottom_screw_frame
+[robot_state_publisher-1] [INFO] [1789712739.157150514] [robot_state_publisher]: got segment camera_color_frame
+[robot_state_publisher-1] [INFO] [1789712739.157176975] [robot_state_publisher]: got segment camera_color_optical_frame
+[robot_state_publisher-1] [INFO] [1789712739.157207348] [robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-1] [INFO] [1789712739.157279561] [robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-1] [INFO] [1789712739.157322175] [robot_state_publisher]: got segment camera_infra1_frame
+[robot_state_publisher-1] [INFO] [1789712739.157376773] [robot_state_publisher]: got segment camera_infra1_optical_frame
+[robot_state_publisher-1] [INFO] [1789712739.157410027] [robot_state_publisher]: got segment camera_infra2_frame
+[robot_state_publisher-1] [INFO] [1789712739.157452948] [robot_state_publisher]: got segment camera_infra2_optical_frame
+[robot_state_publisher-1] [INFO] [1789712739.157484478] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-1] [INFO] [1789712739.157526784] [robot_state_publisher]: got segment d435_mount_link
+[robot_state_publisher-1] [INFO] [1789712739.157594546] [robot_state_publisher]: got segment flange
+[robot_state_publisher-1] [INFO] [1789712739.157634462] [robot_state_publisher]: got segment forearm_link
+[robot_state_publisher-1] [INFO] [1789712739.157673982] [robot_state_publisher]: got segment ft_frame
+[robot_state_publisher-1] [INFO] [1789712739.157733573] [robot_state_publisher]: got segment ground_plane
+[robot_state_publisher-1] [INFO] [1789712739.157776543] [robot_state_publisher]: got segment shoulder_link
+[robot_state_publisher-1] [INFO] [1789712739.157829137] [robot_state_publisher]: got segment tool0
+[robot_state_publisher-1] [INFO] [1789712739.157887746] [robot_state_publisher]: got segment upper_arm_link
+[robot_state_publisher-1] [INFO] [1789712739.157936860] [robot_state_publisher]: got segment world
+[robot_state_publisher-1] [INFO] [1789712739.157989156] [robot_state_publisher]: got segment wrist_1_link
+[robot_state_publisher-1] [INFO] [1789712739.158029243] [robot_state_publisher]: got segment wrist_2_link
+[robot_state_publisher-1] [INFO] [1789712739.158069145] [robot_state_publisher]: got segment wrist_3_link
+[sage_planner-8] SAGE run directory: /home/wqj/realtime_nvblox_ws/log/sage_package_validation/run
+[spawner-5] [INFO] [1789712739.598466155] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-6] [INFO] [1789712739.608361257] [spawner_forward_position_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawn_entity.py-4] [INFO] [1789712739.680469114] [spawn_ur]: Spawn Entity started
+[spawn_entity.py-4] [INFO] [1789712739.681400294] [spawn_ur]: Loading entity published on topic robot_description
+[spawn_entity.py-4] [INFO] [1789712739.685085601] [spawn_ur]: Waiting for entity xml on robot_description
+[spawn_entity.py-4] [INFO] [1789712739.695665197] [spawn_ur]: Waiting for service /spawn_entity, timeout = 60
+[spawn_entity.py-4] [INFO] [1789712739.696566966] [spawn_ur]: Waiting for service /spawn_entity
+[rviz2-9] [INFO] [1789712740.572425019] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-9] [INFO] [1789712740.572517743] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[sage_planner-8] /home/wqj/miniconda3/envs/whole_control/lib/python3.10/site-packages/torch/__init__.py:1275: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+[sage_planner-8]   _C._set_default_tensor_type(t)
+[rviz2-9] [INFO] [1789712740.851218822] [rviz2]: Stereo is NOT SUPPORTED
+[spawn_entity.py-4] [INFO] [1789712741.210471973] [spawn_ur]: Calling service /spawn_entity
+[spawn_scene.py-7] [INFO] [1789712741.457792107] [spawn_eih_tall_obstacles]: 已在 Gazebo 中生成障碍物: sage_clean_sphere1
+[sage_planner-8] ============================================================
+[sage_planner-8] UR7e SAGE CLEAN MPC Reach Static - Gazebo Tall Scene + Servo Executor
+[sage_planner-8] ============================================================
+[sage_planner-8] Task:  /home/wqj/realtime_nvblox_ws/log/sage_package_validation/run/task_dtdwh9wn.yaml
+[sage_planner-8] Robot: /home/wqj/realtime_nvblox_ws/log/sage_package_validation/run/robot_qr834zx6.yaml
+[sage_planner-8] World: /home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner/share/ur7e_sage_planner/config/collision_world_gazebo_tall.yml
+[sage_planner-8] execution_layer=servo
+[sage_planner-8] executor_frequency=200.0 Hz
+[sage_planner-8] max_joint_speed=[0.6, 0.6, 0.6, 0.6, 0.6, 0.6]
+[sage_planner-8] max_joint_acceleration=None
+[sage_planner-8] controller_topic=/forward_position_controller/commands
+[sage_planner-8] executor_log_dir=/home/wqj/realtime_nvblox_ws/log/sage_package_validation/run/servo
+[spawn_entity.py-4] [INFO] [1789712741.990442929] [spawn_ur]: Spawn status: SpawnEntity: Successfully spawned entity [ur]
+[INFO] [spawn_entity.py-4]: process has finished cleanly [pid 813900]
+[gzserver-2] [INFO] [1789712742.389661525] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[gzserver-2] [INFO] [1789712742.420986413] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+[gzserver-2] [INFO] [1789712742.421284401] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+[gzserver-2] [INFO] [1789712742.448023395] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+[gzserver-2] [INFO] [1789712742.448986591] [gazebo_ros2_control]: Received urdf from param server, parsing...
+[gzserver-2] [INFO] [1789712742.449068987] [gazebo_ros2_control]: Loading parameter files /home/wqj/realtime_nvblox_ws/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/controllers.yaml
+[gzserver-2] [INFO] [1789712742.475296089] [gazebo_ros2_control]: Loading joint: shoulder_pan_joint
+[gzserver-2] [INFO] [1789712742.475374780] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1789712742.475446998] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789712742.475508016] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-2] [INFO] [1789712742.475588867] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789712742.475678718] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789712742.475810032] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1789712742.475919606] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789712742.477091974] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789712742.477722198] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789712742.477813078] [gazebo_ros2_control]: Loading joint: shoulder_lift_joint
+[gzserver-2] [INFO] [1789712742.477910598] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1789712742.477978453] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789712742.478067442] [gazebo_ros2_control]: 			 found initial value: -1.570000
+[gzserver-2] [INFO] [1789712742.478146485] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789712742.478251674] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789712742.478347884] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1789712742.478423720] [gazebo_ros2_control]: 		 position
+[sage_planner-8] [INFO] [1789712742.478614298] [storm_mpc_reach_static]: Gazebo Robot Interface 初始化完成
+[gzserver-2] [INFO] [1789712742.479198584] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789712742.479763449] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789712742.479845947] [gazebo_ros2_control]: Loading joint: elbow_joint
+[gzserver-2] [INFO] [1789712742.479917502] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1789712742.479991797] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789712742.480073149] [gazebo_ros2_control]: 			 found initial value: 1.100000
+[gzserver-2] [INFO] [1789712742.480154702] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789712742.480256778] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789712742.480337437] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1789712742.480414910] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789712742.481123924] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789712742.481687774] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789712742.481830329] [gazebo_ros2_control]: Loading joint: wrist_1_joint
+[gzserver-2] [INFO] [1789712742.481958695] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1789712742.482076555] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789712742.482149100] [gazebo_ros2_control]: 			 found initial value: -1.570000
+[gzserver-2] [INFO] [1789712742.482229845] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789712742.482342009] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789712742.482479058] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1789712742.482577688] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789712742.482803251] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789712742.483192170] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789712742.483280171] [gazebo_ros2_control]: Loading joint: wrist_2_joint
+[gzserver-2] [INFO] [1789712742.483359759] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1789712742.483444736] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789712742.483526089] [gazebo_ros2_control]: 			 found initial value: -1.570000
+[sage_planner-8] [INFO] [1789712742.482114721] [storm_mpc_reach_static]:   控制频率: 50.0 Hz
+[gzserver-2] [INFO] [1789712742.483611131] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789712742.483685610] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789712742.483763347] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1789712742.483838587] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789712742.484538160] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789712742.485482098] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789712742.485605631] [gazebo_ros2_control]: Loading joint: wrist_3_joint
+[gzserver-2] [INFO] [1789712742.485676391] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1789712742.485757147] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789712742.485855185] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-2] [INFO] [1789712742.485951338] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1789712742.486039869] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789712742.486108276] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1789712742.486188136] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1789712742.486793789] [gazebo_ros2_control]: 		 velocity
+[sage_planner-8] [INFO] [1789712742.485377071] [storm_mpc_reach_static]:   关节数: 6
+[gzserver-2] [INFO] [1789712742.487747077] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1789712742.487858513] [resource_manager]: Initialize hardware 'ur' 
+[gzserver-2] [INFO] [1789712742.488006927] [resource_manager]: Successful initialization of hardware 'ur'
+[gzserver-2] [INFO] [1789712742.488128003] [resource_manager]: 'configure' hardware 'ur' 
+[gzserver-2] [INFO] [1789712742.488245050] [resource_manager]: Successful 'configure' of hardware 'ur'
+[gzserver-2] [INFO] [1789712742.488376363] [resource_manager]: 'activate' hardware 'ur' 
+[gzserver-2] [INFO] [1789712742.488479528] [resource_manager]: Successful 'activate' of hardware 'ur'
+[gzserver-2] [INFO] [1789712742.488758941] [gazebo_ros2_control]: Loading controller_manager
+[sage_planner-8] [INFO] [1789712742.488726360] [storm_mpc_reach_static]:   订阅: /joint_states, /target_pose
+[sage_planner-8] [INFO] [1789712742.491699605] [storm_mpc_reach_static]:   发布: /forward_position_controller/commands, /ee_pose, /visualization_marker_array
+[sage_planner-8] [INFO] [1789712742.494613497] [storm_mpc_reach_static]:   额外发布: /mppi_top_traj_markers
+[sage_planner-8] [INFO] [1789712742.497887073] [storm_mpc_reach_static]:   额外发布: /collision_sphere_markers
+[sage_planner-8] [INFO] [1789712742.500655672] [storm_mpc_reach_static]:   运行时关节控制约束: 仅通过 ros2_control/forward_position_controller 下发命令; 除 Gazebo 初始姿态外, 不直接设置机械臂关节位置
+[sage_planner-8] 
+[sage_planner-8] waiting for Gazebo joint states...
+[gzserver-2] [WARN] [1789712742.602385200] [gazebo_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gzserver-2] [INFO] [1789712742.603027752] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+[gzserver-2] 
+[gzserver-2] RealSensePlugin: The realsense_camera plugin is attach to model ur
+[gzserver-2] [INFO] [1789712742.676230999] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gzserver-2] [INFO] [1789712742.751750517] [gazebo_realsense_camera]: Realsense Gazebo ROS plugin loading.
+[gzserver-2] [INFO] [1789712742.816874058] [controller_manager]: Loading controller 'forward_position_controller'
+[spawner-5] [INFO] [1789712742.819176881] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gzserver-2] [INFO] [1789712742.967378692] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[gzserver-2] [INFO] [1789712742.967630815] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-6] [INFO] [1789712742.970749562] [spawner_forward_position_controller]: [94mLoaded [1mforward_position_controller[0m
+[gzserver-2] [INFO] [1789712742.982853051] [controller_manager]: Configuring controller 'forward_position_controller'
+[gzserver-2] [INFO] [1789712742.987094370] [forward_position_controller]: configure successful
+[gzserver-2] [INFO] [1789712742.999327703] [gazebo_realsense_camera]: Loaded Realsense Gazebo ROS plugin.
+[spawner-5] [INFO] [1789712743.013629027] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[gzserver-2] [INFO] [1789712743.020641999] [forward_position_controller]: activate successful
+[spawner-6] [INFO] [1789712743.034847284] [spawner_forward_position_controller]: [92mConfigured and activated [1mforward_position_controller[0m
+[sage_planner-8] connected to Gazebo robot
+[sage_planner-8] JointServoExecutor started
+[sage_planner-8] Using obstacles from the running Gazebo scene
+[sage_planner-8] Unknown tag "ros2_control" in /robot[@name='ur7e']
+[INFO] [spawner-5]: process has finished cleanly [pid 813902]
+[spawn_scene.py-7] [INFO] [1789712743.276018340] [spawn_eih_tall_obstacles]: 已在 Gazebo 中生成障碍物: sage_clean_cube1
+[INFO] [spawner-6]: process has finished cleanly [pid 813904]
+[sage_planner-8] no dynamics information for link: world
+[spawn_scene.py-7] [INFO] [1789712743.482035122] [spawn_eih_tall_obstacles]: 已在 Gazebo 中生成障碍物: sage_clean_cube2
+[sage_planner-8] no dynamics information for link: base_link
+[sage_planner-8] no dynamics information for link: ft_frame
+[sage_planner-8] no dynamics information for link: base
+[sage_planner-8] no dynamics information for link: flange
+[sage_planner-8] no dynamics information for link: tool0
+[INFO] [spawn_scene.py-7]: process has finished cleanly [pid 813906]
+[sage_planner-8] {'urdf': '/home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner/share/ur7e_sage_planner/assets/urdf/ur7e/ur7e.urdf', 'sample_points': 100, 'link_objs': ['shoulder_link', 'upper_arm_link', 'forearm_link', 'wrist_1_link', 'wrist_2_link', 'wrist_3_link'], 'threshold': 0.35, 'bounds': [[-0.8, -0.8, 0.0], [0.8, 0.8, 1.0]], 'collision_spheres': '/home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner/share/ur7e_sage_planner/config/ur7e_collision_spheres.yml', 'self_collision_weights': '/home/wqj/realtime_nvblox_ws/install/ur7e_sage_planner/share/ur7e_sage_planner/weights/ur7e_self_sdf.pt', 'dof': 6}
+[sage_planner-8] Unknown tag "ros2_control" in /robot[@name='ur7e']
+[sage_planner-8] deployment_refinement_enabled=True
+[sage_planner-8] local_refinement_enabled=True
+[sage_planner-8] cartesian_refinement_enabled=True
+[sage_planner-8] execution_mode=best_sample
+[sage_planner-8] default goal robot frame: [ 0.4 -0.5  0.4]
+[sage_planner-8] default goal world frame: [ 0.4 -0.5  0.4]
+[sage_planner-8] warming clean SAGE-MPPI controller...
+[sage_planner-8] /home/wqj/miniconda3/envs/whole_control/lib/python3.10/site-packages/torch/__init__.py:1275: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+[sage_planner-8]   _C._set_default_tensor_type(t)
+[sage_planner-8] [   25] t=1.85s | ee_error=0.5725 | layer=servo | servo_target_err=0.0056 | near_goal=False | lr_active=False | lr_mode=off | actual_loop_dt_wall=0.062s | actual_loop_dt_sim=0.060s | opt_dt=0.067s
+[sage_planner-8] Unknown tag "ros2_control" in /robot[@name='ur7e']
+[sage_planner-8] [   50] t=3.66s | ee_error=0.3425 | layer=servo | servo_target_err=0.0097 | near_goal=False | lr_active=False | lr_mode=off | actual_loop_dt_wall=0.059s | actual_loop_dt_sim=0.060s | opt_dt=0.051s
+[sage_planner-8] [CleanRefine] enter near-goal refinement @ 0.1990
+[sage_planner-8] [   75] t=5.61s | ee_error=0.1864 | layer=servo | servo_target_err=0.0010 | near_goal=True | lr_active=False | lr_mode=off | actual_loop_dt_wall=0.072s | actual_loop_dt_sim=0.070s | opt_dt=0.069s
+[sage_planner-8] [  100] t=7.68s | ee_error=0.1357 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=False | lr_mode=off | actual_loop_dt_wall=0.081s | actual_loop_dt_sim=0.080s | opt_dt=0.081s
+[sage_planner-8] [CleanRefine] enter local refinement @ 0.0882
+[sage_planner-8] [  125] t=9.80s | ee_error=0.0454 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.082s | actual_loop_dt_sim=0.080s | opt_dt=0.069s
+[sage_planner-8] [INFO] [1789712759.859573933] [storm_mpc_reach_static]: 收到目标位置: [0.500, 0.000, 0.450]
+[sage_planner-8] [CleanRefine] goal changed, reset refinement stack
+[sage_planner-8] [target update] world=[0.5  0.   0.45] robot=[0.5  0.   0.45]
+[sage_planner-8] [  150] t=11.87s | ee_error=0.5019 | layer=servo | servo_target_err=0.0015 | near_goal=False | lr_active=False | lr_mode=off | actual_loop_dt_wall=0.071s | actual_loop_dt_sim=0.070s | opt_dt=0.060s
+[sage_planner-8] [  175] t=13.69s | ee_error=0.3873 | layer=servo | servo_target_err=0.0061 | near_goal=False | lr_active=False | lr_mode=off | actual_loop_dt_wall=0.076s | actual_loop_dt_sim=0.080s | opt_dt=0.061s
+[sage_planner-8] [  200] t=15.52s | ee_error=0.2284 | layer=servo | servo_target_err=0.0003 | near_goal=True | lr_active=False | lr_mode=off | actual_loop_dt_wall=0.085s | actual_loop_dt_sim=0.090s | opt_dt=0.064s
+[sage_planner-8] [CleanRefine] enter near-goal refinement @ 0.1986
+[sage_planner-8] [CleanRefine] restore nominal exploration @ 0.1773
+[sage_planner-8] [  225] t=17.57s | ee_error=0.1519 | layer=servo | servo_target_err=0.0053 | near_goal=True | lr_active=False | lr_mode=off | actual_loop_dt_wall=0.071s | actual_loop_dt_sim=0.070s | opt_dt=0.060s
+[sage_planner-8] [  250] t=19.61s | ee_error=0.1200 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=False | lr_mode=off | actual_loop_dt_wall=0.076s | actual_loop_dt_sim=0.070s | opt_dt=0.079s
+[sage_planner-8] [  275] t=21.70s | ee_error=0.0943 | layer=servo | servo_target_err=0.0050 | near_goal=True | lr_active=False | lr_mode=off | actual_loop_dt_wall=0.069s | actual_loop_dt_sim=0.070s | opt_dt=0.069s
+[sage_planner-8] [CleanRefine] enter local refinement @ 0.0893
+[sage_planner-8] [  300] t=23.82s | ee_error=0.0132 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.089s | actual_loop_dt_sim=0.090s | opt_dt=0.073s
+[sage_planner-8] [  325] t=25.88s | ee_error=0.0040 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.088s | actual_loop_dt_sim=0.090s | opt_dt=0.070s
+[gzclient-3] 
+[gzclient-3] libcurl: (35) error:0A000126:SSL routines::unexpected eof while reading
+[sage_planner-8] [  350] t=27.92s | ee_error=0.0020 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.082s | actual_loop_dt_sim=0.080s | opt_dt=0.061s
+[sage_planner-8] [  375] t=29.94s | ee_error=0.0009 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.073s | actual_loop_dt_sim=0.070s | opt_dt=0.060s
+[sage_planner-8] [  400] t=31.89s | ee_error=0.0005 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.069s | actual_loop_dt_sim=0.060s | opt_dt=0.077s
+[sage_planner-8] [  425] t=33.92s | ee_error=0.0003 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.075s | actual_loop_dt_sim=0.080s | opt_dt=0.083s
+[sage_planner-8] [  450] t=36.01s | ee_error=0.0001 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.073s | actual_loop_dt_sim=0.080s | opt_dt=0.063s
+[sage_planner-8] [  475] t=38.11s | ee_error=0.0001 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.087s | actual_loop_dt_sim=0.080s | opt_dt=0.060s
+[sage_planner-8] [  500] t=40.28s | ee_error=0.0000 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.090s | actual_loop_dt_sim=0.090s | opt_dt=0.068s
+[sage_planner-8] [  525] t=42.44s | ee_error=0.0000 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.090s | actual_loop_dt_sim=0.090s | opt_dt=0.064s
+[sage_planner-8] [  550] t=44.57s | ee_error=0.0000 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.095s | actual_loop_dt_sim=0.100s | opt_dt=0.061s
+[sage_planner-8] [  575] t=46.88s | ee_error=0.0000 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.095s | actual_loop_dt_sim=0.090s | opt_dt=0.082s
+[sage_planner-8] [  600] t=49.23s | ee_error=0.0000 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.088s | actual_loop_dt_sim=0.090s | opt_dt=0.074s
+[sage_planner-8] [  625] t=51.67s | ee_error=0.0000 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.093s | actual_loop_dt_sim=0.090s | opt_dt=0.064s
+[sage_planner-8] [  650] t=54.15s | ee_error=0.0000 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.099s | actual_loop_dt_sim=0.100s | opt_dt=0.070s
+[sage_planner-8] [  675] t=58.51s | ee_error=0.0000 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.199s | actual_loop_dt_sim=0.200s | opt_dt=0.158s
+[sage_planner-8] [  700] t=64.54s | ee_error=0.0000 | layer=servo | servo_target_err=0.0000 | near_goal=True | lr_active=True | lr_mode=blend | actual_loop_dt_wall=0.197s | actual_loop_dt_sim=0.190s | opt_dt=0.144s
+[sage_planner-8] servo execution log: /home/wqj/realtime_nvblox_ws/log/sage_package_validation/run/servo/servo_execution_log.csv
+[sage_planner-8] 后台 MPC 进程未在超时内退出，强制终止...
+[INFO] [sage_planner-8]: process has finished cleanly [pid 813908]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [rviz2-9]: sending signal 'SIGINT' to process[rviz2-9]
+[INFO] [gzclient-3]: sending signal 'SIGINT' to process[gzclient-3]
+[INFO] [gzserver-2]: sending signal 'SIGINT' to process[gzserver-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[rviz2-9] [INFO] [1789712907.412640880] [rclcpp]: signal_handler(signum=2)
+[robot_state_publisher-1] [INFO] [1789712907.421507252] [rclcpp]: signal_handler(signum=2)
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 813894]
+[INFO] [rviz2-9]: process has finished cleanly [pid 813910]
+[ERROR] [gzserver-2]: process has died [pid 813896, exit code -11, cmd 'gzserver /opt/ros/humble/share/gazebo_ros/worlds/empty.world -slibgazebo_ros_init.so -slibgazebo_ros_factory.so -slibgazebo_ros_force_system.so'].
+[INFO] [gzclient-3]: process has finished cleanly [pid 813898]

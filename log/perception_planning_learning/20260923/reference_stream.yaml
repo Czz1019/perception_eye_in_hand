@@ -1,0 +1,24 @@
+camera_info_topic: /test/info
+depth_frame: camera_depth_optical_frame
+depth_stride: 1
+depth_topic: /test/depth
+esdf_hz: 15.0
+grid_center_m:
+- 0.0
+- 0.0
+- 0.5
+grid_resolution_m: 0.05
+grid_size_m:
+- 2.0
+- 2.0
+- 1.5
+max_depth_m: 4.0
+max_frame_age_sec: 0.5
+max_visualized_distance_m: 0.5
+min_depth_m: 0.2
+output_directory: ~/nvblox_output/realtime_nvblox_gazebo
+publish_dense_debug: false
+tf_timeout_sec: 0.15
+use_sim_time: false
+voxel_size_m: 0.03
+world_frame: base_link

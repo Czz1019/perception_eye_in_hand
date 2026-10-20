@@ -1,0 +1,191 @@
+robot_name: ur7e
+link_names:
+- shoulder_link
+- upper_arm_link
+- forearm_link
+- wrist_1_link
+- wrist_2_link
+- wrist_3_link
+- tool0
+collision_spheres:
+  shoulder_link:
+  - center:
+    - -0.001
+    - -0.008
+    - 0.004
+    radius: 0.0786
+  upper_arm_link:
+  - center:
+    - -0.124
+    - -0.0
+    - 0.153
+    radius: 0.0795
+  - center:
+    - -0.324
+    - -0.006
+    - 0.157
+    radius: 0.0789
+  - center:
+    - -0.008
+    - 0.002
+    - 0.142
+    radius: 0.0789
+  - center:
+    - -0.418
+    - -0.002
+    - 0.139
+    radius: 0.0789
+  - center:
+    - -0.226
+    - 0.005
+    - 0.154
+    radius: 0.0789
+  forearm_link:
+  - center:
+    - 0.001
+    - 0.002
+    - 0.023
+    radius: 0.0721
+  - center:
+    - -0.39
+    - -0.001
+    - -0.0
+    radius: 0.0571
+  - center:
+    - -0.081
+    - 0.005
+    - 0.005
+    radius: 0.0551
+  - center:
+    - -0.237
+    - 0.001
+    - 0.006
+    radius: 0.0566
+  - center:
+    - -0.161
+    - -0.0
+    - 0.006
+    radius: 0.0566
+  - center:
+    - -0.303
+    - 0.001
+    - 0.006
+    radius: 0.0566
+  wrist_1_link:
+  - center:
+    - 0.0
+    - 0.01
+    - -0.002
+    radius: 0.0583
+  - center:
+    - -0.007
+    - 0.009
+    - -0.057
+    radius: 0.0483
+  wrist_2_link:
+  - center:
+    - 0.0
+    - -0.008
+    - 0.0
+    radius: 0.0586
+  wrist_3_link:
+  - center:
+    - 0.005
+    - -0.007
+    - -0.03
+    radius: 0.0522
+  tool0:
+  - center:
+    - -0.07634749367872085
+    - -0.01699226142975429
+    - -0.011988239200556017
+    radius: 0.027122745105590863
+  - center:
+    - -0.06580972866567933
+    - -0.027666914333219772
+    - -0.01209911727878461
+    radius: 0.027122745105590863
+  - center:
+    - -0.0552719636526378
+    - -0.038341567236685255
+    - -0.012209995357013203
+    radius: 0.027122745105590863
+  - center:
+    - -0.04473419863959628
+    - -0.04901622014015074
+    - -0.012320873435241797
+    radius: 0.027122745105590863
+  - center:
+    - -0.034196433626554765
+    - -0.05969087304361622
+    - -0.01243175151347039
+    radius: 0.027122745105590863
+  - center:
+    - -0.023658668613513244
+    - -0.0703655259470817
+    - -0.012542629591698985
+    radius: 0.027122745105590863
+self_collision_ignore:
+  shoulder_link:
+  - upper_arm_link
+  - base_link_inertia
+  upper_arm_link:
+  - shoulder_link
+  - forearm_link
+  forearm_link:
+  - upper_arm_link
+  - wrist_1_link
+  wrist_1_link:
+  - forearm_link
+  - wrist_2_link
+  wrist_2_link:
+  - wrist_1_link
+  - wrist_3_link
+  wrist_3_link:
+  - wrist_2_link
+camera_collision:
+  schema_version: 1
+  parent_frame: tool0
+  body_frame: camera_link
+  T_tool0_body:
+  - - -0.7116394393818682
+    - 0.7025098618709695
+    - 0.007014434424188778
+    - -0.0406379061113624
+  - - -0.7025402176863713
+    - -0.7116356198352561
+    - -0.0034622413082287186
+    - -0.05902311421350448
+  - - 0.002559462726043618
+    - -0.007391789750908994
+    - 0.9999694048293837
+    - -0.012384254831755863
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  bounds_min:
+  - -0.020755
+  - -0.0625
+  - -0.012501
+  bounds_max:
+  - 0.012525
+  - 0.027501
+  - 0.012501
+  sphere_count: 6
+  padding_m: 0.005
+  method: equal closed slabs covering the union of vendor collision box and visual
+    mesh
+  source_description: /opt/ros/humble/share/realsense2_description/urdf/_d435i.urdf.xacro
+  source_meshes:
+  - path: /opt/ros/humble/share/realsense2_description/meshes/d435.dae
+    sha256: 42f3b66f47a1f8f425a2e4dc07c1d9c283183167d8441f520a15623d98f9bf78
+  source_urdf_sha256: ad1f910ae4c95ed5f306bbede50eb7dca0a2092ec12b224d9e44e0ad05839c1a
+  physically_verified: false
+  unmodelled:
+  - mount/bracket
+  - gripper/tool
+  - cable
+model_notes: Arm template unchanged. Camera body has a conservative 5 mm padded cover.
+  Self-collision margins and checked pairs are unchanged. Installed bracket/tool/cable
+  geometry still requires measurement.

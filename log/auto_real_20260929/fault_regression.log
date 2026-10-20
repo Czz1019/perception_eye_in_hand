@@ -1,0 +1,28 @@
+[INFO] [1790658613.656613766] [ur7e_auto_scan]: RTDE receive-only. ~/prepare writes a preview; ~/start requires allow_motion and an approved live plan.
+{
+  "no_frames": {
+    "phase": "ERROR",
+    "error": "Timeout during CAPTURING; mapper={'warmup_state': 'READY', 'phase': 'SCANNING', 'error': None, 'epoch': 1, 'gate': True, 'gate_frames': 0, 'frames': 0, 'session': '144156.430336501', 'sensor_ready': True}",
+    "stopped": true,
+    "commands": 1043
+  },
+  "mapper_loss": {
+    "phase": "ERROR",
+    "error": "Reconstruction heartbeat missing",
+    "stopped": true,
+    "commands": 130
+  },
+  "feedback_loss": {
+    "phase": "ERROR",
+    "error": "Injected feedback loss",
+    "stopped": true,
+    "commands": 4
+  },
+  "cancel_connect": {
+    "phase": "CANCELLED",
+    "error": "CANCELLED_BY_USER",
+    "stopped": true,
+    "commands": 0
+  },
+  "passed": true
+}

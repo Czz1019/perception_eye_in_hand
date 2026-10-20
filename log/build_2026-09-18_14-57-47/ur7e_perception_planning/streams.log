@@ -1,0 +1,50 @@
+[0.005s] Invoking command in '/home/wqj/realtime_nvblox_ws/build/ur7e_perception_planning': CONDA_PROMPT_MODIFIER=(whole_control) /usr/bin/cmake /home/wqj/realtime_nvblox_ws/src/ur7e_perception_planning -DCMAKE_BUILD_TYPE=Release -DPython3_EXECUTABLE=/usr/bin/python3 -DPYTHON_EXECUTABLE=/usr/bin/python3 -DCMAKE_INSTALL_PREFIX=/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning
+[0.044s] -- The C compiler identification is GNU 11.4.0
+[0.082s] -- The CXX compiler identification is GNU 11.4.0
+[0.086s] -- Detecting C compiler ABI info
+[0.136s] -- Detecting C compiler ABI info - done
+[0.140s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.141s] -- Detecting C compile features
+[0.141s] -- Detecting C compile features - done
+[0.142s] -- Detecting CXX compiler ABI info
+[0.193s] -- Detecting CXX compiler ABI info - done
+[0.196s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.196s] -- Detecting CXX compile features
+[0.197s] -- Detecting CXX compile features - done
+[0.198s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.289s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.350s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.353s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.359s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.383s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.404s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.418s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.530s] Error parsing '/home/wqj/realtime_nvblox_ws/src/ur7e_perception_planning/package.xml':
+[0.552s] Traceback (most recent call last):
+[0.552s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.552s]     main()
+[0.552s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.552s]     raise e
+[0.552s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.552s]     package = parse_package_string(
+[0.552s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 788, in parse_package_string
+[0.552s]     pkg.validate(warnings=warnings)
+[0.552s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 330, in validate
+[0.552s]     raise InvalidPackage('\n'.join(errors), self.filename)
+[0.552s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/wqj/realtime_nvblox_ws/src/ur7e_perception_planning/package.xml':
+[0.553s] Invalid email "wqj@localhost" for person "wqj"
+[0.559s] CMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.559s]   execute_process(/usr/bin/python3
+[0.559s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.559s]   /home/wqj/realtime_nvblox_ws/src/ur7e_perception_planning/package.xml
+[0.559s]   /home/wqj/realtime_nvblox_ws/build/ur7e_perception_planning/ament_cmake_core/package.cmake)
+[0.559s]   returned error code 1
+[0.559s] Call Stack (most recent call first):
+[0.559s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.559s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:226 (ament_package_xml)
+[0.559s]   CMakeLists.txt:8 (rosidl_generate_interfaces)
+[0.559s] 
+[0.559s] 
+[0.559s] -- Configuring incomplete, errors occurred!
+[0.559s] See also "/home/wqj/realtime_nvblox_ws/build/ur7e_perception_planning/CMakeFiles/CMakeOutput.log".
+[0.564s] Invoked command in '/home/wqj/realtime_nvblox_ws/build/ur7e_perception_planning' returned '1': CONDA_PROMPT_MODIFIER=(whole_control) /usr/bin/cmake /home/wqj/realtime_nvblox_ws/src/ur7e_perception_planning -DCMAKE_BUILD_TYPE=Release -DPython3_EXECUTABLE=/usr/bin/python3 -DPYTHON_EXECUTABLE=/usr/bin/python3 -DCMAKE_INSTALL_PREFIX=/home/wqj/realtime_nvblox_ws/install/ur7e_perception_planning

@@ -1,0 +1,111 @@
+{
+  "distance_semantics": "partial-policy feasibility, not observed-free ESDF",
+  "samples": 43034,
+  "capture_frames": 315,
+  "observations": 63,
+  "map_uid": "0634f7f548db5abe81e124e2569d83a3c8a0b1c682634f22905472f60641c0e5",
+  "min_measured_self_gap_m": 0.0213817983902266,
+  "min_measured_fixture_gap_m": 0.06836058363830072,
+  "min_planning_map_gap_m": 0.0452664762377739,
+  "max_tracking_error_rad": 0.03492929022533531,
+  "max_command_speed_rad_s": 0.24999992810663466,
+  "max_reaching_command_speed_rad_s": 0.15000000000001332,
+  "goals_reached": [
+    {
+      "kind": "goal_reached",
+      "sim_time": 629.0550000000001,
+      "wall_time": 203422.368367239,
+      "goal": [
+        0.5,
+        0.0,
+        0.6
+      ],
+      "error_m": 0.0042831328153385044,
+      "iterations": 121,
+      "revision": 1
+    },
+    {
+      "kind": "goal_reached",
+      "sim_time": 675.965,
+      "wall_time": 203470.582725949,
+      "goal": [
+        0.6027275713,
+        -0.0729611598,
+        0.4420525377
+      ],
+      "error_m": 0.006088777996419197,
+      "iterations": 159,
+      "revision": 2
+    },
+    {
+      "kind": "goal_reached",
+      "sim_time": 695.195,
+      "wall_time": 203489.824389048,
+      "goal": [
+        0.3,
+        0.1,
+        0.94
+      ],
+      "error_m": 0.0056253259643354305,
+      "iterations": 240,
+      "revision": 5
+    }
+  ],
+  "guide_checks": [
+    {
+      "goal": [
+        0.5,
+        0.0,
+        0.6
+      ],
+      "waypoints": 2,
+      "direct_joint_segment_fixture_gap_m": 0.08782747291672,
+      "direct_joint_segment_map_gap_m": 0.0452664762377739
+    },
+    {
+      "goal": [
+        0.6027275713,
+        -0.0729611598,
+        0.4420525377
+      ],
+      "waypoints": 2,
+      "direct_joint_segment_fixture_gap_m": 0.0663219077203504,
+      "direct_joint_segment_map_gap_m": 0.04499185279607773
+    },
+    {
+      "goal": [
+        0.5,
+        0.0,
+        0.6
+      ],
+      "waypoints": 2,
+      "direct_joint_segment_fixture_gap_m": 0.06836104492289016,
+      "direct_joint_segment_map_gap_m": 0.046956712460517885
+    },
+    {
+      "goal": [
+        0.3,
+        0.1,
+        0.94
+      ],
+      "waypoints": 2,
+      "direct_joint_segment_fixture_gap_m": 0.08782747291672,
+      "direct_joint_segment_map_gap_m": 0.04495744105577469
+    },
+    {
+      "goal": [
+        0.5,
+        0.0,
+        0.6
+      ],
+      "waypoints": 2,
+      "direct_joint_segment_fixture_gap_m": 0.08782747291672,
+      "direct_joint_segment_map_gap_m": 0.048729476296901705
+    }
+  ],
+  "sage_feedback_steps": 245,
+  "unique_feedback_timestamps": 245,
+  "observed_cells": 306980,
+  "tabletop_cells": 137568,
+  "planning_policy": "depth_tabletop_columns_v1"
+}

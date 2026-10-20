@@ -1,0 +1,105 @@
+{
+  "initial_joints": [
+    -6.885584311078219e-05,
+    -1.5700064734697958,
+    1.1000579263082235,
+    -1.5700405049085162,
+    -1.5699946288609747,
+    2.1966684418117666e-06
+  ],
+  "initial_camera_position": [
+    0.5670208930969238,
+    0.1508692502975464,
+    0.7234312891960144
+  ],
+  "moved_joints": [
+    0.07993033744293943,
+    -1.5700095934380653,
+    1.100086854495384,
+    -1.570060762919251,
+    -1.5699918998772149,
+    1.9657940910633442e-06
+  ],
+  "moved_camera_position": [
+    0.5531538128852844,
+    0.19570021331310272,
+    0.7234210968017578
+  ],
+  "camera_translation_m": 0.046926658333863086,
+  "restored_joint_max_error_rad": 2.8963167775231113e-05,
+  "reset_service_epoch": 1,
+  "final_stats": {
+    "rates_hz": {
+      "depth_received": 12.928640112370969,
+      "depth_outside_clock_window": 0.0,
+      "depth_overwritten": 8.950597000872209,
+      "map_initialized": 0.9945107778746899,
+      "stale_depth": 0.0,
+      "depth_integrated": 3.9780431114987596,
+      "esdf_updated": 2.9835323336240696,
+      "esdf_published": 0.9945107778746899,
+      "stale_output": 0.0,
+      "map_reset_requested": 0.0
+    },
+    "totals": {
+      "depth_received": 478,
+      "depth_outside_clock_window": 1,
+      "depth_overwritten": 205,
+      "map_initialized": 2,
+      "stale_depth": 1,
+      "depth_integrated": 268,
+      "esdf_updated": 141,
+      "esdf_published": 112,
+      "stale_output": 12,
+      "map_reset_requested": 1
+    },
+    "latency": {
+      "tf_lookup": {
+        "mean_ms": 10.135736609852218,
+        "p50_ms": 0.86501199984923,
+        "p95_ms": 40.33009929116815,
+        "max_ms": 48.16541098989546
+      },
+      "backend_initialization": {
+        "mean_ms": 1275.2127364801709,
+        "p50_ms": 1275.2127364801709,
+        "p95_ms": 2143.4994405368343,
+        "max_ms": 2239.9757409875747
+      },
+      "fusion_and_esdf": {
+        "mean_ms": 94.24640277214019,
+        "p50_ms": 4.234433989040554,
+        "p95_ms": 352.15463998611085,
+        "max_ms": 423.91579697141424
+      }
+    },
+    "world_frame": "base_link",
+    "python_executable": "/home/wqj/miniconda3/envs/whole_control/bin/python",
+    "error": null,
+    "latest": {
+      "input_stamp_ns": 313011000000,
+      "known_cells": 2908,
+      "total_cells": 52111,
+      "map_epoch": 1,
+      "unknown_distance_m": 100.0,
+      "depth_encoding": "16UC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        1280,
+        720
+      ],
+      "integration_size": [
+        640,
+        360
+      ],
+      "camera_position_base": [
+        0.567024827003479,
+        0.15086576342582703,
+        0.7234211564064026
+      ],
+      "ros_clock_minus_image_sec": 0.489,
+      "receive_to_result_ms": 479.80153700336814
+    }
+  },
+  "result": "PASS"
+}

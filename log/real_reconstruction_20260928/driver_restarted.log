@@ -1,0 +1,494 @@
+[INFO] [launch]: All log files can be found below /home/wqj/.ros/log/2026-09-28-13-03-13-949340-wqj-349586
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [dashboard_client-2]: process started with pid [349719]
+[INFO] [controller_stopper_node-4]: process started with pid [349723]
+[INFO] [ur_ros2_control_node-1]: process started with pid [349717]
+[INFO] [robot_state_helper-3]: process started with pid [349721]
+[INFO] [urscript_interface-5]: process started with pid [349725]
+[INFO] [robot_state_publisher-6]: process started with pid [349727]
+[INFO] [trajectory_until_node-7]: process started with pid [349729]
+[INFO] [spawner-8]: process started with pid [349731]
+[INFO] [spawner-9]: process started with pid [349733]
+[dashboard_client-2] [0m[INFO] [1790571796.554270262] [UR_Client_Library:]: Starting primary client pipeline[0m
+[robot_state_helper-3] [INFO] [1790571796.577066404] [UR_Client_Library:]: Starting primary client pipeline
+[dashboard_client-2] [33m[WARN] [1790571796.578362437] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C210A0[0m
+[controller_stopper_node-4] [0m[INFO] [1790571796.583851095] [Controller stopper]: Waiting for switch controller service to come up on controller_manager/switch_controller[0m
+[robot_state_publisher-6] [INFO] [1790571796.596985458] [robot_state_publisher]: got segment base
+[robot_state_publisher-6] [INFO] [1790571796.597636632] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-6] [INFO] [1790571796.597699240] [robot_state_publisher]: got segment base_link_inertia
+[robot_state_publisher-6] [INFO] [1790571796.597740773] [robot_state_publisher]: got segment flange
+[robot_state_publisher-6] [INFO] [1790571796.597781772] [robot_state_publisher]: got segment forearm_link
+[robot_state_publisher-6] [INFO] [1790571796.597820696] [robot_state_publisher]: got segment ft_frame
+[robot_state_publisher-6] [INFO] [1790571796.597844961] [robot_state_publisher]: got segment shoulder_link
+[robot_state_publisher-6] [INFO] [1790571796.597882124] [robot_state_publisher]: got segment tool0
+[robot_state_publisher-6] [INFO] [1790571796.597917016] [robot_state_publisher]: got segment upper_arm_link
+[robot_state_publisher-6] [INFO] [1790571796.597956660] [robot_state_publisher]: got segment world
+[robot_state_publisher-6] [INFO] [1790571796.597997868] [robot_state_publisher]: got segment wrist_1_link
+[robot_state_publisher-6] [INFO] [1790571796.598039193] [robot_state_publisher]: got segment wrist_2_link
+[robot_state_publisher-6] [INFO] [1790571796.598071532] [robot_state_publisher]: got segment wrist_3_link
+[ur_ros2_control_node-1] [WARN] [1790571796.630563537] [controller_manager]: [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.
+[ur_ros2_control_node-1] text not specified in the tf_prefix tag
+[ur_ros2_control_node-1] [INFO] [1790571796.634263240] [resource_manager]: Loading hardware 'ur7e' 
+[ur_ros2_control_node-1] [INFO] [1790571796.671865390] [resource_manager]: Initialize hardware 'ur7e' 
+[ur_ros2_control_node-1] [INFO] [1790571796.672584780] [resource_manager]: Successful initialization of hardware 'ur7e'
+[ur_ros2_control_node-1] [INFO] [1790571796.674430087] [resource_manager]: 'configure' hardware 'ur7e' 
+[ur_ros2_control_node-1] [INFO] [1790571796.674489344] [URPositionHardwareInterface]: Starting ...please wait...
+[ur_ros2_control_node-1] [INFO] [1790571796.674572087] [URPositionHardwareInterface]: Initializing driver...
+[dashboard_client-2] [0m[INFO] [1790571796.678911101] [dashboard_client]: Connecting to Dashboard Server at 192.168.56.100 with policy G5[0m
+[dashboard_client-2] [0m[INFO] [1790571796.679641426] [UR_Client_Library:]: DashboardClient created for host 192.168.56.100[0m
+[ur_ros2_control_node-1] [WARN] [1790571796.676585628] [UR_Client_Library:]: Your system/user seems not to be setup for FIFO scheduling. We recommend using a lowlatency kernel with FIFO scheduling. See https://docs.universal-robots.com/Universal_Robots_ROS_Documentation/doc/ur_client_library/doc/real_time.html for details.
+[ur_ros2_control_node-1] [INFO] [1790571796.677516644] [UR_Client_Library:]: Negotiated RTDE protocol version to 2.
+[ur_ros2_control_node-1] [INFO] [1790571796.678679341] [UR_Client_Library:]: Setting up RTDE communication with frequency 500.000000
+[dashboard_client-2] [0m[INFO] [1790571796.681215557] [UR_Client_Library:]: Connected: Universal Robots Dashboard Server
+[dashboard_client-2] [0m
+[ur_ros2_control_node-1] [INFO] [1790571797.726128038] [UR_Client_Library:]: Starting primary client pipeline
+[ur_ros2_control_node-1] [INFO] [1790571797.933499076] [URPositionHardwareInterface]: Calibration checksum: 'calib_16570280516586036686'.
+[ur_ros2_control_node-1] [INFO] [1790571797.933762914] [URPositionHardwareInterface]: Calibration checked successfully.
+[ur_ros2_control_node-1] [INFO] [1790571797.933970886] [URPositionHardwareInterface]: System successfully started!
+[ur_ros2_control_node-1] [INFO] [1790571797.934054757] [resource_manager]: Successful 'configure' of hardware 'ur7e'
+[ur_ros2_control_node-1] [INFO] [1790571797.934351743] [resource_manager]: 'activate' hardware 'ur7e' 
+[ur_ros2_control_node-1] [INFO] [1790571797.934383921] [URPositionHardwareInterface]: Activating HW interface
+[ur_ros2_control_node-1] [INFO] [1790571797.934414445] [resource_manager]: Successful 'activate' of hardware 'ur7e'
+[controller_stopper_node-4] [0m[INFO] [1790571797.951170893] [Controller stopper]: Service available[0m
+[controller_stopper_node-4] [0m[INFO] [1790571797.951409477] [Controller stopper]: Waiting for list controllers service to come up on controller_manager/list_controllers[0m
+[controller_stopper_node-4] [0m[INFO] [1790571797.951518999] [Controller stopper]: Service available[0m
+[ur_ros2_control_node-1] [WARN] [1790571797.962396541] [controller_manager]: Could not enable FIFO RT scheduling policy
+[ur_ros2_control_node-1] [WARN] [1790571797.963889448] [UR_Client_Library:]: Your system/user seems not to be setup for FIFO scheduling. We recommend using a lowlatency kernel with FIFO scheduling. See https://docs.universal-robots.com/Universal_Robots_ROS_Documentation/doc/ur_client_library/doc/real_time.html for details.
+[spawner-9] [INFO] [1790571798.452564147] [spawner_scaled_joint_trajectory_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-8] [INFO] [1790571798.469149958] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[ur_ros2_control_node-1] [INFO] [1790571801.719031528] [controller_manager]: Loading controller 'scaled_joint_trajectory_controller'
+[ur_ros2_control_node-1] [INFO] [1790571801.793512507] [scaled_joint_trajectory_controller]: Using scaling state from the hardware from interface speed_scaling/speed_scaling_factor.
+[ur_ros2_control_node-1] [WARN] [1790571801.813367910] [scaled_joint_trajectory_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[spawner-9] [INFO] [1790571801.820096361] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mscaled_joint_trajectory_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790571801.825785685] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790571801.875881328] [controller_manager]: Configuring controller 'scaled_joint_trajectory_controller'
+[ur_ros2_control_node-1] [INFO] [1790571801.876979165] [scaled_joint_trajectory_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ur_ros2_control_node-1] [INFO] [1790571801.877094773] [scaled_joint_trajectory_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[ur_ros2_control_node-1] [INFO] [1790571801.877844432] [scaled_joint_trajectory_controller]: Using 'splines' interpolation method.
+[spawner-8] [INFO] [1790571801.882328933] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790571801.889160447] [scaled_joint_trajectory_controller]: Controller state will be published at 100.00 Hz.
+[ur_ros2_control_node-1] [INFO] [1790571801.906066898] [scaled_joint_trajectory_controller]: Action status changes will be monitored at 20.00 Hz.
+[ur_ros2_control_node-1] [INFO] [1790571801.936208408] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790571801.936729696] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[ur_ros2_control_node-1] [INFO] [1790571801.953197174] [controller_manager]: Loading controller 'joint_trajectory_controller'
+[ur_ros2_control_node-1] [WARN] [1790571802.019486067] [joint_trajectory_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[spawner-9] [INFO] [1790571802.026620477] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mjoint_trajectory_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.028202924] [controller_manager]: Configuring controller 'joint_trajectory_controller'
+[ur_ros2_control_node-1] [INFO] [1790571802.029133384] [joint_trajectory_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ur_ros2_control_node-1] [INFO] [1790571802.029254231] [joint_trajectory_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[ur_ros2_control_node-1] [INFO] [1790571802.029453941] [joint_trajectory_controller]: Using 'splines' interpolation method.
+[spawner-8] [INFO] [1790571802.029800240] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.031921864] [joint_trajectory_controller]: Controller state will be published at 100.00 Hz.
+[ur_ros2_control_node-1] [INFO] [1790571802.038767925] [joint_trajectory_controller]: Action status changes will be monitored at 20.00 Hz.
+[ur_ros2_control_node-1] [INFO] [1790571802.069845496] [controller_manager]: Loading controller 'io_and_status_controller'
+[ur_ros2_control_node-1] [INFO] [1790571802.126145560] [controller_manager]: Loading controller 'forward_velocity_controller'
+[spawner-8] [INFO] [1790571802.129671416] [spawner_joint_state_broadcaster]: [94mLoaded [1mio_and_status_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.180063351] [controller_manager]: Configuring controller 'io_and_status_controller'
+[spawner-9] [INFO] [1790571802.182806109] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mforward_velocity_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.184372998] [controller_manager]: Configuring controller 'forward_velocity_controller'
+[ur_ros2_control_node-1] [INFO] [1790571802.188891009] [forward_velocity_controller]: configure successful
+[spawner-8] [INFO] [1790571802.270890561] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mio_and_status_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.276127142] [controller_manager]: Loading controller 'forward_position_controller'
+[ur_ros2_control_node-1] [INFO] [1790571802.324693181] [controller_manager]: Loading controller 'speed_scaling_state_broadcaster'
+[spawner-9] [INFO] [1790571802.328766249] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mforward_position_controller[0m
+[robot_state_helper-3] [INFO] [1790571802.368438685] [robot_state_helper]: The robot is currently in mode RUNNING.
+[robot_state_helper-3] [INFO] [1790571802.372413243] [robot_state_helper]: The robot is currently in safety mode NORMAL.
+[ur_ros2_control_node-1] [INFO] [1790571802.380875794] [speed_scaling_state_broadcaster]: Loading UR SpeedScalingStateBroadcaster with tf_prefix: 
+[ur_ros2_control_node-1] [INFO] [1790571802.382692649] [controller_manager]: Configuring controller 'forward_position_controller'
+[spawner-8] [INFO] [1790571802.385869005] [spawner_joint_state_broadcaster]: [94mLoaded [1mspeed_scaling_state_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.386060903] [forward_position_controller]: configure successful
+[ur_ros2_control_node-1] [INFO] [1790571802.391004022] [controller_manager]: Configuring controller 'speed_scaling_state_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790571802.391649425] [speed_scaling_state_broadcaster]: Publisher rate set to : 100.0 Hz
+[ur_ros2_control_node-1] [INFO] [1790571802.410479523] [controller_manager]: Loading controller 'forward_effort_controller'
+[spawner-8] [INFO] [1790571802.412997103] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mspeed_scaling_state_broadcaster[0m
+[spawner-9] [INFO] [1790571802.469288310] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mforward_effort_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.470854413] [controller_manager]: Configuring controller 'forward_effort_controller'
+[ur_ros2_control_node-1] [INFO] [1790571802.474902913] [forward_effort_controller]: configure successful
+[ur_ros2_control_node-1] [INFO] [1790571802.478870380] [controller_manager]: Loading controller 'force_torque_sensor_broadcaster'
+[spawner-8] [INFO] [1790571802.543310476] [spawner_joint_state_broadcaster]: [94mLoaded [1mforce_torque_sensor_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.544914409] [controller_manager]: Configuring controller 'force_torque_sensor_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790571802.556898959] [controller_manager]: Loading controller 'force_mode_controller'
+[spawner-9] [INFO] [1790571802.613197446] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mforce_mode_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.615359364] [controller_manager]: Configuring controller 'force_mode_controller'
+[spawner-8] [INFO] [1790571802.617397499] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mforce_torque_sensor_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.665112910] [controller_manager]: Loading controller 'tcp_pose_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790571802.725256770] [controller_manager]: Loading controller 'passthrough_trajectory_controller'
+[spawner-8] [INFO] [1790571802.728364273] [spawner_joint_state_broadcaster]: [94mLoaded [1mtcp_pose_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.787213251] [controller_manager]: Configuring controller 'tcp_pose_broadcaster'
+[spawner-9] [INFO] [1790571802.789736438] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mpassthrough_trajectory_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.803168756] [controller_manager]: Configuring controller 'passthrough_trajectory_controller'
+[spawner-8] [INFO] [1790571802.836248353] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mtcp_pose_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.844087750] [controller_manager]: Loading controller 'freedrive_mode_controller'
+[ur_ros2_control_node-1] [INFO] [1790571802.907333741] [controller_manager]: Loading controller 'ur_configuration_controller'
+[spawner-9] [INFO] [1790571802.910945605] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mfreedrive_mode_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.965193053] [controller_manager]: Configuring controller 'freedrive_mode_controller'
+[spawner-8] [INFO] [1790571802.969390711] [spawner_joint_state_broadcaster]: [94mLoaded [1mur_configuration_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790571802.985002060] [controller_manager]: Configuring controller 'ur_configuration_controller'
+[ur_ros2_control_node-1] [INFO] [1790571803.008667118] [controller_manager]: Loading controller 'tool_contact_controller'
+[spawner-8] [INFO] [1790571803.009879873] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mur_configuration_controller[0m
+[spawner-9] [INFO] [1790571803.093761355] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mtool_contact_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790571803.095812674] [controller_manager]: Configuring controller 'tool_contact_controller'
+[INFO] [spawner-8]: process has finished cleanly [pid 349731]
+[INFO] [spawner-9]: process has finished cleanly [pid 349733]
+[ur_ros2_control_node-1] [INFO] [1790571821.456639771] [UR_Client_Library:]: Robot requested program
+[ur_ros2_control_node-1] [INFO] [1790571821.456755862] [UR_Client_Library:]: Sent program to robot
+[ur_ros2_control_node-1] [INFO] [1790571821.756267819] [UR_Client_Library:]: Robot connected to reverse interface. Ready to receive control commands.
+[ur_ros2_control_node-1] [INFO] [1790571991.993548453] [UR_Client_Library:]: Connection to reverse interface dropped.
+[robot_state_helper-3] [INFO] [1790596280.385439306] [robot_state_helper]: The robot is currently in mode POWER_ON.
+[ur_ros2_control_node-1] [INFO] [1790596280.397959185] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A4
+[robot_state_helper-3] [INFO] [1790596280.397997971] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A4
+[robot_state_helper-3] [INFO] [1790596281.035348112] [robot_state_helper]: The robot is currently in mode POWER_OFF.
+[robot_state_helper-3] [INFO] [1790596281.102979876] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A3
+[ur_ros2_control_node-1] [INFO] [1790596281.103004936] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A3
+[ur_ros2_control_node-1] [ERROR] [1790609731.821742550] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.823656639] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.825680431] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.827673388] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.829638585] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.831682588] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.833654248] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.835626531] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.837657696] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.839626361] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.841627325] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.843631713] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.845651657] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.847637089] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.849602303] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.851637298] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.853633237] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.855635290] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.857635976] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.859604723] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.861638609] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.863608186] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.865638484] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.867606330] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.869673798] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.871711051] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.873721610] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.875643735] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.877670867] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.879707229] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.881685624] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.883615509] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.885650775] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.887633393] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.889655340] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.891644744] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.893656968] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.895654200] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.897623218] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.899656408] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.901624691] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.903627418] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.905657424] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.907659766] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.909624368] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.911682442] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.913762698] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.915733221] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.917732607] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.919664316] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.921736332] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.923687579] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.925687190] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.927656352] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.929699827] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.931736372] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.933697242] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.935657337] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.937691604] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.939725937] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.941719264] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.943638715] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.945664503] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.947666664] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.949673554] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.951671521] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.953680066] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.955684899] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.957674093] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.959674427] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.961648907] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.963680227] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.965681600] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.967685293] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.969663806] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.971888520] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.973740849] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.975739212] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.977743002] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.979767753] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.981734569] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.983701848] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.985703974] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.987727330] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.989665186] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.991702456] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.993688434] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.995709436] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.997709541] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609731.999671074] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.001705069] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.003708829] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.005708352] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.007711633] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.009713143] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.011699043] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.013839015] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.015717543] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.017714661] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.019713073] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.021801674] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.023772031] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.025832436] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.027767851] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.029803160] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.031818497] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.033808725] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.035693748] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.037746747] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.039738471] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.041725410] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.043720412] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.045701686] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.047716058] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.049701931] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.051722559] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.053715240] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.055717776] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.057729551] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.059727410] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.061723407] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.063724358] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.065727913] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.067738291] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.069734814] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.072039949] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.074021442] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.075927266] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.077902271] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.079922061] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.081960914] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.083827245] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.085892528] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.087901444] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.089841637] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.091833537] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.093811450] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.095842297] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.097958173] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.100074540] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.102085455] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.104108350] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.106086495] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.107948491] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.110118423] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.112062364] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.114218457] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.116009612] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.118165309] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.120072534] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.121956441] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.124044417] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.125899041] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.127837954] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.130030961] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.131913247] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.133871671] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.135972838] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.137851633] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.140049717] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.141971402] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.143871091] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.145917634] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.147848790] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.150039358] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.151931977] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.154062230] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.156044726] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.157915943] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.159861766] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.161809227] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.163783300] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.165745827] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.167791447] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.169795830] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.171902899] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.173826901] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.175871824] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.177825581] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.179835676] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.181874840] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.183837875] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.185793375] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.187831338] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.189816248] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.191804261] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.193778270] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.195808804] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.197813232] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.199813677] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.201822037] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.203812514] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.205825439] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.207820123] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.209830772] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.211898413] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.214146659] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.216039154] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.217884456] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.220139812] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.222213250] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.224105302] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.226031125] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.228231679] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.230302689] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.232263482] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.234217436] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.236194770] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.238233713] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.240245443] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.242060641] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.243974652] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.246168299] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.248132751] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.249915829] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.251968925] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.253919684] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.255893847] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.257964992] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.259939166] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.261927339] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.263924856] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.265918404] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.267930773] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.269927318] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.271968029] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.273983453] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.276024633] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.277964089] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.279960802] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.282365320] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.283940568] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.285924706] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.287926975] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.289928382] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.291942528] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.293938639] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.296100686] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.297915455] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.299917706] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.301904467] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.303831658] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.305893691] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.307853431] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.309829489] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.311855482] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.313935542] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.315910266] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.317940023] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.319903461] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.321923550] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.323887466] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.325869747] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.327878409] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.329910414] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.331896859] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.333957940] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.335913244] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.337951585] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.339911502] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.341906348] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.343949273] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.345950585] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.347866716] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.349847598] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.351874658] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.353881238] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.355899191] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.357882681] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.359881991] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.361882319] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.363880639] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.365885790] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.367886868] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.369874653] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.371963680] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.373944219] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.375964449] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.377929262] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.379891651] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.381963973] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[ur_ros2_control_node-1] [ERROR] [1790609732.383946183] [UR_Client_Library:]: Pipeline producer overflowed! <RTDE Data Pipeline>
+[robot_state_helper-3] [INFO] [1790655745.897373825] [robot_state_helper]: The robot is currently in mode POWER_ON.
+[robot_state_helper-3] [INFO] [1790655745.939315810] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A4
+[ur_ros2_control_node-1] [INFO] [1790655745.939335997] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A4
+[robot_state_helper-3] [INFO] [1790655747.971426004] [robot_state_helper]: The robot is currently in mode BOOTING.
+[ur_ros2_control_node-1] [INFO] [1790655748.044536378] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A2
+[robot_state_helper-3] [INFO] [1790655748.044560682] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A2
+[robot_state_helper-3] [INFO] [1790655750.289358928] [robot_state_helper]: The robot is currently in mode POWER_ON.
+[robot_state_helper-3] [INFO] [1790655750.355871317] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A4
+[ur_ros2_control_node-1] [INFO] [1790655750.355891851] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A4
+[robot_state_helper-3] [INFO] [1790655751.149399410] [robot_state_helper]: The robot is currently in mode IDLE.
+[robot_state_helper-3] [INFO] [1790655751.158047683] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A5
+[ur_ros2_control_node-1] [INFO] [1790655751.158111208] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A5
+[robot_state_helper-3] [INFO] [1790655759.573174842] [robot_state_helper]: The robot is currently in mode RUNNING.
+[ur_ros2_control_node-1] [INFO] [1790655759.580777187] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A7
+[robot_state_helper-3] [INFO] [1790655759.580777807] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C100A7
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [trajectory_until_node-7]: sending signal 'SIGINT' to process[trajectory_until_node-7]
+[INFO] [robot_state_publisher-6]: sending signal 'SIGINT' to process[robot_state_publisher-6]
+[INFO] [urscript_interface-5]: sending signal 'SIGINT' to process[urscript_interface-5]
+[INFO] [controller_stopper_node-4]: sending signal 'SIGINT' to process[controller_stopper_node-4]
+[INFO] [robot_state_helper-3]: sending signal 'SIGINT' to process[robot_state_helper-3]
+[INFO] [dashboard_client-2]: sending signal 'SIGINT' to process[dashboard_client-2]
+[INFO] [ur_ros2_control_node-1]: sending signal 'SIGINT' to process[ur_ros2_control_node-1]
+[trajectory_until_node-7] [INFO] [1790658140.854060638] [rclcpp]: signal_handler(signum=2)
+[robot_state_publisher-6] [INFO] [1790658140.860418698] [rclcpp]: signal_handler(signum=2)
+[urscript_interface-5] [INFO] [1790658140.867638812] [rclcpp]: signal_handler(signum=2)
+[controller_stopper_node-4] [0m[INFO] [1790658140.877157421] [rclcpp]: signal_handler(signum=2)[0m
+[robot_state_helper-3] [INFO] [1790658140.884333910] [rclcpp]: signal_handler(signum=2)
+[dashboard_client-2] [0m[INFO] [1790658140.892769905] [rclcpp]: signal_handler(signum=2)[0m
+[ur_ros2_control_node-1] [INFO] [1790658140.899765805] [rclcpp]: signal_handler(signum=2)
+[ur_ros2_control_node-1] [INFO] [1790658140.900577998] [controller_manager]: Shutdown request received....
+[ur_ros2_control_node-1] [INFO] [1790658140.901085833] [controller_manager]: Shutting down all controllers in the controller manager.
+[ur_ros2_control_node-1] [INFO] [1790658140.901376109] [controller_manager]: Shutting down controller 'scaled_joint_trajectory_controller'
+[ur_ros2_control_node-1] [INFO] [1790658140.901627955] [controller_manager]: Deactivating controller 'joint_state_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790658140.901815531] [controller_manager]: Shutting down controller 'joint_state_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790658140.903694780] [controller_manager]: Shutting down controller 'joint_trajectory_controller'
+[ur_ros2_control_node-1] [INFO] [1790658140.905484434] [controller_manager]: Deactivating controller 'io_and_status_controller'
+[robot_state_helper-3] [INFO] [1790658140.946997298] [UR_Client_Library:]: Stopping primary client pipeline
+[dashboard_client-2] [0m[INFO] [1790658141.003160300] [UR_Client_Library:]: Stopping primary client pipeline[0m
+[ur_ros2_control_node-1] [INFO] [1790658141.006143126] [controller_manager]: Shutting down controller 'io_and_status_controller'
+[ur_ros2_control_node-1] [INFO] [1790658141.006541607] [controller_manager]: Shutting down controller 'forward_velocity_controller'
+[ur_ros2_control_node-1] [INFO] [1790658141.006790092] [controller_manager]: Shutting down controller 'forward_position_controller'
+[ur_ros2_control_node-1] [INFO] [1790658141.007001804] [controller_manager]: Deactivating controller 'speed_scaling_state_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790658141.007162077] [controller_manager]: Shutting down controller 'speed_scaling_state_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790658141.007774938] [controller_manager]: Shutting down controller 'forward_effort_controller'
+[ur_ros2_control_node-1] [INFO] [1790658141.008156521] [controller_manager]: Deactivating controller 'force_torque_sensor_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790658141.008347206] [controller_manager]: Shutting down controller 'force_torque_sensor_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790658141.008514276] [controller_manager]: Shutting down controller 'force_mode_controller'
+[ur_ros2_control_node-1] [INFO] [1790658141.008683131] [controller_manager]: Deactivating controller 'tcp_pose_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790658141.008847718] [controller_manager]: Shutting down controller 'tcp_pose_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790658141.009065432] [controller_manager]: Shutting down controller 'passthrough_trajectory_controller'
+[ur_ros2_control_node-1] [INFO] [1790658141.009277578] [controller_manager]: Shutting down controller 'freedrive_mode_controller'
+[ur_ros2_control_node-1] [INFO] [1790658141.010113259] [controller_manager]: Deactivating controller 'ur_configuration_controller'
+[ur_ros2_control_node-1] [INFO] [1790658141.010319345] [controller_manager]: Shutting down controller 'ur_configuration_controller'
+[ur_ros2_control_node-1] [INFO] [1790658141.010489360] [controller_manager]: Shutting down controller 'tool_contact_controller'
+[INFO] [urscript_interface-5]: process has finished cleanly [pid 349725]
+[ur_ros2_control_node-1] [INFO] [1790658141.063548643] [resource_manager]: 'deactivate' hardware 'ur7e' 
+[ur_ros2_control_node-1] [INFO] [1790658141.063680925] [resource_manager]: Successful 'deactivate' of hardware 'ur7e'
+[ur_ros2_control_node-1] [INFO] [1790658141.063819761] [resource_manager]: 'shutdown' hardware 'ur7e' 
+[ur_ros2_control_node-1] [INFO] [1790658141.063906419] [URPositionHardwareInterface]: Stopping ...please wait...
+[INFO] [robot_state_publisher-6]: process has finished cleanly [pid 349727]
+[ur_ros2_control_node-1] [INFO] [1790658141.068958348] [UR_Client_Library:]: Stopping primary client pipeline
+[INFO] [controller_stopper_node-4]: process has finished cleanly [pid 349723]
+[INFO] [trajectory_until_node-7]: process has finished cleanly [pid 349729]
+[INFO] [dashboard_client-2]: process has finished cleanly [pid 349719]
+[INFO] [robot_state_helper-3]: process has finished cleanly [pid 349721]
+[ur_ros2_control_node-1] [INFO] [1790658143.029578220] [URPositionHardwareInterface]: System successfully stopped!
+[ur_ros2_control_node-1] [INFO] [1790658143.029757868] [resource_manager]: Successful 'shutdown' of hardware 'ur7e'
+[ur_ros2_control_node-1] [INFO] [1790658143.029811599] [controller_manager]: Shutting down the controller manager.
+[INFO] [ur_ros2_control_node-1]: process has finished cleanly [pid 349717]

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -eo pipefail
+RS_ENV="${SAGE_CONDA_PREFIX:-$HOME/miniconda3/envs/whole_control}"
+export CONDA_PREFIX="$RS_ENV"
+export PATH="$RS_ENV/bin:$PATH"
+export PYTHONDONTWRITEBYTECODE=1
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1
+exec "$RS_ENV/bin/python" -B -m ur7e_real_reconstruction.node "$@"

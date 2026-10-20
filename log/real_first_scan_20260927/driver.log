@@ -1,0 +1,136 @@
+[INFO] [launch]: All log files can be found below /home/wqj/.ros/log/2026-09-27-21-28-55-966010-wqj-14294
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [dashboard_client-2]: process started with pid [14329]
+[INFO] [controller_stopper_node-4]: process started with pid [14333]
+[INFO] [ur_ros2_control_node-1]: process started with pid [14327]
+[INFO] [robot_state_helper-3]: process started with pid [14331]
+[INFO] [urscript_interface-5]: process started with pid [14335]
+[INFO] [robot_state_publisher-6]: process started with pid [14337]
+[INFO] [trajectory_until_node-7]: process started with pid [14339]
+[INFO] [spawner-8]: process started with pid [14341]
+[INFO] [spawner-9]: process started with pid [14343]
+[dashboard_client-2] [0m[INFO] [1790515736.236919378] [UR_Client_Library:]: Starting primary client pipeline[0m
+[robot_state_helper-3] [INFO] [1790515736.240974485] [UR_Client_Library:]: Starting primary client pipeline
+[controller_stopper_node-4] [0m[INFO] [1790515736.241956845] [Controller stopper]: Waiting for switch controller service to come up on controller_manager/switch_controller[0m
+[robot_state_publisher-6] [INFO] [1790515736.248161417] [robot_state_publisher]: got segment base
+[robot_state_publisher-6] [INFO] [1790515736.248223592] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-6] [INFO] [1790515736.248227538] [robot_state_publisher]: got segment base_link_inertia
+[robot_state_publisher-6] [INFO] [1790515736.248229845] [robot_state_publisher]: got segment flange
+[robot_state_publisher-6] [INFO] [1790515736.248231953] [robot_state_publisher]: got segment forearm_link
+[robot_state_publisher-6] [INFO] [1790515736.248233973] [robot_state_publisher]: got segment ft_frame
+[robot_state_publisher-6] [INFO] [1790515736.248235914] [robot_state_publisher]: got segment shoulder_link
+[robot_state_publisher-6] [INFO] [1790515736.248237939] [robot_state_publisher]: got segment tool0
+[robot_state_publisher-6] [INFO] [1790515736.248239903] [robot_state_publisher]: got segment upper_arm_link
+[robot_state_publisher-6] [INFO] [1790515736.248241864] [robot_state_publisher]: got segment world
+[robot_state_publisher-6] [INFO] [1790515736.248243805] [robot_state_publisher]: got segment wrist_1_link
+[robot_state_publisher-6] [INFO] [1790515736.248245800] [robot_state_publisher]: got segment wrist_2_link
+[robot_state_publisher-6] [INFO] [1790515736.248247749] [robot_state_publisher]: got segment wrist_3_link
+[ur_ros2_control_node-1] [WARN] [1790515736.253531524] [controller_manager]: [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.
+[ur_ros2_control_node-1] text not specified in the tf_prefix tag
+[ur_ros2_control_node-1] [INFO] [1790515736.253963807] [resource_manager]: Loading hardware 'ur7e' 
+[ur_ros2_control_node-1] [INFO] [1790515736.266790962] [resource_manager]: Initialize hardware 'ur7e' 
+[ur_ros2_control_node-1] [INFO] [1790515736.266892667] [resource_manager]: Successful initialization of hardware 'ur7e'
+[ur_ros2_control_node-1] [INFO] [1790515736.267119308] [resource_manager]: 'configure' hardware 'ur7e' 
+[ur_ros2_control_node-1] [INFO] [1790515736.267130227] [URPositionHardwareInterface]: Starting ...please wait...
+[ur_ros2_control_node-1] [INFO] [1790515736.267143706] [URPositionHardwareInterface]: Initializing driver...
+[ur_ros2_control_node-1] [WARN] [1790515736.268109948] [UR_Client_Library:]: Your system/user seems not to be setup for FIFO scheduling. We recommend using a lowlatency kernel with FIFO scheduling. See https://docs.universal-robots.com/Universal_Robots_ROS_Documentation/doc/ur_client_library/doc/real_time.html for details.
+[ur_ros2_control_node-1] [INFO] [1790515736.269474565] [UR_Client_Library:]: Negotiated RTDE protocol version to 2.
+[ur_ros2_control_node-1] [INFO] [1790515736.269667894] [UR_Client_Library:]: Setting up RTDE communication with frequency 500.000000
+[dashboard_client-2] [0m[INFO] [1790515736.319241590] [dashboard_client]: Connecting to Dashboard Server at 192.168.56.100 with policy G5[0m
+[dashboard_client-2] [0m[INFO] [1790515736.319342166] [UR_Client_Library:]: DashboardClient created for host 192.168.56.100[0m
+[robot_state_helper-3] [WARN] [1790515736.319320286] [UR_Client_Library:]: Logging an ErrorCodeMessage from the UR Controller Box: C210A0
+[spawner-8] [INFO] [1790515736.410444744] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-9] [INFO] [1790515736.410459026] [spawner_scaled_joint_trajectory_controller]: waiting for service /controller_manager/list_controllers to become available...
+[dashboard_client-2] [0m[INFO] [1790515736.709637682] [UR_Client_Library:]: Connected: Universal Robots Dashboard Server
+[dashboard_client-2] [0m
+[ur_ros2_control_node-1] [INFO] [1790515737.329456394] [UR_Client_Library:]: Starting primary client pipeline
+[ur_ros2_control_node-1] [INFO] [1790515737.438674400] [URPositionHardwareInterface]: Calibration checksum: 'calib_16570280516586036686'.
+[ur_ros2_control_node-1] [INFO] [1790515737.438699437] [URPositionHardwareInterface]: Calibration checked successfully.
+[ur_ros2_control_node-1] [INFO] [1790515737.438714671] [URPositionHardwareInterface]: System successfully started!
+[ur_ros2_control_node-1] [INFO] [1790515737.438724616] [resource_manager]: Successful 'configure' of hardware 'ur7e'
+[ur_ros2_control_node-1] [INFO] [1790515737.438749299] [resource_manager]: 'activate' hardware 'ur7e' 
+[ur_ros2_control_node-1] [INFO] [1790515737.438751402] [URPositionHardwareInterface]: Activating HW interface
+[ur_ros2_control_node-1] [INFO] [1790515737.438753711] [resource_manager]: Successful 'activate' of hardware 'ur7e'
+[controller_stopper_node-4] [0m[INFO] [1790515737.440336113] [Controller stopper]: Service available[0m
+[controller_stopper_node-4] [0m[INFO] [1790515737.440360337] [Controller stopper]: Waiting for list controllers service to come up on controller_manager/list_controllers[0m
+[controller_stopper_node-4] [0m[INFO] [1790515737.440371367] [Controller stopper]: Service available[0m
+[ur_ros2_control_node-1] [WARN] [1790515737.441078200] [controller_manager]: Could not enable FIFO RT scheduling policy
+[ur_ros2_control_node-1] [WARN] [1790515737.441225764] [UR_Client_Library:]: Your system/user seems not to be setup for FIFO scheduling. We recommend using a lowlatency kernel with FIFO scheduling. See https://docs.universal-robots.com/Universal_Robots_ROS_Documentation/doc/ur_client_library/doc/real_time.html for details.
+[ur_ros2_control_node-1] [INFO] [1790515737.663757517] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790515737.673463488] [controller_manager]: Loading controller 'scaled_joint_trajectory_controller'
+[spawner-8] [INFO] [1790515737.673832929] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.719766691] [scaled_joint_trajectory_controller]: Using scaling state from the hardware from interface speed_scaling/speed_scaling_factor.
+[ur_ros2_control_node-1] [WARN] [1790515737.721084718] [scaled_joint_trajectory_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[ur_ros2_control_node-1] [INFO] [1790515737.721425974] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790515737.721505188] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-9] [INFO] [1790515737.721863810] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mscaled_joint_trajectory_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.725313640] [controller_manager]: Configuring controller 'scaled_joint_trajectory_controller'
+[ur_ros2_control_node-1] [INFO] [1790515737.725393328] [scaled_joint_trajectory_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ur_ros2_control_node-1] [INFO] [1790515737.725403221] [scaled_joint_trajectory_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[ur_ros2_control_node-1] [INFO] [1790515737.725488034] [scaled_joint_trajectory_controller]: Using 'splines' interpolation method.
+[ur_ros2_control_node-1] [INFO] [1790515737.726005201] [scaled_joint_trajectory_controller]: Controller state will be published at 100.00 Hz.
+[ur_ros2_control_node-1] [INFO] [1790515737.727231814] [scaled_joint_trajectory_controller]: Action status changes will be monitored at 20.00 Hz.
+[spawner-8] [INFO] [1790515737.733835646] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.734046864] [controller_manager]: Loading controller 'joint_trajectory_controller'
+[ur_ros2_control_node-1] [WARN] [1790515737.738637042] [joint_trajectory_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[ur_ros2_control_node-1] [INFO] [1790515737.739470511] [controller_manager]: Loading controller 'io_and_status_controller'
+[spawner-9] [INFO] [1790515737.739757947] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mjoint_trajectory_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.743297625] [controller_manager]: Configuring controller 'joint_trajectory_controller'
+[ur_ros2_control_node-1] [INFO] [1790515737.743365634] [joint_trajectory_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ur_ros2_control_node-1] [INFO] [1790515737.743372224] [joint_trajectory_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[ur_ros2_control_node-1] [INFO] [1790515737.743389705] [joint_trajectory_controller]: Using 'splines' interpolation method.
+[ur_ros2_control_node-1] [INFO] [1790515737.743542193] [joint_trajectory_controller]: Controller state will be published at 100.00 Hz.
+[spawner-8] [INFO] [1790515737.743585343] [spawner_joint_state_broadcaster]: [94mLoaded [1mio_and_status_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.744381491] [joint_trajectory_controller]: Action status changes will be monitored at 20.00 Hz.
+[ur_ros2_control_node-1] [INFO] [1790515737.747409573] [controller_manager]: Configuring controller 'io_and_status_controller'
+[ur_ros2_control_node-1] [INFO] [1790515737.758672193] [controller_manager]: Loading controller 'forward_velocity_controller'
+[spawner-8] [INFO] [1790515737.759185541] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mio_and_status_controller[0m
+[spawner-9] [INFO] [1790515737.765732114] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mforward_velocity_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.765853387] [controller_manager]: Configuring controller 'forward_velocity_controller'
+[ur_ros2_control_node-1] [INFO] [1790515737.766178128] [forward_velocity_controller]: configure successful
+[ur_ros2_control_node-1] [INFO] [1790515737.767389908] [controller_manager]: Loading controller 'speed_scaling_state_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790515737.770049840] [speed_scaling_state_broadcaster]: Loading UR SpeedScalingStateBroadcaster with tf_prefix: 
+[spawner-8] [INFO] [1790515737.771576859] [spawner_joint_state_broadcaster]: [94mLoaded [1mspeed_scaling_state_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.771671847] [controller_manager]: Configuring controller 'speed_scaling_state_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790515737.771708013] [speed_scaling_state_broadcaster]: Publisher rate set to : 100.0 Hz
+[ur_ros2_control_node-1] [INFO] [1790515737.773302458] [controller_manager]: Loading controller 'forward_position_controller'
+[spawner-9] [INFO] [1790515737.777558456] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mforward_position_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.781373365] [controller_manager]: Configuring controller 'forward_position_controller'
+[spawner-8] [INFO] [1790515737.781553744] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mspeed_scaling_state_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.781574599] [forward_position_controller]: configure successful
+[ur_ros2_control_node-1] [INFO] [1790515737.783888826] [controller_manager]: Loading controller 'force_torque_sensor_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790515737.789471602] [controller_manager]: Loading controller 'forward_effort_controller'
+[spawner-8] [INFO] [1790515737.789727018] [spawner_joint_state_broadcaster]: [94mLoaded [1mforce_torque_sensor_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.793385452] [controller_manager]: Configuring controller 'force_torque_sensor_broadcaster'
+[spawner-9] [INFO] [1790515737.793614233] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mforward_effort_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.795531640] [controller_manager]: Configuring controller 'forward_effort_controller'
+[ur_ros2_control_node-1] [INFO] [1790515737.795716836] [forward_effort_controller]: configure successful
+[spawner-8] [INFO] [1790515737.801625615] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mforce_torque_sensor_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.802148887] [controller_manager]: Loading controller 'force_mode_controller'
+[ur_ros2_control_node-1] [INFO] [1790515737.807519517] [controller_manager]: Loading controller 'tcp_pose_broadcaster'
+[spawner-9] [INFO] [1790515737.807723045] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mforce_mode_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.813412779] [controller_manager]: Configuring controller 'force_mode_controller'
+[spawner-8] [INFO] [1790515737.813577839] [spawner_joint_state_broadcaster]: [94mLoaded [1mtcp_pose_broadcaster[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.817470833] [controller_manager]: Configuring controller 'tcp_pose_broadcaster'
+[ur_ros2_control_node-1] [INFO] [1790515737.823431495] [controller_manager]: Loading controller 'passthrough_trajectory_controller'
+[spawner-8] [INFO] [1790515737.823589796] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mtcp_pose_broadcaster[0m
+[spawner-9] [INFO] [1790515737.829924412] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mpassthrough_trajectory_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.830102080] [controller_manager]: Configuring controller 'passthrough_trajectory_controller'
+[ur_ros2_control_node-1] [INFO] [1790515737.833395319] [controller_manager]: Loading controller 'ur_configuration_controller'
+[spawner-8] [INFO] [1790515737.837796464] [spawner_joint_state_broadcaster]: [94mLoaded [1mur_configuration_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.838014688] [controller_manager]: Configuring controller 'ur_configuration_controller'
+[ur_ros2_control_node-1] [INFO] [1790515737.841504872] [controller_manager]: Loading controller 'freedrive_mode_controller'
+[robot_state_helper-3] [INFO] [1790515737.844606075] [robot_state_helper]: The robot is currently in mode RUNNING.
+[robot_state_helper-3] [INFO] [1790515737.845295839] [robot_state_helper]: The robot is currently in safety mode NORMAL.
+[spawner-9] [INFO] [1790515737.847653642] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mfreedrive_mode_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.851421924] [controller_manager]: Configuring controller 'freedrive_mode_controller'
+[spawner-8] [INFO] [1790515737.851671084] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mur_configuration_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.856387336] [controller_manager]: Loading controller 'tool_contact_controller'
+[spawner-9] [INFO] [1790515737.863668335] [spawner_scaled_joint_trajectory_controller]: [94mLoaded [1mtool_contact_controller[0m
+[ur_ros2_control_node-1] [INFO] [1790515737.863942507] [controller_manager]: Configuring controller 'tool_contact_controller'
+[INFO] [spawner-8]: process has finished cleanly [pid 14341]
+[INFO] [spawner-9]: process has finished cleanly [pid 14343]
+[ur_ros2_control_node-1] [INFO] [1790515778.507180981] [UR_Client_Library:]: Robot requested program
+[ur_ros2_control_node-1] [INFO] [1790515778.507288344] [UR_Client_Library:]: Sent program to robot
+[ur_ros2_control_node-1] [INFO] [1790515778.919919805] [UR_Client_Library:]: Robot connected to reverse interface. Ready to receive control commands.
+[ur_ros2_control_node-1] [INFO] [1790516626.419913457] [UR_Client_Library:]: Connection to reverse interface dropped.

@@ -1,0 +1,30 @@
+robot_urdf: /home/wqj/ur7e_real_setup/calibrated_with_camera.urdf
+collision_spheres: /home/wqj/ur7e_real_setup/collision_spheres_preview.yaml
+output_directory: /home/wqj/realtime_nvblox_ws/log/real_reconstruction_20260928/real
+world_frame: base_link
+depth_frame: camera_depth_optical_frame
+color_frame: camera_color_optical_frame
+depth_topic: /camera/camera/depth/image_rect_raw
+camera_info_topic: /camera/camera/depth/camera_info
+color_topic: /camera/camera/color/image_raw
+color_info_topic: /camera/camera/color/camera_info
+joint_topic: /joint_states
+capture_hz: 5.0
+mesh_hz: 1.0
+voxel_size_m: 0.015
+depth_stride: 2
+min_depth_m: 0.2
+max_depth_m: 3.0
+roi_min_m:
+- -1.0
+- -1.0
+- -0.1
+roi_max_m:
+- 1.0
+- 1.0
+- 1.3
+frame_timeout: 0.5
+sync_slop_sec: 0.035
+settle_seconds: 0.5
+settle_speed: 0.015
+view_separation_rad: 0.15

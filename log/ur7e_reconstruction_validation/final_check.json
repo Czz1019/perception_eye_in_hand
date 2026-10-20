@@ -1,0 +1,73 @@
+{
+  "result": "PASS",
+  "mesh_messages": 5,
+  "mesh_wall_hz": 0.6709840224416893,
+  "triangles_min": 4805,
+  "triangles_max": 4805,
+  "surface_points": 3174,
+  "tf_poses_checked": 4,
+  "max_pose_matrix_error": 2.3783416902567467e-08,
+  "stats": {
+    "rates_hz": {
+      "depth_received": 0.0,
+      "depth_overwritten": 0.0,
+      "map_initialized": 0.0,
+      "stale_depth": 0.0,
+      "depth_integrated": 0.0,
+      "mesh_extracted": 0.0,
+      "mesh_skipped": 0.0,
+      "mesh_published": 0.0
+    },
+    "totals": {
+      "depth_received": 298,
+      "depth_overwritten": 16,
+      "map_initialized": 1,
+      "stale_depth": 1,
+      "depth_integrated": 281,
+      "mesh_extracted": 39,
+      "mesh_skipped": 0,
+      "mesh_published": 39
+    },
+    "latency": {
+      "initialization": {
+        "mean_ms": 1815.4797359893564,
+        "p50_ms": 1815.4797359893564,
+        "p95_ms": 1815.4797359893564,
+        "max_ms": 1815.4797359893564
+      },
+      "depth_integrate_cpu": {
+        "mean_ms": 1.2497508210035577,
+        "p50_ms": 0.6813249783590436,
+        "p95_ms": 2.6477159990463406,
+        "max_ms": 65.90990201220848
+      },
+      "mesh_extract": {
+        "mean_ms": 2.2694892287314032,
+        "p50_ms": 1.9691950001288205,
+        "p95_ms": 3.874870587605983,
+        "max_ms": 4.6947279770392925
+      },
+      "mesh_pack_publish": {
+        "mean_ms": 28.385739819779513,
+        "p50_ms": 24.122925999108702,
+        "p95_ms": 77.30142539949156,
+        "max_ms": 79.98239801963791
+      }
+    },
+    "world_frame": "base_link",
+    "python_executable": "/home/wqj/miniconda3/envs/whole_control/bin/python",
+    "esdf_enabled": false,
+    "error": null,
+    "latest": {
+      "map_epoch": 0,
+      "input_stamp_ns": 57584000000,
+      "vertices": 3174,
+      "triangles": 4805,
+      "camera_position_base": [
+        0.5670168995857239,
+        0.15087290108203888,
+        0.7234414219856262
+      ]
+    }
+  }
+}
