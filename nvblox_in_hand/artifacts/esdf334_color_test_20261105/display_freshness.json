@@ -1,0 +1,35 @@
+{
+  "method": "Reconstruct associated depth header stamp from recorded latest /clock minus recorded cloud age; round to microseconds. This identifies associated input stamps, not geometric changes or GPU completion.",
+  "motion_phases": {
+    "baseline3d": {
+      "messages": 538,
+      "distinct_associated_depth_stamps": 436,
+      "associated_stamp_changes_wall_hz": 19.90791453631683,
+      "consecutive_repeated_stamp_fraction": 0.18994413407821228,
+      "receive_interval_ms": {
+        "p50": 40.122515999883035,
+        "p95": 48.65604460019313
+      }
+    },
+    "diagnostic3d": {
+      "messages": 648,
+      "distinct_associated_depth_stamps": 435,
+      "associated_stamp_changes_wall_hz": 19.745335017501358,
+      "consecutive_repeated_stamp_fraction": 0.32921174652241114,
+      "receive_interval_ms": {
+        "p50": 31.92677500010177,
+        "p95": 40.00572800005102
+      }
+    },
+    "diagnostic40": {
+      "messages": 707,
+      "distinct_associated_depth_stamps": 435,
+      "associated_stamp_changes_wall_hz": 19.816052788925383,
+      "consecutive_repeated_stamp_fraction": 0.38526912181303113,
+      "receive_interval_ms": {
+        "p50": 30.298461500251506,
+        "p95": 37.54350224994596
+      }
+    }
+  }
+}

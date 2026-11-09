@@ -22,12 +22,17 @@ from ur7e_nvblox.node import TfMapper
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--output',required=True)
-    parser.add_argument('--mode',choices=['dense','sparse'],default='dense')
+    parser.add_argument('--mode',choices=['dense','sparse','native'],default='dense')
+    parser.add_argument('--esdf-hz',type=float,default=15.)
+    parser.add_argument('--voxel-size',type=float,default=.03)
+    parser.add_argument('--observed',action='store_true',help='Subscribe only to the GPU-filtered display output')
+    parser.add_argument('--check-stop',action='store_true',help='Stop images and verify old maps are not republished')
     parser.add_argument('--reference-config',help='Use the untouched reference Gazebo frontend with this YAML')
     parser.add_argument('--seconds',type=float,default=15.)
     args=parser.parse_args()
     ros_args=['--ros-args','-p','use_sim_time:=false','-p','depth_topic:=/test/depth',
-                    '-p','camera_info_topic:=/test/info','-p','esdf_hz:=15.0','-p','depth_stride:=1',
+                    '-p','camera_info_topic:=/test/info','-p','esdf_hz:='+str(args.esdf_hz),'-p','depth_stride:=1',
+                    '-p','voxel_size_m:='+str(args.voxel_size),
                     '-p','esdf_output_mode:='+args.mode]
     if args.reference_config:ros_args += ['-p','config:='+str(Path(args.reference_config).resolve())]
     rclpy.init(args=ros_args)
@@ -48,7 +53,7 @@ def main():
         infos.publish(info)
         msg=Image();msg.header=info.header;msg.width=160;msg.height=90;msg.encoding='32FC1';msg.step=640
         msg.data=np.ones((90,160),dtype='<f4').tobytes();images.publish(msg)
-    source.create_timer(1/30.,publish)
+    camera_timer=source.create_timer(1/30.,publish)
     def receive(msg):
         stamp=msg.header.stamp.sec+msg.header.stamp.nanosec*1e-9
         assert msg.header.frame_id=='base_link' and msg.width>0
@@ -57,7 +62,7 @@ def main():
         valid=np.isfinite(d)&(abs(d)<10)
         assert valid.any() and np.any(abs(d[valid])<.06)
         samples.append((time.monotonic(),stamp,msg.width,(source.get_clock().now().nanoseconds*1e-9-stamp)*1000))
-    source.create_subscription(PointCloud2,prefix+'/esdf_3d',receive,qos)
+    source.create_subscription(PointCloud2,prefix+('/esdf_observed' if args.observed else '/esdf_3d'),receive,qos)
     source.create_subscription(String,prefix+'/stats',lambda msg:stats.append(json.loads(msg.data)),1)
     executor=MultiThreadedExecutor(num_threads=3);executor.add_node(source);executor.add_node(mapper)
     thread=threading.Thread(target=executor.spin,daemon=True);thread.start()
@@ -74,6 +79,13 @@ def main():
                     latency_p50_ms=float(np.median([s[3] for s in observed])),
                     latency_p95_ms=float(np.percentile([s[3] for s in observed],95)),
                     last_stats=stats[-1] if stats else {},seconds=args.seconds)
+        if args.check_stop:
+            source.destroy_timer(camera_timer)
+            time.sleep(.6)  # Drain any in-flight image/export before measuring silence.
+            before=len(samples)
+            time.sleep(.7)
+            assert len(samples)==before, 'Old map was republished without a new image'
+            result['stopped_input_extra_messages']=len(samples)-before
         Path(args.output).write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))
     finally:
         mapper.close();executor.shutdown(timeout_sec=5);thread.join(timeout=3)

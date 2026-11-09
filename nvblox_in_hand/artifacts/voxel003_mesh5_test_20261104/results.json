@@ -1,0 +1,496 @@
+{
+  "status": "completed",
+  "probe_mode": "raw_cdr_marker_and_raw_mesh",
+  "gpu_completion_measured": false,
+  "phases": {
+    "mesh_static": {
+      "start_monotonic": 14880.595635797,
+      "end_monotonic": 14901.375858619,
+      "wall_seconds": 20.780222821998905,
+      "sample_count": 22,
+      "depth_wall_hz": 20.014586907907113,
+      "color_wall_hz": 20.014586907907113,
+      "esdf_update_wall_hz": 26.332322674291934,
+      "esdf_process_host_ms_sample_mean": 0.6903297272727272,
+      "esdf_process_host_ms_sample_p95": 2.3654135,
+      "esdf_view_host_ms_sample_mean": 0,
+      "esdf_view_host_ms_sample_p95": 0.0,
+      "last_metrics": {
+        "backend": "official_ros_cpp",
+        "totals": {
+          "depth_integrated": 594,
+          "color_integrated": 599,
+          "esdf_updated": 790
+        },
+        "depth_integrated_total": 594,
+        "color_integrated_total": 599,
+        "esdf_cycles_total": 790,
+        "depth_integrated_wall_hz": 20.7789,
+        "color_integrated_wall_hz": 17.8105,
+        "esdf_cycles_wall_hz": 24.7368,
+        "esdf_process_host_ms": 0.485007,
+        "esdf_view_host_ms": 0,
+        "esdf_view_points": 0,
+        "esdf_export_stats_valid": false,
+        "esdf_export_allocated_blocks": 0,
+        "esdf_export_allocated_voxels": 0,
+        "esdf_export_observed_voxels": 0,
+        "esdf_export_observed_inside_voxels": 0,
+        "voxel_size_m": 0.03,
+        "sampling": "native_allocated_observed_voxels",
+        "gpu_completion_measured": false
+      },
+      "mesh_messages": 98,
+      "mesh_wall_hz": 4.707422451883359,
+      "esdf_marker_messages": 0,
+      "rgb_input_messages": 601,
+      "rgb_input_wall_hz": 28.91394481670602,
+      "depth_input_messages": 600,
+      "depth_input_wall_hz": 28.874074820654574,
+      "simulation_rtf": 1.0009227469251243
+    },
+    "mesh_wrist_motion": {
+      "start_monotonic": 14901.480074032,
+      "end_monotonic": 14928.510518708,
+      "wall_seconds": 27.030444676000116,
+      "sample_count": 26,
+      "depth_wall_hz": 18.236325912724016,
+      "color_wall_hz": 18.31578702781214,
+      "esdf_update_wall_hz": 24.632945677317846,
+      "esdf_process_host_ms_sample_mean": 0.4344143846153846,
+      "esdf_process_host_ms_sample_p95": 2.1375175,
+      "esdf_view_host_ms_sample_mean": 0,
+      "esdf_view_host_ms_sample_p95": 0.0,
+      "last_metrics": {
+        "backend": "official_ros_cpp",
+        "totals": {
+          "depth_integrated": 1088,
+          "color_integrated": 1097,
+          "esdf_updated": 1461
+        },
+        "depth_integrated_total": 1088,
+        "color_integrated_total": 1097,
+        "esdf_cycles_total": 1461,
+        "depth_integrated_wall_hz": 17.8416,
+        "color_integrated_wall_hz": 16.8504,
+        "esdf_cycles_wall_hz": 24.78,
+        "esdf_process_host_ms": 0.08309,
+        "esdf_view_host_ms": 0,
+        "esdf_view_points": 0,
+        "esdf_export_stats_valid": false,
+        "esdf_export_allocated_blocks": 0,
+        "esdf_export_allocated_voxels": 0,
+        "esdf_export_observed_voxels": 0,
+        "esdf_export_observed_inside_voxels": 0,
+        "voxel_size_m": 0.03,
+        "sampling": "native_allocated_observed_voxels",
+        "gpu_completion_measured": false
+      },
+      "mesh_messages": 126,
+      "mesh_wall_hz": 4.678044627842991,
+      "esdf_marker_messages": 0,
+      "rgb_input_messages": 784,
+      "rgb_input_wall_hz": 29.00573988570602,
+      "depth_input_messages": 769,
+      "depth_input_wall_hz": 28.445965532398876,
+      "simulation_rtf": 0.9989033226951124
+    },
+    "mesh_stopped": {
+      "start_monotonic": 14928.51250927,
+      "end_monotonic": 14941.293472308,
+      "wall_seconds": 12.780963037999754,
+      "sample_count": 13,
+      "depth_wall_hz": 18.343894724678805,
+      "color_wall_hz": 18.59178519393122,
+      "esdf_update_wall_hz": 24.789046925241628,
+      "esdf_process_host_ms_sample_mean": 0.5670736923076923,
+      "esdf_process_host_ms_sample_p95": 2.1994941999999957,
+      "esdf_view_host_ms_sample_mean": 0,
+      "esdf_view_host_ms_sample_p95": 0.0,
+      "last_metrics": {
+        "backend": "official_ros_cpp",
+        "totals": {
+          "depth_integrated": 1328,
+          "color_integrated": 1340,
+          "esdf_updated": 1786
+        },
+        "depth_integrated_total": 1328,
+        "color_integrated_total": 1340,
+        "esdf_cycles_total": 1786,
+        "depth_integrated_wall_hz": 17.9782,
+        "color_integrated_wall_hz": 18.977,
+        "esdf_cycles_wall_hz": 24.9697,
+        "esdf_process_host_ms": 0.245761,
+        "esdf_view_host_ms": 0,
+        "esdf_view_points": 0,
+        "esdf_export_stats_valid": false,
+        "esdf_export_allocated_blocks": 0,
+        "esdf_export_allocated_voxels": 0,
+        "esdf_export_observed_voxels": 0,
+        "esdf_export_observed_inside_voxels": 0,
+        "voxel_size_m": 0.03,
+        "sampling": "native_allocated_observed_voxels",
+        "gpu_completion_measured": false
+      },
+      "mesh_messages": 60,
+      "mesh_wall_hz": 4.665534458909338,
+      "esdf_marker_messages": 0,
+      "rgb_input_messages": 365,
+      "rgb_input_wall_hz": 28.543396133452838,
+      "depth_input_messages": 359,
+      "depth_input_wall_hz": 28.076821438800184,
+      "simulation_rtf": 0.9989573715942011
+    },
+    "mesh_esdf_static": {
+      "start_monotonic": 14947.66425752,
+      "end_monotonic": 14968.42340214,
+      "wall_seconds": 20.75914462000037,
+      "sample_count": 21,
+      "depth_wall_hz": 18.286325426347908,
+      "color_wall_hz": 18.187212551408354,
+      "esdf_update_wall_hz": 24.43132367260032,
+      "esdf_process_host_ms_sample_mean": 0.4755382380952381,
+      "esdf_process_host_ms_sample_p95": 2.06459,
+      "esdf_view_host_ms_sample_mean": 10.89991619047619,
+      "esdf_view_host_ms_sample_p95": 13.1354,
+      "last_metrics": {
+        "backend": "official_ros_cpp",
+        "totals": {
+          "depth_integrated": 1828,
+          "color_integrated": 1839,
+          "esdf_updated": 2450
+        },
+        "depth_integrated_total": 1828,
+        "color_integrated_total": 1839,
+        "esdf_cycles_total": 2450,
+        "depth_integrated_wall_hz": 17.8468,
+        "color_integrated_wall_hz": 16.8553,
+        "esdf_cycles_wall_hz": 24.7873,
+        "esdf_process_host_ms": 0.357408,
+        "esdf_view_host_ms": 9.97404,
+        "esdf_view_points": 11377,
+        "esdf_export_stats_valid": true,
+        "esdf_export_allocated_blocks": 98,
+        "esdf_export_allocated_voxels": 50176,
+        "esdf_export_observed_voxels": 14793,
+        "esdf_export_observed_inside_voxels": 5900,
+        "voxel_size_m": 0.03,
+        "sampling": "native_allocated_observed_voxels",
+        "gpu_completion_measured": false
+      },
+      "mesh_messages": 95,
+      "mesh_wall_hz": 4.589258005836075,
+      "esdf_marker_messages": 266,
+      "esdf_marker_wall_hz": 12.839786734328143,
+      "rgb_input_messages": 598,
+      "rgb_input_wall_hz": 28.813817177843188,
+      "depth_input_messages": 590,
+      "depth_input_wall_hz": 28.3826978256778,
+      "esdf_marker_points": {
+        "min": 11377,
+        "max": 11377,
+        "mean": 11377
+      },
+      "simulation_rtf": 0.9989302013896956
+    },
+    "mesh_esdf_wrist_motion": {
+      "start_monotonic": 14968.425437254,
+      "end_monotonic": 14995.462398403,
+      "wall_seconds": 27.03696114900049,
+      "sample_count": 27,
+      "depth_wall_hz": 18.300120197500917,
+      "color_wall_hz": 18.490746449558216,
+      "esdf_update_wall_hz": 24.438285513746013,
+      "esdf_process_host_ms_sample_mean": 1.4045824444444444,
+      "esdf_process_host_ms_sample_p95": 5.859750999999999,
+      "esdf_view_host_ms_sample_mean": 11.150846296296296,
+      "esdf_view_host_ms_sample_p95": 13.85445,
+      "last_metrics": {
+        "backend": "official_ros_cpp",
+        "totals": {
+          "depth_integrated": 2326,
+          "color_integrated": 2341,
+          "esdf_updated": 3116
+        },
+        "depth_integrated_total": 2326,
+        "color_integrated_total": 2341,
+        "esdf_cycles_total": 3116,
+        "depth_integrated_wall_hz": 18.7962,
+        "color_integrated_wall_hz": 19.7855,
+        "esdf_cycles_wall_hz": 23.7426,
+        "esdf_process_host_ms": 0.802271,
+        "esdf_view_host_ms": 12.1055,
+        "esdf_view_points": 11409,
+        "esdf_export_stats_valid": true,
+        "esdf_export_allocated_blocks": 98,
+        "esdf_export_allocated_voxels": 50176,
+        "esdf_export_observed_voxels": 14808,
+        "esdf_export_observed_inside_voxels": 5913,
+        "voxel_size_m": 0.03,
+        "sampling": "native_allocated_observed_voxels",
+        "gpu_completion_measured": false
+      },
+      "mesh_messages": 126,
+      "mesh_wall_hz": 4.644429706256541,
+      "esdf_marker_messages": 349,
+      "esdf_marker_wall_hz": 12.92773868231115,
+      "rgb_input_messages": 785,
+      "rgb_input_wall_hz": 29.031978770646123,
+      "depth_input_messages": 762,
+      "depth_input_wall_hz": 28.22280490155067,
+      "esdf_marker_points": {
+        "min": 11349,
+        "max": 11445,
+        "mean": 11391.369627507163
+      },
+      "simulation_rtf": 0.9986691336766512
+    },
+    "mesh_esdf_stopped": {
+      "start_monotonic": 14995.464468881,
+      "end_monotonic": 15008.22839521,
+      "wall_seconds": 12.763926329000242,
+      "sample_count": 12,
+      "depth_wall_hz": 17.781957231355253,
+      "color_wall_hz": 18.41380342739326,
+      "esdf_update_wall_hz": 24.642001645482154,
+      "esdf_process_host_ms_sample_mean": 1.25373375,
+      "esdf_process_host_ms_sample_p95": 5.401475999999999,
+      "esdf_view_host_ms_sample_mean": 11.3674,
+      "esdf_view_host_ms_sample_p95": 15.32269,
+      "last_metrics": {
+        "backend": "official_ros_cpp",
+        "totals": {
+          "depth_integrated": 2541,
+          "color_integrated": 2563,
+          "esdf_updated": 3414
+        },
+        "depth_integrated_total": 2541,
+        "color_integrated_total": 2563,
+        "esdf_cycles_total": 3414,
+        "depth_integrated_wall_hz": 17.8244,
+        "color_integrated_wall_hz": 19.8049,
+        "esdf_cycles_wall_hz": 24.7562,
+        "esdf_process_host_ms": 1.21218,
+        "esdf_view_host_ms": 9.76566,
+        "esdf_view_points": 11392,
+        "esdf_export_stats_valid": true,
+        "esdf_export_allocated_blocks": 98,
+        "esdf_export_allocated_voxels": 50176,
+        "esdf_export_observed_voxels": 14808,
+        "esdf_export_observed_inside_voxels": 5913,
+        "voxel_size_m": 0.03,
+        "sampling": "native_allocated_observed_voxels",
+        "gpu_completion_measured": false
+      },
+      "mesh_messages": 59,
+      "mesh_wall_hz": 4.628830084951531,
+      "esdf_marker_messages": 155,
+      "esdf_marker_wall_hz": 12.142211885049067,
+      "rgb_input_messages": 361,
+      "rgb_input_wall_hz": 28.255289140321988,
+      "depth_input_messages": 357,
+      "depth_input_wall_hz": 27.9389490356851,
+      "esdf_marker_points": {
+        "min": 11392,
+        "max": 11392,
+        "mean": 11392
+      },
+      "simulation_rtf": 0.9987334674419386
+    }
+  },
+  "commands": [
+    {
+      "name": "scene",
+      "argv": [
+        "ros2",
+        "launch",
+        "ur7e_d435_gazebo",
+        "scene.launch.py",
+        "gazebo_gui:=false"
+      ],
+      "pid": 67771
+    },
+    {
+      "name": "scene_check",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/run_ur7e_view_sweep.sh",
+        "--check-only"
+      ],
+      "pid": 67772
+    },
+    {
+      "name": "approach",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/run_ur7e_view_sweep.sh",
+        "--seconds",
+        "0"
+      ],
+      "pid": 68363
+    },
+    {
+      "name": "mapping",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/run.sh",
+        "start_scene:=false",
+        "run_rviz:=false",
+        "mapper_backend:=observed_view",
+        "esdf_mode:=3d",
+        "enable_esdf_view:=true",
+        "voxel_size:=0.03",
+        "max_range_m:=3.0",
+        "depth_hz:=30.0",
+        "color_hz:=30.0",
+        "esdf_hz:=30.0",
+        "mesh_hz:=5.0",
+        "layer_hz:=5.0",
+        "esdf_view_hz:=30.0"
+      ],
+      "pid": 68544
+    },
+    {
+      "name": "rviz_mesh",
+      "argv": [
+        "rviz2",
+        "-d",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/voxel003_mesh5_test_20261104/mesh_view.rviz",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true"
+      ],
+      "pid": 68898
+    },
+    {
+      "name": "mesh_wrist_motion_motion",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/run_ur7e_view_sweep.sh",
+        "--seconds",
+        "20",
+        "--amplitude",
+        "0.06"
+      ],
+      "pid": 71167
+    },
+    {
+      "name": "rviz_esdf",
+      "argv": [
+        "rviz2",
+        "-d",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/voxel003_mesh5_test_20261104/esdf_view.rviz",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true"
+      ],
+      "pid": 74114
+    },
+    {
+      "name": "mesh_esdf_wrist_motion_motion",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/run_ur7e_view_sweep.sh",
+        "--seconds",
+        "20",
+        "--amplitude",
+        "0.06"
+      ],
+      "pid": 76075
+    }
+  ],
+  "motion": "previous_observation_pose_and_wrist1_sweep_0.06rad",
+  "screenshots": [
+    "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/voxel003_mesh5_test_20261104/mesh_static.png",
+    "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/voxel003_mesh5_test_20261104/mesh_esdf_static.png"
+  ],
+  "requested_rates_hz": {
+    "depth": 30,
+    "color": 30,
+    "esdf": 30,
+    "mesh": 5,
+    "layer": 5,
+    "esdf_view": 30
+  },
+  "world_from_base_link": {
+    "translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "depth_inputs": {
+    "mesh_static": {
+      "width": 1280,
+      "height": 720,
+      "encoding": "16UC1",
+      "frame": "camera_depth_optical_frame",
+      "positive_fraction": 1.0
+    },
+    "mesh_wrist_motion": {
+      "width": 1280,
+      "height": 720,
+      "encoding": "16UC1",
+      "frame": "camera_depth_optical_frame",
+      "positive_fraction": 1.0
+    },
+    "mesh_stopped": {
+      "width": 1280,
+      "height": 720,
+      "encoding": "16UC1",
+      "frame": "camera_depth_optical_frame",
+      "positive_fraction": 1.0
+    },
+    "mesh_esdf_static": {
+      "width": 1280,
+      "height": 720,
+      "encoding": "16UC1",
+      "frame": "camera_depth_optical_frame",
+      "positive_fraction": 1.0
+    },
+    "mesh_esdf_wrist_motion": {
+      "width": 1280,
+      "height": 720,
+      "encoding": "16UC1",
+      "frame": "camera_depth_optical_frame",
+      "positive_fraction": 1.0
+    },
+    "mesh_esdf_stopped": {
+      "width": 1280,
+      "height": 720,
+      "encoding": "16UC1",
+      "frame": "camera_depth_optical_frame",
+      "positive_fraction": 1.0
+    }
+  },
+  "camera_info": {
+    "k": [
+      640.5098266601562,
+      0.0,
+      640.0,
+      0.0,
+      640.5098266601562,
+      360.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "width": 1280,
+    "height": 720,
+    "frame": "camera_depth_optical_frame"
+  },
+  "screenshots_validation": {
+    "verified": [
+      "mesh_static.png",
+      "mesh_esdf_static.png"
+    ],
+    "not_retained": [
+      "mesh_stopped.png",
+      "mesh_wrist_motion.png",
+      "mesh_esdf_stopped.png",
+      "mesh_esdf_wrist_motion.png"
+    ],
+    "reason": "Foreground overlap or not verified; only visually verified RViz windows are retained as evidence."
+  }
+}

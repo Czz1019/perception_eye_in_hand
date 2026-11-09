@@ -86,7 +86,8 @@ def _setup(context):
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(str(Path(get_package_share_directory("gazebo_ros")) / "launch/gazebo.launch.py")),
             launch_arguments={"gui": LaunchConfiguration("gazebo_gui"),
-                              "server_required": "true", "verbose": "true"}.items()),
+                              "server_required": "true", "verbose": "true",
+                              "params_file": LaunchConfiguration("gazebo_params_file")}.items()),
         Node(package="gazebo_ros", executable="spawn_entity.py", name="spawn_ur",
              arguments=["-entity", "ur", "-topic", "robot_description", "-timeout", "60"], output="screen"),
         Node(package="controller_manager", executable="spawner",
@@ -100,6 +101,10 @@ def _setup(context):
 def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument("gazebo_gui", default_value="true", description="Open the Gazebo GUI"),
+        DeclareLaunchArgument("gazebo_params_file",
+                              default_value=str(Path(get_package_share_directory("ur7e_d435_gazebo")) /
+                                                "config/gazebo_clock.yaml"),
+                              description="gazebo_ros_init clock publication parameters"),
         DeclareLaunchArgument("calibration_file",
                               default_value=str(Path(get_package_share_directory("ur7e_d435_gazebo")) /
                                                 "config/ur7e_d435_handeye_20260907.yaml"),

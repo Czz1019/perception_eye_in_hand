@@ -1,0 +1,20 @@
+1793846599.576552 [129]    python3: selected interface "lo" is not multicast-capable: disabling multicast
+START scene
+START scene_ready
+START approach
+START robot_state_audit
+START mapping_baseline3d
+START rviz_baseline3d
+DONE running
+Traceback (most recent call last):
+  File "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/esdf334_color_test_20261105/run_measurement.py", line 177, in <module>
+    dump=subprocess.run(['ros2','param','dump','/nvblox_node'],capture_output=True,text=True,timeout=10)
+  File "/usr/lib/python3.10/subprocess.py", line 505, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1154, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 2021, in _communicate
+    ready = selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt

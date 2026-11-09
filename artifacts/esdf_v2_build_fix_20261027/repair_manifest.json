@@ -1,0 +1,20 @@
+{
+  "scope": "Build/link/install only; no CUDA test, mapper, Gazebo or RViz executed",
+  "build_modes": {
+    "geometry_on": "PASS",
+    "production_default_off": "PASS"
+  },
+  "root_cause": "Host-only .cpp direct GPU block allocation requests a different Thrust architecture ABI namespace from installed nvblox library",
+  "fix": "Avoid direct allocation template in host-only test; inspect unknown flags in Mapper-generated allocated blocks. Optional diagnostic build and successful-build markers.",
+  "sha256": {
+    "build_ur7e_native.sh": "ed05ff3d72f434599d433e9983ad43364540df08bcfac90bc3c8df7ec7159f3e",
+    "run_ur7e_native.sh": "4dc741c51a2ac8b7f92fb1940a9b9e5f6243fba9578108d4ef3692306373dd8f",
+    "src/ur7e_nvblox_native/CMakeLists.txt": "991f295e39febb824f2c1efabd67f4feb8f946c4063417aef8cda53234aec00a",
+    "src/ur7e_nvblox_native/src/native_geometry_test.cpp": "4203e24e071829d1aceaa26ea6bd34f1cadc3c825251caebf0eedad75da36a8c"
+  },
+  "log_files": [
+    "build_with_geometry.log",
+    "build_production.log",
+    "official_thrust_symbol.txt"
+  ]
+}

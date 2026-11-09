@@ -1,0 +1,590 @@
+{
+  "status": "completed",
+  "scope": "New nine-run observed 3D ESDF output comparison; all use diagnostic backend and identical RViz/export load. Header advance is associated newest depth stamp, not geometric-change or GPU kernel completion FPS.",
+  "rounds": [
+    {
+      "mode": "gate30p0_r1",
+      "fusion_gate_hz": 30.0,
+      "repeat": 1,
+      "window_begin": 14072.200572663,
+      "window_end": 14092.309232885,
+      "messages": 589,
+      "esdf_call_hz": 32.84334281273002,
+      "depth_fusion_hz": 18.696963227728837,
+      "color_fusion_hz": 18.54857463068337,
+      "input_depth_hz": 29.914729662042795,
+      "input_rgb_hz": 29.86514547812684,
+      "cloud_hz": 29.29804148695954,
+      "associated_input_advance_hz": 17.43931040890449,
+      "distinct_associated_input_stamps": 351,
+      "repeated_adjacent_header_fraction": 0.40476190476190477,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 4,
+      "cloud_age_ms": {
+        "p50": 59.99999999999517,
+        "p95": 101.99999999999676,
+        "p99": 116.23999999999911
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.446988501556916,
+        "p95": 40.34963694994076,
+        "p99": 41.409694541180215
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 62.10549000024912,
+        "p95": 105.60660610026383,
+        "p99": 119.54818420006632
+      },
+      "matched_input_receipts": 587,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 24184,
+        "max": 24184
+      },
+      "mesh_hz": 4.752642672501534,
+      "simulation_rtf": 0.9988054417735784
+    },
+    {
+      "mode": "gate33p4_r1",
+      "fusion_gate_hz": 33.4,
+      "repeat": 1,
+      "window_begin": 14109.771634702,
+      "window_end": 14129.871437133,
+      "messages": 589,
+      "esdf_call_hz": 32.83915384435274,
+      "depth_fusion_hz": 29.673934196704277,
+      "color_fusion_hz": 29.426651411731743,
+      "input_depth_hz": 29.715883630055373,
+      "input_rgb_hz": 29.915509545618683,
+      "cloud_hz": 29.31740538868507,
+      "associated_input_advance_hz": 19.943813189581682,
+      "distinct_associated_input_stamps": 401,
+      "repeated_adjacent_header_fraction": 0.3197278911564626,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 2,
+      "cloud_age_ms": {
+        "p50": 49.99999999999716,
+        "p95": 76.59999999998777,
+        "p99": 85.99999999999852
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.525965999207983,
+        "p95": 40.05708804934329,
+        "p99": 41.4642439506315
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 54.460326999105746,
+        "p95": 83.21195400094439,
+        "p99": 87.5380422003218
+      },
+      "matched_input_receipts": 581,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 24184,
+        "max": 24184
+      },
+      "mesh_hz": 4.7483224060605345,
+      "simulation_rtf": 0.9989497772216529
+    },
+    {
+      "mode": "gate40p0_r1",
+      "fusion_gate_hz": 40.0,
+      "repeat": 1,
+      "window_begin": 14147.204603636,
+      "window_end": 14167.326294647,
+      "messages": 587,
+      "esdf_call_hz": 32.85067264938429,
+      "depth_fusion_hz": 29.63970464606102,
+      "color_fusion_hz": 29.738503661547888,
+      "input_depth_hz": 29.819476992810323,
+      "input_rgb_hz": 29.869176674103166,
+      "cloud_hz": 29.184217744782227,
+      "associated_input_advance_hz": 19.622153227720474,
+      "distinct_associated_input_stamps": 395,
+      "repeated_adjacent_header_fraction": 0.32764505119453924,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 3,
+      "cloud_age_ms": {
+        "p50": 49.99999999999716,
+        "p95": 82.9999999999842,
+        "p99": 87.0000000000033
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.665223999880254,
+        "p95": 40.68252175056841,
+        "p99": 47.731345399733605
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 54.368488999898545,
+        "p95": 84.5988323999336,
+        "p99": 92.32630679918643
+      },
+      "matched_input_receipts": 583,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 24184,
+        "max": 24184
+      },
+      "mesh_hz": 4.745361990566657,
+      "simulation_rtf": 0.9988542327056809
+    },
+    {
+      "mode": "gate40p0_r2",
+      "fusion_gate_hz": 40.0,
+      "repeat": 2,
+      "window_begin": 14184.727435945,
+      "window_end": 14204.833309918,
+      "messages": 589,
+      "esdf_call_hz": 32.837284758397104,
+      "depth_fusion_hz": 29.771152747823884,
+      "color_fusion_hz": 29.8206064899299,
+      "input_depth_hz": 29.968075766313433,
+      "input_rgb_hz": 29.91852766058532,
+      "cloud_hz": 29.27195612141759,
+      "associated_input_advance_hz": 19.863113082390505,
+      "distinct_associated_input_stamps": 400,
+      "repeated_adjacent_header_fraction": 0.32142857142857145,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 3,
+      "cloud_age_ms": {
+        "p50": 49.99999999998295,
+        "p95": 79.59999999999357,
+        "p99": 86.99999999998909
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.41508950102434,
+        "p95": 40.21990399933202,
+        "p99": 43.9872576898233
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 53.57907600046019,
+        "p95": 84.33387980003317,
+        "p99": 88.90889108006377
+      },
+      "matched_input_receipts": 589,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 24184,
+        "max": 24184
+      },
+      "mesh_hz": 4.745361786584522,
+      "simulation_rtf": 0.998902561123571
+    },
+    {
+      "mode": "gate30p0_r2",
+      "fusion_gate_hz": 30.0,
+      "repeat": 2,
+      "window_begin": 14222.364583756,
+      "window_end": 14242.475438369,
+      "messages": 596,
+      "esdf_call_hz": 33.034487885429726,
+      "depth_fusion_hz": 18.3469985112192,
+      "color_fusion_hz": 18.050281554164446,
+      "input_depth_hz": 29.9664684382347,
+      "input_rgb_hz": 29.96658279655352,
+      "cloud_hz": 29.635625204570463,
+      "associated_input_advance_hz": 17.183681841305564,
+      "distinct_associated_input_stamps": 346,
+      "repeated_adjacent_header_fraction": 0.42016806722689076,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 4,
+      "cloud_age_ms": {
+        "p50": 58.99999999998329,
+        "p95": 103.00000000000864,
+        "p99": 113.29999999997086
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.301715000154218,
+        "p95": 40.002303699475306,
+        "p99": 42.99881840033777
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 60.64016050004284,
+        "p95": 107.38400424997963,
+        "p99": 117.87417034920504
+      },
+      "matched_input_receipts": 596,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 24184,
+        "max": 24184
+      },
+      "mesh_hz": 4.747398757925047,
+      "simulation_rtf": 0.9988988776019223
+    },
+    {
+      "mode": "gate33p4_r2",
+      "fusion_gate_hz": 33.4,
+      "repeat": 2,
+      "window_begin": 14259.970531252,
+      "window_end": 14280.090459637,
+      "messages": 590,
+      "esdf_call_hz": 32.919253321225405,
+      "depth_fusion_hz": 29.65698497407694,
+      "color_fusion_hz": 28.866132041434888,
+      "input_depth_hz": 29.86360161015535,
+      "input_rgb_hz": 29.864517556945316,
+      "cloud_hz": 29.329325285936243,
+      "associated_input_advance_hz": 19.619277016398776,
+      "distinct_associated_input_stamps": 395,
+      "repeated_adjacent_header_fraction": 0.3310696095076401,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 2,
+      "cloud_age_ms": {
+        "p50": 49.99999999998295,
+        "p95": 76.99999999996976,
+        "p99": 86.10999999998485
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.61388700027601,
+        "p95": 40.491146000567824,
+        "p99": 42.38830607937416
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 53.13097999896854,
+        "p95": 82.63396404972808,
+        "p99": 87.3070254700906
+      },
+      "matched_input_receipts": 590,
+      "negative_observer_lag_count": 1,
+      "points": {
+        "min": 24184,
+        "max": 24184
+      },
+      "mesh_hz": 4.744617008058266,
+      "simulation_rtf": 0.9987548746801235
+    },
+    {
+      "mode": "gate33p4_r3",
+      "fusion_gate_hz": 33.4,
+      "repeat": 3,
+      "window_begin": 14297.418505353,
+      "window_end": 14317.520324578,
+      "messages": 595,
+      "esdf_call_hz": 32.88329595519269,
+      "depth_fusion_hz": 29.52079351165419,
+      "color_fusion_hz": 29.471344946308037,
+      "input_depth_hz": 29.864561049202223,
+      "input_rgb_hz": 29.962391611862994,
+      "cloud_hz": 29.58258906321931,
+      "associated_input_advance_hz": 19.92093539610728,
+      "distinct_associated_input_stamps": 401,
+      "repeated_adjacent_header_fraction": 0.3265993265993266,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 2,
+      "cloud_age_ms": {
+        "p50": 49.999999999954525,
+        "p95": 76.99999999999818,
+        "p99": 86.99999999993565
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.4009449994046,
+        "p95": 40.0653396501184,
+        "p99": 44.219380440754335
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 52.90727600004175,
+        "p95": 84.12343675081502,
+        "p99": 88.70496344985447
+      },
+      "matched_input_receipts": 592,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 24184,
+        "max": 24184
+      },
+      "mesh_hz": 4.7474946846256065,
+      "simulation_rtf": 0.9988546387676656
+    },
+    {
+      "mode": "gate40p0_r3",
+      "fusion_gate_hz": 40.0,
+      "repeat": 3,
+      "window_begin": 14334.910530341,
+      "window_end": 14355.025425615,
+      "messages": 590,
+      "esdf_call_hz": 33.029328929971044,
+      "depth_fusion_hz": 29.91428742909054,
+      "color_fusion_hz": 29.667061913147645,
+      "input_depth_hz": 29.95961019388069,
+      "input_rgb_hz": 29.909612276308405,
+      "cloud_hz": 29.319548147410153,
+      "associated_input_advance_hz": 19.811850870406182,
+      "distinct_associated_input_stamps": 399,
+      "repeated_adjacent_header_fraction": 0.3242784380305603,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 3,
+      "cloud_age_ms": {
+        "p50": 48.99999999997817,
+        "p95": 76.00000000002183,
+        "p99": 85.99999999995589
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.621497000742238,
+        "p95": 40.36261959990952,
+        "p99": 43.44299671916815
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 52.50307849928504,
+        "p95": 81.90576495044297,
+        "p99": 86.3467354612476
+      },
+      "matched_input_receipts": 590,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 24184,
+        "max": 24184
+      },
+      "mesh_hz": 4.750175370536927,
+      "simulation_rtf": 0.9988088597501485
+    },
+    {
+      "mode": "gate30p0_r3",
+      "fusion_gate_hz": 30.0,
+      "repeat": 3,
+      "window_begin": 14372.366486715,
+      "window_end": 14392.471616311,
+      "messages": 592,
+      "esdf_call_hz": 32.745272376668005,
+      "depth_fusion_hz": 18.054417549069218,
+      "color_fusion_hz": 18.25227417974395,
+      "input_depth_hz": 29.819151671929852,
+      "input_rgb_hz": 29.9683919382746,
+      "cloud_hz": 29.46188509648624,
+      "associated_input_advance_hz": 16.600351501065852,
+      "distinct_associated_input_stamps": 334,
+      "repeated_adjacent_header_fraction": 0.4365482233502538,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 4,
+      "cloud_age_ms": {
+        "p50": 59.99999999994543,
+        "p95": 108.00000000000409,
+        "p99": 112.08999999996936
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.475531000978663,
+        "p95": 40.56288250012585,
+        "p99": 42.923960301232
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 61.83535899981507,
+        "p95": 110.03784549939155,
+        "p99": 117.72686580006848
+      },
+      "matched_input_receipts": 591,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 24184,
+        "max": 24184
+      },
+      "mesh_hz": 4.752421401000337,
+      "simulation_rtf": 0.9989068679940749
+    }
+  ],
+  "summary": {
+    "30.0": {
+      "repetitions": 3,
+      "esdf_call_hz": {
+        "mean": 32.87436769160925,
+        "sample_std": 0.14708266369351095,
+        "min": 32.745272376668005,
+        "max": 33.034487885429726
+      },
+      "cloud_hz": {
+        "mean": 29.46518392933875,
+        "sample_std": 0.16881603396195605,
+        "min": 29.29804148695954,
+        "max": 29.635625204570463
+      },
+      "associated_input_advance_hz": {
+        "mean": 17.07444791709197,
+        "sample_std": 0.43001401129472067,
+        "min": 16.600351501065852,
+        "max": 17.43931040890449
+      },
+      "repeated_adjacent_header_fraction": {
+        "mean": 0.4204927317796831,
+        "sample_std": 0.015895646185477504,
+        "min": 0.40476190476190477,
+        "max": 0.4365482233502538
+      },
+      "depth_fusion_hz": {
+        "mean": 18.366126429339086,
+        "sample_std": 0.32169961956728893,
+        "min": 18.054417549069218,
+        "max": 18.696963227728837
+      },
+      "color_fusion_hz": {
+        "mean": 18.28371012153059,
+        "sample_std": 0.2506295300910949,
+        "min": 18.050281554164446,
+        "max": 18.54857463068337
+      },
+      "mesh_hz": {
+        "mean": 4.750820943808972,
+        "sample_std": 0.002965764224852827,
+        "min": 4.747398757925047,
+        "max": 4.752642672501534
+      },
+      "pooled_age_ms": {
+        "p50": 59.00000000002592,
+        "p95": 106.19999999999531,
+        "p99": 115.99999999998886
+      },
+      "pooled_receive_interval_ms": {
+        "p50": 31.40717900078016,
+        "p95": 40.303441449577804,
+        "p99": 42.27124620083485
+      },
+      "pooled_observer_input_to_cloud_ms": {
+        "p50": 61.89649750103854,
+        "p95": 108.71123400011126,
+        "p99": 118.1540882392437
+      },
+      "messages": 1777,
+      "negative_age_count": 0,
+      "backward_header_count": 0,
+      "points_min": 24184,
+      "points_max": 24184
+    },
+    "33.4": {
+      "repetitions": 3,
+      "esdf_call_hz": {
+        "mean": 32.880567706923614,
+        "sample_std": 0.04011937253724298,
+        "min": 32.83915384435274,
+        "max": 32.919253321225405
+      },
+      "cloud_hz": {
+        "mean": 29.409773245946877,
+        "sample_std": 0.14978151091598185,
+        "min": 29.31740538868507,
+        "max": 29.58258906321931
+      },
+      "associated_input_advance_hz": {
+        "mean": 19.828008534029248,
+        "sample_std": 0.18112836110836886,
+        "min": 19.619277016398776,
+        "max": 19.943813189581682
+      },
+      "repeated_adjacent_header_fraction": {
+        "mean": 0.3257989424211431,
+        "sample_std": 0.005713064406592478,
+        "min": 0.3197278911564626,
+        "max": 0.3310696095076401
+      },
+      "depth_fusion_hz": {
+        "mean": 29.6172375608118,
+        "sample_std": 0.08395183142942579,
+        "min": 29.52079351165419,
+        "max": 29.673934196704277
+      },
+      "color_fusion_hz": {
+        "mean": 29.25470946649156,
+        "sample_std": 0.33725908357816464,
+        "min": 28.866132041434888,
+        "max": 29.471344946308037
+      },
+      "mesh_hz": {
+        "mean": 4.746811366248136,
+        "sample_std": 0.0019449130038503067,
+        "min": 4.744617008058266,
+        "max": 4.7483224060605345
+      },
+      "pooled_age_ms": {
+        "p50": 49.999999999954525,
+        "p95": 76.99999999999818,
+        "p99": 86.00000000001273
+      },
+      "pooled_receive_interval_ms": {
+        "p50": 31.51410600003146,
+        "p95": 40.25661200103059,
+        "p99": 42.43481969933781
+      },
+      "pooled_observer_input_to_cloud_ms": {
+        "p50": 53.48799800049164,
+        "p95": 83.5077662997719,
+        "p99": 87.70817848129808
+      },
+      "messages": 1774,
+      "negative_age_count": 0,
+      "backward_header_count": 0,
+      "points_min": 24184,
+      "points_max": 24184
+    },
+    "40.0": {
+      "repetitions": 3,
+      "esdf_call_hz": {
+        "mean": 32.90576211258415,
+        "sample_std": 0.1072211624429443,
+        "min": 32.837284758397104,
+        "max": 33.029328929971044
+      },
+      "cloud_hz": {
+        "mean": 29.258574004536655,
+        "sample_std": 0.06865049350165152,
+        "min": 29.184217744782227,
+        "max": 29.319548147410153
+      },
+      "associated_input_advance_hz": {
+        "mean": 19.765705726839055,
+        "sample_std": 0.12693480057404968,
+        "min": 19.622153227720474,
+        "max": 19.863113082390505
+      },
+      "repeated_adjacent_header_fraction": {
+        "mean": 0.32445068688455697,
+        "sample_std": 0.0031118173823264615,
+        "min": 0.32142857142857145,
+        "max": 0.32764505119453924
+      },
+      "depth_fusion_hz": {
+        "mean": 29.775048274325147,
+        "sample_std": 0.13733283485423478,
+        "min": 29.63970464606102,
+        "max": 29.91428742909054
+      },
+      "color_fusion_hz": {
+        "mean": 29.742057354875143,
+        "sample_std": 0.07683394963822085,
+        "min": 29.667061913147645,
+        "max": 29.8206064899299
+      },
+      "mesh_hz": {
+        "mean": 4.746966382562701,
+        "sample_std": 0.002779065107989116,
+        "min": 4.745361786584522,
+        "max": 4.750175370536927
+      },
+      "pooled_age_ms": {
+        "p50": 49.99999999998295,
+        "p95": 76.99999999999818,
+        "p99": 86.99999999998909
+      },
+      "pooled_receive_interval_ms": {
+        "p50": 31.6181250000227,
+        "p95": 40.390160401329915,
+        "p99": 44.33153383859461
+      },
+      "pooled_observer_input_to_cloud_ms": {
+        "p50": 53.56100150038401,
+        "p95": 84.11095924902837,
+        "p99": 89.73407125875383
+      },
+      "messages": 1766,
+      "negative_age_count": 0,
+      "backward_header_count": 0,
+      "points_min": 24184,
+      "points_max": 24184
+    }
+  }
+}

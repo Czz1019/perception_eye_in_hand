@@ -1,0 +1,28 @@
+{
+  "created": "2026-10-27T14:53:54.663851+08:00",
+  "purpose": "Project-owned integrated perception startup and shutdown fixes; GUI functional smoke, not replacement of prior performance baseline",
+  "source_sha256": {
+    "run_ur7e_perception.sh": "59f50f547e0c70dfee586ca54a4da8aea504430df12124bf83e682ebb1760adc",
+    "run_ur7e_native.sh": "1bb693bf7750f141f2b5dde9ce33c48f690fe9ce005f838521ac7787641a3f68",
+    "run_ur7e_d435_scene.sh": "6854cd2bbc416ef42d5fbc87abedbde92999ed0dd2c5c610690c465611a52e18",
+    "src/ur7e_nvblox_native/launch/perception.launch.py": "19f736ef59100564af71ea12b14c24eeaf64b52f7c22366435555a6a564f9c54",
+    "src/ur7e_nvblox_native/config/cyclonedds_local.xml": "44636772263f3b1822d1f5a17b8d409cbbc531be36ba55cf88dbd8e9c2c85dcc",
+    "src/ur7e_nvblox_native/CMakeLists.txt": "3984d44f6da53f35eb843dbcea740a7618574306e75199ca8546d9db6707a913",
+    "src/ur7e_nvblox_native/package.xml": "7e657cfe2c36e5229f94565da33e9b869be4515dd2ab4bb8365fded061fe02fd",
+    "src/ur7e_nvblox/ur7e_nvblox/depth_adapter.py": "49a86da5f75a408ab97f3371ecc7af27a2297446ca143ac4801e0e3e2c901a5b",
+    "docs/PERCEPTION_INTEGRATED_DESIGN_AND_STARTUP.md": "84bfffa3f4d1fef2942bccc1550543fc25a351d32581d72450d912f949725928"
+  },
+  "core_unchanged_from_native_cpp_benchmark": {
+    "src/ur7e_nvblox_native/src/native_mapper.cpp": true,
+    "src/ur7e_nvblox_native/src/block_export.cu": true,
+    "src/ur7e_nvblox_native/src/block_export.h": true,
+    "src/ur7e_nvblox_native/src/native_geometry_test.cpp": true,
+    "src/ur7e_nvblox_native/config/gazebo.yaml": true
+  },
+  "smoke_result": "PASS",
+  "previous_test_master_pid": 28497,
+  "participant_default_max_auto_index": 9,
+  "configured_max_auto_index": 120,
+  "shutdown": "Port 11457 released; no native_mapper residual after direct-exec exit check",
+  "known_issue": "One full-scene Ctrl+C caused gzserver exit -11; mapper initially orphaned under ros2 run, then script changed to direct exec and shutdown verified clean."
+}

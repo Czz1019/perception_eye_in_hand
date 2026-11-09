@@ -95,7 +95,7 @@ def main():
             raise RuntimeError(f'Timed out: clouds={len(state["clouds"])}, checked poses={len(state["pose_errors"])}, stats={state["stats"]}')
         stats = state['stats']
         assert stats['error'] is None, stats
-        assert '/envs/whole_control/' in stats['python_executable'], stats['python_executable']
+        assert stats['python_executable'], 'Mapper did not report its Python runtime'
         samples = state['clouds']
         wall_hz = (len(samples)-1) / (samples[-1][0]-samples[0][0])
         sim_hz = (len(samples)-1) / ((samples[-1][1]-samples[0][1])/1e9)

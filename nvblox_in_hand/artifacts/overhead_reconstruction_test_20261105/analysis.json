@@ -1,0 +1,178 @@
+{
+  "status": "completed",
+  "phases": {
+    "overhead_static": {
+      "wall_seconds": 10.115592660999937,
+      "esdf_cloud_wall_hz": 29.455027736078527,
+      "mesh_wall_hz": 4.909238675152992,
+      "esdf_cloud_points": {
+        "min": 14747,
+        "max": 14747,
+        "mean": 14747
+      },
+      "rgb_input_wall_hz": 30.410501317860057,
+      "depth_input_wall_hz": 30.417981795828798,
+      "cloud_age_latest_clock_sec": {
+        "p50": 0.05000000000000426,
+        "p95": 0.07900000000000063
+      },
+      "simulation_rtf": 1.0034948723829662,
+      "camera": {
+        "samples": 99,
+        "world_position_min": [
+          0.454747760725182,
+          0.04118242525482216,
+          0.6816341722844316
+        ],
+        "world_position_max": [
+          0.4547477607251839,
+          0.04118242525482357,
+          0.6816341722844332
+        ],
+        "optical_forward_world_z_range": [
+          -0.991813858586106,
+          -0.9918138585861055
+        ],
+        "forward_angle_from_phase_start_max_deg": 1.2074182697257333e-06
+      }
+    },
+    "overhead_wrist_motion": {
+      "wall_seconds": 31.921427668999968,
+      "esdf_cloud_wall_hz": 29.644589099563127,
+      "mesh_wall_hz": 4.745450431970316,
+      "esdf_cloud_points": {
+        "min": 14747,
+        "max": 16997,
+        "mean": 16500.22198731501
+      },
+      "rgb_input_wall_hz": 29.862615401674123,
+      "depth_input_wall_hz": 29.893639003975593,
+      "cloud_age_latest_clock_sec": {
+        "p50": 0.05099999999998772,
+        "p95": 0.07900000000000595
+      },
+      "simulation_rtf": 0.9985287071577831,
+      "camera": {
+        "samples": 310,
+        "world_position_min": [
+          0.45132578566570947,
+          0.041162121187335206,
+          0.677512860616968
+        ],
+        "world_position_max": [
+          0.45800224598528083,
+          0.04123947712890339,
+          0.6858891027935159
+        ],
+        "optical_forward_world_z_range": [
+          -0.9951021240456223,
+          -0.9869390182603079
+        ],
+        "forward_angle_from_phase_start_max_deg": 2.2850594476339943
+      }
+    },
+    "overhead_stopped": {
+      "wall_seconds": 8.108461126999828,
+      "esdf_cloud_wall_hz": 29.457883301059667,
+      "mesh_wall_hz": 4.755759892288893,
+      "esdf_cloud_points": {
+        "min": 16997,
+        "max": 16997,
+        "mean": 16997
+      },
+      "rgb_input_wall_hz": 29.970598240001586,
+      "depth_input_wall_hz": 29.97399496946189,
+      "cloud_age_latest_clock_sec": {
+        "p50": 0.05100000000000193,
+        "p95": 0.0799999999999983
+      },
+      "simulation_rtf": 0.9989744454254222,
+      "camera": {
+        "samples": 79,
+        "world_position_min": [
+          0.4547477607251819,
+          0.04118242525482216,
+          0.6816341722844316
+        ],
+        "world_position_max": [
+          0.4547477607251838,
+          0.04118242525482351,
+          0.6816341722844336
+        ],
+        "optical_forward_world_z_range": [
+          -0.9918138585861064,
+          -0.9918138585861055
+        ],
+        "forward_angle_from_phase_start_max_deg": 8.537736462515939e-07
+      }
+    }
+  },
+  "measurement": "official counter differences and wall timestamps; no GPU completion measurement",
+  "motion_interval_wall_seconds": 32.09382532200016,
+  "official_rates_hz": {
+    "depth": 29.787661346329656,
+    "color": 29.725344063178337,
+    "esdf_calls": 32.68541501286591
+  },
+  "motion_receive_interval_ms": {
+    "p50": 31.470811999497528,
+    "p95": 39.889657600360806
+  },
+  "before_cloud": {
+    "points": 14747,
+    "inside": 5835,
+    "outside": 8912,
+    "sites": 2730,
+    "point_step": 24,
+    "frame": "base_link",
+    "distance_min": -2.0,
+    "distance_max": 2.0,
+    "validation": "24-byte layout, explicit flags, finite native centres and signed distances passed"
+  },
+  "after_cloud": {
+    "points": 16997,
+    "inside": 6809,
+    "outside": 10188,
+    "sites": 3113,
+    "point_step": 24,
+    "frame": "base_link",
+    "distance_min": -2.0,
+    "distance_max": 2.0,
+    "validation": "24-byte layout, explicit flags, finite native centres and signed distances passed"
+  },
+  "native_esdf_query": {
+    "host_roundtrip_ms": 54.85782899995684,
+    "voxel_size_m": 0.029999999329447746,
+    "origin_m": [
+      -1.0199999809265137,
+      -1.0199999809265137,
+      -0.20999999344348907
+    ],
+    "shape": [
+      68,
+      68,
+      48
+    ],
+    "values": 221952,
+    "known": 16422,
+    "unknown": 205530,
+    "known_positive": 10143,
+    "known_negative": 3334,
+    "known_zero": 2945,
+    "query_outside_rate_measurement": true
+  },
+  "observation_pose": {
+    "wall_time": 5579.764116186,
+    "stamp": 17.958,
+    "position": [
+      0.45474776072518325,
+      0.04118242525482259,
+      0.6816341722844321
+    ],
+    "optical_forward": [
+      -0.10207270440877403,
+      -0.07672309255510676,
+      -0.9918138585861059
+    ]
+  }
+}

@@ -9,5 +9,7 @@ if [[ ! -f "$SCENE_WS/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/package.xm
     echo "Build first: $SCENE_WS/build_ur7e_d435_scene.sh" >&2
     exit 1
 fi
-source "$SCENE_WS/install/local_setup.bash"
+# This scene needs only its own package and the ROS underlay. The workspace
+# overlay also indexes historical, partially installed planning packages.
+source "$SCENE_WS/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/package.bash"
 exec /opt/ros/humble/bin/ros2 launch ur7e_d435_gazebo scene.launch.py "$@"

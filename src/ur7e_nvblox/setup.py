@@ -16,5 +16,7 @@ setup(
     entry_points={'console_scripts': [
         'tf_mapper = ur7e_nvblox.node:main',
         'verify_esdf = ur7e_nvblox.verify:main',
+        'esdf_rates = ur7e_nvblox.monitor:main',
+        'depth_adapter = ur7e_nvblox.depth_adapter:main',
     ]},
 )

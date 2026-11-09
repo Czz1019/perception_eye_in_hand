@@ -16,6 +16,12 @@ target_include_directories(check_mount_meshes PRIVATE ${GAZEBO_INCLUDE_DIRS})
 target_link_directories(check_mount_meshes PRIVATE ${GAZEBO_LIBRARY_DIRS})
 target_link_libraries(check_mount_meshes ${GAZEBO_LIBRARIES} fcl)
 install(TARGETS check_mount_meshes DESTINATION lib/${PROJECT_NAME})
+add_executable(scan_collision_checker src/scan_collision_checker.cpp)
+target_compile_features(scan_collision_checker PRIVATE cxx_std_17)
+target_include_directories(scan_collision_checker PRIVATE ${GAZEBO_INCLUDE_DIRS})
+target_link_directories(scan_collision_checker PRIVATE ${GAZEBO_LIBRARY_DIRS})
+target_link_libraries(scan_collision_checker ${GAZEBO_LIBRARIES} fcl)
+install(TARGETS scan_collision_checker DESTINATION lib/${PROJECT_NAME})
 
 # Build the provided plugin locally; no dependency on another workspace's .so.
 add_library(realsense_gazebo_plugin SHARED

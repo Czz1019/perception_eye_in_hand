@@ -1,0 +1,20 @@
+# RGB-D sensors remain 30 Hz. These 40 Hz limits allow timestamp jitter without
+# repeatedly rejecting 30 Hz frames at a strict 33.333 ms minimum interval.
+# They do not synthesize 40 Hz input or guarantee a measured throughput.
+/**:
+  ros__parameters:
+    voxel_size: 0.03
+    integrate_depth_rate_hz: 40.0
+    integrate_color_rate_hz: 40.0
+    # Experimental: 1/33.4 = 29.94 ms, allowing a nominal 30 ms tick interval.
+    # Actual calls can exceed 30 Hz; this is not phase-locked scheduling.
+    update_esdf_rate_hz: 33.4
+    update_mesh_rate_hz: 5.0
+    publish_layer_rate_hz: 5.0
+    decay_tsdf_rate_hz: 0.0
+    clear_map_outside_radius_rate_hz: 0.0
+    map_clearing_radius_m: -1.0
+    print_rates_to_console: true
+    print_delays_to_console: true
+    print_queue_drops_to_console: true
+    print_statistics_on_console_period_ms: 5000

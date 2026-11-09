@@ -1,1 +1,0 @@
-/home/wqj/realtime_nvblox_ws/src/ur7e_perception_planning/validation/NVBLOX2_LEARNING.md

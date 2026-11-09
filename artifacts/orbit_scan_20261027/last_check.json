@@ -1,0 +1,26 @@
+{
+  "started_wall_time": 1793187723.9817147,
+  "captures": [],
+  "result": "ready",
+  "motion_commands_sent": 0,
+  "mode": "check_only",
+  "environment": {
+    "ROS_DOMAIN_ID": "127",
+    "ROS_LOCALHOST_ONLY": "1",
+    "RMW_IMPLEMENTATION": "rmw_cyclonedds_cpp",
+    "CYCLONEDDS_URI": "file:///home/czz/perception_eye_in_hand/src/ur7e_nvblox_native/config/cyclonedds_local.xml",
+    "GAZEBO_MASTER_URI": "http://127.0.0.1:11457"
+  },
+  "readiness": {
+    "checks": {
+      "/joint_states": true,
+      "/clock (advancing)": true,
+      "/robot_description (Gazebo URDF)": true,
+      "/camera/depth/camera_info": true,
+      "/ur7e_nvblox/stats (native, fresh)": true
+    },
+    "missing": []
+  },
+  "controller_verified": true,
+  "fixture_verified": true
+}

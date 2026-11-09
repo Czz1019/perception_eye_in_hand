@@ -1,0 +1,42 @@
+{
+  "method": "mesh_vertex_to_known_wall_box_surface_and_reference_surface_proximity",
+  "coverage_threshold_m": 0.03,
+  "reference_grid_step_approx_m": 0.01,
+  "limitations": [
+    "Wall neighborhood only, not full-scene ground-truth error.",
+    "Surface proximity is not observed voxel coverage and includes unobservable backsides.",
+    "Vertex-weighted distances are affected by tessellation and do not equal uniform area error."
+  ],
+  "stages": {
+    "mesh_before": {
+      "vertices": 2124,
+      "triangles": 3010,
+      "wall_neighborhood_vertices": 478,
+      "wall_neighborhood_definition": "union of wall boxes expanded 0.08m, z>=0.02m and z<=0.58m",
+      "wall_surface_abs_error_median_m": 0.0021909981966018593,
+      "wall_surface_abs_error_p95_m": 0.03697139546275141,
+      "wall_surface_abs_error_mean_m": 0.008131299506282762,
+      "fraction_within_0.02m": 0.8347280334728033,
+      "fraction_beyond_0.04m": 0.03556485355648536,
+      "reference_wall_surface_proximity_fraction": {
+        "cube1": 0.3948816072709878,
+        "cube2": 0.3561348959579048
+      }
+    },
+    "mesh_overhead": {
+      "vertices": 3229,
+      "triangles": 4689,
+      "wall_neighborhood_vertices": 514,
+      "wall_neighborhood_definition": "union of wall boxes expanded 0.08m, z>=0.02m and z<=0.58m",
+      "wall_surface_abs_error_median_m": 0.0022659957408904946,
+      "wall_surface_abs_error_p95_m": 0.03760200738906863,
+      "wall_surface_abs_error_mean_m": 0.008903560336797204,
+      "fraction_within_0.02m": 0.8210116731517509,
+      "fraction_beyond_0.04m": 0.04085603112840467,
+      "reference_wall_surface_proximity_fraction": {
+        "cube1": 0.4113848361635972,
+        "cube2": 0.3769433149964123
+      }
+    }
+  }
+}

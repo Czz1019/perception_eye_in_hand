@@ -1,0 +1,97 @@
+{
+  "status": "running",
+  "phases": {},
+  "commands": [
+    {
+      "name": "scene",
+      "argv": [
+        "ros2",
+        "launch",
+        "ur7e_d435_gazebo",
+        "scene.launch.py",
+        "gazebo_gui:=false"
+      ],
+      "pid": 32450
+    },
+    {
+      "name": "scene_ready",
+      "argv": [
+        "/usr/bin/python3",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/esdf334_color_test_20261105/view_sweep_isolated.py",
+        "--check-only"
+      ],
+      "pid": 32451
+    },
+    {
+      "name": "approach",
+      "argv": [
+        "/usr/bin/python3",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/esdf334_color_test_20261105/view_sweep_isolated.py",
+        "--seconds",
+        "0"
+      ],
+      "pid": 32842
+    },
+    {
+      "name": "robot_state_audit",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/check_sim.sh",
+        "--output",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/esdf334_color_test_20261105/robot_state_audit.json"
+      ],
+      "pid": 32952
+    },
+    {
+      "name": "mapping_baseline3d",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/run.sh",
+        "start_scene:=false",
+        "run_rviz:=false",
+        "mapper_backend:=diagnostic",
+        "esdf_mode:=3d",
+        "profile:=realtime",
+        "esdf_view_mode:=observed",
+        "esdf_hz:=30.0",
+        "esdf_view_hz:=30.0"
+      ],
+      "pid": 33078
+    },
+    {
+      "name": "rviz_baseline3d",
+      "argv": [
+        "rviz2",
+        "-d",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/esdf334_color_test_20261105/baseline3d.rviz",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true"
+      ],
+      "pid": 33443
+    }
+  ],
+  "geometry": {
+    "voxel_size_m": 0.03,
+    "max_range_m": 3.0,
+    "input_resolution": [
+      640,
+      480
+    ]
+  },
+  "sensor_target_hz": {
+    "depth": 30,
+    "color": 30
+  },
+  "configured_rates_hz": {
+    "fusion_limit": 40,
+    "baseline_esdf": 30,
+    "trial_esdf": 33.4,
+    "mesh_layer": 5,
+    "baseline_view": 30,
+    "trial_views": [
+      33.4,
+      40
+    ]
+  },
+  "motion": "previous observation pose, wrist_1 +/-0.06 rad; no orbit",
+  "gpu_completion_measured": false
+}

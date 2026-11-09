@@ -1,0 +1,257 @@
+{
+  "backend": "official_ros_cpp",
+  "common_input": true,
+  "mode": "native",
+  "voxel_size_m": 0.03,
+  "targets_hz": {
+    "esdf": 30.0,
+    "publish": 30.0
+  },
+  "ros_domain": "127",
+  "stationary": {
+    "wall_seconds": 5.000655666999592,
+    "rates_hz": {
+      "depth_received": 0.0,
+      "input_queue_seen": 17.197744801253283,
+      "depth_integrated": 17.197744801253283,
+      "esdf_updated": 17.197744801253283,
+      "esdf_exported": 17.197744801253283,
+      "esdf_published": 17.197744801253283,
+      "observed_cloud_published": 17.197744801253283
+    },
+    "received_cloud_hz": 17.14025196283415,
+    "unique_stamp_count": 86,
+    "cloud_count": 86,
+    "simulated_cloud_hz": 17.106057556852484,
+    "depth_received_hz": 16.532236035976137,
+    "points_min": 9130,
+    "points_max": 9130,
+    "observed_input_to_cloud_ms": {
+      "p50": 2.3633129994777846,
+      "p95": 3.757466800107066,
+      "p99": 4.493730379945189
+    },
+    "latency_pairs": 83,
+    "latency": {
+      "block_export_readback": {
+        "max_ms": 0.723444,
+        "mean_ms": 0.07957901367187498,
+        "p50_ms": 0.0440175,
+        "p95_ms": 0.18096579999999982,
+        "p99_ms": 0.36202578999999996
+      },
+      "depth_process_complete": {
+        "max_ms": 2.5994680000000003,
+        "mean_ms": 0.39498851562499965,
+        "p50_ms": 0.33248,
+        "p95_ms": 0.8476572499999998,
+        "p99_ms": 1.2837935299999996
+      },
+      "esdf_complete": {
+        "max_ms": 4.255487,
+        "mean_ms": 0.6806941699218748,
+        "p50_ms": 0.407937,
+        "p95_ms": 2.1475747499999995,
+        "p99_ms": 3.2277116399999985
+      },
+      "queue_seen_to_esdf": {
+        "max_ms": 5.154853,
+        "mean_ms": 1.2428170292968752,
+        "p50_ms": 0.9034005,
+        "p95_ms": 3.0816023499999994,
+        "p99_ms": 4.187291869999997
+      },
+      "queue_seen_to_publish": {
+        "max_ms": 5.281402999999999,
+        "mean_ms": 1.4641134863281249,
+        "p50_ms": 1.104114,
+        "p95_ms": 3.2595361999999994,
+        "p99_ms": 4.378755519999999
+      }
+    },
+    "latest": {
+      "exported_map_version": 1652,
+      "input_stamp_ns": 95840000000,
+      "integration_size": [
+        640,
+        360
+      ],
+      "known_cells": 9130,
+      "map_epoch": 1,
+      "map_version": 1652,
+      "output_mode": "native_block",
+      "query_cells": 217800,
+      "unknown_distance_m": 1000000.0,
+      "voxel_size_m": 0.029999999329447746
+    }
+  },
+  "moving": {
+    "wall_seconds": 5.000649190999866,
+    "rates_hz": {
+      "depth_received": 0.0,
+      "input_queue_seen": 17.59771514434202,
+      "depth_integrated": 17.59771514434202,
+      "esdf_updated": 17.59771514434202,
+      "esdf_exported": 17.59771514434202,
+      "esdf_published": 17.59771514434202,
+      "observed_cloud_published": 17.59771514434202
+    },
+    "received_cloud_hz": 18.36549433640166,
+    "unique_stamp_count": 91,
+    "cloud_count": 91,
+    "simulated_cloud_hz": 18.499486125385406,
+    "depth_received_hz": 18.388842775519628,
+    "points_min": 9130,
+    "points_max": 10655,
+    "observed_input_to_cloud_ms": {
+      "p50": 3.052963999834901,
+      "p95": 5.015356800140579,
+      "p99": 5.774514480071959
+    },
+    "latency_pairs": 89,
+    "latency": {
+      "block_export_readback": {
+        "max_ms": 0.742927,
+        "mean_ms": 0.08954033593750002,
+        "p50_ms": 0.0869075,
+        "p95_ms": 0.18104919999999985,
+        "p99_ms": 0.36714146999999997
+      },
+      "depth_process_complete": {
+        "max_ms": 2.5994680000000003,
+        "mean_ms": 0.4174918652343748,
+        "p50_ms": 0.337145,
+        "p95_ms": 1.0037108499999998,
+        "p99_ms": 1.625435409999999
+      },
+      "esdf_complete": {
+        "max_ms": 4.255487,
+        "mean_ms": 0.6877939746093747,
+        "p50_ms": 0.41397,
+        "p95_ms": 2.123824049999999,
+        "p99_ms": 3.2277116399999985
+      },
+      "queue_seen_to_esdf": {
+        "max_ms": 5.154853,
+        "mean_ms": 1.2725936562499995,
+        "p50_ms": 0.9221515,
+        "p95_ms": 3.14741,
+        "p99_ms": 4.195421749999998
+      },
+      "queue_seen_to_publish": {
+        "max_ms": 5.281402999999999,
+        "mean_ms": 1.5451684628906246,
+        "p50_ms": 1.1977575,
+        "p95_ms": 3.3585447999999998,
+        "p99_ms": 4.38839095
+      }
+    },
+    "latest": {
+      "exported_map_version": 1740,
+      "input_stamp_ns": 100843000000,
+      "integration_size": [
+        640,
+        360
+      ],
+      "known_cells": 10635,
+      "map_epoch": 1,
+      "map_version": 1740,
+      "output_mode": "native_block",
+      "query_cells": 217800,
+      "unknown_distance_m": 1000000.0,
+      "voxel_size_m": 0.029999999329447746
+    }
+  },
+  "tf_pose_checks": 346,
+  "max_tf_matrix_error": 1.57983017168295e-07,
+  "result": "PASS",
+  "last_stats": {
+    "backend": "official_ros_cpp",
+    "error": null,
+    "latency": {
+      "block_export_readback": {
+        "max_ms": 0.742927,
+        "mean_ms": 0.08954033593750002,
+        "p50_ms": 0.0869075,
+        "p95_ms": 0.18104919999999985,
+        "p99_ms": 0.36714146999999997
+      },
+      "depth_process_complete": {
+        "max_ms": 2.5994680000000003,
+        "mean_ms": 0.4174918652343748,
+        "p50_ms": 0.337145,
+        "p95_ms": 1.0037108499999998,
+        "p99_ms": 1.625435409999999
+      },
+      "esdf_complete": {
+        "max_ms": 4.255487,
+        "mean_ms": 0.6877939746093747,
+        "p50_ms": 0.41397,
+        "p95_ms": 2.123824049999999,
+        "p99_ms": 3.2277116399999985
+      },
+      "queue_seen_to_esdf": {
+        "max_ms": 5.154853,
+        "mean_ms": 1.2725936562499995,
+        "p50_ms": 0.9221515,
+        "p95_ms": 3.14741,
+        "p99_ms": 4.195421749999998
+      },
+      "queue_seen_to_publish": {
+        "max_ms": 5.281402999999999,
+        "mean_ms": 1.5451684628906246,
+        "p50_ms": 1.1977575,
+        "p95_ms": 3.3585447999999998,
+        "p99_ms": 4.38839095
+      }
+    },
+    "latest": {
+      "exported_map_version": 1740,
+      "input_stamp_ns": 100843000000,
+      "integration_size": [
+        640,
+        360
+      ],
+      "known_cells": 10635,
+      "map_epoch": 1,
+      "map_version": 1740,
+      "output_mode": "native_block",
+      "query_cells": 217800,
+      "unknown_distance_m": 1000000.0,
+      "voxel_size_m": 0.029999999329447746
+    },
+    "map_latest": {
+      "exported_map_version": 1740,
+      "input_stamp_ns": 100843000000,
+      "integration_size": [
+        640,
+        360
+      ],
+      "known_cells": 10635,
+      "map_epoch": 1,
+      "map_version": 1740,
+      "output_mode": "native_block",
+      "query_cells": 217800,
+      "unknown_distance_m": 1000000.0,
+      "voxel_size_m": 0.029999999329447746
+    },
+    "rates_hz": {
+      "depth_integrated": 13.015060012271519,
+      "esdf_exported": 13.015060012271519,
+      "esdf_published": 13.015060012271519,
+      "esdf_updated": 13.015060012271519,
+      "input_queue_seen": 13.015060012271519,
+      "map_reset_requested": 0.0,
+      "observed_cloud_published": 13.015060012271519
+    },
+    "totals": {
+      "depth_integrated": 1740,
+      "esdf_exported": 1736,
+      "esdf_published": 1736,
+      "esdf_updated": 1740,
+      "input_queue_seen": 1741,
+      "map_reset_requested": 1,
+      "observed_cloud_published": 1736
+    }
+  }
+}

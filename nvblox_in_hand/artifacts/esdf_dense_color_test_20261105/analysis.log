@@ -1,0 +1,176 @@
+{
+  "status": "completed",
+  "measurement": "existing official timer sample differences/static-end to motion-end wall time; pointcloud received intervals",
+  "modes": {
+    "wide": {
+      "depth_hz": 29.83630901832372,
+      "color_hz": 29.83630901832372,
+      "esdf_call_hz": 32.69732495158764,
+      "esdf_cloud_wall_hz": 29.55107635598536,
+      "mesh_wall_hz": 4.737675567340833,
+      "esdf_cloud_points": {
+        "min": 14747,
+        "max": 18178,
+        "mean": 17391.28593508501
+      },
+      "cloud_age_latest_clock_sec": {
+        "p50": 0.054000000000002046,
+        "p95": 0.08299999999999841
+      },
+      "simulation_rtf": 0.9986247380287984,
+      "cloud_snapshot": {
+        "points": 18178,
+        "inside": 7283,
+        "outside": 10895,
+        "sites": 3320,
+        "point_step": 24,
+        "frame": "base_link",
+        "distance_min": -2.0,
+        "distance_max": 2.0,
+        "validation": "24-byte layout, explicit flags, finite native centres and signed distances passed"
+      },
+      "publishers": 1,
+      "distance_percentiles_m": {
+        "0": -2.0,
+        "5": -0.05999999865889549,
+        "25": 0.0,
+        "50": 0.04242640361189842,
+        "75": 0.11999999731779099,
+        "90": 0.17999999225139618,
+        "95": 0.20999999344348907,
+        "100": 2.0
+      },
+      "palette_comparison_same_cloud": {
+        "wide": {
+          "min_m": 0.0,
+          "max_m": 1.0,
+          "equal_width_12_bins_point_counts": [
+            11021,
+            4818,
+            2100,
+            215,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            24
+          ],
+          "occupied_bins": 5,
+          "largest_bin_fraction": 0.6062823192870502,
+          "below_range": 3963,
+          "above_range": 24
+        },
+        "dense": {
+          "min_m": -0.09,
+          "max_m": 0.24,
+          "equal_width_12_bins_point_counts": [
+            448,
+            1737,
+            1778,
+            3320,
+            1863,
+            1875,
+            1719,
+            1595,
+            1347,
+            1054,
+            735,
+            707
+          ],
+          "occupied_bins": 12,
+          "largest_bin_fraction": 0.18263835405435142,
+          "below_range": 35,
+          "above_range": 305
+        }
+      }
+    },
+    "dense": {
+      "depth_hz": 29.753250765215146,
+      "color_hz": 29.935227834115548,
+      "esdf_call_hz": 32.755872402071724,
+      "esdf_cloud_wall_hz": 29.441033151717164,
+      "mesh_wall_hz": 4.7364656474640325,
+      "esdf_cloud_points": {
+        "min": 14747,
+        "max": 18184,
+        "mean": 17396.448757763974
+      },
+      "cloud_age_latest_clock_sec": {
+        "p50": 0.05500000000000682,
+        "p95": 0.08299999999999841
+      },
+      "simulation_rtf": 0.9982614396800995,
+      "cloud_snapshot": {
+        "points": 18184,
+        "inside": 7289,
+        "outside": 10895,
+        "sites": 3323,
+        "point_step": 24,
+        "frame": "base_link",
+        "distance_min": -2.0,
+        "distance_max": 2.0,
+        "validation": "24-byte layout, explicit flags, finite native centres and signed distances passed"
+      },
+      "publishers": 1,
+      "distance_percentiles_m": {
+        "0": -2.0,
+        "5": -0.05999999865889549,
+        "25": -0.0,
+        "50": 0.04242640361189842,
+        "75": 0.11999999731779099,
+        "90": 0.17999999225139618,
+        "95": 0.20999999344348907,
+        "100": 2.0
+      },
+      "palette_comparison_same_cloud": {
+        "wide": {
+          "min_m": 0.0,
+          "max_m": 1.0,
+          "equal_width_12_bins_point_counts": [
+            11024,
+            4819,
+            2100,
+            214,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            27
+          ],
+          "occupied_bins": 5,
+          "largest_bin_fraction": 0.6062472503299604,
+          "below_range": 3966,
+          "above_range": 27
+        },
+        "dense": {
+          "min_m": -0.09,
+          "max_m": 0.24,
+          "equal_width_12_bins_point_counts": [
+            445,
+            1743,
+            1778,
+            3323,
+            1862,
+            1873,
+            1719,
+            1596,
+            1347,
+            1054,
+            735,
+            709
+          ],
+          "occupied_bins": 12,
+          "largest_bin_fraction": 0.1827430708315002,
+          "below_range": 35,
+          "above_range": 307
+        }
+      }
+    }
+  }
+}

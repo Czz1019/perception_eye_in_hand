@@ -1,0 +1,12 @@
+1793861707.607950 [129]    python3: selected interface "lo" is not multicast-capable: disabling multicast
+START scene
+START scene_ready
+Traceback (most recent call last):
+  File "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/esdf_voxel_size_comparison_20261105/run_measurement.py", line 173, in <module>
+    wait(start(['/usr/bin/python3',str(out/'view_sweep_isolated.py'),'--check-only'],'scene_ready'),45)
+  File "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/esdf_voxel_size_comparison_20261105/run_measurement.py", line 90, in wait
+    while p.poll() is None and time.monotonic()<end:spin(.05)
+  File "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/esdf_voxel_size_comparison_20261105/run_measurement.py", line 79, in spin
+    if p.poll() is not None:raise RuntimeError('Required process exited '+str(p.pid))
+RuntimeError: Required process exited 258274
+DONE failed

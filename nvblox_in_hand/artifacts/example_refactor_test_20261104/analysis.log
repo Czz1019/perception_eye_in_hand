@@ -1,0 +1,139 @@
+{
+  "status": "completed",
+  "counter_interval_method": "Difference of existing official timer sample counts between static-end and motion-end snapshots; wall endpoints approximate service execution by the phase end, including the intervening short stats-save gap. No production metrics were added.",
+  "modes": {
+    "official3d": {
+      "counter_interval_wall_seconds": 21.98596827399888,
+      "from_snapshot": "official3d_static_timings.txt",
+      "to_snapshot": "official3d_wrist_motion_timings.txt",
+      "depth_integrated": {
+        "sample_difference": 407,
+        "wall_hz": 18.5118069364872,
+        "host_timer_mean_ms": 0.4651031941031941
+      },
+      "color_integrated": {
+        "sample_difference": 409,
+        "wall_hz": 18.602774046740212,
+        "host_timer_mean_ms": 0.47032762836185815
+      },
+      "esdf_updated": {
+        "sample_difference": 541,
+        "wall_hz": 24.606603323438762,
+        "host_timer_mean_ms": 0.6698428835489832
+      },
+      "official_rolling_mean_input_age_ms": {
+        "min": 46.0,
+        "max": 52.0,
+        "median_of_windows": 48.0,
+        "windows": 11,
+        "not_screen_latency": true
+      },
+      "mesh_wall_hz": 4.74447055995245,
+      "rgb_input_wall_hz": 29.40607225045007,
+      "depth_input_wall_hz": 29.359245771893377,
+      "simulation_rtf": 0.9985392476839078,
+      "depth_timestamp_gate_diagnostic": {
+        "received": 645,
+        "accepted_by_gate": 404,
+        "gate_only_wall_hz": 18.374250276638016,
+        "positive_intervals_p50_ms": 33.00000000000125,
+        "interval_fraction_le_1_over_30": 0.5496894409937888,
+        "not_actual_fusion_count": true
+      }
+    },
+    "official2d": {
+      "counter_interval_wall_seconds": 22.025128984998446,
+      "from_snapshot": "official2d_static_timings.txt",
+      "to_snapshot": "official2d_wrist_motion_timings.txt",
+      "depth_integrated": {
+        "sample_difference": 397,
+        "wall_hz": 18.024866064139783,
+        "host_timer_mean_ms": 0.5398362720403022
+      },
+      "color_integrated": {
+        "sample_difference": 405,
+        "wall_hz": 18.388087546540586,
+        "host_timer_mean_ms": 0.4623111111111112
+      },
+      "esdf_updated": {
+        "sample_difference": 539,
+        "wall_hz": 24.472047376754013,
+        "host_timer_mean_ms": 0.9462467532467532
+      },
+      "official_rolling_mean_input_age_ms": {
+        "min": 46.0,
+        "max": 51.0,
+        "median_of_windows": 48.0,
+        "windows": 11,
+        "not_screen_latency": true
+      },
+      "mesh_wall_hz": 4.745920588689324,
+      "esdf_slice_wall_hz": 24.359668183446153,
+      "esdf_slice_points": {
+        "min": 985,
+        "max": 1161,
+        "mean": 1122.5497185741087
+      },
+      "rgb_input_wall_hz": 29.689637591148475,
+      "depth_input_wall_hz": 29.462321991216164,
+      "simulation_rtf": 0.9988644823651799,
+      "depth_timestamp_gate_diagnostic": {
+        "received": 649,
+        "accepted_by_gate": 404,
+        "gate_only_wall_hz": 18.327841801282624,
+        "positive_intervals_p50_ms": 33.00000000000125,
+        "interval_fraction_le_1_over_30": 0.5617283950617284,
+        "not_actual_fusion_count": true
+      }
+    },
+    "diagnostic3d": {
+      "counter_interval_wall_seconds": 21.99841060000108,
+      "from_snapshot": "diagnostic3d_static_timings.txt",
+      "to_snapshot": "diagnostic3d_wrist_motion_timings.txt",
+      "depth_integrated": {
+        "sample_difference": 401,
+        "wall_hz": 18.228589660017544,
+        "host_timer_mean_ms": 0.483643391521197
+      },
+      "color_integrated": {
+        "sample_difference": 402,
+        "wall_hz": 18.274047489593645,
+        "host_timer_mean_ms": 0.45570398009950247
+      },
+      "esdf_updated": {
+        "sample_difference": 540,
+        "wall_hz": 24.547227971095943,
+        "host_timer_mean_ms": 0.6807833333333332
+      },
+      "official_rolling_mean_input_age_ms": {
+        "min": 46.0,
+        "max": 53.0,
+        "median_of_windows": 49.0,
+        "windows": 10,
+        "not_screen_latency": true
+      },
+      "mesh_wall_hz": 4.742232607748281,
+      "esdf_cloud_wall_hz": 4.8369207732544375,
+      "esdf_cloud_points": {
+        "min": 12286,
+        "max": 14791,
+        "mean": 14216.584905660377
+      },
+      "cloud_age_latest_clock_sec": {
+        "p50": 0.0630000000000166,
+        "p95": 0.10474999999999568
+      },
+      "rgb_input_wall_hz": 29.779799936203386,
+      "depth_input_wall_hz": 29.04786675059505,
+      "simulation_rtf": 0.9987990817418786,
+      "depth_timestamp_gate_diagnostic": {
+        "received": 639,
+        "accepted_by_gate": 403,
+        "gate_only_wall_hz": 18.332739592446003,
+        "positive_intervals_p50_ms": 33.00000000001546,
+        "interval_fraction_le_1_over_30": 0.5501567398119123,
+        "not_actual_fusion_count": true
+      }
+    }
+  }
+}

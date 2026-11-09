@@ -1,0 +1,599 @@
+{
+  "status": "completed",
+  "scope": "New nine-run voxel size 0.02/0.03/0.05m observed 3D ESDF output comparison; all use diagnostic backend and identical RViz/export load. Header advance is associated newest depth stamp, not geometric-change or GPU kernel completion FPS.",
+  "rounds": [
+    {
+      "mode": "voxel0p02_r1",
+      "fusion_gate_hz": 40.0,
+      "voxel_size_m": 0.02,
+      "repeat": 1,
+      "window_begin": 18011.618079773,
+      "window_end": 18031.759334983,
+      "messages": 591,
+      "esdf_call_hz": 32.54239553322316,
+      "depth_fusion_hz": 29.678269674456928,
+      "color_fusion_hz": 29.925177076074707,
+      "input_depth_hz": 29.816667535461306,
+      "input_rgb_hz": 29.717687917763865,
+      "cloud_hz": 29.339743305934913,
+      "associated_input_advance_hz": 19.74216625840027,
+      "distinct_associated_input_stamps": 398,
+      "repeated_adjacent_header_fraction": 0.3271186440677966,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 3,
+      "cloud_age_ms": {
+        "p50": 51.9999999999996,
+        "p95": 82.00000000000074,
+        "p99": 91.00000000000108
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 32.47876749992429,
+        "p95": 41.067006398589,
+        "p99": 45.24670158971279
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 56.279191998328315,
+        "p95": 88.65373360022204,
+        "p99": 92.8120632376522
+      },
+      "matched_input_receipts": 589,
+      "negative_observer_lag_count": 1,
+      "points": {
+        "min": 71057,
+        "max": 71057
+      },
+      "mesh_hz": 4.744392726701186,
+      "simulation_rtf": 0.9988940640309057
+    },
+    {
+      "mode": "voxel0p03_r1",
+      "fusion_gate_hz": 40.0,
+      "voxel_size_m": 0.03,
+      "repeat": 1,
+      "window_begin": 18048.968809217,
+      "window_end": 18069.082161389,
+      "messages": 593,
+      "esdf_call_hz": 32.73203698807999,
+      "depth_fusion_hz": 29.91371960390996,
+      "color_fusion_hz": 29.91371960390996,
+      "input_depth_hz": 29.960725207966522,
+      "input_rgb_hz": 29.911102935955576,
+      "cloud_hz": 29.505455264002045,
+      "associated_input_advance_hz": 19.78659753346083,
+      "distinct_associated_input_stamps": 398,
+      "repeated_adjacent_header_fraction": 0.3293918918918919,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 2,
+      "cloud_age_ms": {
+        "p50": 52.99999999998306,
+        "p95": 79.9999999999983,
+        "p99": 81.99999999999363
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.815682999877026,
+        "p95": 40.13867370049411,
+        "p99": 41.77259799944295
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 54.96783199851052,
+        "p95": 81.76587620037026,
+        "p99": 88.94598023965958
+      },
+      "matched_input_receipts": 593,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 24184,
+        "max": 24184
+      },
+      "mesh_hz": 4.745930001485525,
+      "simulation_rtf": 0.998773041092221
+    },
+    {
+      "mode": "voxel0p05_r1",
+      "fusion_gate_hz": 40.0,
+      "voxel_size_m": 0.05,
+      "repeat": 1,
+      "window_begin": 18086.388144888,
+      "window_end": 18106.505253634,
+      "messages": 593,
+      "esdf_call_hz": 32.82037558693618,
+      "depth_fusion_hz": 29.7558224447825,
+      "color_fusion_hz": 29.7558224447825,
+      "input_depth_hz": 29.858924422194004,
+      "input_rgb_hz": 29.85940800308701,
+      "cloud_hz": 29.496803149652195,
+      "associated_input_advance_hz": 19.88044671741761,
+      "distinct_associated_input_stamps": 400,
+      "repeated_adjacent_header_fraction": 0.3260135135135135,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 3,
+      "cloud_age_ms": {
+        "p50": 51.9999999999925,
+        "p95": 80.99999999998886,
+        "p99": 86.07999999998474
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.559205001030932,
+        "p95": 39.944622201437596,
+        "p99": 41.24204288866168
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 53.753096999571426,
+        "p95": 84.06663250025304,
+        "p99": 91.30634599932827
+      },
+      "matched_input_receipts": 591,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 6758,
+        "max": 6758
+      },
+      "mesh_hz": 4.740632739391253,
+      "simulation_rtf": 0.9985681853038829
+    },
+    {
+      "mode": "voxel0p05_r2",
+      "fusion_gate_hz": 40.0,
+      "voxel_size_m": 0.05,
+      "repeat": 2,
+      "window_begin": 18123.826138261,
+      "window_end": 18143.932300624,
+      "messages": 598,
+      "esdf_call_hz": 32.88242703244005,
+      "depth_fusion_hz": 29.866144252020735,
+      "color_fusion_hz": 29.965038769411535,
+      "input_depth_hz": 29.813503847736733,
+      "input_rgb_hz": 29.963195224150606,
+      "cloud_hz": 29.733393920205096,
+      "associated_input_advance_hz": 19.772457933536725,
+      "distinct_associated_input_stamps": 398,
+      "repeated_adjacent_header_fraction": 0.33500837520938026,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 3,
+      "cloud_age_ms": {
+        "p50": 49.99999999999716,
+        "p95": 80.99999999998886,
+        "p99": 82.17999999999347
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.121216001338325,
+        "p95": 39.98486179843894,
+        "p99": 41.06225463896404
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 51.842917997419136,
+        "p95": 82.24507680060924,
+        "p99": 91.03607861827186
+      },
+      "matched_input_receipts": 595,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 6758,
+        "max": 6758
+      },
+      "mesh_hz": 4.743001467031372,
+      "simulation_rtf": 0.9988055799885497
+    },
+    {
+      "mode": "voxel0p02_r2",
+      "fusion_gate_hz": 40.0,
+      "voxel_size_m": 0.02,
+      "repeat": 2,
+      "window_begin": 18161.258633956,
+      "window_end": 18181.370325137,
+      "messages": 593,
+      "esdf_call_hz": 32.58590207165804,
+      "depth_fusion_hz": 29.816842108057354,
+      "color_fusion_hz": 29.71794710935733,
+      "input_depth_hz": 29.913210375336607,
+      "input_rgb_hz": 29.716934834574033,
+      "cloud_hz": 29.494525553297617,
+      "associated_input_advance_hz": 19.779267980843166,
+      "distinct_associated_input_stamps": 398,
+      "repeated_adjacent_header_fraction": 0.3293918918918919,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 3,
+      "cloud_age_ms": {
+        "p50": 53.999999999973625,
+        "p95": 81.99999999999363,
+        "p99": 90.99999999997976
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 32.61475699946459,
+        "p95": 40.437905499129556,
+        "p99": 42.826085511260324
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 58.330067000497365,
+        "p95": 88.93546749823145,
+        "p99": 93.15452400151118
+      },
+      "matched_input_receipts": 591,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 71057,
+        "max": 71057
+      },
+      "mesh_hz": 4.745241137173854,
+      "simulation_rtf": 0.9988525486353066
+    },
+    {
+      "mode": "voxel0p03_r2",
+      "fusion_gate_hz": 40.0,
+      "voxel_size_m": 0.03,
+      "repeat": 2,
+      "window_begin": 18198.761249838,
+      "window_end": 18218.882300337,
+      "messages": 591,
+      "esdf_call_hz": 32.76494343023167,
+      "depth_fusion_hz": 29.948047841207224,
+      "color_fusion_hz": 29.898628620347143,
+      "input_depth_hz": 29.76740303360288,
+      "input_rgb_hz": 29.963398053325808,
+      "cloud_hz": 29.355338680187828,
+      "associated_input_advance_hz": 19.852169717618548,
+      "distinct_associated_input_stamps": 400,
+      "repeated_adjacent_header_fraction": 0.32372881355932204,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 2,
+      "cloud_age_ms": {
+        "p50": 50.99999999998772,
+        "p95": 80.99999999998886,
+        "p99": 83.39999999997198
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.65180749965657,
+        "p95": 40.203840749200026,
+        "p99": 43.497777430056885
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 53.97042099866667,
+        "p95": 85.49424339871621,
+        "p99": 89.0172297191748
+      },
+      "matched_input_receipts": 589,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 24184,
+        "max": 24184
+      },
+      "mesh_hz": 4.738403722804261,
+      "simulation_rtf": 0.998900067381089
+    },
+    {
+      "mode": "voxel0p03_r3",
+      "fusion_gate_hz": 40.0,
+      "voxel_size_m": 0.03,
+      "repeat": 3,
+      "window_begin": 18236.141613874,
+      "window_end": 18256.250092344,
+      "messages": 595,
+      "esdf_call_hz": 32.61972716524086,
+      "depth_fusion_hz": 29.753145081022723,
+      "color_fusion_hz": 29.85199273909921,
+      "input_depth_hz": 29.814465114184237,
+      "input_rgb_hz": 29.96375325881205,
+      "cloud_hz": 29.58347893470806,
+      "associated_input_advance_hz": 19.87173079957663,
+      "distinct_associated_input_stamps": 400,
+      "repeated_adjacent_header_fraction": 0.3282828282828283,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 2,
+      "cloud_age_ms": {
+        "p50": 52.00000000002092,
+        "p95": 80.99999999996044,
+        "p99": 90.05999999997351
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.6237135011761,
+        "p95": 40.06938284946955,
+        "p99": 42.797022811028
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 55.00704699807102,
+        "p95": 85.66572159979842,
+        "p99": 90.1660686408286
+      },
+      "matched_input_receipts": 589,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 24184,
+        "max": 24184
+      },
+      "mesh_hz": 4.743156718695377,
+      "simulation_rtf": 0.9988537510694621
+    },
+    {
+      "mode": "voxel0p05_r3",
+      "fusion_gate_hz": 40.0,
+      "voxel_size_m": 0.05,
+      "repeat": 3,
+      "window_begin": 18273.571813841,
+      "window_end": 18293.683366017,
+      "messages": 590,
+      "esdf_call_hz": 32.93264125263059,
+      "depth_fusion_hz": 29.718494583830307,
+      "color_fusion_hz": 29.817391404408777,
+      "input_depth_hz": 29.91793609754768,
+      "input_rgb_hz": 29.91961710489738,
+      "cloud_hz": 29.304474078429877,
+      "associated_input_advance_hz": 19.851417924097657,
+      "distinct_associated_input_stamps": 400,
+      "repeated_adjacent_header_fraction": 0.3225806451612903,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 2,
+      "cloud_age_ms": {
+        "p50": 50.99999999998772,
+        "p95": 80.99999999996044,
+        "p99": 81.99999999994304
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 31.63273400059552,
+        "p95": 40.570695000496926,
+        "p99": 42.22693115807488
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 52.806424000664265,
+        "p95": 83.8769684500221,
+        "p99": 87.61746570111427
+      },
+      "matched_input_receipts": 590,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 6758,
+        "max": 6758
+      },
+      "mesh_hz": 4.749683969090566,
+      "simulation_rtf": 0.9988920467506437
+    },
+    {
+      "mode": "voxel0p02_r3",
+      "fusion_gate_hz": 40.0,
+      "voxel_size_m": 0.02,
+      "repeat": 3,
+      "window_begin": 18310.930243143,
+      "window_end": 18331.044273294,
+      "messages": 587,
+      "esdf_call_hz": 32.66646664598725,
+      "depth_fusion_hz": 29.750700334166904,
+      "color_fusion_hz": 29.849539870160815,
+      "input_depth_hz": 29.865043571363096,
+      "input_rgb_hz": 29.66574990488682,
+      "cloud_hz": 29.157187435535363,
+      "associated_input_advance_hz": 19.65373555808271,
+      "distinct_associated_input_stamps": 396,
+      "repeated_adjacent_header_fraction": 0.32593856655290104,
+      "backward_header_count": 0,
+      "max_identical_header_streak": 4,
+      "cloud_age_ms": {
+        "p50": 52.99999999994043,
+        "p95": 81.00000000001728,
+        "p99": 91.00000000000819
+      },
+      "negative_age_count": 0,
+      "receive_interval_ms": {
+        "p50": 32.558571501795086,
+        "p95": 41.08357150016673,
+        "p99": 48.525649451221085
+      },
+      "observer_input_to_cloud_ms": {
+        "p50": 55.947663000551984,
+        "p95": 88.22033060059766,
+        "p99": 92.46430579849401
+      },
+      "matched_input_receipts": 585,
+      "negative_observer_lag_count": 0,
+      "points": {
+        "min": 71057,
+        "max": 71057
+      },
+      "mesh_hz": 4.740214772038744,
+      "simulation_rtf": 0.9987419762009477
+    }
+  ],
+  "summary": {
+    "0.02": {
+      "repetitions": 3,
+      "esdf_call_hz": {
+        "mean": 32.59825475028948,
+        "sample_std": 0.06295118551432352,
+        "min": 32.54239553322316,
+        "max": 32.66646664598725
+      },
+      "cloud_hz": {
+        "mean": 29.330485431589295,
+        "sample_std": 0.1688595055124067,
+        "min": 29.157187435535363,
+        "max": 29.494525553297617
+      },
+      "associated_input_advance_hz": {
+        "mean": 19.725056599108715,
+        "sample_std": 0.06449149263144831,
+        "min": 19.65373555808271,
+        "max": 19.779267980843166
+      },
+      "repeated_adjacent_header_fraction": {
+        "mean": 0.3274830341708632,
+        "sample_std": 0.001755263252232753,
+        "min": 0.32593856655290104,
+        "max": 0.3293918918918919
+      },
+      "depth_fusion_hz": {
+        "mean": 29.74860403889373,
+        "sample_std": 0.06930999696212958,
+        "min": 29.678269674456928,
+        "max": 29.816842108057354
+      },
+      "color_fusion_hz": {
+        "mean": 29.830888018530953,
+        "sample_std": 0.10486650300900786,
+        "min": 29.71794710935733,
+        "max": 29.925177076074707
+      },
+      "mesh_hz": {
+        "mean": 4.7432828786379275,
+        "sample_std": 0.0026907078363322375,
+        "min": 4.740214772038744,
+        "max": 4.745241137173854
+      },
+      "pooled_age_ms": {
+        "p50": 52.99999999999727,
+        "p95": 81.99999999999363,
+        "p99": 91.00000000000108
+      },
+      "pooled_receive_interval_ms": {
+        "p50": 32.55391049970058,
+        "p95": 40.72773980205966,
+        "p99": 44.5249210601105
+      },
+      "pooled_observer_input_to_cloud_ms": {
+        "p50": 56.78383999838843,
+        "p95": 88.84007200103952,
+        "p99": 92.8876618412323
+      },
+      "messages": 1771,
+      "negative_age_count": 0,
+      "backward_header_count": 0,
+      "points_min": 71057,
+      "points_max": 71057
+    },
+    "0.03": {
+      "repetitions": 3,
+      "esdf_call_hz": {
+        "mean": 32.70556919451751,
+        "sample_std": 0.07614032424753532,
+        "min": 32.61972716524086,
+        "max": 32.76494343023167
+      },
+      "cloud_hz": {
+        "mean": 29.48142429296598,
+        "sample_std": 0.11595304916146663,
+        "min": 29.355338680187828,
+        "max": 29.58347893470806
+      },
+      "associated_input_advance_hz": {
+        "mean": 19.836832683552004,
+        "sample_std": 0.04459076934024066,
+        "min": 19.78659753346083,
+        "max": 19.87173079957663
+      },
+      "repeated_adjacent_header_fraction": {
+        "mean": 0.32713451124468074,
+        "sample_std": 0.003001097810015611,
+        "min": 0.32372881355932204,
+        "max": 0.3293918918918919
+      },
+      "depth_fusion_hz": {
+        "mean": 29.871637508713302,
+        "sample_std": 0.10404301290326871,
+        "min": 29.753145081022723,
+        "max": 29.948047841207224
+      },
+      "color_fusion_hz": {
+        "mean": 29.88811365445211,
+        "sample_std": 0.03217879489153621,
+        "min": 29.85199273909921,
+        "max": 29.91371960390996
+      },
+      "mesh_hz": {
+        "mean": 4.742496814328388,
+        "sample_std": 0.003806287302239773,
+        "min": 4.738403722804261,
+        "max": 4.745930001485525
+      },
+      "pooled_age_ms": {
+        "p50": 51.999999999964075,
+        "p95": 80.99999999996328,
+        "p99": 83.65999999996697
+      },
+      "pooled_receive_interval_ms": {
+        "p50": 31.72812450065976,
+        "p95": 40.162133501326025,
+        "p99": 42.800097750841815
+      },
+      "pooled_observer_input_to_cloud_ms": {
+        "p50": 54.542575002415106,
+        "p95": 85.1185744995746,
+        "p99": 89.60912459951942
+      },
+      "messages": 1779,
+      "negative_age_count": 0,
+      "backward_header_count": 0,
+      "points_min": 24184,
+      "points_max": 24184
+    },
+    "0.05": {
+      "repetitions": 3,
+      "esdf_call_hz": {
+        "mean": 32.87848129066894,
+        "sample_std": 0.05623674583442215,
+        "min": 32.82037558693618,
+        "max": 32.93264125263059
+      },
+      "cloud_hz": {
+        "mean": 29.511557049429058,
+        "sample_std": 0.21484021000755177,
+        "min": 29.304474078429877,
+        "max": 29.733393920205096
+      },
+      "associated_input_advance_hz": {
+        "mean": 19.834774191683994,
+        "sample_std": 0.055885192426180536,
+        "min": 19.772457933536725,
+        "max": 19.88044671741761
+      },
+      "repeated_adjacent_header_fraction": {
+        "mean": 0.327867511294728,
+        "sample_std": 0.006417951337195597,
+        "min": 0.3225806451612903,
+        "max": 0.33500837520938026
+      },
+      "depth_fusion_hz": {
+        "mean": 29.78015376021118,
+        "sample_std": 0.07677314512284492,
+        "min": 29.718494583830307,
+        "max": 29.866144252020735
+      },
+      "color_fusion_hz": {
+        "mean": 29.84608420620094,
+        "sample_std": 0.10751895311447972,
+        "min": 29.7558224447825,
+        "max": 29.965038769411535
+      },
+      "mesh_hz": {
+        "mean": 4.74443939183773,
+        "sample_std": 0.004693816206349341,
+        "min": 4.740632739391253,
+        "max": 4.749683969090566
+      },
+      "pooled_age_ms": {
+        "p50": 50.99999999998772,
+        "p95": 80.99999999998886,
+        "p99": 83.39999999998335
+      },
+      "pooled_receive_interval_ms": {
+        "p50": 31.387373001052765,
+        "p95": 40.15992355070921,
+        "p99": 41.99209538015566
+      },
+      "pooled_observer_input_to_cloud_ms": {
+        "p50": 52.7159164994373,
+        "p95": 83.3751360005408,
+        "p99": 89.4394202514377
+      },
+      "messages": 1781,
+      "negative_age_count": 0,
+      "backward_header_count": 0,
+      "points_min": 6758,
+      "points_max": 6758
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "failed",
+  "phases": {},
+  "commands": [
+    {
+      "name": "scene",
+      "argv": [
+        "ros2",
+        "launch",
+        "ur7e_d435_gazebo",
+        "scene.launch.py",
+        "gazebo_gui:=false"
+      ],
+      "pid": 258274
+    },
+    {
+      "name": "scene_ready",
+      "argv": [
+        "/usr/bin/python3",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/esdf_voxel_size_comparison_20261105/view_sweep_isolated.py",
+        "--check-only"
+      ],
+      "pid": 258275
+    }
+  ],
+  "snapshots": {},
+  "geometry": {
+    "tested_voxel_sizes_m": [
+      0.02,
+      0.03,
+      0.05
+    ],
+    "max_range_m": 3.0,
+    "input_resolution": [
+      640,
+      480
+    ]
+  },
+  "sensor_target_hz": {
+    "depth": 30,
+    "color": 30
+  },
+  "configured_rates_hz": {
+    "fusion_limit": 40.0,
+    "esdf": 33.4,
+    "esdf_view": 33.4,
+    "mesh_layer": 5.0
+  },
+  "experiment": "3 voxel sizes x 3 repetitions, interleaved order; fusion40/esdf33.4/view33.4; stationary raised camera 0.82m; diagnostic native observed 3D export and RViz in all nine runs",
+  "gpu_completion_measured": false,
+  "error": "Required process exited 258274"
+}

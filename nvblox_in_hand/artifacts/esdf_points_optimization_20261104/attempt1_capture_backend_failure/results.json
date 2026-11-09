@@ -1,0 +1,82 @@
+{
+  "status": "failed",
+  "probe_mode": "pointcloud_width_and_raw_mesh",
+  "gpu_completion_measured": false,
+  "phases": {},
+  "commands": [
+    {
+      "name": "scene",
+      "argv": [
+        "ros2",
+        "launch",
+        "ur7e_d435_gazebo",
+        "scene.launch.py",
+        "gazebo_gui:=false"
+      ],
+      "pid": 82859
+    },
+    {
+      "name": "scene_check",
+      "argv": [
+        "/usr/bin/python3",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/esdf_points_optimization_20261104/view_sweep_isolated.py",
+        "--check-only"
+      ],
+      "pid": 82860
+    },
+    {
+      "name": "approach",
+      "argv": [
+        "/usr/bin/python3",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/esdf_points_optimization_20261104/view_sweep_isolated.py",
+        "--seconds",
+        "0"
+      ],
+      "pid": 83329
+    },
+    {
+      "name": "mapping_band",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/run.sh",
+        "start_scene:=false",
+        "run_rviz:=false",
+        "mapper_backend:=observed_view",
+        "esdf_mode:=3d",
+        "enable_esdf_view:=true",
+        "esdf_view_mode:=band",
+        "voxel_size:=0.03",
+        "max_range_m:=3.0",
+        "depth_hz:=30",
+        "color_hz:=30",
+        "esdf_hz:=30",
+        "mesh_hz:=5",
+        "layer_hz:=5",
+        "esdf_view_hz:=30"
+      ],
+      "pid": 83556
+    },
+    {
+      "name": "rviz_band",
+      "argv": [
+        "rviz2",
+        "-d",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/esdf_points_optimization_20261104/points_view.rviz",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true"
+      ],
+      "pid": 83911
+    }
+  ],
+  "motion": "previous_observation_pose_and_wrist1_sweep_0.06rad",
+  "screenshots": [],
+  "requested_rates_hz": {
+    "depth": 30,
+    "color": 30,
+    "esdf": 30,
+    "mesh": 5,
+    "layer": 5,
+    "esdf_view": 30
+  },
+  "error": "Capture failed X Error of failed request:  BadMatch (invalid parameter attributes)\n  Major opcode of failed request:  142 (Composite)\n  Minor opcode of failed request:  6 ()\n  Serial number of failed request:  9\n  Current serial number in output stream:  10\n"
+}

@@ -1,0 +1,155 @@
+{
+  "definition": "Official ros/esdf_integration uses node now minus newest integrated depth stamp after updateEsdf call; not GPU completion or screen latency. Each logged value is a rolling mean. Use only windows with 100 samples; all available steady windows, not exact measure-only interval.",
+  "groups": {
+    "30.0": {
+      "esdf_call_hz_mean": 32.95865163781735,
+      "approx_call_interval_ms": 30.341047048556504,
+      "rolling_mean_age_ms_min": 40.0,
+      "rolling_mean_age_ms_max": 50.0,
+      "median_of_window_means_ms": 45.0,
+      "logged_windows": 24,
+      "per_round": [
+        {
+          "mode": "gate30p0_r1",
+          "window_means_ms": [
+            44.0,
+            48.0,
+            50.0,
+            46.0,
+            46.0,
+            42.0,
+            40.0,
+            40.0
+          ]
+        },
+        {
+          "mode": "gate30p0_r2",
+          "window_means_ms": [
+            46.0,
+            50.0,
+            44.0,
+            42.0,
+            45.0,
+            50.0,
+            47.0,
+            47.0
+          ]
+        },
+        {
+          "mode": "gate30p0_r3",
+          "window_means_ms": [
+            49.0,
+            47.0,
+            44.0,
+            40.0,
+            45.0,
+            40.0,
+            44.0,
+            43.0
+          ]
+        }
+      ],
+      "esdf_points_publication_measured": false
+    },
+    "33.4": {
+      "esdf_call_hz_mean": 32.92309387418877,
+      "approx_call_interval_ms": 30.373816137127545,
+      "rolling_mean_age_ms_min": 33.0,
+      "rolling_mean_age_ms_max": 37.0,
+      "median_of_window_means_ms": 35.0,
+      "logged_windows": 24,
+      "per_round": [
+        {
+          "mode": "gate33p4_r1",
+          "window_means_ms": [
+            34.0,
+            37.0,
+            35.0,
+            35.0,
+            34.0,
+            35.0,
+            37.0,
+            37.0
+          ]
+        },
+        {
+          "mode": "gate33p4_r2",
+          "window_means_ms": [
+            35.0,
+            34.0,
+            35.0,
+            34.0,
+            35.0,
+            34.0,
+            36.0,
+            36.0
+          ]
+        },
+        {
+          "mode": "gate33p4_r3",
+          "window_means_ms": [
+            33.0,
+            36.0,
+            35.0,
+            34.0,
+            33.0,
+            36.0,
+            33.0,
+            34.0
+          ]
+        }
+      ],
+      "esdf_points_publication_measured": false
+    },
+    "40.0": {
+      "esdf_call_hz_mean": 32.875500841480694,
+      "approx_call_interval_ms": 30.41778754403793,
+      "rolling_mean_age_ms_min": 31.0,
+      "rolling_mean_age_ms_max": 41.0,
+      "median_of_window_means_ms": 35.0,
+      "logged_windows": 24,
+      "per_round": [
+        {
+          "mode": "gate40p0_r1",
+          "window_means_ms": [
+            31.0,
+            36.0,
+            32.0,
+            34.0,
+            36.0,
+            34.0,
+            35.0,
+            36.0
+          ]
+        },
+        {
+          "mode": "gate40p0_r2",
+          "window_means_ms": [
+            36.0,
+            33.0,
+            35.0,
+            35.0,
+            41.0,
+            36.0,
+            37.0,
+            34.0
+          ]
+        },
+        {
+          "mode": "gate40p0_r3",
+          "window_means_ms": [
+            36.0,
+            34.0,
+            34.0,
+            33.0,
+            35.0,
+            36.0,
+            34.0,
+            33.0
+          ]
+        }
+      ],
+      "esdf_points_publication_measured": false
+    }
+  }
+}

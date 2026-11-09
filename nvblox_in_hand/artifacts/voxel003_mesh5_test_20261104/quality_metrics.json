@@ -1,0 +1,57 @@
+{
+  "method": "mesh_vertex_to_known_wall_box_surface_and_reference_surface_proximity",
+  "coverage_threshold_m": 0.03,
+  "reference_grid_step_approx_m": 0.01,
+  "limitations": [
+    "Wall neighborhood only, not full-scene ground-truth error.",
+    "Surface proximity is not observed voxel coverage and includes unobservable backsides.",
+    "Vertex-weighted distances are affected by tessellation and do not equal uniform area error."
+  ],
+  "stages": {
+    "mesh_static": {
+      "vertices": 1793,
+      "triangles": 2533,
+      "wall_neighborhood_vertices": 361,
+      "wall_neighborhood_definition": "union of wall boxes expanded 0.08m, z>=0.02m and z<=0.58m",
+      "wall_surface_abs_error_median_m": 0.0020610004663467324,
+      "wall_surface_abs_error_p95_m": 0.034999978542327864,
+      "wall_surface_abs_error_mean_m": 0.007340380965711252,
+      "fraction_within_0.02m": 0.853185595567867,
+      "fraction_beyond_0.04m": 0.027700831024930747,
+      "reference_wall_surface_proximity_fraction": {
+        "cube1": 0.3712030614685482,
+        "cube2": 0.2427648887825879
+      }
+    },
+    "mesh_after_motion": {
+      "vertices": 2061,
+      "triangles": 2931,
+      "wall_neighborhood_vertices": 370,
+      "wall_neighborhood_definition": "union of wall boxes expanded 0.08m, z>=0.02m and z<=0.58m",
+      "wall_surface_abs_error_median_m": 0.002078498899936679,
+      "wall_surface_abs_error_p95_m": 0.035290305316448244,
+      "wall_surface_abs_error_mean_m": 0.007844663491318914,
+      "fraction_within_0.02m": 0.845945945945946,
+      "fraction_beyond_0.04m": 0.03513513513513514,
+      "reference_wall_surface_proximity_fraction": {
+        "cube1": 0.37718249222674,
+        "cube2": 0.24683090169815833
+      }
+    },
+    "mesh_final": {
+      "vertices": 2062,
+      "triangles": 2933,
+      "wall_neighborhood_vertices": 370,
+      "wall_neighborhood_definition": "union of wall boxes expanded 0.08m, z>=0.02m and z<=0.58m",
+      "wall_surface_abs_error_median_m": 0.002078498899936679,
+      "wall_surface_abs_error_p95_m": 0.035290305316448244,
+      "wall_surface_abs_error_mean_m": 0.007845395863254888,
+      "fraction_within_0.02m": 0.845945945945946,
+      "fraction_beyond_0.04m": 0.03513513513513514,
+      "reference_wall_surface_proximity_fraction": {
+        "cube1": 0.37718249222674,
+        "cube2": 0.24683090169815833
+      }
+    }
+  }
+}

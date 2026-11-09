@@ -1,0 +1,76 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+- Class: rviz_common/Views
+  Name: Views
+- Class: rviz_common/Tool Properties
+  Name: Tool Properties
+Visualization Manager:
+  Class: ''
+  Enabled: true
+  Name: root
+  Global Options:
+    Fixed Frame: base_link
+    Frame Rate: 30
+    Background Color: 35; 35; 35
+  Displays:
+  - Class: nvblox_rviz_plugin/NvbloxMesh
+    Name: Official incremental RGB Mesh
+    Enabled: true
+    Value: true
+    Topic:
+      Value: /in_hand_shader_test/mesh
+      Depth: 5
+      Durability Policy: Volatile
+      Reliability Policy: Reliable
+      History Policy: Keep Last
+    Cut Ceiling: false
+    Ceiling Height: 2.0
+  Tools:
+  - Class: rviz_default_plugins/MoveCamera
+  - Class: rviz_default_plugins/Interact
+  - Class: rviz_default_plugins/Select
+  - Class: rviz_default_plugins/FocusCamera
+  - Class: rviz_default_plugins/Measure
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Name: Whole obstacle group
+      Target Frame: <Fixed Frame>
+      Distance: 2.4
+      Pitch: 0.55
+      Yaw: 2.5
+      Focal Point:
+        X: 0.4
+        Y: 0.075
+        Z: 0.3
+      Near Clip Distance: 0.01
+    Saved:
+    - Class: rviz_default_plugins/Orbit
+      Name: Whole obstacle group
+      Target Frame: <Fixed Frame>
+      Distance: 2.4
+      Pitch: 0.55
+      Yaw: 2.5
+      Focal Point:
+        X: 0.4
+        Y: 0.075
+        Z: 0.3
+      Near Clip Distance: 0.01
+    - Class: rviz_default_plugins/Orbit
+      Name: Top overview
+      Target Frame: <Fixed Frame>
+      Distance: 2.4
+      Pitch: 1.55
+      Yaw: 0.0
+      Focal Point:
+        X: 0.4
+        Y: 0.075
+        Z: 0.3
+      Near Clip Distance: 0.01
+Window Geometry:
+  Width: 1440
+  Height: 900

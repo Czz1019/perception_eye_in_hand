@@ -1,0 +1,180 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+- Class: rviz_common/Views
+  Name: Views
+- Class: rviz_common/Tool Properties
+  Name: Tool Properties
+Visualization Manager:
+  Class: ''
+  Global Options:
+    Fixed Frame: base_link
+    Background Color: 35; 35; 35
+    Frame Rate: 30
+  Displays:
+  - Class: rviz_default_plugins/Grid
+    Name: Base Grid
+    Enabled: true
+    Cell Size: 0.1
+  - Class: rviz_default_plugins/PointCloud2
+    Name: ESDF Inside - RED (not RGB texture)
+    Enabled: false
+    Topic:
+      Value: /ur7e_nvblox/esdf_occupied
+      Reliability Policy: Reliable
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 1
+    Position Transformer: XYZ
+    Color Transformer: RGB8
+    Style: Points
+    Size (Pixels): 3
+    Decay Time: 0
+  - Class: rviz_default_plugins/Marker
+    Name: Color Surface Voxels - Camera RGB (optional)
+    Enabled: false
+    Topic:
+      Value: /ur7e_nvblox/color_layer_marker
+      Reliability Policy: Reliable
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 1
+  - Class: rviz_default_plugins/MarkerArray
+    Name: Surface Mesh - Camera RGB
+    Enabled: true
+    Topic:
+      Value: /ur7e_nvblox/mesh_markers
+      Reliability Policy: Reliable
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 10
+  - Class: rviz_default_plugins/Path
+    Name: Camera Path - GREEN (robot TF)
+    Enabled: true
+    Topic:
+      Value: /ur7e_nvblox/camera_path
+      Reliability Policy: Reliable
+      Durability Policy: Transient Local
+      History Policy: Keep Last
+      Depth: 1
+    Color: 25; 255; 0
+    Line Style: Lines
+    Line Width: 0.01
+    Pose Style: None
+    Buffer Length: 1
+  - Class: rviz_default_plugins/PointCloud2
+    Name: ESDF Band - RED inside / YELLOW-CYAN-BLUE free
+    Enabled: false
+    Topic:
+      Value: /ur7e_nvblox/esdf_distance_band
+      Reliability Policy: Best Effort
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 1
+    Position Transformer: XYZ
+    Color Transformer: RGB8
+    Style: Points
+    Size (Pixels): 3
+    Decay Time: 0
+  - Class: rviz_default_plugins/Pose
+    Name: Depth Camera Pose
+    Enabled: false
+    Topic:
+      Value: /ur7e_nvblox/camera_pose
+      Reliability Policy: Best Effort
+  - Class: rviz_default_plugins/TF
+    Name: TF
+    Enabled: false
+  - Class: rviz_default_plugins/Image
+    Name: RGB Input - raw camera image
+    Enabled: false
+    Topic:
+      Value: /camera/color/image_raw
+      Reliability Policy: Best Effort
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 1
+    Transport Hint: raw
+    Normalize Range: true
+  - Class: rviz_default_plugins/Path
+    Name: Planned camera route - CYAN
+    Enabled: true
+    Topic:
+      Value: /ur7e_scan/planned_camera_path
+      Reliability Policy: Reliable
+      Durability Policy: Transient Local
+      History Policy: Keep Last
+      Depth: 1
+    Color: 0; 220; 255
+    Line Style: Lines
+    Line Width: 0.008
+    Pose Style: None
+    Pose Axes Length: 0.06
+    Pose Axes Radius: 0.005
+    Buffer Length: 1
+  - Class: rviz_default_plugins/MarkerArray
+    Name: Scan view directions - CYAN (planned)
+    Enabled: true
+    Topic:
+      Value: /ur7e_scan/view_markers
+      Reliability Policy: Reliable
+      Durability Policy: Transient Local
+      History Policy: Keep Last
+      Depth: 1
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 2.4
+      Focal Point:
+        X: 0.4
+        Y: 0.075
+        Z: 0.3
+      Pitch: 0.55
+      Yaw: 2.5
+      Name: Current View
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz_default_plugins)
+      Near Clip Distance: 0.01
+    Saved:
+    - Class: rviz_default_plugins/Orbit
+      Distance: 2.4
+      Focal Point:
+        X: 0.4
+        Y: 0.075
+        Z: 0.3
+      Pitch: 0.55
+      Yaw: 2.5
+      Name: Whole obstacle group
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz_default_plugins)
+      Near Clip Distance: 0.01
+    - Class: rviz_default_plugins/Orbit
+      Distance: 2.4
+      Focal Point:
+        X: 0.4
+        Y: 0.075
+        Z: 0.3
+      Pitch: 1.55
+      Yaw: 0.0
+      Name: Top overview
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz_default_plugins)
+      Near Clip Distance: 0.01
+  Enabled: true
+  Name: root
+  Value: true
+  Tools:
+  - Class: rviz_default_plugins/MoveCamera
+  - Class: rviz_default_plugins/Interact
+    Hide Inactive Objects: true
+  - Class: rviz_default_plugins/Select
+  - Class: rviz_default_plugins/FocusCamera
+  - Class: rviz_default_plugins/Measure
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+Window Geometry:
+  Width: 1280
+  Height: 900
+  X: 100
+  Y: 100

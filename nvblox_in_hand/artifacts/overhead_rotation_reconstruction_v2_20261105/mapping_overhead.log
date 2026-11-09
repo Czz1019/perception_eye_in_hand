@@ -1,0 +1,1042 @@
+[INFO] [launch]: All log files can be found below /home/czz/perception_eye_in_hand/nvblox_in_hand/log/ros/2026-11-05-12-27-28-669477-czz-Legion-Y7000P-IRH8-85192
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [mapper_node-1]: process started with pid [85250]
+[INFO] [robot_pose.py-2]: process started with pid [85252]
+[mapper_node-1] 1793852848.890173 [129] mapper_nod: selected interface "lo" is not multicast-capable: disabling multicast
+[mapper_node-1] [INFO] [1793852848.895557840] [nvblox_node]: Create nvblox cuda stream with type: kBlocking
+[mapper_node-1] I1105 12:27:28.905313 85250 block_memory_pool_impl.h:65] Expanding the memory pool with 2048 blocks. Number of allocated blocks: 2048
+[mapper_node-1] I1105 12:27:28.910439 85250 gpu_hash_interface_impl.cuh:83] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[mapper_node-1] I1105 12:27:28.911993 85250 layer_cake_impl.h:32] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+[mapper_node-1] I1105 12:27:28.915949 85250 block_memory_pool_impl.h:65] Expanding the memory pool with 2048 blocks. Number of allocated blocks: 2048
+[mapper_node-1] I1105 12:27:28.916065 85250 gpu_hash_interface_impl.cuh:83] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[robot_pose.py-2] 1793852848.916943 [129]    python3: selected interface "lo" is not multicast-capable: disabling multicast
+[mapper_node-1] I1105 12:27:28.917661 85250 layer_cake_impl.h:32] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+[mapper_node-1] I1105 12:27:28.921491 85250 block_memory_pool_impl.h:65] Expanding the memory pool with 2048 blocks. Number of allocated blocks: 2048
+[mapper_node-1] I1105 12:27:28.921610 85250 gpu_hash_interface_impl.cuh:83] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[mapper_node-1] I1105 12:27:28.922025 85250 layer_cake_impl.h:32] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+[mapper_node-1] I1105 12:27:28.924876 85250 block_memory_pool_impl.h:65] Expanding the memory pool with 2048 blocks. Number of allocated blocks: 2048
+[mapper_node-1] I1105 12:27:28.925614 85250 gpu_hash_interface_impl.cuh:83] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[mapper_node-1] I1105 12:27:28.927090 85250 layer_cake_impl.h:32] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+[mapper_node-1] I1105 12:27:28.930958 85250 block_memory_pool_impl.h:65] Expanding the memory pool with 2048 blocks. Number of allocated blocks: 2048
+[mapper_node-1] I1105 12:27:28.931996 85250 gpu_hash_interface_impl.cuh:83] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[mapper_node-1] I1105 12:27:28.932039 85250 layer_cake_impl.h:32] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+[mapper_node-1] I1105 12:27:28.932206 85250 block_memory_pool_impl.h:65] Expanding the memory pool with 2048 blocks. Number of allocated blocks: 2048
+[mapper_node-1] I1105 12:27:28.932328 85250 gpu_hash_interface_impl.cuh:83] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[mapper_node-1] I1105 12:27:28.932369 85250 layer_cake_impl.h:32] Adding Layer with type: N6nvblox10BlockLayerINS_9MeshBlockEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+[mapper_node-1] I1105 12:27:28.932377 85250 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[mapper_node-1] I1105 12:27:28.932380 85250 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[mapper_node-1] I1105 12:27:28.932384 85250 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[mapper_node-1] I1105 12:27:28.932386 85250 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[mapper_node-1] I1105 12:27:28.932389 85250 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[mapper_node-1] I1105 12:27:28.932391 85250 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_10BlockLayerINS_9MeshBlockEEEEE to LayerCake.
+[mapper_node-1] I1105 12:27:28.936656 85250 block_memory_pool_impl.h:65] Expanding the memory pool with 2048 blocks. Number of allocated blocks: 2048
+[mapper_node-1] I1105 12:27:28.936920 85250 gpu_hash_interface_impl.cuh:83] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[mapper_node-1] I1105 12:27:28.936960 85250 layer_cake_impl.h:32] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+[mapper_node-1] I1105 12:27:28.940747 85250 block_memory_pool_impl.h:65] Expanding the memory pool with 2048 blocks. Number of allocated blocks: 2048
+[mapper_node-1] I1105 12:27:28.940958 85250 gpu_hash_interface_impl.cuh:83] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[mapper_node-1] I1105 12:27:28.940994 85250 layer_cake_impl.h:32] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+[mapper_node-1] I1105 12:27:28.944736 85250 block_memory_pool_impl.h:65] Expanding the memory pool with 2048 blocks. Number of allocated blocks: 2048
+[mapper_node-1] I1105 12:27:28.944837 85250 gpu_hash_interface_impl.cuh:83] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[mapper_node-1] I1105 12:27:28.944869 85250 layer_cake_impl.h:32] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+[mapper_node-1] I1105 12:27:28.947703 85250 block_memory_pool_impl.h:65] Expanding the memory pool with 2048 blocks. Number of allocated blocks: 2048
+[mapper_node-1] I1105 12:27:28.947796 85250 gpu_hash_interface_impl.cuh:83] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[mapper_node-1] I1105 12:27:28.947827 85250 layer_cake_impl.h:32] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+[mapper_node-1] I1105 12:27:28.951632 85250 block_memory_pool_impl.h:65] Expanding the memory pool with 2048 blocks. Number of allocated blocks: 2048
+[mapper_node-1] I1105 12:27:28.951735 85250 gpu_hash_interface_impl.cuh:83] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[mapper_node-1] I1105 12:27:28.951766 85250 layer_cake_impl.h:32] Adding Layer with type: N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+[mapper_node-1] I1105 12:27:28.951898 85250 block_memory_pool_impl.h:65] Expanding the memory pool with 2048 blocks. Number of allocated blocks: 2048
+[mapper_node-1] I1105 12:27:28.951987 85250 gpu_hash_interface_impl.cuh:83] Creating a GPUHashImpl with requested capacity of 4096 blocks. Real capacity: 4096
+[mapper_node-1] I1105 12:27:28.952016 85250 layer_cake_impl.h:32] Adding Layer with type: N6nvblox10BlockLayerINS_9MeshBlockEEE, voxel_size: 0.03, and memory_type: kDevice to LayerCake.
+[mapper_node-1] I1105 12:27:28.952019 85250 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEE to LayerCake.
+[mapper_node-1] I1105 12:27:28.952021 85250 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_10ColorVoxelEEEEE to LayerCake.
+[mapper_node-1] I1105 12:27:28.952023 85250 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14FreespaceVoxelEEEEE to LayerCake.
+[mapper_node-1] I1105 12:27:28.952025 85250 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEE to LayerCake.
+[mapper_node-1] I1105 12:27:28.952026 85250 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_15VoxelBlockLayerINS_9EsdfVoxelEEEEE to LayerCake.
+[mapper_node-1] I1105 12:27:28.952032 85250 layer_cake_streamer_impl.h:79] Adding Streamer with type: N6nvblox25LayerStreamerOldestBlocksINS_10BlockLayerINS_9MeshBlockEEEEE to LayerCake.
+[mapper_node-1] [INFO] [1793852848.952824513] [nvblox_node]: Initialize Mapper:
+[mapper_node-1] [INFO] [1793852848.952851141] [nvblox_node]: static_mapper.do_depth_preprocessing: 0
+[mapper_node-1] [INFO] [1793852848.952857912] [nvblox_node]: static_mapper.depth_preprocessing_num_dilations: 3
+[mapper_node-1] [INFO] [1793852848.952866155] [nvblox_node]: static_mapper.esdf_slice_min_height: 0
+[mapper_node-1] [INFO] [1793852848.952870077] [nvblox_node]: static_mapper.esdf_slice_max_height: 0.8
+[mapper_node-1] [INFO] [1793852848.952873765] [nvblox_node]: static_mapper.esdf_slice_height: 0.25
+[mapper_node-1] [INFO] [1793852848.952876985] [nvblox_node]: static_mapper.exclude_last_view_from_decay: 1
+[mapper_node-1] [INFO] [1793852848.952880383] [nvblox_node]: static_mapper.projective_integrator_max_integration_distance_m: 3
+[mapper_node-1] [INFO] [1793852848.952884622] [nvblox_node]: static_mapper.lidar_projective_integrator_max_integration_distance_m: 10
+[mapper_node-1] [INFO] [1793852848.952889084] [nvblox_node]: static_mapper.projective_integrator_truncation_distance_vox: 4
+[mapper_node-1] [INFO] [1793852848.952894694] [nvblox_node]: static_mapper.projective_integrator_weighting_mode: inverse_square_tsdf_distance_penalty
+[mapper_node-1] [INFO] [1793852848.952899291] [nvblox_node]: static_mapper.projective_integrator_max_weight: 5
+[mapper_node-1] [INFO] [1793852848.952902987] [nvblox_node]: static_mapper.projective_tsdf_integrator_invalid_depth_decay_factor: -1
+[mapper_node-1] [INFO] [1793852848.952906659] [nvblox_node]: static_mapper.free_region_occupancy_probability: 0.45
+[mapper_node-1] [INFO] [1793852848.952910123] [nvblox_node]: static_mapper.occupied_region_occupancy_probability: 0.55
+[mapper_node-1] [INFO] [1793852848.952913551] [nvblox_node]: static_mapper.unobserved_region_occupancy_probability: 0.5
+[mapper_node-1] [INFO] [1793852848.952917939] [nvblox_node]: static_mapper.occupied_region_half_width_m: 0.1
+[mapper_node-1] [INFO] [1793852848.952921238] [nvblox_node]: static_mapper.raycast_subsampling_factor: 4
+[mapper_node-1] [INFO] [1793852848.952924513] [nvblox_node]: static_mapper.workspace_bounds_type: unbounded
+[mapper_node-1] [INFO] [1793852848.952932069] [nvblox_node]: static_mapper.workspace_bounds_min_height_m: -0.5
+[mapper_node-1] [INFO] [1793852848.952935503] [nvblox_node]: static_mapper.workspace_bounds_max_height_m: 2
+[mapper_node-1] [INFO] [1793852848.952938737] [nvblox_node]: static_mapper.workspace_bounds_min_corner_x_m: 0
+[mapper_node-1] [INFO] [1793852848.952941951] [nvblox_node]: static_mapper.workspace_bounds_max_corner_x_m: 0
+[mapper_node-1] [INFO] [1793852848.952945180] [nvblox_node]: static_mapper.workspace_bounds_min_corner_y_m: 0
+[mapper_node-1] [INFO] [1793852848.952950497] [nvblox_node]: static_mapper.workspace_bounds_max_corner_y_m: 0
+[mapper_node-1] [INFO] [1793852848.952953920] [nvblox_node]: static_mapper.esdf_integrator_min_weight: 0.1
+[mapper_node-1] [INFO] [1793852848.952957298] [nvblox_node]: static_mapper.esdf_integrator_max_site_distance_vox: 2
+[mapper_node-1] [INFO] [1793852848.952960571] [nvblox_node]: static_mapper.esdf_integrator_max_distance_m: 2
+[mapper_node-1] [INFO] [1793852848.952963858] [nvblox_node]: static_mapper.mesh_integrator_min_weight: 0.1
+[mapper_node-1] [INFO] [1793852848.952969062] [nvblox_node]: static_mapper.mesh_integrator_weld_vertices: 1
+[mapper_node-1] [INFO] [1793852848.952973306] [nvblox_node]: static_mapper.decay_integrator_deallocate_decayed_blocks: 1
+[mapper_node-1] [INFO] [1793852848.952976704] [nvblox_node]: static_mapper.tsdf_decay_factor: 0.95
+[mapper_node-1] [INFO] [1793852848.952981228] [nvblox_node]: static_mapper.tsdf_decayed_weight_threshold: 0.001
+[mapper_node-1] [INFO] [1793852848.952984379] [nvblox_node]: static_mapper.tsdf_set_free_distance_on_decayed: 0
+[mapper_node-1] [INFO] [1793852848.952987560] [nvblox_node]: static_mapper.tsdf_decayed_free_distance_vox: 4
+[mapper_node-1] [INFO] [1793852848.952990806] [nvblox_node]: static_mapper.free_region_decay_probability: 0.55
+[mapper_node-1] [INFO] [1793852848.952994109] [nvblox_node]: static_mapper.occupied_region_decay_probability: 0.4
+[mapper_node-1] [INFO] [1793852848.952997241] [nvblox_node]: static_mapper.occupancy_decay_to_free: 0
+[mapper_node-1] [INFO] [1793852848.953000508] [nvblox_node]: static_mapper.max_tsdf_distance_for_occupancy_m: 0.15
+[mapper_node-1] [INFO] [1793852848.953006277] [nvblox_node]: static_mapper.max_unobserved_to_keep_consecutive_occupancy_ms: 200
+[mapper_node-1] [INFO] [1793852848.953010376] [nvblox_node]: static_mapper.min_duration_since_occupied_for_freespace_ms: 1000
+[mapper_node-1] [INFO] [1793852848.953013445] [nvblox_node]: static_mapper.min_consecutive_occupancy_duration_for_reset_ms: 2000
+[mapper_node-1] [INFO] [1793852848.953028621] [nvblox_node]: static_mapper.check_neighborhood: 1
+[mapper_node-1] [INFO] [1793852848.953031728] [nvblox_node]: Initialize Mapper:
+[mapper_node-1] [INFO] [1793852848.953035394] [nvblox_node]: dynamic_mapper.do_depth_preprocessing: 0
+[mapper_node-1] [INFO] [1793852848.953038656] [nvblox_node]: dynamic_mapper.depth_preprocessing_num_dilations: 4
+[mapper_node-1] [INFO] [1793852848.953041902] [nvblox_node]: dynamic_mapper.esdf_slice_min_height: 0
+[mapper_node-1] [INFO] [1793852848.953045048] [nvblox_node]: dynamic_mapper.esdf_slice_max_height: 1
+[mapper_node-1] [INFO] [1793852848.953049020] [nvblox_node]: dynamic_mapper.esdf_slice_height: 1
+[mapper_node-1] [INFO] [1793852848.953052063] [nvblox_node]: dynamic_mapper.exclude_last_view_from_decay: 0
+[mapper_node-1] [INFO] [1793852848.953055252] [nvblox_node]: dynamic_mapper.projective_integrator_max_integration_distance_m: 7
+[mapper_node-1] [INFO] [1793852848.953058838] [nvblox_node]: dynamic_mapper.lidar_projective_integrator_max_integration_distance_m: 10
+[mapper_node-1] [INFO] [1793852848.953062174] [nvblox_node]: dynamic_mapper.projective_integrator_truncation_distance_vox: 4
+[mapper_node-1] [INFO] [1793852848.953065386] [nvblox_node]: dynamic_mapper.projective_integrator_weighting_mode: kInverseSquareWeight
+[mapper_node-1] [WARN] [1793852848.953068530] [nvblox_node]: Requested weighting function: "kInverseSquareWeight" not recognized. Defaulting to: kInverseSquareWeight
+[mapper_node-1] [INFO] [1793852848.953073128] [nvblox_node]: dynamic_mapper.projective_integrator_max_weight: 5
+[mapper_node-1] [INFO] [1793852848.953077731] [nvblox_node]: dynamic_mapper.projective_tsdf_integrator_invalid_depth_decay_factor: -1
+[mapper_node-1] [INFO] [1793852848.953081124] [nvblox_node]: dynamic_mapper.free_region_occupancy_probability: 0.3
+[mapper_node-1] [INFO] [1793852848.953084364] [nvblox_node]: dynamic_mapper.occupied_region_occupancy_probability: 0.7
+[mapper_node-1] [INFO] [1793852848.953087556] [nvblox_node]: dynamic_mapper.unobserved_region_occupancy_probability: 0.5
+[mapper_node-1] [INFO] [1793852848.953090791] [nvblox_node]: dynamic_mapper.occupied_region_half_width_m: 0.1
+[mapper_node-1] [INFO] [1793852848.953093874] [nvblox_node]: dynamic_mapper.raycast_subsampling_factor: 4
+[mapper_node-1] [INFO] [1793852848.953097009] [nvblox_node]: dynamic_mapper.workspace_bounds_type: kUnbounded
+[mapper_node-1] [WARN] [1793852848.953100295] [nvblox_node]: Requested workspace bounds type: "kUnbounded" not recognized. Defaulting to: kUnbounded
+[mapper_node-1] [INFO] [1793852848.953105432] [nvblox_node]: dynamic_mapper.workspace_bounds_min_height_m: 0
+[mapper_node-1] [INFO] [1793852848.953108795] [nvblox_node]: dynamic_mapper.workspace_bounds_max_height_m: 1
+[mapper_node-1] [INFO] [1793852848.953112044] [nvblox_node]: dynamic_mapper.workspace_bounds_min_corner_x_m: 0
+[mapper_node-1] [INFO] [1793852848.953115703] [nvblox_node]: dynamic_mapper.workspace_bounds_max_corner_x_m: 0
+[mapper_node-1] [INFO] [1793852848.953119603] [nvblox_node]: dynamic_mapper.workspace_bounds_min_corner_y_m: 2
+[mapper_node-1] [INFO] [1793852848.953122704] [nvblox_node]: dynamic_mapper.workspace_bounds_max_corner_y_m: 2
+[mapper_node-1] [INFO] [1793852848.953126249] [nvblox_node]: dynamic_mapper.esdf_integrator_min_weight: 0.0001
+[mapper_node-1] [INFO] [1793852848.953129365] [nvblox_node]: dynamic_mapper.esdf_integrator_max_site_distance_vox: 1
+[mapper_node-1] [INFO] [1793852848.953132490] [nvblox_node]: dynamic_mapper.esdf_integrator_max_distance_m: 2
+[mapper_node-1] [INFO] [1793852848.953135718] [nvblox_node]: dynamic_mapper.mesh_integrator_min_weight: 0.0001
+[mapper_node-1] [INFO] [1793852848.953138773] [nvblox_node]: dynamic_mapper.mesh_integrator_weld_vertices: 1
+[mapper_node-1] [INFO] [1793852848.953141876] [nvblox_node]: dynamic_mapper.decay_integrator_deallocate_decayed_blocks: 1
+[mapper_node-1] [INFO] [1793852848.953146147] [nvblox_node]: dynamic_mapper.tsdf_decay_factor: 0.95
+[mapper_node-1] [INFO] [1793852848.953149472] [nvblox_node]: dynamic_mapper.tsdf_decayed_weight_threshold: 0.001
+[mapper_node-1] [INFO] [1793852848.953152541] [nvblox_node]: dynamic_mapper.tsdf_set_free_distance_on_decayed: 0
+[mapper_node-1] [INFO] [1793852848.953157269] [nvblox_node]: dynamic_mapper.tsdf_decayed_free_distance_vox: 4
+[mapper_node-1] [INFO] [1793852848.953162093] [nvblox_node]: dynamic_mapper.free_region_decay_probability: 0.55
+[mapper_node-1] [INFO] [1793852848.953166680] [nvblox_node]: dynamic_mapper.occupied_region_decay_probability: 0.4
+[mapper_node-1] [INFO] [1793852848.953171259] [nvblox_node]: dynamic_mapper.occupancy_decay_to_free: 0
+[mapper_node-1] [INFO] [1793852848.953176794] [nvblox_node]: dynamic_mapper.max_tsdf_distance_for_occupancy_m: 0.15
+[mapper_node-1] [INFO] [1793852848.953184169] [nvblox_node]: dynamic_mapper.max_unobserved_to_keep_consecutive_occupancy_ms: 200
+[mapper_node-1] [INFO] [1793852848.953187352] [nvblox_node]: dynamic_mapper.min_duration_since_occupied_for_freespace_ms: 1000
+[mapper_node-1] [INFO] [1793852848.953190413] [nvblox_node]: dynamic_mapper.min_consecutive_occupancy_duration_for_reset_ms: 2000
+[mapper_node-1] [INFO] [1793852848.953193472] [nvblox_node]: dynamic_mapper.check_neighborhood: 1
+[mapper_node-1] [INFO] [1793852848.953197024] [nvblox_node]: Initialize MultiMapper:
+[mapper_node-1] [INFO] [1793852848.953200855] [nvblox_node]: multi_mapper.connected_mask_component_size_threshold: 2000
+[mapper_node-1] [INFO] [1793852848.953204199] [nvblox_node]: multi_mapper.remove_small_connected_components: 1
+[mapper_node-1] [INFO] [1793852848.953249542] [nvblox_node]: NvbloxNode::subscribeToTopics()
+[mapper_node-1] [INFO] [1793852848.953290349] [nvblox_node]: Subscribing input topics with QoS: SENSOR_DATA
+[mapper_node-1] [INFO] [1793852848.953831322] [NitrosContext]: [NitrosContext] Loading extension: gxf/lib/std/libgxf_std.so
+[mapper_node-1] [INFO] [1793852848.954569455] [NitrosContext]: [NitrosContext] Loading extension: gxf/lib/libgxf_isaac_gxf_helpers.so
+[mapper_node-1] [INFO] [1793852848.955934192] [NitrosContext]: [NitrosContext] Loading extension: gxf/lib/libgxf_isaac_sight.so
+[mapper_node-1] [INFO] [1793852848.957660473] [NitrosContext]: [NitrosContext] Loading extension: gxf/lib/libgxf_isaac_atlas.so
+[mapper_node-1] [33m2026-11-05 12:27:28.962 WARN  gxf/std/program.cpp@538: No GXF scheduler specified.[0m
+[mapper_node-1] [INFO] [1793852848.962656651] [NitrosContext]: [NitrosContext] Loading extension: gxf/lib/multimedia/libgxf_multimedia.so
+[mapper_node-1] [INFO] [1793852848.964890018] [nvblox_node.ManagedNitrosSubscriber]: Starting Managed Nitros Subscriber
+[mapper_node-1] [INFO] [1793852848.965451904] [nvblox_node.ManagedNitrosSubscriber]: Starting Managed Nitros Subscriber
+[mapper_node-1] [INFO] [1793852848.965654407] [nvblox_node]: NvbloxNode::setupTimers()
+[mapper_node-1] [INFO] [1793852848.965681139] [nvblox_node]: NvbloxNode::advertiseTopics()
+[mapper_node-1] [INFO] [1793852848.966543669] [nvblox_node]: NvbloxNode::advertiseServices()
+[mapper_node-1] [INFO] [1793852848.966992523] [nvblox_node]: Started up nvblox node in frame base_link and voxel size 0.03
+[mapper_node-1] [INFO] [1793852848.967002302] [nvblox_node]: Mapping type: kStaticTsdf
+[mapper_node-1] [INFO] [1793852848.967431786] [nvblox_node]: nvblox parameters:
+[mapper_node-1] nvblox_node
+[mapper_node-1]     cuda_stream_type: kBlocking
+[mapper_node-1]     global_frame: base_link
+[mapper_node-1]     voxel_size: 0.030000
+[mapper_node-1]     max_back_projection_distance: 7.000000
+[mapper_node-1]     layer_visualization_min_tsdf_weight: 0.100000
+[mapper_node-1]     layer_visualization_exclusion_height_m: 2.000000
+[mapper_node-1]     layer_visualization_exclusion_radius_m: 7.000000
+[mapper_node-1]     layer_streamer_bandwidth_limit_mbps: -1.000000
+[mapper_node-1]     distance_map_unknown_value_optimistic: 1000.000000
+[mapper_node-1]     distance_map_unknown_value_pessimistic: -1000.000000
+[mapper_node-1]     esdf_mode: 3d
+[mapper_node-1]     mapping_type: static_tsdf
+[mapper_node-1]     pose_frame: camera_link
+[mapper_node-1]     map_clearing_frame_id: base_link
+[mapper_node-1]     after_shutdown_map_save_path: 
+[mapper_node-1]     esdf_slice_bounds_visualization_attachment_frame_id: base_link
+[mapper_node-1]     workspace_height_bounds_visualization_attachment_frame_id: base_link
+[mapper_node-1]     publish_esdf_distance_slice: 1
+[mapper_node-1]     use_color: 1
+[mapper_node-1]     use_depth: 1
+[mapper_node-1]     use_segmentation: 0
+[mapper_node-1]     use_lidar: 0
+[mapper_node-1]     use_non_equal_vertical_fov_lidar_params: 0
+[mapper_node-1]     print_timings_to_console: 0
+[mapper_node-1]     print_rates_to_console: 1
+[mapper_node-1]     print_queue_drops_to_console: 1
+[mapper_node-1]     print_delays_to_console: 1
+[mapper_node-1]     layer_visualization_undo_gamma_correction: 0
+[mapper_node-1]     output_pessimistic_distance_map: 1
+[mapper_node-1]     num_cameras: 1
+[mapper_node-1]     lidar_width: 1800
+[mapper_node-1]     lidar_height: 16
+[mapper_node-1]     tick_period_ms: 10
+[mapper_node-1]     print_statistics_on_console_period_ms: 5000
+[mapper_node-1]     maximum_input_queue_length: 10
+[mapper_node-1]     back_projection_subsampling: 1
+[mapper_node-1]     lidar_vertical_fov_rad: 0.523599
+[mapper_node-1]     lidar_min_valid_range_m: 0.100000
+[mapper_node-1]     lidar_max_valid_range_m: 50.000000
+[mapper_node-1]     min_angle_below_zero_elevation_rad: 0.349066
+[mapper_node-1]     max_angle_above_zero_elevation_rad: 0.261799
+[mapper_node-1]     esdf_slice_bounds_visualization_side_length: 10.000000
+[mapper_node-1]     workspace_height_bounds_visualization_side_length: 10.000000
+[mapper_node-1]     integrate_depth_rate_hz: 40.000000
+[mapper_node-1]     integrate_color_rate_hz: 40.000000
+[mapper_node-1]     integrate_lidar_rate_hz: 0.000000
+[mapper_node-1]     update_mesh_rate_hz: 5.000000
+[mapper_node-1]     update_esdf_rate_hz: 33.400002
+[mapper_node-1]     publish_layer_rate_hz: 5.000000
+[mapper_node-1]     publish_debug_vis_rate_hz: 5.000000
+[mapper_node-1]     decay_tsdf_rate_hz: 0.000000
+[mapper_node-1]     decay_dynamic_occupancy_rate_hz: 10.000000
+[mapper_node-1]     clear_map_outside_radius_rate_hz: 0.000000
+[mapper_node-1]     map_clearing_radius_m: -1.000000
+[mapper_node-1]     esdf_and_gradients_unobserved_value: -1000.000000
+[mapper_node-1]     multi_mapper
+[mapper_node-1]         connected_mask_component_size_threshold: 2000
+[mapper_node-1]         background_mapper
+[mapper_node-1]             voxel_size_m: 0.030000
+[mapper_node-1]             memory_type: kDevice
+[mapper_node-1]             projective_layer_type: kTsdf
+[mapper_node-1]             esdf_mode: kUnset
+[mapper_node-1]             do_depth_preprocessing: 0
+[mapper_node-1]             depth_preprocessing_num_dilations: 3
+[mapper_node-1]             exclude_last_view_from_decay: 1
+[mapper_node-1]             camera_tsdf_integrator
+[mapper_node-1]                 max_weight:: 5.000000
+[mapper_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[mapper_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[mapper_node-1]                 weighting_function_type:: kInverseSquareTsdfDistancePenalty
+[mapper_node-1]                 invalid_depth_decay_factor:: -1.000000
+[mapper_node-1]                 projective_integrator
+[mapper_node-1]                     lidar_linear_interpolation_max_allowable_difference_vox:: 2.000000
+[mapper_node-1]                     lidar_nearest_interpolation_max_allowable_dist_to_ray_vox:: 0.500000
+[mapper_node-1]                     truncation_distance_vox:: 4.000000
+[mapper_node-1]                     max_integration_distance_m:: 3.000000
+[mapper_node-1]                     view_calculator
+[mapper_node-1]                         raycast_subsampling_factor: 4
+[mapper_node-1]                         workspace_bounds_type: kUnbounded
+[mapper_node-1]                         workspace_bounds_min_height_m: -0.500000
+[mapper_node-1]                         workspace_bounds_max_height_m: 2.000000
+[mapper_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_min_corner_y_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_corner_y_m: 0.000000
+[mapper_node-1]             lidar_tsdf_integrator
+[mapper_node-1]                 max_weight:: 5.000000
+[mapper_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[mapper_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[mapper_node-1]                 weighting_function_type:: kInverseSquareWeight
+[mapper_node-1]                 invalid_depth_decay_factor:: -1.000000
+[mapper_node-1]                 projective_integrator
+[mapper_node-1]                     lidar_linear_interpolation_max_allowable_difference_vox:: 2.000000
+[mapper_node-1]                     lidar_nearest_interpolation_max_allowable_dist_to_ray_vox:: 0.500000
+[mapper_node-1]                     truncation_distance_vox:: 4.000000
+[mapper_node-1]                     max_integration_distance_m:: 10.000000
+[mapper_node-1]                     view_calculator
+[mapper_node-1]                         raycast_subsampling_factor: 4
+[mapper_node-1]                         workspace_bounds_type: kUnbounded
+[mapper_node-1]                         workspace_bounds_min_height_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_height_m: 1.000000
+[mapper_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[mapper_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[mapper_node-1]             projective_color_integrator
+[mapper_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[mapper_node-1]                 max_weight:: 5.000000
+[mapper_node-1]                 weighting_function_type:: kInverseSquareTsdfDistancePenalty
+[mapper_node-1]                 projective_integrator
+[mapper_node-1]                     lidar_linear_interpolation_max_allowable_difference_vox:: 2.000000
+[mapper_node-1]                     lidar_nearest_interpolation_max_allowable_dist_to_ray_vox:: 0.500000
+[mapper_node-1]                     truncation_distance_vox:: 4.000000
+[mapper_node-1]                     max_integration_distance_m:: 3.000000
+[mapper_node-1]                     view_calculator
+[mapper_node-1]                         raycast_subsampling_factor: 4
+[mapper_node-1]                         workspace_bounds_type: kUnbounded
+[mapper_node-1]                         workspace_bounds_min_height_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_height_m: 1.000000
+[mapper_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[mapper_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[mapper_node-1]                 view_calculator
+[mapper_node-1]                     raycast_subsampling_factor: 4
+[mapper_node-1]                     workspace_bounds_type: kUnbounded
+[mapper_node-1]                     workspace_bounds_min_height_m: -0.500000
+[mapper_node-1]                     workspace_bounds_max_height_m: 2.000000
+[mapper_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[mapper_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[mapper_node-1]                     workspace_bounds_min_corner_y_m: 0.000000
+[mapper_node-1]                     workspace_bounds_max_corner_y_m: 0.000000
+[mapper_node-1]             camera_occupancy_integrator
+[mapper_node-1]                 free_region_log_odds:: -0.200671
+[mapper_node-1]                 occupied_region_log_odds:: 0.200671
+[mapper_node-1]                 unobserved_region_log_odds:: 0.000000
+[mapper_node-1]                 occupied_region_half_width_m:: 0.100000
+[mapper_node-1]                 projective_integrator
+[mapper_node-1]                     lidar_linear_interpolation_max_allowable_difference_vox:: 2.000000
+[mapper_node-1]                     lidar_nearest_interpolation_max_allowable_dist_to_ray_vox:: 0.500000
+[mapper_node-1]                     truncation_distance_vox:: 4.000000
+[mapper_node-1]                     max_integration_distance_m:: 3.000000
+[mapper_node-1]                     view_calculator
+[mapper_node-1]                         raycast_subsampling_factor: 4
+[mapper_node-1]                         workspace_bounds_type: kUnbounded
+[mapper_node-1]                         workspace_bounds_min_height_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_height_m: 1.000000
+[mapper_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[mapper_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[mapper_node-1]             lidar_occupancy_integrator
+[mapper_node-1]                 free_region_log_odds:: -0.200671
+[mapper_node-1]                 occupied_region_log_odds:: 0.200671
+[mapper_node-1]                 unobserved_region_log_odds:: 0.000000
+[mapper_node-1]                 occupied_region_half_width_m:: 0.100000
+[mapper_node-1]                 projective_integrator
+[mapper_node-1]                     lidar_linear_interpolation_max_allowable_difference_vox:: 2.000000
+[mapper_node-1]                     lidar_nearest_interpolation_max_allowable_dist_to_ray_vox:: 0.500000
+[mapper_node-1]                     truncation_distance_vox:: 4.000000
+[mapper_node-1]                     max_integration_distance_m:: 10.000000
+[mapper_node-1]                     view_calculator
+[mapper_node-1]                         raycast_subsampling_factor: 4
+[mapper_node-1]                         workspace_bounds_type: kUnbounded
+[mapper_node-1]                         workspace_bounds_min_height_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_height_m: 1.000000
+[mapper_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[mapper_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[mapper_node-1]             esdf_integrator
+[mapper_node-1]                 max_esdf_distance_m:: 2.000000
+[mapper_node-1]                 max_tsdf_site_distance_vox:: 2.000000
+[mapper_node-1]                 tsdf_min_weight:: 0.100000
+[mapper_node-1]                 occupied_threshold_log_odds:: 0.000000
+[mapper_node-1]                 esdf_slice_min_height:: 0.000000
+[mapper_node-1]                 esdf_slice_max_height:: 0.800000
+[mapper_node-1]                 esdf_slice_height:: 0.250000
+[mapper_node-1]                 slice_height_above_plane_m:: 0.000000
+[mapper_node-1]                 slice_height_thickness_m:: 0.100000
+[mapper_node-1]             mesh_integrator
+[mapper_node-1]                 min_weight:: 0.100000
+[mapper_node-1]                 cutoff_distance_vox:: 5.000000
+[mapper_node-1]                 weld_vertices:: 1
+[mapper_node-1]             occupancy_decay_integrator
+[mapper_node-1]                 free_space_decay_log_odds:: 0.200671
+[mapper_node-1]                 occupied_space_decay_log_odds:: -0.405465
+[mapper_node-1]                 decay_to_log_odds_:: 0.000000
+[mapper_node-1]                 decay_integrator
+[mapper_node-1]                     deallocate_decayed_blocks:: 1
+[mapper_node-1]             tsdf_decay_integrator
+[mapper_node-1]                 decay_factor:: 0.950000
+[mapper_node-1]                 decayed_weight_theshold:: 0.001000
+[mapper_node-1]                 set_free_distance_on_decayed:: 0
+[mapper_node-1]                 free_distance_vox:: 4.000000
+[mapper_node-1]                 decay_integrator
+[mapper_node-1]                     deallocate_decayed_blocks:: 1
+[mapper_node-1]             freespace_integrator
+[mapper_node-1]                 max_tsdf_distance_for_occupancy_m:: 0.150000
+[mapper_node-1]                 max_unobserved_to_keep_consecutive_occupancy_ms:: 200
+[mapper_node-1]                 min_duration_since_occupied_for_freespace_ms:: 1000
+[mapper_node-1]                 min_consecutive_occupancy_duration_for_reset_ms:: 2000
+[mapper_node-1]                 check_neighborhood:: 1
+[mapper_node-1]         foreground_mapper
+[mapper_node-1]             voxel_size_m: 0.030000
+[mapper_node-1]             memory_type: kDevice
+[mapper_node-1]             projective_layer_type: kNone
+[mapper_node-1]             esdf_mode: kUnset
+[mapper_node-1]             do_depth_preprocessing: 0
+[mapper_node-1]             depth_preprocessing_num_dilations: 4
+[mapper_node-1]             exclude_last_view_from_decay: 0
+[mapper_node-1]             camera_tsdf_integrator
+[mapper_node-1]                 max_weight:: 5.000000
+[mapper_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[mapper_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[mapper_node-1]                 weighting_function_type:: kInverseSquareWeight
+[mapper_node-1]                 invalid_depth_decay_factor:: -1.000000
+[mapper_node-1]                 projective_integrator
+[mapper_node-1]                     lidar_linear_interpolation_max_allowable_difference_vox:: 2.000000
+[mapper_node-1]                     lidar_nearest_interpolation_max_allowable_dist_to_ray_vox:: 0.500000
+[mapper_node-1]                     truncation_distance_vox:: 4.000000
+[mapper_node-1]                     max_integration_distance_m:: 7.000000
+[mapper_node-1]                     view_calculator
+[mapper_node-1]                         raycast_subsampling_factor: 4
+[mapper_node-1]                         workspace_bounds_type: kUnbounded
+[mapper_node-1]                         workspace_bounds_min_height_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_height_m: 1.000000
+[mapper_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[mapper_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[mapper_node-1]             lidar_tsdf_integrator
+[mapper_node-1]                 max_weight:: 5.000000
+[mapper_node-1]                 marked_unobserved_voxels_distance_m:: -1.000000
+[mapper_node-1]                 marked_unobserved_voxels_weight:: 0.100000
+[mapper_node-1]                 weighting_function_type:: kInverseSquareWeight
+[mapper_node-1]                 invalid_depth_decay_factor:: -1.000000
+[mapper_node-1]                 projective_integrator
+[mapper_node-1]                     lidar_linear_interpolation_max_allowable_difference_vox:: 2.000000
+[mapper_node-1]                     lidar_nearest_interpolation_max_allowable_dist_to_ray_vox:: 0.500000
+[mapper_node-1]                     truncation_distance_vox:: 4.000000
+[mapper_node-1]                     max_integration_distance_m:: 10.000000
+[mapper_node-1]                     view_calculator
+[mapper_node-1]                         raycast_subsampling_factor: 4
+[mapper_node-1]                         workspace_bounds_type: kUnbounded
+[mapper_node-1]                         workspace_bounds_min_height_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_height_m: 1.000000
+[mapper_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[mapper_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[mapper_node-1]             projective_color_integrator
+[mapper_node-1]                 sphere_tracing_ray_subsampling_factor:: 4
+[mapper_node-1]                 max_weight:: 5.000000
+[mapper_node-1]                 weighting_function_type:: kInverseSquareWeight
+[mapper_node-1]                 projective_integrator
+[mapper_node-1]                     lidar_linear_interpolation_max_allowable_difference_vox:: 2.000000
+[mapper_node-1]                     lidar_nearest_interpolation_max_allowable_dist_to_ray_vox:: 0.500000
+[mapper_node-1]                     truncation_distance_vox:: 4.000000
+[mapper_node-1]                     max_integration_distance_m:: 7.000000
+[mapper_node-1]                     view_calculator
+[mapper_node-1]                         raycast_subsampling_factor: 4
+[mapper_node-1]                         workspace_bounds_type: kUnbounded
+[mapper_node-1]                         workspace_bounds_min_height_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_height_m: 1.000000
+[mapper_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[mapper_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[mapper_node-1]                 view_calculator
+[mapper_node-1]                     raycast_subsampling_factor: 4
+[mapper_node-1]                     workspace_bounds_type: kUnbounded
+[mapper_node-1]                     workspace_bounds_min_height_m: 0.000000
+[mapper_node-1]                     workspace_bounds_max_height_m: 1.000000
+[mapper_node-1]                     workspace_bounds_min_corner_x_m: 0.000000
+[mapper_node-1]                     workspace_bounds_max_corner_x_m: 0.000000
+[mapper_node-1]                     workspace_bounds_min_corner_y_m: 2.000000
+[mapper_node-1]                     workspace_bounds_max_corner_y_m: 2.000000
+[mapper_node-1]             camera_occupancy_integrator
+[mapper_node-1]                 free_region_log_odds:: -0.847298
+[mapper_node-1]                 occupied_region_log_odds:: 0.847298
+[mapper_node-1]                 unobserved_region_log_odds:: 0.000000
+[mapper_node-1]                 occupied_region_half_width_m:: 0.100000
+[mapper_node-1]                 projective_integrator
+[mapper_node-1]                     lidar_linear_interpolation_max_allowable_difference_vox:: 2.000000
+[mapper_node-1]                     lidar_nearest_interpolation_max_allowable_dist_to_ray_vox:: 0.500000
+[mapper_node-1]                     truncation_distance_vox:: 4.000000
+[mapper_node-1]                     max_integration_distance_m:: 7.000000
+[mapper_node-1]                     view_calculator
+[mapper_node-1]                         raycast_subsampling_factor: 4
+[mapper_node-1]                         workspace_bounds_type: kUnbounded
+[mapper_node-1]                         workspace_bounds_min_height_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_height_m: 1.000000
+[mapper_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[mapper_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[mapper_node-1]             lidar_occupancy_integrator
+[mapper_node-1]                 free_region_log_odds:: -0.847298
+[mapper_node-1]                 occupied_region_log_odds:: 0.847298
+[mapper_node-1]                 unobserved_region_log_odds:: 0.000000
+[mapper_node-1]                 occupied_region_half_width_m:: 0.100000
+[mapper_node-1]                 projective_integrator
+[mapper_node-1]                     lidar_linear_interpolation_max_allowable_difference_vox:: 2.000000
+[mapper_node-1]                     lidar_nearest_interpolation_max_allowable_dist_to_ray_vox:: 0.500000
+[mapper_node-1]                     truncation_distance_vox:: 4.000000
+[mapper_node-1]                     max_integration_distance_m:: 10.000000
+[mapper_node-1]                     view_calculator
+[mapper_node-1]                         raycast_subsampling_factor: 4
+[mapper_node-1]                         workspace_bounds_type: kUnbounded
+[mapper_node-1]                         workspace_bounds_min_height_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_height_m: 1.000000
+[mapper_node-1]                         workspace_bounds_min_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_max_corner_x_m: 0.000000
+[mapper_node-1]                         workspace_bounds_min_corner_y_m: 2.000000
+[mapper_node-1]                         workspace_bounds_max_corner_y_m: 2.000000
+[mapper_node-1]             esdf_integrator
+[mapper_node-1]                 max_esdf_distance_m:: 2.000000
+[mapper_node-1]                 max_tsdf_site_distance_vox:: 1.000000
+[mapper_node-1]                 tsdf_min_weight:: 0.000100
+[mapper_node-1]                 occupied_threshold_log_odds:: 0.000000
+[mapper_node-1]                 esdf_slice_min_height:: 0.000000
+[mapper_node-1]                 esdf_slice_max_height:: 1.000000
+[mapper_node-1]                 esdf_slice_height:: 1.000000
+[mapper_node-1]                 slice_height_above_plane_m:: 0.000000
+[mapper_node-1]                 slice_height_thickness_m:: 0.100000
+[mapper_node-1]             mesh_integrator
+[mapper_node-1]                 min_weight:: 0.000100
+[mapper_node-1]                 cutoff_distance_vox:: 5.000000
+[mapper_node-1]                 weld_vertices:: 1
+[mapper_node-1]             occupancy_decay_integrator
+[mapper_node-1]                 free_space_decay_log_odds:: 0.200671
+[mapper_node-1]                 occupied_space_decay_log_odds:: -0.405465
+[mapper_node-1]                 decay_to_log_odds_:: 0.000000
+[mapper_node-1]                 decay_integrator
+[mapper_node-1]                     deallocate_decayed_blocks:: 1
+[mapper_node-1]             tsdf_decay_integrator
+[mapper_node-1]                 decay_factor:: 0.950000
+[mapper_node-1]                 decayed_weight_theshold:: 0.001000
+[mapper_node-1]                 set_free_distance_on_decayed:: 0
+[mapper_node-1]                 free_distance_vox:: 4.000000
+[mapper_node-1]                 decay_integrator
+[mapper_node-1]                     deallocate_decayed_blocks:: 1
+[mapper_node-1]             freespace_integrator
+[mapper_node-1]                 max_tsdf_distance_for_occupancy_m:: 0.150000
+[mapper_node-1]                 max_unobserved_to_keep_consecutive_occupancy_ms:: 200
+[mapper_node-1]                 min_duration_since_occupied_for_freespace_ms:: 1000
+[mapper_node-1]                 min_consecutive_occupancy_duration_for_reset_ms:: 2000
+[mapper_node-1]                 check_neighborhood:: 1
+[mapper_node-1]         image_masker
+[mapper_node-1]             occlusion_threshold_m:: 0.250000
+[mapper_node-1]         ground_plane_estimator
+[mapper_node-1]             ground_points_candidates_min_z_m:: -0.100000
+[mapper_node-1]             ground_points_candidates_max_z_m:: 0.150000
+[mapper_node-1]             ransac_plane_fitter
+[mapper_node-1]                 num_ransac_iterations:: 1000
+[mapper_node-1]                 ransac_distance_threshold_m:: 0.200000
+[mapper_node-1]             tsdf_zero_crossings_extractor
+[mapper_node-1]                 min_tsdf_weight:: 0.100000
+[mapper_node-1]                 max_crossings:: 360000
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852848.976035710] [nvblox_node]: Got a new subscriber, sending entire map.
+[mapper_node-1] [INFO] [1793852848.976063800] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/update_esdf         	1      	0.0
+[mapper_node-1] ros/tick                	1      	0.0
+[mapper_node-1] layer_streamer/mesh     	1      	0.0
+[mapper_node-1] ros/depth_image_callback	1      	0.0
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852848.976073925] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/depth_image_callback	1      	-0.001
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] I1105 12:27:29.017316 85343 mapper.cpp:304] Allocating space for last depth image
+[mapper_node-1] I1105 12:27:29.018465 85343 image_cache_impl.h:45] Allocating a new cached image
+[mapper_node-1] [INFO] [1793852853.985903186] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	30.4
+[mapper_node-1] ros/update_esdf         	100    	32.8
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	30.4
+[mapper_node-1] ros/color_image_callback	100    	30.3
+[mapper_node-1] layer_streamer/mesh     	24     	5.0
+[mapper_node-1] ros/depth_image_callback	100    	30.4
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852853.985963903] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.046
+[mapper_node-1] ros/color_image_integration	100    	0.032
+[mapper_node-1] ros/depth_image_integration	100    	0.033
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852859.005356491] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	28.9
+[mapper_node-1] ros/update_esdf         	100    	33.3
+[mapper_node-1] ros/tick                	100    	102.0
+[mapper_node-1] ros/depth               	100    	28.6
+[mapper_node-1] ros/color_image_callback	100    	28.8
+[mapper_node-1] layer_streamer/mesh     	48     	4.9
+[mapper_node-1] ros/depth_image_callback	100    	28.6
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852859.005429331] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.045
+[mapper_node-1] ros/color_image_integration	100    	0.028
+[mapper_node-1] ros/depth_image_integration	100    	0.030
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852864.005088688] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	30.3
+[mapper_node-1] ros/update_esdf         	100    	32.9
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	30.3
+[mapper_node-1] ros/color_image_callback	100    	30.3
+[mapper_node-1] layer_streamer/mesh     	72     	4.8
+[mapper_node-1] ros/depth_image_callback	100    	30.3
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852864.017620000] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.038
+[mapper_node-1] ros/color_image_integration	100    	0.026
+[mapper_node-1] ros/depth_image_integration	100    	0.027
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852868.964752541] [nvblox_node]: Output rates to /home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_rotation_reconstruction_v2_20261105/overhead_static_rates.txt
+[mapper_node-1] [INFO] [1793852869.015651135] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	30.4
+[mapper_node-1] ros/update_esdf         	100    	32.7
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	30.4
+[mapper_node-1] ros/color_image_callback	100    	30.3
+[mapper_node-1] layer_streamer/mesh     	95     	4.8
+[mapper_node-1] ros/depth_image_callback	100    	30.4
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852869.018081781] [nvblox_node]: Output timings to /home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_rotation_reconstruction_v2_20261105/overhead_static_timings.txt
+[mapper_node-1] [INFO] [1793852869.028054116] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.046
+[mapper_node-1] ros/color_image_integration	100    	0.032
+[mapper_node-1] ros/depth_image_integration	100    	0.034
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852869.091226065] [nvblox_node]: Output PLY file(s) to /home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_rotation_reconstruction_v2_20261105/mesh_before.ply
+[mapper_node-1] [INFO] [1793852873.015689304] [nvblox_node]: Got a new subscriber, sending entire map.
+[mapper_node-1] [INFO] [1793852874.014592883] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	30.3
+[mapper_node-1] ros/update_esdf         	100    	33.7
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	30.3
+[mapper_node-1] ros/color_image_callback	100    	30.3
+[mapper_node-1] layer_streamer/mesh     	100    	4.8
+[mapper_node-1] ros/depth_image_callback	100    	30.4
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852874.034604623] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.047
+[mapper_node-1] ros/color_image_integration	100    	0.033
+[mapper_node-1] ros/depth_image_integration	100    	0.035
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852879.026575897] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	29.8
+[mapper_node-1] ros/update_esdf         	100    	33.6
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	30.2
+[mapper_node-1] ros/color_image_callback	100    	30.3
+[mapper_node-1] layer_streamer/mesh     	100    	4.8
+[mapper_node-1] ros/depth_image_callback	100    	30.3
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852879.044273352] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.042
+[mapper_node-1] ros/color_image_integration	100    	0.028
+[mapper_node-1] ros/depth_image_integration	100    	0.030
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.002
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852884.034063417] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	29.9
+[mapper_node-1] ros/update_esdf         	100    	32.9
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	29.9
+[mapper_node-1] ros/color_image_callback	100    	29.9
+[mapper_node-1] layer_streamer/mesh     	100    	4.8
+[mapper_node-1] ros/depth_image_callback	100    	29.7
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852884.054142661] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.042
+[mapper_node-1] ros/color_image_integration	100    	0.028
+[mapper_node-1] ros/depth_image_integration	100    	0.030
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852889.045530138] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	30.4
+[mapper_node-1] ros/update_esdf         	100    	33.4
+[mapper_node-1] ros/tick                	100    	102.0
+[mapper_node-1] ros/depth               	100    	30.4
+[mapper_node-1] ros/color_image_callback	100    	30.3
+[mapper_node-1] layer_streamer/mesh     	100    	4.8
+[mapper_node-1] ros/depth_image_callback	100    	30.4
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852889.063917823] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.046
+[mapper_node-1] ros/color_image_integration	100    	0.033
+[mapper_node-1] ros/depth_image_integration	100    	0.034
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852894.053614220] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	30.2
+[mapper_node-1] ros/update_esdf         	100    	33.6
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	30.2
+[mapper_node-1] ros/color_image_callback	100    	30.3
+[mapper_node-1] layer_streamer/mesh     	100    	4.8
+[mapper_node-1] ros/depth_image_callback	100    	30.2
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852894.063618203] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.044
+[mapper_node-1] ros/color_image_integration	100    	0.029
+[mapper_node-1] ros/depth_image_integration	100    	0.031
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852899.063354062] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	30.4
+[mapper_node-1] ros/update_esdf         	100    	32.8
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	30.4
+[mapper_node-1] ros/color_image_callback	100    	30.3
+[mapper_node-1] layer_streamer/mesh     	100    	4.8
+[mapper_node-1] ros/depth_image_callback	100    	30.4
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852899.073346745] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.042
+[mapper_node-1] ros/color_image_integration	100    	0.029
+[mapper_node-1] ros/depth_image_integration	100    	0.030
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852904.063657722] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	29.8
+[mapper_node-1] ros/update_esdf         	100    	33.4
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	30.2
+[mapper_node-1] ros/color_image_callback	100    	29.7
+[mapper_node-1] layer_streamer/mesh     	100    	4.8
+[mapper_node-1] ros/depth_image_callback	100    	30.3
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852904.073071205] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.048
+[mapper_node-1] ros/color_image_integration	100    	0.032
+[mapper_node-1] ros/depth_image_integration	100    	0.035
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852906.024661358] [nvblox_node]: Output rates to /home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_rotation_reconstruction_v2_20261105/overhead_wrist_motion_rates.txt
+[mapper_node-1] [INFO] [1793852906.076780903] [nvblox_node]: Output timings to /home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_rotation_reconstruction_v2_20261105/overhead_wrist_motion_timings.txt
+[mapper_node-1] [INFO] [1793852909.072976439] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	30.4
+[mapper_node-1] ros/update_esdf         	100    	32.4
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	30.4
+[mapper_node-1] ros/color_image_callback	100    	30.3
+[mapper_node-1] layer_streamer/mesh     	100    	4.8
+[mapper_node-1] ros/depth_image_callback	100    	30.4
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852909.083976540] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.041
+[mapper_node-1] ros/color_image_integration	100    	0.029
+[mapper_node-1] ros/depth_image_integration	100    	0.029
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852914.073148917] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	30.2
+[mapper_node-1] ros/update_esdf         	100    	33.7
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	30.2
+[mapper_node-1] ros/color_image_callback	100    	30.3
+[mapper_node-1] layer_streamer/mesh     	100    	4.8
+[mapper_node-1] ros/depth_image_callback	100    	30.3
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852914.082614981] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.047
+[mapper_node-1] ros/color_image_integration	100    	0.033
+[mapper_node-1] ros/depth_image_integration	100    	0.035
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852914.249503347] [nvblox_node]: Output rates to /home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_rotation_reconstruction_v2_20261105/overhead_stopped_rates.txt
+[mapper_node-1] [INFO] [1793852914.304376350] [nvblox_node]: Output timings to /home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_rotation_reconstruction_v2_20261105/overhead_stopped_timings.txt
+[mapper_node-1] [INFO] [1793852914.375988609] [nvblox_node]: Output PLY file(s) to /home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_rotation_reconstruction_v2_20261105/mesh_overhead.ply
+[mapper_node-1] W1105 12:28:34.422766 85344 layer_type_register.cpp:62] Layer not found, valid options: 
+[mapper_node-1] W1105 12:28:34.422942 85344 layer_type_register.cpp:64] N6nvblox15VoxelBlockLayerINS_14OccupancyVoxelEEE : occupancy_layer
+[mapper_node-1] W1105 12:28:34.422952 85344 layer_type_register.cpp:64] N6nvblox15VoxelBlockLayerINS_10ColorVoxelEEE : color_layer
+[mapper_node-1] W1105 12:28:34.422958 85344 layer_type_register.cpp:64] N6nvblox15VoxelBlockLayerINS_9EsdfVoxelEEE : esdf_layer
+[mapper_node-1] W1105 12:28:34.422963 85344 layer_type_register.cpp:64] N6nvblox15VoxelBlockLayerINS_14FreespaceVoxelEEE : freespace_layer
+[mapper_node-1] W1105 12:28:34.422967 85344 layer_type_register.cpp:64] N6nvblox15VoxelBlockLayerINS_9TsdfVoxelEEE : tsdf_layer
+[mapper_node-1] E1105 12:28:34.422972 85344 serializer.cpp:126] Unrecognized layer type, can't serialize: N6nvblox10BlockLayerINS_9MeshBlockEEE
+[mapper_node-1] [INFO] [1793852914.642433841] [nvblox_node]: Output map to file to /home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_rotation_reconstruction_v2_20261105/map_overhead.nvblx
+[mapper_node-1] [INFO] [1793852914.675288081] [nvblox_node]: 
+[mapper_node-1] Received request for ESDF with:
+[mapper_node-1] update_esdf: 0
+[mapper_node-1] use_aabb: 1
+[mapper_node-1] visualize_esdf: 0
+[mapper_node-1] aabb_min_m: [-1.00, -1.00, -0.20],
+[mapper_node-1] aabb_size_m: [2.00, 2.00, 1.40]
+[mapper_node-1] [INFO] [1793852914.683166286] [nvblox_node]: Successfully wrote requested ESDF to MultiArrayMsg.
+[mapper_node-1] [INFO] [1793852915.494357196] [nvblox_node]: Got a new subscriber, sending entire map.
+[mapper_node-1] [INFO] [1793852919.082471379] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	30.3
+[mapper_node-1] ros/esdf_service        	1      	0.0
+[mapper_node-1] ros/update_esdf         	100    	33.6
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	30.3
+[mapper_node-1] ros/color_image_callback	100    	30.3
+[mapper_node-1] layer_streamer/mesh     	100    	4.8
+[mapper_node-1] ros/depth_image_callback	100    	30.4
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852919.092404200] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.038
+[mapper_node-1] ros/color_image_integration	100    	0.024
+[mapper_node-1] ros/depth_image_integration	100    	0.026
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [robot_pose.py-2]: sending signal 'SIGINT' to process[robot_pose.py-2]
+[INFO] [mapper_node-1]: sending signal 'SIGINT' to process[mapper_node-1]
+[mapper_node-1] [INFO] [1793852920.351937992] [rclcpp]: signal_handler(signum=2)
+[mapper_node-1] [INFO] [1793852920.450741579] [nvblox_node]: Timing statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Timings (in seconds)
+[mapper_node-1] namespace/tag - NumSamples - TotalTime - (Mean +- StdDev) - [Min,Max]
+[mapper_node-1] -----------
+[mapper_node-1] color/integrate                               	   2126	00.660767	(00.000311 +- 00.000235)	[00.000089,00.006764]
+[mapper_node-1] color/integrate/allocate_blocks               	   2126	00.009242	(00.000004 +- 00.000002)	[00.000002,00.000024]
+[mapper_node-1] color/integrate/get_blocks_in_view            	   2126	00.044674	(00.000021 +- 00.000004)	[00.000003,00.000207]
+[mapper_node-1] color/integrate/reduce_to_blocks_in_band      	   2126	00.252864	(00.000119 +- 00.000167)	[00.000035,00.002540]
+[mapper_node-1] color/integrate/sphere_trace                  	   2126	00.167003	(00.000079 +- 00.000066)	[00.000026,00.002230]
+[mapper_node-1] color/integrate/sphere_trace/hash_transfer    	   2126	00.002270	(00.000001 +- 00.000000)	[00.000000,00.000014]
+[mapper_node-1] color/integrate/transfer_blocks               	   2126	00.105223	(00.000049 +- 00.000050)	[00.000010,00.001993]
+[mapper_node-1] color/integrate/update_blocks                 	   2126	00.071791	(00.000034 +- 00.000019)	[00.000008,00.002381]
+[mapper_node-1] esdf/integrate                                	   2335	01.146218	(00.000491 +- 00.000456)	[00.000000,00.007960]
+[mapper_node-1] esdf/integrate/allocate                       	   1417	00.011007	(00.000008 +- 00.000002)	[00.000003,00.000108]
+[mapper_node-1] esdf/integrate/clear                          	   1417	00.236827	(00.000167 +- 00.000514)	[00.000035,00.004838]
+[mapper_node-1] esdf/integrate/clear/get_blocks               	   1417	00.015798	(00.000011 +- 00.000003)	[00.000004,00.000176]
+[mapper_node-1] esdf/integrate/compute                        	   1417	00.355540	(00.000251 +- 00.000260)	[00.000045,00.006148]
+[mapper_node-1] esdf/integrate/compute/neighbor_bands         	   3195	00.267957	(00.000084 +- 00.000079)	[00.000031,00.003576]
+[mapper_node-1] esdf/integrate/compute/neighbor_bands/gpu_view	   3195	00.097053	(00.000030 +- 00.000034)	[00.000002,00.002384]
+[mapper_node-1] esdf/integrate/compute/swap                   	   3195	00.000745	(00.000000 +- 00.000000)	[00.000000,00.000010]
+[mapper_node-1] esdf/integrate/compute/sweep                  	   3195	00.069463	(00.000022 +- 00.000209)	[00.000002,00.001947]
+[mapper_node-1] esdf/integrate/mark_sites                     	   1417	00.539408	(00.000381 +- 00.000725)	[00.000057,00.005334]
+[mapper_node-1] esdf/integrate/mark_sites/pack_out            	   1417	00.230955	(00.000163 +- 00.000272)	[00.000016,00.002731]
+[mapper_node-1] gpu_hash/flush_insertion_cache                	     44	00.004035	(00.000092 +- 00.000278)	[00.000026,00.001894]
+[mapper_node-1] gpu_hash/transfer/reset                       	     12	00.011572	(00.000964 +- 00.001684)	[00.000111,00.006122]
+[mapper_node-1] mesh/gpu/get_meshable                         	    340	00.070021	(00.000206 +- 00.000306)	[00.000016,00.002064]
+[mapper_node-1] mesh/gpu/integrate                            	    341	00.243285	(00.000713 +- 00.000850)	[00.000001,00.007545]
+[mapper_node-1] mesh/gpu/mesh_blocks                          	    340	00.168916	(00.000497 +- 00.000675)	[00.000156,00.005636]
+[mapper_node-1] mesh/gpu/mesh_blocks/block_allocation         	    340	00.002816	(00.000008 +- 00.000010)	[00.000004,00.000251]
+[mapper_node-1] mesh/gpu/mesh_blocks/copy_out                 	    340	00.003498	(00.000010 +- 00.000006)	[00.000005,00.000194]
+[mapper_node-1] mesh/gpu/mesh_blocks/kernel_table             	    340	00.082501	(00.000243 +- 00.000303)	[00.000051,00.003817]
+[mapper_node-1] mesh/gpu/mesh_blocks/kernel_vertices          	    340	00.025191	(00.000074 +- 00.000325)	[00.000016,00.002305]
+[mapper_node-1] mesh/gpu/mesh_blocks/prep                     	    340	00.015276	(00.000045 +- 00.000036)	[00.000025,00.000261]
+[mapper_node-1] mesh/gpu/mesh_blocks/welding                  	    340	00.038208	(00.000112 +- 00.000200)	[00.000047,00.002271]
+[mapper_node-1] ros/color                                     	   2127	00.815546	(00.000383 +- 00.000307)	[00.000002,00.006805]
+[mapper_node-1] ros/color/conversion                          	   2126	00.125292	(00.000059 +- 00.000105)	[00.000011,00.002986]
+[mapper_node-1] ros/color/integrate                           	   2126	00.672397	(00.000316 +- 00.000236)	[00.000090,00.006772]
+[mapper_node-1] ros/color/transform                           	   2127	00.014192	(00.000007 +- 00.000004)	[00.000001,00.000086]
+[mapper_node-1] ros/color_image_callback                      	   2128	00.029739	(00.000014 +- 00.000004)	[00.000004,00.000063]
+[mapper_node-1] ros/depth                                     	   2128	01.209829	(00.000569 +- 00.000295)	[00.000003,00.006097]
+[mapper_node-1] ros/depth/conversions                         	   2126	00.441807	(00.000208 +- 00.000106)	[00.000010,00.002828]
+[mapper_node-1] ros/depth/integrate                           	   2126	00.736367	(00.000346 +- 00.000219)	[00.000042,00.004873]
+[mapper_node-1] ros/depth/output/back_projected_depth         	   2126	00.005008	(00.000002 +- 00.000001)	[00.000000,00.000228]
+[mapper_node-1] ros/depth/transform                           	   2128	00.020929	(00.000010 +- 00.000004)	[00.000003,00.000070]
+[mapper_node-1] ros/depth_image_callback                      	   2129	00.036580	(00.000017 +- 00.000005)	[00.000004,00.000046]
+[mapper_node-1] ros/esdf                                      	   2335	01.272073	(00.000545 +- 00.000460)	[00.000030,00.008016]
+[mapper_node-1] ros/esdf/integrate                            	   2335	01.269423	(00.000544 +- 00.000460)	[00.000029,00.008015]
+[mapper_node-1] ros/esdf_service                              	      1	00.007941	(00.007941 +- 00.000000)	[00.007941,00.007941]
+[mapper_node-1] ros/esdf_service/task_function                	      1	00.000664	(00.000664 +- 00.000000)	[00.000664,00.000664]
+[mapper_node-1] ros/esdf_service/task_function/clear_shapes   	      1	00.000004	(00.000004 +- 00.000000)	[00.000004,00.000004]
+[mapper_node-1] ros/esdf_service/task_function/create_response	      1	00.000646	(00.000646 +- 00.000000)	[00.000646,00.000646]
+[mapper_node-1] ros/idle                                      	   7115	66.494705	(00.009346 +- 00.000737)	[00.000106,00.013015]
+[mapper_node-1] ros/process_queue                             	  28464	02.845985	(00.000100 +- 00.000494)	[00.000000,00.219982]
+[mapper_node-1] ros/publish_layer                             	    339	00.571260	(00.001685 +- 00.001343)	[00.000183,00.010483]
+[mapper_node-1] ros/publish_layer/serialize                   	    339	00.174279	(00.000514 +- 00.000255)	[00.000103,00.004985]
+[mapper_node-1] ros/publish_layers                            	    339	00.574087	(00.001693 +- 00.001344)	[00.000189,00.010491]
+[mapper_node-1] ros/publish_mesh_layer                        	    339	00.075344	(00.000222 +- 00.000068)	[00.000021,00.000418]
+[mapper_node-1] ros/push_onto_queue                           	   4261	00.004588	(00.000001 +- 00.000000)	[00.000000,00.000023]
+[mapper_node-1] ros/tick                                      	   7116	04.851513	(00.000682 +- 00.000739)	[00.000007,00.222780]
+[mapper_node-1] tsdf/integrate                                	   2126	00.545052	(00.000256 +- 00.000212)	[00.000021,00.004738]
+[mapper_node-1] tsdf/integrate/allocate_blocks                	   2126	00.220172	(00.000104 +- 00.000132)	[00.000003,00.002947]
+[mapper_node-1] tsdf/integrate/get_blocks_in_view             	   2126	00.049426	(00.000023 +- 00.000002)	[00.000001,00.001918]
+[mapper_node-1] tsdf/integrate/transfer_blocks                	   2126	00.157852	(00.000074 +- 00.000061)	[00.000009,00.002232]
+[mapper_node-1] tsdf/integrate/update_blocks                  	   2126	00.110493	(00.000052 +- 00.000042)	[00.000008,00.002546]
+[mapper_node-1] view_calculator/get_blocks_in_view_planes     	   2126	00.000255	(00.000000 +- 00.000000)	[00.000000,00.000001]
+[mapper_node-1] view_calculator/raycast                       	   2126	00.047252	(00.000022 +- 00.000002)	[00.000000,00.001916]
+[mapper_node-1] view_calculator/raycast/output                	    275	00.033596	(00.000122 +- 00.000298)	[00.000018,00.001890]
+[mapper_node-1] view_calculator/raycast/raycast_pixels_kernel 	    275	00.001664	(00.000006 +- 00.000001)	[00.000003,00.000182]
+[mapper_node-1] view_calculator/raycast/setup                 	    275	00.003097	(00.000011 +- 00.000002)	[00.000005,00.000040]
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852920.450805825] [nvblox_node]: Rates statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Rates (in Hz)
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean 
+[mapper_node-1] -----------
+[mapper_node-1] ros/color               	100    	30.2
+[mapper_node-1] ros/esdf_service        	1      	0.0
+[mapper_node-1] ros/update_esdf         	100    	33.7
+[mapper_node-1] ros/tick                	100    	101.0
+[mapper_node-1] ros/depth               	100    	30.2
+[mapper_node-1] ros/color_image_callback	100    	30.2
+[mapper_node-1] layer_streamer/mesh     	100    	4.8
+[mapper_node-1] ros/depth_image_callback	100    	30.3
+[mapper_node-1] -----------
+[mapper_node-1] 
+[mapper_node-1] [INFO] [1793852920.450814859] [nvblox_node]: Delay statistics: 
+[mapper_node-1] 
+[mapper_node-1] NVBlox Delays
+[mapper_node-1] namespace/tag - NumSamples (Window Length) - Mean Delay (seconds) 
+[mapper_node-1] -----------
+[mapper_node-1] ros/esdf_integration       	100    	0.040
+[mapper_node-1] ros/color_image_integration	100    	0.026
+[mapper_node-1] ros/depth_image_integration	100    	0.028
+[mapper_node-1] ros/color_image_callback   	100    	-0.003
+[mapper_node-1] ros/depth_image_callback   	100    	-0.003
+[mapper_node-1] -----------
+[mapper_node-1] 
+[INFO] [robot_pose.py-2]: process has finished cleanly [pid 85252]
+[INFO] [mapper_node-1]: process has finished cleanly [pid 85250]

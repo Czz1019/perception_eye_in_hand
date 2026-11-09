@@ -1,1 +1,0 @@
-/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo/scripts/evaluate_handeye.py

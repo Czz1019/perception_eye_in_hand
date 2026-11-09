@@ -1,0 +1,77 @@
+{
+  "status": "failed",
+  "gpu_completion_measured": false,
+  "phases": {},
+  "commands": [
+    {
+      "name": "scene",
+      "argv": [
+        "ros2",
+        "launch",
+        "ur7e_d435_gazebo",
+        "scene.launch.py",
+        "gazebo_gui:=false"
+      ],
+      "pid": 13981
+    },
+    {
+      "name": "scene_check",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/run_ur7e_view_sweep.sh",
+        "--check-only"
+      ],
+      "pid": 13982
+    },
+    {
+      "name": "approach",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/run_ur7e_view_sweep.sh",
+        "--seconds",
+        "0"
+      ],
+      "pid": 14477
+    },
+    {
+      "name": "mapping",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/run.sh",
+        "start_scene:=false",
+        "run_rviz:=false",
+        "mapper_backend:=observed_view",
+        "esdf_mode:=3d",
+        "enable_esdf_view:=true",
+        "voxel_size:=0.02",
+        "max_range_m:=3.0"
+      ],
+      "pid": 14718
+    },
+    {
+      "name": "rviz_mesh",
+      "argv": [
+        "rviz2",
+        "-d",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/quality_realtime_20261104/mesh_view.rviz",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true"
+      ],
+      "pid": 15036
+    }
+  ],
+  "motion": "previous_observation_pose_and_wrist1_sweep_0.06rad",
+  "screenshots": [],
+  "world_from_base_link": {
+    "translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "error": "Capture failed Traceback (most recent call last):\n  File \"/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/quality_realtime_20261104/capture_window.py\", line 2, in <module>\n    from PyQt5.QtWidgets import QApplication\nImportError: /home/czz/.local/lib/python3.10/site-packages/PyQt5/QtWidgets.abi3.so: undefined symbol: _ZdlPvm, version Qt_5\n"
+}

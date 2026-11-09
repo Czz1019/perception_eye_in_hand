@@ -1,0 +1,105 @@
+{
+  "created": "2026-10-27T14:29:40.580551+08:00",
+  "root": "/home/czz/perception_eye_in_hand",
+  "reference": "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox",
+  "reference_commit": "bc181942202b24fd47b2f3db8f77c3c82d484566",
+  "reference_has_local_yaml_changes": true,
+  "root_head": "3ac915bb9adde9f2b9a3717d7332d29501f8eca2",
+  "source_sha256": {
+    "build_ur7e_native.sh": "a4a7205d130746c078c7f3ec810c471d3bd2e26f4a44e8c8c1f590c60b75b2e9",
+    "run_ur7e_common_depth.sh": "63ecb0b95f2e7f35f6f5fd0d02c679e5e1eb866538b910317cb3eff35fb1109d",
+    "run_ur7e_native.sh": "4066274af2fcf9fc0f609ef83ab9a55bb67e57ababb3fe2b84ab6066b2aa8cd4",
+    "run_ur7e_native_rviz.sh": "788d150ccb0514c81c7d12c400316beb3bea34abb4dbcc158f25a12dfb4e5869",
+    "src/realtime_nvblox/realtime_nvblox/nvblox_backend.py": "d41bbaa1ff0c9a2e4c3e26361074e851ddb6b55acdaf565e4b34f2829690950f",
+    "src/ur7e_nvblox/test/run_gazebo_validation.py": "d154ce00d3dd44e22dda590576153a19cd7bf099560f950c5968203d259303c4",
+    "src/ur7e_nvblox/ur7e_nvblox/depth_adapter.py": "554fb27d5ebef87a0d26e57dffbed660dba6ad5a15fdaba80bead6309bc0a6de",
+    "src/ur7e_nvblox/ur7e_nvblox/esdf.py": "313435c91ae4afe255a6fd36c6ee806a1a027e72f7b5b8465565084d91295d18",
+    "src/ur7e_nvblox/ur7e_nvblox/monitor.py": "3147f5d6042bab704834c74f221442a0bf6fa5303d332989b73343e50467030b",
+    "src/ur7e_nvblox/ur7e_nvblox/node.py": "724665f0209e20473938e6d6fddb7ee4be241494919d35af12e97c52081052ac",
+    "src/ur7e_nvblox/ur7e_nvblox/sampling.py": "e5c15b2bba3f953ba107cdd904ff888d3372f446edfcab8220ea3f32c15517b5",
+    "src/ur7e_nvblox_native/CMakeLists.txt": "e033befed949c2f10a064bea080adcfd2e1cfba15dab8c0619b576c6d3fc24ab",
+    "src/ur7e_nvblox_native/README.md": "4e28f797389e707b889260e8045104563d27099e4041dc7134a019cb968012c0",
+    "src/ur7e_nvblox_native/THIRD_PARTY.md": "5219b34bb0b74522367eb02730c4c31ba1a96754b548c3470e312b9c8494dcbd",
+    "src/ur7e_nvblox_native/config/gazebo.yaml": "e4f100e228404554849278257c29ea51dacfb6ad5f7d25febe1b10649bddc1c0",
+    "src/ur7e_nvblox_native/config/python_comparison.yaml": "078cdf794161d9382d626ab77af3579da033e3c813f33ec7586934b2159836e9",
+    "src/ur7e_nvblox_native/package.xml": "57efd3b9bc5d18fe55108e776a3088d341354312f54430afe388447fb85b9c0f",
+    "src/ur7e_nvblox_native/rviz/native.rviz": "ab7534572cb4855ccd643ddb70541e26a7baf53421a20b0466590a4d23a47324",
+    "src/ur7e_nvblox_native/rviz/native_with_mesh.rviz": "32b3d0fc14caf1510b3f99b85e44292e058fe2936f694871b0d2b174a9df520b",
+    "src/ur7e_nvblox_native/src/block_export.cu": "03d6547635bebcef9eb2a83b91dc15697240e15036e15fafc4e7f759fbcc33fc",
+    "src/ur7e_nvblox_native/src/block_export.h": "e24675eb1ae2b0cc45fa08dd76a05978a62c7080d0837bbac41cedff6c11d673",
+    "src/ur7e_nvblox_native/src/native_geometry_test.cpp": "89ca7881b7712e32eb782dd7cd088fc34b973c2afdf86a80e81e9e110a3d7325",
+    "src/ur7e_nvblox_native/src/native_mapper.cpp": "3c96f790cb4ce9e1cbd2901929b0afe2a719218580b7239cd225a0c1e85a524f"
+  },
+  "official_library": {
+    "path": "/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/lib/libnvblox_ros_lib.so",
+    "sha256": "77ebdc2ec05e1bb53f86ac75d8fc298efe54a3085ed540453b1c73c04a15c867"
+  },
+  "comparison": {
+    "primary": [
+      "native_003.json",
+      "python_003.json"
+    ],
+    "method": "Sequential live Gazebo, external mapper process and same external observer; no RViz/other consumer during primary samples",
+    "voxel_size_m": 0.03,
+    "integration_size": [
+      640,
+      360
+    ],
+    "common_depth_range_m": [
+      0.2,
+      4.0
+    ],
+    "roi_center_m": [
+      0,
+      0,
+      0.5
+    ],
+    "roi_size_m": [
+      2,
+      2,
+      1.5
+    ],
+    "candidates": 217800,
+    "band_m": 0.15,
+    "ros_domain": 127,
+    "rmw": "rmw_cyclonedds_cpp",
+    "target_hz": 30,
+    "phase_seconds": 60,
+    "caveat": "Not identical rosbag replay; nvblox cores are different builds. Actual input not stable 30 Hz."
+  },
+  "supplemental": [
+    "native_003_initial.json (adapter before steady scheduling)",
+    "python_003_inprocess.json (preliminary, shared-process observer)",
+    "service_validation.json (post-benchmark functional check)"
+  ],
+  "artifacts_sha256": {
+    "esdf_comparison.png": "f3b39aab7f5420d080bae1a7451a41fda048ef4fc2faddecd19091cd9e38f3cd",
+    "geometry_comparison.json": "af8167ea0915b3da073a49309668da2413c8f1ce5440f83381c21e44d230f407",
+    "live_map.nvblx": "4c7e025631f333707adfe3574b0dfcf35fed41955b94630d4d38c650c1d6f761",
+    "native_003.json": "69c918667b55aa7270bbe51604769d37a536ce365494ede3088ff8cbe9a7b9db",
+    "native_003.npz": "4cb608786bb30180351e7bf6cce12e0dc5bb5bb9d501dba80984c728bb3f3c5e",
+    "native_003_frames.npz": "d8b971ee4e7df1d0e3466e10a3e94e2a86037a0d597ca5096aa6054e7ddb3dd4",
+    "native_003_initial.json": "8e5c87c860f2e943208e31bb1f6f8ac6b650e3de0e8a836b86b933747914b1c5",
+    "native_003_initial.npz": "7f7a9a5f3520c954b88d3de3ef09d5a9ab8f42996fce7401173d302b1fb89cbc",
+    "native_003_initial_moving.npz": "3252f29a7d708b7429ead39f8aa6598139a6e2867803cbde20afd4f4e20eb94d",
+    "native_003_initial_stationary.npz": "4d9e2a153c15c4a0535e5ac23b6812eb571c39d7505df9a01e223211e04228e9",
+    "native_003_moving.npz": "9c080c5776567e3b70180bb8df55b40a21c126731d6d9cb4fb647c16368ac2c9",
+    "native_003_stationary.npz": "32af7ca5ae3899fe0514b6ac91d1bd7ee4875f1fc3e9a92591f074e053758b7e",
+    "native_live.gif": "83f5f740e984e275f287a283906b8651e68b0bf3fee7238605777a1671c30e16",
+    "performance.png": "64fee41c46e0540df41fecaf3f326f27979dec9ce4a6b1989f7b2afa247afeaf",
+    "python_003.json": "50d42eccb4ed618c98aec66073f34471c934e8059b581656916ca49dd19123bb",
+    "python_003.npz": "9fff6292adc5720d695c45be20357b18f844ba7e0a90d21a72631d189ffad1c7",
+    "python_003_frames.npz": "9eb14b426cd21b530736368796443c5b3b80c78da647a3d2edb10d2781851e90",
+    "python_003_inprocess.json": "6ca73226c7baf3a76dbf415b3a73a665eaef7b141d68019158ef414584e1deff",
+    "python_003_inprocess.npz": "9fff6292adc5720d695c45be20357b18f844ba7e0a90d21a72631d189ffad1c7",
+    "python_003_inprocess_frames.npz": "cbc4c3345a6fdcece27118b78edff789bf143d0ec5218b546015a552b3d59b34",
+    "python_003_inprocess_moving.npz": "770ca3ad919bc4362c1fbcefec942556d66a90b6a441b3c8f0033fa73dc63ef6",
+    "python_003_inprocess_stationary.npz": "2dea78464eee088292e4f5821fcb7689e8e5592d0f725e3478cb02b98ef033d2",
+    "python_003_moving.npz": "5555184cf4b105ec50b4bc43bb54c2d2d9943513a9db8b9bea36d3939c71841d",
+    "python_003_stationary.npz": "2dea78464eee088292e4f5821fcb7689e8e5592d0f725e3478cb02b98ef033d2",
+    "render_results.py": "466d81df0c6571e8ba4bf6db3f609718cf6815736db99e5b7faed36484832846",
+    "rviz_live.png": "7039677dd803ff4e53bdd0a64a10ce303add58c10de09cbc102e8d2f1e18ccd7",
+    "service_validation.json": "06fa937dc790de8e8a36b718987f092bcebcb74cc1b779a59b623810dbda011c",
+    "validate_recorded_interfaces.py": "0ace9bca7e0426d6a3f41ff0b5816bc10756e96468c8d9d2038b41a20250824a"
+  }
+}

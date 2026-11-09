@@ -1,0 +1,373 @@
+{
+  "analysis_date": "2026-10-26",
+  "local_head": "3ac915bb9adde9f2b9a3717d7332d29501f8eca2",
+  "archive": {
+    "path": "/home/czz/realtime_nvblox_ws.zip",
+    "sha256": "63445819083e1eb9bc36191bcea20ff2f46388bc6f7014e7333bc7aa26773eb6",
+    "comparison_scope": "src/realtime_nvblox existing non-cache source/config/docs (47 files); archive Git/build/install/log/cache excluded",
+    "comparisons": {
+      "realtime_nvblox": {
+        "identical": [
+          "DEPLOY.md",
+          "LICENSE",
+          "README.md",
+          "examples/esdf_rate_monitor.py",
+          "launch/reconstruction.launch.py",
+          "realtime_nvblox/ROBOT_MAPPING.md",
+          "realtime_nvblox/__init__.py",
+          "realtime_nvblox/check_env.py",
+          "realtime_nvblox/cli.py",
+          "realtime_nvblox/config/default.yaml",
+          "realtime_nvblox/config/esdf_benchmark.yaml",
+          "realtime_nvblox/config/esdf_final.yaml",
+          "realtime_nvblox/config.py",
+          "realtime_nvblox/cuvslam_backend.py",
+          "realtime_nvblox/default.yaml",
+          "realtime_nvblox/latest_slot.py",
+          "realtime_nvblox/nvblox_backend.py",
+          "realtime_nvblox/pose_buffer.py",
+          "realtime_nvblox/queues.py",
+          "realtime_nvblox/rate_limiter.py",
+          "realtime_nvblox/realsense_source.py",
+          "realtime_nvblox/robot_eye_in_hand.yaml",
+          "realtime_nvblox/robot_pose.py",
+          "realtime_nvblox/ros_node.py",
+          "realtime_nvblox/ros_publishers.py",
+          "realtime_nvblox/runtime.py",
+          "realtime_nvblox/runtime_loader.py",
+          "realtime_nvblox/stats.py",
+          "realtime_nvblox/tests/test_gpu_esdf.py",
+          "realtime_nvblox/tests/test_robot_esdf.py",
+          "realtime_nvblox/tests/test_ros_robot_pose.py",
+          "realtime_nvblox/types.py",
+          "requirements.txt",
+          "resource/realtime_nvblox",
+          "rviz/realtime_nvblox.rviz",
+          "scripts/build_ros.sh",
+          "scripts/check_environment.sh",
+          "scripts/check_runtime.sh",
+          "scripts/diagnose_native_libraries.sh",
+          "scripts/install_dependencies.sh",
+          "scripts/run_standalone.sh",
+          "scripts/start_clean.sh",
+          "setup.cfg",
+          "test/test_config.py",
+          "test/test_pose_buffer.py"
+        ],
+        "different": [
+          "package.xml",
+          "setup.py"
+        ],
+        "absent": [],
+        "current_only": [
+          "GAZEBO_MAPPING.md",
+          "config/default.yaml",
+          "config/esdf_benchmark.yaml",
+          "config/esdf_final.yaml",
+          "config/gazebo_robot.yaml",
+          "config/robot_eye_in_hand.yaml",
+          "examples/verify_gazebo_mapping.py",
+          "examples/verify_gazebo_rejection.py",
+          "launch/gazebo_mapping.launch.py",
+          "realtime_nvblox/gazebo_depth.py",
+          "realtime_nvblox/gazebo_ros_node.py",
+          "rviz/gazebo_esdf.rviz",
+          "test/test_gazebo_depth.py"
+        ]
+      },
+      "realtime_nvblox_2": {
+        "identical": [
+          "DEPLOY.md",
+          "LICENSE",
+          "examples/esdf_rate_monitor.py",
+          "launch/reconstruction.launch.py",
+          "realtime_nvblox/ROBOT_MAPPING.md",
+          "realtime_nvblox/__init__.py",
+          "realtime_nvblox/check_env.py",
+          "realtime_nvblox/cli.py",
+          "realtime_nvblox/config/default.yaml",
+          "realtime_nvblox/config/esdf_benchmark.yaml",
+          "realtime_nvblox/config/esdf_final.yaml",
+          "realtime_nvblox/config.py",
+          "realtime_nvblox/cuvslam_backend.py",
+          "realtime_nvblox/default.yaml",
+          "realtime_nvblox/latest_slot.py",
+          "realtime_nvblox/pose_buffer.py",
+          "realtime_nvblox/queues.py",
+          "realtime_nvblox/rate_limiter.py",
+          "realtime_nvblox/realsense_source.py",
+          "realtime_nvblox/robot_eye_in_hand.yaml",
+          "realtime_nvblox/robot_pose.py",
+          "realtime_nvblox/ros_node.py",
+          "realtime_nvblox/ros_publishers.py",
+          "realtime_nvblox/runtime.py",
+          "realtime_nvblox/runtime_loader.py",
+          "realtime_nvblox/stats.py",
+          "realtime_nvblox/tests/test_gpu_esdf.py",
+          "realtime_nvblox/tests/test_robot_esdf.py",
+          "realtime_nvblox/tests/test_ros_robot_pose.py",
+          "realtime_nvblox/types.py",
+          "requirements.txt",
+          "resource/realtime_nvblox",
+          "rviz/realtime_nvblox.rviz",
+          "scripts/build_ros.sh",
+          "scripts/check_environment.sh",
+          "scripts/check_runtime.sh",
+          "scripts/diagnose_native_libraries.sh",
+          "scripts/install_dependencies.sh",
+          "scripts/run_standalone.sh",
+          "scripts/start_clean.sh",
+          "setup.cfg",
+          "test/test_config.py",
+          "test/test_pose_buffer.py"
+        ],
+        "different": [
+          "README.md",
+          "package.xml",
+          "realtime_nvblox/nvblox_backend.py",
+          "setup.py"
+        ],
+        "absent": [],
+        "current_only": [
+          "GAZEBO_MAPPING.md",
+          "RVIZ_TROUBLESHOOTING.md",
+          "config/default.yaml",
+          "config/esdf_benchmark.yaml",
+          "config/esdf_final.yaml",
+          "config/gazebo_robot.yaml",
+          "config/realsense_ros.yaml",
+          "config/robot_eye_in_hand.yaml",
+          "examples/verify_gazebo_mapping.py",
+          "examples/verify_gazebo_rejection.py",
+          "launch/gazebo_mapping.launch.py",
+          "realtime_nvblox/gazebo_depth.py",
+          "realtime_nvblox/gazebo_ros_node.py",
+          "rviz/gazebo_esdf.rviz",
+          "test/test_gazebo_depth.py"
+        ]
+      }
+    }
+  },
+  "official": {
+    "repository": "https://github.com/nvidia-isaac/nvblox",
+    "default_branch": "public",
+    "commit": "5bd2d73da901ce0ba279c997a4c1f9f632b9309c",
+    "commit_date": "2026-10-23T18:50:58Z",
+    "analysis_date": "2026-10-26",
+    "paths": [
+      "nvblox/src/mapper/mapper.cpp",
+      "nvblox/src/integrators/esdf_integrator.cu",
+      "nvblox/src/map/blocks_to_update_tracker.cpp",
+      "nvblox/include/nvblox/integrators/esdf_integrator_params.h",
+      "nvblox_torch/nvblox_torch/mapper.py",
+      "nvblox_torch/cpp/src/sdf_query.cu",
+      "nvblox_torch/nvblox_torch/examples/esdf/esdf.py",
+      "nvblox_torch/nvblox_torch/examples/realsense/run_realsense_mapper.py",
+      "executables/src/fuser/fuser.cpp",
+      "nvblox_torch/nvblox_torch/tests/test_benchmark.py",
+      "docs/pages/torch_examples_esdf.rst",
+      "release-notes.md"
+    ]
+  },
+  "official_sources": [
+    {
+      "path": "docs/pages/torch_examples_esdf.rst",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/docs/pages/torch_examples_esdf.rst",
+      "sha256": "0362b21ecdae03abc8941da2e3eb53de4c3c7f13b010e99fafa4455d1a626fa0",
+      "lines": 139
+    },
+    {
+      "path": "executables/src/fuser/fuser.cpp",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/executables/src/fuser/fuser.cpp",
+      "sha256": "55f98b2532a0e9a621508781fe95827e28a5c3b28b537a1ff5871f785d461391",
+      "lines": 572
+    },
+    {
+      "path": "nvblox/include/nvblox/integrators/esdf_integrator_params.h",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox/include/nvblox/integrators/esdf_integrator_params.h",
+      "sha256": "123bc17cc4c6bde42681f0aeb687d9b6a8e06af8f69679d0a8932d796e28872b",
+      "lines": 109
+    },
+    {
+      "path": "nvblox/include/nvblox/mapper/internal/impl/mapper_impl.h",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox/include/nvblox/mapper/internal/impl/mapper_impl.h",
+      "sha256": "c8648c5dffc8f2c2a0b12b93766fdacaf9cc24bf7cc06ab7469f7ae377423dae",
+      "lines": 327
+    },
+    {
+      "path": "nvblox/include/nvblox/mapper/mapper.h",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox/include/nvblox/mapper/mapper.h",
+      "sha256": "cac489e2327ad57ccfff6c65a531d928226e954241d4db254d8c545e62c14078",
+      "lines": 941
+    },
+    {
+      "path": "nvblox/src/integrators/esdf_integrator.cu",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox/src/integrators/esdf_integrator.cu",
+      "sha256": "9aa93009d4d8c6fe4b67d8f89457f369f3f6195c7c5a5b1cd884f509a809bc96",
+      "lines": 1743
+    },
+    {
+      "path": "nvblox/src/map/blocks_to_update_tracker.cpp",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox/src/map/blocks_to_update_tracker.cpp",
+      "sha256": "ce010a761a1869ad0b48db48f3fa43dc9425b03928068b02b7740bc32bb559f3",
+      "lines": 130
+    },
+    {
+      "path": "nvblox/src/mapper/mapper.cpp",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox/src/mapper/mapper.cpp",
+      "sha256": "57b4449f1949e2287afd64a154f00e16cec4b6855077e2f1c75b2d427dc7148c",
+      "lines": 706
+    },
+    {
+      "path": "nvblox_torch/cpp/src/py_mapper.cu",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox_torch/cpp/src/py_mapper.cu",
+      "sha256": "5fccb2f235502d55ac63fd5df52fa8206eca353f9b2fb5339a8c66f28504b14b",
+      "lines": 798
+    },
+    {
+      "path": "nvblox_torch/cpp/src/sdf_query.cu",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox_torch/cpp/src/sdf_query.cu",
+      "sha256": "081deb11fe284e50a4fc6a8258b59b3ee7885de63d9aaf68a81b2f4f9f191a51",
+      "lines": 355
+    },
+    {
+      "path": "nvblox_torch/nvblox_torch/examples/esdf/esdf.py",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox_torch/nvblox_torch/examples/esdf/esdf.py",
+      "sha256": "00b8f8314aac45c9d3754feaef47d2fbda1a3667c4699b28248acc54234167b1",
+      "lines": 187
+    },
+    {
+      "path": "nvblox_torch/nvblox_torch/examples/realsense/run_realsense_mapper.py",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox_torch/nvblox_torch/examples/realsense/run_realsense_mapper.py",
+      "sha256": "084c44247d835d0d8cc958d19e32e14f0119e67b5fd2ff1738b2d0052c886dca",
+      "lines": 181
+    },
+    {
+      "path": "nvblox_torch/nvblox_torch/mapper.py",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox_torch/nvblox_torch/mapper.py",
+      "sha256": "f530a8ad773ca163cddae8dffb5569b5d69f65360ef436915a117c248839b134",
+      "lines": 508
+    },
+    {
+      "path": "nvblox_torch/nvblox_torch/mapper_params.py",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox_torch/nvblox_torch/mapper_params.py",
+      "sha256": "56948cb6e066532cd230d5202f10c21b690c36ecf59789c81c3e908aca522ffc",
+      "lines": 229
+    },
+    {
+      "path": "nvblox_torch/nvblox_torch/tests/test_benchmark.py",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/nvblox_torch/nvblox_torch/tests/test_benchmark.py",
+      "sha256": "574e0e10c0d99bcd1003ca78280abf664f3a3dae270e924815a1cbdd2a437147",
+      "lines": 18
+    },
+    {
+      "path": "release-notes.md",
+      "url": "https://github.com/nvidia-isaac/nvblox/blob/5bd2d73da901ce0ba279c997a4c1f9f632b9309c/release-notes.md",
+      "sha256": "50f9e69540f29d8c1980b8261c53d64b5031a093c7f433d5a98a0f1a4f4c2873",
+      "lines": 124
+    }
+  ],
+  "calculated_workloads": [
+    {
+      "mode": "standalone_dense",
+      "dims_xyz": [
+        41,
+        41,
+        31
+      ],
+      "cells": 52111,
+      "float32_field_bytes": 208444,
+      "pointcloud20B_bytes": 1042220,
+      "planning_map_uncompressed_bytes": 468999,
+      "full_box_pairwise_edt_candidate_count_no_padding": 5888543
+    },
+    {
+      "mode": "archive_esdf_final",
+      "dims_xyz": [
+        41,
+        41,
+        21
+      ],
+      "cells": 35301,
+      "float32_field_bytes": 141204,
+      "pointcloud20B_bytes": 706020,
+      "planning_map_uncompressed_bytes": 317709,
+      "full_box_pairwise_edt_candidate_count_no_padding": 3636003
+    },
+    {
+      "mode": "perception_demo",
+      "dims_xyz": [
+        76,
+        71,
+        66
+      ],
+      "cells": 356136,
+      "float32_field_bytes": 1424544,
+      "pointcloud20B_bytes": 7122720,
+      "planning_map_uncompressed_bytes": 3205224,
+      "full_box_pairwise_edt_candidate_count_no_padding": 75856968
+    },
+    {
+      "mode": "real_static",
+      "dims_xyz": [
+        81,
+        81,
+        57
+      ],
+      "cells": 373977,
+      "float32_field_bytes": 1495908,
+      "pointcloud20B_bytes": 7479540,
+      "planning_map_uncompressed_bytes": 3365793,
+      "full_box_pairwise_edt_candidate_count_no_padding": 81900963
+    },
+    {
+      "mode": "gazebo_online",
+      "dims_xyz": [
+        101,
+        101,
+        71
+      ],
+      "cells": 724271,
+      "float32_field_bytes": 2897084,
+      "pointcloud20B_bytes": 14485420,
+      "planning_map_uncompressed_bytes": 6518439,
+      "full_box_pairwise_edt_candidate_count_no_padding": 197725983
+    }
+  ],
+  "historical_real_auto_esdf_metrics": {
+    "source": "src/ur7e_auto_esdf/report/metrics.json",
+    "frames": 64,
+    "views": 8,
+    "duration_start_to_done_sec": 196.05222249031067,
+    "warmup_phase_sec": 32.597084522247314,
+    "perception_ms": {
+      "native_esdf_ms": {
+        "p50": 2.226602000519051,
+        "p95": 24.07811320063047,
+        "max": 29.05988100246759
+      },
+      "free_field_ms": {
+        "p50": 14.457543000389705,
+        "p95": 194.23599204783383,
+        "max": 392.0690459999605
+      },
+      "receive_to_result_ms": {
+        "p50": 81.14584299983107,
+        "p95": 343.1127577001461,
+        "max": 498.754377997102
+      }
+    }
+  },
+  "new_runtime_measurements": false,
+  "hardware_or_simulation_started": false,
+  "official_text_hash_scope": "SHA256 of connector-returned UTF-8 text saved locally; trailing newlines may be normalized; not a Git blob hash",
+  "verification": {
+    "source_and_config_files_hashed": 483,
+    "changed_source_or_config_files": [],
+    "local_document_links_checked": 116,
+    "missing_local_links": [],
+    "trailing_whitespace_lines": [],
+    "new_runtime_benchmarks_executed": false,
+    "code_modified": false
+  }
+}

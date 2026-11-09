@@ -11,6 +11,8 @@ from launch_ros.actions import Node
 def generate_launch_description():
     share = Path(get_package_share_directory('ur7e_nvblox'))
     python = Path.home() / 'miniconda3/envs/whole_control/bin/python'
+    if not python.is_file():
+        python = Path('/usr/bin/python3')
     return LaunchDescription([
         DeclareLaunchArgument('config', default_value=str(share / 'config/gazebo.yaml')),
         DeclareLaunchArgument('python_executable', default_value=str(python)),

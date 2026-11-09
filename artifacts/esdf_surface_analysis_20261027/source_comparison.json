@@ -1,0 +1,169 @@
+{
+  "scope": "static source analysis, not runtime parameter dump or measurement",
+  "date": "2026-10-27",
+  "reference_commit": "bc181942202b24fd47b2f3db8f77c3c82d484566",
+  "reference_worktree_may_have_local_changes": true,
+  "comparison": {
+    "voxel_size": {
+      "perception_source": 0.03,
+      "workspaces_base_source": 0.02
+    },
+    "integrate_depth_rate_hz": {
+      "perception_source": 1000.0,
+      "workspaces_base_source": 30.0
+    },
+    "integrate_color_rate_hz": {
+      "perception_source": 5.0,
+      "workspaces_base_source": 5.0
+    },
+    "update_esdf_rate_hz": {
+      "perception_source": 30.0,
+      "workspaces_base_source": 5.0
+    },
+    "publish_layer_rate_hz": {
+      "perception_source": 5.0,
+      "workspaces_base_source": 5.0
+    },
+    "use_color": {
+      "perception_source": true,
+      "workspaces_base_source": false
+    },
+    "maximum_input_queue_length": {
+      "perception_source": 2,
+      "workspaces_base_source": 10
+    },
+    "decay_tsdf_rate_hz": {
+      "perception_source": 0.0,
+      "workspaces_base_source": 2.0
+    },
+    "map_clearing_radius_m": {
+      "perception_source": -1.0,
+      "workspaces_base_source": 7.0
+    },
+    "static_mapper.projective_integrator_max_integration_distance_m": {
+      "perception_source": 7.0,
+      "workspaces_base_source": 5.0
+    },
+    "static_mapper.projective_integrator_truncation_distance_vox": {
+      "perception_source": 4.0,
+      "workspaces_base_source": 4.0
+    },
+    "static_mapper.projective_integrator_weighting_mode": {
+      "perception_source": "inverse_square",
+      "workspaces_base_source": "inverse_square_tsdf_distance_penalty"
+    },
+    "static_mapper.projective_integrator_max_weight": {
+      "perception_source": 5.0,
+      "workspaces_base_source": 5.0
+    },
+    "static_mapper.esdf_integrator_min_weight": {
+      "perception_source": 0.0001,
+      "workspaces_base_source": 0.1
+    },
+    "static_mapper.esdf_integrator_max_site_distance_vox": {
+      "perception_source": 1.0,
+      "workspaces_base_source": 2.0
+    },
+    "static_mapper.mesh_integrator_min_weight": {
+      "perception_source": 0.1,
+      "workspaces_base_source": 0.1
+    },
+    "static_mapper.mesh_integrator_weld_vertices": {
+      "perception_source": true,
+      "workspaces_base_source": true
+    },
+    "static_mapper.raycast_subsampling_factor": {
+      "perception_source": 4,
+      "workspaces_base_source": 4
+    },
+    "static_mapper.do_depth_preprocessing": {
+      "perception_source": false,
+      "workspaces_base_source": false
+    }
+  },
+  "derived": {
+    "voxel_edge_ratio": 1.5,
+    "voxel_volume_ratio": 3.375,
+    "tsdf_truncation_perception_m": 0.12,
+    "tsdf_truncation_reference_m": 0.08,
+    "esdf_weight_threshold_ratio": 1000.0,
+    "voxel_marker_perception_edge_m": 0.028999999999999998,
+    "voxel_marker_reference_edge_m": 0.019,
+    "processed_fx_approx": 320.25492609007654,
+    "current_vertical_fov_deg": 58.67652305235,
+    "reference_sdf_vertical_fov_deg": 73.69599905628023
+  },
+  "sources": {
+    "app_config": {
+      "path": "/home/czz/perception_eye_in_hand/src/ur7e_nvblox_native/config/gazebo.yaml",
+      "line": 6,
+      "sha256": "463e8e0af89af1a613f7cecefd106e886f513370bd3be2ce0916ebc726326162"
+    },
+    "reference_config": {
+      "path": "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox/nvblox_examples/nvblox_examples_bringup/config/nvblox/nvblox_base.yaml",
+      "line": 6,
+      "sha256": "170ce9c35534b24baf8f168dc6f5628ef72498986f5eaceb8af6039e9da8c492"
+    },
+    "app_depth_decoder": {
+      "path": "/home/czz/perception_eye_in_hand/src/ur7e_nvblox/ur7e_nvblox/depth.py",
+      "line": 21,
+      "sha256": "5216b212790717bd919fd49ca56bb28705a7c6e4f5868eb5f0e2e94781fc0f90"
+    },
+    "app_mesh_bridge": {
+      "path": "/home/czz/perception_eye_in_hand/src/ur7e_nvblox_native/src/mesh_visualization.h",
+      "line": 29,
+      "sha256": "d4b453e2cf07deac75fd7dc4a9d983bc62775996eb085184cc25ab1983ee89c1"
+    },
+    "app_sparse_export": {
+      "path": "/home/czz/perception_eye_in_hand/src/ur7e_nvblox_native/src/block_export.cu",
+      "line": 28,
+      "sha256": "a4cdc9942c4e6886d058f3a17f56bfbd0693922e06477d8b04f620d19fb328a7"
+    },
+    "reference_voxel_markers": {
+      "path": "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox/nvblox_ros/src/lib/layer_publishing.cpp",
+      "line": 310,
+      "sha256": "7305d1e5a5752e1f71cf78da98126fb0cedae5c95ba1adfeef21c9c6fb206658"
+    },
+    "reference_weighting": {
+      "path": "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox/nvblox_ros/nvblox_core/nvblox/include/nvblox/integrators/internal/impl/weighting_function_impl.h",
+      "line": 98,
+      "sha256": "c2a4bc926b48151bdfbf0f05dac590d892ffde3482efb9b438f4091239d132a0"
+    },
+    "reference_esdf": {
+      "path": "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox/nvblox_ros/nvblox_core/nvblox/src/integrators/esdf_integrator.cu",
+      "line": 113,
+      "sha256": "ada6529870f1ec650c5efcc9cc7c8d16338e56f2cbdf1a967b211776723fe408"
+    },
+    "reference_mesh_render": {
+      "path": "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox/nvblox_rviz_plugin/src/nvblox_plugin_visual.cpp",
+      "line": 252,
+      "sha256": "b52e178494a8003d302b970ea8f7a704766b00a1adfaf44ee18392b4c71d63b5"
+    },
+    "reference_mesh_conversion": {
+      "path": "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox/nvblox_ros/src/lib/conversions/mesh_conversions.cpp",
+      "line": 62,
+      "sha256": "f382142a8e51e5a8e0130f3327dfba8bc927caa875d352bdb6a39eb9a5823d92"
+    },
+    "app_sensor": {
+      "path": "/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo/urdf/ur7e_d435.urdf.xacro",
+      "line": 94,
+      "sha256": "a1bac6e34bf476801dd2442ad993812cb2dd1b80e6b7809c251e44da263fe1b6"
+    },
+    "reference_sensor": {
+      "path": "/home/czz/workspaces/isaac_ros-dev/src/nvblox_realsenseD435/sim_gazebo_scene/sdf/d435_gazebo.sdf",
+      "line": 57,
+      "sha256": "f128c2017af86d0a9ecde6de61cd9ca823ada09f849ce726c8166173efc33980"
+    },
+    "app_stamp": {
+      "path": "/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo/third_party/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp",
+      "line": 234,
+      "sha256": "ee61bd6540e40f1575925865dd509a11bb3a7867555b465289152e9dbc0f35c2"
+    },
+    "sweep": {
+      "path": "/home/czz/perception_eye_in_hand/src/ur7e_d435_gazebo/scripts/view_sweep.py",
+      "line": 134,
+      "sha256": "3682b6c6547a0389670c2291f0bf7364532a4c0359eea41687839b1695952505"
+    }
+  },
+  "runtime_or_simulation_executed": false
+}

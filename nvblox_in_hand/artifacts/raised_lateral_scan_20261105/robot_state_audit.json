@@ -1,0 +1,184 @@
+{
+  "result": "passed",
+  "motion_commands_sent": 0,
+  "environment": {
+    "ROS_DOMAIN_ID": "129",
+    "RMW_IMPLEMENTATION": "rmw_cyclonedds_cpp",
+    "ROS_LOCALHOST_ONLY": "1"
+  },
+  "issues": [],
+  "joint_positions_rad": {
+    "shoulder_pan_joint": 0.00023992246305581943,
+    "shoulder_lift_joint": -1.4444778194582752,
+    "elbow_joint": 0.535319242046544,
+    "wrist_1_joint": -0.5693979004300338,
+    "wrist_2_joint": -3.2154821527435264,
+    "wrist_3_joint": -0.7946998190509147
+  },
+  "joint_stamp_ns": 18670000000,
+  "publishers": {
+    "/joint_states": [
+      {
+        "node": "/joint_state_broadcaster",
+        "gid": [
+          1,
+          16,
+          112,
+          33,
+          87,
+          48,
+          158,
+          235,
+          26,
+          205,
+          127,
+          43,
+          0,
+          0,
+          171,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "/robot_description": [
+      {
+        "node": "/robot_state_publisher",
+        "gid": [
+          1,
+          16,
+          36,
+          95,
+          223,
+          105,
+          102,
+          128,
+          94,
+          78,
+          18,
+          90,
+          0,
+          0,
+          24,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "/tf": [
+      {
+        "node": "/robot_state_publisher",
+        "gid": [
+          1,
+          16,
+          36,
+          95,
+          223,
+          105,
+          102,
+          128,
+          94,
+          78,
+          18,
+          90,
+          0,
+          0,
+          22,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "/tf_static": [
+      {
+        "node": "/robot_state_publisher",
+        "gid": [
+          1,
+          16,
+          36,
+          95,
+          223,
+          105,
+          102,
+          128,
+          94,
+          78,
+          18,
+          90,
+          0,
+          0,
+          23,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "tf_vs_joint_fk": {
+    "shoulder_link": {
+      "translation_error_m": 0.0,
+      "rotation_error_rad": 8.131516293641283e-20
+    },
+    "upper_arm_link": {
+      "translation_error_m": 0.0,
+      "rotation_error_rad": 1.4584600735681593e-16
+    },
+    "forearm_link": {
+      "translation_error_m": 6.417819091392343e-17,
+      "rotation_error_rad": 5.483421121768288e-17
+    },
+    "wrist_1_link": {
+      "translation_error_m": 2.1677797545656835e-16,
+      "rotation_error_rad": 2.6596932021041887e-16
+    },
+    "wrist_2_link": {
+      "translation_error_m": 7.850462293418876e-17,
+      "rotation_error_rad": 8.92223109795805e-16
+    },
+    "wrist_3_link": {
+      "translation_error_m": 2.7194799110210365e-16,
+      "rotation_error_rad": 5.400871477267342e-16
+    },
+    "tool0": {
+      "translation_error_m": 2.7194799110210365e-16,
+      "rotation_error_rad": 6.060717685581926e-16
+    },
+    "camera_depth_optical_frame": {
+      "translation_error_m": 1.9675159943996247e-16,
+      "rotation_error_rad": 8.208743748543278e-16
+    },
+    "camera_color_optical_frame": {
+      "translation_error_m": 2.5172027167143304e-16,
+      "rotation_error_rad": 1.0684319474289993e-15
+    }
+  },
+  "scope": "Joint/TF consistency and duplicate state sources; not Gazebo link truth or RViz pixel validation"
+}

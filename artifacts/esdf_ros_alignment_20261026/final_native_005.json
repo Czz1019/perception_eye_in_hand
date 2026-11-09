@@ -1,0 +1,376 @@
+{
+  "mode": "native",
+  "voxel_size_m": 0.05,
+  "targets_hz": {
+    "esdf": 30.0,
+    "publish": 30.0
+  },
+  "ros_domain": "127",
+  "stationary": {
+    "wall_seconds": 12.004119762999835,
+    "rates_hz": {
+      "depth_received": 23.408630165963785,
+      "depth_integrated": 23.325325432277083,
+      "esdf_updated": 18.576955612134963,
+      "esdf_exported": 18.576955612134963,
+      "esdf_published": 18.576955612134963,
+      "observed_cloud_published": 18.576955612134963
+    },
+    "received_cloud_hz": 18.64490120541332,
+    "unique_stamp_count": 224,
+    "cloud_count": 224,
+    "simulated_cloud_hz": 18.690805464755677,
+    "depth_received_hz": 23.52122673232143,
+    "points_min": 2587,
+    "points_max": 2587,
+    "latency": {
+      "export_lock_wait": {
+        "mean_ms": 6.1613297619194025,
+        "p50_ms": 0.0010980002116411924,
+        "p95_ms": 0.0023236010747496034,
+        "max_ms": 2197.5185359988245
+      },
+      "tf_lookup": {
+        "mean_ms": 15.978236480090281,
+        "p50_ms": 0.13953100096841808,
+        "p95_ms": 40.608651749880664,
+        "max_ms": 60.742247000234784
+      },
+      "backend_initialization": {
+        "mean_ms": 1232.5093415001902,
+        "p50_ms": 1232.5093415001902,
+        "p95_ms": 2312.210679650343,
+        "max_ms": 2432.17749500036
+      },
+      "depth_submit": {
+        "mean_ms": 1.3283114763372825,
+        "p50_ms": 0.7782199991197558,
+        "p95_ms": 3.6230470013833838,
+        "max_ms": 34.87733399924764
+      },
+      "esdf_update_submit": {
+        "mean_ms": 0.7036612006445073,
+        "p50_ms": 0.2454249997754232,
+        "p95_ms": 2.5942390986529063,
+        "max_ms": 3.4222579997731373
+      },
+      "fusion_and_esdf": {
+        "mean_ms": 2.443781564736891,
+        "p50_ms": 1.9330929999341606,
+        "p95_ms": 4.573207850353351,
+        "max_ms": 36.450036999667645
+      },
+      "query_readback": {
+        "mean_ms": 1.6016500678660246,
+        "p50_ms": 1.1558940004761098,
+        "p95_ms": 2.9465107490977935,
+        "max_ms": 38.12056400056463
+      },
+      "receive_to_publish": {
+        "mean_ms": 36.005054901169736,
+        "p50_ms": 29.693708500417415,
+        "p95_ms": 56.823373900624574,
+        "max_ms": 136.31793999957154
+      },
+      "image_age_at_publish": {
+        "mean_ms": -23.29320987654321,
+        "p50_ms": -35.0,
+        "p95_ms": -1.0,
+        "max_ms": 131.0
+      }
+    },
+    "latest": {
+      "output_mode": "native",
+      "input_stamp_ns": 652569000000,
+      "map_version": 324,
+      "map_epoch": 1,
+      "unknown_distance_m": 100.0,
+      "voxel_size_m": 0.05,
+      "query_resolution_m": 0.05,
+      "depth_encoding": "16UC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        1280,
+        720
+      ],
+      "integration_size": [
+        640,
+        360
+      ],
+      "camera_position_base": [
+        0.4547477662563324,
+        0.04118242487311363,
+        0.6816341876983643
+      ],
+      "ros_clock_minus_image_sec": -0.069,
+      "receive_to_map_ms": 6.876884001030703,
+      "full_grid_available": false,
+      "total_cells": 2587,
+      "query_cells": 48000,
+      "known_cells": 2587,
+      "query_readback_ms": 0.8232149994000793,
+      "receive_to_result_ms": 8.748296000703704
+    }
+  },
+  "moving": {
+    "wall_seconds": 11.995849857999929,
+    "rates_hz": {
+      "depth_received": 22.09097338970726,
+      "depth_integrated": 22.174335553442003,
+      "esdf_updated": 18.673124676582738,
+      "esdf_exported": 18.673124676582738,
+      "esdf_published": 18.673124676582738,
+      "observed_cloud_published": 18.673124676582738
+    },
+    "received_cloud_hz": 18.56147545893574,
+    "unique_stamp_count": 224,
+    "cloud_count": 224,
+    "simulated_cloud_hz": 18.53082931693535,
+    "depth_received_hz": 22.22367408199505,
+    "points_min": 2587,
+    "points_max": 2978,
+    "latency": {
+      "export_lock_wait": {
+        "mean_ms": 0.009861902338315076,
+        "p50_ms": 0.0011359998097759672,
+        "p95_ms": 0.0022933505533728744,
+        "max_ms": 1.7771879993233597
+      },
+      "tf_lookup": {
+        "mean_ms": 15.400023675812946,
+        "p50_ms": 0.11871200058521936,
+        "p95_ms": 40.5534799499037,
+        "max_ms": 60.63155199990433
+      },
+      "backend_initialization": {
+        "mean_ms": 1232.5093415001902,
+        "p50_ms": 1232.5093415001902,
+        "p95_ms": 2312.210679650343,
+        "max_ms": 2432.17749500036
+      },
+      "depth_submit": {
+        "mean_ms": 1.2883010664062056,
+        "p50_ms": 0.788447499871836,
+        "p95_ms": 3.748039950914972,
+        "max_ms": 6.443060001402046
+      },
+      "esdf_update_submit": {
+        "mean_ms": 0.774042005865283,
+        "p50_ms": 0.2875720001611626,
+        "p95_ms": 2.7996578000056616,
+        "max_ms": 5.3825059985683765
+      },
+      "fusion_and_esdf": {
+        "mean_ms": 2.381942351501465,
+        "p50_ms": 1.7638584995438578,
+        "p95_ms": 4.708302799281228,
+        "max_ms": 7.385094000710524
+      },
+      "query_readback": {
+        "mean_ms": 1.549621138643431,
+        "p50_ms": 1.1909679997188505,
+        "p95_ms": 2.967431050092273,
+        "max_ms": 9.515248999377945
+      },
+      "receive_to_publish": {
+        "mean_ms": 36.41831698434572,
+        "p50_ms": 41.368103999957384,
+        "p95_ms": 52.05502434964728,
+        "max_ms": 75.26313400012441
+      },
+      "image_age_at_publish": {
+        "mean_ms": -24.994140625,
+        "p50_ms": -35.0,
+        "p95_ms": -1.0,
+        "max_ms": 32.0
+      }
+    },
+    "latest": {
+      "output_mode": "native",
+      "input_stamp_ns": 664535000000,
+      "map_version": 548,
+      "map_epoch": 1,
+      "unknown_distance_m": 100.0,
+      "voxel_size_m": 0.05,
+      "query_resolution_m": 0.05,
+      "depth_encoding": "16UC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        1280,
+        720
+      ],
+      "integration_size": [
+        640,
+        360
+      ],
+      "camera_position_base": [
+        0.45836132764816284,
+        0.04117914289236069,
+        0.6863661408424377
+      ],
+      "ros_clock_minus_image_sec": -0.035,
+      "receive_to_map_ms": 16.008262000468676,
+      "full_grid_available": false,
+      "total_cells": 2959,
+      "query_cells": 48000,
+      "known_cells": 2959,
+      "query_readback_ms": 7.320700999116525,
+      "receive_to_result_ms": 37.073106001116685
+    }
+  },
+  "tf_pose_checks": 565,
+  "max_tf_matrix_error": 2.9783630672852723e-08,
+  "no_subscriber": {
+    "esdf_updates": 11,
+    "queries": 0
+  },
+  "reset_epoch": 2,
+  "result": "PASS",
+  "last_stats": {
+    "rates_hz": {
+      "depth_received": 27.004565634873025,
+      "depth_overwritten": 0.0,
+      "map_initialized": 0.0,
+      "stale_depth": 0.0,
+      "depth_integrated": 26.004396537285135,
+      "esdf_updated": 22.003720146933574,
+      "esdf_exported": 22.003720146933574,
+      "observed_cloud_published": 22.003720146933574,
+      "esdf_published": 22.003720146933574,
+      "map_reset_requested": 0.0
+    },
+    "totals": {
+      "depth_received": 889,
+      "depth_overwritten": 52,
+      "map_initialized": 3,
+      "stale_depth": 2,
+      "depth_integrated": 834,
+      "esdf_updated": 684,
+      "esdf_exported": 648,
+      "observed_cloud_published": 648,
+      "esdf_published": 648,
+      "map_reset_requested": 2
+    },
+    "latency": {
+      "export_lock_wait": {
+        "mean_ms": 0.009885337902915126,
+        "p50_ms": 0.001134999365604017,
+        "p95_ms": 0.002310950731043704,
+        "max_ms": 1.7771879993233597
+      },
+      "tf_lookup": {
+        "mean_ms": 15.402217277383556,
+        "p50_ms": 0.11602500035223784,
+        "p95_ms": 40.545064399611874,
+        "max_ms": 60.63155199990433
+      },
+      "backend_initialization": {
+        "mean_ms": 831.2200036665066,
+        "p50_ms": 32.84118800002034,
+        "p95_ms": 2192.243864300326,
+        "max_ms": 2432.17749500036
+      },
+      "depth_submit": {
+        "mean_ms": 1.307886228484989,
+        "p50_ms": 0.7814530008545262,
+        "p95_ms": 3.816781600289687,
+        "max_ms": 6.443060001402046
+      },
+      "esdf_update_submit": {
+        "mean_ms": 0.7296745781850689,
+        "p50_ms": 0.2815494990500156,
+        "p95_ms": 2.8101081496970437,
+        "max_ms": 5.3825059985683765
+      },
+      "fusion_and_esdf": {
+        "mean_ms": 2.3089374687081943,
+        "p50_ms": 1.629039499675855,
+        "p95_ms": 4.643284500070877,
+        "max_ms": 7.385094000710524
+      },
+      "query_readback": {
+        "mean_ms": 1.5872766444857689,
+        "p50_ms": 1.2188894997962052,
+        "p95_ms": 3.033164749558636,
+        "max_ms": 9.515248999377945
+      },
+      "receive_to_publish": {
+        "mean_ms": 35.86199033788162,
+        "p50_ms": 40.32639150045725,
+        "p95_ms": 51.322141450145864,
+        "max_ms": 74.18806300120195
+      },
+      "image_age_at_publish": {
+        "mean_ms": -23.578125,
+        "p50_ms": -35.0,
+        "p95_ms": 28.0,
+        "max_ms": 65.0
+      }
+    },
+    "world_frame": "base_link",
+    "python_executable": "/usr/bin/python3",
+    "error": null,
+    "latest": {
+      "output_mode": "native",
+      "input_stamp_ns": 671571000000,
+      "map_version": 684,
+      "map_epoch": 2,
+      "unknown_distance_m": 100.0,
+      "voxel_size_m": 0.05,
+      "query_resolution_m": 0.05,
+      "depth_encoding": "16UC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        1280,
+        720
+      ],
+      "integration_size": [
+        640,
+        360
+      ],
+      "camera_position_base": [
+        0.4547507166862488,
+        0.04117940366268158,
+        0.6816235780715942
+      ],
+      "ros_clock_minus_image_sec": 0.029,
+      "receive_to_map_ms": 24.184506000892725,
+      "full_grid_available": false,
+      "total_cells": 2587,
+      "query_cells": 48000,
+      "known_cells": 2587,
+      "query_readback_ms": 1.1980130002484657,
+      "receive_to_result_ms": 26.10184800141724
+    },
+    "map_latest": {
+      "output_mode": "native",
+      "input_stamp_ns": 671571000000,
+      "map_version": 684,
+      "map_epoch": 2,
+      "unknown_distance_m": 100.0,
+      "voxel_size_m": 0.05,
+      "query_resolution_m": 0.05,
+      "depth_encoding": "16UC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        1280,
+        720
+      ],
+      "integration_size": [
+        640,
+        360
+      ],
+      "camera_position_base": [
+        0.4547507166862488,
+        0.04117940366268158,
+        0.6816235780715942
+      ],
+      "ros_clock_minus_image_sec": 0.029,
+      "receive_to_map_ms": 24.184506000892725
+    },
+    "targets_hz": {
+      "esdf": 30.0,
+      "publish": 30.0
+    }
+  }
+}

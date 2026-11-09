@@ -32,6 +32,25 @@ class EfficientBackend(NvbloxBackend):
         self.prepare_esdf_grid(grid)
         self.prepare_query(self._grid_offsets_cpu+np.asarray(center,dtype=np.float32))
 
+    def query_prepared_observed(self, max_distance_m):
+        """Filter unknowns/distance band on GPU; read back only displayed cells.
+
+        This is a bounded native-centre query, not a new ESDF integrator or a
+        direct block exporter. The installed Torch API exposes no ESDF layer view.
+        """
+        torch = self.torch
+        with self.lock, torch.no_grad():
+            self.output_gpu.fill_(self.esdf_unknown_distance)
+            output = self.mapper.query_layer(
+                self.QueryType.ESDF, self.query_gpu, output=self.output_gpu, mapper_id=0).reshape(-1)
+            unknown = abs(float(self.esdf_unknown_distance))
+            valid = (torch.isfinite(output) &
+                     ~torch.isclose(output.abs(), torch.full_like(output, unknown),
+                                    rtol=1e-5, atol=1e-3) &
+                     (output.abs() <= max_distance_m))
+            owned = torch.cat((self.query_gpu[valid, :3], output[valid, None]), dim=1).cpu().numpy()
+            return owned[:, :3], owned[:, 3]
+
     def observed_esdf_numpy(self):
         from nvblox_torch.indexing import get_local_voxel_center_grid
         torch=self.torch

@@ -1,0 +1,22 @@
+{
+  "source": "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox/nvblox_examples/nvblox_examples_bringup/config/nvblox/nvblox_base.yaml",
+  "sha256": "170ce9c35534b24baf8f168dc6f5628ef72498986f5eaceb8af6039e9da8c492",
+  "removed_unrelated_keys": [
+    "decay_dynamic_occupancy_rate_hz",
+    "lidar_width",
+    "lidar_height",
+    "lidar_min_valid_range_m",
+    "lidar_max_valid_range_m",
+    "use_non_equal_vertical_fov_lidar_params",
+    "multi_mapper"
+  ],
+  "adaptation": "static base values retained; D435/robot/profile/CLI layered separately",
+  "reference_files": {
+    "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox/nvblox_examples/nvblox_examples_bringup/launch/realsense_example.launch.py": "4d5e315c7292ed82004ec883c8187031403129cfd994459bed071a4516968ed9",
+    "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox/nvblox_examples/nvblox_examples_bringup/launch/gazebo_realsense_example.launch.py": "b0c82a5154d969afabe1b518ec4cad2c03d4c283b3d63876a3e5d28eb1dfbd09",
+    "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox/nvblox_examples/nvblox_examples_bringup/launch/perception/nvblox.launch.py": "88576dd049f35a8ae964e08f1e2c8af9b103795cda4257e4fa88b6355c9daba0",
+    "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox/nvblox_examples/nvblox_examples_bringup/launch/sensors/gazebo_realsense.launch.py": "01a4017284565388ae752ce3a23ff1bc63aab84f6bf9cde024652e31a0854b32",
+    "/home/czz/workspaces/isaac_ros-dev/src/isaac_ros_nvblox/nvblox_examples/nvblox_examples_bringup/config/nvblox/specializations/nvblox_realsense.yaml": "4ec750e05763955ebec4adb44dc1ab956e8b6a766c8a4914ff005cab83a0efd8"
+  },
+  "validation": "build and static parsing only; no unit/GPU/ROS runtime/simulation tests executed"
+}

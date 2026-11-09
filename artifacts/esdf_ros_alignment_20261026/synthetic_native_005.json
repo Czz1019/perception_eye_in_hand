@@ -1,0 +1,149 @@
+{
+  "passed": true,
+  "mode": "native",
+  "rate_hz": 15.819539822585606,
+  "frames": 159,
+  "points": 48000,
+  "latency_p50_ms": 151.28183364868164,
+  "latency_p95_ms": 193.00034046173093,
+  "last_stats": {
+    "rates_hz": {
+      "depth_received": 31.257416483772367,
+      "depth_overwritten": 0.0,
+      "map_initialized": 0.0,
+      "stale_depth": 0.0,
+      "depth_integrated": 30.24911272623132,
+      "esdf_updated": 17.141163878197748,
+      "esdf_exported": 16.132860120656705,
+      "full_cloud_published": 16.132860120656705,
+      "esdf_published": 16.132860120656705
+    },
+    "totals": {
+      "depth_received": 373,
+      "depth_overwritten": 77,
+      "map_initialized": 1,
+      "stale_depth": 1,
+      "depth_integrated": 294,
+      "esdf_updated": 181,
+      "esdf_exported": 178,
+      "full_cloud_published": 162,
+      "esdf_published": 162
+    },
+    "latency": {
+      "tf_lookup": {
+        "mean_ms": 0.09749495269273678,
+        "p50_ms": 0.09037900053954218,
+        "p95_ms": 0.14072049998503644,
+        "max_ms": 0.256823999734479
+      },
+      "backend_initialization": {
+        "mean_ms": 2680.8534409992717,
+        "p50_ms": 2680.8534409992717,
+        "p95_ms": 2680.8534409992717,
+        "max_ms": 2680.8534409992717
+      },
+      "export_lock_wait": {
+        "mean_ms": 13.634912978136402,
+        "p50_ms": 0.0009209998097503558,
+        "p95_ms": 0.006607900286326203,
+        "max_ms": 2444.7368119999737
+      },
+      "depth_submit": {
+        "mean_ms": 5.290011200681225,
+        "p50_ms": 0.9193099999720289,
+        "p95_ms": 24.68812049964973,
+        "max_ms": 62.58080800034804
+      },
+      "esdf_update_submit": {
+        "mean_ms": 0.585903342512487,
+        "p50_ms": 0.2271249995828839,
+        "p95_ms": 2.2127419997559628,
+        "max_ms": 11.082708999310853
+      },
+      "fusion_and_esdf": {
+        "mean_ms": 8.91350288951075,
+        "p50_ms": 2.9868159999750787,
+        "p95_ms": 38.19855599977018,
+        "max_ms": 65.14798199987126
+      },
+      "query_readback": {
+        "mean_ms": 6.187789780867891,
+        "p50_ms": 0.5107235001560184,
+        "p95_ms": 48.40265470002124,
+        "max_ms": 63.60098999994079
+      },
+      "image_age_at_publish": {
+        "mean_ms": 153.49153217901238,
+        "p50_ms": 148.0517635,
+        "p95_ms": 190.6153201,
+        "max_ms": 352.429011
+      }
+    },
+    "world_frame": "base_link",
+    "python_executable": "/usr/bin/python3",
+    "error": null,
+    "latest": {
+      "output_mode": "native",
+      "input_stamp_ns": 1792999165727565425,
+      "map_version": 180,
+      "map_epoch": 0,
+      "unknown_distance_m": 100.0,
+      "voxel_size_m": 0.05,
+      "query_resolution_m": 0.05,
+      "depth_encoding": "32FC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        160,
+        90
+      ],
+      "integration_size": [
+        160,
+        90
+      ],
+      "camera_position_base": [
+        0.05355298891663551,
+        0.0,
+        0.20000000298023224
+      ],
+      "ros_clock_minus_image_sec": 0.036812228,
+      "receive_to_map_ms": 20.938980000209995,
+      "full_grid_available": true,
+      "total_cells": 48000,
+      "query_cells": 48000,
+      "known_cells": 3270,
+      "query_readback_ms": 0.754683000195655,
+      "receive_to_result_ms": 22.175402999891958
+    },
+    "map_latest": {
+      "output_mode": "native",
+      "input_stamp_ns": 1792999165794393372,
+      "map_version": 181,
+      "map_epoch": 0,
+      "unknown_distance_m": 100.0,
+      "voxel_size_m": 0.05,
+      "query_resolution_m": 0.05,
+      "depth_encoding": "32FC1",
+      "input_frame": "camera_depth_optical_frame",
+      "input_size": [
+        160,
+        90
+      ],
+      "integration_size": [
+        160,
+        90
+      ],
+      "camera_position_base": [
+        0.05241943523287773,
+        0.0,
+        0.20000000298023224
+      ],
+      "ros_clock_minus_image_sec": 0.034442999,
+      "receive_to_map_ms": 27.67679099997622
+    },
+    "targets_hz": {
+      "esdf": 30.0,
+      "publish": 30.0
+    }
+  },
+  "seconds": 10.0
+}

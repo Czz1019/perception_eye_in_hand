@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ur7e_nvblox_native</name><version>0.4.0</version>
+  <description>UR7e image-time TF adapter for the official nvblox ROS C++ node and native block ESDF export.</description>
+  <maintainer email="czz@localhost.localdomain">czz</maintainer><license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>nvblox_ros</depend><depend>rclcpp</depend><depend>std_msgs</depend>
+  <depend>std_srvs</depend><depend>sensor_msgs</depend><depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend><depend>visualization_msgs</depend><depend>nvblox_msgs</depend>
+  <depend>rosbag2_cpp</depend><depend>libgoogle-glog-dev</depend>
+  <depend>libgflags-dev</depend><depend>nlohmann-json3-dev</depend>
+  <exec_depend>launch</exec_depend><exec_depend>ament_index_python</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

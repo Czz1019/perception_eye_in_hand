@@ -27,3 +27,28 @@ def test_prepared_and_sparse_are_native_esdf_with_owned_outputs():
     empty=EfficientBackend(depth_calibration(CameraIntrinsics(80,60,70,70,40,30)),{'voxel_size_m':.05})
     empty.prepare_query(p);empty.output_gpu.fill_(.3)
     assert not known_distances(empty.query_prepared(),empty.esdf_unknown_distance).any()
+
+
+@pytest.mark.skipif(os.environ.get('RUN_GPU_TESTS')!='1',reason='Explicit CUDA test')
+def test_gpu_filtered_export_matches_native_queries_and_never_leaks_unknowns():
+    from ur7e_nvblox.sampling import native_grid_points
+    b = EfficientBackend(depth_calibration(CameraIntrinsics(80,60,70,70,40,30)), {'voxel_size_m': .05})
+    for _ in range(3):
+        b.integrate_depth(np.ones((60,80),np.float32), np.eye(4))
+    b.update_esdf()
+    grid = native_grid_points([0, 0, .75], [2, 2, 1.5], .05)
+    b.prepare_query(grid)
+    full = b.query_prepared()
+    keep = known_distances(full, b.esdf_unknown_distance) & (np.abs(full) <= .15)
+    points, distances = b.query_prepared_observed(.15)
+    assert len(points) > 100
+    np.testing.assert_array_equal(points, grid[keep])
+    np.testing.assert_allclose(distances, full[keep], atol=1e-6)
+    saved = distances.copy()
+    b.query_prepared_observed(.05)
+    np.testing.assert_array_equal(distances, saved)
+    # Unknown values must not appear even when the requested distance band is huge.
+    empty = EfficientBackend(depth_calibration(CameraIntrinsics(80,60,70,70,40,30)), {'voxel_size_m': .05})
+    empty.prepare_query(grid)
+    points, distances = empty.query_prepared_observed(2e6)
+    assert points.shape == (0, 3) and distances.shape == (0,)

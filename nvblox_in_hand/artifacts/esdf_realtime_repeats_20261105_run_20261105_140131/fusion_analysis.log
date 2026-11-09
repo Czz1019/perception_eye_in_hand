@@ -1,0 +1,647 @@
+{
+  "status": "completed",
+  "method": "Existing official timer counts differenced between before/after snapshots. Interval is the difference between service request/response wall midpoint estimates; duration bracket saved. Not CUDA completion FPS.",
+  "rounds": [
+    {
+      "mode": "gate30p0_r1",
+      "fusion_gate_hz": 30.0,
+      "repeat": 1,
+      "wall_seconds": 20.217186897998545,
+      "wall_duration_bracket_seconds": [
+        20.162143682999158,
+        20.27223011299975
+      ],
+      "source_before": "gate30p0_r1_static_timings.txt",
+      "source_after": "gate30p0_r1_measure_timings.txt",
+      "depth_pipeline": {
+        "callbacks": 606,
+        "process_entries": 606,
+        "integrations": 378,
+        "integration_fraction_of_callbacks": 0.6237623762376238,
+        "host_integrate_mean_ms": 0.3882566137566137
+      },
+      "depth_fusion_hz": 18.696963227728837,
+      "color_pipeline": {
+        "callbacks": 605,
+        "process_entries": 605,
+        "integrations": 375,
+        "integration_fraction_of_callbacks": 0.6198347107438017,
+        "host_integrate_mean_ms": 0.3729013333333334
+      },
+      "color_fusion_hz": 18.54857463068337,
+      "esdf_call_count": 664,
+      "esdf_call_hz": 32.84334281273002,
+      "depth_input_wall_hz": 29.914729662042795,
+      "rgb_input_wall_hz": 29.86514547812684,
+      "mesh_wall_hz": 4.752642672501534,
+      "simulation_rtf": 0.9988054417735784,
+      "input_gate_model": {
+        "depth": {
+          "input_messages": 605,
+          "model_accepted": 378,
+          "model_accepted_hz": 18.696963227728837,
+          "positive_stamp_interval_p50_ms": 33.00000000000125,
+          "adjacent_interval_at_or_below_gate_fraction": 0.5447019867549668,
+          "not_actual_fusion_count": true
+        },
+        "color": {
+          "input_messages": 603,
+          "model_accepted": 374,
+          "model_accepted_hz": 18.499111765001548,
+          "positive_stamp_interval_p50_ms": 33.00000000000125,
+          "adjacent_interval_at_or_below_gate_fraction": 0.5465116279069767,
+          "not_actual_fusion_count": true
+        }
+      }
+    },
+    {
+      "mode": "gate33p4_r1",
+      "fusion_gate_hz": 33.4,
+      "repeat": 1,
+      "wall_seconds": 20.219765805999486,
+      "wall_duration_bracket_seconds": [
+        20.162486056999114,
+        20.27704555499986
+      ],
+      "source_before": "gate33p4_r1_static_timings.txt",
+      "source_after": "gate33p4_r1_measure_timings.txt",
+      "depth_pipeline": {
+        "callbacks": 605,
+        "process_entries": 605,
+        "integrations": 600,
+        "integration_fraction_of_callbacks": 0.9917355371900827,
+        "host_integrate_mean_ms": 0.31673999999999997
+      },
+      "depth_fusion_hz": 29.673934196704277,
+      "color_pipeline": {
+        "callbacks": 604,
+        "process_entries": 604,
+        "integrations": 595,
+        "integration_fraction_of_callbacks": 0.9850993377483444,
+        "host_integrate_mean_ms": 0.28866890756302516
+      },
+      "color_fusion_hz": 29.426651411731743,
+      "esdf_call_count": 664,
+      "esdf_call_hz": 32.83915384435274,
+      "depth_input_wall_hz": 29.715883630055373,
+      "rgb_input_wall_hz": 29.915509545618683,
+      "mesh_wall_hz": 4.7483224060605345,
+      "simulation_rtf": 0.9989497772216529,
+      "input_gate_model": {
+        "depth": {
+          "input_messages": 601,
+          "model_accepted": 596,
+          "model_accepted_hz": 29.47610796872625,
+          "positive_stamp_interval_p50_ms": 33.00000000000125,
+          "adjacent_interval_at_or_below_gate_fraction": 0.008333333333333333,
+          "not_actual_fusion_count": true
+        },
+        "color": {
+          "input_messages": 605,
+          "model_accepted": 596,
+          "model_accepted_hz": 29.47610796872625,
+          "positive_stamp_interval_p50_ms": 33.00000000000125,
+          "adjacent_interval_at_or_below_gate_fraction": 0.014900662251655629,
+          "not_actual_fusion_count": true
+        }
+      }
+    },
+    {
+      "mode": "gate40p0_r1",
+      "fusion_gate_hz": 40.0,
+      "repeat": 1,
+      "wall_seconds": 20.243116696499783,
+      "wall_duration_bracket_seconds": [
+        20.184575418999884,
+        20.30165797399968
+      ],
+      "source_before": "gate40p0_r1_static_timings.txt",
+      "source_after": "gate40p0_r1_measure_timings.txt",
+      "depth_pipeline": {
+        "callbacks": 601,
+        "process_entries": 601,
+        "integrations": 600,
+        "integration_fraction_of_callbacks": 0.9983361064891847,
+        "host_integrate_mean_ms": 0.29519333333333336
+      },
+      "depth_fusion_hz": 29.63970464606102,
+      "color_pipeline": {
+        "callbacks": 602,
+        "process_entries": 602,
+        "integrations": 602,
+        "integration_fraction_of_callbacks": 1.0,
+        "host_integrate_mean_ms": 0.3129435215946843
+      },
+      "color_fusion_hz": 29.738503661547888,
+      "esdf_call_count": 665,
+      "esdf_call_hz": 32.85067264938429,
+      "depth_input_wall_hz": 29.819476992810323,
+      "rgb_input_wall_hz": 29.869176674103166,
+      "mesh_wall_hz": 4.745361990566657,
+      "simulation_rtf": 0.9988542327056809,
+      "input_gate_model": {
+        "depth": {
+          "input_messages": 604,
+          "model_accepted": 604,
+          "model_accepted_hz": 29.83730267703476,
+          "positive_stamp_interval_p50_ms": 33.00000000000125,
+          "adjacent_interval_at_or_below_gate_fraction": 0.0,
+          "not_actual_fusion_count": true
+        },
+        "color": {
+          "input_messages": 605,
+          "model_accepted": 605,
+          "model_accepted_hz": 29.886702184778194,
+          "positive_stamp_interval_p50_ms": 33.00000000000125,
+          "adjacent_interval_at_or_below_gate_fraction": 0.0,
+          "not_actual_fusion_count": true
+        }
+      }
+    },
+    {
+      "mode": "gate40p0_r2",
+      "fusion_gate_hz": 40.0,
+      "repeat": 2,
+      "wall_seconds": 20.220916707499782,
+      "wall_duration_bracket_seconds": [
+        20.16899628200008,
+        20.272837133001303
+      ],
+      "source_before": "gate40p0_r2_static_timings.txt",
+      "source_after": "gate40p0_r2_measure_timings.txt",
+      "depth_pipeline": {
+        "callbacks": 603,
+        "process_entries": 603,
+        "integrations": 602,
+        "integration_fraction_of_callbacks": 0.9983416252072969,
+        "host_integrate_mean_ms": 0.356875415282392
+      },
+      "depth_fusion_hz": 29.771152747823884,
+      "color_pipeline": {
+        "callbacks": 604,
+        "process_entries": 604,
+        "integrations": 603,
+        "integration_fraction_of_callbacks": 0.9983443708609272,
+        "host_integrate_mean_ms": 0.3264444444444444
+      },
+      "color_fusion_hz": 29.8206064899299,
+      "esdf_call_count": 664,
+      "esdf_call_hz": 32.837284758397104,
+      "depth_input_wall_hz": 29.968075766313433,
+      "rgb_input_wall_hz": 29.91852766058532,
+      "mesh_wall_hz": 4.745361786584522,
+      "simulation_rtf": 0.998902561123571,
+      "input_gate_model": {
+        "depth": {
+          "input_messages": 606,
+          "model_accepted": 606,
+          "model_accepted_hz": 29.968967716247963,
+          "positive_stamp_interval_p50_ms": 33.00000000001546,
+          "adjacent_interval_at_or_below_gate_fraction": 0.0,
+          "not_actual_fusion_count": true
+        },
+        "color": {
+          "input_messages": 604,
+          "model_accepted": 604,
+          "model_accepted_hz": 29.87006023203592,
+          "positive_stamp_interval_p50_ms": 33.00000000001546,
+          "adjacent_interval_at_or_below_gate_fraction": 0.0,
+          "not_actual_fusion_count": true
+        }
+      }
+    },
+    {
+      "mode": "gate30p0_r2",
+      "fusion_gate_hz": 30.0,
+      "repeat": 2,
+      "wall_seconds": 20.22129122499973,
+      "wall_duration_bracket_seconds": [
+        20.16781631899903,
+        20.274766131000433
+      ],
+      "source_before": "gate30p0_r2_static_timings.txt",
+      "source_after": "gate30p0_r2_measure_timings.txt",
+      "depth_pipeline": {
+        "callbacks": 605,
+        "process_entries": 605,
+        "integrations": 371,
+        "integration_fraction_of_callbacks": 0.6132231404958678,
+        "host_integrate_mean_ms": 0.3742183288409704
+      },
+      "depth_fusion_hz": 18.3469985112192,
+      "color_pipeline": {
+        "callbacks": 604,
+        "process_entries": 605,
+        "integrations": 365,
+        "integration_fraction_of_callbacks": 0.6043046357615894,
+        "host_integrate_mean_ms": 0.36172876712328766
+      },
+      "color_fusion_hz": 18.050281554164446,
+      "esdf_call_count": 668,
+      "esdf_call_hz": 33.034487885429726,
+      "depth_input_wall_hz": 29.9664684382347,
+      "rgb_input_wall_hz": 29.96658279655352,
+      "mesh_wall_hz": 4.747398757925047,
+      "simulation_rtf": 0.9988988776019223,
+      "input_gate_model": {
+        "depth": {
+          "input_messages": 606,
+          "model_accepted": 373,
+          "model_accepted_hz": 18.445904163570788,
+          "positive_stamp_interval_p50_ms": 33.00000000001546,
+          "adjacent_interval_at_or_below_gate_fraction": 0.5801652892561984,
+          "not_actual_fusion_count": true
+        },
+        "color": {
+          "input_messages": 606,
+          "model_accepted": 366,
+          "model_accepted_hz": 18.099734380340237,
+          "positive_stamp_interval_p50_ms": 33.00000000001546,
+          "adjacent_interval_at_or_below_gate_fraction": 0.6049586776859505,
+          "not_actual_fusion_count": true
+        }
+      }
+    },
+    {
+      "mode": "gate33p4_r2",
+      "fusion_gate_hz": 33.4,
+      "repeat": 2,
+      "wall_seconds": 20.231321576500704,
+      "wall_duration_bracket_seconds": [
+        20.17637002000083,
+        20.286273133000577
+      ],
+      "source_before": "gate33p4_r2_static_timings.txt",
+      "source_after": "gate33p4_r2_measure_timings.txt",
+      "depth_pipeline": {
+        "callbacks": 606,
+        "process_entries": 606,
+        "integrations": 600,
+        "integration_fraction_of_callbacks": 0.9900990099009901,
+        "host_integrate_mean_ms": 0.3070366666666666
+      },
+      "depth_fusion_hz": 29.65698497407694,
+      "color_pipeline": {
+        "callbacks": 604,
+        "process_entries": 604,
+        "integrations": 584,
+        "integration_fraction_of_callbacks": 0.9668874172185431,
+        "host_integrate_mean_ms": 0.3374006849315069
+      },
+      "color_fusion_hz": 28.866132041434888,
+      "esdf_call_count": 666,
+      "esdf_call_hz": 32.919253321225405,
+      "depth_input_wall_hz": 29.86360161015535,
+      "rgb_input_wall_hz": 29.864517556945316,
+      "mesh_wall_hz": 4.744617008058266,
+      "simulation_rtf": 0.9987548746801235,
+      "input_gate_model": {
+        "depth": {
+          "input_messages": 604,
+          "model_accepted": 598,
+          "model_accepted_hz": 29.558128357496685,
+          "positive_stamp_interval_p50_ms": 33.00000000001546,
+          "adjacent_interval_at_or_below_gate_fraction": 0.009950248756218905,
+          "not_actual_fusion_count": true
+        },
+        "color": {
+          "input_messages": 604,
+          "model_accepted": 585,
+          "model_accepted_hz": 28.915560349725016,
+          "positive_stamp_interval_p50_ms": 33.00000000001546,
+          "adjacent_interval_at_or_below_gate_fraction": 0.03150912106135987,
+          "not_actual_fusion_count": true
+        }
+      }
+    },
+    {
+      "mode": "gate33p4_r3",
+      "fusion_gate_hz": 33.4,
+      "repeat": 3,
+      "wall_seconds": 20.223033631000362,
+      "wall_duration_bracket_seconds": [
+        20.164602691000255,
+        20.28146457100047
+      ],
+      "source_before": "gate33p4_r3_static_timings.txt",
+      "source_after": "gate33p4_r3_measure_timings.txt",
+      "depth_pipeline": {
+        "callbacks": 604,
+        "process_entries": 604,
+        "integrations": 597,
+        "integration_fraction_of_callbacks": 0.9884105960264901,
+        "host_integrate_mean_ms": 0.3391105527638191
+      },
+      "depth_fusion_hz": 29.52079351165419,
+      "color_pipeline": {
+        "callbacks": 606,
+        "process_entries": 606,
+        "integrations": 596,
+        "integration_fraction_of_callbacks": 0.9834983498349835,
+        "host_integrate_mean_ms": 0.3479362416107383
+      },
+      "color_fusion_hz": 29.471344946308037,
+      "esdf_call_count": 665,
+      "esdf_call_hz": 32.88329595519269,
+      "depth_input_wall_hz": 29.864561049202223,
+      "rgb_input_wall_hz": 29.962391611862994,
+      "mesh_wall_hz": 4.7474946846256065,
+      "simulation_rtf": 0.9988546387676656,
+      "input_gate_model": {
+        "depth": {
+          "input_messages": 604,
+          "model_accepted": 598,
+          "model_accepted_hz": 29.570242077000348,
+          "positive_stamp_interval_p50_ms": 33.00000000001546,
+          "adjacent_interval_at_or_below_gate_fraction": 0.009950248756218905,
+          "not_actual_fusion_count": true
+        },
+        "color": {
+          "input_messages": 606,
+          "model_accepted": 596,
+          "model_accepted_hz": 29.471344946308037,
+          "positive_stamp_interval_p50_ms": 33.00000000001546,
+          "adjacent_interval_at_or_below_gate_fraction": 0.01652892561983471,
+          "not_actual_fusion_count": true
+        }
+      }
+    },
+    {
+      "mode": "gate40p0_r3",
+      "fusion_gate_hz": 40.0,
+      "repeat": 3,
+      "wall_seconds": 20.22444965249815,
+      "wall_duration_bracket_seconds": [
+        20.172735729000124,
+        20.276163575999817
+      ],
+      "source_before": "gate40p0_r3_static_timings.txt",
+      "source_after": "gate40p0_r3_measure_timings.txt",
+      "depth_pipeline": {
+        "callbacks": 605,
+        "process_entries": 605,
+        "integrations": 605,
+        "integration_fraction_of_callbacks": 1.0,
+        "host_integrate_mean_ms": 0.26467933884297523
+      },
+      "depth_fusion_hz": 29.91428742909054,
+      "color_pipeline": {
+        "callbacks": 600,
+        "process_entries": 600,
+        "integrations": 600,
+        "integration_fraction_of_callbacks": 1.0,
+        "host_integrate_mean_ms": 0.32091000000000003
+      },
+      "color_fusion_hz": 29.667061913147645,
+      "esdf_call_count": 668,
+      "esdf_call_hz": 33.029328929971044,
+      "depth_input_wall_hz": 29.95961019388069,
+      "rgb_input_wall_hz": 29.909612276308405,
+      "mesh_wall_hz": 4.750175370536927,
+      "simulation_rtf": 0.9988088597501485,
+      "input_gate_model": {
+        "depth": {
+          "input_messages": 606,
+          "model_accepted": 606,
+          "model_accepted_hz": 29.96373253227912,
+          "positive_stamp_interval_p50_ms": 33.00000000001546,
+          "adjacent_interval_at_or_below_gate_fraction": 0.0,
+          "not_actual_fusion_count": true
+        },
+        "color": {
+          "input_messages": 605,
+          "model_accepted": 605,
+          "model_accepted_hz": 29.91428742909054,
+          "positive_stamp_interval_p50_ms": 33.00000000001546,
+          "adjacent_interval_at_or_below_gate_fraction": 0.0,
+          "not_actual_fusion_count": true
+        }
+      }
+    },
+    {
+      "mode": "gate30p0_r3",
+      "fusion_gate_hz": 30.0,
+      "repeat": 3,
+      "wall_seconds": 20.216658831999666,
+      "wall_duration_bracket_seconds": [
+        20.1631591080004,
+        20.270158555998933
+      ],
+      "source_before": "gate30p0_r3_static_timings.txt",
+      "source_after": "gate30p0_r3_measure_timings.txt",
+      "depth_pipeline": {
+        "callbacks": 604,
+        "process_entries": 604,
+        "integrations": 365,
+        "integration_fraction_of_callbacks": 0.6043046357615894,
+        "host_integrate_mean_ms": 0.34907671232876714
+      },
+      "depth_fusion_hz": 18.054417549069218,
+      "color_pipeline": {
+        "callbacks": 605,
+        "process_entries": 605,
+        "integrations": 369,
+        "integration_fraction_of_callbacks": 0.6099173553719008,
+        "host_integrate_mean_ms": 0.39581571815718153
+      },
+      "color_fusion_hz": 18.25227417974395,
+      "esdf_call_count": 662,
+      "esdf_call_hz": 32.745272376668005,
+      "depth_input_wall_hz": 29.819151671929852,
+      "rgb_input_wall_hz": 29.9683919382746,
+      "mesh_wall_hz": 4.752421401000337,
+      "simulation_rtf": 0.9989068679940749,
+      "input_gate_model": {
+        "depth": {
+          "input_messages": 603,
+          "model_accepted": 366,
+          "model_accepted_hz": 18.1038817067379,
+          "positive_stamp_interval_p50_ms": 33.00000000001546,
+          "adjacent_interval_at_or_below_gate_fraction": 0.5880398671096345,
+          "not_actual_fusion_count": true
+        },
+        "color": {
+          "input_messages": 606,
+          "model_accepted": 370,
+          "model_accepted_hz": 18.301738337412633,
+          "positive_stamp_interval_p50_ms": 33.00000000001546,
+          "adjacent_interval_at_or_below_gate_fraction": 0.5834710743801653,
+          "not_actual_fusion_count": true
+        }
+      }
+    }
+  ],
+  "summary": {
+    "30.0": {
+      "repetitions": 3,
+      "depth_fusion_hz": {
+        "mean": 18.366126429339086,
+        "sample_std": 0.32169961956728893,
+        "min": 18.054417549069218,
+        "max": 18.696963227728837
+      },
+      "color_fusion_hz": {
+        "mean": 18.28371012153059,
+        "sample_std": 0.2506295300910949,
+        "min": 18.050281554164446,
+        "max": 18.54857463068337
+      },
+      "esdf_call_hz": {
+        "mean": 32.87436769160925,
+        "sample_std": 0.14708266369351095,
+        "min": 32.745272376668005,
+        "max": 33.034487885429726
+      },
+      "depth_input_wall_hz": {
+        "mean": 29.90011659073578,
+        "sample_std": 0.07473763307997601,
+        "min": 29.819151671929852,
+        "max": 29.9664684382347
+      },
+      "rgb_input_wall_hz": {
+        "mean": 29.93337340431832,
+        "sample_std": 0.059094041008668545,
+        "min": 29.86514547812684,
+        "max": 29.9683919382746
+      },
+      "mesh_wall_hz": {
+        "mean": 4.750820943808972,
+        "sample_std": 0.002965764224852827,
+        "min": 4.747398757925047,
+        "max": 4.752642672501534
+      },
+      "simulation_rtf": {
+        "mean": 0.9988703957898585,
+        "sample_std": 5.6393525912785076e-05,
+        "min": 0.9988054417735784,
+        "max": 0.9989068679940749
+      },
+      "depth_pipeline_totals": {
+        "callbacks": 1815,
+        "process_entries": 1815,
+        "integrations": 1114,
+        "integration_fraction_of_callbacks": 0.6137741046831956
+      },
+      "color_pipeline_totals": {
+        "callbacks": 1814,
+        "process_entries": 1815,
+        "integrations": 1109,
+        "integration_fraction_of_callbacks": 0.6113561190738699
+      }
+    },
+    "33.4": {
+      "repetitions": 3,
+      "depth_fusion_hz": {
+        "mean": 29.6172375608118,
+        "sample_std": 0.08395183142942579,
+        "min": 29.52079351165419,
+        "max": 29.673934196704277
+      },
+      "color_fusion_hz": {
+        "mean": 29.25470946649156,
+        "sample_std": 0.33725908357816464,
+        "min": 28.866132041434888,
+        "max": 29.471344946308037
+      },
+      "esdf_call_hz": {
+        "mean": 32.880567706923614,
+        "sample_std": 0.04011937253724298,
+        "min": 32.83915384435274,
+        "max": 32.919253321225405
+      },
+      "depth_input_wall_hz": {
+        "mean": 29.814682096470978,
+        "sample_std": 0.08556332657966434,
+        "min": 29.715883630055373,
+        "max": 29.864561049202223
+      },
+      "rgb_input_wall_hz": {
+        "mean": 29.914139571475662,
+        "sample_std": 0.04895140731757962,
+        "min": 29.864517556945316,
+        "max": 29.962391611862994
+      },
+      "mesh_wall_hz": {
+        "mean": 4.746811366248136,
+        "sample_std": 0.0019449130038503067,
+        "min": 4.744617008058266,
+        "max": 4.7483224060605345
+      },
+      "simulation_rtf": {
+        "mean": 0.9988530968898139,
+        "sample_std": 9.746041870492667e-05,
+        "min": 0.9987548746801235,
+        "max": 0.9989497772216529
+      },
+      "depth_pipeline_totals": {
+        "callbacks": 1815,
+        "process_entries": 1815,
+        "integrations": 1797,
+        "integration_fraction_of_callbacks": 0.9900826446280991
+      },
+      "color_pipeline_totals": {
+        "callbacks": 1814,
+        "process_entries": 1814,
+        "integrations": 1775,
+        "integration_fraction_of_callbacks": 0.9785005512679162
+      }
+    },
+    "40.0": {
+      "repetitions": 3,
+      "depth_fusion_hz": {
+        "mean": 29.775048274325147,
+        "sample_std": 0.13733283485423478,
+        "min": 29.63970464606102,
+        "max": 29.91428742909054
+      },
+      "color_fusion_hz": {
+        "mean": 29.742057354875143,
+        "sample_std": 0.07683394963822085,
+        "min": 29.667061913147645,
+        "max": 29.8206064899299
+      },
+      "esdf_call_hz": {
+        "mean": 32.90576211258415,
+        "sample_std": 0.1072211624429443,
+        "min": 32.837284758397104,
+        "max": 33.029328929971044
+      },
+      "depth_input_wall_hz": {
+        "mean": 29.915720984334815,
+        "sample_std": 0.08345715012854439,
+        "min": 29.819476992810323,
+        "max": 29.968075766313433
+      },
+      "rgb_input_wall_hz": {
+        "mean": 29.899105536998963,
+        "sample_std": 0.026299689064280648,
+        "min": 29.869176674103166,
+        "max": 29.91852766058532
+      },
+      "mesh_wall_hz": {
+        "mean": 4.746966382562701,
+        "sample_std": 0.002779065107989116,
+        "min": 4.745361786584522,
+        "max": 4.750175370536927
+      },
+      "simulation_rtf": {
+        "mean": 0.9988552178598002,
+        "sample_std": 4.685845432569168e-05,
+        "min": 0.9988088597501485,
+        "max": 0.998902561123571
+      },
+      "depth_pipeline_totals": {
+        "callbacks": 1809,
+        "process_entries": 1809,
+        "integrations": 1807,
+        "integration_fraction_of_callbacks": 0.9988944168048646
+      },
+      "color_pipeline_totals": {
+        "callbacks": 1806,
+        "process_entries": 1806,
+        "integrations": 1805,
+        "integration_fraction_of_callbacks": 0.9994462901439646
+      }
+    }
+  }
+}

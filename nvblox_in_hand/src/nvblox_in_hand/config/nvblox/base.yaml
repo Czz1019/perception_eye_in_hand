@@ -1,0 +1,13 @@
+# Compatibility profile for historical mapper_config paths. Canonical base is
+# nvblox_base.yaml, followed by D435 / robot / profiles / optional custom overrides.
+/**:
+  ros__parameters:
+    voxel_size: 0.03
+    integrate_depth_rate_hz: 30.0
+    integrate_color_rate_hz: 30.0
+    update_esdf_rate_hz: 30.0
+    update_mesh_rate_hz: 5.0
+    publish_layer_rate_hz: 5.0
+    decay_tsdf_rate_hz: 0.0
+    clear_map_outside_radius_rate_hz: 0.0
+    map_clearing_radius_m: -1.0

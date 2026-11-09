@@ -1,0 +1,92 @@
+{
+  "test": "stationary_gazebo_simple",
+  "arm_motion_commands_sent": 0,
+  "gpu_completion_measured": false,
+  "phases": {
+    "no_esdf_display_subscriber": {
+      "wall_seconds": 25.000571076000142,
+      "metrics_samples": 27,
+      "marker_messages": 0,
+      "depth_wall_hz": 16.694855506710645,
+      "color_wall_hz": 4.641984214061009,
+      "esdf_cycles_wall_hz": 5.089894971558124,
+      "esdf_process_host_ms_sample_mean": 1.2272494814814814,
+      "esdf_process_host_ms_sample_min": 0.067698,
+      "esdf_process_host_ms_sample_max": 2.34698,
+      "esdf_view_host_ms_sample_mean": 0,
+      "esdf_view_host_ms_sample_min": 0,
+      "esdf_view_host_ms_sample_max": 0,
+      "last_metrics": {
+        "backend": "official_ros_cpp",
+        "totals": {
+          "depth_integrated": 520,
+          "color_integrated": 147,
+          "esdf_updated": 164
+        },
+        "depth_integrated_total": 520,
+        "color_integrated_total": 147,
+        "esdf_cycles_total": 164,
+        "depth_integrated_wall_hz": 17.9995,
+        "color_integrated_wall_hz": 3.99989,
+        "esdf_cycles_wall_hz": 4.99986,
+        "esdf_process_host_ms": 1.62635,
+        "esdf_view_host_ms": 0,
+        "esdf_view_points": 0,
+        "voxel_size_m": 0.02,
+        "sampling": "native_allocated_observed_voxels",
+        "gpu_completion_measured": false
+      },
+      "gazebo_sim_time_per_wall_second": 1.000797996282316
+    },
+    "esdf_marker_subscribed": {
+      "wall_seconds": 20.004021574000035,
+      "metrics_samples": 20,
+      "marker_messages": 16,
+      "depth_wall_hz": 11.826419012408062,
+      "color_wall_hz": 3.977025862579702,
+      "esdf_cycles_wall_hz": 4.761965177562538,
+      "esdf_process_host_ms_sample_mean": 0.96446235,
+      "esdf_process_host_ms_sample_min": 0.670279,
+      "esdf_process_host_ms_sample_max": 2.13327,
+      "esdf_view_host_ms_sample_mean": 106.4039,
+      "esdf_view_host_ms_sample_min": 103.28,
+      "esdf_view_host_ms_sample_max": 113.862,
+      "last_metrics": {
+        "backend": "official_ros_cpp",
+        "totals": {
+          "depth_integrated": 788,
+          "color_integrated": 236,
+          "esdf_updated": 269
+        },
+        "depth_integrated_total": 788,
+        "color_integrated_total": 236,
+        "esdf_cycles_total": 269,
+        "depth_integrated_wall_hz": 11.9666,
+        "color_integrated_wall_hz": 3.98885,
+        "esdf_cycles_wall_hz": 4.98607,
+        "esdf_process_host_ms": 1.00129,
+        "esdf_view_host_ms": 106.35,
+        "esdf_view_points": 34696,
+        "voxel_size_m": 0.02,
+        "sampling": "native_allocated_observed_voxels",
+        "gpu_completion_measured": false
+      },
+      "gazebo_sim_time_per_wall_second": 0.9988019302326024,
+      "marker_points_min": 34696,
+      "marker_points_max": 34696,
+      "marker_wall_hz": 0.7911585351772132
+    }
+  },
+  "command": [
+    "/home/czz/perception_eye_in_hand/nvblox_in_hand/run.sh",
+    "gazebo_gui:=false",
+    "run_rviz:=false",
+    "mapper_backend:=observed_view",
+    "esdf_mode:=3d",
+    "enable_esdf:=true",
+    "enable_esdf_view:=true",
+    "voxel_size:=0.02",
+    "max_range_m:=3.0"
+  ],
+  "status": "completed"
+}

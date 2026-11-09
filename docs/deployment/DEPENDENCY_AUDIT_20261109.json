@@ -1,0 +1,69 @@
+{
+  "purpose": "Read-only dependency audit; installed packages are evidence, not a minimal required package list.",
+  "audit_date": "2026-11-09",
+  "apt_installed_selected": {
+    "cmake": "3.22.1-1ubuntu1.22.04.2",
+    "gazebo": "11.10.2+dfsg-1",
+    "gcc": "4:11.2.0-1ubuntu1",
+    "libeigen3-dev": "3.4.0-2ubuntu2",
+    "libgflags-dev": "2.2.2-2",
+    "libgoogle-glog-dev": "0.5.0+really0.4.0-2",
+    "libnvvpi3": "3.1.5",
+    "ros-humble-isaac-ros-common": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-detectnet": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-dnn-image-encoder": "3.2.10-0jammy",
+    "ros-humble-isaac-ros-gxf": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-h264-decoder": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-image-proc": "3.2.10-0jammy",
+    "ros-humble-isaac-ros-launch-utils": "3.2.10-0jammy",
+    "ros-humble-isaac-ros-managed-nitros": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-nitros": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-nitros-camera-info-type": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-nitros-compressed-image-type": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-nitros-detection2-d-array-type": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-nitros-image-type": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-nitros-tensor-list-type": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-peoplenet-models-install": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-tensor-list-interfaces": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-tensor-proc": "3.2.10-0jammy",
+    "ros-humble-isaac-ros-test": "3.2.5-0jammy",
+    "ros-humble-isaac-ros-test-cmake": "3.2.5-0jammy",
+    "ros-humble-negotiated": "0.1.0-0jammy",
+    "ros-humble-negotiated-interfaces": "0.1.0-0jammy",
+    "vpi3-dev": "3.1.5"
+  },
+  "python_tested": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "platform": "Ubuntu22.04 / ROS2 Humble",
+    "gpu": "RTX4060 Laptop",
+    "driver_observed": "580.178.04",
+    "cuda_toolkit_observed": "12.6.20",
+    "python_packages": {
+      "torch": "2.9.1",
+      "torchvision": "0.24.1",
+      "nvblox-torch": "0.0.10.dev1+cu12ubuntu22",
+      "numpy": "1.26.4",
+      "scipy": "1.15.3",
+      "PyYAML": "6.0.3",
+      "open3d": "0.19.0",
+      "opencv-python": "4.5.5.62",
+      "einops": "0.8.2",
+      "imageio": "2.37.2",
+      "matplotlib": "3.10.9",
+      "nvtx": "0.2.15",
+      "timm": "1.0.25",
+      "transforms3d": "0.4.2",
+      "setuptools": "79.0.1"
+    }
+  },
+  "wheel_direct_url": {
+    "archive_info": {
+      "hash": "sha256=9ffb308c2d94a01321d8c2558183118903cfcd4b13fe881fae197d9e5b5c96a8",
+      "hashes": {
+        "sha256": "9ffb308c2d94a01321d8c2558183118903cfcd4b13fe881fae197d9e5b5c96a8"
+      }
+    },
+    "url": "https://github.com/nvidia-isaac/nvblox/releases/download/v0.0.10/nvblox_torch-0.0.10%2Bcu12ubuntu22-py3-none-linux_x86_64.whl"
+  },
+  "cpp_ros_link_resolution": "\tlinux-vdso.so.1 (0x00007ffcc47fc000)\n\tlibnvblox_datasets.so => /home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/lib/libnvblox_datasets.so (0x00007de5084fe000)\n\tlibglog.so.0 => /lib/x86_64-linux-gnu/libglog.so.0 (0x00007de50849a000)\n\tlibrosbag2_cpp.so => /opt/ros/humble/lib/librosbag2_cpp.so (0x00007de508415000)\n\tlibnvblox_msgs__rosidl_typesupport_cpp.so => /home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs/lib/libnvblox_msgs__rosidl_typesupport_cpp.so (0x00007de50840d000)\n\tlibnav_msgs__rosidl_typesupport_cpp.so => /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_cpp.so (0x00007de508405000)\n\tlibvisualization_msgs__rosidl_typesupport_cpp.so => /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_cpp.so (0x00007de5083fb000)\n\tlibisaac_ros_nitros_image_type.so => /opt/ros/humble/lib/libisaac_ros_nitros_image_type.so (0x00007de5071c4000)\n\tlibsensor_msgs__rosidl_typesupport_cpp.so => /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so (0x00007de5071b9000)\n\tlibnegotiated.so => /home/czz/ros_pack/install/negotiated/lib/libnegotiated.so (0x00007de506a00000)\n\tlibrmw.so => /opt/ros/humble/lib/librmw.so (0x00007de5071ad000)\n\tlibrcutils.so => /opt/ros/humble/lib/librcutils.so (0x00007de507195000)\n\tlibgxf_isaac_optimizer.so => /opt/ros/humble/share/gxf_isaac_optimizer/gxf/lib/libgxf_isaac_optimizer.so (0x00007de506600000)\n\tlibgxf_isaac_message_compositor.so => /opt/ros/humble/share/gxf_isaac_message_compositor/gxf/lib/libgxf_isaac_message_compositor.so (0x00007de506200000)\n\tlibisaac_ros_nitros.so => /opt/ros/humble/lib/libisaac_ros_nitros.so (0x00007de5070e9000)\n\tlibrclcpp.so => /opt/ros/humble/lib/librclcpp.so (0x00007de506008000)\n\tlibisaac_ros_common.so => /home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/lib/libisaac_ros_common.so (0x00007de5070dc000)\n\tlibnvblox_lib.so => /home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/lib/libnvblox_lib.so (0x00007de4fe600000)\n\tlibcudart.so.12 => /usr/local/cuda/lib64/libcudart.so.12 (0x00007de4fe200000)\n\tlibunwind.so.8 => /lib/x86_64-linux-gnu/libunwind.so.8 (0x00007de5070c1000)\n\tlibrosbag2_storage.so => /opt/ros/humble/lib/librosbag2_storage.so (0x00007de507054000)\n\tlibclass_loader.so => /opt/ros/humble/lib/libclass_loader.so (0x00007de507041000)\n\tlibtf2_ros.so => /opt/ros/humble/lib/libtf2_ros.so (0x00007de506568000)\n\tlibmessage_filters.so => /opt/ros/humble/lib/libmessage_filters.so (0x00007de50703c000)\n\tlibtf2_msgs__rosidl_typesupport_cpp.so => /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_cpp.so (0x00007de5069f8000)\n\tlibtf2.so => /opt/ros/humble/lib/libtf2.so (0x00007de506546000)\n\tlibconsole_bridge.so.1.0 => /lib/x86_64-linux-gnu/libconsole_bridge.so.1.0 (0x00007de507036000)\n\tlibgeometry_msgs__rosidl_typesupport_cpp.so => /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so (0x00007de5069ec000)\n\tliblibstatistics_collector.so => /opt/ros/humble/lib/liblibstatistics_collector.so (0x00007de5069e5000)\n\tlibrcl.so => /opt/ros/humble/lib/librcl.so (0x00007de505fca000)\n\tlibament_index_cpp.so => /opt/ros/humble/lib/libament_index_cpp.so (0x00007de50653b000)\n\tlibstatistics_msgs__rosidl_typesupport_cpp.so => /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_cpp.so (0x00007de506536000)\n\tlibtracetools.so => /opt/ros/humble/lib/libtracetools.so (0x00007de506531000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007de4fde00000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007de4fe519000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007de4fda00000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007de50854e000)\n\tlibgflags.so.2.2 => /lib/x86_64-linux-gnu/libgflags.so.2.2 (0x00007de505fa1000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007de505f81000)\n\tlibrmw_implementation.so => /opt/ros/humble/lib/librmw_implementation.so (0x00007de506522000)\n\tlibtinyxml2.so.9 => /lib/x86_64-linux-gnu/libtinyxml2.so.9 (0x00007de4fe501000)\n\tlibrcpputils.so => /opt/ros/humble/lib/librcpputils.so (0x00007de505f73000)\n\tlibrosidl_typesupport_cpp.so => /opt/ros/humble/lib/librosidl_typesupport_cpp.so (0x00007de50651a000)\n\tlibgxf_multimedia.so => /opt/ros/humble/lib/libgxf_multimedia.so (0x00007de4fd600000)\n\tlibnvvpi.so.3 => /opt/nvidia/vpi3/lib/x86_64-linux-gnu/libnvvpi.so.3 (0x00007de4f0800000)\n\tlibnegotiated_interfaces__rosidl_typesupport_cpp.so => /home/czz/ros_pack/install/negotiated_interfaces/lib/libnegotiated_interfaces__rosidl_typesupport_cpp.so (0x00007de4fe4fc000)\n\tlibgxf_core.so => /opt/ros/humble/lib/libgxf_core.so (0x00007de4f0400000)\n\tlibdiagnostic_msgs__rosidl_typesupport_cpp.so => /opt/ros/humble/lib/libdiagnostic_msgs__rosidl_typesupport_cpp.so (0x00007de4fe4f6000)\n\tlibgxf_std.so => /opt/ros/humble/share/isaac_ros_gxf/gxf/lib/std/libgxf_std.so (0x00007de4f0000000)\n\tlibrcl_interfaces__rosidl_typesupport_cpp.so => /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so (0x00007de4fe4eb000)\n\tlibrcl_yaml_param_parser.so => /opt/ros/humble/lib/librcl_yaml_param_parser.so (0x00007de4fe4df000)\n\tlibrosgraph_msgs__rosidl_typesupport_cpp.so => /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_cpp.so (0x00007de4fe4da000)\n\tlibrcl_logging_interface.so => /opt/ros/humble/lib/librcl_logging_interface.so (0x00007de4fe4d5000)\n\tlibnppc.so.12 => /usr/local/cuda/lib64/libnppc.so.12 (0x00007de4efc00000)\n\tlibnppitc.so.12 => /usr/local/cuda/lib64/libnppitc.so.12 (0x00007de4ef400000)\n\tlibnppim.so.12 => /usr/local/cuda/lib64/libnppim.so.12 (0x00007de4ee600000)\n\tlibnppidei.so.12 => /usr/local/cuda/lib64/libnppidei.so.12 (0x00007de4ed800000)\n\tlibdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007de4fe4ce000)\n\tlibpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007de4fe4c9000)\n\tlibrt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007de4fe4c4000)\n\tliblzma.so.5 => /lib/x86_64-linux-gnu/liblzma.so.5 (0x00007de4fe1d5000)\n\tlibyaml-cpp.so.0.7 => /lib/x86_64-linux-gnu/libyaml-cpp.so.0.7 (0x00007de4fe196000)\n\tlibrclcpp_action.so => /opt/ros/humble/lib/librclcpp_action.so (0x00007de4fe173000)\n\tlibaction_msgs__rosidl_typesupport_cpp.so => /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so (0x00007de4fe4bc000)\n\tlibrcl_logging_spdlog.so => /opt/ros/humble/lib/librcl_logging_spdlog.so (0x00007de4fe4b5000)\n\tlibrcl_interfaces__rosidl_typesupport_c.so => /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so (0x00007de4fe16a000)\n\tlibrcl_interfaces__rosidl_generator_c.so => /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so (0x00007de4fe14e000)\n\tlibrosidl_runtime_c.so => /opt/ros/humble/lib/librosidl_runtime_c.so (0x00007de4fe143000)\n\tlibyaml.so => /opt/ros/humble/lib/libyaml.so (0x00007de4fe121000)\n\tlibrcl_action.so => /opt/ros/humble/lib/librcl_action.so (0x00007de4fe10e000)\n\tlibspdlog.so.1 => /lib/x86_64-linux-gnu/libspdlog.so.1 (0x00007de4fe093000)\n\tlibrosidl_typesupport_c.so => /opt/ros/humble/lib/librosidl_typesupport_c.so (0x00007de4fe08d000)\n\tlibbuiltin_interfaces__rosidl_generator_c.so => /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so (0x00007de4fe088000)\n\tlibfmt.so.8 => /lib/x86_64-linux-gnu/libfmt.so.8 (0x00007de4fe067000)\n"
+}

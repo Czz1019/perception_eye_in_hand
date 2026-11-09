@@ -1,0 +1,177 @@
+[INFO] [launch]: All log files can be found below /home/czz/perception_eye_in_hand/nvblox_in_hand/log/ros/2026-11-05-12-36-38-254693-czz-Legion-Y7000P-IRH8-104547
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: Camera transform file: /home/czz/perception_eye_in_hand/nvblox_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/ur7e_d435_handeye_20260907.yaml
+[INFO] [launch.user]: Camera/arm geometry clearance at initial pose: 12.14 mm.
+[INFO] [robot_state_publisher-1]: process started with pid [104665]
+[INFO] [gzserver-2]: process started with pid [104667]
+[INFO] [spawn_entity.py-3]: process started with pid [104669]
+[INFO] [spawner-4]: process started with pid [104671]
+[INFO] [spawner-5]: process started with pid [104673]
+[INFO] [spawn_scene.py-6]: process started with pid [104675]
+[robot_state_publisher-1] 1793853400.122198 [129] robot_stat: selected interface "lo" is not multicast-capable: disabling multicast
+[robot_state_publisher-1] [INFO] [1793853400.129542364] [robot_state_publisher]: got segment base
+[robot_state_publisher-1] [INFO] [1793853400.129630247] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1793853400.129641930] [robot_state_publisher]: got segment base_link_inertia
+[robot_state_publisher-1] [INFO] [1793853400.129650528] [robot_state_publisher]: got segment camera_bottom_screw_frame
+[robot_state_publisher-1] [INFO] [1793853400.129658962] [robot_state_publisher]: got segment camera_color_frame
+[robot_state_publisher-1] [INFO] [1793853400.129666586] [robot_state_publisher]: got segment camera_color_optical_frame
+[robot_state_publisher-1] [INFO] [1793853400.129674128] [robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-1] [INFO] [1793853400.129681569] [robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-1] [INFO] [1793853400.129689212] [robot_state_publisher]: got segment camera_infra1_frame
+[robot_state_publisher-1] [INFO] [1793853400.129696874] [robot_state_publisher]: got segment camera_infra1_optical_frame
+[robot_state_publisher-1] [INFO] [1793853400.129704386] [robot_state_publisher]: got segment camera_infra2_frame
+[robot_state_publisher-1] [INFO] [1793853400.129711978] [robot_state_publisher]: got segment camera_infra2_optical_frame
+[robot_state_publisher-1] [INFO] [1793853400.129719301] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-1] [INFO] [1793853400.129726643] [robot_state_publisher]: got segment flange
+[robot_state_publisher-1] [INFO] [1793853400.129733943] [robot_state_publisher]: got segment forearm_link
+[robot_state_publisher-1] [INFO] [1793853400.129741151] [robot_state_publisher]: got segment ft_frame
+[robot_state_publisher-1] [INFO] [1793853400.129748546] [robot_state_publisher]: got segment ground_plane
+[robot_state_publisher-1] [INFO] [1793853400.129755962] [robot_state_publisher]: got segment shoulder_link
+[robot_state_publisher-1] [INFO] [1793853400.129763234] [robot_state_publisher]: got segment tool0
+[robot_state_publisher-1] [INFO] [1793853400.129770354] [robot_state_publisher]: got segment upper_arm_link
+[robot_state_publisher-1] [INFO] [1793853400.129777492] [robot_state_publisher]: got segment world
+[robot_state_publisher-1] [INFO] [1793853400.129784711] [robot_state_publisher]: got segment wrist_1_link
+[robot_state_publisher-1] [INFO] [1793853400.129792082] [robot_state_publisher]: got segment wrist_2_link
+[robot_state_publisher-1] [INFO] [1793853400.129799351] [robot_state_publisher]: got segment wrist_3_link
+[spawn_scene.py-6] 1793853400.267916 [129]    python3: selected interface "lo" is not multicast-capable: disabling multicast
+[gzserver-2] Gazebo multi-robot simulator, version 11.10.2
+[gzserver-2] Copyright (C) 2012 Open Source Robotics Foundation.
+[gzserver-2] Released under the Apache 2 License.
+[gzserver-2] http://gazebosim.org
+[gzserver-2] 
+[spawner-5] 1793853400.291133 [129]    spawner: selected interface "lo" is not multicast-capable: disabling multicast
+[gzserver-2] 1793853400.307973 [129]   gzserver: selected interface "lo" is not multicast-capable: disabling multicast
+[spawner-4] 1793853400.312340 [129]    spawner: selected interface "lo" is not multicast-capable: disabling multicast
+[spawner-5] [INFO] [1793853400.332885170] [spawner_forward_position_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-4] [INFO] [1793853400.352784487] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[spawn_entity.py-3] 1793853400.362271 [129]    python3: selected interface "lo" is not multicast-capable: disabling multicast
+[spawn_entity.py-3] [INFO] [1793853400.402080973] [spawn_ur]: Spawn Entity started
+[spawn_entity.py-3] [INFO] [1793853400.402278504] [spawn_ur]: Loading entity published on topic robot_description
+[spawn_entity.py-3] [INFO] [1793853400.403202458] [spawn_ur]: Waiting for entity xml on robot_description
+[spawn_entity.py-3] [INFO] [1793853400.405204311] [spawn_ur]: Waiting for service /spawn_entity, timeout = 60
+[spawn_entity.py-3] [INFO] [1793853400.405352079] [spawn_ur]: Waiting for service /spawn_entity
+[gzserver-2] [1;33m[Wrn] [gazebo_ros_init.cpp:178] [0m[1;33m
+[gzserver-2] #     # ####### ####### ###  #####  #######
+[gzserver-2] ##    # #     #    #     #  #     # #
+[gzserver-2] # #   # #     #    #     #  #       #
+[gzserver-2] #  #  # #     #    #     #  #       #####
+[gzserver-2] #   # # #     #    #     #  #       #
+[gzserver-2] #    ## #     #    #     #  #     # #
+[gzserver-2] #     # #######    #    ###  #####  #######
+[gzserver-2] 
+[gzserver-2] This version of Gazebo, now called Gazebo classic, reaches end-of-life
+[gzserver-2] in January 2025. Users are highly encouraged to migrate to the new Gazebo
+[gzserver-2] using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration?utm_source=gazebo_ros_pkgs&utm_medium=cli)
+[gzserver-2] 
+[gzserver-2] [0m[1;33m
+[spawn_entity.py-3] [INFO] [1793853400.907677190] [spawn_ur]: Calling service /spawn_entity
+[gzserver-2] [1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[gzserver-2] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11459[0m[1;32m
+[gzserver-2] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m100.64.189.98[0m[1;32m
+[gzserver-2] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/opt/ros/humble/share/gazebo_ros/worlds/empty.world[0m[1;32m][0m[1;32m
+[gzserver-2] [0m[1;33m[0m[1;33m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[spawn_entity.py-3] [INFO] [1793853401.806292852] [spawn_ur]: Spawn status: SpawnEntity: Successfully spawned entity [ur]
+[gzserver-2] [0m[INFO] [1793853401.853605092] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[gzserver-2] [INFO] [1793853401.854917021] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+[gzserver-2] [INFO] [1793853401.854991154] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+[gzserver-2] [INFO] [1793853401.855995436] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+[gzserver-2] [INFO] [1793853401.856388870] [gazebo_ros2_control]: Received urdf from param server, parsing...
+[gzserver-2] [INFO] [1793853401.856411596] [gazebo_ros2_control]: Loading parameter files /home/czz/perception_eye_in_hand/nvblox_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/controllers.yaml
+[gzserver-2] [INFO] [1793853401.862252666] [gazebo_ros2_control]: Loading joint: shoulder_pan_joint
+[gzserver-2] [INFO] [1793853401.862278861] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1793853401.862286702] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1793853401.862298498] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-2] [INFO] [1793853401.862308923] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1793853401.862314534] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1793853401.862319462] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1793853401.862323868] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1793853401.862437389] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1793853401.862467686] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1793853401.862472129] [gazebo_ros2_control]: Loading joint: shoulder_lift_joint
+[gzserver-2] [INFO] [1793853401.862475821] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1793853401.862479166] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1793853401.862482655] [gazebo_ros2_control]: 			 found initial value: -1.570000
+[gzserver-2] [INFO] [1793853401.862486695] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1793853401.862489842] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1793853401.862492901] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1793853401.862495934] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1793853401.862523056] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1793853401.862546683] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1793853401.862550455] [gazebo_ros2_control]: Loading joint: elbow_joint
+[gzserver-2] [INFO] [1793853401.862553687] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1793853401.862556770] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1793853401.862559921] [gazebo_ros2_control]: 			 found initial value: 1.100000
+[gzserver-2] [INFO] [1793853401.862564956] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1793853401.862569549] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1793853401.862573197] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1793853401.862576314] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1793853401.862601702] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1793853401.862626150] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1793853401.862631213] [gazebo_ros2_control]: Loading joint: wrist_1_joint
+[gzserver-2] [INFO] [1793853401.862634682] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1793853401.862637641] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1793853401.862640559] [gazebo_ros2_control]: 			 found initial value: -1.570000
+[gzserver-2] [INFO] [1793853401.862643846] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1793853401.862646805] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1793853401.862649790] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1793853401.862652793] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1793853401.862677583] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1793853401.862702974] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1793853401.862706760] [gazebo_ros2_control]: Loading joint: wrist_2_joint
+[gzserver-2] [INFO] [1793853401.862709861] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1793853401.862712788] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1793853401.862715615] [gazebo_ros2_control]: 			 found initial value: -1.570000
+[gzserver-2] [INFO] [1793853401.862721687] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1793853401.862724588] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1793853401.862727495] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1793853401.862731260] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1793853401.862756475] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1793853401.862779097] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1793853401.862800046] [gazebo_ros2_control]: Loading joint: wrist_3_joint
+[gzserver-2] [INFO] [1793853401.862803189] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1793853401.862806107] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1793853401.862808970] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[gzserver-2] [INFO] [1793853401.862812291] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1793853401.862815559] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1793853401.862818596] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1793853401.862821427] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1793853401.862846949] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1793853401.862869405] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1793853401.862893075] [resource_manager]: Initialize hardware 'ur' 
+[gzserver-2] [INFO] [1793853401.862960864] [resource_manager]: Successful initialization of hardware 'ur'
+[gzserver-2] [INFO] [1793853401.863007383] [resource_manager]: 'configure' hardware 'ur' 
+[gzserver-2] [INFO] [1793853401.863011927] [resource_manager]: Successful 'configure' of hardware 'ur'
+[gzserver-2] [INFO] [1793853401.863016933] [resource_manager]: 'activate' hardware 'ur' 
+[gzserver-2] [INFO] [1793853401.863019644] [resource_manager]: Successful 'activate' of hardware 'ur'
+[gzserver-2] [INFO] [1793853401.863067680] [gazebo_ros2_control]: Loading controller_manager
+[gzserver-2] [WARN] [1793853401.871978643] [gazebo_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gzserver-2] [INFO] [1793853401.872057972] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+[gzserver-2] [0m[1;32m[0m[1;32m[0m
+[gzserver-2] RealSensePlugin: The realsense_camera plugin is attach to model ur
+[gzserver-2] [INFO] [1793853401.883052681] [gazebo_realsense_camera]: Realsense Gazebo ROS plugin loading.
+[gzserver-2] [INFO] [1793853401.889147880] [gazebo_realsense_camera]: Loaded Realsense Gazebo ROS plugin.
+[INFO] [spawn_entity.py-3]: process has finished cleanly [pid 104669]
+[gzserver-2] [INFO] [1793853402.097234599] [controller_manager]: Loading controller 'forward_position_controller'
+[spawner-5] [INFO] [1793853402.106948684] [spawner_forward_position_controller]: [94mLoaded [1mforward_position_controller[0m
+[gzserver-2] [INFO] [1793853402.107180250] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gzserver-2] [INFO] [1793853402.116793024] [controller_manager]: Configuring controller 'forward_position_controller'
+[gzserver-2] [INFO] [1793853402.117312089] [forward_position_controller]: configure successful
+[spawner-4] [INFO] [1793853402.117329874] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gzserver-2] [INFO] [1793853402.127060969] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[gzserver-2] [INFO] [1793853402.127134242] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawn_scene.py-6] [INFO] [1793853402.137961316] [spawn_eih_tall_obstacles]: 已在 Gazebo 中生成障碍物: sage_clean_sphere1
+[gzserver-2] [INFO] [1793853402.147079447] [forward_position_controller]: activate successful
+[spawner-5] [INFO] [1793853402.157920971] [spawner_forward_position_controller]: [92mConfigured and activated [1mforward_position_controller[0m
+[spawner-4] [INFO] [1793853402.177843959] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[INFO] [spawner-5]: process has finished cleanly [pid 104673]
+[INFO] [spawner-4]: process has finished cleanly [pid 104671]
+[spawn_scene.py-6] [INFO] [1793853402.340309152] [spawn_eih_tall_obstacles]: 已在 Gazebo 中生成障碍物: sage_clean_cube1
+[spawn_scene.py-6] [INFO] [1793853402.541334179] [spawn_eih_tall_obstacles]: 已在 Gazebo 中生成障碍物: sage_clean_cube2
+[INFO] [spawn_scene.py-6]: process has finished cleanly [pid 104675]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [gzserver-2]: sending signal 'SIGINT' to process[gzserver-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1793853505.286879391] [rclcpp]: signal_handler(signum=2)
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 104665]
+[ERROR] [gzserver-2]: process has died [pid 104667, exit code -11, cmd 'gzserver /opt/ros/humble/share/gazebo_ros/worlds/empty.world --verbose -slibgazebo_ros_init.so -slibgazebo_ros_factory.so -slibgazebo_ros_force_system.so --ros-args --params-file /home/czz/perception_eye_in_hand/nvblox_in_hand/install/ur7e_d435_gazebo/share/ur7e_d435_gazebo/config/gazebo_clock.yaml --'].
+[INFO] [launch]: process[gzserver-2] was required: shutting down launched system

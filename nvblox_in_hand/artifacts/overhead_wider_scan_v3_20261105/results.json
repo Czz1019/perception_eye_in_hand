@@ -1,0 +1,439 @@
+{
+  "status": "completed",
+  "phases": {
+    "overhead_static": {
+      "wall_seconds": 10.102205563000098,
+      "start_monotonic": 9199.839142245,
+      "end_monotonic": 9209.941347808,
+      "mesh_messages": 50,
+      "mesh_wall_hz": 4.882301812650872,
+      "esdf_cloud_messages": 298,
+      "esdf_cloud_wall_hz": 29.479565473166755,
+      "esdf_cloud_points": {
+        "min": 14747,
+        "max": 14747,
+        "mean": 14747
+      },
+      "esdf_slice_messages": 0,
+      "rgb_input_messages": 306,
+      "rgb_input_wall_hz": 30.282272543833205,
+      "depth_input_messages": 307,
+      "depth_input_wall_hz": 30.38853914113889,
+      "simulation_rtf": 1.003826069103807,
+      "diagnostic_depth_wall_hz": 35.130603005966265,
+      "diagnostic_color_wall_hz": 35.237382954312665,
+      "diagnostic_esdf_update_wall_hz": 38.65434130139753,
+      "esdf_process_host_ms_sample_mean": 0.3407968333333333,
+      "esdf_process_host_ms_sample_p95": 0.8970710499999992,
+      "esdf_view_host_ms_sample_mean": 0.7873350833333332,
+      "esdf_view_host_ms_sample_p95": 1.9588354499999985,
+      "cloud_age_latest_clock_sec": {
+        "p50": 0.04800000000000182,
+        "p95": 0.07499999999999982
+      },
+      "official_rolling_rates": {
+        "ros/color": {
+          "window_samples": 100,
+          "hz": 30.3
+        },
+        "ros/depth": {
+          "window_samples": 100,
+          "hz": 30.3
+        },
+        "ros/color_image_callback": {
+          "window_samples": 100,
+          "hz": 29.9
+        },
+        "ros/depth_image_callback": {
+          "window_samples": 100,
+          "hz": 30.3
+        },
+        "ros/update_esdf": {
+          "window_samples": 100,
+          "hz": 33.6
+        },
+        "ros/tick": {
+          "window_samples": 100,
+          "hz": 101.0
+        }
+      }
+    },
+    "overhead_wrist_motion": {
+      "wall_seconds": 46.9257086409998,
+      "start_monotonic": 9210.110937528,
+      "end_monotonic": 9257.036646169,
+      "mesh_messages": 222,
+      "mesh_wall_hz": 4.740788542101372,
+      "esdf_cloud_messages": 1380,
+      "esdf_cloud_wall_hz": 29.39792914355465,
+      "esdf_cloud_points": {
+        "min": 14747,
+        "max": 25233,
+        "mean": 22129.966666666667
+      },
+      "esdf_slice_messages": 0,
+      "rgb_input_messages": 1402,
+      "rgb_input_wall_hz": 29.85903464578261,
+      "depth_input_messages": 1402,
+      "depth_input_wall_hz": 29.879780819689522,
+      "simulation_rtf": 0.9988388537324256,
+      "diagnostic_depth_wall_hz": 29.968125755165243,
+      "diagnostic_color_wall_hz": 29.881824457094215,
+      "diagnostic_esdf_update_wall_hz": 32.72976729343821,
+      "esdf_process_host_ms_sample_mean": 0.6539512765957446,
+      "esdf_process_host_ms_sample_p95": 2.4880399999999963,
+      "esdf_view_host_ms_sample_mean": 0.8586934680851064,
+      "esdf_view_host_ms_sample_p95": 1.2650689999999987,
+      "cloud_age_latest_clock_sec": {
+        "p50": 0.04799999999998761,
+        "p95": 0.07499999999999574
+      },
+      "official_rolling_rates": {
+        "ros/color": {
+          "window_samples": 100,
+          "hz": 30.3
+        },
+        "ros/depth": {
+          "window_samples": 100,
+          "hz": 30.3
+        },
+        "ros/color_image_callback": {
+          "window_samples": 100,
+          "hz": 30.3
+        },
+        "ros/depth_image_callback": {
+          "window_samples": 100,
+          "hz": 30.3
+        },
+        "ros/update_esdf": {
+          "window_samples": 100,
+          "hz": 32.9
+        },
+        "ros/tick": {
+          "window_samples": 100,
+          "hz": 101.0
+        }
+      }
+    },
+    "overhead_stopped": {
+      "wall_seconds": 8.09606513700055,
+      "start_monotonic": 9257.157666431,
+      "end_monotonic": 9265.253731568,
+      "mesh_messages": 38,
+      "mesh_wall_hz": 4.745581378916843,
+      "esdf_cloud_messages": 238,
+      "esdf_cloud_wall_hz": 29.3321038952317,
+      "esdf_cloud_points": {
+        "min": 25233,
+        "max": 25233,
+        "mean": 25233
+      },
+      "esdf_slice_messages": 0,
+      "rgb_input_messages": 243,
+      "rgb_input_wall_hz": 29.96329369240879,
+      "depth_input_messages": 243,
+      "depth_input_wall_hz": 29.963337495417445,
+      "simulation_rtf": 0.9987700667672097,
+      "diagnostic_depth_wall_hz": 29.846041762313128,
+      "diagnostic_color_wall_hz": 29.846041762313128,
+      "diagnostic_esdf_update_wall_hz": 32.675050460162716,
+      "esdf_process_host_ms_sample_mean": 0.233439625,
+      "esdf_process_host_ms_sample_p95": 0.47870814999999994,
+      "esdf_view_host_ms_sample_mean": 0.8810690000000001,
+      "esdf_view_host_ms_sample_p95": 1.3281465,
+      "cloud_age_latest_clock_sec": {
+        "p50": 0.04800000000000182,
+        "p95": 0.08299999999999841
+      },
+      "official_rolling_rates": {
+        "ros/color": {
+          "window_samples": 100,
+          "hz": 30.3
+        },
+        "ros/depth": {
+          "window_samples": 100,
+          "hz": 30.3
+        },
+        "ros/color_image_callback": {
+          "window_samples": 100,
+          "hz": 30.3
+        },
+        "ros/depth_image_callback": {
+          "window_samples": 100,
+          "hz": 30.3
+        },
+        "ros/update_esdf": {
+          "window_samples": 100,
+          "hz": 32.3
+        },
+        "ros/tick": {
+          "window_samples": 100,
+          "hz": 101.0
+        }
+      }
+    }
+  },
+  "commands": [
+    {
+      "name": "scene",
+      "argv": [
+        "ros2",
+        "launch",
+        "ur7e_d435_gazebo",
+        "scene.launch.py",
+        "gazebo_gui:=false"
+      ],
+      "pid": 93282
+    },
+    {
+      "name": "scene_ready",
+      "argv": [
+        "/usr/bin/python3",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_wider_scan_v3_20261105/view_sweep_isolated.py",
+        "--check-only"
+      ],
+      "pid": 93283
+    },
+    {
+      "name": "approach",
+      "argv": [
+        "/usr/bin/python3",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_wider_scan_v3_20261105/view_sweep_isolated.py",
+        "--seconds",
+        "0"
+      ],
+      "pid": 93776
+    },
+    {
+      "name": "robot_state_audit",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/check_sim.sh",
+        "--output",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_wider_scan_v3_20261105/robot_state_audit.json"
+      ],
+      "pid": 94049
+    },
+    {
+      "name": "mapping_overhead",
+      "argv": [
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/run.sh",
+        "start_scene:=false",
+        "run_rviz:=false",
+        "mapper_backend:=diagnostic",
+        "esdf_mode:=3d",
+        "profile:=realtime",
+        "esdf_view_mode:=observed",
+        "esdf_hz:=33.4",
+        "esdf_view_hz:=33.4"
+      ],
+      "pid": 94231
+    },
+    {
+      "name": "rviz_overhead",
+      "argv": [
+        "rviz2",
+        "-d",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_wider_scan_v3_20261105/overhead.rviz",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true"
+      ],
+      "pid": 94665
+    },
+    {
+      "name": "overhead_wrist_motion_motion",
+      "argv": [
+        "/usr/bin/python3",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_wider_scan_v3_20261105/view_sweep_isolated.py",
+        "--seconds",
+        "40"
+      ],
+      "pid": 96385
+    },
+    {
+      "name": "rviz_mesh",
+      "argv": [
+        "rviz2",
+        "-d",
+        "/home/czz/perception_eye_in_hand/nvblox_in_hand/artifacts/overhead_wider_scan_v3_20261105/mesh.rviz",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true"
+      ],
+      "pid": 101576
+    }
+  ],
+  "geometry": {
+    "voxel_size_m": 0.03,
+    "max_range_m": 3.0,
+    "input_resolution": [
+      640,
+      480
+    ]
+  },
+  "sensor_target_hz": {
+    "depth": 30,
+    "color": 30
+  },
+  "configured_rates_hz": {
+    "fusion_limit": 40,
+    "baseline_esdf": 30,
+    "trial_esdf": 33.4,
+    "mesh_layer": 5,
+    "baseline_view": 30,
+    "trial_views": [
+      33.4
+    ],
+    "palette_only_comparison": true
+  },
+  "motion": "above-obstacle observation pose, wrist_1 +/-0.16 rad, 0.2 rad/s sine phase, 40 wall seconds; no orbit",
+  "gpu_completion_measured": false,
+  "camera_observation_pose": {
+    "wall_time": 9187.057456188,
+    "stamp": 17.67,
+    "position": [
+      0.4547477607251833,
+      0.04118242525482235,
+      0.681634172284432
+    ],
+    "optical_forward": [
+      -0.10207270440877324,
+      -0.0767230925551033,
+      -0.991813858586106
+    ]
+  },
+  "backends": {
+    "overhead": {
+      "custom_cloud_publishers": 1,
+      "custom_metrics_publishers": 1,
+      "mesh_publishers": 1,
+      "component_list": "",
+      "actual_inputs": {
+        "depth": {
+          "width": 640,
+          "height": 480,
+          "encoding": "16UC1",
+          "frame": "camera_depth_optical_frame",
+          "camera_info_width": 640,
+          "camera_info_height": 480,
+          "k": [
+            320.2549133300781,
+            0.0,
+            320.0,
+            0.0,
+            320.2549133300781,
+            240.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "p": [
+            320.2549133300781,
+            0.0,
+            320.0,
+            0.0,
+            0.0,
+            320.2549133300781,
+            240.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "vertical_fov_rad": 1.2862378673197101
+        },
+        "color": {
+          "width": 640,
+          "height": 480,
+          "encoding": "rgb8",
+          "frame": "camera_color_optical_frame",
+          "camera_info_width": 640,
+          "camera_info_height": 480,
+          "k": [
+            320.2549133300781,
+            0.0,
+            320.0,
+            0.0,
+            320.2549133300781,
+            240.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "p": [
+            320.2549133300781,
+            0.0,
+            320.0,
+            0.0,
+            0.0,
+            320.2549133300781,
+            240.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "vertical_fov_rad": 1.2862378673197101
+        }
+      },
+      "native_esdf_query": {
+        "host_roundtrip_ms": 51.4765219995752,
+        "voxel_size_m": 0.029999999329447746,
+        "origin_m": [
+          -1.0199999809265137,
+          -1.0199999809265137,
+          -0.20999999344348907
+        ],
+        "shape": [
+          68,
+          68,
+          48
+        ],
+        "values": 221952,
+        "known": 22613,
+        "unknown": 199339,
+        "known_positive": 14407,
+        "known_negative": 4546,
+        "known_zero": 3660,
+        "query_outside_rate_measurement": true
+      },
+      "cloud_snapshot": {
+        "points": 25233,
+        "inside": 9901,
+        "outside": 15332,
+        "sites": 4358,
+        "point_step": 24,
+        "frame": "base_link",
+        "distance_min": -2.0,
+        "distance_max": 2.0,
+        "validation": "24-byte layout, explicit flags, finite native centres and signed distances passed"
+      }
+    }
+  },
+  "before_scan_cloud": {
+    "points": 14747,
+    "inside": 5835,
+    "outside": 8912,
+    "sites": 2730,
+    "point_step": 24,
+    "frame": "base_link",
+    "distance_min": -2.0,
+    "distance_max": 2.0,
+    "validation": "24-byte layout, explicit flags, finite native centres and signed distances passed"
+  },
+  "world_from_base_link": {
+    "translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  }
+}

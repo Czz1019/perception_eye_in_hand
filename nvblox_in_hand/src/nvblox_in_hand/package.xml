@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>nvblox_in_hand</name><version>0.1.0</version>
+  <description>D435 eye-in-hand bringup using the official ROS nvblox mapping pipeline and robot TF.</description>
+  <maintainer email="czz@example.com">czz</maintainer><license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>nvblox_ros</depend><depend>nvblox_msgs</depend><depend>rclcpp</depend>
+  <exec_depend>rclcpp_components</exec_depend>
+  <depend>sensor_msgs</depend><depend>std_msgs</depend><depend>visualization_msgs</depend>
+  <exec_depend>rclpy</exec_depend><exec_depend>tf2_ros_py</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend><exec_depend>nav_msgs</exec_depend>
+  <exec_depend>launch_ros</exec_depend><exec_depend>launch</exec_depend>
+  <exec_depend>ament_index_python</exec_depend><exec_depend>python3-yaml</exec_depend>
+  <exec_depend>ur7e_d435_gazebo</exec_depend><exec_depend>rviz2</exec_depend>
+  <exec_depend>nvblox_rviz_plugin</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>
