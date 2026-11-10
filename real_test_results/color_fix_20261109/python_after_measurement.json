@@ -1,0 +1,170 @@
+{
+  "metrics": {
+    "messages": 30,
+    "publish_hz": 1.0000187970429664,
+    "last": {
+      "backend": "nvblox_torch_cpp_cuda",
+      "map_epoch": 0,
+      "totals": {
+        "depth_received": 1395,
+        "color_received": 1474,
+        "color_overwritten": 71,
+        "depth_overwritten": 56,
+        "depth_integrated": 1339,
+        "color_integrated": 1402,
+        "esdf_updated": 1335,
+        "esdf_points_published": 1335,
+        "mesh_generated": 184,
+        "mesh_published": 184
+      },
+      "native_esdf_points": 3240,
+      "nvblox_core_library": "/home/czz/.local/lib/python3.10/site-packages/nvblox_torch/lib/nvblox/libnvblox_lib.so",
+      "loaded_libraries": [
+        "/home/czz/.local/lib/python3.10/site-packages/nvblox_torch/lib/nvblox/libnvblox_lib.so",
+        "/home/czz/.local/lib/python3.10/site-packages/nvblox_torch/lib/nvblox_torch/cpp/libpy_nvblox.so",
+        "/home/czz/.local/lib/python3.10/site-packages/nvidia/cuda_runtime/lib/libcudart.so.12",
+        "/home/czz/.local/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so"
+      ],
+      "input_stamp_ns": 1794235623387772461,
+      "esdf_input_stamp_ns": 1794235623354412109,
+      "voxel_size_m": 0.03,
+      "esdf_version": 1335,
+      "gpu_completion_measured": false,
+      "error": "",
+      "timings_host_ms": {
+        "depth_submit_ms": {
+          "mean": 1.6884837399948083,
+          "p95": 2.7799875001164764
+        },
+        "color_submit_ms": {
+          "mean": 1.363813969956027,
+          "p95": 2.3878711996076136
+        },
+        "esdf_submit_ms": {
+          "mean": 0.6301910950514866,
+          "p95": 1.591846599967538
+        },
+        "esdf_export_with_gpu_wait_ms": {
+          "mean": 0.3694516899986411,
+          "p95": 0.8094944001641118
+        },
+        "esdf_points_pack_publish_ms": {
+          "mean": 0.4601756500051124,
+          "p95": 0.9868032504982688
+        },
+        "mesh_readback_ms": {
+          "mean": 1.4400935978172762,
+          "p95": 3.2607840503260372
+        },
+        "mesh_pack_publish_ms": {
+          "mean": 0.2915932500054228,
+          "p95": 0.8085581505383743
+        }
+      },
+      "pose_source": "robot_tf_at_each_image_stamp",
+      "esdf_export": "native_observed_voxels",
+      "configuration": {
+        "global_frame": "base_link",
+        "voxel_size": 0.03,
+        "esdf_mode": "3d",
+        "enable_depth": true,
+        "enable_color": true,
+        "enable_esdf": true,
+        "enable_mesh": true,
+        "enable_layers": true,
+        "enable_esdf_view": true,
+        "publish_pose": true,
+        "publish_path": true,
+        "publish_esdf_distance_slice": true,
+        "depth_hz": 40.0,
+        "color_hz": 40.0,
+        "esdf_hz": 33.4,
+        "esdf_view_hz": 33.4,
+        "mesh_hz": 5.0,
+        "layer_hz": 5.0,
+        "decay_hz": 0.0,
+        "clearing_hz": 0.0,
+        "clearing_radius_m": -1.0,
+        "esdf_view_mode": "observed",
+        "esdf_view_band_m": 0.24,
+        "min_depth_m": 0.1,
+        "max_range_m": 3.0,
+        "truncation_vox": 4.0,
+        "max_weight": 5.0,
+        "weighting_mode": "inverse_square_tsdf_distance_penalty",
+        "invalid_depth_decay_factor": -1.0,
+        "esdf_max_distance_m": 2.0,
+        "esdf_min_weight": 0.1,
+        "esdf_max_site_vox": 2.0,
+        "mesh_min_weight": 0.1,
+        "mesh_weld_vertices": true,
+        "layer_min_weight": 0.1,
+        "raycast_subsampling_factor": 4,
+        "workspace_bounds_type": "unbounded",
+        "workspace_min_x": -2.0,
+        "workspace_max_x": 2.0,
+        "workspace_min_y": -2.0,
+        "workspace_max_y": 2.0,
+        "workspace_min_z": -0.5,
+        "workspace_max_z": 2.0,
+        "tsdf_decay_factor": 0.95,
+        "tsdf_decayed_weight_threshold": 0.001,
+        "slice_min_height": 0.0,
+        "slice_max_height": 0.8,
+        "slice_height": 0.25,
+        "depth_topic": "/camera/camera/depth/image_rect_raw",
+        "depth_info_topic": "/camera/camera/depth/camera_info",
+        "color_topic": "/camera/camera/color/image_raw",
+        "color_info_topic": "/camera/camera/color/camera_info",
+        "input_queue_size": 3,
+        "max_input_age_sec": 0.5,
+        "path_max_poses": 3000,
+        "max_query_points": 200000,
+        "service_timeout_sec": 20.0
+      },
+      "wall_hz": {
+        "depth_received": 30.001773944902716,
+        "color_received": 30.001773944902716,
+        "color_overwritten": 0.0,
+        "depth_overwritten": 0.0,
+        "depth_integrated": 30.001773944902716,
+        "color_integrated": 29.00171481340596,
+        "esdf_updated": 29.00171481340596,
+        "esdf_points_published": 29.00171481340596,
+        "mesh_generated": 5.000295657483786,
+        "mesh_published": 5.000295657483786
+      }
+    },
+    "count_delta_hz": {
+      "depth_received": 28.55226082591642,
+      "color_received": 29.82814687731607,
+      "depth_integrated": 28.55226082591642,
+      "color_integrated": 29.793663470521484,
+      "esdf_updated": 28.55226082591642
+    }
+  },
+  "esdf": {
+    "messages": 857,
+    "publish_hz": 28.53321381055463,
+    "last": {
+      "points": 3240,
+      "stamp": 1794235624355215576,
+      "age_ms": 57.08217
+    },
+    "age_ms_p50_p95": [
+      47.717416,
+      55.71989839999999
+    ],
+    "points_min_max": [
+      3235,
+      3240
+    ]
+  },
+  "mesh": {
+    "messages": 149,
+    "publish_hz": 4.967871737437761,
+    "last": {
+      "vertices": 2022
+    }
+  }
+}
