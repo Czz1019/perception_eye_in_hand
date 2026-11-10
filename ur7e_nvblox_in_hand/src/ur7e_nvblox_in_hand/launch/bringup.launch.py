@@ -38,7 +38,7 @@ def setup(context):
     actions=[]
     if flag('start_scene'):
         scene=Path(get_package_share_directory('ur7e_d435_gazebo'))/'launch/scene.launch.py'
-        actions.append(IncludeLaunchDescription(PythonLaunchDescriptionSource(str(scene)),launch_arguments={k:text(k) for k in ['gazebo_gui','camera_width','camera_height']}.items()))
+        actions.append(IncludeLaunchDescription(PythonLaunchDescriptionSource(str(scene)),launch_arguments={k:text(k) for k in ['gazebo_gui','camera_width','camera_height','scene_variant','sim_camera_reliability']}.items()))
     if flag('launch_camera'):
         size=text('camera_width')+'x'+text('camera_height')+'x30'
         actions.append(Node(package='realsense2_camera',executable='realsense2_camera_node',name='camera',namespace='camera',parameters=[str(share/'config/d435.yaml'),{'depth_module.depth_profile':size,'rgb_camera.color_profile':size,'publish_tf':True}],output='screen'))
@@ -52,6 +52,10 @@ def setup(context):
         if not file.is_file():raise ValueError('mapper_config missing')
         config.append(str(file))
     overrides={'use_sim_time':flag('use_sim_time')}
+    # The bundled simulator offers reliable images by default. Preserve the
+    # sensor-data default for real cameras and external/older bag publishers.
+    if flag('start_scene') and not text('input_qos'):
+        overrides['input_qos']='reliable' if text('sim_camera_reliability')=='reliable' else 'sensor_data'
     for key,default in base.items():
         value=text(key)
         if value=='':continue
@@ -78,5 +82,5 @@ def setup(context):
 def generate_launch_description():
     share=Path(get_package_share_directory('ur7e_nvblox_in_hand'))
     base=yaml.safe_load((share/'config/base.yaml').read_text())['/**']['ros__parameters']
-    orchestration=dict(start_scene='true',launch_camera='false',use_sim_time='true',gazebo_gui='true',run_rviz='true',camera_width='640',camera_height='480',profile='realtime',mapper_config='',rviz_mode='auto',rosbag='',rosbag_args='')
+    orchestration=dict(sim_camera_reliability='reliable',scene_variant='tall',start_scene='true',launch_camera='false',use_sim_time='true',gazebo_gui='true',run_rviz='true',camera_width='640',camera_height='480',profile='realtime',mapper_config='',rviz_mode='auto',rosbag='',rosbag_args='')
     return LaunchDescription([DeclareLaunchArgument(k,default_value=v) for k,v in orchestration.items()]+[DeclareLaunchArgument(k,default_value='') for k in base]+[OpaqueFunction(function=setup)])

@@ -9,10 +9,14 @@
 namespace {
 void ck(cudaError_t e) { if(e!=cudaSuccess) throw std::runtime_error(cudaGetErrorString(e)); }
 template<class V> __global__ void compact(const nvblox::VoxelBlock<V>*const* blocks,
- const nvblox::Index3D* ids,int count,float size,int selection,float threshold,float* out,int* written) {
+ const nvblox::Index3D* ids,int count,float size,int selection,float threshold,int stride,float* out,int* written) {
  const int i=blockIdx.x*blockDim.x+threadIdx.x;
  if(i>=count*512)return;
  const int b=i/512,j=i%512,x=j/64,y=(j/8)%8,z=j%8;
+ if constexpr(std::is_same_v<V,nvblox::EsdfVoxel>) {
+  // Global lattice alignment keeps sampling stable across block order and negative indices.
+  if((ids[b].x()*8+x)%stride || (ids[b].y()*8+y)%stride || (ids[b].z()*8+z)%stride)return;
+ }
  const V& v=blocks[b]->voxels[x][y][z];
  float row[8]={};
  row[0]=(ids[b].x()*8+x+.5f)*size; row[1]=(ids[b].y()*8+y+.5f)*size;row[2]=(ids[b].z()*8+z+.5f)*size;
@@ -31,7 +35,7 @@ template<class V> __global__ void compact(const nvblox::VoxelBlock<V>*const* blo
  }
  int k=atomicAdd(written,1);for(int c=0;c<columns;++c)out[k*columns+c]=row[c];
 }
-template<class V> std::vector<float> run(const nvblox::VoxelBlockLayer<V>& layer,int selection,float threshold,int columns) {
+template<class V> std::vector<float> run(const nvblox::VoxelBlockLayer<V>& layer,int selection,float threshold,int columns,int stride=1) {
  ck(cudaDeviceSynchronize()); // wheel stream is private: explicit cross-stream ownership boundary.
  nvblox::CudaStreamOwning stream;
  nvblox::device_vector<const nvblox::VoxelBlock<V>*> ptrs;
@@ -49,7 +53,7 @@ template<class V> std::vector<float> run(const nvblox::VoxelBlockLayer<V>& layer
   ptrs.copyFromAsync(host_ptrs,stream);ids.copyFromAsync(host_ids,stream);
   output.resizeAsync(host_ids.size()*512*columns,stream);
   ck(cudaMemsetAsync(counter.data(),0,sizeof(int),stream));
-  compact<<<(host_ids.size()*512+255)/256,256,0,stream>>>(ptrs.data(),ids.data(),host_ids.size(),layer.voxel_size(),selection,threshold,output.data(),counter.data());
+  compact<<<(host_ids.size()*512+255)/256,256,0,stream>>>(ptrs.data(),ids.data(),host_ids.size(),layer.voxel_size(),selection,threshold,stride,output.data(),counter.data());
   ck(cudaGetLastError());int n=0;ck(cudaMemcpyAsync(&n,counter.data(),sizeof(int),cudaMemcpyDeviceToHost,stream));stream.synchronize();
   if(n<0 || n>int(host_ids.size()*512))throw std::runtime_error("Invalid native export count");
   size_t previous=result.size();result.resize(previous+n*columns);
@@ -58,6 +62,6 @@ template<class V> std::vector<float> run(const nvblox::VoxelBlockLayer<V>& layer
  return result;
 }
 }
-std::vector<float> exportEsdf(const nvblox::EsdfLayer& l,int s,float b){if(s<0||s>2||!(b>0))throw std::invalid_argument("Invalid export selection");return run(l,s,b,7);}
+std::vector<float> exportEsdf(const nvblox::EsdfLayer& l,int s,float b,int stride){if(s<0||s>2||!(b>0)||stride<1)throw std::invalid_argument("Invalid export selection");return run(l,s,b,7,stride);}
 std::vector<float> exportTsdf(const nvblox::TsdfLayer& l,float w){return run(l,0,w,8);}
 std::vector<float> exportColor(const nvblox::ColorLayer& l,float w){return run(l,0,w,8);}

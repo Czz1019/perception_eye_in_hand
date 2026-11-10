@@ -13,6 +13,7 @@
 // limitations under the License.
 
 #include "realsense_gazebo_plugin/gazebo_ros_realsense.hpp"
+#include <stdexcept>
 #include <sensor_msgs/fill_image.hpp>
 #include <sensor_msgs/image_encodings.hpp>
 #include <sensor_msgs/point_cloud2_iterator.hpp>
@@ -57,6 +58,20 @@ void GazeboRosRealsense::Load(physics::ModelPtr _model, sdf::ElementPtr _sdf)
   }
   RCLCPP_INFO(node_->get_logger(), "Realsense Gazebo ROS plugin loading.");
 
+  // Large raw images and their CameraInfo travel on separate DDS writers.
+  // Reliable delivery avoids silently losing the image while retaining its info.
+  // Keep Best Effort selectable for comparisons and latency-sensitive consumers.
+  const std::string reliability = _sdf->HasElement("imageReliability") ?
+    _sdf->Get<std::string>("imageReliability") : "reliable";
+  if (reliability != "reliable" && reliability != "best_effort") {
+    throw std::invalid_argument("imageReliability must be reliable or best_effort");
+  }
+  auto image_qos = rmw_qos_profile_sensor_data;
+  image_qos.reliability = reliability == "reliable" ?
+    RMW_QOS_POLICY_RELIABILITY_RELIABLE : RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT;
+  image_qos.depth = 10;
+  RCLCPP_INFO(node_->get_logger(), "Camera image/CameraInfo reliability: %s", reliability.c_str());
+
   // initialize camera_info_manager
   this->camera_info_manager_.reset(
     new camera_info_manager::CameraInfoManager(
@@ -64,16 +79,16 @@ void GazeboRosRealsense::Load(physics::ModelPtr _model, sdf::ElementPtr _sdf)
 
   this->color_pub_ = image_transport::create_camera_publisher(
     this->node_.get(), prefix + std::string("/") +
-    cameraParamsMap_[COLOR_CAMERA_NAME].topic_name, rmw_qos_profile_sensor_data);
+    cameraParamsMap_[COLOR_CAMERA_NAME].topic_name, image_qos);
   this->ir1_pub_ = image_transport::create_camera_publisher(
     this->node_.get(), prefix + std::string("/") +
-    cameraParamsMap_[IRED1_CAMERA_NAME].topic_name, rmw_qos_profile_sensor_data);
+    cameraParamsMap_[IRED1_CAMERA_NAME].topic_name, image_qos);
   this->ir2_pub_ = image_transport::create_camera_publisher(
     this->node_.get(), prefix + std::string("/") +
-    cameraParamsMap_[IRED2_CAMERA_NAME].topic_name, rmw_qos_profile_sensor_data);
+    cameraParamsMap_[IRED2_CAMERA_NAME].topic_name, image_qos);
   this->depth_pub_ = image_transport::create_camera_publisher(
     this->node_.get(), prefix + std::string("/") +
-    cameraParamsMap_[DEPTH_CAMERA_NAME].topic_name, rmw_qos_profile_sensor_data);
+    cameraParamsMap_[DEPTH_CAMERA_NAME].topic_name, image_qos);
 
   if (pointCloud_) {
     this->pctnode_ = std::make_unique<point_cloud_transport::PointCloudTransport>(this->node_);

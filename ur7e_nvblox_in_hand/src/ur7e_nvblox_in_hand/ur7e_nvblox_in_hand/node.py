@@ -13,7 +13,7 @@ from rclpy.node import Node
 from rclpy.time import Time
 from rclpy.duration import Duration
 from rclpy.executors import MultiThreadedExecutor,ExternalShutdownException
-from rclpy.qos import qos_profile_sensor_data,QoSProfile,DurabilityPolicy
+from rclpy.qos import qos_profile_sensor_data,QoSProfile,DurabilityPolicy,ReliabilityPolicy
 from rcl_interfaces.msg import SetParametersResult
 from tf2_ros import Buffer,TransformListener,TransformException
 from sensor_msgs.msg import Image,CameraInfo,PointCloud2
@@ -26,12 +26,12 @@ from rosgraph_msgs.msg import Clock
 from ur7e_nvblox_interfaces.srv import FilePath,QueryEsdf
 from . import messages
 
-DEFAULTS=dict(global_frame='base_link',voxel_size=.03,esdf_mode='3d',
+DEFAULTS=dict(global_frame='base_link',voxel_size=.01,esdf_mode='3d',
     enable_depth=True,enable_color=True,enable_esdf=True,enable_mesh=True,enable_layers=True,
     enable_esdf_view=True,publish_pose=True,publish_path=True,publish_esdf_distance_slice=True,
     depth_hz=40.,color_hz=40.,esdf_hz=33.4,esdf_view_hz=33.4,mesh_hz=5.,layer_hz=5.,
     decay_hz=0.,clearing_hz=0.,clearing_radius_m=-1.,
-    esdf_view_mode='observed',esdf_view_band_m=.24,min_depth_m=.1,max_range_m=3.,
+    esdf_view_mode='observed',esdf_view_stride=2,esdf_view_band_m=.24,min_depth_m=.1,max_range_m=3.,
     truncation_vox=4.,max_weight=5.,weighting_mode='inverse_square_tsdf_distance_penalty',
     invalid_depth_decay_factor=-1.,esdf_max_distance_m=2.,esdf_min_weight=.1,esdf_max_site_vox=2.,
     mesh_min_weight=.1,mesh_weld_vertices=True,layer_min_weight=.1,raycast_subsampling_factor=4,
@@ -40,12 +40,13 @@ DEFAULTS=dict(global_frame='base_link',voxel_size=.03,esdf_mode='3d',
     slice_min_height=0.,slice_max_height=.8,slice_height=.25,
     depth_topic='/camera/depth/image_rect_raw',depth_info_topic='/camera/depth/camera_info',
     color_topic='/camera/color/image_raw',color_info_topic='/camera/color/camera_info',
-    input_queue_size=3,max_input_age_sec=.5,path_max_poses=3000,max_query_points=200000,
+    input_qos='sensor_data',input_queue_size=3,max_input_age_sec=.5,path_max_poses=3000,max_query_points=200000,
     service_timeout_sec=20.)
-MUTABLE={k for k in DEFAULTS if k.startswith('enable_') or k.endswith('_hz')}|{'publish_pose','publish_path','publish_esdf_distance_slice','esdf_view_mode','esdf_view_band_m'}
+MUTABLE={k for k in DEFAULTS if k.startswith('enable_') or k.endswith('_hz')}|{'publish_pose','publish_path','publish_esdf_distance_slice','esdf_view_mode','esdf_view_band_m','esdf_view_stride'}
 
 
 def validate(cfg):
+    if cfg['input_qos'] not in ('sensor_data','reliable'):raise ValueError('input_qos must be sensor_data or reliable')
     if cfg['esdf_mode'] not in ('2d','3d'):raise ValueError('esdf_mode must be 2d or 3d')
     if cfg['esdf_view_mode'] not in ('observed','band','inside'):raise ValueError('Invalid esdf_view_mode')
     for k in ['voxel_size','max_range_m','truncation_vox','max_weight','esdf_max_distance_m','esdf_view_band_m','max_input_age_sec','service_timeout_sec']:
@@ -58,6 +59,7 @@ def validate(cfg):
         if not np.isfinite(cfg[k]) or cfg[k]<0:raise ValueError(k+' must be finite and nonnegative')
     for k in ['input_queue_size','path_max_poses','max_query_points','raycast_subsampling_factor']:
         if cfg[k]<1:raise ValueError(k+' must be positive')
+    if isinstance(cfg['esdf_view_stride'],bool) or not isinstance(cfg['esdf_view_stride'],int) or cfg['esdf_view_stride']<1:raise ValueError('esdf_view_stride must be a positive integer')
     if cfg['slice_min_height']>cfg['slice_max_height']:raise ValueError('slice bounds reversed')
     if cfg['clearing_hz']>0 and cfg['clearing_radius_m']<=0:raise ValueError('clearing requires positive radius')
     if cfg['weighting_mode'] not in ('constant','constant_dropoff','inverse_square','inverse_square_dropoff','inverse_square_tsdf_distance_penalty'):raise ValueError('Unsupported weighting_mode for pinned wheel')
@@ -98,9 +100,11 @@ class MapperNode(Node):
         self.path_pub=self.create_publisher(RosPath,'~/camera_path',QoSProfile(depth=1,durability=DurabilityPolicy.TRANSIENT_LOCAL))
         self.metrics_pub=self.create_publisher(String,'~/metrics',1)
         self.create_subscription(Clock,'/clock',self.clock,qos_profile_sensor_data)
+        input_qos=(QoSProfile(depth=10,reliability=ReliabilityPolicy.RELIABLE)
+                   if self.cfg['input_qos']=='reliable' else qos_profile_sensor_data)
         for kind in ['depth','color']:
-            self.create_subscription(CameraInfo,self.cfg[kind+'_info_topic'],lambda m,k=kind:self.camera_info(k,m),qos_profile_sensor_data)
-            self.create_subscription(Image,self.cfg[kind+'_topic'],lambda m,k=kind:self.image(k,m),qos_profile_sensor_data)
+            self.create_subscription(CameraInfo,self.cfg[kind+'_info_topic'],lambda m,k=kind:self.camera_info(k,m),input_qos)
+            self.create_subscription(Image,self.cfg[kind+'_topic'],lambda m,k=kind:self.image(k,m),input_qos)
         self.service_handles=[]
         for kind in ['save_ply','save_map','load_map','save_rates','save_timings']:
             self.service_handles.append(self.create_service(FilePath,'~/'+kind,lambda req,res,k=kind:self.file_service(k,req,res)))
@@ -237,7 +241,7 @@ class MapperNode(Node):
                 if self.cfg['enable_esdf'] and self.cfg['enable_esdf_view'] and slice_enabled and self.esdf_version!=self.exported_version and view_due:
                     name='esdf_points' if self.cfg['esdf_mode']=='3d' else 'static_esdf_pointcloud'
                     if self.pubs[name].get_subscription_count():
-                        begin=time.monotonic();data=self.backend.esdf(self.cfg['esdf_view_mode'],self.cfg['esdf_view_band_m'])
+                        begin=time.monotonic();data=self.backend.esdf(self.cfg['esdf_view_mode'],self.cfg['esdf_view_band_m'],self.cfg['esdf_view_stride'] if self.cfg['esdf_mode']=='3d' else 1)
                         self.enqueue(name,(data,self.esdf_stamp,self.esdf_version));self.exported_version=self.esdf_version
                         self.record_time('esdf_export_with_gpu_wait_ms',(time.monotonic()-begin)*1000)
                         self.latest_points=len(data)
@@ -365,6 +369,8 @@ class MapperNode(Node):
     def snapshot(self):
         with self.lock:
             return {'backend':'nvblox_torch_cpp_cuda','map_epoch':self.epoch,'totals':dict(self.counts),'native_esdf_points':self.latest_points,
+                'esdf_exported_points':self.latest_points,'esdf_view_stride':self.cfg['esdf_view_stride'],
+                'esdf_view_spacing_m':self.cfg['voxel_size']*(self.cfg['esdf_view_stride'] if self.cfg['esdf_mode']=='3d' else 1),
                 'nvblox_core_library':str(self.backend.library) if self.backend is not None else None,'loaded_libraries':self.backend.loaded_libraries if self.backend is not None else [],
                 'input_stamp_ns':self.last_depth,'esdf_input_stamp_ns':self.esdf_stamp,'voxel_size_m':self.cfg['voxel_size'],
                 'esdf_version':self.esdf_version,'gpu_completion_measured':False,'error':self.fatal,

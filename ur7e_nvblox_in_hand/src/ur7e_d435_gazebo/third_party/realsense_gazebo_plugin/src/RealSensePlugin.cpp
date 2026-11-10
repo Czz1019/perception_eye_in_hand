@@ -115,6 +115,8 @@ void RealSensePlugin::Load(physics::ModelPtr _model, sdf::ElementPtr _sdf)
       _sdf->GetValue()->Get(pointCloudCutOffMax_);
     } else if (name == "prefix") {
       this->prefix = _sdf->GetValue()->GetAsString();
+    } else if (name == "imageReliability") {
+      // ROS transport option, validated by GazeboRosRealsense::Load.
     } else if (name == "robotNamespace") {
       break;
     } else {

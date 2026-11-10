@@ -1,7 +1,9 @@
 /**:
   ros__parameters:
     global_frame: base_link
-    voxel_size: 0.03
+    # Use reliable only when the image publisher offers reliable delivery.
+    input_qos: sensor_data
+    voxel_size: 0.02
     esdf_mode: 3d
     enable_depth: true
     enable_color: true
@@ -15,6 +17,7 @@
     color_hz: 40.0
     esdf_hz: 33.4
     esdf_view_hz: 33.4
+    esdf_view_stride: 2
     mesh_hz: 5.0
     layer_hz: 5.0
     decay_hz: 0.0

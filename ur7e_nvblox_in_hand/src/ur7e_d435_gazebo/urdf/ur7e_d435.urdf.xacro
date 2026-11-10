@@ -6,6 +6,7 @@
 
   <xacro:arg name="camera_width" default="640"/>
   <xacro:arg name="camera_height" default="480"/>
+  <xacro:arg name="sim_camera_reliability" default="reliable"/>
 
   <!-- ============================================================
        UR7e
@@ -230,6 +231,7 @@
     <plugin
         name="camera"
         filename="librealsense_gazebo_plugin.so">
+      <imageReliability>$(arg sim_camera_reliability)</imageReliability>
 
       <prefix>
         camera

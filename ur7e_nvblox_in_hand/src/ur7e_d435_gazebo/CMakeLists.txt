@@ -35,10 +35,10 @@ ament_target_dependencies(realsense_gazebo_plugin
   gazebo_ros rclcpp sensor_msgs image_transport point_cloud_transport camera_info_manager)
 target_link_libraries(realsense_gazebo_plugin ${GAZEBO_LIBRARIES})
 install(TARGETS realsense_gazebo_plugin LIBRARY DESTINATION lib)
-install(DIRECTORY config urdf meshes launch licenses docs DESTINATION share/${PROJECT_NAME})
+install(DIRECTORY config urdf meshes worlds launch licenses docs DESTINATION share/${PROJECT_NAME})
 install(FILES README.md THIRD_PARTY.md DESTINATION share/${PROJECT_NAME})
-install(PROGRAMS scripts/spawn_scene.py scripts/verify_scene.py
+install(PROGRAMS scripts/spawn_scene.py scripts/spawn_lab_scene.py scripts/verify_scene.py
   scripts/rectify_calibration_image.py scripts/evaluate_handeye.py
   scripts/import_handeye_20260907.py DESTINATION lib/${PROJECT_NAME})
-install(FILES scripts/gazebo_obstacle_utils.py scripts/mount_geometry.py DESTINATION lib/${PROJECT_NAME})
+install(FILES scripts/gazebo_obstacle_utils.py scripts/mount_geometry.py scripts/lab_scene.py DESTINATION lib/${PROJECT_NAME})
 ament_package()

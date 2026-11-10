@@ -1,0 +1,248 @@
+{
+  "configuration": {
+    "voxel_size_m": 0.02,
+    "truncation_vox": 4,
+    "truncation_m": 0.08,
+    "input": [
+      640,
+      480
+    ],
+    "motion": "static initial lab observation pose",
+    "reference": "procedural Gazebo lab geometry; cylinder 64 sides/sphere subdiv3; robot excluded"
+  },
+  "mesh": {
+    "vertices": 15305,
+    "triangles": 22095,
+    "reference_pixels": 140630,
+    "excluded_foreground_pixels": 813,
+    "coverage": 0.9444215316788737,
+    "within_20mm_fraction_of_reference": 0.8603498542274053,
+    "vs_ground_truth": {
+      "n": 132814,
+      "mae_mm": 6.021521985530853,
+      "rmse_mm": 16.684846952557564,
+      "median_abs_mm": 0.5987882614135742,
+      "p95_abs_mm": 32.37840533256525,
+      "signed_mean_mm": -0.9721103706397116
+    },
+    "raw_vs_ground_truth": {
+      "n": 140630,
+      "mae_mm": 1.681598019786179,
+      "rmse_mm": 9.763604030013084,
+      "median_abs_mm": 0.5344748497009277,
+      "p95_abs_mm": 3.234988451004027,
+      "signed_mean_mm": 0.18769445887301117
+    },
+    "vs_raw_depth": {
+      "n": 132814,
+      "mae_mm": 6.1707086861133575,
+      "rmse_mm": 17.876163125038147,
+      "median_abs_mm": 0.39058923721313477,
+      "p95_abs_mm": 33.680132031440685,
+      "signed_mean_mm": -1.0285353055223823
+    },
+    "by_object_group": {
+      "flask": {
+        "reference_pixels": 1958,
+        "coverage": 0.9877425944841676,
+        "n": 1934,
+        "mae_mm": 7.393087260425091,
+        "rmse_mm": 12.221092358231544,
+        "median_abs_mm": 4.050493240356445,
+        "p95_abs_mm": 29.891026020050045,
+        "signed_mean_mm": 6.449504289776087
+      },
+      "racks_and_tubes": {
+        "reference_pixels": 16655,
+        "coverage": 0.9051335935154609,
+        "n": 15075,
+        "mae_mm": 22.916371002793312,
+        "rmse_mm": 31.61974623799324,
+        "median_abs_mm": 16.956746578216553,
+        "p95_abs_mm": 65.15084505081175,
+        "signed_mean_mm": 0.9354956564493477
+      },
+      "reagent_bottles": {
+        "reference_pixels": 5767,
+        "coverage": 0.9139934107855038,
+        "n": 5271,
+        "mae_mm": 11.656388640403748,
+        "rmse_mm": 17.250197008252144,
+        "median_abs_mm": 7.049381732940674,
+        "p95_abs_mm": 42.88652539253235,
+        "signed_mean_mm": 9.738806635141373
+      },
+      "scale_blocks": {
+        "reference_pixels": 6445,
+        "coverage": 0.999844840961986,
+        "n": 6444,
+        "mae_mm": 5.137734115123749,
+        "rmse_mm": 9.828295558691025,
+        "median_abs_mm": 1.5232563018798828,
+        "p95_abs_mm": 27.17784643173215,
+        "signed_mean_mm": 3.977713640779257
+      },
+      "table": {
+        "reference_pixels": 97345,
+        "coverage": 0.9473008372284144,
+        "n": 92215,
+        "mae_mm": 2.6998058892786503,
+        "rmse_mm": 13.777658343315125,
+        "median_abs_mm": 0.5204677581787109,
+        "p95_abs_mm": 7.404565811157232,
+        "signed_mean_mm": -2.699801232665777
+      },
+      "tray_and_vials": {
+        "reference_pixels": 12460,
+        "coverage": 0.9530497592295345,
+        "n": 11875,
+        "mae_mm": 8.123688399791718,
+        "rmse_mm": 12.704852037131786,
+        "median_abs_mm": 4.933059215545654,
+        "p95_abs_mm": 28.88237833976745,
+        "signed_mean_mm": 1.3735339744016528
+      }
+    },
+    "visible_mesh_to_gt_euclidean": {
+      "n": 132814,
+      "mae_mm": 2.1738396026194096,
+      "rmse_mm": 4.836209584027529,
+      "median_abs_mm": 0.60738914180547,
+      "p95_abs_mm": 10.563582554459563,
+      "signed_mean_mm": 2.1738396026194096
+    },
+    "visible_gt_to_mesh_euclidean": {
+      "n": 140630,
+      "mae_mm": 2.5687103625386953,
+      "rmse_mm": 5.191458389163017,
+      "median_abs_mm": 0.6370749906636775,
+      "p95_abs_mm": 10.99885059520601,
+      "signed_mean_mm": 2.5687103625386953
+    },
+    "visible_gt_within_20mm_of_mesh_fraction": 0.9889497262319562,
+    "objects_excluding_table": {
+      "reference_pixels": 43285,
+      "coverage": 0.9379461707288899,
+      "vs_gt_axial": {
+        "n": 40599,
+        "mae_mm": 13.566335663199425,
+        "rmse_mm": 21.898318082094193,
+        "median_abs_mm": 7.308900356292725,
+        "p95_abs_mm": 47.863668203353875,
+        "signed_mean_mm": 2.9520997777581215
+      }
+    }
+  },
+  "esdf": {
+    "roi_query_cells": 42000,
+    "observed_cells": 31799,
+    "unknown_fraction": 0.2428809523809524,
+    "ground_truth_free_cells": 41110,
+    "observed_free_cells": 31042,
+    "free_space_observed_fraction": 0.7550960836779372,
+    "observed_free_distance_error": {
+      "n": 31042,
+      "mae_mm": 12.048197970244718,
+      "rmse_mm": 14.03265568208663,
+      "median_abs_mm": 10.372059485438601,
+      "p95_abs_mm": 21.03581492068698,
+      "signed_mean_mm": 9.677222984282498
+    },
+    "free_cells_marked_inside": 502,
+    "free_cells_gt_distance_ge_20mm_marked_inside": 50,
+    "distance_bands": {
+      "0.00-0.02m": {
+        "n": 4127,
+        "mae_mm": 13.921323828399522,
+        "rmse_mm": 16.937607819896456,
+        "median_abs_mm": 9.999999776482582,
+        "p95_abs_mm": 33.504404203949434,
+        "signed_mean_mm": 5.373237176013771
+      },
+      "0.02-0.05m": {
+        "n": 5189,
+        "mae_mm": 11.596722539381988,
+        "rmse_mm": 14.154891106630874,
+        "median_abs_mm": 9.999999776482582,
+        "p95_abs_mm": 22.911320096166083,
+        "signed_mean_mm": 9.82515004791133
+      },
+      "0.05-0.10m": {
+        "n": 9277,
+        "mae_mm": 10.591032906036862,
+        "rmse_mm": 11.621649431200973,
+        "median_abs_mm": 9.99999791383744,
+        "p95_abs_mm": 19.114110178746127,
+        "signed_mean_mm": 10.188851417432701
+      },
+      "0.10-0.20m": {
+        "n": 10628,
+        "mae_mm": 12.2525840730379,
+        "rmse_mm": 13.63461361543908,
+        "median_abs_mm": 12.187813778626204,
+        "p95_abs_mm": 19.97347709058196,
+        "signed_mean_mm": 10.837279606308867
+      },
+      "0.20-2.00m": {
+        "n": 1821,
+        "mae_mm": 15.320147665089388,
+        "rmse_mm": 19.041568724764222,
+        "median_abs_mm": 13.7425679128223,
+        "p95_abs_mm": 22.830499358478473,
+        "signed_mean_mm": 9.63301493613555
+      }
+    },
+    "roi_observed_points_from_service": 31799,
+    "by_nearest_geometry": {
+      "flask": {
+        "n": 1736,
+        "mae_mm": 9.144693024492126,
+        "rmse_mm": 11.29432359162769,
+        "median_abs_mm": 8.05416968022317,
+        "p95_abs_mm": 19.15910377687556,
+        "signed_mean_mm": 7.826247652986106
+      },
+      "racks_and_tubes": {
+        "n": 12668,
+        "mae_mm": 12.996024824283891,
+        "rmse_mm": 14.679273259082658,
+        "median_abs_mm": 12.721361100673679,
+        "p95_abs_mm": 21.368197020589417,
+        "signed_mean_mm": 9.893026308694656
+      },
+      "reagent_bottles": {
+        "n": 5209,
+        "mae_mm": 12.248076486637682,
+        "rmse_mm": 16.011907302004882,
+        "median_abs_mm": 10.886455704612038,
+        "p95_abs_mm": 29.656677128538874,
+        "signed_mean_mm": 8.582595769395226
+      },
+      "scale_blocks": {
+        "n": 2120,
+        "mae_mm": 11.253774245564292,
+        "rmse_mm": 13.100864336647383,
+        "median_abs_mm": 10.972512987600425,
+        "p95_abs_mm": 14.516132116419593,
+        "signed_mean_mm": 8.91291493488312
+      },
+      "table": {
+        "n": 5777,
+        "mae_mm": 10.211909125013007,
+        "rmse_mm": 10.828402615482084,
+        "median_abs_mm": 9.999999776482582,
+        "p95_abs_mm": 10.00000536441803,
+        "signed_mean_mm": 9.53646494929758
+      },
+      "tray_and_vials": {
+        "n": 3532,
+        "mae_mm": 13.261296996913277,
+        "rmse_mm": 14.905881336119752,
+        "median_abs_mm": 14.236525985474021,
+        "p95_abs_mm": 23.53008456711001,
+        "signed_mean_mm": 12.116323226824893
+      }
+    },
+    "most_common_site_z_m": []
+  }
+}

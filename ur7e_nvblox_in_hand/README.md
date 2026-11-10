@@ -40,3 +40,13 @@ DISPLAY=:1 /usr/bin/python3 tools/sim_test.py
 ```
 
 所有监测终端都必须设置相同域并`source ./env.sh`，不要source其他工作区。测试工具固定域135/端口11565，防止误向其他机械臂或实机发指令。
+
+## 1 cm / ESDF 显示 stride2 实测（2026-11-10）
+
+当前默认 `voxel_size=0.01`、`esdf_view_stride=2`。stride 仅对3D显示点云作GPU空间抽样，完整ESDF和Mesh仍为1cm。编译、运行、精度与异常说明见 [测试报告](docs/LAB_1CM_ESDF_STRIDE2_TEST_20261110.md)。
+
+[图像缺帧修复与 3D ESDF 复测](docs/INPUT_DELIVERY_FIX_AND_ESDF_RETEST_20261110.md)：配套仿真采用可靠图像传输，包含修复说明、实测频率、数据渲染与运行指令。
+
+[相机位姿时间匹配与重建效果测试](docs/POSE_TIMESTAMP_RECONSTRUCTION_TEST_20261110.md)：同一仿真输入下的正常、100 ms 与 500 ms 人为偏差对照，包含实际 Mesh 和 ESDF 渲染。
+
+[正常配置的仿真效果与配置参数说明](docs/NORMAL_SIMULATION_RESULTS_AND_PARAMETERS_20261110.md)：仅整理正常时间匹配的结果、实际配置文件及参数，不包含人为时间偏差配置。

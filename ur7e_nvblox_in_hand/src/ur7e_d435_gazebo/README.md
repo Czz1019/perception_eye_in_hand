@@ -88,3 +88,7 @@ Gazebo 加载的是本包构建的相机插件；新旧完整展开 URDF 在归�
 - `ur7e_d435_scene_validation.json`：实际模型、控制器、TF、相机消息与关节状态。
 - `ur7e_d435_scene_equivalence.json`：新旧模型一致性检查结果。
 - `ur7e_d435_package_scene.png`：Gazebo 界面截图。
+
+## 实验台复杂场景
+
+新增 `ros2 launch ur7e_d435_gazebo lab_scene.launch.py`，包含工作台、双试管架、试剂瓶、托盘和尺度块；原场景保留。完整编译、建图及查看说明见工作区 `docs/LAB_WORKBENCH_SCENE_20261110.md`。

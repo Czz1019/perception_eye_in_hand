@@ -95,9 +95,11 @@ class Backend:
         if self.cfg['esdf_mode']=='3d':self.mapper.update_esdf(0)
         else:self.ops.update_esdf_slice(self.mapper.get_c_mapper())
 
-    def esdf(self, selection, band):
+    def esdf(self, selection, band, stride=1):
         kind={'observed':0,'band':1,'inside':2}[selection]
-        return self.ops.export_esdf(self.mapper.get_c_mapper(),kind,float(band)).numpy().copy()
+        if isinstance(stride,bool) or not isinstance(stride,int) or stride<1:raise ValueError('ESDF stride must be a positive integer')
+        if stride==1:return self.ops.export_esdf(self.mapper.get_c_mapper(),kind,float(band)).numpy().copy()
+        return self.ops.export_esdf_strided(self.mapper.get_c_mapper(),kind,float(band),stride).numpy().copy()
 
     def layer(self, color=False):
         return self.ops.export_layer(self.mapper.get_c_mapper(),int(color),float(self.cfg['layer_min_weight'])).numpy().copy()

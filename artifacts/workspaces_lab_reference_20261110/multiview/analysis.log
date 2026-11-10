@@ -1,0 +1,251 @@
+/home/czz/.local/lib/python3.10/site-packages/requests/__init__.py:102: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (4.0.0)/charset_normalizer (2.0.12) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({})/charset_normalizer ({}) doesn't match a supported "
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [0.04363631500917323..1.0000000521540642].
+{
+  "configuration": {
+    "voxel_size_m": 0.02,
+    "truncation_vox": 4,
+    "truncation_m": 0.08,
+    "input": [
+      640,
+      480
+    ],
+    "motion": "static initial lab observation pose",
+    "reference": "procedural Gazebo lab geometry; cylinder 64 sides/sphere subdiv3; robot excluded"
+  },
+  "mesh": {
+    "vertices": 32529,
+    "triangles": 49619,
+    "reference_pixels": 140630,
+    "excluded_foreground_pixels": 813,
+    "coverage": 0.9946597454312736,
+    "within_20mm_fraction_of_reference": 0.8992035838725734,
+    "vs_ground_truth": {
+      "n": 139879,
+      "mae_mm": 6.818172987550497,
+      "rmse_mm": 23.47809448838234,
+      "median_abs_mm": 0.6031394004821777,
+      "p95_abs_mm": 35.58503985404968,
+      "signed_mean_mm": -0.48685664660297334
+    },
+    "raw_vs_ground_truth": {
+      "n": 140630,
+      "mae_mm": 1.681598019786179,
+      "rmse_mm": 9.763604030013084,
+      "median_abs_mm": 0.5344748497009277,
+      "p95_abs_mm": 3.234988451004027,
+      "signed_mean_mm": 0.18769445887301117
+    },
+    "vs_raw_depth": {
+      "n": 139879,
+      "mae_mm": 6.938538048416376,
+      "rmse_mm": 24.175887927412987,
+      "median_abs_mm": 0.39315223693847656,
+      "p95_abs_mm": 36.85705661773683,
+      "signed_mean_mm": -0.6596499588340521
+    },
+    "by_object_group": {
+      "flask": {
+        "reference_pixels": 1958,
+        "coverage": 0.9974463738508682,
+        "n": 1953,
+        "mae_mm": 8.430950343608856,
+        "rmse_mm": 17.911069095134735,
+        "median_abs_mm": 4.104673862457275,
+        "p95_abs_mm": 33.27678442001332,
+        "signed_mean_mm": 7.497875485569239
+      },
+      "racks_and_tubes": {
+        "reference_pixels": 16655,
+        "coverage": 0.9951966376463525,
+        "n": 16575,
+        "mae_mm": 24.136871099472046,
+        "rmse_mm": 34.97768193483353,
+        "median_abs_mm": 17.07327365875244,
+        "p95_abs_mm": 68.88101100921625,
+        "signed_mean_mm": 2.15419614687562
+      },
+      "reagent_bottles": {
+        "reference_pixels": 5767,
+        "coverage": 0.9961851916074216,
+        "n": 5745,
+        "mae_mm": 16.33414253592491,
+        "rmse_mm": 30.76108731329441,
+        "median_abs_mm": 7.979631423950195,
+        "p95_abs_mm": 54.886233806610115,
+        "signed_mean_mm": 14.566970989108086
+      },
+      "scale_blocks": {
+        "reference_pixels": 6445,
+        "coverage": 1.0,
+        "n": 6445,
+        "mae_mm": 5.148498807102442,
+        "rmse_mm": 9.884705767035484,
+        "median_abs_mm": 1.5237927436828613,
+        "p95_abs_mm": 27.20600366592405,
+        "signed_mean_mm": 3.9873518981039524
+      },
+      "table": {
+        "reference_pixels": 97345,
+        "coverage": 0.99339462735631,
+        "n": 96702,
+        "mae_mm": 3.2391154672950506,
+        "rmse_mm": 22.329404950141907,
+        "median_abs_mm": 0.5249977111816406,
+        "p95_abs_mm": 9.05008316040036,
+        "signed_mean_mm": -2.520752837881446
+      },
+      "tray_and_vials": {
+        "reference_pixels": 12460,
+        "coverage": 0.9999197431781701,
+        "n": 12459,
+        "mae_mm": 7.780261803418398,
+        "rmse_mm": 12.405763380229473,
+        "median_abs_mm": 4.4040679931640625,
+        "p95_abs_mm": 28.050249814987147,
+        "signed_mean_mm": 1.278266659937799
+      }
+    },
+    "visible_mesh_to_gt_euclidean": {
+      "n": 139879,
+      "mae_mm": 2.3744399659335613,
+      "rmse_mm": 9.872989729046822,
+      "median_abs_mm": 0.611534807831049,
+      "p95_abs_mm": 11.019542533904318,
+      "signed_mean_mm": 2.3744399659335613
+    },
+    "visible_gt_to_mesh_euclidean": {
+      "n": 140630,
+      "mae_mm": 2.0215664990246296,
+      "rmse_mm": 3.7847845815122128,
+      "median_abs_mm": 0.6178469629958272,
+      "p95_abs_mm": 9.302214346826057,
+      "signed_mean_mm": 2.0215664990246296
+    },
+    "visible_gt_within_20mm_of_mesh_fraction": 0.9979520728151888,
+    "objects_excluding_table": {
+      "reference_pixels": 43285,
+      "coverage": 0.997504909321936,
+      "vs_gt_axial": {
+        "n": 43177,
+        "mae_mm": 14.83406312763691,
+        "rmse_mm": 25.866372510790825,
+        "median_abs_mm": 7.442057132720947,
+        "p95_abs_mm": 52.2841215133667,
+        "signed_mean_mm": 4.068388603627682
+      }
+    }
+  },
+  "esdf": {
+    "roi_query_cells": 42000,
+    "observed_cells": 38023,
+    "unknown_fraction": 0.09469047619047619,
+    "ground_truth_free_cells": 41110,
+    "observed_free_cells": 37168,
+    "free_space_observed_fraction": 0.9041109219168085,
+    "observed_free_distance_error": {
+      "n": 37168,
+      "mae_mm": 11.847596187608707,
+      "rmse_mm": 23.29532337238927,
+      "median_abs_mm": 10.039931474714766,
+      "p95_abs_mm": 20.52542153209537,
+      "signed_mean_mm": 9.353949305020311
+    },
+    "free_cells_marked_inside": 713,
+    "free_cells_gt_distance_ge_20mm_marked_inside": 66,
+    "distance_bands": {
+      "0.00-0.02m": {
+        "n": 4615,
+        "mae_mm": 14.416504694159444,
+        "rmse_mm": 17.578286944580142,
+        "median_abs_mm": 9.999999776482582,
+        "p95_abs_mm": 36.784282197241374,
+        "signed_mean_mm": 3.947243161437188
+      },
+      "0.02-0.05m": {
+        "n": 5373,
+        "mae_mm": 11.291520021584313,
+        "rmse_mm": 13.857489001455964,
+        "median_abs_mm": 9.999999776482582,
+        "p95_abs_mm": 21.475809975619814,
+        "signed_mean_mm": 9.094909356265545
+      },
+      "0.05-0.10m": {
+        "n": 9698,
+        "mae_mm": 10.207881071007971,
+        "rmse_mm": 11.12645823847854,
+        "median_abs_mm": 9.999997913837433,
+        "p95_abs_mm": 18.11226535583644,
+        "signed_mean_mm": 9.63100726394809
+      },
+      "0.10-0.20m": {
+        "n": 13891,
+        "mae_mm": 11.973022268321145,
+        "rmse_mm": 33.503558458082686,
+        "median_abs_mm": 11.236806781757313,
+        "p95_abs_mm": 19.208769544363484,
+        "signed_mean_mm": 10.778415443820599
+      },
+      "0.20-2.00m": {
+        "n": 3591,
+        "mae_mm": 13.321265916356909,
+        "rmse_mm": 15.998827448703338,
+        "median_abs_mm": 12.880773329669083,
+        "p95_abs_mm": 20.024147457403412,
+        "signed_mean_mm": 10.431533063733507
+      }
+    },
+    "roi_observed_points_from_service": 38023,
+    "by_nearest_geometry": {
+      "flask": {
+        "n": 2792,
+        "mae_mm": 8.999377359006028,
+        "rmse_mm": 10.844670865781852,
+        "median_abs_mm": 7.999983310699454,
+        "p95_abs_mm": 18.25086594335175,
+        "signed_mean_mm": 7.965090711256067
+      },
+      "racks_and_tubes": {
+        "n": 14018,
+        "mae_mm": 13.339475537182501,
+        "rmse_mm": 34.05622530149878,
+        "median_abs_mm": 12.604423468155955,
+        "p95_abs_mm": 21.405977598140062,
+        "signed_mean_mm": 9.7546425677755
+      },
+      "reagent_bottles": {
+        "n": 7188,
+        "mae_mm": 10.945156259526069,
+        "rmse_mm": 14.358774968783305,
+        "median_abs_mm": 9.850459768810966,
+        "p95_abs_mm": 23.562924307618058,
+        "signed_mean_mm": 7.705657133585859
+      },
+      "scale_blocks": {
+        "n": 2789,
+        "mae_mm": 11.177437633904047,
+        "rmse_mm": 12.72545635652899,
+        "median_abs_mm": 11.285983736202098,
+        "p95_abs_mm": 14.142142415807967,
+        "signed_mean_mm": 9.315576424484375
+      },
+      "table": {
+        "n": 6312,
+        "mae_mm": 10.207215671962262,
+        "rmse_mm": 10.98186908847576,
+        "median_abs_mm": 9.99999791383744,
+        "p95_abs_mm": 10.00000536441803,
+        "signed_mean_mm": 9.077022832739244
+      },
+      "tray_and_vials": {
+        "n": 4069,
+        "mae_mm": 13.2604628553978,
+        "rmse_mm": 14.775864605154716,
+        "median_abs_mm": 14.297156712185261,
+        "p95_abs_mm": 22.721137120880147,
+        "signed_mean_mm": 12.294151079808035
+      }
+    },
+    "most_common_site_z_m": []
+  }
+}

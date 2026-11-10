@@ -1,4 +1,4 @@
-"""UR7e + outer-side D435 + tall walls, without external workspace paths."""
+"""UR7e + outer-side D435, with selectable tall-wall or lab scenes."""
 import os
 import importlib.util
 import socket
@@ -63,14 +63,24 @@ def _setup(context):
                   for name in ("camera_width", "camera_height")}
     if any(not text.isdigit() or int(text) <= 0 for text in dimensions.values()):
         raise ValueError("camera_width and camera_height must be positive integers")
+    variant = LaunchConfiguration("scene_variant").perform(context)
+    initial_file = share / "config" / ("lab_initial_positions.yaml" if variant == "lab" else "initial_positions.yaml")
     document = xacro.process_file(str(share / "urdf/ur7e_d435.urdf.xacro"),
-                                  mappings={"eih_calibration": str(calibration_file), **dimensions})
+                                  mappings={"eih_calibration": str(calibration_file), "initial_positions_file": str(initial_file),
+                                            "sim_camera_reliability": LaunchConfiguration("sim_camera_reliability").perform(context), **dimensions})
+    if variant == "lab":
+        # The tabletop is the existing base z=0; the lab world supplies the lower floor.
+        for link in document.getElementsByTagName("link"):
+            if link.getAttribute("name") == "ground_plane":
+                for child in list(link.childNodes):
+                    if child.nodeName in ("visual", "collision"):
+                        link.removeChild(child)
     _remove_comments(document)
     xml = document.toxml()
     spec = importlib.util.spec_from_file_location("mount_geometry", lib / "ur7e_d435_gazebo/mount_geometry.py")
     geometry = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(geometry)
-    initial = yaml.safe_load((share / "config/initial_positions.yaml").read_text())
+    initial = yaml.safe_load(initial_file.read_text())
     report = geometry.check_mount_geometry(xml, initial, lib / "ur7e_d435_gazebo/check_mount_meshes")
     colliding = sorted({pair["arm"] for pair in report["pairs"] if pair["collision"]})
     if colliding:
@@ -90,23 +100,26 @@ def _setup(context):
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(str(Path(get_package_share_directory("gazebo_ros")) / "launch/gazebo.launch.py")),
             launch_arguments={"gui": LaunchConfiguration("gazebo_gui"),
-                              "server_required": "true", "verbose": "true",
-                              "params_file": LaunchConfiguration("gazebo_params_file")}.items()),
+                              "server_required": "true", "verbose": "true", "profile": "",
+                              "params_file": LaunchConfiguration("gazebo_params_file"),
+                              **({"world": str(share / "worlds/lab_workbench.world")} if variant == "lab" else {})}.items()),
         Node(package="gazebo_ros", executable="spawn_entity.py", name="spawn_ur",
              arguments=["-entity", "ur", "-topic", "robot_description", "-timeout", "60"], output="screen"),
         Node(package="controller_manager", executable="spawner",
              arguments=["joint_state_broadcaster", "-c", "/controller_manager", "--controller-manager-timeout", "60"], output="screen"),
         Node(package="controller_manager", executable="spawner",
              arguments=["forward_position_controller", "-c", "/controller_manager", "--controller-manager-timeout", "60"], output="screen"),
-        Node(package="ur7e_d435_gazebo", executable="spawn_scene.py", output="screen"),
+        Node(package="ur7e_d435_gazebo", executable="spawn_lab_scene.py" if variant == "lab" else "spawn_scene.py", output="screen"),
     ]
 
 
 def generate_launch_description():
     return LaunchDescription([
+        DeclareLaunchArgument("scene_variant", default_value="tall", choices=["tall", "lab"]),
         DeclareLaunchArgument("gazebo_gui", default_value="true", description="Open the Gazebo GUI"),
         DeclareLaunchArgument("camera_width", default_value="640", description="RGB and depth sensor width"),
         DeclareLaunchArgument("camera_height", default_value="480", description="RGB and depth sensor height"),
+        DeclareLaunchArgument("sim_camera_reliability", default_value="reliable", choices=["reliable", "best_effort"]),
         DeclareLaunchArgument("gazebo_params_file",
                               default_value=str(Path(get_package_share_directory("ur7e_d435_gazebo")) /
                                                 "config/gazebo_clock.yaml"),
