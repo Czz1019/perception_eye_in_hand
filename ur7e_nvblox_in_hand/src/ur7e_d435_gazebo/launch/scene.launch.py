@@ -115,7 +115,7 @@ def _setup(context):
 
 def generate_launch_description():
     return LaunchDescription([
-        DeclareLaunchArgument("scene_variant", default_value="tall", choices=["tall", "lab"]),
+        DeclareLaunchArgument("scene_variant", default_value="lab", choices=["tall", "lab"]),
         DeclareLaunchArgument("gazebo_gui", default_value="true", description="Open the Gazebo GUI"),
         DeclareLaunchArgument("camera_width", default_value="640", description="RGB and depth sensor width"),
         DeclareLaunchArgument("camera_height", default_value="480", description="RGB and depth sensor height"),

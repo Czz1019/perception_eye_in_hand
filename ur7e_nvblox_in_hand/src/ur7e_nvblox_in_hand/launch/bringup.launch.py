@@ -82,5 +82,5 @@ def setup(context):
 def generate_launch_description():
     share=Path(get_package_share_directory('ur7e_nvblox_in_hand'))
     base=yaml.safe_load((share/'config/base.yaml').read_text())['/**']['ros__parameters']
-    orchestration=dict(sim_camera_reliability='reliable',scene_variant='tall',start_scene='true',launch_camera='false',use_sim_time='true',gazebo_gui='true',run_rviz='true',camera_width='640',camera_height='480',profile='realtime',mapper_config='',rviz_mode='auto',rosbag='',rosbag_args='')
+    orchestration=dict(sim_camera_reliability='reliable',scene_variant='lab',start_scene='true',launch_camera='false',use_sim_time='true',gazebo_gui='true',run_rviz='true',camera_width='640',camera_height='480',profile='realtime',mapper_config='',rviz_mode='auto',rosbag='',rosbag_args='')
     return LaunchDescription([DeclareLaunchArgument(k,default_value=v) for k,v in orchestration.items()]+[DeclareLaunchArgument(k,default_value='') for k in base]+[OpaqueFunction(function=setup)])

@@ -26,21 +26,21 @@ from rosgraph_msgs.msg import Clock
 from ur7e_nvblox_interfaces.srv import FilePath,QueryEsdf
 from . import messages
 
-DEFAULTS=dict(global_frame='base_link',voxel_size=.01,esdf_mode='3d',
+DEFAULTS=dict(global_frame='base_link',voxel_size=.005,esdf_mode='3d',
     enable_depth=True,enable_color=True,enable_esdf=True,enable_mesh=True,enable_layers=True,
     enable_esdf_view=True,publish_pose=True,publish_path=True,publish_esdf_distance_slice=True,
     depth_hz=40.,color_hz=40.,esdf_hz=33.4,esdf_view_hz=33.4,mesh_hz=5.,layer_hz=5.,
     decay_hz=0.,clearing_hz=0.,clearing_radius_m=-1.,
-    esdf_view_mode='observed',esdf_view_stride=2,esdf_view_band_m=.24,min_depth_m=.1,max_range_m=3.,
+    esdf_view_mode='observed',esdf_view_stride=2,esdf_view_band_m=.24,min_depth_m=.05,max_range_m=2.05,
     truncation_vox=4.,max_weight=5.,weighting_mode='inverse_square_tsdf_distance_penalty',
     invalid_depth_decay_factor=-1.,esdf_max_distance_m=2.,esdf_min_weight=.1,esdf_max_site_vox=2.,
     mesh_min_weight=.1,mesh_weld_vertices=True,layer_min_weight=.1,raycast_subsampling_factor=4,
-    workspace_bounds_type='unbounded',workspace_min_x=-2.,workspace_max_x=2.,workspace_min_y=-2.,workspace_max_y=2.,workspace_min_z=-.5,workspace_max_z=2.,
+    workspace_bounds_type='bounding_box',workspace_min_x=-.1,workspace_max_x=1.1,workspace_min_y=-.6,workspace_max_y=.6,workspace_min_z=-.05,workspace_max_z=1.05,
     tsdf_decay_factor=.95,tsdf_decayed_weight_threshold=.001,
     slice_min_height=0.,slice_max_height=.8,slice_height=.25,
     depth_topic='/camera/depth/image_rect_raw',depth_info_topic='/camera/depth/camera_info',
     color_topic='/camera/color/image_raw',color_info_topic='/camera/color/camera_info',
-    input_qos='sensor_data',input_queue_size=3,max_input_age_sec=.5,path_max_poses=3000,max_query_points=200000,
+    input_qos='sensor_data',input_queue_size=4,max_input_age_sec=.5,path_max_poses=3000,max_query_points=200000,
     service_timeout_sec=20.)
 MUTABLE={k for k in DEFAULTS if k.startswith('enable_') or k.endswith('_hz')}|{'publish_pose','publish_path','publish_esdf_distance_slice','esdf_view_mode','esdf_view_band_m','esdf_view_stride'}
 

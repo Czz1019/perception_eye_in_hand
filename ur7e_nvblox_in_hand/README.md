@@ -1,5 +1,12 @@
 # ur7e_nvblox_in_hand
 
+[本周工作总结（11月9—12日）：问题、解决效果、实时性与原始照片](docs/WEEKLY_PERCEPTION_SUMMARY_20261109_20261112.md)。
+
+[实机运行README：UR7e＋D435i、手动拖动、完整命令与保存结果](README_REAL_TEST.md)。
+
+
+[当前默认：5mm实时Gazebo实验台、RViz和频率查看](docs/LIVE_GAZEBO_5MM_DEFAULTS_20261111.md)。直接运行`./run.sh`，不需要回放或外部测试YAML。
+
 [迁移部署：完整依赖、库版本、安装、编译和仿真指令](docs/MIGRATION_DEPLOYMENT_20261109.md)。
 
 以`nvblox_torch`为主接口的独立UR7e/D435感知工作区，与`../nvblox_in_hand`并列，保留原工程不变。ROS输入与调度由Python实现，TSDF/Color/ESDF/Mesh由wheel中的nvblox C++/CUDA计算。小型本地Torch桥接补充原生ESDF/地图层导出、二维ESDF和半径清图；不链接原workspaces中的nvblox_ros，不启动NITROS、GXF、cuVSLAM或人物/任务模型。
@@ -30,7 +37,7 @@ export GAZEBO_MASTER_URI=http://127.0.0.1:11565
 
 此命令不自动移动机械臂。推荐按操作文档“先场景→高位观察→Mapper→小幅左右扫描”的顺序测试，以免把接近过程的活动机械臂写入静态地图。
 
-默认640×480、体素0.03m、最大融合距离3m、深度/颜色限频40Hz、ESDF/显示33.4Hz、Mesh/层5Hz；这些是门限，不是实测吞吐承诺。核心使用static TSDF，默认衰减和清图关闭。原有的自体污染、遮挡unknown和体素颜色平均问题不会仅因改用Python接口消失。
+当前默认启动实时 Gazebo 实验台和 RViz：640×480、体素0.005m、4体素截断（2cm）、深度范围0.05–2.05m、深度/颜色限频40Hz、ESDF/显示33.4Hz、Mesh/层5Hz；工作区限制为实验台附近的 bounding_box，清图和衰减关闭。这些是门限，不是实测吞吐承诺。核心使用static TSDF，默认衰减和清图关闭。原有的自体污染、遮挡unknown和体素颜色平均问题不会仅因改用Python接口消失。
 
 自动仿真检查创建新的artifact目录，不覆盖历史结果；只启动并关闭自己的子进程，沿已检查路径在仿真中移动机械臂：
 
@@ -43,10 +50,20 @@ DISPLAY=:1 /usr/bin/python3 tools/sim_test.py
 
 ## 1 cm / ESDF 显示 stride2 实测（2026-11-10）
 
-当前默认 `voxel_size=0.01`、`esdf_view_stride=2`。stride 仅对3D显示点云作GPU空间抽样，完整ESDF和Mesh仍为1cm。编译、运行、精度与异常说明见 [测试报告](docs/LAB_1CM_ESDF_STRIDE2_TEST_20261110.md)。
+该次历史测试使用 `voxel_size=0.01`、`esdf_view_stride=2`。stride 仅对3D显示点云作GPU空间抽样，完整ESDF和Mesh仍为1cm。编译、运行、精度与异常说明见 [测试报告](docs/LAB_1CM_ESDF_STRIDE2_TEST_20261110.md)。
 
 [图像缺帧修复与 3D ESDF 复测](docs/INPUT_DELIVERY_FIX_AND_ESDF_RETEST_20261110.md)：配套仿真采用可靠图像传输，包含修复说明、实测频率、数据渲染与运行指令。
 
 [相机位姿时间匹配与重建效果测试](docs/POSE_TIMESTAMP_RECONSTRUCTION_TEST_20261110.md)：同一仿真输入下的正常、100 ms 与 500 ms 人为偏差对照，包含实际 Mesh 和 ESDF 渲染。
 
 [正常配置的仿真效果与配置参数说明](docs/NORMAL_SIMULATION_RESULTS_AND_PARAMETERS_20261110.md)：仅整理正常时间匹配的结果、实际配置文件及参数，不包含人为时间偏差配置。
+
+[正常输入下各阶段实时性复测](docs/PIPELINE_REALTIME_BREAKDOWN_20261110.md)：1cm/2cm 相同输入对照，含阶段耗时、TF等待、输出频率及实际生效配置。
+
+[2 cm 体素 Mesh / 3D ESDF 精度与阶段实时性测试](docs/VOXEL002_MESH_ESDF_ACCURACY_AND_REALTIME_20261111.md)：单帧、静止多帧、多视角、TSDF/ESDF 原生数据核对，含效果图、异常分析和完整复现指令。
+
+[1 cm 体素 Mesh / 3D ESDF 分阶段精度与实时性、unknown 来源分析](docs/VOXEL001_UNKNOWN_MESH_ESDF_STAGE_TEST_20261111.md)：与2cm相同输入对照，含原生未知体素分类、异常距离检查、效果图及复现指令。
+
+[瓶盖颜色扩展与Mesh阶梯问题：代码和原生数据分析](docs/CAP_COLOR_BLEED_AND_STAIRCASE_CODE_ANALYSIS_20261111.md)：区分真实瓶盖厚度、单帧几何、颜色截断带、合成深度和多帧影响，含定量图及后续验证方案。
+
+[5 mm体素 Mesh / 3D ESDF精度与阶段实时性测试](docs/VOXEL0005_MESH_ESDF_ACCURACY_AND_PIPELINE_TEST_20261111.md)：无界显存失败、实验台边界完整测试及同边界1cm对照，含原生异常检查、效果图和复现指令。

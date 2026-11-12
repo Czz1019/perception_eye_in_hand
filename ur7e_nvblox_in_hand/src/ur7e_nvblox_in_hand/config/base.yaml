@@ -3,7 +3,7 @@
     global_frame: base_link
     # Use reliable only when the image publisher offers reliable delivery.
     input_qos: sensor_data
-    voxel_size: 0.02
+    voxel_size: 0.005
     esdf_mode: 3d
     enable_depth: true
     enable_color: true
@@ -20,13 +20,13 @@
     esdf_view_stride: 2
     mesh_hz: 5.0
     layer_hz: 5.0
-    decay_hz: 0.0
-    clearing_hz: 0.0
+    decay_hz: 1.0
+    clearing_hz: 1.0
     clearing_radius_m: -1.0
     esdf_view_mode: observed
     esdf_view_band_m: 0.24
-    min_depth_m: 0.1
-    max_range_m: 3.0
+    min_depth_m: 0.05
+    max_range_m: 2.05
     truncation_vox: 4.0
     max_weight: 5.0
     weighting_mode: inverse_square_tsdf_distance_penalty
@@ -38,13 +38,14 @@
     mesh_weld_vertices: true
     layer_min_weight: 0.1
     raycast_subsampling_factor: 4
-    workspace_bounds_type: unbounded
-    workspace_min_x: -2.0
-    workspace_max_x: 2.0
-    workspace_min_y: -2.0
-    workspace_max_y: 2.0
-    workspace_min_z: -0.5
-    workspace_max_z: 2.0
+    # Bound the laboratory map: 5 mm unbounded mapping can exhaust GPU memory.
+    workspace_bounds_type: bounding_box
+    workspace_min_x: -0.1
+    workspace_max_x: 1.1
+    workspace_min_y: -0.6
+    workspace_max_y: 0.6
+    workspace_min_z: -0.05
+    workspace_max_z: 1.05
     tsdf_decay_factor: 0.95
     tsdf_decayed_weight_threshold: 0.001
     slice_min_height: 0.0
@@ -54,7 +55,7 @@
     depth_info_topic: /camera/depth/camera_info
     color_topic: /camera/color/image_raw
     color_info_topic: /camera/color/camera_info
-    input_queue_size: 3
+    input_queue_size: 4
     max_input_age_sec: 0.5
     path_max_poses: 3000
     max_query_points: 200000

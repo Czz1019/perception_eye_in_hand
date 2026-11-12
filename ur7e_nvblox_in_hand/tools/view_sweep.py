@@ -28,9 +28,10 @@ def main():
     parser.add_argument('--seconds', type=float, default=20., help='Sweep duration in wall seconds; 0 only approaches the view')
     parser.add_argument('--amplitude', type=float, default=.08, help='Lateral amplitude in metres, maximum 0.08 m along world Y')
     parser.add_argument('--check-only', action='store_true', help='Check simulation and joints without publishing motion')
+    parser.add_argument('--domain-id', type=int, default=135, help='Expected ROS_DOMAIN_ID of the running Gazebo scene (default: 135)')
     args = parser.parse_args()
-    if os.environ.get('ROS_DOMAIN_ID') != '135':
-        raise RuntimeError('Use the existing Gazebo test domain: ROS_DOMAIN_ID=135')
+    if os.environ.get('ROS_DOMAIN_ID') != str(args.domain_id):
+        raise RuntimeError(f'Use the running Gazebo scene domain: ROS_DOMAIN_ID={args.domain_id}')
     if not math.isfinite(args.seconds) or not 0 <= args.seconds <= 300:
         raise ValueError('seconds must be between 0 and 300')
     if not math.isfinite(args.amplitude) or not 0 <= args.amplitude <= PLAN['amplitude_m']:
